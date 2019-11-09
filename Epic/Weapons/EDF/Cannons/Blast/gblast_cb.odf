@@ -27,14 +27,14 @@ renderName2 = "gplasma_cb.light"
 renderName3 = "gplasma_cb.flame"
 
 //[Flash]
-simulateBase = "sim_null"
-lifeTime = 3.5
-renderBase = "draw_light"
-startColor = "0 255 255 700"
-finishColor = "0 0 255 700"
-startRadius = 20.0
-finishRadius = 20.0
-animateTime = 3.5
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+// simulateBase = "sim_null"
+// lifeTime = 3.5
+// renderBase = "draw_light"
+// startColor = "0 255 255 700"
+// finishColor = "0 0 255 700"
+// startRadius = 20.0
+// finishRadius = 20.0
+// animateTime = 3.5
+// attenuateConstant = 0.0
+// attenuateLinear = 1.0
+// attenuateQuadratic = 0.0

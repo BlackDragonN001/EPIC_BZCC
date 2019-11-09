@@ -54,17 +54,17 @@ finishRadius = 0.05
 animateTime = 0.5
 
 //[Puff]
-simulateBase = "sim_smoke"
-lifeTime = 0.4
-renderBase = "draw_twirl"
-textureName = "flame.tga"
-textureBlend = "one one modulate"
-startColor = "70 50 255 200" 
-finishColor = "170 150 255 0" 
-startRadius = 0.05
-finishRadius = 0.7
-animateTime = 0.4
-rotationRate = 0.3
+// simulateBase = "sim_smoke"
+// lifeTime = 0.4
+// renderBase = "draw_twirl"
+// textureName = "flame.tga"
+// textureBlend = "one one modulate"
+// startColor = "70 50 255 200" 
+// finishColor = "170 150 255 0" 
+// startRadius = 0.05
+// finishRadius = 0.7
+// animateTime = 0.4
+// rotationRate = 0.3
 
 [Puff]
 simulateBase = "sim_smoke"

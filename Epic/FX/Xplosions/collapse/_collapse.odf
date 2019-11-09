@@ -77,27 +77,27 @@ kickOmega = 3.0
 kickVeloc = 2.0
 
 //[lines]
-simulateBase = "sim_dust"
-lifeTime = 1.0
-renderBase = "draw_emit"
-emitName = "collapse.linesemit"
-emitDelay = 0.1 // .05
-emitVelocity = "1.0 1.0 1.0"//.4 0 0
-emitVariance = "210.0 210.0 210.0"// .5 .5 .5
+//simulateBase = "sim_dust"
+//lifeTime = 1.0
+//renderBase = "draw_emit"
+//emitName = "collapse.linesemit"
+//emitDelay = 0.1 // .05
+//emitVelocity = "1.0 1.0 1.0"//.4 0 0
+//emitVariance = "210.0 210.0 210.0"// .5 .5 .5
 
 //[linesemit]
-simulateBase = "sim_dust"//dust
-lifeTime = 1.5 //2.5
-renderBase = "draw_trail"
-textureName = "trail2.tga"
-textureBlend = "one one modulate"
-textureRate = 0.03
-startColor = "100 160 250 255"
-finishColor = "00 0 200 0"
-startRadius = 0.4
-finishRadius = 2.5
-segmentTime = 1.0
-animateTime = 1.5
+//simulateBase = "sim_dust"//dust
+//lifeTime = 1.5 //2.5
+//renderBase = "draw_trail"
+//textureName = "trail2.tga"
+//textureBlend = "one one modulate"
+//textureRate = 0.03
+//startColor = "100 160 250 255"
+//finishColor = "00 0 200 0"
+//startRadius = 0.4
+//finishRadius = 2.5
+//segmentTime = 1.0
+//animateTime = 1.5
 
 [Flame1]
 simulateBase = "sim_smoke"
@@ -127,17 +127,17 @@ rotationRate = -1
 
 
 //[Flame2]
-simulateBase = "sim_smoke"
-lifeTime = 2.5
-renderBase = "draw_twirl"
-textureName = "dust128.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha" 
-startColor = " 155 155 255 130"
-finishColor = "200 200 200 0"
-startRadius = 8.0
-finishRadius = 42.0
-animateTime = 2.5
-rotationRate = 1.0
+//simulateBase = "sim_smoke"
+//lifeTime = 2.5
+//renderBase = "draw_twirl"
+//textureName = "dust128.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha" 
+//startColor = " 155 155 255 130"
+//finishColor = "200 200 200 0"
+//startRadius = 8.0
+//finishRadius = 42.0
+//animateTime = 2.5
+//rotationRate = 1.0
 
 [Smoke]
 simulateBase = "sim_smoke"
@@ -167,17 +167,17 @@ rotationRate = 0.4
 
 
 //[Light]
-simulateBase = "sim_null"
-lifeTime = 4.0
-renderBase = "draw_light"
-startColor = "255 255 255 910"
-finishColor = "0 0 55 0"
-startRadius = 100.0
-finishRadius = 50.0
-animateTime = 4.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+//simulateBase = "sim_null"
+//lifeTime = 4.0
+//renderBase = "draw_light"
+//startColor = "255 255 255 910"
+//finishColor = "0 0 55 0"
+//startRadius = 100.0
+//finishRadius = 50.0
+//animateTime = 4.0
+//attenuateConstant = 0.0
+//attenuateLinear = 1.0
+//attenuateQuadratic = 0.0
 
 [Spark]
 simulateBase = "sim_smoke"
@@ -193,44 +193,44 @@ trailTime = 0.2
 segmentTime = 0.2
 
 //[Shock]
-simulateBase = "sim_null"
-lifeTime = 3.5
-renderBase = "draw_sprite"
-spriteCenter.x = 0.0
-spriteCenter.y = 0.0
-textureName = "dust512.tga" //ringa3
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = " 120 120 120 190"
-finishColor = "255 255 255 0"
-startRadius = 5.0
-finishRadius = 35.0 // 50
-animateTime = 3.5
+//simulateBase = "sim_null"
+//lifeTime = 3.5
+//renderBase = "draw_sprite"
+//spriteCenter.x = 0.0
+//spriteCenter.y = 0.0
+//textureName = "dust512.tga" //ringa3
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = " 120 120 120 190"
+//finishColor = "255 255 255 0"
+//startRadius = 5.0
+//finishRadius = 35.0 // 50
+//animateTime = 3.5
 
 //[Ring]
-simulateBase = "sim_null"
-lifeTime = 5.0
-renderBase = "draw_sprite"
-spriteCenter.x = 0.0
-spriteCenter.y = 0.0
-textureName = "dust512.tga"// ringb2
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "125 125 125 255"// 180
-finishColor = "155 155 155 0"
-startRadius = 15.0 //5.0
-finishRadius = 60.0 // 50 
-animateTime = 5.0 //3.5
+//simulateBase = "sim_null"
+//lifeTime = 5.0
+//renderBase = "draw_sprite"
+//spriteCenter.x = 0.0
+//spriteCenter.y = 0.0
+//textureName = "dust512.tga"// ringb2
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "125 125 125 255"// 180
+//finishColor = "155 155 155 0"
+//startRadius = 15.0 //5.0
+//finishRadius = 60.0 // 50 
+//animateTime = 5.0 //3.5
 
 //[oRing]
-simulateBase = "sim_null"
-lifeTime = 0.5
-renderBase = "draw_planar"
-textureName = "ring.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 0 127"
-finishColor = "255 0 0 0"
-startRadius = 5.0
-finishRadius = 50.0
-animateTime = 0.5
+//simulateBase = "sim_null"
+//lifeTime = 0.5
+//renderBase = "draw_planar"
+//textureName = "ring.tga"
+//textureBlend = "one one modulate"
+//startColor = "255 255 0 127"
+//finishColor = "255 0 0 0"
+//startRadius = 5.0
+//finishRadius = 50.0
+//animateTime = 0.5
 
 [trail]
 simulateBase = "sim_ember"
@@ -249,60 +249,60 @@ emitVariance = "1.0 1.0 1.0"
 emitLife = 4
 
 //[Thrust]
-simulateBase = "sim_null"
-lifeTime = 2.0
-renderBase = "draw_sprite"
-spriteCenter.x = 0.0
-spriteCenter.y = 0.0
-textureName = "sgodlight1.tga"
-textureBlend = "one one modulate"
-startColor = "250 150 255 60"
-finishColor = "0 30 90 0"
-startRadius = 3.0
-finishRadius = 85.0
-animateTime = 2.0
+//simulateBase = "sim_null"
+//lifeTime = 2.0
+//renderBase = "draw_sprite"
+//spriteCenter.x = 0.0
+//spriteCenter.y = 0.0
+//textureName = "sgodlight1.tga"
+//textureBlend = "one one modulate"
+//startColor = "250 150 255 60"
+//finishColor = "0 30 90 0"
+//startRadius = 3.0
+//finishRadius = 85.0
+//animateTime = 2.0
 
 //[Heat]
-simulateBase = "sim_null"
-lifeTime = 3.0
-renderBase = "draw_sprite"
-spriteCenter.x = 0.0
-spriteCenter.y = 0.0
-textureName = "edfheat.tga"// ringb2
-textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
-startColor = "155 155 155 200"// 180
-finishColor = "180 180 180 0"
-startRadius = 5.0 //5.0
-finishRadius = 15.0 // 50 
-animateTime = 3.0 //3.5
+//simulateBase = "sim_null"
+//lifeTime = 3.0
+//renderBase = "draw_sprite"
+//spriteCenter.x = 0.0
+//spriteCenter.y = 0.0
+//textureName = "edfheat.tga"// ringb2
+//textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+//startColor = "155 155 155 200"// 180
+//finishColor = "180 180 180 0"
+//startRadius = 5.0 //5.0
+//finishRadius = 15.0 // 50 
+//animateTime = 3.0 //3.5
 
 //[Plasma]
-simulateBase = "sim_null"
-lifeTime = 1.8
-renderBase = "draw_sprite"
-spriteCenter.x = 0.0
-spriteCenter.y = 0.0
-textureName = "bcloud2.tga"// ringb2
-textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
-startColor = "150 150 150 220"// 180
-finishColor = "0 0 0 0"
-startRadius = 5.0 //5.0
-finishRadius = 20.0 // 50 
-animateTime = 1.8 //3.5
+//simulateBase = "sim_null"
+//lifeTime = 1.8
+//renderBase = "draw_sprite"
+//spriteCenter.x = 0.0
+//spriteCenter.y = 0.0
+//textureName = "bcloud2.tga"// ringb2
+//textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+//startColor = "150 150 150 220"// 180
+//finishColor = "0 0 0 0"
+//startRadius = 5.0 //5.0
+//finishRadius = 20.0 // 50 
+//animateTime = 1.8 //3.5
 
 //[Ringa]
-simulateBase = "sim_null"
-lifeTime = 2
-renderBase = "draw_sprite"
-spriteCenter.x = 0.0
-spriteCenter.y = 0.0
-textureName = "sgodlight1.tga"// ringb2
-textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
-startColor = "255 255 255 220"// 180
-finishColor = "0 40 90 0"
-startRadius = 15 //5.0
-finishRadius = 35.0 // 50 
-animateTime = 2 //3.5
+//simulateBase = "sim_null"
+//lifeTime = 2
+//renderBase = "draw_sprite"
+//spriteCenter.x = 0.0
+//spriteCenter.y = 0.0
+//textureName = "sgodlight1.tga"// ringb2
+//textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+//startColor = "255 255 255 220"// 180
+//finishColor = "0 40 90 0"
+//startRadius = 15 //5.0
+//finishRadius = 35.0 // 50 
+//animateTime = 2 //3.5
 
 [ring1]
 simulateBase = "sim_null"

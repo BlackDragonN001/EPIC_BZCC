@@ -100,7 +100,7 @@ buildItem4 = "apsatcom_b"
 
 
 //[Lod1]
-geometryName = "ibfactL1_b.xsi" ;geometry for lod1
-geometryScale = 2
-distance = 600
-dontShiftLOD = 1
+// geometryName = "ibfactL1_b.xsi" ;geometry for lod1
+// geometryScale = 2
+// distance = 600
+// dontShiftLOD = 1

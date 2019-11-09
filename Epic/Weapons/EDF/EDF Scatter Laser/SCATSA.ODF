@@ -55,14 +55,14 @@ emitVariance = "0.0 0.0 0.0"
 emitLife = 0.05
 
 //[Render]
-renderBase = "draw_trail"
-textureBlend = "one one modulate"
-textureName = "strail.tga"
-startColor = "255 120 180 220"
-finishColor = "200 0 40 0"
-startRadius = 1.7
-finishRadius = 0.6
-segmentTime = 0.05
+// renderBase = "draw_trail"
+// textureBlend = "one one modulate"
+// textureName = "strail.tga"
+// startColor = "255 120 180 220"
+// finishColor = "200 0 40 0"
+// startRadius = 1.7
+// finishRadius = 0.6
+// segmentTime = 0.05
 
 [Trail]
 renderBase = "draw_trail"

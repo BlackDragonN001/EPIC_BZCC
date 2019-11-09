@@ -29,16 +29,16 @@ damageValue(A) = 5 // absorbtion
 
 
 //[Core]
-simulateBase = "sim_null"
-lifeTime = 1.5
-renderBase = "draw_twirl"
-textureName = "flame.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 63 255"
-finishColor = "255 0 0 0"
-startRadius = 3.0
-finishRadius = 30.0
-animateTime = 1.5
+// simulateBase = "sim_null"
+// lifeTime = 1.5
+// renderBase = "draw_twirl"
+// textureName = "flame.tga"
+// textureBlend = "one one modulate"
+// startColor = "255 255 63 255"
+// finishColor = "255 0 0 0"
+// startRadius = 3.0
+// finishRadius = 30.0
+// animateTime = 1.5
 
 [Shock]
 simulateBase = "sim_null"

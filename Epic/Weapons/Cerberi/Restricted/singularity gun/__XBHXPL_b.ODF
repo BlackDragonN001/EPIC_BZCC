@@ -345,7 +345,7 @@ finishRadius = 6.0
 animateTime = 5
 
 //[posroll]
-/simulateBase = "sim_dust"
+//simulateBase = "sim_dust"
 //lifeTime = 3
 //renderBase = "draw_twirl"
 //textureName = "ssmoke.tga"

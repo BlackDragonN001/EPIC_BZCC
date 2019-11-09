@@ -205,29 +205,29 @@ animateTime = 3.0
 rotationRate = 2.0
 
 //[Trailer]
-renderBase = "draw_twirl_trail"
-textureName = "ssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor =   "170 170 170 108" //"153 153 153 128"
-finishColor = "253 253 253 0"
-startRadius = 1
-finishRadius = 2
-animateTime = 2.0
-emitDelay = 0.04
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "0.6 0.6 0.6"
-emitLife = 2.0
+// renderBase = "draw_twirl_trail"
+// textureName = "ssmoke.tga"
+// textureBlend = "srcalpha invsrcalpha modulatealpha"
+// startColor =   "170 170 170 108" //"153 153 153 128"
+// finishColor = "253 253 253 0"
+// startRadius = 1
+// finishRadius = 2
+// animateTime = 2.0
+// emitDelay = 0.04
+// emitVelocity = "0.0 0.0 0.0"
+// emitVariance = "0.6 0.6 0.6"
+// emitLife = 2.0
 
 
 //[trailer1]
-simulateBase = "sim_dust"
-lifeTime = 5e30
-renderBase = "draw_emit"
-emitName = "ivtank_b.trailer2"
-emitDelay = 0.3
-delayVariance = 0.1
-emitVelocity = "0.0 0 0.0"
-emitVariance = "6.0 0.0 6.0"
+// simulateBase = "sim_dust"
+// lifeTime = 5e30
+// renderBase = "draw_emit"
+// emitName = "ivtank_b.trailer2"
+// emitDelay = 0.3
+// delayVariance = 0.1
+// emitVelocity = "0.0 0 0.0"
+// emitVariance = "6.0 0.0 6.0"
 
 [trailer1]
 simulateBase = "sim_dust"

@@ -153,16 +153,16 @@ segmentTime = 3.0
 animateTime = 0.3
 
 //[flame]
-renderBase = "draw_trail"
-textureName = "tflame.tga"
-textureBlend = "one one modulate"
-textureRate = 0.05 //.05
-startColor = "255 255 255 255"
-finishColor = "255 255 255 0"
-startRadius = 1.0
-finishRadius = 1.0
-segmentTime = 0.03
-animateTime = 0.05
+// renderBase = "draw_trail"
+// textureName = "tflame.tga"
+// textureBlend = "one one modulate"
+// textureRate = 0.05 //.05
+// startColor = "255 255 255 255"
+// finishColor = "255 255 255 0"
+// startRadius = 1.0
+// finishRadius = 1.0
+// segmentTime = 0.03
+// animateTime = 0.05
 
 [light]
 simulateBase = "sim_null"
@@ -178,5 +178,5 @@ attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
 //[Lod1]
-geometryName = "iocmet00.xsi" ;geometry for lod1
-distance = 9000                 ;...distance over this many meters => switch to lod2
+// geometryName = "iocmet00.xsi" ;geometry for lod1
+// distance = 9000                 ;...distance over this many meters => switch to lod2

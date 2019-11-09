@@ -30,8 +30,8 @@ ExplodeOnHit = true
 SoundBounce = "jax02b.wav"
 
 //[BounceBombClass]
-bounceRatio = 0.5
-bounceSound = "jax02b.wav"
+// bounceRatio = 0.5
+// bounceSound = "jax02b.wav"
 
 [Render]
 renderBase = "draw_multi"

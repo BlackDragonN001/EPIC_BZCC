@@ -61,19 +61,19 @@ attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
 //[Flame]
-renderBase = "draw_twirl_trail"
-textureName = "flm5.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 255 255"
-finishColor = "180 170 160 0"
-startRadius = 8
-finishRadius = 2
-animateTime = 1.2
-rotationRate = 2.0
-emitDelay = 0.15
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "15.0 15.0 15.0"
-emitLife = 1.2
+// renderBase = "draw_twirl_trail"
+// textureName = "flm5.tga"
+// textureBlend = "one one modulate"
+// startColor = "255 255 255 255"
+// finishColor = "180 170 160 0"
+// startRadius = 8
+// finishRadius = 2
+// animateTime = 1.2
+// rotationRate = 2.0
+// emitDelay = 0.15
+// emitVelocity = "0.0 0.0 0.0"
+// emitVariance = "15.0 15.0 15.0"
+// emitLife = 1.2
 
 [flame]
 simulateBase = "sim_smoke"

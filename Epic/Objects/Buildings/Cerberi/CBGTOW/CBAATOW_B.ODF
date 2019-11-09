@@ -80,7 +80,7 @@ omegaTurret = 2.0
 detectRange = 800
 
 //[Lod1]
-geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
-geometryScale = 2.4
-distance = 550                   ;bsphere under 200 pixel => switch to lod1
-dontShiftLOD = 1
+// geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+// geometryScale = 2.4
+// distance = 550                   ;bsphere under 200 pixel => switch to lod1
+// dontShiftLOD = 1

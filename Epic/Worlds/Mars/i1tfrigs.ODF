@@ -175,5 +175,5 @@ finishRadius = 20.0
 rotationRate = 10.0
 
 //[Lod1]
-geometryName = "iocmet00.xsi" ;geometry for lod1
-distance = 5000                 ;...distance over this many meters => switch to lod2
+// geometryName = "iocmet00.xsi" ;geometry for lod1
+// distance = 5000                 ;...distance over this many meters => switch to lod2

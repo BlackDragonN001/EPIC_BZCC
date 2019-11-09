@@ -42,9 +42,9 @@ soundAmbient = "ipgen01.wav"
 detectRange = 500
 
 //[Lod1]
-geometryName = "ibpgenL1_b.xsi" ;geometry for lod1
-geometryScale = 2
-distance = 460                    ;bsphere under 200 pixel => switch to lod1
+// geometryName = "ibpgenL1_b.xsi" ;geometry for lod1
+// geometryScale = 2
+// distance = 460                    ;bsphere under 200 pixel => switch to lod1
 
 [Steam]
 renderBase = "draw_twirl_trail"

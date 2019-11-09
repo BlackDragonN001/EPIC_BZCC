@@ -62,7 +62,7 @@ scrapHold = 200
 scrapDelay = 1.0
 
 //[Lod1]
-geometryName = "cbrecyL1_b.xsi" ;geometry for lod1
-geometryScale = 3
-distance = 900                    ;bsphere under 200 pixel => switch to lod1
-dontShiftLOD = 1
+// geometryName = "cbrecyL1_b.xsi" ;geometry for lod1
+// geometryScale = 3
+// distance = 900                    ;bsphere under 200 pixel => switch to lod1
+// dontShiftLOD = 1

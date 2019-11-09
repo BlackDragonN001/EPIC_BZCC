@@ -200,13 +200,13 @@ animateTime = 0.2
 rotationRate = 0
 
 //[core]
-simulateBase = "sim_dust"
-lifeTime = 0.12
-renderBase = "draw_emit"
-emitName = "xmortgnd_b.coreemit"
-emitDelay = 0.04
-emitVelocity = "0.0 0 0.0"
-emitVariance = "0.0 0.0 0.0"
+// simulateBase = "sim_dust"
+// lifeTime = 0.12
+// renderBase = "draw_emit"
+// emitName = "xmortgnd_b.coreemit"
+// emitDelay = 0.04
+// emitVelocity = "0.0 0 0.0"
+// emitVariance = "0.0 0.0 0.0"
 
 [bits]
 simulateBase = "sim_null"
@@ -283,13 +283,13 @@ emitVariance = "4.0 4.0 4.0"
 emitLife = 2
 
 //[trail]
-simulateBase = "sim_ember"
-lifeTime = 0.1
-renderBase = "draw_emit"
-emitName = "xmortgnd_b.trail1"
-emitDelay = 0.015
-emitVelocity = "0 10 0"
-emitVariance = "70.0 70.0 70.0"
+// simulateBase = "sim_ember"
+// lifeTime = 0.1
+// renderBase = "draw_emit"
+// emitName = "xmortgnd_b.trail1"
+// emitDelay = 0.015
+// emitVelocity = "0 10 0"
+// emitVariance = "70.0 70.0 70.0"
 
 [trail1]
 simulateBase = "sim_smoke"
@@ -328,13 +328,13 @@ rotationrate = 2
 
 
 //[flame]
-simulateBase = "sim_smoke"
-lifeTime = 0.1
-renderBase = "draw_emit"
-emitName = "xcerbsml_b.flameemit"
-emitDelay = 0.1
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "0.0 0.0 0.0"
+// simulateBase = "sim_smoke"
+// lifeTime = 0.1
+// renderBase = "draw_emit"
+// emitName = "xcerbsml_b.flameemit"
+// emitDelay = 0.1
+// emitVelocity = "0.0 0.0 0.0"
+// emitVariance = "0.0 0.0 0.0"
 
 [flame]
 simulateBase = "sim_smoke"
@@ -384,17 +384,17 @@ finishRadius = 6.0
 animateTime = 5
 
 //[posroll]
-simulateBase = "sim_dust"
-lifeTime = 3
-renderBase = "draw_twirl"
-textureName = "ssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "32 32 32 255"
-finishColor = "127 127 127 0"
-startRadius = 2
-finishRadius = 1
-animateTime = 3
-rotationRate = 2
+// simulateBase = "sim_dust"
+// lifeTime = 3
+// renderBase = "draw_twirl"
+// textureName = "ssmoke.tga"
+// textureBlend = "srcalpha invsrcalpha modulatealpha"
+// startColor = "32 32 32 255"
+// finishColor = "127 127 127 0"
+// startRadius = 2
+// finishRadius = 1
+// animateTime = 3
+// rotationRate = 2
 
 
 [sparks]

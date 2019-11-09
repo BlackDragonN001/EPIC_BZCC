@@ -92,18 +92,18 @@ kickVeloc = 12.0
 ///////////////////////////////
 
 //[Shock]
-simulateBase = "sim_null"
-lifeTime = 0.3
-renderBase = "draw_sphere"
-textureName = "edfshock.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 63 57"
-finishColor = "255 255 255 0"
-startRadius = 3.0
-finishRadius = 80.0
-animateTime = 0.3
-latitudeBands = 8
-longitudeSegments = 16
+// simulateBase = "sim_null"
+// lifeTime = 0.3
+// renderBase = "draw_sphere"
+// textureName = "edfshock.tga"
+// textureBlend = "one one modulate"
+// startColor = "255 255 63 57"
+// finishColor = "255 255 255 0"
+// startRadius = 3.0
+// finishRadius = 80.0
+// animateTime = 0.3
+// latitudeBands = 8
+// longitudeSegments = 16
 
 [Shock]
 simulateBase = "sim_null"
@@ -260,13 +260,13 @@ emitVariance = "4.0 4.0 4.0"
 emitLife = 1.5
 
 //[trail]
-simulateBase = "sim_ember"
-lifeTime = 0.1
-renderBase = "draw_emit"
-emitName = "xmortgnd_b.trail1"
-emitDelay = 0.015
-emitVelocity = "0 10 0"
-emitVariance = "70.0 70.0 70.0"
+// simulateBase = "sim_ember"
+// lifeTime = 0.1
+// renderBase = "draw_emit"
+// emitName = "xmortgnd_b.trail1"
+// emitDelay = 0.015
+// emitVelocity = "0 10 0"
+// emitVariance = "70.0 70.0 70.0"
 
 [trail1]
 simulateBase = "sim_smoke"
@@ -336,29 +336,29 @@ attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
 //[ring]
-simulateBase = "sim_null"
-lifeTime = 10
-renderBase = "draw_planar"
-textureName = "grndchar.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "0 0 0 250"
-finishColor = "0 0 0 0"
-startRadius = 6.0
-finishRadius = 6.0
-animateTime = 5
+// simulateBase = "sim_null"
+// lifeTime = 10
+// renderBase = "draw_planar"
+// textureName = "grndchar.tga"
+// textureBlend = "srcalpha invsrcalpha modulatealpha"
+// startColor = "0 0 0 250"
+// finishColor = "0 0 0 0"
+// startRadius = 6.0
+// finishRadius = 6.0
+// animateTime = 5
 
 //[posroll]
-simulateBase = "sim_dust"
-lifeTime = 3
-renderBase = "draw_twirl"
-textureName = "ssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "32 32 32 255"
-finishColor = "127 127 127 0"
-startRadius = 2
-finishRadius = 1
-animateTime = 3
-rotationRate = 2
+// simulateBase = "sim_dust"
+// lifeTime = 3
+// renderBase = "draw_twirl"
+// textureName = "ssmoke.tga"
+// textureBlend = "srcalpha invsrcalpha modulatealpha"
+// startColor = "32 32 32 255"
+// finishColor = "127 127 127 0"
+// startRadius = 2
+// finishRadius = 1
+// animateTime = 3
+// rotationRate = 2
 
 [sparks]
 simulateBase = "sim_ember"

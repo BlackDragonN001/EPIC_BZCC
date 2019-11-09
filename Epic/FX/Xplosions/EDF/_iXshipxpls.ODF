@@ -95,18 +95,18 @@ kickVeloc = 6.0
 ///////////////////////////////
 
 //[Shock]
-simulateBase = "sim_null"
-lifeTime = 0.35
-renderBase = "draw_sphere"
-textureName = "tflamesphere2.tga"
-textureBlend = "one one modulate"
-startColor = "255 105 55 157"
-finishColor = "255 255 255 0"
-startRadius = 3.0
-finishRadius = 50.0
-animateTime = 0.35
-latitudeBands = 6
-longitudeSegments = 12
+//simulateBase = "sim_null"
+//lifeTime = 0.35
+//renderBase = "draw_sphere"
+//textureName = "tflamesphere2.tga"
+//textureBlend = "one one modulate"
+//startColor = "255 105 55 157"
+//finishColor = "255 255 255 0"
+//startRadius = 3.0
+//finishRadius = 50.0
+//animateTime = 0.35
+//latitudeBands = 6
+//longitudeSegments = 12
 
 [Shock]
 simulateBase = "sim_null"
@@ -181,13 +181,13 @@ animateTime = 0.8
 
 
 //[fire]
-simulateBase = "sim_smoke"
-lifeTime = 0.6
-renderBase = "draw_emit"
-emitName = "iXshipxpls.fireemit"
-emitDelay = 0.18
-emitVelocity = "0.0 0 0.0"
-emitVariance = "10.0 5.0 10.0"
+//simulateBase = "sim_smoke"
+//lifeTime = 0.6
+//renderBase = "draw_emit"
+//emitName = "iXshipxpls.fireemit"
+//emitDelay = 0.18
+//emitVelocity = "0.0 0 0.0"
+//emitVariance = "10.0 5.0 10.0"
 
 [fireemit]
 simulateBase = "sim_smoke"
@@ -203,13 +203,13 @@ animateTime = 1.0
 rotationRate = 3.0
 
 //[Shocks2]
-simulateBase = "sim_smoke"
-lifeTime = 0.35
-renderBase = "draw_emit"
-emitName = "iXshipxpls.shocks2emit"
-emitDelay = 0.05
-emitVelocity = "0.0 0 0.0"
-emitVariance = "25.0 5.0 25.0"
+//simulateBase = "sim_smoke"
+//lifeTime = 0.35
+//renderBase = "draw_emit"
+//emitName = "iXshipxpls.shocks2emit"
+//emitDelay = 0.05
+//emitVelocity = "0.0 0 0.0"
+//emitVariance = "25.0 5.0 25.0"
 
 [shocks2emit]
 simulateBase = "sim_smoke"
@@ -293,29 +293,29 @@ animateTime = 3.0
 rotationrate = -2
 
 //[trail]
-simulateBase = "sim_ember"
-lifeTime = 1.5
-renderBase = "draw_twirl_trail"
-textureName = "sssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "0 0 0 20"
-finishColor = "40 40 40 0"
-startRadius = 1
-finishRadius = 8
-animateTime = 1.5
-emitDelay = 0.02
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "4.0 4.0 4.0"
-emitLife = 2
+//simulateBase = "sim_ember"
+//lifeTime = 1.5
+//renderBase = "draw_twirl_trail"
+//textureName = "sssmoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "0 0 0 20"
+//finishColor = "40 40 40 0"
+//startRadius = 1
+//finishRadius = 8
+//animateTime = 1.5
+//emitDelay = 0.02
+//emitVelocity = "0.0 0.0 0.0"
+//emitVariance = "4.0 4.0 4.0"
+//emitLife = 2
 
 //[trail]
-simulateBase = "sim_ember"
-lifeTime = 0.1
-renderBase = "draw_emit"
-emitName = "xmortgnd_b.trail1"
-emitDelay = 0.015
-emitVelocity = "0 10 0"
-emitVariance = "70.0 70.0 70.0"
+//simulateBase = "sim_ember"
+//lifeTime = 0.1
+//renderBase = "draw_emit"
+//emitName = "xmortgnd_b.trail1"
+//emitDelay = 0.015
+//emitVelocity = "0 10 0"
+//emitVariance = "70.0 70.0 70.0"
 
 [trail1]
 simulateBase = "sim_smoke"
@@ -386,17 +386,17 @@ attenuateQuadratic = 0.0
 
 
 //[posroll]
-simulateBase = "sim_dust"
-lifeTime = 3
-renderBase = "draw_twirl"
-textureName = "ssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "32 32 32 255"
-finishColor = "127 127 127 0"
-startRadius = 2
-finishRadius = 1
-animateTime = 3
-rotationRate = 2
+//simulateBase = "sim_dust"
+//lifeTime = 3
+//renderBase = "draw_twirl"
+//textureName = "ssmoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "32 32 32 255"
+//finishColor = "127 127 127 0"
+//startRadius = 2
+//finishRadius = 1
+//animateTime = 3
+//rotationRate = 2
 
 [dust]
 simulateBase = "sim_null"
@@ -448,14 +448,14 @@ finishRadius = 15.0
 animateTime = 0.2
 
 //[trail2]
-simulateBase = "sim_null"
-lifeTime = .3
-renderBase = "draw_emit"
-emitName = "ixshipxpl.trail2emit"
-emitDelay = .06
-emitVelocity = "0.0 5.0 0.0"
-emitVariance = "50.0 40.0 50.0"
-emitBias = "0.0 5.0 0.0"
+//simulateBase = "sim_null"
+//lifeTime = .3
+//renderBase = "draw_emit"
+//emitName = "ixshipxpl.trail2emit"
+//emitDelay = .06
+//emitVelocity = "0.0 5.0 0.0"
+//emitVariance = "50.0 40.0 50.0"
+//emitBias = "0.0 5.0 0.0"
 
 [trail2]
 simulateBase = "sim_ember"

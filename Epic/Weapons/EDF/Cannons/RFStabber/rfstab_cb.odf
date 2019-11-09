@@ -70,18 +70,18 @@ segmentTime = 0.2
 animateTime = 0.2
 
 //[Flame]
-renderBase = "draw_twirl_trail"
-textureName = "flame.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 63 255"
-finishColor = "255 0 0 0"
-startRadius = 0.2
-finishRadius = 0.05
-animateTime = 0.1
-emitDelay = 0.002
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "3.0 3.0 2.0"
-emitLife = 0.7
+// renderBase = "draw_twirl_trail"
+// textureName = "flame.tga"
+// textureBlend = "one one modulate"
+// startColor = "255 255 63 255"
+// finishColor = "255 0 0 0"
+// startRadius = 0.2
+// finishRadius = 0.05
+// animateTime = 0.1
+// emitDelay = 0.002
+// emitVelocity = "0.0 0.0 0.0"
+// emitVariance = "3.0 3.0 2.0"
+// emitLife = 0.7
 
 [Trails]
 renderBase = "draw_trail"
@@ -113,13 +113,13 @@ emitVariance = "2.0 2.0 2.0"
 emitLife = 0.1
 
 //[Trail]
-renderBase = "draw_trail"
-textureBlend = "one one modulate"
-startColor = "160 185 255 60"
-finishColor = "60 85 255 0"
-startRadius = 0.10
-finishRadius = 0.20
-segmentTime = 0.3
+// renderBase = "draw_trail"
+// textureBlend = "one one modulate"
+// startColor = "160 185 255 60"
+// finishColor = "60 85 255 0"
+// startRadius = 0.10
+// finishRadius = 0.20
+// segmentTime = 0.3
 
 [Flame]
 renderBase = "draw_twirl_trail"

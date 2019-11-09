@@ -90,25 +90,25 @@ finishRadius = 8.0
 animateTime = 10.0
 
 //[Char]
-simulateBase = "sim_null"
-lifeTime = 3.0
-renderBase = "draw_planar"
-textureName = "mistring.tga"
-textureBlend = "one one modulate"
-startColor = "255 227 55 200"
-finishColor = "50 00 0 0"
-startRadius = 4.0
-finishRadius = 0.5
-animateTime = 3.0
+// simulateBase = "sim_null"
+// lifeTime = 3.0
+// renderBase = "draw_planar"
+// textureName = "mistring.tga"
+// textureBlend = "one one modulate"
+// startColor = "255 227 55 200"
+// finishColor = "50 00 0 0"
+// startRadius = 4.0
+// finishRadius = 0.5
+// animateTime = 3.0
 
 //[cloud]
-simulateBase = "sim_dust"
-lifeTime = 1.0
-renderBase = "draw_emit"
-emitName = "xsplasgnd_b.cloudemit"
-emitDelay = 0.8
-emitVelocity = "0.0 6.5 0.0"
-emitVariance = "15.0 0.0 15.0"
+// simulateBase = "sim_dust"
+// lifeTime = 1.0
+// renderBase = "draw_emit"
+// emitName = "xsplasgnd_b.cloudemit"
+// emitDelay = 0.8
+// emitVelocity = "0.0 6.5 0.0"
+// emitVariance = "15.0 0.0 15.0"
 
 [cloudemit]
 simulateBase = "sim_smoke"
@@ -123,21 +123,21 @@ finishRadius = 7.0
 animateTime = 3.0
 
 //[Flame]
-simulateBase = "sim_smoke"
-lifeTime = 1.0
-renderBase = "draw_twirl_trail"
-textureName = "sssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "30 30 30 60"
-finishColor = "60 60 60 0"
-startRadius =  4
-finishRadius = 7.0
-animateTime = 3.0
-rotationRate = 10.0
-emitDelay = 0.06
-emitVelocity = "0.0 5.0 0.0"
-emitVariance = "5.0 5.0 5.0"
-emitLife = 3.0
+// simulateBase = "sim_smoke"
+// lifeTime = 1.0
+// renderBase = "draw_twirl_trail"
+// textureName = "sssmoke.tga"
+// textureBlend = "srcalpha invsrcalpha modulatealpha"
+// startColor = "30 30 30 60"
+// finishColor = "60 60 60 0"
+// startRadius =  4
+// finishRadius = 7.0
+// animateTime = 3.0
+// rotationRate = 10.0
+// emitDelay = 0.06
+// emitVelocity = "0.0 5.0 0.0"
+// emitVariance = "5.0 5.0 5.0"
+// emitLife = 3.0
 
 [cloud]
 simulateBase = "sim_smoke"

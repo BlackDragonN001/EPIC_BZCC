@@ -100,21 +100,21 @@ animateTime = 10.0
 
 
 //[cloud]
-simulateBase = "sim_smoke"
-lifeTime = 0.5
-renderBase = "draw_twirl"//_trail"
-textureName = "sssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "0 0 0 90"
-finishColor = "40 40 40 0"
-startRadius =  4
-finishRadius = 7.0
-animateTime = 2.0
-rotationRate = 10.0
-emitDelay = 0.05
-emitVelocity = "0.0 10.0 0.0"
-emitVariance = "15.0 15.0 15.0"
-emitLife = 3
+// simulateBase = "sim_smoke"
+// lifeTime = 0.5
+// renderBase = "draw_twirl"//_trail"
+// textureName = "sssmoke.tga"
+// textureBlend = "srcalpha invsrcalpha modulatealpha"
+// startColor = "0 0 0 90"
+// finishColor = "40 40 40 0"
+// startRadius =  4
+// finishRadius = 7.0
+// animateTime = 2.0
+// rotationRate = 10.0
+// emitDelay = 0.05
+// emitVelocity = "0.0 10.0 0.0"
+// emitVariance = "15.0 15.0 15.0"
+// emitLife = 3
 
 [cloud]
 simulateBase = "sim_dust"
@@ -140,21 +140,21 @@ rotationrate = 10
 
 
 //[Flame2]// **easy way -> culled**
-simulateBase = "sim_smoke"
-lifeTime = 0.12
-renderBase = "draw_twirl"//_trail"
-textureName = "flm5.tga"
-textureBlend = "one one modulate"
-finishColor = "50 0 0 0" //255 155 155 255"
-startColor = "255 255 255 255"
-startRadius = 5
-finishRadius = 0.1
-animateTime = 0.8
-rotationRate = 10.0
-emitDelay = 0.05
-emitVelocity = "0.0 18.0 0.0"
-emitVariance = "8.0 8.0 8.0"
-emitLife = 1
+// simulateBase = "sim_smoke"
+// lifeTime = 0.12
+// renderBase = "draw_twirl"//_trail"
+// textureName = "flm5.tga"
+// textureBlend = "one one modulate"
+// finishColor = "50 0 0 0" //255 155 155 255"
+// startColor = "255 255 255 255"
+// startRadius = 5
+// finishRadius = 0.1
+// animateTime = 0.8
+// rotationRate = 10.0
+// emitDelay = 0.05
+// emitVelocity = "0.0 18.0 0.0"
+// emitVariance = "8.0 8.0 8.0"
+// emitLife = 1
 
 [Flame2]
 simulateBase = "sim_dust"
@@ -179,21 +179,21 @@ animateTime = 0.8
 rotationRate = 10.0
 
 //[Flame3]
-simulateBase = "sim_smoke"
-lifeTime = 0.15
-renderBase = "draw_twirl"//_trail"
-textureName = "flm4.tga"
-textureBlend = "one one modulate"
-finishColor = "50 0 0 0" //255 155 155 255"
-startColor = "255 255 255 255"
-startRadius = 4
-finishRadius = 0.1
-animateTime = 0.8
-rotationRate = 10.0
-emitDelay = 0.08
-emitVelocity = "0.0 9.0 0.0"
-emitVariance = "7.0 7.0 7.0"
-emitLife = 1.2
+// simulateBase = "sim_smoke"
+// lifeTime = 0.15
+// renderBase = "draw_twirl"//_trail"
+// textureName = "flm4.tga"
+// textureBlend = "one one modulate"
+// finishColor = "50 0 0 0" //255 155 155 255"
+// startColor = "255 255 255 255"
+// startRadius = 4
+// finishRadius = 0.1
+// animateTime = 0.8
+// rotationRate = 10.0
+// emitDelay = 0.08
+// emitVelocity = "0.0 9.0 0.0"
+// emitVariance = "7.0 7.0 7.0"
+// emitLife = 1.2
 
 [Flame3]
 simulateBase = "sim_dust"

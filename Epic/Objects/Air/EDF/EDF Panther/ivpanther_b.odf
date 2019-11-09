@@ -247,10 +247,10 @@ geometryName = "iocmet00.xsi" ;geometry for lod1
 distance = 1200                 ;...distance over this many meters => switch to lod2
 
 //[DeployableClass]
-timeDeploy = 0.5
-timeUndeploy = 0.5
-soundDeploy = "avartle0.wav"
-soundUndeploy = "avartle4.wav"
+// timeDeploy = 0.5
+// timeUndeploy = 0.5
+// soundDeploy = "avartle0.wav"
+// soundUndeploy = "avartle4.wav"
 
 
 

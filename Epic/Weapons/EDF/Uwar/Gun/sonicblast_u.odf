@@ -86,13 +86,13 @@ segmentTime = 2
 animateTime = 5
 
 //[Light]
-renderBase = "draw_light"
-startColor = "100 100 255 1500"
-finishColor = "100 100 255 1500"
-startRadius = 65.0
-finishRadius = 65.0
-animateTime = 6
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+// renderBase = "draw_light"
+// startColor = "100 100 255 1500"
+// finishColor = "100 100 255 1500"
+// startRadius = 65.0
+// finishRadius = 65.0
+// animateTime = 6
+// attenuateConstant = 0.0
+// attenuateLinear = 1.0
+// attenuateQuadratic = 0.0
 

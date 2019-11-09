@@ -70,13 +70,13 @@ animateTime = 0.23
 geomName = "g_fflash.xsi"//sflash
 
 //[e3]
-simulateBase = "sim_smoke"
-lifeTime = 0.1
-renderBase = "draw_emit"
-emitName = "gbcann_cb.shell"
-emitDelay = 0.15
-emitVelocity = "3.0 5.0 0.0"//.4 0 0        // Shell casing 'physics'
-emitVariance = "0.0 0.0 0.0"// 1 1.5 0   // -----------"--------------
+// simulateBase = "sim_smoke"
+// lifeTime = 0.1
+// renderBase = "draw_emit"
+// emitName = "gbcann_cb.shell"
+// emitDelay = 0.15
+// emitVelocity = "3.0 5.0 0.0"//.4 0 0        // Shell casing 'physics'
+// emitVariance = "0.0 0.0 0.0"// 1 1.5 0   // -----------"--------------
 
 [shell]
 simulateBase = "sim_ember"

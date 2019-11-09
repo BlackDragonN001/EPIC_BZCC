@@ -90,15 +90,15 @@ emitvelocity = "0 5 0"
 emitbias = "0 5 0"
 
 //[Puff5]
-renderBase = "draw_twirl"
-textureName = "sflame2.tga"
-textureBlend = "one one modulate"
-startColor = "60 0 190 160"//"255 255 200 128"
-finishColor = "255 150 55 0"
-startRadius = 2
-finishRadius = 0.1
-rotationrate = -0.8
-animateTime = 1.9
-emitvelocity = "0 5 0"
-emitbias = "0 5 0"
+// renderBase = "draw_twirl"
+// textureName = "sflame2.tga"
+// textureBlend = "one one modulate"
+// startColor = "60 0 190 160"//"255 255 200 128"
+// finishColor = "255 150 55 0"
+// startRadius = 2
+// finishRadius = 0.1
+// rotationrate = -0.8
+// animateTime = 1.9
+// emitvelocity = "0 5 0"
+// emitbias = "0 5 0"
 

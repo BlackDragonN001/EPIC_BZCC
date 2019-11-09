@@ -52,18 +52,18 @@ animateTime = .8
 rotationrate = 2
 
 //[Core2]
-simulateBase = "sim_dust"
-lifeTime = .8
-renderBase = "draw_twirl"
-textureName = "bluarchit.tga"
-textureBlend = "one one modulate"
-startColor = "200 212 250 255"
-finishColor = "125 125 125 0"
-startRadius = 20.0
-finishRadius = 30.0
-animateTime = 0.6
-animateTime = .8
-rotationrate = -1.6
+// simulateBase = "sim_dust"
+// lifeTime = .8
+// renderBase = "draw_twirl"
+// textureName = "bluarchit.tga"
+// textureBlend = "one one modulate"
+// startColor = "200 212 250 255"
+// finishColor = "125 125 125 0"
+// startRadius = 20.0
+// finishRadius = 30.0
+// animateTime = 0.6
+// animateTime = .8
+// rotationrate = -1.6
 
 [Shock]
 simulateBase = "sim_dust"
