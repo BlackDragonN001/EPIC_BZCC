@@ -38,26 +38,26 @@ particleCount4 = 8
 particleVeloc4 = "30.0 40.0 30.0"
 
 //[cloud1]
-simulateBase = "sim_smoke"
-lifeTime = 0.2
-renderBase = "draw_emit"
-emitName = "spdebris.cloud1emit"
-emitDelay = 0.02
-emitVelocity = "5.0 5.0 5.0"
-emitVariance = "5.0 5.0 5.0"
+//simulateBase = "sim_smoke"
+//lifeTime = 0.2
+//renderBase = "draw_emit"
+//emitName = "spdebris.cloud1emit"
+//emitDelay = 0.02
+//emitVelocity = "5.0 5.0 5.0"
+//emitVariance = "5.0 5.0 5.0"
 
 //[cloud1emit]
-simulateBase = "sim_ember"
-lifeTime = 7
-renderBase = "draw_twirl"
-textureName = "spdebris1.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha" 
-startColor = "255 100 100 255"
-finishColor = "100 100 100 255"
-startRadius = 2
-finishRadius = 2
-animateTime = 7
-rotationRate = .3
+//simulateBase = "sim_ember"
+//lifeTime = 7
+//renderBase = "draw_twirl"
+//textureName = "spdebris1.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha" 
+//startColor = "255 100 100 255"
+//finishColor = "100 100 100 255"
+//startRadius = 2
+/finishRadius = 2
+//animateTime = 7
+//rotationRate = .3
 
 [Cloud1]
 simulateBase = "sim_ember"
@@ -124,7 +124,7 @@ animateTime = 3
 
 
 
-[//Chunks]
+[Chunks]
 simulateBase = "sim_smoke"
 lifeTime = 0.1
 renderBase = "draw_emit"

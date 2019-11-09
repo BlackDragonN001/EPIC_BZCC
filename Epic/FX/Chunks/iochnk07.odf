@@ -1,6 +1,5 @@
 [GameObjectClass]
 geometryName = "iochnk07.xsi"
-classLabel = "plant"
 geometryScale = 0.6
 classLabel = "plant"
 collisionRadius = 1.0

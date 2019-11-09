@@ -45,7 +45,6 @@ armorClass = N
 CanAcceptPowerups = false
 
 needPilot = 1
-CanAcceptPowerups = false
 isFlying = true
 
 SmartIsAirUnitCheck = false

@@ -52,7 +52,7 @@ attenuateConstant = 0.0
 attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
-//[Smoke]
+[Smoke]
 renderBase = "draw_twirl_trail"
 textureName = "ssmoke.tga"
 textureBlend = "srcalpha invsrcalpha modulatealpha"
@@ -66,7 +66,7 @@ emitVelocity = "0.0 0.0 0.0"
 emitVariance = "0.6 0.6 0.6"
 emitLife = .5
 
-//[Flame]
+[Flame]
 renderBase = "draw_twirl_trail"
 textureName = "sflame.tga"
 textureBlend = "one one modulate"

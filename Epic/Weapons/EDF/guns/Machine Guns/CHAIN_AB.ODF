@@ -30,9 +30,6 @@ renderName4 = "chain_ab.trail"
 
 [Flare]
 renderBase = "draw_light"
-startColor = "255 155 55 100"
-finishColor = "255 155 55 100"
-textureBlend = "one one modulate"
 startColor = "55 155 255 255"
 finishColor = "55 155 255 255"
 startRadius = 15.0
@@ -54,7 +51,7 @@ finishRadius = 0.08
 segmentTime = 0.035
 animateTime = 0.035
 
-//[Flame]
+[Flame]
 renderBase = "draw_twirl_trail"
 textureName = "flame.tga"
 textureBlend = "one one modulate"

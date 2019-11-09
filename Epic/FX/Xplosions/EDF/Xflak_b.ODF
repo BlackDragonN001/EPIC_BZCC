@@ -333,7 +333,7 @@ startRadius = 6.0
 finishRadius = 6.0
 animateTime = 5
 
-[posroll]
+[posroll2]
 simulateBase = "sim_dust"
 lifeTime = 3
 renderBase = "draw_twirl"

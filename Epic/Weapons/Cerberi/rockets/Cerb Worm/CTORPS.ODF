@@ -38,19 +38,19 @@ renderName2 = "ctorps.Light1"
 renderName3 = "ctorps.Light"
 
 //[Smoke]
-renderBase = "draw_twirl_trail"
-textureName = "smoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "0 64 127 64"
-finishColor = "200 200 255 0"
-startRadius = 0.2
-finishRadius = 2.0
-rotationRate = 2.0
-animateTime = 0.1
-emitDelay = 0.005
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "2.0 2.0 2.0"
-emitLife = 0.1
+//renderBase = "draw_twirl_trail"
+//textureName = "smoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "0 64 127 64"
+//finishColor = "200 200 255 0"
+//startRadius = 0.2
+//finishRadius = 2.0
+//rotationRate = 2.0
+//animateTime = 0.1
+//emitDelay = 0.005
+//emitVelocity = "0.0 0.0 0.0"
+//emitVariance = "2.0 2.0 2.0"
+//emitLife = 0.1
 
 [trailer]
 renderBase = "draw_trail"
@@ -90,14 +90,14 @@ finishRadius = 7.0
 rotationRate = 10.0
 
 //[Light2]
-renderBase = "draw_sprite"
-textureName = "sgodlight2.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 255 255"
-finishColor = "150 200 255 255"
-startRadius = 5.0
-finishRadius = 5.0
-rotationRate = -8.0
+//renderBase = "draw_sprite"
+//textureName = "sgodlight2.tga"
+//textureBlend = "one one modulate"
+//startColor = "255 255 255 255"
+//finishColor = "150 200 255 255"
+//startRadius = 5.0
+//finishRadius = 5.0
+//rotationRate = -8.0
 
 [Light]
 renderBase = "draw_light"
@@ -111,15 +111,15 @@ attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
 //[trailer]
-simulateBase = "sim_dust"//dust
-lifeTime = 1.5 //2.5
-renderBase = "draw_trail"
-textureName = "scerbbeam.tga"
-textureBlend = "one one modulate"
-textureRate = 0.08
-startColor = "180 80 255 250"
-finishColor = "0 0 100 0"
-startRadius = 0.2
-finishRadius = 1.0
-segmentTime = 0.2
-animateTime = 0.8
+//simulateBase = "sim_dust"//dust
+//lifeTime = 1.5 //2.5
+//renderBase = "draw_trail"
+//textureName = "scerbbeam.tga"
+//textureBlend = "one one modulate"
+//textureRate = 0.08
+//startColor = "180 80 255 250"
+//finishColor = "0 0 100 0"
+//startRadius = 0.2
+//finishRadius = 1.0
+//segmentTime = 0.2
+//animateTime = 0.8

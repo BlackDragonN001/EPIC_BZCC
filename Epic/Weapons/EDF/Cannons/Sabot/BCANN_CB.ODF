@@ -35,7 +35,7 @@ renderName1 = "bcann_cb.e1"
 renderName2 = "bcann_cb.e2"
 renderName3 = "bcann_cb.e3"
 renderName4 = "bcann_cb.e4"
-renderName4 = "bcann_cb.flare"
+renderName5 = "bcann_cb.flare"
 
 [e1]
 simulateBase = "sim_null"

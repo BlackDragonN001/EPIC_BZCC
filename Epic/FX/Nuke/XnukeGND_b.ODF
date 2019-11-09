@@ -119,17 +119,17 @@ emitVelocity = "0.0 20 0.0"
 emitVariance = "15.0 0.0 15.0"
 
 //[Shocksemit]
-simulateBase = "sim_smoke"
-lifeTime = 8.0
-renderBase = "draw_geom"
-textureName = "nuketex.pic"
-textureBlend = "one one modulate"
-startColor = "255 255 255 255"
-finishColor = "255 255 255 0"
-startRadius = 20.0
-finishRadius = 50.0
-animateTime = 8.0
-geomName = "nukeshroom.xsi"
+//simulateBase = "sim_smoke"
+//lifeTime = 8.0
+//renderBase = "draw_geom"
+//textureName = "nuketex.pic"
+//textureBlend = "one one modulate"
+//startColor = "255 255 255 255"
+//finishColor = "255 255 255 0"
+//startRadius = 20.0
+//finishRadius = 50.0
+//animateTime = 8.0
+//geomName = "nukeshroom.xsi"
 
 [shocksemit]
 simulateBase = "sim_smoke"
@@ -211,32 +211,28 @@ animateTime = 4
 rotationRate = -3
 
 //[core]
-simulateBase = "sim_null"
-lifeTime = 3
-renderBase = "draw_sprite"
-textureName = "nukecore.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 255 255"
-finishColor = "255 255 255 0"
-startRadius = 45.0
-finishRadius = 50.0
-animateTime = 3
-//latitudeBands = 8
-//longitudeSegments = 16
+//simulateBase = "sim_null"
+//lifeTime = 3
+//renderBase = "draw_sprite"
+//textureName = "nukecore.tga"
+//textureBlend = "one one modulate"
+//startColor = "255 255 255 255"
+/finishColor = "255 255 255 0"
+//startRadius = 45.0
+//finishRadius = 50.0
+//animateTime = 3
 
 //[core2]
-simulateBase = "sim_null"
-lifeTime = 0.6
-renderBase = "draw_sphere"
-textureName = "plasxreds.tga"
-textureBlend = "one one modulate"
-startColor = "255 255 255 255"
-finishColor = "255 255 255 0"
-startRadius = 7.0
-finishRadius = 5.0
-animateTime = 0.6
-latitudeBands = 8
-longitudeSegments = 16
+//simulateBase = "sim_null"
+//lifeTime = 0.6
+//renderBase = "draw_sphere"
+//textureName = "plasxreds.tga"
+//textureBlend = "one one modulate"
+//startColor = "255 255 255 255"
+//finishColor = "255 255 255 0"
+//startRadius = 7.0
+//finishRadius = 5.0
+//animateTime = 0.6
 
 [cloud]
 simulateBase = "sim_dust"
@@ -320,7 +316,7 @@ emitVelocity = "0.0 0.0 0.0"
 emitVariance = "40.0 40.0 40.0"
 emitLife = 2
 
-//[trail]
+[trail2]
 simulateBase = "sim_ember"
 lifeTime = 0.1
 renderBase = "draw_emit"
@@ -467,17 +463,17 @@ finishRadius = 6.0
 animateTime = 5
 
 //[posroll]
-simulateBase = "sim_dust"
-lifeTime = 3
-renderBase = "draw_twirl"
-textureName = "sssmoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "32 32 32 255"
-finishColor = "127 127 127 0"
-startRadius = 2
-finishRadius = 1
-animateTime = 3
-rotationRate = 2
+//simulateBase = "sim_dust"
+//lifeTime = 3
+//renderBase = "draw_twirl"
+//textureName = "sssmoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "32 32 32 255"
+//finishColor = "127 127 127 0"
+//startRadius = 2
+//finishRadius = 1
+//animateTime = 3
+//rotationRate = 2
 
 [sparks]
 simulateBase = "sim_null"
@@ -529,7 +525,7 @@ finishRadius = 192
 animateTime = 36.0
 
 
-//[char2]
+[char2]
 simulateBase = "sim_null"
 lifeTime = 8.0
 renderBase = "draw_planar"

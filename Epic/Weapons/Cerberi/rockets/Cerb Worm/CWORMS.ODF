@@ -40,7 +40,7 @@ renderName2 = "cworms.flare"
 //renderName3 = "cworms.sparkle"
 renderName4 = "cworms.trailer"
 
-//[Light]
+[Light]
 renderBase = "draw_light"
 startColor = "100 55 250 400"
 finishColor = "100 55 250 400"
@@ -76,18 +76,18 @@ emitVariance = "3.0 3.0 3.0"
 emitLife = 1.5
 
 //[trailer]
-simulateBase = "sim_dust"//dust
-lifeTime = 1.5 //2.5
-renderBase = "draw_trail"
-textureName = "scerbbeam.tga"
-textureBlend = "one one modulate"
-textureRate = 0.08
-startColor = "180 80 255 250"
-finishColor = "0 0 100 0"
-startRadius = 0.2
-finishRadius = 1.0
-segmentTime = 0.2
-animateTime = 0.8
+//simulateBase = "sim_dust"//dust
+//lifeTime = 1.5 //2.5
+//renderBase = "draw_trail"
+//textureName = "scerbbeam.tga"
+//textureBlend = "one one modulate"
+//textureRate = 0.08
+//startColor = "180 80 255 250"
+//finishColor = "0 0 100 0"
+//startRadius = 0.2
+//finishRadius = 1.0
+//segmentTime = 0.2
+//animateTime = 0.8
 
 [Trailer]
 renderBase = "draw_trail"
@@ -116,13 +116,13 @@ animateTime = 1.0
 segmentTime = 1.0
 
 //[Trail]
-renderBase = "draw_trail"
-textureName = "sootrail.tga"
-textureBlend = "one one modulate"
-textureRate = 0.05
-startColor =   "80 80 80 190" //"153 153 153 128"
-finishColor = "150 150 150 0
-startRadius = 0.3
-finishRadius = 1
-animateTime = 1.7
-segmentTime = 0.15
+//renderBase = "draw_trail"
+//textureName = "sootrail.tga"
+//textureBlend = "one one modulate"
+//textureRate = 0.05
+//startColor =   "80 80 80 190" //"153 153 153 128"
+//finishColor = "150 150 150 0
+//startRadius = 0.3
+//finishRadius = 1
+//animateTime = 1.7
+//segmentTime = 0.15

@@ -104,19 +104,20 @@ attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
 //[dust]
-simulateBase = "draw_twirl_trail"
-lifeTime = 3.0
-textureName = "smoke.tga"
-textureBlend = "srcalpha invsrcalpha modulatealpha"
-startColor = "150 150 150 100"
-finishColor = "200 200 200 0"
-startRadius = 0.7
-finishRadius = 3.0
-animateTime = 3.0
-emitDelay = 0.01
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "1.0 1.0 1.0"
-emitLife = 0.5
+//simulateBase = "sim_smoke"
+//lifeTime = 3.0
+//renderBase = "draw_twirl_trail"
+//textureName = "smoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "150 150 150 100"
+//finishColor = "200 200 200 0"
+//startRadius = 0.7
+//finishRadius = 3.0
+//animateTime = 3.0
+//emitDelay = 0.01
+//emitVelocity = "0.0 0.0 0.0"
+//emitVariance = "1.0 1.0 1.0"
+//emitLife = 0.5
 
 [dust2]
 simulateBase = "sim_smoke"

@@ -154,13 +154,13 @@ attenuateQuadratic = 0.0
 simulateBase = "sim_smoke"
 lifeTime = 0.1
 renderBase = "draw_emit"
-emitName = "dmgvhcl2.lightflash"
+emitName = "dmgvhcl2.lightflashemit"
 emitDelay = 0.1
 emitVelocity = "0.1 0.1 0.1"
 emitVariance = "0.1 0.1 0.1"
 emitDelayVar = 0.02
 
-[lightflash]
+[lightflashemit]
 simulateBase = "sim_smoke"
 lifeTime = 0.1
 renderBase = "draw_light"

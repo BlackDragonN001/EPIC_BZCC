@@ -6,7 +6,7 @@
 classLabel = "explosion"
 
 particleTypes = 12
-particleClass1 = "xgasxpl.core"
+particleClass1 = "xmortgnd_b.core"
 particleCount1 = 1
 particleVeloc1 = "0.0 0.0 0.0"
 
@@ -14,7 +14,7 @@ particleClass2 = "xmortgnd_b.shock"
 particleCount2 = 1
 particleVeloc2 = "0.0 0.0 0.0"
 
-particleClass3 = "xgasxpl.light"
+particleClass3 = "xmortgnd_b.light"
 particleCount3 = 1
 particleVeloc3 = "0.0 0.0 0.0"
 

@@ -25,7 +25,7 @@ damageValue(A) = 110 // absorbtion
 [Render]
 renderBase = "draw_multi"
 renderCount = 4
-renderName2 = "salvo.flare"
+renderName2 = "salvo_b.flare"
 renderName3 = "salvo_b.smoke"
 renderName4 = "salvo_b.flame"
 renderName1 = "salvo_b.trail2"

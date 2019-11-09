@@ -36,7 +36,6 @@ avoidRange = 35
 avoidStrength = 150
 omegaWaver = 1
 rateWaver = 8
-TeamFilter = 3
 
 [Render]
 renderBase = "draw_multi"

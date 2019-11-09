@@ -135,7 +135,6 @@ selectAttackMsg = "ivtank02.wav"
 selectFollowMsg = "ivtank04.wav"
 selectGoMsg = "ivtank04.wav"
 selectOtherMsg = "ivtank05.wav"
-holdMsg = "ivtank12.wav"
 
 goMsg = "ivtank04.wav"
 attackMsg = "ivtank06.wav"
@@ -210,7 +209,7 @@ segmentTime = .2
 animateTime = .2
 emit velocity = 0 0 -80
 
-//[flame]
+[flame]
 renderBase = "draw_trail"
 textureName = "tflame.tga"
 textureBlend = "one one modulate"

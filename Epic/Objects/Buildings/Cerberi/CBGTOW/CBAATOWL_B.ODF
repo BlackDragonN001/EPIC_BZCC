@@ -18,7 +18,7 @@ imageSignature = 1.0
 radarSignature = 1.0
 isAssault = 1
 ownsTerrain = 0
-armorClass = H
+armorClass = L //H
 boxCollide = 1
 
 LightingType = 1
@@ -26,8 +26,6 @@ LightingType = 1
 explosionName = "xcerbxplb"
 
 upgradeName = "cbgtowl_b"
-
-armorClass = l
 
 buildSupport = "A"
 buildRequire = "F"
