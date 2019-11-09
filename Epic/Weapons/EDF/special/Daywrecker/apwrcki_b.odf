@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "apwrck00.x"
+classLabel = "daywrecker"
+scrapCost = 60
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 0
+unitName = "Day Wrecker"
+aiName = "PowerUpProcess"
+
+requireCount = 3
+requireName1 = "ibcbun_b"
+requireText1 = "Build Relay"
+requireName2 = "ibtcen_b"
+requireText2 = "Build Tech Center"
+requireName3 = "ibfact_b"
+requireText3 = "Build Factory"
+
+
+[DayWreckerClass]
+xplBlast = "xnukegnd_b"
+

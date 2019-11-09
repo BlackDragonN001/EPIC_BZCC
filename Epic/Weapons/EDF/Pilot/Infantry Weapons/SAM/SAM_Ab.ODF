@@ -1,0 +1,74 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "iorckt00.xsi"
+shotSound = "crckt02.wav"
+
+renderName = "sam_ab.render"
+
+xplGround = "xheatgnd"
+xplVehicle = "xheatcar"
+xplBuilding = "xheatbld"
+
+ammoCost = 45
+lifeSpan = 4.0 // 400.2m
+shotSpeed = 160.0
+
+damageValue(N) = 1010 // none
+damageValue(L) = 510 // light
+damageValue(H) = 200 // heavy
+
+damageValue(S) = 400 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 600 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5
+
+[ThermalMissileClass]
+coneAngle = 2.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "sam_ab.flare"
+renderName2 = "sam_ab.smoke"
+renderName3 = "sam_ab.flame"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 5.0
+finishRadius = 5.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.02
+animateTime = 0.1
+emitDelay = 0.003
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.1

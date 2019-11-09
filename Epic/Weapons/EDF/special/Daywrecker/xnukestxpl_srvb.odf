@@ -1,0 +1,539 @@
+// =====================
+// NUCLEAR EXPLOSION - Created by Steeveeo, tweaks by General BlackDragon
+// =====================
+
+[ExplosionClass]
+startupright = 1
+classLabel = "explosion"
+
+particleTypes = 10
+particleClass9 = "xnukestxpl_srvb.groundemit"
+particleCount9 = 2
+particleVeloc9 = "0 0 0"
+particleClass1 = "xnukestxpl_srvb.grounddust"
+particleCount1 = 0
+particleVeloc1 = "0 0 0"
+particleClass7 = "xnukestxpl_srvb.shock"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+particleClass8 = "xnukestxpl_srvb.light"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+particleClass6 = "xnukestxpl_srvb.lightground"
+particleCount6 = 5
+particleVeloc6 = "0 0 0"
+particleClass5 = "xnukestxpl_srvb.heatlines"
+particleCount5 = 5
+particleVeloc5 = "225 0 225"
+particleClass4 = "xnukestxpl_srvb.groundbase"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleClass2 = "xnukestxpl_srvb.plume"
+particleCount2 = 1
+particleVeloc2 = "0 0 0"
+particleClass3 = "xnukestxpl_srvb.stack"
+particleCount3 = 75
+particleVeloc3 = "1 30 1"
+//particlebias3 = "2 7.5 2"
+particleClass10 = "xnukestxpl_srvb.psemit"
+particleCount10 = 1
+particleVeloc10 = "0 0 0"
+
+explSound = "xbmbxpl_srv.wav"
+
+damageRadius = 600.0
+
+damageValue(N) = 6450
+damageValue(L) = 5700
+damageValue(H) = 5050
+
+damageValue(S) = 5700
+damageValue(D) = 6450
+damageValue(A) = 5050
+
+kickRadius = 300.0
+kickOmega = 36.0
+kickVeloc = 25.0
+
+[Xplemit]
+simulateBase = "sim_dust"
+lifetime = 0.1
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "xnukestxpl_srvb.Groundemit"
+renderName2 = "xnukestxpl_srvb.flameringe"
+renderName3 = "xnukestxpl_srvb.smokeringe"
+renderName4 = "xnukestxpl_srvb.stackemit"
+renderName5 = "xnukestxpl_srvb.plume"
+
+[GroundDust]
+simulateBase = "sim_dust"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xnukestxpl_srvb.groundduste"
+emitDelay = 0.002
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "100 0 100"
+emitInherit = "0 0 0"
+
+[GroundDustE]
+simulateBase = "sim_dust"
+lifeTime = 45
+renderBase = "draw_sprite"
+textureName = "cloudsmokefull.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 75.0
+finishRadius = 150.0
+animateTime = 45
+
+[Groundemit]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.25
+emitName = "xnukestxpl_srvb.groundsmoke"
+emitDelay = 0.01
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "25 0 25"
+emitInherit = "0 0 0"
+
+[Groundsmoke]
+simulateBase = "sim_dust"
+lifeTime = 60
+renderBase = "draw_sprite"
+textureName = "cloudsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 50.0
+finishRadius = 150.0
+animateTime = 60
+
+[Groundbase]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.3
+emitName = "xnukestxpl_srvb.groundsmokelow"
+emitDelay = 0.001
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "10 0 10"
+emitInherit = "0 0 0"
+
+[Groundsmokelow]
+simulateBase = "sim_dust"
+lifeTime = 60
+renderBase = "draw_sprite"
+textureName = "cloudsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 30.0
+finishRadius = 75.0
+animateTime = 60
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 32"
+finishColor = "255 255 255 0"
+startRadius = 10.0
+finishRadius = 1000.0
+animateTime = 1
+latitudeBands = 8
+longitudeSegments = 16
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 20
+renderBase = "draw_light"
+startColor = "255 255 255 2550"
+finishColor = "255 0 0 0"
+startRadius = 1e6.0
+finishRadius = 600.0
+animateTime = 20
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flameringe]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.04
+emitName = "xnukestxpl_srvb.flamering"
+emitDelay = 0.001
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "400 0 400"
+emitInherit = "0 0 0"
+
+[Lightground]
+simulateBase = "sim_null"
+lifeTime = 10
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "200 220 255 255" 
+finishColor = "255 255 200 0" 
+startRadius = 174
+finishRadius = 174
+animateTime = 10
+
+[GroundChar]
+simulateBase = "sim_null"
+lifeTime = 300
+renderBase = "draw_planar"
+textureName = "splash.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255" 
+finishColor = "0 0 0 0" 
+startRadius = 174
+finishRadius = 174
+animateTime = 300
+
+[Flamering]
+simulateBase = "sim_dust"
+lifeTime = 1
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 64 0 255"
+finishColor = "0 0 0 0"
+startRadius = 1.0
+finishRadius = 150.0
+animateTime = 1
+rotationrate = 50
+
+[Smokeringe]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.02
+emitName = "xnukestxpl_srvb.smoke"
+emitDelay = 0.001
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "400 0 400"
+emitInherit = "0 0 0"
+
+[Smoke]
+simulateBase = "sim_dust"
+lifeTime = 2
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "31 31 31 128"
+finishColor = "0 0 0 0"
+startRadius = 1.0
+finishRadius = 150.0
+animateTime = 2
+rotationrate = 50
+
+[Shockwave]
+simulateBase = "sim_null"
+lifeTime = 5
+renderBase = "draw_planar"
+textureName = "wasplat.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255" 
+finishColor = "0 0 0 0" 
+startRadius = 1
+finishRadius = 300
+animateTime = 5
+
+[PSEmit]
+simulatebase = "Sim_smoke"
+lifetime = 1
+renderBase = "Draw_multi"
+rendercount = 5
+rendername4 = "xnukestxpl_srvb.pfire"
+rendername1 = "xnukestxpl_srvb.pflash"
+rendername2 = "xnukestxpl_srvb.pflash2"
+renderName3 = "xnukestxpl_srvb.pflash4"
+rendername5 = "xnukestxpl_srvb.pflash3"
+
+[PFire]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.1
+emitName = "xnukestxpl_srvb.plumefire"
+emitDelay = 0.005
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "15 7.5 15"
+emitInherit = "0 0 0"
+
+[PFlash]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.02
+emitName = "xnukestxpl_srvb.plumeflash"
+emitDelay = 0.001
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "30 10 30"
+emitInherit = "0 0 0"
+
+[PFlash2]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.02
+emitName = "xnukestxpl_srvb.flash"
+emitDelay = 0.01
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "60 20 60"
+emitInherit = "0 0 0"
+
+[PFlash3]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.1
+emitName = "xnukestxpl_srvb.plumeflare"
+emitDelay = 0.1
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "0 0 0" //"60 20 60"
+emitInherit = "0 0 0"
+
+[PFlash4]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.02
+emitName = "xnukestxpl_srvb.flash2"
+emitDelay = 0.01
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "60 20 60"
+emitInherit = "0 0 0"
+
+[PFlash3e]
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+lifeTime = 0.1
+emitName = "xnukestxpl_srvb.plumeflare"
+emitDelay = 0.01
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "0 0 0" //"60 20 60"
+emitInherit = "0 0 0"
+
+[PSmoke1e]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.05
+emitName = "xnukestxpl_srvb.psmoke1"
+emitDelay = 0.002
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "13 5 13"
+emitInherit = "0 0 0"
+
+[PSmoke2e]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.05
+emitName = "xnukestxpl_srvb.psmoke2"
+emitDelay = 0.002
+emitDelayVar = 0.0
+emitVelocity = "0 10 0"
+emitVariance = "13 5 13"
+emitInherit = "0 0 0"
+
+[Plume]
+simulatebase = "Sim_smoke"
+lifetime = 0.1
+renderBase = "Draw_multi"
+rendercount = 2
+rendername2 = "xnukestxpl_srvb.psmoke1e"
+rendername1 = "xnukestxpl_srvb.psmoke2e"
+
+[PSmoke1]
+simulateBase = "sim_smoke"
+lifeTime = 60
+renderBase = "draw_twirl"
+textureName = "cloudsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "80 80 80 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 50.0
+finishRadius = 100.0
+animateTime = 60
+rotationrate = -1
+
+[PSmoke2]
+simulateBase = "sim_smoke"
+lifeTime = 60
+renderBase = "draw_twirl"
+textureName = "poofsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 50.0
+finishRadius = 100.0
+animateTime = 60
+rotationrate = -1
+
+[plumefire]
+simulateBase = "sim_smoke"
+lifeTime = 30
+renderBase = "draw_twirl"
+textureName = "cloudsmokeadd.tga" //"flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 64 0 255"
+finishColor = "0 0 0 0"
+startRadius = 50.0
+finishRadius = 100.0
+animateTime = 30
+rotationrate = 2
+
+[PlumeFlash]
+simulateBase = "sim_smoke"
+lifeTime = 8
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 255"
+finishColor = "128 64 0 0"
+startRadius = 300.0
+finishRadius = 150.0
+animateTime = 8
+
+[PlumeFlare]
+simulateBase = "sim_smoke"
+lifeTime = 25
+renderBase = "draw_sprite"
+//spriteCenter.x = 0.1
+spriteCenter.y = -0.1
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 128 64 255"
+finishColor = "64 0 0 0"
+startRadius = 300.0
+finishRadius = 300.0
+animateTime = 25
+
+[Plumeemit]
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+lifeTime = 1
+emitName = "xnukestxpl_srvb.psemit"
+emitDelay = 9e9
+emitDelayVar = 0.0
+emitVelocity = "0 10 0" //"2 8 4"
+emitVariance = "0 0 0"
+emitInherit = "0 0 0"
+
+[Stackemit]
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+lifeTime = 10
+emitName = "xnukestxpl_srvb.stack"
+emitDelay = 0.2
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "0 0 0"
+emitInherit = "0 0 0"
+
+[Stack]
+simulatebase = "Sim_smoke"
+lifetime = 60
+renderBase = "Draw_multi"
+rendercount = 2
+rendername2 = "xnukestxpl_srvb.stack1"
+rendername1 = "xnukestxpl_srvb.stack2"
+
+[Stack1]
+simulateBase = "sim_smoke"
+lifeTime = 60
+renderBase = "draw_twirl"
+textureName = "poofsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 20
+finishRadius = 50.0
+animateTime = 60
+rotationrate = 1
+
+[Stack2]
+simulateBase = "sim_smoke"
+lifeTime = 60
+renderBase = "draw_twirl"
+textureName = "cloudsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 255" //"31 31 31 255"
+finishColor = "0 0 0 0" //"40 40 40 0"
+startRadius = 25
+finishRadius = 70.0
+animateTime = 60
+rotationrate = 1
+
+[Stacksmoke]
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+lifeTime = 7.5
+emitName = "xnukestxpl_srv.stack"
+emitDelay = 0.125
+emitDelayVar = 0.1
+emitVelocity = "0 0 0"
+emitVariance = "3 0 3"
+emitInherit = "0 0 0"
+
+[Flash]
+simulateBase = "sim_smoke"
+lifeTime = 6
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = " 200 220 255 255"
+finishColor = "0 0 0 0"
+startRadius = 300.0
+finishRadius = 600.0
+animateTime = 6
+
+[Flash2]
+startdelay = 0.5
+simulateBase = "sim_smoke"
+lifeTime = 3
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = " 200 220 255 255"
+finishColor = "0 0 0 0"
+startRadius = 300.0
+finishRadius = 800.0
+animateTime = 3
+
+[Heatlines]
+startdelay = 2
+simulateBase = "sim_smoke"
+renderBase = "draw_emit"
+lifeTime = 3
+emitName = "xnukestxpl_srvb.heatline"
+emitDelay = 9e9
+emitDelayVar = 0.1
+emitVelocity = "0 1e3 0"
+emitVariance = "0 0 0"
+emitInherit = "0 0 0"
+//emitLife = 100e-6
+
+[Heatline]
+simulatebase = "sim_ember"
+lifetime = 0.3
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 64"
+finishColor = "255 255 255 0"
+startRadius = 1
+finishRadius = 5
+segmentLength = 25
+segmentVariance = "5 5 5"
+animateTime = 11
+textureRate = 0.01

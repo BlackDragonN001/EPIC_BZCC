@@ -1,0 +1,281 @@
+[Start]
+scrapCount = 40
+consClass = "cvcons_b"
+scavClass = "cvhscav_b"
+
+[Cheat]
+moneyAmount = 35
+moneyDelay = 10
+
+[IdleDispatcher]
+ScavIdleSeconds = 25
+UnitIdleSeconds = 120
+MinAttackForce = 3 // min # of idle units before dispatch
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 210
+buildtype1 = "cvhscav_b"
+buildcount1 = 3
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 205
+doNextOnFail = 1
+
+[plan3]
+plantype = "buildminimums"
+planpriority = 200
+buildtype1 = "cvscout_b"
+buildcount1 = 3
+buildtype2 = "cvcons_b"
+buildcount2 = 2
+
+[Plan4]
+planType = "CollectPool"
+planpriority = 195
+doNextOnFail = 1
+
+
+[plan5]
+//plancondition = "HisExists"
+//planconditionclass = "fbscav_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 190
+targettype = "fbscav_b"
+targettype1 = "fbscup_b"
+attacktype1 = "cvscout_b"
+attacktype2 = "cvscout_b"
+attacktype3 = "cvscout_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan6]
+plantype = "basebuildminimums"
+planpriority = 185
+buildtype1 = "cbpgen_b"
+buildtype2 = "cbcbun_b"
+
+
+[plan7]
+plantype = "buildminimums"
+planpriority = 180
+buildtype1 = "cvrgdron_b"
+buildcount1 = 3
+
+[plan8]
+plantype = "collectpool"
+planpriority = 175
+donextonfail = 1
+
+[plan9]
+//plancondition = "HisExists"
+//planconditionclass = "fbscup_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 170
+targettype = "fbscav_b"
+targettype1 = "fbscup_b"
+attacktype1 = "cvrgdron_b"
+attacktype2 = "cvrgdron_b"
+attacktype3 = "cvrgdron_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan10]
+plantype = "buildminimums"
+planpriority = 165
+buildtype1 = "cvrmdron_b"
+buildcount1 = 4
+
+[plan11]
+plantype = "collectpool"
+planpriority = 160
+donextonfail = 1
+
+[plan12]
+//plancondition = "HisExists"
+//planconditionclass = "fbkiln_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 155
+targettype = "fbkiln_b"
+targettype1 = "fbrecy_b"
+attacktype1 = "cvrmdron_b"
+attacktype2 = "cvrmdron_b"
+attacktype3 = "cvrmdron_b"
+attacktype4 = "cvrmdron_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan13]
+plantype = "basebuildminimums"
+planpriority = 150
+buildtype1 = "cbsbay_b"
+buildtype2 = "cbarmo_b"
+
+[plan14]
+plantype = "buildminimums"
+planpriority = 145
+buildtype1 = "cvtank_b"
+buildcount1 = 3
+
+[plan15]
+plantype = "collectpool"
+planpriority = 142
+donextonfail = 1
+
+
+[plan16]
+//plancondition = "Hisexists"
+//planconditionclass = "fbdowe_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 140
+targettype = "fbdowe_b"
+targettype1 = "fbantm_b"
+targettype2 = "fbover_b"
+attacktype1 = "cvtank_b"
+attacktype2 = "cvtank_b"
+attacktype3 = "cvtank_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan17]
+plantype = "buildminimums"
+planpriority = 135
+buildtype1 = "cvrbomb_b"
+buildcount1 = 3
+
+[plan18]
+plantype = "basebuildminimums"
+planpriority = 130
+buildtype1 = "cbfact_b"
+buildtype2 = "cbtcen_b"
+
+[plan19]
+plancondition = "HisExists"
+planconditionclass = "fbspir_b"
+planCompare = ">="
+planconditioncount = 1
+plantype = "attacker"
+planpriority = 125
+targettype = "fbspir_b"
+attacktype1 = "cvrbomb_b"
+attacktype2 = "cvrbomb_b"
+attacktype3 = "cvrbomb_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan20]
+plantype = "buildminimums"
+planpriority = 120
+buildtype1 = "cvhtank_b"
+buildcount1 = 2
+buildtype2 = "cvtalon_b"
+buildcount2 = 2
+
+[plan21]
+plantype = "basebuildminimums"
+planpriority = 115
+buildtype1 = "cbgnode_b"
+buildcount1 = 3
+buildtype2 = "cbjamm_b"
+buildcount2 = 3
+
+[plan22]
+plantype = "buildminimums"
+planpriority = 110
+buildtype1 = "cvserv_b"
+buildcount1 = 3
+
+[plan23]
+plantype = "collectpool"
+planpriority = 105
+donextonfail = 1
+
+[plan24]
+//plancondition = "Hisexists"
+//planconditionclass = "fbantm_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 102
+targettype = "fbantm_b"
+targettype = "fbover_b"
+attacktype1 = "cvtalon_b"
+attacktype2 = "cvhtank_b"
+attacktype3 = "cvhtank_b"
+attacktype4 = "cvtalon_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan25]
+plantype = "basebuildminimums"
+planpriority = 100
+buildtype1 = "cbshldgen_b"
+
+
+[plan26]
+plantype = "buildminimums"
+planpriority = 95
+buildtype1 = "cvover_b"
+buildcount1 = 3
+buildtype2 = "cvwalk_b"
+buildcount2 = 3
+
+[plan27]
+plantype = "collectpool"
+planpriority = 85
+donextonfail = 1
+
+[plan28]
+//plancondition = "Hisexists"
+//planconditionclass = "fbstro_b"
+//planconditioncount = 1
+planpriority = 75
+plantype = "attacker"
+targettype = "fbstro_b"
+targettype1 = "fbdowe_b"
+targettype2 = "fbantm_b"
+attacktype1 = "cvover_b"
+attacktype2 = "cvover_b"
+attacktype3 = "cvover_b"
+attacktype4 = "cvwalk_b"
+attacktype5 = "cvwalk_b"
+attacktype6 = "cvwalk_b"
+AttackAnything = true
+maxAttacks = 0
+
+
+[plan29]
+plantype = "buildminimums"
+planpriority = 70
+buildtype1 = "cvdcar_b"
+buildcount1 = 3
+//buildtype2 = "cvcitadel_b"
+//buildcount2 = 1
+
+[plan30]
+plantype = "collectpool"
+planpriority = 65
+donextonfail = 1
+
+[plan31]
+//plancondition = "Hisexists"
+//planconditionclass = "fbrecy_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 60
+targettype = "fbrecy_b"
+targettype1 = "fbkiln_b"
+targettype2 = "fbforg_b"
+attacktype1 = "cvdcar_b"
+attacktype2 = "cvdcar_b"
+attacktype3 = "cvdcar_b"
+//attacktype3 = "cvcitadel_b"
+AttackAnything = true
+maxAttacks = 0
+
+
+

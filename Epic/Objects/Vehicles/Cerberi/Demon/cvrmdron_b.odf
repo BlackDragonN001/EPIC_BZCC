@@ -1,0 +1,111 @@
+[GameObjectClass]
+baseName = "cvmdron"
+geometryName = "cvmdron_b.xsi"
+geometryScale = 0.9
+glowTexture = "cvgdrona0.pic"
+classLabel = "wingman"
+scrapValue = 2
+scrapCost = 20
+maxHealth = 400
+maxAmmo = 2000
+addAmmo = 30
+unitName = "Stinger"
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+explosionName = "xcerbxpld"
+
+heatSignature = 1.5
+imageSignature = 1.5
+radarSignature = 0.1
+collisionRadius = 10.0
+
+VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+LightingType = 1
+
+isAssault = 0
+
+needPilot=0
+
+armorClass = n
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cvgdron_b.tail"
+
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gcworms"
+weaponAssault1 = 0
+////////////////////////////////////
+ 
+[CraftClass]
+xplCrash = "xcerbxpld"
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 1500.0f
+periodScan = 2.0f
+velocJam = 2.0f
+engageRange = 450
+
+//braccelFactor = 0.03
+//velFactor = 0.2
+//steerFactor = 1.5
+//omegaFactor = 0.2
+//strafeFactor = 0.2
+
+avoidSpeed = 40;
+topSpeed = 50;
+
+selectWaitMsg = "cvo_drone_awaiting_directives.wav"
+selectAttackMsg = "cvo_drone_target_acquired.wav"
+selectFollowMsg = "cvo_drone_following.wav"
+selectGoMsg = "cvo_drone_directive_logged.wav"
+selectOtherMsg = "cvo_drone_awaiting_directives.wav"
+holdMsg = "cvo_drone_holding.wav"
+
+goMsg = "cvo_drone_directive_logged.wav"
+attackMsg = "cvo_drone_target_acquired.wav"
+followMeMsg = "cvo_drone_following.wav"
+followMsg = "cvo_drone_following.wav"
+repairMsg = "cvo_drone_repairing.wav"
+reloadMsg = "cvo_drone_repairing.wav"
+rescueMsg = "cvo_drone_cannot_comply.wav"
+recycleMsg = "cvo_drone_recycling.wav"
+otherMsg = "cvo_drone_awaiting_directives.wav" 
+
+user1Msg = ""  
+killedMsg = "cvo_drone_target_terminated.wav"
+
+[HoverCraftClass]
+velocForward = 90.5 // []
+velocReverse = 55.0 // []
+velocStrafe = 45.0 // []
+accelThrust = 30.0 //acceleration []
+accelDragStop = 5.0 //how fast it stops once hands are off controls []
+accelJump = 35.0 // []
+
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.40 //nose up []
+pitchThrust = 0.02 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 3.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.00 //rolls while steering []
+
+soundThrust = "mdron.wav"
+soundTurbo = "mdronth.wav"
+

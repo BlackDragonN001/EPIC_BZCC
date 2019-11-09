@@ -1,0 +1,134 @@
+[GameObjectClass] // Create Effects and Large gravity damage
+geometryName = "QSING01.XSI"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Quantum Singularity"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+canDetect = 0
+Tuggable = 0
+canInteract = 0
+powerCost = 0
+isStealth = 1
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+LeaveExplodeScorch = false
+explosionName = "null"
+
+EffectHard1 = "hp_fire"
+EffectName1 = "qsingE1a.render"
+
+[MineClass]
+lifeSpan = 120.0 //1e6 //120.0
+
+[FlareMineClass]
+payloadName = "qsingE1b" //"flarepuff"
+//fireSound = "smine01.wav"
+triggerDelay = 0.0
+shotDelay = 0.1
+shotVariance = 0.0
+damageRadius = 0.0 //300.0
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+kickRadius = 0.0 //500.0
+kickVeloc = 0.0 //-2.0
+kickOmega = 0.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "qsingE1a.flare"
+renderName2 = "qsingE1a.static"
+renderName3 = "qsingE1a.core"
+renderName4 = "qsingE1a.light"
+
+[Flare]
+renderBase = "draw_twirl" //"draw_sprite"
+textureName = "xbhchar2.tga" //"grndchar.tga" //"lighthaloblack2.tga" //lighthaloblack
+textureBlend = "srcalpha invsrcalpha modulatealpha" //"one one modulate"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 255"
+startRadius = 15.0
+finishRadius = 15.0
+rotationRate = 15.0
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "rift.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha" //"one one modulate"
+startColor = "2 2 2 200"
+finishColor = "2 2 2 200"
+startRadius = 10.0
+finishRadius = 10.0
+rotationRate = -0.75
+
+[Light]
+renderBase = "draw_light"
+startColor = "0 0 0 0"
+finishColor = "0 0 0 0"
+startRadius = -50.0
+finishRadius = -50.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+
+[Static]
+renderBase = "draw_static"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 50"
+finishColor = "0 0 0 0"
+startRadius = 50.0
+finishRadius = 0
+animateTime = 0.4
+emitDelay = 0.005
+emitDelayVar = 0.0
+innerRadius = 0.0
+outerRadius = 0.2
+segmentTime = 0.4
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 0"
+finishColor = "200 250 255 20"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 50.0
+AddYaw = 50.0
+AddRoll = 50.0
+
+[Field2]
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 0"
+finishColor = "200 250 255 20"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -50.0
+AddYaw = -50.0
+AddRoll = -50.0

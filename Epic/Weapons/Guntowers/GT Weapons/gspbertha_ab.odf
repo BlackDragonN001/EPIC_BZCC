@@ -1,0 +1,49 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gspbertha_ab"
+ordName = "spbertha_ab"
+wpnName = "HEAT-Stab"
+fireSound = "spstab01.wav"
+wpnReticle = "gspstab"
+wpnCategory = "CANN"
+flashName = "gmortar_b.flash"
+isAssault = 1
+aiRange = 1800
+AllowAimHigh = 0
+
+[CannonClass]
+shotDelay = 8
+shotAlternate = 1
+shotvariance = 0.03
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gspstab_ab.muz"
+renderName2 = "gspstab_ab.light"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "250 155 50 250"
+finishColor = "250 105 0 250"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 1
+
+[muz]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 155 55 255"
+startRadius = 15.0
+finishRadius = 2
+animateTime = 0.1
+geomName = "g_sflash.xsi"
+

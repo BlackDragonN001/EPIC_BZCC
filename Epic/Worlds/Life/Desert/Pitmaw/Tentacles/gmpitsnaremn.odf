@@ -1,0 +1,46 @@
+[WeaponClass]
+classLabel = "arccannon" // "machinegun"
+ordName = NULL
+wpnName = "Snare Trap"
+fireSound = "igtow01.wav"
+wpnReticle = "gbolt" / "octagon"
+wpnCategory = "CANN"
+flashName = "gmpitsnaremn.flash"
+
+[ArcCannonClass]
+startDist = 5.0
+
+finishDist = 150.0
+
+travelVeloc = 20.0
+
+coneAngle = 10.0
+
+ammoCost = 0.0
+
+damageValue(N) = 25.0 // none
+damageValue(L) = 15.0 // light
+damageValue(H) = 4.0 // heavy
+
+damageValue(S) = 14.0 // standard
+damageValue(D) = 5.0 // deflection
+damageValue(A) = 23.0 // absorbtion
+
+activeSound = "igtow01.wav"
+
+xplGround = "xbulgnd"
+xplVehicle = "xpitsnarexpl"
+xplBuilding = "xpitsnarexpl"
+
+[Flash]
+renderBase = "draw_bolt"
+textureName = "tendon1.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 150 100 2550"
+finishColor = "150 150 100 0"
+startRadius = 0.3
+finishRadius = 0.3
+segmentLength = 0.02
+segmentVariance = "0.2 0.2 0.2"
+animateTime = 0.1
+textureRate = 0.01

@@ -1,0 +1,86 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "gatstab.xsi"
+shotSound = "fmiss02.wav"
+
+renderName = "mgren_cb.render"
+
+xplGround = "xsuperbld_b"
+xplVehicle = "xsuperbld_b"
+xplBuilding = "xsuperbld_b"
+xplExpire = "xtagcar_cb"
+
+ammoCost = 6
+
+lifeSpan = 2.5 // 300m
+shotSpeed = 120.0
+
+damageValue(N) = 200
+damageValue(L) = 150
+damageValue(H) = 100
+
+damageValue(S) = 150
+damageValue(D) = 100
+damageValue(A) = 200
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "mgren_cb.flare"
+//renderName2 = "mgren_cb.smoke"
+renderName3 = "mgren_cb.flame"
+renderName4 = "mgren_cb.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 100"
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 0.5
+animateTime = 1.0
+emitDelay = 0.003
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "1.5 1.5 1.0"
+emitLife = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.01
+
+[trail]
+simulateBase = "sim_null"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "ssmoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "255 255 255 40"
+finishColor = "255 255 255 0"
+startRadius = 0.08
+finishRadius = 0.01
+segmentTime = 1.0
+animateTime = 0.5
+animateTime = 0.1
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.5 1.5 1.0"
+emitLife = 0.8

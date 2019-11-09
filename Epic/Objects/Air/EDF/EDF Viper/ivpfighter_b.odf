@@ -1,0 +1,272 @@
+[GameObjectClass]
+baseName = "ivfighter_b"
+
+unitIcon = "icon_ivfighter_b.png"
+infoName = "ivfighter_b.inf"
+unitStatus = "wire_ivfighter_b.png"
+
+
+geometryName = "sviper.xsi"
+geometryScale = 1.5
+cockpitName = "ivrckt_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 5 //70
+customCost = 85
+buildTime = 5.0
+customTime = 35.0
+maxHealth = 3200
+addHealth = 2
+maxAmmo = 4500
+addAmmo = 500
+aiAddAmmo = 50
+unitName = "Interceptor"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+//aiName = "AttachWingman"
+//aiName2 = "AttachWingman"
+explosionName = "ixshipxpl"
+
+heatSignature = 8.0
+imageSignature = 16.0
+radarSignature = 35.0
+
+isAssault = 0
+armorClass = n
+needPilot = 1
+isFlying = 1
+
+requireCount = 4
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+requireName2 = "ibcbun_b"
+requireText2 = "Build Relay Bunk"
+requireName3 = "ibarmo_b"
+requireText3 = "Build Armoury"
+requireName4 = "ibbomb_b"
+requireText4 = "Build Control Tower"
+
+
+//cockpitName = "ivscout_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivspbomb_b.trail"
+effectHard2 = "hp_emit_4"
+effectName2 = "chain_cb.trail"//"ivfighter_b.smoke"
+effectHard3 = "hp_emit_2"
+effectName3 = "chain_cb.trail"//"ivfighter_b.smoke"
+effectHard4 = "hp_emit_5"
+effectName4 = "chain_cb.trail"//"ivfighter_b.smoke"
+effectHard5 = "hp_emit_3"
+effectName5 = "chain_cb.trail"//"ivfighter_b.smoke"
+effectHard6 = "hp_emit_6"
+effectName6 = "chain_cb.trail"//"ivfighters.smoke"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "grfscat_cb"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gsamiss_b" 
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_2"
+weaponName3 = "gclust_ab"
+weaponAssault3 = 1
+//weaponHard4 = "HP_MORTAR_1"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 1
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "thruster"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "ivfighter_b.lightg"
+//lightHard2 = "hp_light_2"
+//lightName2 = "ivfighter_b.lightg"
+//lightHard3 = "hp_light_3"
+//lightName3 = "ivfighter_b.light"
+//lightHard4 = "hp_light_4"
+//lightName4 = "ivfighter_b.light"
+
+[CraftClass]
+xplCrash = "ixshipxpl"
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+ejectratio = 0
+
+rangeScan = 1200.0f
+periodScan = 1.0f
+velocJam = 5.0f
+engageRange = 900
+canHunt = 1
+AllowLinkWeapons = true
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+subAttackTask = "AimFireAttack"
+subAttackClass = "ANN"
+
+ClosestEnemyGoodEyes = true 
+
+FireWhenCanHitFriends = false
+
+AttackTaskUsesGroups = false
+GotoTaskHasLeader = false
+
+braccelFactor = 0.5 //0.03
+velFactor = 0.4//0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.1
+
+avoidSpeed = 50;
+topSpeed = 100;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+velocSet(L) = -55.0 // minimum velocity
+velocSet(M) = 0.0 // cruising velocity
+velocSet(H) = 120.0 // maximum velocity
+accelThrust = 60.0 // thrust acceleration
+accelBrake = 60.0 // brake acceleration
+accelDrag = 8//10.0 // drag acceleration
+omegaSteer(L) = 7//4.51 // steer turn rate at minimum
+omegaSteer(M) = 5//2.52 // steer turn rate at cruising
+omegaSteer(H) = 4//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 1.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.76 // airbrake turn rate at maximum
+alphaSteer = 9.0 // steering angular acceleration
+alphaStrafe = 12.0 // airbrake angular acceleration
+minAltitude = 30.0 // minimum altitude
+maxAltitude = 250.0 // maximum altitude
+alphaLevel = 3.0 // 10 leveling angular acceleration
+alphaDamp = 4.0 // 5 damping angular acceleration
+pitchPitch = 0.5 //0.5 // maximum pitch angle
+rollSteer = 0.8 //0.7 // maximum roll angle from steering
+rollStrafe = 1 // maximum roll angle from airbraking
+timeDeploy = 0.5 // time to deploy
+timeUndeploy = 1.5 // time to undeploy
+
+AlwaysDeployed = true
+AlwaysUndeployed = false
+AltitudeLookahead = 0.1
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 60
+AILiftSpring = 25.0
+LiftSpring = 12.5 
+
+soundThrust = "jpack01.wav"
+soundBrake = "wmflame.wav"
+soundDeploy = "wmflame.wav"
+soundUndeploy = "wmflame.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[smoke]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivfighter_b.trail"
+renderName2 = "ivfighter_b.lightr"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.7
+segmentTime = 3.0
+animateTime = 0.3
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[lightr]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "250 55 0 100"
+finishColor = "250 55 0 100"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[lightg]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "0 255 0 100"
+finishColor = "0 255 0 100"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "wingtrail.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "200 200 200 20"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 0.4
+segmentTime = 0.5
+animateTime = 0.5
+
+[Lod1]
+geometryName = "ivspfight_L1.xsi" ;geometry for lod1
+//geometryScale = 1.4
+distance = 500   

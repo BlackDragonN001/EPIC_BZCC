@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+altName = "gcaamiss"
+ordName = "caamiss"
+wpnName = "Cerberi AA Msl"
+fireSound = "gshad01.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 1600 // 5000
+
+[LauncherClass]
+lockRange = 1500.0  // was 170 GEC
+shotDelay = 6.0
+lockDelay = 25.0
+coneAngle = 0.5 //.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "sserv02.wav" //"lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"
+
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team

@@ -1,0 +1,26 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "arcbolt_b"
+wpnName = "Arc Mine"
+fireSound = "bchain.wav"
+wpnReticle = "gchain" 
+wpnCategory = "CANN"
+flashName = "garc_cb.flash"
+aiRange = 300
+
+[CannonClass]
+shotDelay = 1.5
+shotvariance = .0
+salvoCount = 3
+salvoDelay = 0.07
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 1.5
+finishRadius = 0.75
+animateTime = 0.1
+geomName = "g_sflash.xsi"

@@ -1,0 +1,310 @@
+[GameObjectClass]
+provideCount = 1
+provideName1 = "dochop"
+
+limitClass1 = "dochop" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 10
+limitClass1Text = "Squad Limit Reached"
+
+baseName = "chopper"
+geometryName = "avchopper1_b.xsi"
+geometryScale = 2.6
+
+//animCount = 1
+//animName1 = "deploy"
+//animFile1 = "ivapc00_b.xsi"
+
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "assaulthover"//"turrettank"//"artillery"//"aircraft"
+scrapValue = 10
+scrapCost = 30 //90
+customCost = 40
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 1000
+addHealth = 0
+maxAmmo = 1000
+addAmmo = 400
+unitName = "Security Drone"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+
+//aiName = "AttachOffensive"
+//aiName2 = "AttachOffensive
+
+//aiName = "AirCraftFriend"
+//aiName2 = "AirCraftEnemy"
+//explosionName = "ixshipxplw"
+
+CanAcceptPowerups = false
+
+heatSignature = 3.0
+imageSignature = 5.0
+radarSignature = 3.0
+
+isstealth = 0
+isAssault = 0
+armorClass = L
+//needPilot = 0
+cockpitName = "ivturr_cockpit.xsi"
+collisionRadius = 60.0
+
+BoxCollide = 1
+
+SmartIsAirUnitCheck = false
+VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+//requireCount = 2
+//requireName1 = "fbfact_b"
+//requireText1 = "Build Factory"
+
+//requireName2 = "fbbarr_b"
+//requireText2 = "Build Barracks"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "chopper1_b.trail"
+effectHard2 = "hp_emit_2"
+effectName2 = "chopper1_b.trail"
+effectHard3 = "hp_emit_3"
+effectName3 = "chopper1_b.prop"
+
+
+//effectHard2 = "hp_emit_4"
+//effectName2 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard3 = "hp_emit_2"
+//effectName3 = "ivspbomb_b.trail"//"ivfighter_b.smoke"
+//effectHard4 = "hp_emit_5"
+//effectName4 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard5 = "hp_emit_3"
+//effectName5 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard6 = "hp_emit_6"
+//effectName6 = "chain_cb.trail"//"ivfighters.smoke"
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gchain_cb"
+weaponAssault1 = 0
+recoilName1 = "recoil_1"
+
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gfafmsl_cb" // "gsgun"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_Rocket_2"
+weaponName3 = "gfafmsl_cb"
+weaponAssault3 = 0
+
+//weaponHard4 = "HP_SPECIAL_1"
+//weaponName4 = "thruster" //"gredfld_b"
+//weaponAssault4 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[CraftClass]
+xplCrash = "ixshipxplb"
+
+ejectratio = 0
+LeaveExplodeScorch = false
+//MaxScorchHeight = 20.0
+
+rangeScan = 800.0f
+periodScan = 1.0f
+velocJam = 5.0f
+engageRange = 400
+canHunt = 1
+AllowLinkWeapons = true
+
+//weaponPitch = 0.5
+
+
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "MortarBikeAttack"
+subAttackClass = "ANS"	// include air units as attack targets only when deployed
+
+
+AttackTaskUsesGroups = false
+
+ClosestEnemyGoodEyes = yes
+
+OffensiveProcessIsDistractable = true 
+
+braccelFactor = 0.5 //0.03
+velFactor = 0.4//0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.8
+jumpfactor = 0.2
+
+avoidSpeed = 50;
+topSpeed = 100;
+
+selectWaitMsg = "scion0309.wav"
+selectDropoffMsg = "scion0309.wav"
+selectPickupMsg = "scion0309.wav"
+selectOtherMsg = "fvrecy04.wav"
+selectReadyMsg = "fvrecy04.wav"
+
+holdMsg = "fvrecy04.wav"
+goMsg = "fvrecy02.wav"
+attackMsg = "scion0126.wav"
+followMsg = "scion0123.wav"
+followMeMsg = "scion0123.wav"
+repairMsg = "fvrecy07.wav"
+recycleMsg = "scion0309.wav"
+rescueMsg = "scion0123.wav"
+otherMsg = "fvrecy04.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "scion0313.wav"//"abetty3.wav"
+
+// you have my word on it" - scion0123.wav
+// more hostiles,i needbackup" - scion0126.wav
+// watch your fire - scngen30.wav
+//the base is ours - scion0211.wav
+//as you wish - scion0309.wav
+//negative...too many...braking up - scion0313.wav
+
+//enroute - fvrecy02.wav
+//yes - ...04
+
+[HoverCraftClass]
+setAltitude = 10.0
+accelDragStop = 20.0
+accelDragFull = 5.0
+alphaTrack = 10.0
+alphaDamp = 3.0
+pitchPitch = 0.1
+pitchThrust = 0.2
+rollStrafe = 0.1
+rollSteer = 0.2
+
+velocForward = 30.0
+velocReverse = 15.0
+velocStrafe = 15.0
+accelThrust = 10.0
+accelBrake = 50.0
+omegaSpin = 2
+omegaTurn = 1
+alphaSteer = 5.0
+accelJump = 45.0 
+
+alphaTrack = 8.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+soundThrust = "iapc02.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[AssaultTankClass]
+yawRate = 4.0
+pitchMin = -0.3
+pitchMax = 0.2
+
+
+////////////////////////////
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+//renderName1 = "chopper1_b.Field1"
+renderName1 = "chopper1_b.glow"
+renderName2 = "chopper1_b.matter"
+renderName3 = "chopper1_b.light"
+
+[prop]
+maxdist = 13000
+lifetime = 5e30
+
+renderBase = "draw_geom"
+geomName = "chopprop_b1.xsi"
+geometryScale = 3.6
+
+
+textureName = "des_units00.pic"//"cflmball.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 255"
+finishColor = "200 200 200 255"
+startRadius = 3
+finishRadius = 3
+//animateTime = 1.0
+//latitudeBands = 7
+//longitudeSegments = 12
+InitialPitch = 0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 0.0
+AddYaw = 2000.0
+AddRoll = 0.0
+
+[matter]
+simulateBase = "sim_smoke"
+//lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "chopper1_b.matteremit"
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matteremit]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_twirl"
+textureName = "sparks.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 80 40"
+finishColor = "250 240 255 150"
+startRadius = 1.0
+finishRadius = 0.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 250"
+finishColor = "20 20 255 250"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "150 100 250 25"
+finishColor = "150 100 250 25"
+startRadius =  12.0
+finishRadius = 12.0
+animateTime = 1.2
+rotationrate = 0
+
+
+
+[Lod1]
+geometryName = "null" ;geometry for lod1
+geometryScale = 1
+distance = 1000   

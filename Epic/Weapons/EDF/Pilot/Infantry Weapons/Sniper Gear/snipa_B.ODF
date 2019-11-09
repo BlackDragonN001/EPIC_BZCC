@@ -1,0 +1,54 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+xplGround = "xgaussgnd_b"
+xplVehicle = "xgausscar"
+xplBuilding = "xgaussbld"
+
+renderName = "snipa_b.render"
+
+ammoCost = 30
+lifeSpan = 400e-3 // 1200m
+shotSpeed = 3e3
+
+damageValue(N) = 200 // none // 200
+damageValue(L) = 100 // light // 190
+damageValue(H) = 60 // heavy // 160
+
+damageValue(S) = 100 // standard // 180
+damageValue(D) = 60 // deflection // 140
+damageValue(A) = 200 // absorbtion // 200
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "snipa_b.beam"
+renderName2 = "snipa_b.ring"
+
+[Beam]
+renderBase = "draw_bolt" //"draw_bolt"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 10"
+finishColor = "255 255 255 0"
+startRadius = 0.05
+finishRadius = 0.15
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.5
+textureRate = 0.01
+//textureSpeed = -0.1
+
+[Ring]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureblend = "one one modulate"
+startColor = "255 255 255 15"
+finishColor = "255 255 255 0"
+startRadius = 0.3
+finishRadius = 0.5
+animateTime = 2.0
+emitDelay = 0.007
+emitVariance = "0.0 0.0 0.0"
+emitLife = 2.0
+rotationRate = 4.0

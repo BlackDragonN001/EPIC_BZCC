@@ -1,0 +1,80 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "gatstab.xsi"
+shotSound = "Ordin_a.wav"
+
+renderName = "rfstab_cb.render"
+
+xplGround = "xstabgnd_cb"
+xplVehicle = "xstabcar_cb"
+xplBuilding = "xstabcar_cb"
+
+ammoCost = 9
+lifeSpan = 1.5 // 150m
+shotSpeed = 300.0
+
+damageValue(N) = 110 // none // 300
+damageValue(L) = 100 // light // 275
+damageValue(H) = 90 // heavy // 250
+
+damageValue(S) = 100 // standard // 275
+damageValue(D) = 90 // deflection // 250
+damageValue(A) = 110 // absorbtion // 300
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "rfstab_cb.smoke"
+renderName2 = "rfstab_cb.flame"
+renderName3 = "rfstab_cb.Light"
+renderName4 = "rfstab_cb.Trail"
+
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 64 127 64"
+finishColor = "200 200 255 0"
+startRadius = 0.2
+finishRadius = 3.0
+rotationRate = 2.0
+animateTime = 0.1
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.1
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "120 185 255 60"
+finishColor = "20 45 255 0"
+startRadius = 0.15
+finishRadius = 0.25
+segmentTime = 0.35
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 255"
+startRadius = 0.3
+finishRadius = 0.02
+rotationRate = 10.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.02
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.0
+finishRadius = 1.0

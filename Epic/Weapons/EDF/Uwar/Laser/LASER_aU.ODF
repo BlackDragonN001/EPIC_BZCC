@@ -1,0 +1,54 @@
+[OrdnanceClass]
+classLabel = "beam"
+
+shotGeometry = NULL
+xplGround = "xlasegnd"
+xplVehicle = "xlasecar"
+xplBuilding = "xlasebld"
+
+renderName = "laser_au.render"
+
+ammoCost = 4
+lifeSpan = 600e-6 // 100m
+shotSpeed = 1e6
+
+damageValue(N) = 195 // none // 350
+damageValue(L) = 150 // light // 200
+damageValue(H) = 120 // heavy // 75
+
+damageValue(S) = 150 // standard // 200
+damageValue(D) = 175 // deflection // 350
+damageValue(A) = 120 // absorbtion // 75
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "laser_au.core"
+renderName2 = "laser_au.tail"
+
+[Core]
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "100 255 130 255"
+finishColor = "0 200 100 40"
+startRadius = 0.7
+finishRadius = 0.0
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.15
+textureRate = 0.1
+
+[Tail]
+renderBase = "draw_bolt"
+textureName = "sbubbles.tga"
+textureBlend = "one one modulate"
+startColor = "0 200 255 65"
+finishColor = "0 80 30 0"
+startRadius = 0.05
+finishRadius = 3
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 1
+textureRate = 0.35
+

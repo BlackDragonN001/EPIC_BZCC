@@ -1,0 +1,254 @@
+[GameObjectClass]
+baseName = "fvspbomb_b"
+
+unitIcon = "icon_fvspbomb_b.png"
+infoName = "fvspbomb_b.inf"
+unitStatus = "wire_fvspbomb_b.png"
+geometryName = "fvspbombs.xsi"
+geometryScale = 1.1
+
+provideCount = 2
+provideName1 = "Fvspbomb"
+provideName2 = "bomb"
+
+limitClass1 = "Fvspbomb" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 5
+limitClass1Text = "Squad Limit Reached"
+
+
+renderName = "fvspbomb_b.trail"
+
+cockpitName = "fvtank_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapReturn = 45
+scrapCost = 90
+customCost = 105
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 3500
+addHealth = 5
+maxAmmo = 8000
+addAmmo = 40
+unitName = "Orca"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "xscionxpl"
+collisionRadius = 320.0
+boxCollide = 1
+
+heatSignature = 12.0
+imageSignature = 40.0
+radarSignature = 30.0
+isAssault = 0
+armorClass = n
+needPilot = 1
+cockpitName = "Fvturr_cockpit.xsi"
+
+SmartIsAirUnitCheck = false
+VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+requireCount = 3
+requireName1 = "fbforg_b"
+requireText1 = "Upgrade Kiln"
+requireName2 = "fbover_b"
+requireText2 = "Upgrade Antenna"
+requireName3 = "fbstro_b"
+requireText3 = "Build Stronghold"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fvspbomb_b.trail"
+//effectHard2 = "hp_emit_2"
+//effectName2 = "ivspbombsa.trail"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ivspbombsa.trail"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ivspbombsa.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+//weaponHard1 = "HP_GUN_1"
+//weaponName1 = "gSONIC_"
+//weaponAssault1 = 0
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gfrbomb_B" // "gsgun"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gfrbomb_B"
+weaponAssault2 = 0
+//weaponHard4 = "HP_ROCKET_2"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 1
+//weaponHard5 = "HP_SPECIAL_1"
+//weaponName5 = "thrusterAI"
+//weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+ejectratio = 0
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+xplCrash = "xscionxplb"
+rangeScan = 2200.0f
+periodScan = 0.0f
+velocJam = 5.0f
+engageRange = 1200
+canHunt = 1
+AllowLinkWeapons = TRUE
+detectRange = 900
+
+FireWhenCanHitFriends = false
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+subAttackTask = "AimFireAttack"
+subAttackClass = "NNS"
+
+
+AttackTaskUsesGroups = false
+
+AttackTaskAttackTimeout0 = 8.0
+AttackTaskAttackTimeout1 = 12.0
+AttackTaskAttackTimeout2 = 16.0
+AttackTaskAttackTimeout3 = 20.0
+
+
+ClosestEnemyGoodEyes = yes
+
+MustBeLinedUpToHit = false 
+MustBeLinedUpToFire = false 
+
+OffensiveProcessIsDistractable = false 
+
+braccelFactor = 0.5 //0.03
+velFactor = 0.8//0.2
+steerFactor = 0.2//1.5
+omegaFactor = 0.1
+strafeFactor = 0.02
+
+avoidSpeed = 50;
+topSpeed = 100;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+velocSet(L) = 85.0 // minimum velocity
+velocSet(M) = 105.0 // cruising velocity
+velocSet(H) = 120.0 // maximum velocity
+accelThrust = 45.0 // thrust acceleration
+accelBrake = 20.0 // brake acceleration
+accelDrag = 35//10.0 // drag acceleration
+omegaSteer(L) = 8//4.51 // steer turn rate at minimum
+omegaSteer(M) = 6//2.52 // steer turn rate at cruising
+omegaSteer(H) = 4//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0.8 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.6 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.4 // airbrake turn rate at maximum
+alphaSteer = 3.0 // steering angular acceleration
+alphaStrafe = 4.0 // airbrake angular acceleration
+minAltitude = 330.0 // minimum altitude
+maxAltitude = 600.0 // maximum altitude
+alphaLevel = 3.0 // leveling angular acceleration
+alphaDamp = 6.0 // damping angular acceleration
+pitchPitch = 0.2 // maximum pitch angle
+rollSteer = 0.9//0.7 // maximum roll angle from steering
+rollStrafe = 0.9 // maximum roll angle from airbraking
+timeDeploy = 6 // time to deploy
+timeUndeploy = 6 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 350
+AILiftSpring = 70 // 15.0
+LiftSpring = 30.5 
+//AltitudeLookahead = 2.0
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "fvspbomb_b.trailer"
+//renderName2 = "ivspbombs.flame"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "255 200 100 255"
+finishColor = "200 100 0 0"
+startRadius = 1
+finishRadius = 0.2
+segmentTime = 2.0
+animateTime = 0.3
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 1200                 ;...distance over this many meters => switch to lod2

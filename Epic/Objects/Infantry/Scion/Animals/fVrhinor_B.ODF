@@ -1,0 +1,220 @@
+[GameObjectClass]
+
+baseName = "fvrhinor_b"
+classLabel = "iv_walker"
+cockpitName = "ivwalk_cockpit.xsi"
+geometryName = "rhinotank_skel_b.xsi"
+geometryScale = 2
+
+animCount = 10
+animName1 = "idle"
+animFile1 = "rhino_eat.xsi"
+
+animName2 = "idle2"
+animFile2 = "rhino_eat.xsi"
+
+animName3 = "idle3"
+animFile3 = "rhino_eat.xsi"
+
+animName4 = "sitdown"
+animFile4 = "rhino_growl.xsi"
+
+animName5 = "walk"
+animFile5 = "rhino_walk.xsi"
+
+animName6 = "turn"
+animFile6 = "rhino_walk.xsi"
+
+animName7 = "death"
+animFile7 = "rhino_death01.xsi"
+
+animName8 = "death2"
+animFile8 = "rhino_death01.xsi"
+
+animName9 = "death3"
+animFile9 = "rhino_death01.xsi"
+
+animName10 = "run"
+animFile10 = "rhino_walk.xsi"
+
+animrate = 10
+
+scrapValue = 0
+scrapCost = 30
+//customCost = 75
+//buildTime = 15.0
+//customTime = 15.0
+//scrapCost = 10
+customCost = 15
+buildTime = 10.0
+customTime = 1.0
+maxHealth = 1000
+maxAmmo = 900
+addAmmo = 20
+AIAddAmmo = 50
+unitName = "War Rhino"
+aiName = "GechProcess"
+heatSignature = 0.5
+imageSignature = 10
+radarSignature = 10
+collisionRadius = 40.0
+isAssault = 0
+
+LightingType = 1
+
+//VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+//explosionName = "ixshipxplb"
+
+armorClass = l
+
+requireCount = 1
+requireName1 = "fbdowe_b"
+requireText1 = "Build Dower"
+
+provideCount = 1
+provideName1 = "rhino"
+
+
+limitClass1 = "rhino" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 20
+limitClass1Text = "Squad Limit Reached"
+
+isGrouped = 1   // add to a command group 
+needGroup = 0 	// need free group to build 
+isLimited = 0 	// add to the limit count 
+needLimit = 0 	// need free limit to build 
+canDetect = 1   // can attack other pilots through attack command 
+canEject = 0
+canInteract = 1 // can interact using the reticle 
+canSelect = 1
+canTarget = 1   // can target
+needPilot = 0
+
+
+CanAcceptPowerups = false
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+weaponHard1 = "HP_cannon_1"
+weaponName1 = "gsplasma_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_mortar_1"
+weaponName2 = ""
+weaponAssault2 = 0
+
+weaponHard3 = "HP_mortar_2"
+weaponName3 = ""
+weaponAssault3 = 0
+
+
+//////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+PathingType = 1 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+AvoidType = -1 // -1 = auto, 0 = None, 1 = force, 2 = plan
+GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower model
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+ClosestEnemyGoodEyes = yes
+CanAIPForceIdle = false
+
+rangeScan = 600.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 600
+detectRange = 300
+
+braccelFactor = 0.5
+velFactor = 0.5
+strafeFactor = 0.5
+steerFactor = 1.5
+omegaFactor = 0.2
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "AssaultTankSubAttack"
+subAttackClass = "NNN"
+
+canHunt = 1
+canRescue = 0
+
+AllowLinkWeapons = true
+
+damageEffect1 = "Dmgprs1"
+damageEffect2 = "Dmgprs1"
+damageEffect3 = "Dmgprs2"
+damageEffect4 = "Dmgprs2"
+
+selectWaitMsg = "jak02.wav"
+selectAttackMsg = "rhin06.wav"
+selectFollowMsg = "jak02.wav"
+selectGoMsg = "jak02d.wav"
+selectOtherMsg = "jak02.wav"
+
+goMsg = "jak02d.wav"
+attackMsg = "rhin06.wav"
+followMeMsg = "jak02d.wav"
+followMsg = "jak02d.wav"
+repairMsg = "jak02.wav"
+reloadMsg = "jak07.wav"
+rescueMsg = "jak02c.wav"
+recycleMsg = "jak08.wav"
+otherMsg = "jak02d.wav" 
+holdMsg = "jak02b.wav"
+user1Msg = ""  
+killedMsg = "ivwalk07.wav"
+diedMsg = "abetty3.wav"
+
+avoidSpeed = 10;
+topSpeed = 20;
+
+
+// Angles are in degress
+[WalkerClass]
+CanWaterDamage = false
+FRICTION_COEF = 0.1//0.35
+
+headYawRate	= 100.0 
+minHeadYaw = -70.0
+maxHeadYaw =  70.0
+minHeadPitch = -20.0
+maxHeadPitch = 50.0
+
+//animRate = 2.0
+
+alphaDamp = 5.0
+omegaTurn = 130//40.0
+omegaTurnAttenuation = 0.5f
+
+alphaSteer = 20//0.1
+velocJump = 2
+alphaTrack = 20.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+accelThrust = 1.5
+velocForward = 10.0
+velocReverse = 5.0
+
+headpiece = "head"
+rightfootpiece = "rfoot";
+leftfootpiece = "lfoot";
+
+jumpSound  = "rhin01b.wav"
+landSound  = "rhin01.wav"
+stepSound  = "rhin01b.wav"
+
+engineSound = "rhin04b.wav"
+

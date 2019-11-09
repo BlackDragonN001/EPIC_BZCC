@@ -1,0 +1,504 @@
+// ==================
+// EDF Hover Explosion by Slaor
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "shipxpl.wav"
+
+damageRadius = 40.0
+
+damageValue(N) = 25
+damageValue(L) = 10
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+kickRadius = 25.0
+kickOmega = 7.0
+kickVeloc = 7.0
+
+particleTypes = 14
+
+particleClass1 = "ixshipxpl1.ring"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "ixshipxpl1.chunks"
+particleCount2 = 1
+particleVeloc2 = "0.0 00.0 00.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "ixshipxpl1.thrust"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+
+particleClass8 = "ixshipxpl1.shock"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass5 = "ixshipxpl1.trail"
+particleCount5 = 6
+particleVeloc5 = "90.0 140.0 90.0"
+
+particleClass6 = "ixshipxpl1.cloud"//flame
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "ixshipxpl1.light"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass4 = "ixshipxpl1.posroll"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass9 = "ixshipxpl1.plasma"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+
+particleClass10 = "ixshipxpl1.flames"
+particleCount10 = 1
+particleVeloc10 = "70.0 70.0 70.0"
+
+particleClass11 = "ixshipxpl1.flames2"
+particleCount11 = 1
+particleVeloc11 = "0.0 0.0 0.0"
+
+particleClass12 = "ixshipxpl1.ring2"
+particleCount12 = 1
+particleVeloc12 = "0.0 0.0 0.0"
+
+particleClass13 = "ixshipxpl1.ringa"
+particleCount13 = 1
+particleVeloc13 = "0.0 0.0 0.0"
+
+particleClass14 = "ixshipxpl1.heat"
+particleCount14 = 1
+particleVeloc14 = "0.0 0.0 0.0"
+
+
+
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "_uxpl.tga"// ringb2
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 450"// 180
+finishColor = "100 70 0 0"
+startRadius = 12.0 //5.0
+finishRadius = 15.0 // 50 
+animateTime = 0.5 //3.5
+
+[chunks]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 250 200 155 305"
+finishColor = "85 0 0 0"
+startRadius = 0.8
+finishRadius = 0.1
+animateTime = 2.0
+rotationRate = 5
+
+[Heat]
+simulateBase = "sim_null"
+lifeTime = 1.4
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "edfheat.tga"// ringb2
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 200"// 180
+finishColor = "150 80 0 0"
+startRadius = 1.0 //5.0
+finishRadius = 8.0 // 50 
+animateTime = 1.4 //3.5
+
+[Plasma]
+simulateBase = "sim_null"
+lifeTime = 0.6
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "yelflare.tga"// ringb2
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 320"// 180
+finishColor = "100 50 0 0"
+startRadius = 15.0 //5.0
+finishRadius = 18.0 // 50 
+animateTime = 0.6 //3.5
+
+[Ringa]
+simulateBase = "sim_null"
+lifeTime = 2
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "sgodlight1.tga"// ringb2
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 220"// 180
+finishColor = "80 40 0 0"
+startRadius = 15 //5.0
+finishRadius = 28.0 // 50 
+animateTime = 1.0 //3.5
+
+
+[sparks]
+simulateBase = "sim_ember"
+lifeTime = 0.6
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.1
+textureName = "sparks.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 100 655"
+finishColor = "55 20 0 0"
+startRadius = 5.2
+finishRadius = 35.0
+animateTime = 0.6
+
+[Thrust]
+simulateBase = "sim_null"
+lifeTime = 1
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "sgodlight1.tga"
+textureBlend = "one one modulate"
+startColor = "250 180 155 60"
+finishColor = "90 30 0 0"
+startRadius = 3.0
+finishRadius = 20.0
+animateTime = 1
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "edfshock.tga" //ringa3
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = " 100 0 00 90"
+finishColor = "255 255 255 0"
+startRadius = 5.0
+finishRadius = 15.0 // 50
+animateTime = 0.7
+
+//[trail]
+simulateBase = "sim_ember"
+lifeTime = 3
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "40 40 40 154"
+finishColor = "90 90 90 0"
+startRadius = 0.1
+finishRadius = 1.4
+animateTime = 3
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.5 0.5 0.5"
+emitLife = 2
+
+//[trail1]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "55 127 255 200"
+finishColor = "0 40 90 0"
+startRadius = 0.06
+finishRadius = 0.0
+trailTime = 2.0
+segmentTime = 0.5
+
+[trail]
+simulateBase = "sim_ember"
+lifeTime = 2
+renderBase = "draw_twirl_trail"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 20"
+finishColor = "40 40 40 0"
+startRadius = 0.2
+finishRadius = 5
+animateTime = 2
+emitDelay = 0.03
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "4.0 4.0 4.0"
+emitLife = 2
+
+
+[cloud]
+simulateBase = "sim_smoke"
+lifeTime = 0.24
+renderBase = "draw_emit"
+emitName = "ixshipxpl1.cloudemit"
+emitDelay = 0.06
+emitVelocity = "0.0 15 0.0"
+emitVariance = "15.0 15.0 15.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 7.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "80 80 80 110"
+finishColor = "140 140 140 0"
+startRadius =  10
+finishRadius = 25.0
+animateTime = 7.0
+rotationrate = 2
+
+//[flame]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_emit"
+emitName = "ixshipxpl1.flameemit"
+emitDelay = 0.3
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "4.0 0.0 0.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.3
+renderBase = "draw_twirl"
+textureName = "edfheat.tga" // flame2
+textureBlend = "srcalpha invsrcalpha modulatealpha"//"one one modulate"
+startColor = " 255 155 55 200"
+finishColor = "255 255 255 0"
+startRadius = 5.0
+finishRadius = 2.0
+animateTime = 1.3
+rotationRate = 0.0
+
+[light]
+simulateBase = "sim_smoke"
+lifeTime = 0.09
+renderBase = "draw_emit"
+emitName = "ixshipxpl1.lightemit"
+emitDelay = 0.1
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "60.0 60.0 60.0"
+
+[Lightemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 210 155 15550"
+finishColor = "155 55 0 0"
+startRadius = 180.0 // 350
+finishRadius = 150.0 // 150
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+//[posroll]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "40 40 40 0"
+startRadius = 1.0
+finishRadius = 2
+animateTime = 2.0
+rotationRate = 2.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 0"
+startRadius = 0.6
+finishRadius = 0.4
+animateTime = 6.0
+
+[Puff2]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_light"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 0"
+startRadius = 4.0
+finishRadius = 1.0
+animateTime = 3.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[ring1]
+simulateBase = "sim_null"
+lifeTime = 0.6
+renderBase = "draw_sphere"
+textureName = "edfshock.tga" //ring2
+textureBlend = "one one modulate"
+startColor = "255 0 0 200"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 20.0
+animateTime = 0.4
+latitudeBands = 8
+longitudeSegments = 16
+
+[ring2]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "edfshock.tga"
+textureBlend = "one one modulate"
+startColor = "155 5 0 200"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 15.0
+animateTime = 1.0
+latitudeBands = 8
+longitudeSegments = 16
+
+[ring3]
+simulateBase = "sim_null"
+lifeTime = 1.8
+renderBase = "draw_sphere"
+textureName = "edfpshock.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 00 220"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 12.0
+animateTime = 1.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[ground]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "edfshock.tga"
+textureBlend = "one one modulate"
+startColor = "150 50 0 150"
+finishColor = "250 250 250 0"
+startRadius = 1.0
+finishRadius = 15.0
+animateTime = 1.0
+
+//[heat]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_emit"
+emitName = "ixshipxpl.heatemit"
+emitDelay = 0.3
+emitVelocity = "0.1 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[heatemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "heat.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha" //"one one modulate"
+startColor = "255 255 255 250"
+finishColor = "50 20 0 0"
+startRadius = 10.0
+finishRadius = 5.0
+animateTime = 1.5
+rotationRate = 0.0
+
+//[cloud]
+simulateBase = "sim_dust"
+lifeTime = 2.0
+renderBase = "draw_emit"
+emitName = "xvchxpl.cloudemit"
+emitDelay = 1.0
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "0.0 1.0 0.0"
+
+[posroll]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_emit"
+emitName = "ixshipxpl1.posemit"
+emitDelay = 0.05
+emitVelocity = "0.0 0 0.0"
+emitVariance = "45.0 10.0 45.0"
+
+[posemit]
+simulateBase = "sim_smoke"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "00 00 00 70"
+finishColor = "40 40 40 0"
+startRadius =  7
+finishRadius = 18.0
+animateTime = 6.0
+rotationrate = -2
+
+[flames]
+simulateBase = "sim_dust"
+lifeTime = 0.45
+renderBase = "draw_emit"
+emitName = "ixshipxpl1.flamesemit"
+emitDelay = 0.09
+emitVelocity = "0.0 25 0.0"
+emitVariance = "15.0 15.0 15.0"
+
+[flamesemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.8
+renderBase = "draw_twirl"
+textureName = "flm5.tga"
+textureBlend = "one one modulate"
+finishColor = "150 50 0 0" //255 155 155 255"
+startColor = "255 255 255 455"
+startRadius = 12
+finishRadius = 5
+animateTime = 1.8
+rotationRate = 10.0
+
+[flames2]
+simulateBase = "sim_dust"
+lifeTime = 0.45
+renderBase = "draw_emit"
+emitName = "ixshipxpl1.flames2emit"
+emitDelay = 0.09
+emitVelocity = "0.0 5 0.0"
+emitVariance = "25.0 25.0 25.0"
+
+[flames2emit]
+simulateBase = "sim_dust"
+lifeTime = 1.8
+renderBase = "draw_twirl"
+textureName = "flm2.tga"
+textureBlend = "one one modulate"
+finishColor = "150 50 0 0" //255 155 155 255"
+startColor = "255 255 255 455"
+startRadius = 8
+finishRadius = 3
+animateTime = 1.8
+rotationRate = 10.0
+
+
+
+

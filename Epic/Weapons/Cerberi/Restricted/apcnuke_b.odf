@@ -1,0 +1,120 @@
+[GameObjectClass]
+geometryName = "apwrck00.x" //"irocketemit.xsi"
+geometryScale = 0.03
+animCount = 0
+//animName1 = "forward"
+//animFile1 = "irocketemit.xsi"
+classLabel = "wingman" //"daywrecker"
+scrapCost = 120
+buildTime = 120.0
+scrapValue = 1
+maxHealth = 0.02
+maxAmmo = 0
+unitName = "DarkMatter Singularity"
+aiName = "PowerUpProcess"
+explosionName = "null" //"xnukestxpl_srvb"
+needpilot = 0
+caninteract = 1
+candetect = 1
+heatsignature = 10
+imagesignature = 10
+radarsignature = 10
+needgroup = 0
+isgrouped = 0
+DAMAGE_SCALE = 10
+UseVehicleCrashOnDeath = false
+DoBettyAttack = false
+
+requireCount = 3
+requireName1 = "cbcbun_b"
+requireText1 = "Build Uplink"
+requireName2 = "cbtcen_b"
+requireText2 = "Build Core Matrix"
+requireName3 = "cbfact_b"
+requireText3 = "Build Crucible"
+
+scrapClass1 = "cnuke_b"
+scrapClass2 = "cnuke_b"
+scrapClass3 = "cnuke_b"
+
+
+[CraftClass]
+HasSeparateChunks = false
+NumChunks = 0
+NumChunks1 = 0
+chunkEffect1 = "null.xsi"  
+chunkEffect2 = "null.xsi" 
+chunkEffect3 = "null.xsi" 
+chunkEffect4 = "null.xsi" 
+chunkEffect5 = "null.xsi" 
+DAMAGE_SCALE = 10
+MIN_BOUNCE_VEL = 0.0
+
+//attackTask = "AssaultTankAttack"
+//subAttackTask = "SupportSubAttack"
+//subAttackClass = "ANS"
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "MortarBikeSubAttack"
+subAttackClass = "ANS"
+
+// subAttackClass uses 3 letters.
+// 1st letter is either A or N.     A is include Air targets.         N is attack ground only.
+// 2nd letter is either D or N.     D is to deploy before attacking.  N for regular attack.
+// 3rd letter is either S or N.     S is to use Weapon Range.         N is use the Engage Range to attack. 
+
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+selectWaitMsg = ""
+selectAttackMsg = ""
+selectFollowMsg = ""
+selectGoMsg = ""
+selectOtherMsg = ""
+holdMsg = ""
+
+goMsg = ""
+attackMsg = ""
+followMeMsg = ""
+followMsg = ""
+repairMsg = ""
+reloadMsg = ""
+rescueMsg = ""
+recycleMsg = ""
+otherMsg = "" 
+holdMsg = ""
+user1Msg = ""  
+killedMsg = ""
+diedMsg = ""
+
+[HoverCraftClass]
+DAMAGE_SCALE = 10
+velocForward = 28.5 // []
+velocReverse = 20.0 // []
+velocStrafe = 16.0 // []
+accelThrust = 24.0 //acceleration []
+accelDragStop = 6.0 //how fast it stops once hands are off controls []
+accelJump = 15.0 // []
+setAltitude = 0.01 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.25 //nose up []
+pitchThrust = 10 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 2.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "ssmfly.wav"
+soundTurbo = "ssmfly.wav"

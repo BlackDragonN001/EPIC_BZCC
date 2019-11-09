@@ -1,0 +1,147 @@
+[GameObjectClass]
+classLabel = "animal"
+geometryName = "jak_skel.xsi"
+
+animCount = 12
+animName1 = "idle"
+animFile1 = "jak_idle.xsi"
+
+animName2 = "walk"
+animFile2 = "jak_run.xsi"
+
+animName3 = "run"
+animFile3 = "jak_run.xsi"
+
+animName4 = "jump"
+animFile4 = "jak_run.xsi"
+		  
+animName5 = "death"
+animFile5 = "jak_death01.xsi"
+		 
+animName6 = "curious"
+animFile6 = "jak_curious.xsi"
+		 
+animName7 = "attack1"
+animFile7 = "jak_attack01.xsi"
+		 
+animName8 = "attack2"
+animFile8 = "jak_attack02.xsi"
+		 
+animName9 = "attack3"
+animFile9 = "jak_attack03.xsi"
+		
+animName10 = "attack4"
+animFile10  = "jak_attack04.xsi"
+
+animName11 = "eat1"
+animFile11 = "jak_eat01.xsi"
+
+animName12 = "eat2"
+animFile12 = "jak_eat02.xsi"
+
+geometryScale = 0.3
+
+mass=5450//**needs to be NOT tossed around like a sock
+VehicleSearchFilter = 0 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+scrapCost = 0
+scrapValue = 0
+pilotCost = 1
+maxHealth = 250
+maxAmmo = 3
+unitName = "Jak Killer"
+aiName = "LandAnimalProcess"
+heatSignature = 0.2
+imageSignature = 0.3
+radarSignature = 0.2
+
+isAssault = 0
+explosionName = "xvscut"
+
+canInteract = 1 // can interact using the reticle 
+isGrouped = 1 // add to a command group 
+needGroup = 1 // need free group to build 
+//isLimited = 1 // add to the limit count 
+//needLimit = 1 // need free limit to build 
+needPilot = 1
+canDetect = 1 // can attack other units through attack command 
+CanRescue = 0 
+CanSelect = 1
+
+armorClass = L
+
+LightingType = 1
+
+[CraftClass]
+braccelFactor = 0.08
+velFactor = 0.4
+steerFactor = 1
+omegaFactor = 0.4
+strafeFactor = 0.1
+
+weightInTons = 80
+rangeScan = 1500.0
+periodScan = 1.0
+velocJam = 5.0
+engageRange = 1500
+
+//DoIdleDispatch = false
+
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = false 
+RetargetOnStrafe = true
+
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+
+
+damageEffect1 = "DmgVhcl1_SW"
+damageEffect2 = "DmgVhcl2_SW"
+damageEffect3 = "DmgVhcl3_SW"
+damageEffect4 = "DmgVhcl4_SW"
+
+[PersonClass]
+painSound1 = "pain1.wav";
+painSound2 = "pain2.wav";
+painSound3 = "pain3.wav";
+painSound4 = "pain4.wav";
+painSound5 = "pain5.wav";
+painSound6 = "pain6.wav";
+burnSound1 = "lburn1.wav";
+burnSound2 = "lburn2.wav";
+dieSound1  = "death1.wav";
+dieSound2  = "death2.wav";
+dieSound3  = "death3.wav";
+dieSound4  = "death4.wav";
+dieSound5  = "death5.wav";
+crushSound = "squish.wav";
+jumpSound  = "jump.wav";
+landSound  = "land.wav";
+stepSound  = "running.wav"
+
+
+[LandCreature]
+animRate = 2.0
+velocJump = 12
+velocForward = 28.0
+//Asscelaration in Gravities
+accelThrust = 12
+
+VehicleSearchFilter = 0 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+TooFarDist = 10.5 // Distance at which attacks stop
+DamageBase = 400.0 // This and below are used when applying damage to a target
+DamageArmor = 1.0
+DamageShield = 1.0
+DamageValue = 400.0
+
+// in degrees/sec
+alphaSteer = 20.0
+omegaSpin =  60.0
+omegaTurn = 150.0
+
+leftfootpiece = "hp_lfoot";
+rightfootpiece = "hp_rfoot";
+
+
+

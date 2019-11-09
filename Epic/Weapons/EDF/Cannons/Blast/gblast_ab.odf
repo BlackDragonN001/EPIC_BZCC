@@ -1,0 +1,21 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gblast_cb"
+ordName = "blast_ab"
+wpnName = "Blast"
+fireSound = "gblas00.wav"
+wpnReticle = "gblast"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 750
+
+[CannonClass]
+shotDelay = 2.0 // .5/sec
+shotAlternate = 0
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gplasma_cb.cloud"
+renderName2 = "gplasma_cb.light"
+renderName3 = "gplasma_cb.flame"

@@ -1,0 +1,65 @@
+// =================
+// EMP MORTAR EXPLOSION - CREATED BY GENERAL BLACKDRAGON
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+FriendlyFireDamage = true
+
+particleTypes = 0
+
+particleClass1 = "xqsingburst.Shock1"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = "xempgen.wav" //Wav file created by GBD, it exists in patch13.pak
+damageRadius = 0.0//60.0
+damageValue(N) = 0//1000
+damageValue(L) = 0//700
+damageValue(H) = 0//400
+damageValue(S) = 0//700
+damageValue(D) = 0//1000
+damageValue(A) = 0//400
+kickRadius = 0.0
+kickOmega = 0.0
+kickVeloc = 0.0
+
+[Shock1]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "1 1 1 1"
+finishColor = "1 1 1 0"
+startRadius = 0.0
+finishRadius = 200.0
+animateTime = 0.5
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -25.0
+AddYaw = -25.0
+AddRoll = -25.0
+
+[Shock2]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "5 5 5 1"
+finishColor = "5 5 5 0"
+startRadius = 0.0
+finishRadius = 200.0
+animateTime = 0.5
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 25.0
+AddYaw = 25.0
+AddRoll = 25.0

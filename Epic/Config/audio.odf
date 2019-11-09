@@ -1,0 +1,35 @@
+[AudioSystem]
+
+//insideDistanceFactor = 10.0f;
+//insideRolloffFactor = 3.0f;
+//outsideDistanceFactor = 1.0f;
+//outsideRolloffFactor = 0.6f;
+//thrustVolumeBaseUser = 5.0f;
+//thrustVolumeRangeUser = 5.0f;
+//
+//minSoundDist = 10.0f;
+//maxSoundDist = 250.0f;
+//minDiscardSoundDist = 20.0f;
+//maxDiscardSoundDist = 250.0f;
+//
+//
+/
+//
+//aiEngineFactor = 10.0f;
+//
+
+weaponVolumeFactor = 2.0f;
+ordnanceVolumeFactor = 4.0f;
+explosionVolumeFactor =	6.0f;
+
+vehicleMinDist = 20.0
+vehicleMaxDist = 1000.0
+
+explosionMinDist = 20.0f;
+explosionMaxDist = 1000.0f;
+
+weaponMinDist = 20.0f;
+weaponMaxDist = 1000.0f;
+
+ordnanceMinDist = 20.0f;
+ordnanceMaxDist = 1000.0f;

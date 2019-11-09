@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "radardamper"
+geometryName = "igsatc00.xsi"
+geometryScale = 0.13
+ordName = NULL
+wpnName = "RED Field"
+fireSound = "gredf00.wav"
+wpnReticle = "gredfld.0"
+wpnPriority = 0
+wpnCategory = "PACK"
+
+[SpecialItemClass]
+activeSound = "gredf01.wav"
+expireSound = "gredf02.wav"
+ammoCost = 5

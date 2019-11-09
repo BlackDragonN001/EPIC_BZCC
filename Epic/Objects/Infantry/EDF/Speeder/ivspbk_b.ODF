@@ -1,0 +1,125 @@
+[GameObjectClass]
+baseName = "ivspbk"
+geometryName = "ivspbk00_b.xsi"
+geometryScale = 1.5
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 20
+scrapReturn = 10
+maxHealth = 400
+maxAmmo = 2000
+addAmmo = 10
+unitName = "Speeder"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+//explosionName = "xstbcar_b"
+
+heatSignature = 0.1
+imageSignature = 0.1
+radarSignature = 0.1
+
+LightingType = 1
+
+isAssault = 0
+
+//needPilot = 0
+
+armorClass = N
+
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gminigun_cb"
+weaponAssault1 = 0
+////////////////////////////////////
+ 
+[CraftClass]
+canHunt = 1
+//xplCrash = "xstbgnd_b"
+
+rangeScan = 800.0f
+periodScan = 2.0f
+velocJam = 2.0f
+engageRange = 600
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+
+ClosestEnemyGoodEyes = true
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 40;
+topSpeed = 120;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+AlwaysDeployed = true
+AlwaysUndeployed = false
+
+velocSet(L) = 15.0 // minimum velocity
+velocSet(M) = 55.0 // cruising velocity
+velocSet(H) = 80.0 // maximum velocity
+accelThrust = 70.0 // thrust acceleration
+accelBrake = 40.0 // brake acceleration
+accelDrag = 50//10.0 // drag acceleration
+omegaSteer(L) = 18//4.51 // steer turn rate at minimum
+omegaSteer(M) = 12//2.52 // steer turn rate at cruising
+omegaSteer(H) = 8//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 3.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 1.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.76 // airbrake turn rate at maximum
+alphaSteer = 8.0 // steering angular acceleration
+alphaStrafe = 15.0 // airbrake angular acceleration
+minAltitude = 20.0 // minimum altitude
+maxAltitude = 100.0 // maximum altitude
+alphaLevel = 6.0 // leveling angular acceleration
+alphaDamp = 4.0 // damping angular acceleration
+pitchPitch = 0.5 // maximum pitch angle
+rollSteer = 0.8//0.7 // maximum roll angle from steering
+rollStrafe = 0.7 // maximum roll angle from airbraking
+timeDeploy = .5 // time to deploy
+timeUndeploy = 5 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 40
+AILiftSpring = 15.0
+LiftSpring = 12.5 
+
+soundThrust = "mdron.wav"
+soundTurbo = "mdronth.wav"
+

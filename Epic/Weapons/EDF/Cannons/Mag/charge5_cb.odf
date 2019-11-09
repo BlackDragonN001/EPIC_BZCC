@@ -1,0 +1,43 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.5
+xplGround = "xmaggnd5_c"
+xplVehicle = "xmagcar5_c"
+xplBuilding = "xmagcar5_c"
+
+renderName = "charge5_cb.render"
+
+ammoCost = 40
+lifeSpan = 1.25 // 100m
+shotSpeed = 240.0
+
+damageValue(N) = 700 // none
+damageValue(L) = 650 // light
+damageValue(H) = 450 // heavy
+
+damageValue(S) = 650 // standard
+damageValue(D) = 700 // deflection
+damageValue(A) = 450 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "charge5_cb.flare"
+
+[Flare]
+renderBase = "draw_twirl_trail"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255" 
+finishColor = "255 175 255 255" 
+startRadius = 1.5
+finishRadius = 0.5
+rotationRate = 10.0
+animateTime = 0.01
+emitDelay = 0.003
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 5.0 5.0"
+emitLife = 0.01
+

@@ -1,0 +1,193 @@
+// =================
+// EMP MORTAR EXPLOSION - CREATED BY GENERAL BLACKDRAGON
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+FriendlyFireDamage = true
+
+particleTypes = 7
+
+particleClass1 = "xqsingburst.Shock1"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xqsingburst.shock2"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xqsingburst.shock3"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xqsingburst.ring1"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xqsingburst.xring1"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xqsingburst.flare"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xqsingburst.light"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+
+explSound = "xempgen.wav" //Wav file created by GBD, it exists in patch13.pak
+damageRadius = 0.0//60.0
+damageValue(N) = 0//1000
+damageValue(L) = 0//700
+damageValue(H) = 0//400
+damageValue(S) = 0//700
+damageValue(D) = 0//1000
+damageValue(A) = 0//400
+kickRadius = 800.0
+kickOmega = 5.0
+kickVeloc = 25.0
+
+
+[Flare]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "cpulse.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+animateTime = 1.0
+startRadius = 0.0
+finishRadius = 600.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 255 255 0"
+finishColor = "255 255 255 5000"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+
+[Shock1]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 10"
+finishColor = "255 255 255 0"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -25.0
+AddYaw = -25.0
+AddRoll = -25.0
+
+[Shock2]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 10"
+finishColor = "255 255 255 0"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 25.0
+AddYaw = 25.0
+AddRoll = 25.0
+
+[Shock3]
+StartDelay = 1.0
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_emit"
+emitName = "xqsingburst.shock3a"
+emitDelay = 5.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Shock3a]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+//textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 10"
+finishColor = "255 255 255 0"
+startRadius = 400.0
+finishRadius = 0.0
+animateTime = 0.5
+latitudeBands = 32
+longitudeSegments = 64
+/InitialPitch = 0.0
+/InitialYaw = 0.0
+/InitialRoll = 0.0
+/AddPitch = 25.0
+/AddYaw = 25.0
+/AddRoll = 25.0
+
+/[Ring]
+/StartDelay = 3.0//1.0
+/simulateBase = "sim_smoke"
+/lifeTime = 4.0//2.0
+/renderBase = "draw_emit"
+/emitName = "xempm.ring1a"
+/emitDelay = 5.0
+/emitVelocity = "0.0 0.0 0.0"
+/emitVariance = "0.0 0.0 0.0"
+
+[Ring1]//a]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "edfbshock.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 20"
+finishColor = "255 255 255 0"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+
+/[XRing]
+/StartDelay = 3.0//1.0
+/simulateBase = "sim_smoke"
+/lifeTime = 4.0//2.0
+/renderBase = "draw_emit"
+/emitName = "xempm.xring1a"
+/emitDelay = 5.0
+/emitVelocity = "0.0 0.0 0.0"
+/emitVariance = "0.0 0.0 0.0"
+
+[xRing1]//a]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_wave"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 5"
+finishColor = "255 255 255 0"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+waveAngle = 3.1416
+waveDepth = 0.6 //.5
+waveSegments = 32

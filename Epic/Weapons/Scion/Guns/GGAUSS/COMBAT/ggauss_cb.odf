@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "ggauss_ab"
+ordName = "gauss_cb"
+wpnName = "Gauss Gun"
+fireSound = "gauss_c.wav"
+wpnReticle = "gblast"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 750
+
+[CannonClass]
+shotDelay = 0.5
+shotAlternate = 1

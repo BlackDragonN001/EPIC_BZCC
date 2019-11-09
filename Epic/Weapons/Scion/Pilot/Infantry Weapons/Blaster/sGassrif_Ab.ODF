@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "sgassrif_cb"
+ordName = "sassrif_ab"
+wpnName = "Hvy Blaster"
+fireSound = "magun.wav"
+wpnReticle = "gchain"
+wpnCategory = "HAND"
+isAssault = 1
+flashName = "gshellgun_p.flash"
+aiRange = 300
+
+[CannonClass]
+shotDelay = 0.5
+shotVariance = 0.001
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "55 255 0 300"
+finishColor = "20 200 0 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

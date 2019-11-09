@@ -1,0 +1,119 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "iorckt00.xsi"
+shotSound = "crckt02.wav"
+
+renderName = "frbomb_b.render"
+
+xplGround = "xfrbxpl_b"
+xplVehicle = "xfrbxpl2_b"
+xplBuilding = "xfrbxpl_b"
+
+ammoCost = 100
+lifeSpan = 6
+shotSpeed = 150.0
+
+damageValue(N) = 500
+damageValue(L) = 300
+damageValue(H) = 100
+damageValue(S) = 300
+damageValue(D) = 500
+damageValue(A) = 100
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.2
+
+[ThermalMissileClass]
+coneAngle = 0.2
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 6
+renderName6 = "frbomb_b.flare"
+renderName2 = "frbomb_b.flare2"
+renderName3 = "frbomb_b.rings"
+renderName4 = "frbomb_b.flame"
+renderName5 = "frbomb_b.light"
+renderName1 = "frbomb_b.trail"
+
+
+[Flare]
+renderBase = "draw_twirl"
+textureName = "bluarchit.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 255"
+finishColor = "200 250 255 255"
+startRadius = 5.0
+finishRadius = 3.0
+rotationrate = 14
+
+[Flare2]
+renderBase = "draw_twirl"
+textureName = "bluarchit.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 255"
+finishColor = "200 250 255 255"
+startRadius = 3.0
+finishRadius = 5.0
+rotationrate = -14
+
+[Rings]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureBlend = "one one modulate"
+startColor = "0 40 80 255"
+finishColor = "0 90 180 0"
+startRadius = 0.8
+finishRadius = 1.0
+animateTime = 1.0
+emitDelay = 0.08
+emitLife = 0.9
+rotationrate = 20
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sbluarchit.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 255"
+finishColor = "200 250 255 255"
+startRadius = 4
+finishRadius = 4
+animateTime = 0.05
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.05
+
+[Light]
+renderBase = "draw_light"
+startColor = "150 250 250 1650"
+finishColor = "150 250 250 1650"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.004
+startColor =  "105 155 250 28"// "100 0 0 100" 
+finishColor =  "00 00 60 0" // "100 100 100 0"
+startRadius = 0.4
+finishRadius = 0.1
+segmentTime = 0.6
+
+//[MagnetShellClass]
+//triggerDelay = 0.0
+//fieldRadius = 20.0
+//objPushCenter = 30.0
+//objPushEdge = 10.0
+//objDrag = -1
+//ordPushCenter = -225.0
+//ordPushEdge = -200.0
+//ordDrag = 50

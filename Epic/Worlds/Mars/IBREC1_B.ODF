@@ -1,0 +1,81 @@
+[GameObjectClass]
+geometryName = "ibop.xsi"
+glowTexture = "edfbasea0.pic"
+geometryScale = 3
+classLabel = "recycler"
+powerCost = 0
+scrapCost = 0
+scrapValue = 10
+maxHealth = 30000
+maxAmmo = 0
+unitName = "Recycler"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+collisionRadius = 4.0
+
+armorClass = H
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_lblue_nf"
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "ibubigref.light3"
+
+//effectHard2 = "hp_emit_2"
+//effectName2 = "ibubigref.light3"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ibubigref.light3"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ibubigref.light3"
+//effectHard5 = "hp_emit_5"
+//effectName5 = "ibubigref.light3"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+
+
+[BuildingClass]
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 3
+//tunnel01DX = 2
+//tunnel01DZ = 4
+//tunnel01Edge = "wwtw"
+
+soundAmbient = "ibrecy01.wav"
+
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+
+//buildItem1 = "ivscav_b"
+buildItem2 = "ivscout_b"
+builditem3 = "ivpanther_b"
+buildItem4 = "ivfighter_b"
+buildItem5 = "ivspbomb_b"
+buildItem7 = "apserv"
+
+//[BuildGroup8]//ready for infantry squads
+//BuildLabel = "Infantry"
+//buildItem1 = "isbsold_b"
+//buildItem2 = "isrsold_b"
+//buildItem3 = "islsold_b"
+//buildItem4 = "isgsold_b"
+//buildItem5 = "isssold_b"
+//buildItem6 = "sshaman_b"
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+[RecyclerClass]
+scrapHold = 60
+scrapDelay = 3.0 // # of seconds before +1 scrap

@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName = "ioartl00.xsi"
+classLabel = "spraymine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 120
+maxHeat = 0
+maxAmmo = 500
+unitName = "Splinter"
+explosionName = "xmortgnd_b"
+
+[SprayBuildingClass]
+payloadName = "splinter_b"
+fireSound = "smort02.wav"
+triggerDelay = 0.1 //2
+setAltitude = 3.0
+omegaSpin = 100.0
+shotDelay = 0.001
+anglePitch = 0.5

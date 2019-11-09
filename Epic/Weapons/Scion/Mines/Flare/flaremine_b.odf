@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = "igflar00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 100
+unitName = "Solar Flare"
+heatSignature = 300.0
+imageSignature = 100
+
+[MineClass]
+lifeSpan = 10.0
+
+[FlareMineClass]
+payloadName = "flare_b"
+fireSound = "smine01.wav"
+triggerDelay = 2.0
+shotDelay = 0.01
+shotVariance = 0.3
+damageRadius = 30.0
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 5 // heavy
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 5 // absorbtion
+kickRadius = 30.0
+kickVeloc = 0.2
+kickOmega = 0.5

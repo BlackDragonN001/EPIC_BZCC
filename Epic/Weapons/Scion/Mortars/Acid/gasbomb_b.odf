@@ -1,0 +1,39 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = "ioartl00.xsi"
+shotSound = "crckt02.wav"
+xplGround = "xgasmxpl"
+xplVehicle = "xgasmxpl"
+xplBuilding = "xgasmxpl"
+
+rendername = "gasbomb_b.render"
+
+ammoCost = 100
+lifeSpan = 1e30
+shotSpeed = 78.0
+
+damageValue(N) = 50 // none
+damageValue(L) = 40 // light
+damageValue(H) = 30 // heavy
+
+damageValue(S) = 40 // standard
+damageValue(D) = 30 // deflection
+damageValue(A) = 50 // absorbtion
+
+[SprayBombClass]
+payloadName = "gasbomb2_b"
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 255 200 63"
+finishColor = "100 155 100 0"
+startRadius = 1
+finishRadius = 3.0
+animateTime = 2.0
+rotationRate = 5.0
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 2.0

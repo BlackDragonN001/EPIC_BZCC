@@ -1,0 +1,175 @@
+// =============
+// Explosion for Scion rbomb
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 12
+particleClass7 = "xfrbxpl_b.core"
+particleCount7 = 1
+particleVeloc7 = "0.0 -2.0 0.0"
+particleClass2 = "xfrbxpl_b.core2"
+particleCount2 = 1
+particleVeloc2 = "0.0 -2.0 0.0"
+particleClass3 = "xfrbxpl_b.shock"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass6 = "xfrbxpl_b.light"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+particleClass5 = "xfrbxpl_b.beams"
+particleCount5 = 1
+particleVeloc5 = "50.0 0.0 50.0"
+particleClass1 = "xfrbxpl_b.char"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xfrbxpl_b.ring"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass9 = "debris.chunks"
+particleCount9 = 10
+particleVeloc9 = "25.0 27.5 25.0"
+particleBias9 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 15
+particleVeloc10 = "28.0 30.5 28.0"
+particleBias10 = "0.0 5.0 0.0"
+
+particleClass11 = "debris.posroll"
+particleCount11 = 8
+particleVeloc11 = "15.0 0.0 15.0"
+
+particleClass12 = "debris.trail"
+particleCount12 = 6
+particleVeloc12 = "40.0 60.0 40.0"
+
+
+explSound = "xmv1.wav"
+damageRadius = 50.0
+
+damageValue(N) = 150 // none
+damageValue(L) = 150 // light
+damageValue(H) = 150 // heavy
+
+damageValue(S) = 130 // standard
+damageValue(D) = 220 // deflection
+damageValue(A) = 100 // absorbtion
+
+kickRadius = 50.0
+kickVeloc = -50.0
+kickOmega = 10.0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = .8
+renderBase = "draw_sprite"
+textureName = "bluarchit.tga"
+textureBlend = "one one modulate"
+startColor = "200 212 250 255"
+finishColor = "125 125 125 0"
+startRadius = 20.0
+finishRadius = 15.0
+animateTime = .8
+rotationrate = 2
+
+[Core2]
+simulateBase = "sim_dust"
+lifeTime = .8
+renderBase = "draw_twirl"
+textureName = "bluarchit.tga"
+textureBlend = "one one modulate"
+startColor = "200 212 250 255"
+finishColor = "125 125 125 0"
+startRadius = 20.0
+finishRadius = 30.0
+animateTime = 0.6
+animateTime = .8
+rotationrate = -1.6
+
+[Shock]
+simulateBase = "sim_dust"
+lifeTime = 0.8
+renderBase = "draw_sphere"
+textureName = "cv_shield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 2550"
+finishColor = "125 125 250 0"
+startRadius = 10.0
+finishRadius = 35.0
+animateTime = 0.8
+latitudeBands = 8
+longitudeSegments = 16
+rotationrate = 5
+
+[light]
+simulateBase = "sim_smoke"
+lifeTime = 0.8
+renderBase = "draw_emit"
+emitName = "xfrbxpl_b.lightemit"
+emitDelay = 0.8
+emitVelocity = "0.0 180.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Lightemit]
+simulateBase = "sim_null"
+lifeTime = 0.8
+renderBase = "draw_light"
+startColor = "210 250 255 9550"
+finishColor = "0 0 255 0"
+startRadius = 180.0 // 350
+finishRadius = 150.0 // 150
+animateTime = 0.8.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[beams]
+simulateBase = "sim_dust"
+lifeTime = 0.4
+renderBase = "draw_emit"
+emitName = "xfrbxpl_b.beamsemit"
+emitDelay = 0.02
+emitVelocity = "0 30 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 300.0 500.0"
+
+[beamsemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.25
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 250"
+finishColor = "100 120 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.25
+textureRate = 0.1 //.01
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 12.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 35
+finishRadius = 35
+animateTime = 12.0
+
+[ring]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_planar"
+textureName = "mistring.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 255 255"
+finishColor = "0 0 200 0"
+startRadius = 45
+finishRadius = 35
+animateTime = 0.4

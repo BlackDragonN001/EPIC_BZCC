@@ -1,0 +1,53 @@
+[WeaponClass]
+classLabel = "arccannon"
+IsArcing = 1
+AllowAimHigh = true 
+altName = "gcutter_ab"
+ordName = NULL
+wpnName = "Tentacle"
+fireSound = "arc02.wav"
+wpnReticle = "garc_a"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 200
+flashName = "pmtentacle_cb.flash"
+
+[ArcCannonClass]
+startDist = 10.0
+
+finishDist = 180.0
+
+travelVeloc = 30.0
+
+coneAngle = 0.95
+
+ammoCost = 5.0
+
+damageValue(N) = 50.0 // none
+damageValue(L) = 50.0 // light
+damageValue(H) = 20.0 // heavy
+
+damageValue(S) = 20.0 // standard
+damageValue(D) = 25.0 // deflection
+damageValue(A) = 15.0 // absorbtion
+
+activeSound = "arc01.wav"
+
+xplGround = "xcutgnd_b"
+xplVehicle = "xcutcar_b"
+xplBuilding = "xcutcar_b"
+
+[Flash]
+renderBase = "draw_trail"// "draw_bolt"
+textureName = "tentacle.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 150 150 2550"
+finishColor = "150 150 150 0"
+startRadius = 0.6
+finishRadius = 0.6
+segmentLength = 0.02 
+segmentVariance = "0.1 0.1 0.1"
+animateTime = .12 // 0.2
+segmentTime = .12
+textureRate = -0.2
+

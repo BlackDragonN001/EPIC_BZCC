@@ -1,0 +1,38 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.4
+MinX = -1024.0
+MinZ = -1024.0
+Width = 2048.0
+Depth = 2048.0
+Height = 50.0
+Tile = 1
+Color = "151 158 103 255"
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=10
+MusicTrack2=8
+MusicTrack3=7
+MusicTrack4=9
+
+[Texture]
+TileTexture1 = "castiron.tga"
+TileTexture2 = "fac_floor.tga"
+TileTexture3 = "fac_wall4_v.tga"
+TileTexture4 = "fac_roof.tga"
+TileTexture5 = "fac_junk1.tga"
+TileTexture6 = "fac_wall3_v.tga"
+TileTexture7 = "fac_wall1_v.tga"
+TileTexture8 = "fac_wall3_u.tga"
+TileTexture9 = "fac_wall2_v.tga"
+TileTexture10 = "fac_wall2_u.tga"
+TileTexture11 = "fac_wall4_u.tga"
+TileTexture12 = "fac_wall1_u.tga"

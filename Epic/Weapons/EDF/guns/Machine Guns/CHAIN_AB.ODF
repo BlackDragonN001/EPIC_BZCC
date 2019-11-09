@@ -1,0 +1,81 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+renderName = "chain_cb.render"
+
+ammoCost = 2.5
+lifeSpan = 0.4 // 120m
+shotSpeed = 900.0
+
+damageValue(N) = 25 // none // 300
+damageValue(L) = 13.5 // light // 270
+damageValue(H) = 12.5 // heavy // 250
+
+damageValue(S) = 13.5 // standard // 270
+damageValue(D) = 10 // deflection // 200
+damageValue(A) = 15 // absorbtion // 300
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "chain_ab.flare"
+renderName2 = "chain_ab.exhaust"
+renderName3 = "chain_ab.flame"
+renderName4 = "chain_ab.trail"
+
+[Flare]
+renderBase = "draw_light"
+startColor = "255 155 55 100"
+finishColor = "255 155 55 100"
+textureBlend = "one one modulate"
+startColor = "55 155 255 255"
+finishColor = "55 155 255 255"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 1 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.4
+finishRadius = 0.08
+segmentTime = 0.035
+animateTime = 0.035
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "200 200 200 20"
+finishColor = "255 255 255 0"
+startRadius = 0.2
+finishRadius = 0.6
+segmentTime = 0.7
+animateTime = 1.3

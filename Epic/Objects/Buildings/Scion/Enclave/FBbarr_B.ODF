@@ -1,0 +1,91 @@
+[GameObjectClass]
+
+CategoryTypeOverride = 4 \\Hit '4' to activate
+
+geometryName = "fbbarr00_b.XSI"
+geometryScale = 2
+classLabel = "factory"
+collisionRadius = 1.0
+scrapCost = 40
+scrapReturn = 20
+scrapValue = 3
+powerCost = 0
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Enclave"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+//canCollide = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F"
+
+
+LightingType = 1 
+
+
+
+provideCount = 2
+provideName1 = "fbbarr_b"
+provideName2 = "barr"
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotyellow"
+lightHard2 = "hp_light_2"
+lightName2 = "spotyellow"
+
+[PoweredBuildingClass]
+//powerTap1 = "HP_TAP_1"
+//powerTap2 = "HP_TAP_2"
+//powerName = "fblung_b"
+detectRange = 600
+
+[BuildingClass]
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 3
+//tunnel01DX = 2
+//tunnel01DZ = 4
+//tunnel01Edge = "wwtw"
+
+soundAmbient = "sdow01.wav"
+
+[FactoryClass]
+soundBuild = "sbrecy02.wav"
+soundFinish = "iapc04.wav"
+
+[BuildGroup1]
+BuildLabel = "Warriors"
+buildItem1 = "sspilo_b"
+buildItem2 = "sssold_b"
+buildItem3 = "fvjakr_b"
+buildItem4 = "fVrhinor_B"
+
+[BuildGroup3]
+BuildLabel = "Mystics"
+buildItem1 = "fvwarlock_b"
+buildItem2 = ""
+
+[BuildGroup5]
+BuildLabel = "Heros"
+buildItem1 = "fvbashar_b"
+buildItem2 = "fvseraph_b"
+buildItem3 = "fvpadishah_b"
+
+
+reloadMsg = "fvrecy11.wav"
+rescueMsg = "fvrecy12.wav"
+
+
+

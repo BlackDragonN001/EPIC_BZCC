@@ -1,0 +1,36 @@
+[GameObjectClass]
+mrmFactor = 0
+geometryName = "cbscavb_b.xsi"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "cbscavb_b.xsi"
+
+geometryScale = 8.5
+
+
+classLabel = "extractor"
+scrapCost = 0
+scrapValue = 20
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Siphon"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+isAssault = 1
+canInteract = 1 // for missile lock
+ownsTerrain = 1
+
+armorClass = H
+
+[BuildingClass]
+// an ambient sound would be nice
+loadAsDummy=1
+dummyVersion=1103
+
+[ExtractorClass]
+initDelay = 12.0
+scrapDelay = 9999
+scrapHold = 200
+detectRange = 1000

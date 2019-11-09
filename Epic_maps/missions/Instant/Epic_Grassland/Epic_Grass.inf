@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 10: Grassland"
+mapTga = "Epic_Grass.bmp"
+mapDesc = "Epic_Grass.des"
+mySide = 1

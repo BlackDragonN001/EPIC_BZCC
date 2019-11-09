@@ -1,0 +1,58 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "iocarpet_b.xsi"//"ioartl00.xsi"
+geometryScale = 0.1
+shotSound = "baz03.wav"
+
+xplGround = "xcarpgnd_b"
+xplVehicle = "xmortxpl_b"
+xplBuilding = "xmortxpl_b"
+
+renderName = "carpet_ab.render"
+
+ammoCost = 50
+lifeSpan = 1e30
+shotSpeed = 86.6
+
+damageValue(N) = 400 // none
+damageValue(L) = 350 // light
+damageValue(H) = 300 // heavy
+
+damageValue(S) = 350 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 400 // absorbtion
+
+IsArcing = 1
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "carpet_ab.trail"
+renderName2 = "carpet_ab.light"
+
+[light]
+renderbase = "draw_light"
+simulateBase = "sim_null"
+startColor = "255 0 0 350"
+finishColor = "255 0 0 350"
+startRadius = 2.0 // 350
+finishRadius = 2.0 // 150
+//animateTime = .3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor =   "80 80 80 60" //"153 153 153 128"
+finishColor = "150 150 150 0
+startRadius = 0.2
+finishRadius = 0.5
+animateTime = 1.5
+segmentTime = 1.5

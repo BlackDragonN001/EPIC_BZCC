@@ -1,0 +1,144 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gbcann_ab"
+ordName = "bcann_cb"
+wpnName = "Heavy Impact Cannon"
+fireSound = "bcann.wav"
+wpnReticle = "gspstab"
+wpnCategory = "CANN"
+isAssault = 1
+flashName = "gbcann_cb.flash"
+aiRange = 600
+
+[CannonClass]
+shotDelay = 2.8
+shotVariance = 0.001
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 8
+renderName1 = "gbcann_c.e1"
+renderName2 = "gbcann_c.e2"
+renderName3 = "gbcann_c.e3"
+renderName4 = "gbcann_c.e4"
+renderName5 = "gbcann_c.e5"
+renderName6 = "gbcann_c.e6"
+renderName7 = "gbcann_c.e7"
+renderName8 = "gbcann_c.e8"
+
+[e1]
+renderBase = "draw_geom"
+textureName = "muz2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 120 0 100"
+startRadius = 2
+finishRadius = 0.7
+animateTime = 0.1
+geomName = "g_fflash.xsi"//sflash
+
+[e2]
+renderBase = "draw_geom"
+textureName = "muz2.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 100 255"
+finishColor = "255 150 0 255"
+startRadius = 2
+finishRadius = 0.5
+animateTime = 0.13
+geomName = "g_fflash.xsi"//sflash
+
+[e3]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "gbcann_c.shell"
+emitDelay = 0.1
+emitVelocity = "2.0 3.0 0.0"//.4 0 0
+emitVariance = "1.0 1.0 0.0"// .5 .5 .5
+[shell]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "shell.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 0.4
+finishRadius = 0.4
+animateTime = 2.5
+rotationRate = 0.1
+
+[e4]
+simulateBase = "sim_dust"
+lifeTime = 1
+renderBase = "draw_emit"
+emitName = "gbcann_c.smoke"
+emitDelay = 0.5
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "0.1 1.0 0.1"
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 50 50 250"
+finishColor = "60 60 60 0"
+startRadius = 0.4
+finishRadius = 0.8 //
+animateTime = 2.0
+
+[e5]
+simulateBase = "sim_dust"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "gbcann_c.spark"
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "10.0 10.0 2.0"
+[spark]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 100 255"
+finishColor = "255 0 0 50"
+startRadius = 0.5
+finishRadius = 0.01
+animateTime = 0.4
+
+[e6]
+renderBase = "draw_geom"
+textureName = "muzfir.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 100"
+startRadius = 2.5
+finishRadius = 1.1
+animateTime = 0.2
+geomName = "g_sflash.xsi"//sflash
+
+[e7]
+renderBase = "draw_geom"
+textureName = "muzfir.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 155 255"
+finishColor = "255 0 0 100"
+startRadius = 2.5
+finishRadius = 0.8
+animateTime = 0.2
+geomName = "g_sflash.xsi"//sflash
+
+[e8]
+simulateBase = "sim_null"
+lifeTime = 0.9
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 0 100"
+startRadius = 0.2
+finishRadius = 0.01
+animateTime = 0.9

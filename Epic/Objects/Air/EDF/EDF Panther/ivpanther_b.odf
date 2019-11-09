@@ -1,0 +1,258 @@
+[GameObjectClass]
+
+provideCount = 2
+provideName1 = "ivpanther"
+provideName2 = "air"
+
+limitClass1 = "ivpanther" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 20
+limitClass1Text = "Squad Limit Reached"
+
+baseName = "ivpanther_b"
+
+unitIcon = "icon_ivpanther_b.png"
+infoName = "ivpanther_b.inf"
+unitStatus = "wire_ivpanther_b.png"
+
+geometryName = "ivpanther00.xsi"
+//cockpitName= "ivscout_cockpit.xsi"
+classLabel = "aircraft"//"wingman"
+scrapValue = 0
+scrapReturn = 25
+scrapCost = 50
+customCost = 60
+buildTime = 10.0
+customTime = 15.0
+maxHealth = 1500
+maxAmmo = 2000
+addAmmo = 50
+aiAddAmmo = 50
+addHealth = 1
+unitName = "Panther Scout"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "ixshipxpl"
+
+collisionRadius = 360.0
+boxCollide = 1
+
+heatSignature = 5.0
+imageSignature = 10.0
+radarSignature = 12.0
+
+isAssault = 0
+armorClass = N
+cockpitName = "ivscout_cockpit.xsi"
+needPilot = 1
+isFlying = 1
+
+requireCount = 2
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+requireName2 = "ibcbun_b"
+requireText2 = "Build Relay Bunk"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivpanther_b.trail"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivpanther_b.trail"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ivpanther_b.light"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ivpanther_b.light"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard3 = "HP_GUN_1"
+weaponName3 = "gchain_cb"
+weaponAssault3 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gchain_cb"
+weaponAssault2 = 0
+//weaponHard3 = "HP_ROCKET_1"
+//weaponName3 = "gaamiss1"
+//weaponAssault3 = 0
+weaponHard1 = "HP_ROCKET_2"
+weaponName1 = "gshadow_cb"
+weaponAssault1 = 0
+weaponHard5 = "HP_SPECIAL"
+weaponName5 = "thruster"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+xplCrash = "ixshipxpl"
+
+ejectratio = 0
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 1400.0f
+periodScan = 0.0f
+velocJam = 5.0f
+engageRange = 500
+
+AllowLinkWeapons = true
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+subAttackTask = "AimFireAttack"
+subAttackClass = "ANN"
+
+ClosestEnemyGoodEyes = true 
+
+FireWhenCanHitFriends = false
+
+AttackTaskUsesGroups = false
+GotoTaskHasLeader = false
+
+//braccelFactor = 0.01 //0.03
+//velFactor = 0.8//0.2
+steerFactor = 0.4//1.5
+omegaFactor = 0.1
+strafeFactor = 0.02
+
+avoidSpeed = 90;
+topSpeed = 250;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+velocSet(L) = 55.0 // minimum velocity
+velocSet(M) = 85.0 // cruising velocity
+velocSet(H) = 120.0 // maximum velocity
+accelThrust = 35.0 // thrust acceleration
+accelBrake = 20.0 // brake acceleration
+accelDrag = 45//10.0 // drag acceleration
+omegaSteer(L) = 5//4.51 // steer turn rate at minimum
+omegaSteer(M) = 4//2.52 // steer turn rate at cruising
+omegaSteer(H) = 3//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0.8 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.6 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.4 // airbrake turn rate at maximum
+alphaSteer = 15.0 // steering angular acceleration
+alphaStrafe = 4.0 // airbrake angular acceleration
+minAltitude = 370.0 // minimum altitude
+maxAltitude = 800.0 // maximum altitude
+alphaLevel = 3.0 // leveling angular acceleration
+alphaDamp = 6.0 // damping angular acceleration
+pitchPitch = 0.4 // maximum pitch angle
+rollSteer = 0.9//0.7 // maximum roll angle from steering
+rollStrafe = 0.9 // maximum roll angle from airbraking
+timeDeploy = 4 // time to deploy
+timeUndeploy = 4 // time to undeploy
+
+AlwaysDeployed = false
+AlwaysUndeployed = false
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 560
+AILiftSpring = 50 // 15.0
+LiftSpring = 30.5 
+AltitudeLookahead = 1.0
+
+soundThrust = "jpack01.wav"
+soundBrake = "wmflame.wav"
+soundDeploy = "wmflame.wav"
+soundUndeploy = "wmflame.wav"
+
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "mortar_b.render"
+renderName2 = "mortar_b.render"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.7
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 200 400"
+finishColor = "20 20 200 400"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 1200                 ;...distance over this many meters => switch to lod2
+
+//[DeployableClass]
+timeDeploy = 0.5
+timeUndeploy = 0.5
+soundDeploy = "avartle0.wav"
+soundUndeploy = "avartle4.wav"
+
+
+
+

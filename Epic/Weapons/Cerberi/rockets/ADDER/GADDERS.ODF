@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gadders"
+ordName = "adders"
+wpnName = "Adder Msl"
+fireSound = "gsand00.wav"
+wpnReticle = "gsting_c"
+wpnCategory = "ROCK"
+aiRange = 700
+isAssault = 0
+flashName = "gadders.flash"
+
+[CannonClass]
+shotDelay = 1.8 // 3.3/sec
+shotAlternate = 1
+shotVariance = 0.8
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "100 0 255 300"
+finishColor = "0 0 255 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

@@ -1,0 +1,83 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+xplGround = "xblastgnd"
+xplVehicle = "xblastcar"
+xplBuilding = "xblastbld"
+
+renderName = "blast_ab.render"
+
+ammoCost = 200
+lifeSpan = 75e-3 // 250m
+shotSpeed = 10e3
+
+damageValue(N) = 900 // none // 450
+damageValue(L) = 640 // light // 320
+damageValue(H) = 400 // heavy // 200
+
+damageValue(S) = 640 // standard // 320
+damageValue(D) = 900 // deflection // 450
+damageValue(A) = 400 // absorbtion // 200
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "blast_ab.beam"
+renderName2 = "blast_ab.fringe"
+renderName3 = "blast_ab.sparkle"
+renderName4 = "blast_ab.steam"
+
+[Beam]
+renderBase = "draw_bolt"
+textureName ="greenbeam1.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 200 455"
+finishColor = "0 255 0 0"
+startRadius = 0.30
+finishRadius = 0.05
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.65
+textureRate = 1
+
+[Fringe]
+renderBase = "draw_bolt"
+textureName ="sptrail1.tga"
+textureBlend = "one one modulate"
+startColor = "0 200 50 155"
+finishColor = "50 180 50 0"
+startRadius = 0.3
+finishRadius = 0.9
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.5
+textureRate = 0.01
+
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureblend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "0 100 255 0"
+startRadius = 0.25
+finishRadius = 0.01
+animateTime = 1.0
+emitDelay = 0.0002
+emitVariance = "2.0 2.0 2.0"
+emitLife = 1.3
+
+
+[Steam]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureblend = "srcalpha invsrcalpha modulatealpha"
+startColor = "155 255 155 20"
+finishColor = "200 255 200 0"
+startRadius = 0.4
+finishRadius = 1
+animateTime = 1.0
+emitDelay = 0.0002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 1.6
+

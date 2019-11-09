@@ -1,0 +1,14 @@
+[WeaponClass] 
+classLabel = "detonator" 
+ordName = "spider0" 
+wpnName = "Spider" 
+fireSound = "smort01.wav" 
+wpnReticle = "gsplint" 
+wpnLadder = "gsplint.L0" 
+wpnPriority = 4 
+wpnCategory = "MORT" 
+aiRange = 250 
+[CannonClass] 
+shotDelay = 31.41 
+[RemoteDetonatorClass] 
+armedReticle = "gmdmgun.1"

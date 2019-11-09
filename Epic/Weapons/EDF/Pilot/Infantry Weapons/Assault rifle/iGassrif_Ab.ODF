@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "igassrif_cb"
+ordName = "assrif_ab"
+wpnName = "Heavy Cal"
+fireSound = "magun.wav"
+wpnReticle = "gchain"
+wpnCategory = "HAND"
+isAssault = 1
+flashName = "gshellgun_p.flash"
+aiRange = 240
+
+[CannonClass]
+shotDelay = 0.12
+shotVariance = 0.001
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 0 300"
+finishColor = "255 0 0 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

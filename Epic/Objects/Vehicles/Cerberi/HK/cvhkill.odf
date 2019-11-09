@@ -1,0 +1,153 @@
+// (c) BZ2CP Unit "Hound"
+// Model by Slaor and Lizard
+// Animation by Fishbone
+
+[GameObjectClass]
+
+baseName = "cvhkill"
+geometryName = "cvhkill_skel.xsi"
+geometryScale = 0.15
+//cockpitName="fvsent_cockpit.xsi"
+animCount = 3
+animName1 = "forward"
+animFile1 = "cvhkill_f.xsi"
+animName2 = "neutral"
+animFile2 = "cvhkill_n.xsi"
+animName3 = "reverse"
+animFile3 = "cvhkill_b.xsi"
+classLabel = "wingman"
+
+scrapValue = 30
+scrapCost = 40
+scrapReturn = 20
+customCost = 50
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 200
+maxAmmo = 3000
+addAmmo = 5
+unitName = "Hound"
+
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+
+VehicleSearchFilter = 1 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+heatSignature = 0.5
+imageSignature = 0.4
+radarSignature = 0.2
+
+needPilot = 1
+
+isAssault = 0
+canSnipe = 0 // No?
+armorClass = L
+
+LightingType = 1
+
+requireCount = 0
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "cvhkill_b.trailer"
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_Cannon_1"
+weaponName1 = "garc_c"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_Cannon_2"
+weaponName2 = "garc_c"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_SHIELD"
+weaponName3 = "gdeflect"
+weaponAssault3 = 0
+
+////////////////////////////////////
+
+[CraftClass]
+canHunt = true
+rangeScan = 500.0f
+periodScan = 2.0f
+velocJam = 5.0f
+engageRange = 400
+
+CanInteractWithTerminal = true
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 10;
+topSpeed = 20;
+
+selectWaitMsg = "evmslys1.wav"
+selectAttackMsg = "evmslat1.wav"
+selectFollowMsg = "evmslpro.wav"
+selectGoMsg = "evmslmov.wav"
+selectOtherMsg = "evmslys2.wav"
+holdMsg = "evmslh.wav"
+
+goMsg = "evmslmto.wav"
+attackMsg = "evmslat.wav"
+followMeMsg = "evmslf2.wav"
+followMsg = "evmslys1.wav"
+repairMsg = "evmslrr.wav"
+reloadMsg = "evmslat1.wav"
+rescueMsg = "evmslpick.wav"
+recycleMsg = "evmslrec.wav"
+otherMsg = "evmslys2.wav" 
+holdMsg = "evmslh.wav"
+user1Msg = "evdeath01.wav"  
+killedMsg = "evmsldes.wav"
+diedMsg = "evdeath01.wav"
+
+[HoverCraftClass]
+velocForward = 18 // []
+velocReverse = 12.0 // []
+velocStrafe = 12.0 // []
+accelThrust = 10.0 //acceleration []
+accelDragStop = 12.0 //how fast it stops once hands are off controls []
+accelJump = 25.0 // []
+
+setAltitude = 1.5 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.4 //nose up []
+pitchThrust = 0.05 //nose down []
+
+rollStrafe = 0.13 //rolls while strafing []
+omegaSpin = 4.0 //spinning in place speed []
+omegaTurn = 5.5 //turning while moving speed []
+alphaSteer = 6.5 //how fast it responds to steering []
+rollSteer = 0.2 //rolls while steering []
+
+//soundThrust = "cvscout.wav"
+//soundTurbo = "cvscout1.wav"
+
+//[Lod1]
+//geometryName = "evmislL1.xsi" ;geometry for lod1
+//distance = 50
+
+//[Lod2]
+//geometryName = "evmislL2.xsi" ;geometry for lod2
+//distance = 130                ;...distance over this many meters => switch to lod2
+
+//[trailer]
+//renderBase = "draw_trail"
+//textureName = "strail2.tga"
+//textureBlend = "one one modulate"
+//textureRate = 0.05
+//startColor = "100 20 180 255"
+//finishColor = "20 0 120 0"
+//startRadius = 0.2
+//finishRadius = 0.01
+//segmentTime = 0.6
+//animateTime = 0.2

@@ -1,0 +1,146 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "plight_b"
+wpnName = "Storm"
+fireSound = "gpopp00.wav"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "CANN"
+aiRange = 350
+flashname = "gplight_b.flash"
+
+
+[CannonClass]
+salvocount = 6
+salvodelay = 0.15
+shotDelay = 25.0
+shotPitch = 1.5
+shotLead = 0
+shotVariance = 0.3
+
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 6
+renderName1 = "gplight_b.light"
+renderName2 = "gplight_b.spell1"
+renderName3 = "gplight_b.spell2"
+renderName4 = "gplight_b.spell3"
+renderName5 = "gplight_b.circle"
+renderName6 = "gplight_b.blast"
+
+
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 4
+renderBase = "draw_light"
+startColor = "50 155 250 1450"
+finishColor = "50 155 250 0"
+startRadius = 35.0
+finishRadius = 35.0
+animateTime = 4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 1
+
+
+[spell1]
+simulateBase = "sim_smoke"
+lifeTime = .05
+renderBase = "draw_emit"
+emitName = "gplight_b.spell1emit"
+emitDelay = 0.13
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "80.0 80.0 80.0"
+
+[spell1emit]
+simulateBase = "sim_smoke"
+lifeTime = .5
+renderBase = "draw_twirl"
+textureName = "spell1.tga"
+textureBlend = "one one modulate"
+startColor = "10 50 255 2550"
+finishColor = "10 20 150 0"
+startRadius = 0.2
+finishRadius = 2 //
+animateTime = .5
+
+
+[spell2]
+simulateBase = "sim_smoke"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "gplight_b.spell2emit"
+emitDelay = 0.10
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "90.0 90.0 9.0"
+
+[spell2emit]
+simulateBase = "sim_smoke"
+lifeTime = .3
+renderBase = "draw_twirl"
+textureName = "spell2.tga"
+textureBlend = "one one modulate"
+startColor = "10 50 255 2550"
+finishColor = "10 20 150 0"
+startRadius = 0.3
+finishRadius = 2.5 //
+animateTime = .3
+
+[spell3]
+simulateBase = "sim_smoke"
+lifeTime = .15
+renderBase = "draw_emit"
+emitName = "gplight_b.spell3emit"
+emitDelay = 0.15
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "70.0 70.0 70.0"
+
+[spell3emit]
+simulateBase = "sim_smoke"
+lifeTime = .5
+renderBase = "draw_twirl"
+textureName = "spell3.tga"
+textureBlend = "one one modulate"
+startColor = "10 50 255 2550"
+finishColor = "10 20 150 0"
+startRadius = 0.25
+finishRadius = 3 //
+animateTime = .5
+
+[circle]
+simulateBase = "sim_null"
+lifeTime = 5
+renderBase = "draw_planar"
+textureName = "spellcircle4.tga"
+textureBlend = "one one modulate"
+startColor = "10 50 255 0"
+finishColor = "10 20 150 2550"
+startRadius = 25
+finishRadius = 25 //
+animateTime = 4
+
+[blast]
+simulateBase = "sim_smoke"
+lifeTime = .15
+renderBase = "draw_emit"
+emitName = "gplight_b.blastemit"
+emitDelay = .15
+emitVelocity = "0.0 2000.0 0.0"
+emitVariance = "0.0 70.0 0.0"
+
+[blastemit]
+simulateBase = "sim_null"
+renderBase = "draw_bolt"
+textureName = "arc_b.tga"
+textureBlend = "one one modulate"
+startColor = "180 200 255 255"
+finishColor = "0 50 255 0"
+startRadius = 7
+finishRadius = 0.01
+segmentLength = 21.0 
+segmentVariance = "15.0 15.0 15.0"
+animateTime = 1.5 // 0.2
+textureRate = 2.5

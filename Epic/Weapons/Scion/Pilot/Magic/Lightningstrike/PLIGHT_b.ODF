@@ -1,0 +1,43 @@
+[OrdnanceClass]
+classLabel = "radarpopper"
+
+shotGeometry = null//"ioartl00.xsi"
+shotSound = "Ordin_c.wav"
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+renderName = "plight_b.render"
+
+ammoCost = 10
+lifeSpan = 30
+shotSpeed = 150.0
+
+damageValue(N) = 00 // none
+damageValue(L) = 00 // light
+damageValue(H) = 00 // heavy
+
+damageValue(S) = 00 // standard
+damageValue(D) = 00 // deflection
+damageValue(A) = 00 // absorbtion
+
+[RadarPopperClass]
+launchXpl = "xlightfir_b"
+launchOrd = "lightord_b"
+
+[Render]
+renderBase = "draw_trail"
+textureName = "mini.tga"
+textureBlend = "one one modulate"
+startColor = "0 155 255 40"
+finishColor = "0 0 150 0"
+startRadius = 0.4
+finishRadius = 0.6
+animateTime = 0.2
+segmenttime = .5
+texturerate = 3
+texturespeed = 5
+//emitDelay = 0.005
+//emitVariance = "3.0 3.0 3.0"
+//emitLife = 0.2

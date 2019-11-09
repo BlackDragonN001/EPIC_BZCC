@@ -1,0 +1,25 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = NULL
+shotSound = 
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+
+ammoCost = 5
+lifeSpan = 30
+shotSpeed = 3.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[SprayBombClass]
+payloadName = "qsingE8c"
+
+HitExplodeTypes = 23 // Explode on anything.
+BuildSprayOnHit = true
+ExplodeOnHit = false

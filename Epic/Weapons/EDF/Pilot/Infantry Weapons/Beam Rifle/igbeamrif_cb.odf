@@ -1,0 +1,41 @@
+[WeaponClass]
+classLabel = "cannon"
+
+// external geometry
+geometryName = "igbeamrif_skel.xsi"
+geometryScale = 0.3
+animCount = 4
+animName1 = "stand"
+animFile1 = "igbeamrif_skel.xsi"
+animName2 = "walk"
+animFile2 = "igbeamrif_skel.xsi"
+animName3 = "crouch"
+animFile3 = "igbeamrif_skel.xsi"
+animName4 = "jump"
+animFile4 = "igbeamrif_skel.xsi"
+
+// cockpit geometry
+cockpitName = "iwbazo_cockpit_skel.xsi"
+cockpitScale = 0.12
+animCountCockpit = 4
+animNameCockpit1 = "stand"
+animFileCockpit1 = "iwbazo_cockpit_skel.xsi"
+animNameCockpit2 = "walk"
+animFileCockpit2 = "iwbazo_cockpit_run.xsi"
+animNameCockpit3 = "crouch"
+animFileCockpit3 = "iwbazo_cockpit_skel.xsi"
+animNameCockpit4 = "jump"
+animFileCockpit4 = "iwbazo_cockpit_skel.xsi"
+
+ordName = "laser_cb"
+wpnName = "Beam Rifle"
+fireSound = "fmiss01.wav"
+wpnReticle = "gbazooka"
+wpnCategory = "HAND"
+isAssault = 0
+isFlying = 0
+altName = "igbeamrif_ab"
+
+[CannonClass]
+shotDelay = 1.5
+

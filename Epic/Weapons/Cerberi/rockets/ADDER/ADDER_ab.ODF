@@ -1,0 +1,114 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "cvcomet00.xsi"
+shotSound = "adderord.wav"
+
+renderName = "cworms.render"//"adder_ab.render"
+
+xplGround = "Xcmcar_mb"
+xplVehicle = "Xcmcar_mb"
+xplBuilding = "Xcmcar_mb"
+
+
+ammoCost = 30
+lifeSpan = 6 // 150m
+shotSpeed = 180.0
+
+damageValue(N) = 800 // none
+damageValue(L) = 200 // light
+damageValue(H) = 60 // heavy
+
+damageValue(S) = 180 // standard
+damageValue(D) = 170 // deflection
+damageValue(A) = 210 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 3.0
+omegaWaver = 1
+rateWaver = 5.0
+
+
+[ThermalMissileClass]
+coneAngle = 5.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "adder_ab.flare"
+//renderName2 = "adder_ab.smoke"
+//renderName3 = "adder_ab.flame"
+renderName2 = "adder_ab.trail"
+
+[Flare]
+renderBase = "draw_light"
+startColor = "95 60 255 900"
+finishColor = "50 40 235 900"
+startRadius = 8.0
+finishRadius = 8.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+//[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 108" //"153 153 153 128"
+finishColor = "153 0 153 0"
+startRadius = 0.2
+finishRadius = 0.7
+animateTime = 2.0
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = .5
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.02
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = .1
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "125 125 125 25500"
+finishColor = "125 125 125 0"
+startRadius = 0.18
+finishRadius = 0.18
+segmentTime = 8
+//segmentVariance = "1 1 0"
+animateTime = 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

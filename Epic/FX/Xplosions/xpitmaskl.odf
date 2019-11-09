@@ -1,0 +1,75 @@
+// =================
+// VEHICLE EXPLOSION
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+
+particleClass1 = "xpitmaskl.dust1"
+particleCount1 = 5
+particleVeloc1 = "5.0 8.0 5.0"
+
+particleClass2 = "xpitmaskl.dust2"
+particleCount2 = 20
+particleVeloc2 = "30.0 0 30.0"
+
+particleClass3 = "xpitmaskl.dust3"
+particleCount3 = 8
+particleVeloc3 = "8.0 0.0 8.0"
+
+
+
+
+explSound = "xcar.wav"
+damageRadius = 20.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+kickRadius = 40.0
+kickOmega = 3.0
+kickVeloc = -30.0
+
+[Dust1]
+simulateBase = "sim_smoke"
+lifeTime = 9.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 170 170 170 120"
+finishColor = "250 250 250 0"
+startRadius = 30.0
+finishRadius = 100.0
+animateTime = 9.0
+rotationRate = 0.5
+
+[Dust2]
+simulateBase = "sim_smoke"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 170 170 170 150"
+finishColor = "250 250 250 0"
+startRadius = 10.0
+finishRadius = 50.0
+animateTime = 6.0
+rotationRate = -.5
+
+[Dust3]
+simulateBase = "sim_dust"
+lifeTime = 7.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 170 170 170 150"
+finishColor = "250 250 250 0"
+startRadius = 50.0
+finishRadius = 80.0
+animateTime = 7.0
+rotationRate = .1
+

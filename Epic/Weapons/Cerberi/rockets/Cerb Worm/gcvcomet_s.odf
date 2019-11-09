@@ -1,0 +1,26 @@
+[WeaponClass]
+classLabel = "torpedolauncher"
+altName = "gcvcomet_s"
+wpnName = "Smart MissileL"
+fireSound = "gcome00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 2000
+
+[LauncherClass]
+lockRange = 2000.0
+shotDelay = 8.0
+lockDelay = 0.2
+coneAngle = 5.2
+lockingReticle = "gcomet.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+
+[TorpedoLauncherClass]
+objectClass = "cvcomet_s"

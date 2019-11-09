@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "cpbomber_b"
+wpnName = "Siren"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 2
+wpnCategory = "MORT"
+AllowAimHigh = true 
+flashname = "gcptalon_b.flash"
+
+aiRange = 3500.0
+
+[CannonClass]
+shotdelay = 125
+salvoCount = 1
+salvoDelay = 0.25
+shotVariance = 0.3
+shotAlternate = 1

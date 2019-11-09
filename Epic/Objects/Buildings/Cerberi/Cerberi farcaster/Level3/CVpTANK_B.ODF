@@ -1,0 +1,311 @@
+// (c) BZ2CP unit "Krul"
+// Model by Slaor and Pastell
+
+[GameObjectClass]
+provideCount = 1
+provideName1 = "cvptank"
+
+
+limitClass1 = "cvptank" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 10
+limitClass1Text = "Squad Limit Reached"
+
+Lifespan = 240 // -1 == infinite; > 0 is # seconds of life before it goes *boom*
+
+
+baseName = "cvtank_b"
+geometryName = "cvtank00_b.xsi"
+geometryScale = 1.5
+glowTexture = "cvtanka0.pic"
+classLabel = "wingman"
+
+//powerCost = 1
+scrapValue = 10
+scrapCost = 55		
+customCost = 65
+buildTime = 15.0
+customTime = 25.0
+maxHealth = 3000
+maxAmmo = 3000
+addAmmo = 5
+unitName = "Krul"
+collisionRadius = 50.0
+needPilot = 1
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+SmartIsAirUnitCheck = false
+
+heatSignature = 1.5
+imageSignature = 1.5
+radarSignature = 0.3
+
+explosionName = "xcerbxpld"//"xcerbsml_b"//"XCERBXPL"
+
+isAssault = 1
+isStealth = 1
+
+LightingType = 1
+
+armorClass = L
+
+
+
+
+effectHard5 = "hp_emit_1"
+effectName5 = "cvptank_b.render"
+effectHard2 = "hp_light_1"
+effectName2 = "cvtank_b.soot" //light
+effectHard3 = "hp_emit_2"
+effectName3 = "cvtank_b.beams1"
+effectHard4 = "hp_emit_3"
+effectName4 = "cvtank_b.beams2"
+effectHard1 = "hp_emit_4"
+effectName1 = "cvtank_b.beams3"
+
+/////// weapons ///////////////////
+
+weaponMask = 11101
+
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gparbst_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gparbst_ab"
+weaponAssault2 = 1
+
+weaponHard3 = "HP_gun_1"
+weaponName3 = "gclaser_cb"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_gun_2"
+weaponName4 = "gclaser_cb"
+weaponAssault4 = 0
+
+//weaponHard5 = "HP_SHIELD_1"
+//weaponName5 = "gabsorb"
+//weaponAssault5 = 0
+
+////////////////////////////////////
+
+[CraftClass]
+xplCrash = "xcerbxpl"
+rangeScan = 3500.0f
+periodScan = 3.0f
+velocJam = 5.0f
+engageRange = 3500
+
+ejectratio = 0
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "NNS"
+
+//braccelFactor = 0.03
+//velFactor = 0.2
+//steerFactor = 1.5
+//omegaFactor = 0.2
+//strafeFactor = 0.2
+
+avoidSpeed = 60;
+topSpeed = 80;
+
+selectWaitMsg = "cvo_lo_awaiting_directives.wav"
+selectAttackMsg = "cvo_lo_destroy_humans.wav"
+selectFollowMsg = "cvo_lo_following.wav"
+selectGoMsg = "cvo_lo_directive_logged.wav"
+selectOtherMsg = "cvo_lo_awaiting_directives.wav"
+holdMsg = "cvo_lo_holding.wav"
+
+goMsg = "cvo_lo_directive_logged.wav"
+attackMsg = "cvo_lo_target_acquired.wav"
+followMeMsg = "cvo_lo_following.wav"
+followMsg = "cvo_lo_following.wav"
+repairMsg = "cvo_lo_repairing.wav"
+reloadMsg = "cvo_lo_repairing.wav"
+rescueMsg = "cvo_lo_rescuing.wav"
+recycleMsg = "cvo_lo_recycling.wav"
+otherMsg = "cvo_lo_awaiting_directives.wav" 
+
+user1Msg = ""  
+killedMsg = "cvo_lo_target_destroyed.wav"
+diedMsg = "cvo_mid_offensive_destroyed.wav"
+
+[HoverCraftClass]
+velocForward = 60.5 // []
+velocReverse = 30.0 // []
+velocStrafe = 35.0 // []
+accelThrust = 25.0 //acceleration []
+accelDragStop = 6.0 //how fast it stops once hands are off controls []
+accelJump = 50.0 // []
+
+setAltitude = 1.8 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.45 //nose up []
+pitchThrust = -0.08 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 4.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "spider.wav"
+soundTurbo = "spider1.wav"
+
+[render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cvptank_b.light1"
+renderName2 = "cvptank_b.thrust"
+renderName3 = "cvptank_b.shock"
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "120 80 255 850"
+finishColor = "120 80 255 850"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+[beams1]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvtank_b.beams1emit"
+emitDelay = 2.3
+emitvar = 0.4
+emitVelocity = "0 -100 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+
+[beams1emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 255"
+finishColor = "100 120 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.1
+textureRate = 0.1 //.01
+
+
+
+[beams2]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvtank_b.beams2emit"
+emitDelay = 3.6
+emitvar = 0.6
+emitVelocity = "0 -500 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+
+[beams2emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.25
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 250"
+finishColor = "100 120 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.25
+textureRate = 0.1 //.01
+
+
+[beams3]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvtank_b.beams3emit"
+emitDelay = 8.3
+delayVar = 0.5
+emitVelocity = "0 -500 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+
+[beams3emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 250"
+finishColor = "100 120 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.15
+textureRate = 0.1 //.01
+
+[soot]
+renderBase = "draw_trail"
+textureName = "sootrail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"//"one one modulate"
+textureRate = 0.05
+startColor =   "0 0 0 180" //"153 153 153 128"
+finishColor = "100 100 100 0
+startRadius = 0.7
+finishRadius = 5.5
+animateTime = 2.2
+segmentTime = 1.2
+
+[Thrust]
+simulateBase = "sim_null"
+lifeTime = .3
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "raindrop.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 160"
+finishColor = "255 0 255 0"
+startRadius = 1.0
+finishRadius = 100
+animateTime = .3
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.6
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "rift.tga" //ringa3
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 660"
+finishColor = "255 255 255 0"
+startRadius = 25.0
+finishRadius = 0.0 // 50
+animateTime = 0.6
+
+
+[Light1]
+simulateBase = "sim_null"
+lifeTime = 2
+renderBase = "draw_light"
+startColor = "120 80 255 10050"
+finishColor = "120 80 255 0"
+startRadius = 500.0
+finishRadius = 5.0
+animateTime = 2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

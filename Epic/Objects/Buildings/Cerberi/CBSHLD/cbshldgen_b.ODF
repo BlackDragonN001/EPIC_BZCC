@@ -1,0 +1,137 @@
+[GameObjectClass]
+geometryName = "cbshield_b2.xsi"
+geometryScale = 2.5
+classLabel = "powered" //"magnet"
+explosionName = "xbhxpl_b"//"xshldxpl_b"
+scrapCost = 120
+scrapReturn = 60
+scrapValue = 30
+maxHealth = 4000
+maxAmmo = 3000
+unitName = "Entropic Shield"
+effectHard1 = "hp_emit_1"
+effectName1 = "cbshldgen_b.wave"
+ownsterrain = 1
+isAssault = 1
+powerCost = 0
+issingle = 1
+collisionRadius = 20
+
+LightingType = 1
+
+providecount = 2
+provideName1 = "cbshldgen_b"
+provideName2 = "gtow"
+
+requireCount = 5
+requireName1 = "cbtcen_b"
+requireText1 = "Build Core Matrix"
+requireName2 = "cbcbun_b"
+requireText2 = "Build Uplink"
+requireName3 = "cbfact_b"
+requireText3 = "Build Crucible"
+requireName4 = "cbpgen_b"
+requireText4 = "Build Power Node"
+requireName5 = "cbarmo_b"
+requireText5 = "Build Catalyser"
+
+[PoweredBuildingClass]
+PoweredByTaps = false
+
+powerTap1 = "hp_tap_1"
+powerName1 = "cbshldgentap"
+
+[BuildingClass]
+
+
+[wave]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cbshldgen_b.wave1"
+renderName2 = "cbshldgen_b.cables1"
+renderName3 = "cbshldgen_b.cables2"
+renderName4 = "cbshldgen_b.dark"
+
+[wave1]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbshldgen_b.wave1emit"
+emitDelay = 3
+emitVelocity = "0.0 0.0 0.0"//.4 0 0
+emitVariance = "80.0 0.0 80.0"// .5 .5 .5
+
+[Wave1emit]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "fogring.tga"
+textureBlend = "one one modulate"
+startColor = "220 200 255 100"
+finishColor = "40 30 55 0"
+startRadius = 30.0
+finishRadius = 410.0
+animateTime = 0.5
+
+[cables1]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbshldgen_b.cables1emit"
+emitDelay = 10
+emitVelocity = "0.0 20.0 0.0"//.4 0 0
+emitVariance = "60.0 0.0 60.0"// .5 .5 .5
+
+[cables1emit]
+simulateBase = "sim_ember"
+lifeTime = 3.2
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "65 65 65 35500"
+finishColor = "65 65 65 0"
+startRadius = 0.28
+finishRadius = 0.28
+segmentTime = 125
+//segmentVariance = "1 1 0"
+animateTime = 125
+
+[cables2]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbshldgen_b.cables2emit"
+emitDelay = 12
+emitVelocity = "0.0 18.0 0.0"//.4 0 0
+emitVariance = "50.0 0.0 50.0"// .5 .5 .5
+
+[cables2emit]
+simulateBase = "sim_ember"
+lifeTime = 2.95
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "55 55 55 35500"
+finishColor = "55 55 55 0"
+startRadius = 0.78
+finishRadius = 0.78
+segmentTime = 85
+//segmentVariance = "1 1 0"
+animateTime = 85
+
+[dark]
+simulateBase = "sim_null"
+lifeTime = 5e30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 255"
+startRadius = 120.0
+finishRadius = 120.0
+animateTime = 0.5
+

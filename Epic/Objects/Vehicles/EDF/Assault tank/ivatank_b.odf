@@ -1,0 +1,233 @@
+[GameObjectClass]
+baseName = "ivatank_b"
+
+unitIcon = "icon_ivatank.tga"
+infoName = "ivatank_b.inf"
+unitStatus = "wire_ivatank.tga"
+
+geometryName = "ivatnk00_b.xsi"
+geometryScale = 2
+classLabel = "assaulttank"
+scrapValue = 40
+scrapCost = 70
+customCost = 85
+buildTime = 15.0
+customTime = 20.0
+maxHealth = 4500
+maxAmmo = 3000
+addAmmo = 4
+unitName = "Mastiff"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+heatSignature = 0.5
+imageSignature = 5.0
+radarSignature = 5.0
+isAssault = 1
+collisionRadius = 50.0
+isStealth = 0
+
+BoxCollide = 1
+
+provideCount = 2
+provideName1 = "ivatank_b"
+provideName2 = "atank"
+
+LightingType = 1 
+
+
+explosionName = "null"//"ixshipxplw"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivatank_b.render" //"ivtank_b.trailer"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivatank_b.render"
+
+
+armorClass = H
+	
+requireCount = 3
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+requireName2 = "ibcbun_b"
+requireText2 = "Build Relay Bunk"
+requireName3 = "ibsbay_b"
+requireText3 = "Build Service Bay"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gspstab_ab"
+weaponAssault1 = 1
+weaponHard2 = "HP_GUN_1"
+weaponName2 = "gminigun_cb"
+weaponAssault2 = 0
+weaponHard3 = "HP_GUN_2"
+weaponName3 = "gminigun_cb"
+weaponAssault3 = 0
+
+////////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+
+[CraftClass]
+GotoTaskHasLeader = 1
+AttackTaskUsesGroups = 1
+
+AllowLinkWeapons = true
+xplCrash = "ixshipxplb"
+rangeScan = 900.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 700
+ejectRatio = 0.5
+
+//braccelFactor = 0.01f
+//omegaFactor = 0.2f
+//strafeFactor = 0.1f
+steerFactor = 0.6f
+//velFactor = 0.4f
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+selectWaitMsg = "ivatank04.wav"
+selectAttackMsg = "ivatank01.wav"
+selectFollowMsg = "ivatank08.wav"
+selectGoMsg = "ivatank02.wav"
+selectOtherMsg = "ivatank04.wav"
+
+goMsg = "ivatank05.wav"
+attackMsg = "ivatank06.wav"
+followMeMsg = "ivatank08.wav"
+followMsg = "ivatank08.wav"
+repairMsg = "ivatank09.wav"
+reloadMsg = "ivatank09.wav"
+rescueMsg = "ivatank10.wav"
+recycleMsg = "ivatank11.wav"
+otherMsg = "ivatank04.wav" 
+holdMsg = "ivatank12.wav"
+
+user1Msg = ""  
+killedMsg = "ivatank07.wav"
+diedMsg = "abetty3.wav"
+
+[TrackedVehicleClass]
+TREAD_STATIC_FRICTION = 1.5
+
+accelBrake = 50.0
+accelDrag = 20.0
+accelDragFull = 30.0
+accelDragStop = 40.0
+accelThrust = 10.0
+alphaSteer = 1.5
+omegaSpin = 1.0
+omegaTurn = 0.5
+velocForward = 25.0
+velocReverse = 20.0
+
+engineSound	= "iatank01.wav"
+treadSound = "iatank02.wav"
+
+
+[AssaultTankClass]
+yawAlpha = 5.0
+yawMax = 2.0
+yawRate = 4.0
+pitchMin = -0.1
+pitchMax = 0.5
+
+recoilName1 = "recoil_1"
+laserName1 = "recoil_1"
+
+
+[render]
+renderBase = "draw_multi"
+renderCount = 1
+//renderName1 = "ivatank_b.trailer1"
+renderName1 = "ivatank_b.tracks"
+
+
+[tracks]
+maxdist = 2000
+simulateBase = "sim_dust"
+lifeTime = 5e30 // .9
+renderBase = "draw_emit"
+emitName = "ivatank_b.tracksemit"
+emitDelay = 0.16 //0.14 //.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[tracksemit]
+maxdist = 2000
+simulateBase = "sim_null"
+lifeTime = 3.5 //7.0
+renderBase = "draw_planar"
+textureName = "stracks.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 150"
+finishColor = "10 10 10 0"
+startRadius = 2.8
+finishRadius = 2.8
+animateTime = 3.5 //7.0
+
+[dust]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivatank_b.dustemit"
+emitDelay = 0.1
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "1 3 .6"
+
+[dustemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.2
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "110 100 100 40"
+finishColor = "150 150 150 0"
+startRadius = 01
+finishRadius = 4.0
+animateTime = 1.2
+
+[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivatank_b.trailer1emit"
+emitdelay = 0.1
+delayVar = 0.05
+emitVelocity = "0.0 0 0.0"
+emitVariance = "8.0 0.0 8.0"
+
+[trailer1emit]
+maxDist = 80
+simulateBase = "sim_dust"
+lifeTime = 5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "160 155 150 20"
+finishColor = "180 180 180 0"
+startRadius =  1 //1.8
+finishRadius = 5
+animateTime = 5
+rotationrate = 1
+
+
+
+[Lod1]
+geometryName = "ivatnkL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 350                 ;...distance over this many meters => switch to lod2
+
+[Lod2]
+geometryName = "ivatnkL2_b.xsi" ;geometry for lod2
+geometryScale = 2
+distance = 450                 ;...distance over this many meters => switch to lod2

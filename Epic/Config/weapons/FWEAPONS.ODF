@@ -1,0 +1,50 @@
+[Scion Gun]
+weaponCount = 3
+weaponName1 = "apiong_b"
+weaponName2 = "aplock_b"
+weaponName3 = "apgaus_b"
+
+[Scion Cannon]
+weaponCount = 4
+weaponName1 = "apsplasma_b"
+weaponName2 = "apsonic_b"
+weaponName3 = "apquil_b"
+weaponName4 = "aparcc_b"
+
+[Scion Rocket]
+weaponCount = 2
+weaponName1 = "apsting_b"
+weaponName2 = "apmlock_b"
+
+[Scion Mortar]
+weaponCount = 4
+weaponName1 = "apsartl_b"
+weaponName2 = "apgas_b"
+weaponName3 = "apresn_b"
+weaponName4 = "appopg_b"
+
+[Scion Special]
+weaponCount = 6
+weaponName1 = "apflar_b"
+weaponName2 = "apseek_b"
+weaponName3 = "apblnk_b"
+weaponName4 = "apstatic_b"
+weaponName5 = "apjax_b"
+weaponName6 = "aparcmin_b"
+
+[Scion Shield]
+weaponCount = 3
+weaponName1 = "apshld_b"
+weaponName2 = "apdefl_b"
+weaponName3 = "apabso_b"
+
+[Scion Hand]
+weaponCount = 2
+weaponName1 = "spbazo_b"
+weaponName2 = "spsnip_b"
+
+[Scion Pack]
+weaponCount = 3
+weaponName1 = "spgren_b"
+weaponName2 = "spamjet_b"
+weaponName3 = "spsatc_b"

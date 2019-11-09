@@ -1,0 +1,63 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "qsing1cb"
+wpnName = "Pulse"
+//fireSound = "gmini01.wav"
+wpnReticle = "gminigun"
+wpnCategory = "GUN"
+wpnLadder = "gmortar.L0"
+wpnPriority = 6
+//flashName = "qsing1ca.render" //Didn't work as expected
+isAssault = 0
+aiRange = 10000
+
+[CannonClass]
+shotDelay = 3.0 //10.0
+salvoCount = 5
+salvoDelay = 0.2
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "qsing1ca.field"
+renderName2 = "qsing1ca.field2"
+
+[Field]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 5"
+finishColor = "255 255 255 5"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 50.0
+AddYaw = 50.0
+AddRoll = 50.0
+
+[Field2]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 5"
+finishColor = "255 255 255 5"
+startRadius = 0.0
+finishRadius = 600.0
+animateTime = 1.0
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -50.0
+AddYaw = -50.0
+AddRoll = -50.0

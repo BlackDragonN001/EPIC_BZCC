@@ -1,0 +1,52 @@
+[WeaponClass]
+classLabel = "arccannon"
+IsArcing = 1
+altName = "gcutter_cb"
+ordName = NULL
+wpnName = "Dissembler"
+fireSound = "arc02.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 1
+aiRange = 300
+flashName = "gcutter_ab.flash"
+
+[ArcCannonClass]
+startDist = 5.0
+
+finishDist = 60.0
+
+travelVeloc = 440.0
+
+coneAngle = 0.35
+
+ammoCost = 140.0
+
+damageValue(N) = 450.0 // none
+damageValue(L) = 450.0 // light
+damageValue(H) = 400.0 // heavy
+
+damageValue(S) = 400.0 // standard
+damageValue(D) = 450.0 // deflection
+damageValue(A) = 300.0 // absorbtion
+
+activeSound = "arc01.wav"
+
+xplGround = "xcutgnd_b"
+xplVehicle = "xcutcar_b"
+xplBuilding = "xcutcar_b"
+
+[Flash]
+renderBase = "draw_bolt"// "draw_bolt"
+textureName = "cerbtail4.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 0.4
+finishRadius = 0.4
+segmentLength = 7.0 
+segmentVariance = "0.5 0.5 0.0"
+animateTime = 1 // 0.2
+segmentTime = 1
+textureRate = -1
+

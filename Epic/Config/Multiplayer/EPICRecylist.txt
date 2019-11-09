@@ -1,0 +1,20 @@
+//
+// EpicRecylist.txt - List for starting recyclers for MPI.
+//
+// Translation: a way to pick a MOD before a game, and have it not
+// cause bad assets, assuming the author wrote it well.
+//
+// Format of lines: odf filename, space separator, description.
+// Lines starting with // are ignored.
+//
+// NOTE: do not put .odf extension on odf filename; added automatically
+// on loading
+//
+// Also, please remember that these vehicle names will be changed to
+// the appropriate race at runtime, so make sure they exist across
+// races -- for example, ivmbike has no Scion counterpart (fvmbike).
+//
+// The first field on each line must be 5 characters or longer, or the
+// line will be ignored.
+//
+ivrecy_b Epic Recycler

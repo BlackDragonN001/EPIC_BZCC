@@ -1,0 +1,85 @@
+[GameObjectClass]
+baseName = "fvpadishah_b"
+geometryName = "fvburn00_b.xsi"
+classLabel = "serviceH"
+
+scrapValue = 5
+scrapCost = 50
+buildTime = 20.0
+maxHealth = 3500
+maxAmmo = 1200
+unitName = "Padishah"
+unitIcon = ""
+aiName = "ServiceHProcess"
+aiName2 = "ServiceHProcess"
+heatSignature = 0.5
+imageSignature = 2.5
+radarSignature = 0.1
+
+armorClass = L
+isSingle = 1
+
+requireCount = 2
+requireName1 = "fbover_b"
+requireText1 = "Build Overeer"
+requireName2 = "fbdowe_b"
+requireText2 = "Build Dower"
+	
+[CraftClass]
+rangeScan = 300.0f
+periodScan = 5.0f
+velocJam = 5.0f
+
+braccelFactor = 0.5
+velFactor = 0.3
+steerFactor = 1.4
+omegaFactor = 0.2
+strafeFactor = 0.1
+
+[HoverCraftClass]
+setAltitude = 2.5
+accelDragStop = 20.0
+accelDragFull = 1.
+alphaTrack = 20.0
+alphaDamp = 5.0
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 15.0
+velocReverse = 10.0
+velocStrafe = 5.0
+accelThrust = 20.0
+accelBrake = 75.0
+omegaSpin = 3.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 20.0
+
+soundThrust = "avrckte0.wav"
+soundTurbo = "avrckte1.wav"
+
+[ServiceTruckH]
+supplyRange = 40.0
+supplyRadius = 15.0
+supplyRate = 40.0
+supplySound = "mnu_empt.wav"
+supplyEffect = "fvserv.supply"
+supplyHard = "hp_special_1"
+
+localAmmoRate = 5
+
+// Individual classification tweakers
+serviceSTs = 0 // was 1
+serviceBuildings = 1 //was 1
+serviceCraft = 1
+serviceAllies = true
+servicePilots = 0
+serviceOther = 0
+
+objPush = 0.0f // Used while servicing. Factor based on distance from truck to target
+objDrag = 0.0f // Used while servicing. Factor based on target's velocity
+
+
+

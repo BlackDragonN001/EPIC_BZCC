@@ -1,0 +1,114 @@
+// ===================
+// Med CERBERI Cutter VEHICLE HIT BY sLAOR
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 4
+
+
+particleClass1 = "Xcutcar_b.smoke"
+particleCount1 = 1
+particleVeloc1 = "0 0 0"
+
+particleClass2 = "Xcutcar_b.sparks"
+particleCount2 = 1
+particleVeloc2 = "0 0 0"
+
+//particleClass3 = "Xcutcar_b.light"
+//particleCount3 = 1
+//particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "Xcutcar_b.blade"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+
+explSound = "arc01.wav"
+
+damageRadius = 1.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflections
+damageValue(A) = 5 // absorbtion
+
+kickRadius = 1.0
+kickOmega = 1.0
+kickVeloc = 0.5
+
+[blade]
+simulateBase = "sim_null"
+lifeTime = 0.11
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "cblade1.tga"// ringb2
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "155 155 155 255"// 180
+finishColor = "155 155 155 255"
+startRadius = 1.5 //5.0
+finishRadius = 1.5 // 50 
+animateTime = 0.11 //3.5
+spinRate = 90
+
+[sparks]
+simulateBase = "sim_smoke"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "Xcutcar_b.sparksemit"
+emitDelay = 0.02
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "28.0 20.0 28.0"
+
+[sparksemit]
+simulateBase = "sim_ember"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "wflm1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 220"
+finishColor = "60 0 0 0"
+startRadius = .15
+finishRadius = .0
+animateTime = 1.5
+
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "Xcutcar_b.smokeemit"
+emitDelay = 0.1
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "6.0 6.0 6.0"
+
+[smokeemit]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 90"
+finishColor = "60 60 60 0"
+startRadius = 1
+finishRadius = 5
+animateTime = 2
+
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 250 100 265"
+finishColor = "255 200 50 265"
+startRadius = 2.0
+finishRadius = 2.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

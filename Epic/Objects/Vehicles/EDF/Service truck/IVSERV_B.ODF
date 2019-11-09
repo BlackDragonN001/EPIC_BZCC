@@ -1,0 +1,165 @@
+[GameObjectClass]
+baseName = "ivserv_b"
+
+unitIcon = "icon_ivserv.tga"
+infoName = "ivserv_b.inf"
+unitStatus = "wire_ivserv.tga"
+
+geometryName = "ivserv_skel_b.xsi"
+
+cockpitName = "ivserv_cockpit.xsi"
+classLabel = "service"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "ivserv_repair_b.xsi"
+geometryScale = 1.5
+scrapValue = 20
+scrapReturn = 25
+scrapCost = 50
+buildTime = 10.0
+maxHealth = 2500
+maxAmmo = 1200
+unitName = "Service Truck"
+aiName = "ServiceProcess"
+aiName2 = "ServiceProcess"
+heatSignature = 0.1
+imageSignature = 1.0
+radarSignature = 0.0
+isAssault = 0
+collisionRadius = 20.0
+
+BoxCollide = 1
+
+explosionName = "null"//"ixshipxplw"
+
+armorClass = L
+
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "ivserv_b"
+provideName2 = "serv"
+
+requireCount = 1
+requireName1 = "ibsbay_b"
+requireText1 = "Build Service Bay"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivtank_b.trailer"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivtank_b.trailer"
+
+[CraftClass]
+xplCrash = "ixshipxpls"
+rangeScan = 900.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 900
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+//braccelFactor = 0.09
+//velFactor = 0.3
+steerFactor = 0.6
+//omegaFactor = 0.2
+//strafeFactor = 0.1
+
+TeamTransferrable = true
+
+selectAttackMsg = "ivserv04.wav"
+selectGoMsg = "ivserv02.wav"
+selectFollowMsg = "ivserv03.wav"
+selectUser2Msg = "ivserv13.wav"	
+selectOtherMsg = "ivserv04.wav"
+
+goMsg = "ivserv02.wav"
+goObjectMsg = "ivserv11.wav"
+attackMsg = "ivserv01.wav"
+followMeMsg = "ivserv08.wav"
+followMsg = "ivserv03.wav"
+repairMsg = "ivserv09.wav"
+reloadMsg = "ivserv09.wav"
+rescueMsg = "ivserv11.wav"
+recycleMsg = "ivserv11.wav"
+holdMsg = "ivserv12.wav"
+user1Msg = "ivserv01.wav"
+otherMsg = "ivserv14.wav"
+killedMsg = ""
+diedMsg = ""
+
+[TrackedVehicleClass]
+accelBrake = 50.0
+accelDrag = 20.0
+accelDragFull = 30.0
+accelDragStop = 40.0
+accelThrust = 10.0
+alphaSteer = 1.5
+omegaSpin = 1.0
+omegaTurn = 0.4
+velocForward = 20.0
+velocReverse = 10.0
+
+TREAD_STATIC_FRICTION = 1.5
+
+engineSound	= "iserv01.wav"
+treadSound = "iserv02.wav"
+
+[ServiceTruck]
+supplyRange = 40.0
+supplyRadius = 30.0
+supplyRate = 50.0
+supplySound = "mnu_empt.wav"
+supplyEffect = "ivserv.supply"
+supplyHard = "hp_special_1"
+localAmmoRate = 5
+
+// Individual classification tweakers
+serviceSTs = 1 // was 1
+serviceBuildings = 1 //was 1
+serviceCraft = 1
+serviceAllies = true
+servicePilots = 0
+serviceOther = 0
+
+objPush = 0.0f // Used while servicing. Factor based on distance from truck to target
+objDrag = 0.0f // Used while servicing. Factor based on target's velocity
+
+[Supply]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivserv.halo"
+renderName2 = "ivserv.bolt"
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "127 255 0 127"
+finishColor = "0 255 0 0"
+startRadius = 5.0
+finishRadius = 1.0
+animateTime = 0.3
+
+[Bolt]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "127 255 0 63"
+finishColor = "0 255 0 0"
+startRadius = 1.0
+finishRadius = 0.3
+segmentLength = 2.0
+segmentVariance = "0.5 0.5 0.5"
+animateTime = 0.3
+textureRate = 0.05
+textureSpeed = -0.5
+
+[Lod1]
+geometryName = "ivservL1_b.xsi" ;geometry for lod2
+geometryScale = 1.5
+distance = 100                 ;...distance over this many meters => switch to lod2

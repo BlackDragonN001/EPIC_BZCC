@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "machinegun"
+ordName = "50calGT_ab"
+wpnName = "Heavy Chaingun"
+fireSound = "gchain01.wav"
+wpnReticle = "gminigun"
+wpnCategory = "GUN"
+isAssault = 1
+flashName = "gmortar_b.flash"//"gchain_cb.flash"
+aiRange = 650
+
+[CannonClass]
+shotDelay = 0.30
+shotVariance = 0.04
+shotAlternate = 1
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 0 0 255"
+startRadius = 7.5
+finishRadius = 2.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"
+
+

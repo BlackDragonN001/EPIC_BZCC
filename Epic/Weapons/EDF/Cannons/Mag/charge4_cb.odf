@@ -1,0 +1,42 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 0.5
+xplGround = "xmaggnd4_c"
+xplVehicle = "xmagcar4_c"
+xplBuilding = "xmagcar4_c"
+
+renderName = "charge4_cb.render"
+
+ammoCost = 20
+lifeSpan = 1. // 120m
+shotSpeed = 360.0
+
+damageValue(N) = 291.7 // none // 500.1
+damageValue(L) = 204.17 // light // 350.1
+damageValue(H) = 70	   // heavy // 120
+
+damageValue(S) = 166.7 // standard // 350.1
+damageValue(D) = 116.7 // deflection // 500.1
+damageValue(A) = 70    // absorbtion // 120
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "charge4_cb.flare"
+
+[Flare]
+renderBase = "draw_twirl_trail"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255" 
+finishColor = "255 200 50 255" 
+startRadius = 0.4
+finishRadius = 0.2
+rotationRate = 10.0
+animateTime = 0.004
+emitDelay = 0.0005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 5.0 5.0"
+emitLife = 0.004

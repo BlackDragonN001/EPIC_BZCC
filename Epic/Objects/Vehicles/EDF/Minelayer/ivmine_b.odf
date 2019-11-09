@@ -1,0 +1,137 @@
+[GameObjectClass]
+baseName = "ivmine_b"
+
+unitIcon = "icon_ivmine_b.tga"
+infoName = "ivmine_b.inf"
+unitStatus = "wire_ivmine_b.tga"
+
+geometryName = "IvMine_00.xsi"
+geometryScale = 0.7
+cockpitName= "ivtank_cockpit.xsi"
+classLabel = "minelayer"
+animCount = 3
+animName1 = "forward"
+animFile1 = "IvMine_00SF.xsi"
+animName2 = "neutral"
+animFile2 = "IvMine_00SN.xsi"
+animName3 = "reverse"
+animFile3 = "IvMine_00SR.xsi"
+classLabel = "wingman"
+scrapValue = 30
+scrapCost = 50
+buildTime = 10.0
+maxHealth = 2500
+maxAmmo = 1500
+unitName = "Minelayer"
+aiName = "MineLayerFriend"
+aiName2 = "MineLayerEnemy"
+heatSignature = 0.1
+imageSignature = 2.0
+radarSignature = 2.0
+
+explosionName = "null"
+canSnipe = 0
+
+isAssault = 1
+
+armorClass = L
+
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "ivmine_b"
+provideName2 = "minea"
+
+
+requireCount = 1
+requireName1 = "ibarmo_b"
+requireText1 = "Build Armory"
+
+/////// weapons ///////////////////
+
+weaponMask = 00011
+
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 = "gmmine_b"
+
+//weaponHard2 = "HP_SPECIAL_2"
+//weaponName2 = "gmmine_b"
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+
+[CraftClass]
+xplCrash = "ixshipxplb"
+rangeScan = 500.0f
+periodScan = 5.0f
+velocJam = 5.0f
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.3f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+canRescue = 0
+
+selectWaitMsg = "avminev9.wav"
+selectAttackMsg = "avminevb.wav"
+selectFollowMsg = "avminevf.wav"
+selectGoMsg = "avmineve.wav"
+selectOtherMsg = "avminevg.wav"
+
+goMsg = "avminevf.wav"
+attackMsg = "avminevc.wav"
+followMsg = "avminevf.wav"
+followMeMsg = "avminev2.wav"
+repairMsg = "avminev3.wav"
+reloadMsg = "avminev4.wav"
+rescueMsg = "avminev5.wav"
+recycleMsg = "avminev6.wav"
+otherMsg = "avminevf.wav"
+holdMsg = "avminevf.wav"
+user1Msg = "avminev0.wav"
+
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+setAltitude = 2.0
+accelDragStop = 20.0
+accelDragFull = 1.
+alphaTrack = 20.0
+alphaDamp = 5.0
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 15.0
+velocReverse = 10.0
+velocStrafe = 10.0
+accelThrust = 20.0
+accelBrake = 75.0
+omegaSpin = 3.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 20.0
+
+soundThrust = "iengf.wav"
+soundTurbo = "avrckte1.wav"
+
+[MineLayerClass]
+mineCount = 15 // # of mines to drop (if out of ammo, will still go thru the motions)
+radius = 10.0f // Initial radius from current location to first mine's dropoff
+radiusInc = 10.0f // Amount radius grows by each drop
+angleInc = 90.0f // Initial angle increment per drop (in DEGREES)
+angleDec = 4.0f // Amount angle increment decreases by each drop (in DEGREES)
+timeout = 10.0f // Timeout (seconds) in getting to next drop point. If exceeded, will just drop mine at current location, work on next mine

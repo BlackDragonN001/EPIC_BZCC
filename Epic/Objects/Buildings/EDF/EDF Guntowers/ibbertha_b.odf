@@ -1,0 +1,78 @@
+[GameObjectClass]
+geometryName = "ibbertha_b.xsi"
+geometryScale = 5
+classLabel = "turret"
+collisionRadius = 20.0
+scrapCost = 120
+scrapReturn = 60
+scrapValue = 30
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addAmmo = 50
+unitName = "Assault Tower"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 20.0
+imageSignature = 10.0
+radarSignature = 20.0
+
+isAssault = 1
+ownsTerrain = 1
+armorClass = H
+needgroup = 1
+isGrouped = 1
+powerCost = 3
+
+buildRequire = A
+
+
+explosionName = "ixshipxplw"
+
+requireCount = 3
+requireName1 = "ibcbun_b"
+requireText1 = "Build Relay Bunk"
+requireName2 = "ibtcen_b"
+requireText2 = "Build Tech Centre"
+requireName3 = "ibarmo_b"
+requireText3 = "Build Armory"
+
+provideCount = 2
+provideName1 = "ibbertha_b"
+provideName2 = "gtow"
+
+weaponMask = 00011
+weaponHard1 = "hp_cannon_1"
+weaponName1 = "gspbertha_ab"
+weaponAssault1 = 0
+//weaponHard2 = "hp_cannon_2"
+//weaponName2 = "gplasma_cb"
+//weaponAssault2 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 3
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "hp_light_1"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 2000
+periodScan = 4.0
+velocJam = 0.0
+weaponPitch = 0.4
+steerFactor = 5//0.2
+engageRange = 1800
+
+[TurretCraftClass]
+omegaTurret = 1.0
+detectRange = 1000
+
+//[Lod1]
+//geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+//geometryScale = 2.4
+//distance = 550                   ;bsphere under 200 //pixel => switch to lod1
+//dontShiftLOD = 1

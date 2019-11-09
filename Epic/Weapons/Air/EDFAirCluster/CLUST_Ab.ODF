@@ -1,0 +1,93 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "gshad02.wav"
+
+//xplGround = "xshdwgnd"
+xplVehicle = "xheatcar_b"
+xplBuilding = "xheatcar_b"
+renderName = "clust_ab.render"
+
+ammoCost = 40
+lifeSpan = 5 // 800m
+shotSpeed = 400.0
+
+damageValue(N) = 180 // none
+damageValue(L) = 120 // light
+damageValue(H) = 80 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 140 // deflection
+damageValue(A) = 80 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 5.0
+omegaWaver = 0.7
+rateWaver = 2.0
+delayTime = 0.25		// homing delay time (zero turn rate)
+rampTime = 0.15			// homing ramp time (from zero to full turn rate)
+avoidRange = 100.0		// terrain obstacle-avoidance range
+avoidStrength = 5.0
+
+
+[ThermalMissileClass]
+coneAngle = 65.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "clust_ab.flare"
+renderName2 = "clust_ab.exhaust"
+renderName3 = "clust_ab.flame"
+renderName4 = "clust_ab.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga
+textureBlend = "one one modulate"
+startColor = "100 255 200 200"
+finishColor = "10 250 150 100"
+startRadius = 3.0
+finishRadius = 3.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "120 255 205 150"
+finishColor = "0 255 200 0"
+startRadius = 0.2
+finishRadius = 1.0
+segmentTime = 0.25
+animateTime = 0.2
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "0 180 100 255"
+finishColor = "0 200 150 0"
+startRadius = 0.3
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "130 180 150 255"
+finishColor = "255 255 255 0"
+startRadius = 0.01
+finishRadius = 0.9
+segmentTime = 1.0
+animateTime = 0.05
+
+
+

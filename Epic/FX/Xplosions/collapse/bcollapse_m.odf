@@ -1,0 +1,84 @@
+// =============
+// BUILDING COLLAPSE EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+///////////////////////////////
+
+particleTypes = 2
+
+particleClass1 = "bcollapse_m.groundemit"
+particleCount1 = 2
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "bcollapse_m.groundbase"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+
+///////////////////////////////
+
+explSound = "mort02.wav"
+damageRadius = 60.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 150 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 150 // standard
+damageValue(D) = 50 // deflection
+damageValue(A) = 200 // absorbtion
+
+kickRadius = 60.0
+kickOmega = 4.0
+kickVeloc = 8.0
+
+///////////////////////////////
+
+[Groundemit]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.25
+emitName = "bcollapse_m.groundsmoke"
+emitDelay = 0.01
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "25 0 25"
+emitInherit = "0 0 0"
+
+[Groundsmoke]
+simulateBase = "sim_dust"
+lifeTime = 18
+renderBase = "draw_sprite"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 105" //"31 31 31 255"
+finishColor = "160 160 160 0" //"40 40 40 0"
+startRadius = 40.0
+finishRadius = 80.0
+animateTime = 18
+
+[Groundbase]
+simulateBase = "sim_dust"
+renderBase = "draw_emit"
+lifeTime = 0.3
+emitName = "bcollapse_m.groundsmokelow"
+emitDelay = 0.001
+emitDelayVar = 0.0
+emitVelocity = "0 0 0"
+emitVariance = "10 0 10"
+emitInherit = "0 0 0"
+
+[Groundsmokelow]
+simulateBase = "sim_dust"
+lifeTime = 15
+renderBase = "draw_sprite"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "96 96 96 155" //"31 31 31 255"
+finishColor = "190 190 190 0" //"40 40 40 0"
+startRadius = 30.0
+finishRadius = 75.0
+animateTime = 15

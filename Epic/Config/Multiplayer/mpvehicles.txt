@@ -1,0 +1,50 @@
+//
+// EPICMPVehicles.txt - listing of multiplayer vehicles usable in BZ2: Epic
+//
+// Format of lines: xsi filename, space separator, odf filename, space separator, description
+// Lines starting with // are ignored. 
+//
+// Tip: do not put .odf extension on odf filename; added automatically on loading
+// 
+ivscout00_b.xsi ivscout_b Scout
+ivtank00_b.xsi ivtank_b Sabre
+ivmbik00_b.xsi ivmbike_b Jackal
+ivmisl00_b.xsi ivmisl_b Avenger
+ivltankBD.xsi ivltank_b Light Tank
+ivrbomb_b.xsi ivrbomb_b Hammer
+ivatnk00_b.xsi ivatank_b Bulldog
+ivrckt00_b.xsi ivrckt_b Rocket Tank
+ivwalk_skel_b.xsi ivwalk_b Attila LM
+ispilo_rifle_skel.xsi ispilo ISDF Pilot
+ivturr00_b.xsi ivturr_b Rattler
+fvsent_skel_b.xsi fvsent_b Sentry
+fvscout_skel_b.xsi fvscout_b Drone
+fvtank_skel_b.xsi fvtank_b Warrior
+fvlancer_skel.xsi fvarch_b Lancer
+fvltank_skel_b.xsi fvltank_b Dragoon
+fvtitan_skel_b.xsi fvatank_b Titan
+fvwalk_skel.xsi fvwalk_b Mauler
+fvturr_skel.xsi fvturr_b Guardian
+sspilo_rifle_skel.xsi fspilo Scion Pilot
+cvscout00_b.xsi cvscout_b Hydra
+cvtank00_b.xsi cvtank_b Reaper
+cvrbomb00_b.xsi cvrbomb_b Siren
+cvhatank_b.xsi CVHTANK_B Dread
+cvdcar00_b.xsi CVDCAR_B Demon
+ivcerb_skel_b.xsi cvwalk_b Executioner
+cvturr01_skel_b.xsi cvturr_b Manticore
+//cvsdron_b.xsi cvtalon_b Talon
+//bashar_skel_b.xsi fvbashar_B The Bashar
+//cvcorvs.xsi fvfighter_b Raptor
+//fvfury00_b.xsi fvfury_b Fury
+//jakrider_skel_2b.xsi fvjakr_b Jak Knight
+//rhinotank_skel_b.xsi fvrhinor_b War Rhino
+//sseraph_b.xsi fvseraph_b Seraph
+//fvskyp00.xsi fvsky_b Pirahna
+//fvspbombs.xsi fvspbomb_b Orca
+//sswarlock_b.xsi fvwarlock_b Warlock
+//sviper.xsi ivpfighter_b Interceptor
+//ivvipers01_b.xsi ivfighter_b Interceptor
+//fvdrop_skel_b.xsi fvdrop_b Condor
+//fvbomb_b.xsi fvrbomb_b Brawler
+//ivintc00.xsi ivintc Interceptor

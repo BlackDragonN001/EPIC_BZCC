@@ -1,0 +1,94 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "smort03.wav"
+
+xplGround = "xshdcar_cb"
+xplVehicle = "xshdcar_cb"
+xplBuilding = "xshdcar_cb"
+xplExpire = "xtagcar_cb"
+renderName = "shadow_cb.render"
+
+ammoCost = 25
+lifeSpan = 15.0 // 800m
+shotSpeed = 150.0
+
+damageValue(N) = 800 // none
+damageValue(L) = 480 // light
+damageValue(H) = 140 // heavy
+
+damageValue(S) = 580 // standard
+damageValue(D) = 440 // deflection
+damageValue(A) = 800 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+
+omegaTurn = 1.5
+accelThrust = 75.0
+ramptime = 0.5
+delayTime = 0.5
+TeamFilter = 4
+velocForward = 150
+avoidRange = 35
+avoidStrength = 150
+omegaWaver = 1
+rateWaver = 8
+TeamFilter = 3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 6
+renderName1 = "shadow_cb.launchsounde"
+renderName2 = "shadow_cb.flare"
+renderName3 = "shadow_cb.smoke"
+renderName4 = "shadow_cb.flame"
+renderName5 = "shadow_cb.launch"
+renderName6 = "shadow_cb.missile"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 1.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 255 100 220"
+finishColor = "255 255 255 0"
+startRadius = 0.4
+finishRadius = 0.01
+segmentTime = 0.05
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.4

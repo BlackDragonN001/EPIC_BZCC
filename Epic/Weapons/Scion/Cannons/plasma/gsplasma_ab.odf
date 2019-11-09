@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gsplasma_cb"
+ordName = "plasstream_b"
+wpnName = "Plasma Stream"
+fireSound = "gflas00.wav"
+wpnReticle = "gplas_a"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 120
+flashName = "gsplasma_cb.flash"
+
+[CannonClass]
+shotDelay = 0.02 // 50/sec

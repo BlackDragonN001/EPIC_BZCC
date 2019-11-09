@@ -1,0 +1,15 @@
+[GameObjectClass]
+geometryName = "pbtunn03_b.xsi"
+geometryScale = 6
+classLabel = "terrain"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "tunnel"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+ownsTerrain = 1
+
+[BuildingClass]

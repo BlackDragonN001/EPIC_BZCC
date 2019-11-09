@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+
+
+ordName = "laser_ab"
+wpnName = "Bolt"
+fireSound = "baz01.wav"
+wpnReticle = "gbazooka"
+wpnCategory = "HAND"
+isAssault = 1
+isFlying = 1
+altName = "igbeamrif_cb"
+
+[CannonClass]
+shotDelay = 3
+

@@ -1,0 +1,40 @@
+[GameObjectClass]
+geometryName = "mawmask.xsi"
+classLabel = "jammer"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = "mawmask"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+ownsTerrain = 1
+armorClass = N
+
+canInteract = 0 // can interact using the reticle 
+isGrouped = 0 // add to a command group 
+needGroup = 0 // need free group to build 
+isLimited = 0 // add to the limit count 
+needLimit = 0 // need free limit to build 
+needPilot = 0
+canDetect = 0 // can attack other units through attack command 
+CanRescue = 0 
+CanSelect = 0
+
+explosionName = "xpitmaskl"
+
+[BuildingClass]
+isTerrain = 1
+justTerrain = 1
+justFlat = 1
+
+
+collapseTime = 0.4
+
+[PoweredBuildingClass]
+powerCost = 0
+detectRange = 10
+
+[JammerTowerClass]
+jammerRange = 200.0

@@ -1,0 +1,128 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "cvcomet00.xsi"
+geometryScale = 1.2
+shotSound = "satord.wav"
+
+renderName = "cworms.render"
+
+xplGround = "Xcmcar_lb"
+xplVehicle = "Xcmcar_lb"
+xplBuilding = "Xcmcar_lb"
+
+ammoCost = 20
+lifeSpan = 3 
+shotSpeed = 300.0
+
+damageValue(N) = 500 // none
+damageValue(L) = 100 // light
+damageValue(H) = 30 // heavy
+
+damageValue(S) = 80 // standard
+damageValue(D) = 30 // deflection
+damageValue(A) = 170 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 1.2
+omegaWaver = 0.4
+rateWaver = 4.0
+
+[ThermalMissileClass]
+coneAngle = 0.4
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cworms.trail"
+renderName2 = "cworms.flare"
+//renderName3 = "cworms.sparkle"
+renderName4 = "cworms.trailer"
+
+//[Light]
+renderBase = "draw_light"
+startColor = "100 55 250 400"
+finishColor = "100 55 250 400"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flare]
+renderBase = "draw_light"
+startColor = "195 160 255 500"
+finishColor = "50 40 235 500"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "slightflare.tga" // flame
+textureblend = "one one modulate"
+startColor = "160 110 200 600"
+finishColor = "20 0 100 00"
+startRadius = 0.25
+finishRadius = 0.0
+animateTime = 1.0
+emitDelay = 0.005
+emitVariance = "3.0 3.0 3.0"
+emitLife = 1.5
+
+//[trailer]
+simulateBase = "sim_dust"//dust
+lifeTime = 1.5 //2.5
+renderBase = "draw_trail"
+textureName = "scerbbeam.tga"
+textureBlend = "one one modulate"
+textureRate = 0.08
+startColor = "180 80 255 250"
+finishColor = "0 0 100 0"
+startRadius = 0.2
+finishRadius = 1.0
+segmentTime = 0.2
+animateTime = 0.8
+
+[Trailer]
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail3.tga"
+//textureBlend = "one one modulate"
+textureRate = -2
+startColor = "125 125 125 255"
+finishColor = "125 125 125 255"
+startRadius = 0.3
+finishRadius = 0.0
+segmentTime = 0.1
+segmentVariance = "2 2 0"
+animateTime = 0.25
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "sootrail.tga"
+textureBlend = //srcalpha invsrcalpha modulatealpha"//"one one modulate"
+textureRate = 0.05
+startColor =   "0 0 0 220" //"153 153 153 128"
+finishColor = "150 150 150 0
+startRadius = 0.3
+finishRadius = 3.5
+animateTime = 1.0
+segmentTime = 1.0
+
+//[Trail]
+renderBase = "draw_trail"
+textureName = "sootrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor =   "80 80 80 190" //"153 153 153 128"
+finishColor = "150 150 150 0
+startRadius = 0.3
+finishRadius = 1
+animateTime = 1.7
+segmentTime = 0.15

@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gquill_cb"
+ordName = "quill_ab"
+wpnName = "Fang"
+fireSound = "chaff01.wav"
+wpnReticle = "gfang_a"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 100
+flashName = "gmortar_b.flash"
+
+[CannonClass]
+shotDelay = 2.0 // .5/sec
+salvoCount = 30
+salvoDelay = 0.001
+shotVariance = 0.25
+shotAlternate = 0

@@ -1,0 +1,86 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "sonic02.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "xgasxpl"
+xplBuilding = "xgasxpl"
+renderName = "clustt.render"
+
+ammoCost = 1
+lifeSpan = 4.0 // 800m
+shotSpeed = 350.0
+
+damageValue(N) = 50 // none
+damageValue(L) = 40 // light
+damageValue(H) = 30 // heavy
+
+damageValue(S) = 20 // standard
+damageValue(D) = 20 // deflection
+damageValue(A) = 20 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 20.0
+
+[ThermalMissileClass]
+coneAngle = 15.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "clustt.flare"
+renderName2 = "clustt.exhaust"
+renderName3 = "clustt.flame"
+renderName4 = "clustt.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "250 200 70 255"
+finishColor = "250 200 70 255"
+startRadius = 4.0
+finishRadius = 4.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "120 100 10 255"
+finishColor = "100 150 30 0"
+startRadius = 0.6
+finishRadius = 2.0
+segmentTime = 0.35
+animateTime = 0.25
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "90 255 63 255"
+finishColor = "0 200 0 0"
+startRadius = 0.2
+finishRadius = 0.09
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "4.0 4.0 4.0"
+emitLife = 0.8
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 50 255"
+finishColor = "0 200 0 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentTime = 2.0
+animateTime = 0.06
+
+
+

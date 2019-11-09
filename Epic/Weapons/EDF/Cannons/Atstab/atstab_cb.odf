@@ -1,0 +1,149 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "gatstab.xsi"
+shotSound = "Ordin_a.wav"
+
+renderName = "atstab_cb.render"
+
+xplGround = "xstabgnd_cb"
+xplVehicle = "xstabcar_cb"
+xplBuilding = "xstabcar_cb"
+
+ammoCost = 11
+lifeSpan = 1.4 // 100m
+shotSpeed = 300.0
+
+damageValue(N) = 130 // none // 260
+damageValue(L) = 120 // light // 240
+damageValue(H) = 100 // heavy // 200
+
+damageValue(S) = 120 // standard // 240
+damageValue(D) = 100 // deflection // 200
+damageValue(A) = 130 // absorbtion // 130
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 6
+renderName1 = "atstab_cb.flare"
+renderName5 = "atstab_cb.exhaust"
+renderName3 = "atstab_cb.flame"
+renderName2 = "atstab_cb.Trail"
+renderName4 = "atstab_cb.Trails"
+renderName6 = "atstab_cb.smoke"
+
+[Flare]
+renderBase = "draw_light"
+startColor = "80 255 255 70"
+finishColor = "80 255 255 70"
+textureBlend = "one one modulate"
+startColor = "55 155 255 255"
+finishColor = "55 155 255 255"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "mini.tga"
+textureBlend = "one one modulate"
+textureRate = 1 //.05
+startColor = "55 155 255 185"
+finishColor = "0 55 255 0"
+startRadius = 0.4
+finishRadius = 0.01
+segmentTime = 0.1
+animateTime = 0.1
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 1 //.05
+startColor = "55 155 255 55"
+finishColor = "0 55 255 0"
+startRadius = 0.45
+finishRadius = 0.01
+segmentTime = 0.2
+animateTime = 0.2
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trails]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "200 200 230 20"
+finishColor = "255 255 255 0"
+startRadius = 0.35
+finishRadius = 0.7
+segmentTime = 0.5
+animateTime = 0.5
+
+
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "250 250 250 40"
+finishColor = "250 250 255 0"
+startRadius = 0.2
+finishRadius = 2.0
+rotationRate = 2.0
+animateTime = 0.6
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.6
+
+//[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "160 185 255 60"
+finishColor = "60 85 255 0"
+startRadius = 0.10
+finishRadius = 0.20
+segmentTime = 0.3
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "100 227 255 255"
+finishColor = "0 0 255 255"
+startRadius = 0.2
+finishRadius = 0.02
+rotationRate = 10.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.02
+
+[Flare]
+renderBase = "draw_light"
+startColor = "80 255 255 250"
+finishColor = "80 255 255 250"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

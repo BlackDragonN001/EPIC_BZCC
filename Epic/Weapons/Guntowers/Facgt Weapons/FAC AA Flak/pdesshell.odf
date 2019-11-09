@@ -1,0 +1,63 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotSound = NULL
+xplGround = ""
+xplVehicle = "xflak_b"
+xplBuilding = "xflak_b"
+xplExpire = "xflak_b"
+
+renderName = "pdesshell.render"
+
+ammoCost = 1
+lifeSpan = 1.5 // 540m
+shotSpeed = 1500.0
+
+damageValue(N) = 460 // none // 350 = 250
+damageValue(L) = 200 // light // 300 = 200
+damageValue(H) = 80 // heavy // 220 = 150
+
+damageValue(S) = 100 // standard // 300 = 200
+damageValue(D) = 150 // deflection // 305 = 203.3
+damageValue(A) = 50 // absortion // 275 = 183.3
+
+
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "pdesshell.flare"
+renderName2 = "pdesshell.trail"
+renderName3 = "chain_cb.flame"
+renderName4 = "chain_cb.trail"
+
+[flare]
+maxDist = 2000
+renderBase = "draw_twirl_trail"
+textureName = "sblast.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 0 255"
+finishColor = "100 0 0 64"
+startRadius = 0.6
+finishRadius = 0.2
+animateTime = 0.07
+rotationRate = 10.0
+emitDelay = 0.00012
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.07
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "200 200 200 20"
+finishColor = "255 255 255 0"
+startRadius = 0.6
+finishRadius = 1
+segmentTime = 0.6
+animateTime = 0.6
+lifetime = 1.5

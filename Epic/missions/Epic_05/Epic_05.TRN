@@ -1,0 +1,40 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.1
+MinX = -1024
+MinZ = -1024
+Width = 2048
+Depth = 2048
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture] 
+TileTexture1 = "volcanic.tga" 
+TileTexture2 = "u_cliff1u.tga" 
+TileTexture3 = "u_cliff1v.tga" 
+TileTexture4 = "lumprock.tga"
+TileTexture5 = "rockface.tga"
+TileTexture6 = "dunes1.tga" 
+TileTexture7 = "jaggranite.tga" 
+TileTexture8 = "jagrock.tga"
+TileTexture9 = "drymud.tga"
+TileTexture10 = "dustcrack.tga"
+TileTexture11 = "growth1.tga"
+TileTexture12 = "grassysand.tga"
+TileTexture13 = "rockface2.tga"//"u_goodrock2.tga"
+TileTexture14 = "greydirt.tga"//
+TileTexture15 = "shalerock.tga"

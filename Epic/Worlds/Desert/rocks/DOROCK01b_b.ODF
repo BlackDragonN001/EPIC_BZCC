@@ -1,0 +1,23 @@
+[GameObjectClass]
+geometryName = "rorock01b_b.xsi"
+geometryScale = 7
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 15000
+maxAmmo = 0
+unitName = "Bute"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 50.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+canCollide = 0
+ownsTerrain = 1
+
+[BuildingClass]
+isTerrain = 1
+justTerrain = 1
+//justFlat = 1

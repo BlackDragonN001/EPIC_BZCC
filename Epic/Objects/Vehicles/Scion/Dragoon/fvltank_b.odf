@@ -1,0 +1,194 @@
+[GameObjectClass]
+baseName = "fvltank_b"
+
+unitIcon = "icon_fvltank_b.tga"
+infoName = "fvltank_b.inf"
+unitStatus = "wire_fvltank_b.tga"
+
+glowTexture = "fvltanka0.pic"
+geometryName = "fvltank_skel_b.xsi"
+cockpitName = "fvscout_cockpit.xsi"
+geometryScale = 2.3
+classLabel = "morphtank"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "fvltank_MORPH_b.xsi"
+
+scrapValue = 10
+scrapReturn = 20
+scrapCost = 45
+customCost = 50
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 2500  //1200
+maxAmmo = 3000    //2000
+
+addAmmo = 2.0
+addHealth = 0.0
+
+unitName = "Dragoon"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 2.0
+imageSignature = 3.0
+radarSignature = 0.1
+collisionRadius = 40.0
+
+isAssault = 0
+
+armorClass = N
+
+LightingType = 1
+
+provideCount = 2
+provideName1 = "fvltank_b"
+provideName2 = "ltnk"
+
+requireCount = 0
+
+//explosionName = ""
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "giongn_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "giongn_cb"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 = "gsting_cb"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_SHIELD"
+weaponName4 = ""
+weaponAssault4 = 0
+
+
+//////////////////////////////////
+
+[CraftClass]
+canHunt = true
+xplCrash = "xscionxpl"
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 900.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 500
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "ANS"
+
+//braccelFactor = 0.05f;
+//strafeFactor = 0.3f;
+//steerFactor = 1.5f;
+//omegaFactor = 0.28f;
+//velFactor = 0.2f;
+
+avoidSpeed = 30;
+topSpeed = 60;
+
+selectWaitMsg = "fvscout04.wav"
+selectAttackMsg = "fvscout01.wav"
+selectFollowMsg = "fvscout03.wav"
+selectGoMsg = "fvscout02.wav"
+selectOtherMsg = "fvscout04.wav"
+holdMsg = "fvscout12.wav"
+goMsg = "fvscout05.wav"
+attackMsg = "fvscout06.wav"
+followMeMsg = "fvscout08.wav"
+followMsg = "fvscout03.wav"
+repairMsg = "fvscout09.wav"
+reloadMsg = "fvscout09.wav"
+rescueMsg = "fvscout10.wav"
+recycleMsg = "fvscout11.wav"
+otherMsg = "fvscout04.wav" 
+
+user1Msg = ""  
+killedMsg = "fvscout07.wav"
+diedMsg = ""
+
+// COMBAT MODE /////////////////////
+
+[HoverCraftClass]
+velocForward = 75.0 // [40]
+velocReverse = 35.0 // [20]
+velocStrafe = 25.0 // [20]
+accelThrust = 30.0 //acceleration [50]
+accelDragStop = 11.0 //how fast it stops once hands are off controls [13]
+accelJump = 20.0 // [20]
+
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself [21]
+alphaDamp = 7.0 //shocks [7]
+
+pitchPitch = 0.12 //nose up [.25]
+pitchThrust = 0.12 //nose down [.1]
+
+rollStrafe = 0.085 //rolls while strafing [.2]
+omegaSpin = 5.5 //spinning in place speed [4.0]
+omegaTurn = 3.0 //turning while moving speed [4.5]
+alphaSteer = 6.0 //how fast it speeds up and slows down to steering [3.9]
+rollSteer = 0.07 //rolls while steering [.25]
+
+soundThrust = "ssent01j.wav"
+
+
+// ASSAULT MODE /////////////////////
+
+[MorphTankClass]
+// object data
+maxHealth = 900
+maxAmmo = 1500
+engageRange = 400
+isAssault = 0
+
+addAmmo = 2.0
+addHealth = 2.0
+
+unitName = "Dragoon"
+
+// radar properties
+rangeScan = 800.0f
+periodScan = 5.0f
+velocJam = 5.0f
+
+velocForward = 60.0 // [40]
+velocReverse = 22.0 // [20]
+velocStrafe = 15.0 // [20]
+accelThrust = 22.0 //acceleration [50]
+accelDragStop = 11.0 //how fast it stops once hands are off controls [13]
+accelJump = 10.0 // [20]
+
+setAltitude = 2 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself [21]
+alphaDamp = 7.0 //shocks [7]
+
+pitchPitch = 0.12 //nose up [.25]
+pitchThrust = 0.12 //nose down [.1]
+
+rollStrafe = 0.085 //rolls while strafing [.2]
+omegaSpin = 5.0 //spinning in place speed [4.0]
+omegaTurn = 2.5 //turning while moving speed [4.5]
+alphaSteer = 5.0 //how fast it speeds up and slows down to steering [5.0]
+rollSteer = 0.07 //rolls while steering [.25]
+
+// hovercraft sounds
+soundThrust = "ssent01j.wav"
+
+
+[DeployableClass]
+
+timeDeploy = 1.2
+timeUndeploy = 1.2
+soundDeploy = "morph01.wav"
+soundUndeploy = "morph01b.wav"

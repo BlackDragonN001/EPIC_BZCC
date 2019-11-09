@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 02: Starport"
+mapTga = "Epic_03.bmp"
+mapDesc = "Epic_03.des"
+mySide = 1

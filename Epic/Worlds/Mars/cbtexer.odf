@@ -1,0 +1,41 @@
+[GameObjectClass]
+geometryName = "cbtexer.xsi"
+geometryScale=0.001
+classLabel = "terrain" // "scrap"
+scrapCost = 0
+scrapValue = 1
+maxHealth = 0
+maxAmmo = 0
+unitName = "Spice"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+
+effectHard1 = "hp_emit"
+effectName1 = "cbtexer.brown"
+
+[ScrapClass]
+lifeTime = 3600.0
+lifeVariance = 0.1
+
+
+[tracks]
+simulateBase = "sim_dust"
+lifeTime = 0.1 // .9
+renderBase = "draw_emit"
+emitName = "htrack.tracksemit"
+emitDelay = 0.1 //.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[brown]
+simulateBase = "sim_null"
+lifeTime = 3600.0
+renderBase = "draw_planar"
+textureName = "cerbalpha3.png"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "254 254 254 0"
+finishColor = "254 254 254 60"
+startRadius = 300.0
+finishRadius = 300.0
+animateTime = 60.0

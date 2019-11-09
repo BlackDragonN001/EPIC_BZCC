@@ -1,0 +1,233 @@
+// ==================
+// SUPER STABBER GROUND HIT by Slaor
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xbombf.wav"
+
+damageRadius = 8.0
+
+damageValue(N) = 20
+damageValue(L) = 5
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+
+particleTypes = 11
+
+particleClass4 = "xsupergnd_b.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass2 = "xsupergnd_b.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xsupergnd_b.flame"
+particleCount3 = 1
+particleVeloc3 = "0.0 10.0 0.0"
+
+particleClass1 = "xsupergnd_b.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass5 = "xsupergnd_b.ring"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xsupergnd_b.posroll"
+particleCount6 = 1
+particleVeloc6 = "5.0 0.0 5.0"
+
+particleClass7 = "xsupergnd_b.flame2"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "xsupergnd_b.sparks"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "xsupergnd_b.char"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+
+particleClass11 = "debris.chunks"
+particleCount11 = 5
+particleVeloc11 = "15.0 17.5 15.0"
+particleBias11 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 8
+particleVeloc10 = "18.0 20.5 18.0"
+particleBias10 = "0.0 5.0 0.0"
+
+
+
+[sparks]
+simulateBase = "sim_ember"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "imisl_s.tga"//"ssparks.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "255 250 200 255"
+finishColor = "55 20 0 0"
+startRadius = 3
+finishRadius = 4
+animateTime = 0.2
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "edfbshock.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 90"
+finishColor = "255 0 0 0"
+startRadius = 1.0
+finishRadius = 12.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[cloud]
+simulateBase = "sim_smoke"
+lifeTime = .21
+renderBase = "draw_emit"
+emitName = "xsupergnd_b.cloudemit"
+emitDelay = 0.07
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 3.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 90"
+finishColor = "60 60 60 0"
+startRadius = 3.0
+finishRadius = 8.0 //
+animateTime = 3.5
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.12
+renderBase = "draw_emit"
+emitName = "xsupergnd_b.flameemit"
+emitDelay = 0.03
+emitVelocity = "0.0 15.0 0.0"
+emitVariance = "1.0 5.0 1.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.7
+renderBase = "draw_twirl"
+textureName = "flm4.tga"
+textureBlend = "one one modulate"
+startColor = " 255 155 55 455"
+finishColor = "255 155 55 0" //
+startRadius = 3.0
+finishRadius = 0.1
+animateTime = 0.7
+rotationRate = 5.0
+
+[flame2]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_emit"
+emitName = "xsupergnd_b.flame2emit"
+emitDelay = 0.035
+emitVelocity = "0.0 13.0 0.0"
+emitVariance = "1.0 5.0 1.0"
+
+[flame2emit]
+simulateBase = "sim_ember"
+lifeTime = 0.6
+renderBase = "draw_twirl"
+textureName = "flm7.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 255 455"
+finishColor = "255 255 255 0" //
+startRadius = 3.0
+finishRadius = 0.2
+animateTime = 0.6
+rotationRate = 5.0
+
+[light]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_emit"
+emitName = "xsupergnd_b.lightemit"
+emitDelay = 2
+emitVelocity = "0.0 18.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Lightemit]
+simulateBase = "sim_null"
+lifeTime = 0.8
+renderBase = "draw_light"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 210 150 3550"
+finishColor = "50 0 0 0"
+startRadius = 50.0 // 350
+finishRadius = 50.0 // 150
+animateTime = 0.8
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[posroll]
+simulateBase = "sim_smoke"
+lifeTime = 0.35
+renderBase = "draw_emit"
+emitName = "xsupergnd_b.posemit"
+emitDelay = 0.07
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "32.0 5.0 32.0"
+
+
+[posemit]
+simulateBase = "sim_smoke"
+lifeTime = 3.5
+renderBase = "draw_twirl"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 90"
+finishColor = "60 60 60 0"
+startRadius = 3
+finishRadius = 6
+animateTime = 3.5
+rotationRate = 2.0
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 127 0 255"
+finishColor = "255 0 0 0"
+startRadius = 7.0
+finishRadius = 0.5
+animateTime = 3.0
+
+[ring]
+simulateBase = "sim_null"
+lifeTime = 7.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "10 10 10 0"
+startRadius = 8.0
+finishRadius = 8.0
+animateTime = 7.0

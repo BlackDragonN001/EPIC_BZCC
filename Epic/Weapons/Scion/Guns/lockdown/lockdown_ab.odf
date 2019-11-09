@@ -1,0 +1,46 @@
+[OrdnanceClass]
+classLabel = "lockdown"
+
+shotGeometry = "NULL"
+shotSound = "sandbag.wav"
+
+xplGround = "xglockgnd_a"
+xplVehicle = "xglockcar_a"
+xplBuilding = "xglockcar_a"
+
+renderName = "lockdown_a.render"
+
+ammoCost = 3
+lifeSpan = 45e-2 // 50m
+shotSpeed = 2e2.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[LeaderRoundClass]
+stickTime = 2.0
+
+[AnchorRocketClass]
+accelDrag = 8.0
+alphaDrag = 0.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "lockdown_a.flare"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "wasplat.tga"
+lifeTime = 0.5
+textureBlend = "one one modulate"
+startColor = "255 255 255 175" 
+finishColor = "62 255 255 75" 
+startRadius = 0.1
+finishRadius = 1.5
+animateTime = 0.5

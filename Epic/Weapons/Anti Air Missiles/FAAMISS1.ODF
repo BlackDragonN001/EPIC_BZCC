@@ -1,0 +1,84 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "Ordin_b.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "xaasxpl"
+xplBuilding = "xaasxpl"
+
+renderName = "faamiss1.render"
+
+ammoCost = 25
+lifeSpan = 7.0 // 800m
+shotSpeed = 240.0
+
+damageValue(N) = 400 // none
+damageValue(L) = 160 // light
+damageValue(H) = 80 // heavy
+
+damageValue(S) = 20 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 150 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "faamiss1.flare"
+renderName2 = "faamiss1.exhaust"
+renderName3 = "faamiss1.flame"
+renderName4 = "faamiss1.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 3.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.8
+finishRadius = 1.8
+segmentTime = 0.25
+animateTime = 0.2
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "255 50 50 255"
+finishColor = "250 0 0 0"
+startRadius = 0.2
+finishRadius = 0.4
+segmentTime = 3.0
+animateTime = 0.05
+
+
+

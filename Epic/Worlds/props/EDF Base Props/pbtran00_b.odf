@@ -1,0 +1,21 @@
+[GameObjectClass]
+geometryName = "pbtran00_b.xsi"
+geometryScale = 1.4
+classLabel = "i76building"
+collisionRadius = 1.0
+scrapCost = 8
+scrapValue = 3
+maxHealth = 10
+maxAmmo = 0
+unitName = "Mobile Transmitter"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+canCollide = 0
+
+armorClass = N
+
+[BuildingClass]

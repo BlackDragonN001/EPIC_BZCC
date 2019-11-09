@@ -1,0 +1,48 @@
+[GameObjectClass]
+geometryName = "fbjamm00_b.xsi"
+geometryScale = 2
+classLabel = "jammer"
+collisionRadius = 5.0
+scrapCost = 50
+scrapReturn = 25
+scrapValue = 3
+maxHealth = 800
+maxAmmo = 0
+powerCost = 0
+unitName = "Jammer"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+ownsTerrain = 1
+isAssault = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+
+LightingType = 1 
+
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 1
+requireName1 = "fbover_b"
+requireText1 = "Build Overseer"
+
+provideCount = 2
+provideName1 = "fbjamm_b"
+provideName2 = "jamm"
+
+[PoweredBuildingClass]
+powerCost = 0
+detectRange = 10
+
+[BuildingClass]
+soundAmbient = "sjam01.wav"
+
+[JammerTowerClass]
+jammerRange = 600.0
+JamScannerTeamFilter = 4 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team

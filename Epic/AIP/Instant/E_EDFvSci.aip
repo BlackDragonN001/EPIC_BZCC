@@ -1,0 +1,320 @@
+[Start]
+scrapCount = 40
+consClass = "ivcons_b"
+scavClass = "ivscav_b"
+
+[Cheat]
+moneyAmount = 35
+moneyDelay = 10
+
+[IdleDispatcher]
+ScavIdleSeconds = 25
+UnitIdleSeconds = 120
+MinAttackForce = 3 // min # of idle units before dispatch
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 210
+buildtype1 = "ivscav_b"
+buildcount1 = 3
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 205
+doNextOnFail = 1
+
+[plan3]
+plantype = "buildminimums"
+planpriority = 200
+buildtype1 = "ivscout_b"
+buildcount1 = 3
+buildtype2 = "ivcons_b"
+buildcount2 = 2
+
+[Plan4]
+planType = "CollectPool"
+planpriority = 195
+doNextOnFail = 1
+
+
+[plan5]
+//plancondition = "HisExists"
+//planconditionclass = "fbscav_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 190
+targettype = "fbscav_b"
+targettype1 = "fbscup_b"
+attacktype1 = "ivscout_b"
+attacktype2 = "ivscout_b"
+attacktype3 = "ivscout_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan6]
+plantype = "basebuildminimums"
+planpriority = 185
+buildtype1 = "ibpgen_b"
+buildtype2 = "ibcbun_b"
+buildtype3 = "ibfact_b"
+
+
+[plan7]
+plantype = "buildminimums"
+planpriority = 180
+buildtype1 = "ivltank_b"
+buildcount1 = 3
+
+[plan8]
+plantype = "collectpool"
+planpriority = 175
+donextonfail = 1
+
+[plan9]
+//plancondition = "HisExists"
+//planconditionclass = "fbscup_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 170
+targettype = "fbscav_b"
+targettype1 = "fbscup_b"
+attacktype1 = "ivltank_b"
+attacktype2 = "ivltank_b"
+attacktype3 = "ivltank_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan10]
+plantype = "buildminimums"
+planpriority = 165
+buildtype1 = "ivtank_b"
+buildcount1 = 3
+
+[plan11]
+plantype = "collectpool"
+planpriority = 160
+donextonfail = 1
+
+[plan12]
+//plancondition = "HisExists"
+//planconditionclass = "fbkiln_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 155
+targettype = "fbkiln_b"
+targettype1 = "fbforg_b"
+attacktype1 = "ivtank_b"
+attacktype2 = "ivtank_b"
+attacktype3 = "ivtank_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan13]
+plantype = "basebuildminimums"
+planpriority = 150
+buildtype1 = "ibpgen_b"
+buildtype2 = "ibarmo_b"
+
+
+[plan14]
+plantype = "buildminimums"
+planpriority = 145
+buildtype1 = "ivrckt_b"
+buildcount1 = 3
+
+[plan15]
+plantype = "basebuildminimums"
+planpriority = 142
+buildtype1 = "ibpgen_b"
+buildtype2 = "ibsbay_b"
+buildtype3 = "ibtcen_b"
+
+
+[plan16]
+//plancondition = "Hisexists"
+//planconditionclass = "fbspir_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 140
+targettype = "fbspir_b"
+targettype1 = "fbaaspir_b"
+attacktype1 = "ivrckt_b"
+attacktype2 = "ivrckt_b"
+attacktype3 = "ivrckt_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan17]
+plantype = "buildminimums"
+planpriority = 135
+buildtype1 = "ivwalk_b"
+buildcount1 = 3
+
+[plan18]
+plantype = "basebuildminimums"
+planpriority = 130
+buildtype1 = "ibpgen_b"
+buildtype2 = "ibbarr_b"
+buildtype3 = "ibctow_b"
+
+
+[plan19]
+//plancondition = "HisExists"
+//planconditionclass = "fbantm_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 125
+targettype = "fbantm_b"
+targettype1 = "fbspir_b"
+targettype2 = "fbover_b"
+attacktype1 = "ivwalk_b"
+attacktype2 = "ivwalk_b"
+attacktype3 = "ivwalk_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan20]
+plantype = "buildminimums"
+planpriority = 120
+buildtype1 = "ivmbike_b"
+buildcount1 = 3
+
+[plan21]
+plantype = "basebuildminimums"
+planpriority = 115
+buildtype1 = "ibgtow_b"
+buildtype2 = "ibpgen_b"
+
+
+[plan22]
+plantype = "buildminimums"
+planpriority = 110
+buildtype1 = "ivserv_b"
+buildcount1 = 3
+
+[plan23]
+plantype = "collectpool"
+planpriority = 105
+donextonfail = 1
+
+[plan24]
+plantype = "basebuildminimums"
+planpriority = 100
+buildtype1 = "IBbmTOW_B"
+buildtype2 = "ibpgen_b"
+donextonfail = 1
+
+[plan25]
+plantype = "buildminimums"
+planpriority = 95
+buildtype1 = "ivrbomb_b"
+buildcount1 = 3
+
+
+[plan26]
+//plancondition = "Hisexists"
+//planconditionclass = "fbdowe_B"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 85
+targettype = "fbdowe_B"
+targettype1 = "fbantm_B"
+targettype2 = "fbover_B"
+attacktype1 = "ivrbomb_b"
+attacktype2 = "ivrbomb_b"
+attacktype3 = "ivrbomb_b"
+attacktype4 = "ivmbike_b"
+AttackAnything = true
+maxAttacks = 0
+
+
+[plan27]
+plantype = "buildminimums"
+planpriority = 80
+buildtype1 = "ivatank_b"
+buildcount1 = 3
+
+
+[plan28]
+plantype = "collectpool"
+planpriority = 75
+donextonfail = 1
+
+[plan39]
+//plancondition = "Hisexists"
+//planconditionclass = "fbstro_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 70
+targettype = "fbstro_b"
+targettype1 = "fbaaspir_b"
+attacktype1 = "ivatank_b"
+attacktype2 = "ivatank_b"
+attacktype3 = "ivatank_b"
+attacktype4 = "ivmbike_b"
+AttackAnything = true
+maxAttacks = 0
+
+[plan30]
+plantype = "buildminimums"
+planpriority = 65
+buildtype1 = "ivapc_b"
+buildcount1 = 3
+
+
+[plan31]
+plantype = "collectpool"
+planpriority = 60
+donextonfail = 1
+
+
+[plan32]
+//plancondition = "Hisexists"
+//planconditionclass = "FBbarr_B"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 55
+targettype = "FBbarr_B"
+targettype1 = "FBantm_B"
+targettype2 = "FBdowe_B"
+targettype3 = "FBover_B"
+attacktype1 = "ivapc_b"
+attacktype2 = "ivapc_b"
+attacktype3 = "ivapc_b"
+AttackAnything = true
+maxAttacks = 0
+
+
+[plan33]
+plantype = "buildminimums"
+planpriority = 50
+buildtype1 = "ivspbomb_b"
+buildcount1 = 3
+
+
+[plan34]
+plantype = "collectpool"
+planpriority = 45
+donextonfail = 1
+
+
+[plan35]
+//plancondition = "Hisexists"
+//planconditionclass = "fbrecy_b"
+//planconditioncount = 1
+plantype = "attacker"
+planpriority = 40
+targettype = "fbrecy_b"
+targettype1 = "fbkiln_b"
+targettype2 = "fbforg_b"
+attacktype1 = "ivspbomb_b"
+attacktype2 = "ivspbomb_b"
+attacktype3 = "ivspbomb_b"
+AttackAnything = true
+maxAttacks = 0
+
+
+[plan36]
+plantype = "collectpool"
+planpriority = 35
+donextonfail = 1

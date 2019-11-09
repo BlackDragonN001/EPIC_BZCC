@@ -1,0 +1,99 @@
+[DESCRIPTION]
+missionName = "Epic: Grasslands"
+mapTga = "Epic_grass.bmp"
+mapDesc = "Epic_grass.des"
+
+[NetVars]
+// For master list of descriptions, see source\network\vars.txt
+ivar0 = 0 // Kill limit, 0= unlimited
+ivar1 = 0 // Time limit, 0= unlimited
+ivar2 = 2 // player limit. Commenting out this line means current setting not changed
+ivar3 = 1 // 1=Teamplay on, 0=Teamplay off
+ivar4 = -1 // Bitfields saying which vehicles out of mpvehicles.txt are allowable. 33= both scouts
+ivar5 = 2 // All=0, DM=1, Strat=2, all other values undefined (used in filters)
+ivar6 = 0 // Vehicles allowable II (if ever implemented)
+ivar7 = 3 // Strategy02.dll starting prefs: turrets at AI level 2, rest AI 0, default scrap, nothing extra [see vars.txt for gory details on bits]
+ivar8 = 0 // Sync Join. 0=off, 1=on.
+ivar9 = 0 // unit limit, 0 is unlimited
+ivar11 = 1 // locks team play
+ivar12 = 1 // lock all to team 1
+ivar14 = 1 // points for killing AI
+ivar15 = 1 // kill for killing AI
+ivar16 = 1 // Respawn w/sniper rifle
+ivar17 = 3 // Player Turret Skill
+ivar18 = 3 // Player Non-Turret Skill
+//ivar19 = 0 // DM 0/1
+ivar20 = 10 // Multiworld Frequency
+ivar21 = 3 // CPU Turret Skill
+ivar22 = 3 // CPU Non-Turret Skill
+ivar23 = 3 // Default scrap cheat for humans
+ivar24 = 3 // Default scrap cheat for CPU
+ivar29 = 0 // Target Lead Indicator 0=on/1=off
+ivar30 = 1 // Weapon Linking 0=off/1=on
+ivar32 = 0 // Friendly Fire 0=off/1=on
+ivar37 = 0 // Sun Speed 0=Normal/1=Slow/2=Fast
+ivar39 = 0 // Time of Day Start Time 0=Midnight,4=4AM,8=8AM,12=Noon,16=4PM,20=8PM
+
+// Alliance Settings:
+ivar60 = 1
+ivar67 = 2
+ivar68 = 3
+ivar69 = 4
+ivar70 = 5
+ivar71 = 6
+ivar72 = 7
+ivar73 = 8
+ivar74 = 9
+ivar75 = 10
+ivar76 = 2
+ivar77 = 2
+ivar78 = 2
+ivar79 = 14
+ivar80 = 15
+ivar60Min = 1
+ivar67Min = 1
+ivar68Min = 1
+ivar69Min = 1
+ivar70Min = 1
+ivar71Min = 1
+ivar72Min = 1
+ivar73Min = 1
+ivar74Min = 1
+ivar75Min = 1
+ivar76Min = 1
+ivar77Min = 1
+ivar78Min = 1
+ivar79Min = 1
+ivar80Min = 1
+ivar60Max = 15 //Team Cap Limit.
+ivar67Max = 15 //Team Cap Limit.
+ivar68Max = 15 //Team Cap Limit.
+ivar69Max = 15 //Team Cap Limit.
+ivar70Max = 15 //Team Cap Limit.
+ivar71Max = 15 //Team Cap Limit.
+ivar72Max = 15 //Team Cap Limit.
+ivar73Max = 15 //Team Cap Limit.
+ivar74Max = 15 //Team Cap Limit.
+ivar75Max = 15 //Team Cap Limit.
+ivar76Max = 15 //Team Cap Limit.
+ivar77Max = 15 //Team Cap Limit.
+ivar78Max = 15 //Team Cap Limit.
+ivar79Max = 15 //Team Cap Limit.
+ivar80Max = 15 //Team Cap Limit.
+
+// Svar0 (.bzn filename, used to look for an .inf file like this)
+// *not* read in, as that would cause an infinite loop
+svar1 = "Humans" // Team name for team 1
+svar2 = "Enemy" // Team name for team 2
+svar3 = "Epic_" // custom AIP files
+//svar4 = "EPICMPVehicles.odf"
+svar5 = "ivrecy_b"
+//svar6 = "EPICStratStarting.odf"
+svar7 = "mpi" // Custom shell page to pull up [actually bzshell_multi_####.cfg]
+svar8 = "MPICheck.odf" // File to add to asset check
+svar9 = "EpicRecyList.txt" // Loads up a custom recycler list file
+svar10 = "EpicAIPlist.txt"
+svar11 = "Rogues"
+svar12 = "ivrecy_b" // custom AI Recycler
+//svar21 = "bepool01" // scrap pool odf
+//svar31 = "Normal"

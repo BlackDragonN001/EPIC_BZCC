@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gcrab_c"
+ordName = "crab_a"
+wpnName = "Crab Spit"
+fireSound = "chaff01.wav"
+wpnReticle = "gfang_a"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 50
+
+[CannonClass]
+shotDelay = 1.0 // .5/sec
+salvoCount = 40
+salvoDelay = 0.001
+shotVariance = 0.5
+shotAlternate = 0

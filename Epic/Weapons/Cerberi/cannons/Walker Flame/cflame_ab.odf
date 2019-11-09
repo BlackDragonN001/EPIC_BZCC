@@ -1,0 +1,31 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.0
+xplGround = "xicehit"
+xplVehicle = "xicehit"
+xplBuilding = "xicehit"
+
+renderName = "cflame_ab.puff"
+ammoCost = 1
+lifeSpan = 1.0
+shotSpeed = 200.0
+
+damageValue(N) = 55 // none
+damageValue(L) = 20 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 20 // standard
+damageValue(D) = 55 // deflection
+damageValue(A) = 10 // assault
+
+[Puff]
+renderBase = "draw_twirl"
+textureName = "cflames.tga"
+textureBlend = "one one modulate"
+startColor = "40 70 255 128"
+finishColor = "40 70 255 0"
+startRadius = 2.0
+finishRadius = 7.0
+animateTime = 1.0

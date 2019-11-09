@@ -1,0 +1,18 @@
+[GameObjectClass] // Fuel Tank - Full
+geometryName = "potank1.xsi"
+geometryScale = 1
+classLabel = "artifact"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 2000
+maxAmmo = 0
+unitName = "Fuel Tank"
+aiName = "PowerUpProcess"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+explosionName = "xfuel_b2" // Full Fuel Tank explosion.
+canCollide = 1
+
+LightingType = 1

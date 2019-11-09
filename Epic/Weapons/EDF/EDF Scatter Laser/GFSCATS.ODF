@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gfscats"
+ordName = "fscats"
+wpnName = "Scourge cannon"
+fireSound = "scat.wav" //"gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gfscats.flash"
+aiRange = 500
+
+[CannonClass]
+shotDelay = 0.15
+shotVariance = 0.03
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 255 400"
+finishColor = "120 0 255 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.08
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

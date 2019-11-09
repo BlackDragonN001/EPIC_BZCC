@@ -1,0 +1,31 @@
+[MissionInfo]
+countISDF = 1
+countScion = 1
+
+[ISDF 1]
+missionTitle = "No Single Player Available"
+missionInfo = ""
+missionFile = ""
+planetName = " "
+planetInfo = ""
+planetGeom = ""
+
+techCount = 1
+techName1 = "No Single Player"
+techInfo1 = ""
+techGeom1 = ""
+
+mailCount = 0
+mailName1 = ""
+mailInfo1 = ""
+mailGeom1 = ""
+mailWave1 = ""
+mailName2 = ""
+mailInfo2 = ""
+mailGeom2 = ""
+mailWave2 = ""
+
+briefInfo = ""
+
+launchMessage = ""
+launchBackground = ""

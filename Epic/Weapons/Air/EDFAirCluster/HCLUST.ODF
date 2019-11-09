@@ -1,0 +1,70 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "gshad02.wav"
+
+//xplGround = "xshdwgnd"
+xplVehicle = "xsprinkcar"
+xplBuilding = "xsprinkcar"
+renderName = "hclust.render"
+
+ammoCost = 120
+lifeSpan = 3.6 // 800m
+shotSpeed = 250.0
+
+damageValue(N) = 80 // none
+damageValue(L) = 60 // light
+damageValue(H) = 40 // heavy
+
+damageValue(S) = 60 // standard
+damageValue(D) = 40 // deflection
+damageValue(A) = 80 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 20.0
+omegaWaver = 0.5
+
+[ThermalMissileClass]
+coneAngle = 15.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "hclust.light"
+renderName2 = "hclust.sprite"
+renderName3 = "hclust.trail"
+renderName4 = "hclust.trail"
+renderName5 = "hclust.sprite"
+
+[Light]
+renderBase = "draw_light"
+startColor = "250 180 55 400"
+finishColor = "250 80 55 400"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[sprite]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 160 0 255"
+finishColor = "255 160 0 255"
+startRadius = 3.0
+finishRadius = 0.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "sprinkts.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor =  "255 255 255 200"// "100 0 0 100" 
+finishColor =  "100 100 100 0" // "100 100 100 0"
+startRadius = 0.5
+finishRadius = 3.0
+segmentTime = 1.0
+animateTime = 3.5

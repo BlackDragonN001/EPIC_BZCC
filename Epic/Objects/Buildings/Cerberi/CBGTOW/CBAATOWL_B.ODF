@@ -1,0 +1,88 @@
+[GameObjectClass]
+geometryName = "cbaatow00_b.xsi"
+geometryScale = 2.5
+glowTexture = "cbtcena0.pic"
+classLabel = "turret"
+collisionRadius = 2
+powercost = -1
+scrapCost = 50 //80
+scrapReturn = 25 //40
+scrapValue = 15
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "Missile Defense"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 0
+armorClass = H
+boxCollide = 1
+
+LightingType = 1
+
+explosionName = "xcerbxplb"
+
+upgradeName = "cbgtowl_b"
+
+armorClass = l
+
+buildSupport = "A"
+buildRequire = "F"
+
+//requireCount = 3
+//requireName1 = "cbpgen_b"
+//requireText1 = "Build Energy Node"
+//requireName2 = "cbarmo_b"
+//requireText2 = "Build Catalyser"
+//requireName3 = "cbcbun_b"
+//requireText3 = "Build Controller"
+
+provideCount = 2
+provideName1 = "cbaatow_b"
+provideName2 = "gtow"
+
+
+weaponMask = 00011
+weaponHard1 = "hp_rocket_1"
+recoilName1 = "recoil"
+weaponName1 = "gadder_ab"
+weaponAssault1 = 0
+
+
+weaponHard2 = "hp_rocket_2"
+recoilName2 = "recoil"
+weaponName2 = "gadder_ab"
+weaponAssault2 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_light_1"
+//turretName4 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 800
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.0
+steerFactor = 0.5
+engageRange = 600
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 800
+
+//[Lod1]
+geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+geometryScale = 2.4
+distance = 550                   ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

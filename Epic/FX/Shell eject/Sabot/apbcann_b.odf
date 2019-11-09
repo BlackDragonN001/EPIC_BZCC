@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "apcann00.xsi"
+classLabel = "wpnpower"
+scrapCost = 40
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyan"
+
+requireCount = 1
+requireName1 = "ibtcen_b"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gbcann_cb"

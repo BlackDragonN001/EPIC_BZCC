@@ -1,0 +1,150 @@
+[GameObjectClass]
+baseName = "ivsupport_b"
+
+unitIcon = "icon_ivsupport_b.tga"
+infoName = "ivsupport_b.inf"
+
+
+geometryName = "ivcargo00_b.xsi"
+cockpitName = "ivintc_cockpit.xsi"
+classLabel = "serviceh"
+geometryScale = 0.5
+
+animCount = 3
+animName1 = "forward"
+animFile1 = "ivintcsf.xsi"
+animName2 = "neutral"
+animFile2 = "ivintcsn.xsi"
+animName3 = "reverse"
+animFile3 = "ivintcsr.xsi"
+
+scrapValue = 30
+scrapCost = 65
+buildTime = 10.0
+maxHealth = 4000
+maxAmmo = 2000
+unitName = "Support Crew"
+aiName = "ServiceHProcess"
+aiName2 = "ServiceHProcess"
+
+heatSignature = 0.5
+imageSignature = 2.5
+radarSignature = 0.1
+
+LightingType = 1
+
+armorClass = H
+
+provideCount = 2
+provideName1 = "ivsupport_b"
+provideName2 = "air"
+
+//weaponHard1 = "HP_ROCKET_1"
+//weaponName1 = "grktbomb_c"
+//weaponHard2 = "HP_ROCKET_2"
+//weaponName2 = "grktbomb_c"
+//weaponHard3 = "HP_MORTAR_1"
+//weaponName3 = "gmortar"
+//weaponHard4 = "HP_SPECIAL_1"
+//weaponName4 = "gproxmin"
+//weaponMask = 00011
+	
+[CraftClass]
+rangeScan = 600.0
+periodScan = 5.0
+velocJam = 5.0
+
+braccelFactor = 0.05
+strafeFactor = 0.1
+steerFactor = 1.0
+omegaFactor = 0.2
+velFactor = 0.2
+
+avoidSpeed = 20
+topSpeed = 20
+
+selectAttackMsg = "avrcktv0.wav"
+selectGoMsg = "avrcktvk.wav"
+selectFollowMsg = "avrcktvg.wav"
+selectOtherMsg = "avrcktvm.wav"
+
+goMsg = "avrcktv1.wav"
+goObjectMsg = "avrcktvf.wav"
+attackMsg = "avrcktv2.wav"
+followMeMsg = "avrcktv4.wav"
+followMsg = "avrcktvb.wav"
+repairMsg = "avrcktv8.wav"
+reloadMsg = "avrcktv9.wav"
+rescueMsg = "avrcktvc.wav"
+recycleMsg = "avrcktvd.wav"
+
+user1Msg = "avrcktva.wav"
+killedMsg = "avrcktv3.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+setAltitude = 3
+accelDragStop = 8.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+pitchPitch = 0.05
+pitchThrust = 0.05
+rollStrafe = 0.05
+rollSteer = 0.05
+
+velocForward = 40.0
+velocReverse = 15.0
+velocStrafe = 10.0
+accelThrust = 15.0
+accelBrake = 40.0
+omegaSpin = 1.0
+omegaTurn = 1.0
+alphaSteer = 2.0
+accelJump = 10.0
+
+soundThrust = "itank01e.wav"
+
+[ServiceTruckH]
+supplyRange = 40.0
+supplyRadius = 30.0
+supplyRate = 50.0
+supplySound = "mnu_empt.wav"
+supplyEffect = "ivserv.supply"
+supplyHard = "hp_light_1"//"hp_special_1"
+localAmmoRate = 20
+
+serviceSTs = 1
+serviceCraft = 1
+serviceBuildings = 1
+servicePilots = 1
+serviceOther = 0
+
+[Supply]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivsupport_b.halo"
+renderName2 = "ivsupport_b.bolt"
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "127 255 0 127"
+finishColor = "0 255 0 0"
+startRadius = 5.0
+finishRadius = 1.0
+animateTime = 0.3
+
+[Bolt]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "127 255 0 63"
+finishColor = "0 255 0 0"
+startRadius = 1.0
+finishRadius = 0.3
+segmentLength = 2.0
+segmentVariance = "0.5 0.5 0.5"
+animateTime = 0.3
+textureRate = 0.05
+textureSpeed = -0.5

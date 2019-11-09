@@ -1,0 +1,117 @@
+[GameObjectClass]
+geometryName = "fbstro00_b.xsi"
+geometryScale = 2
+classLabel = "armory"
+collisionRadius = 1.0
+scrapCost = 70
+scrapReturn = 35
+scrapValue = 3
+maxHealth = 7000
+maxAmmo = 0
+powerCost = 0
+unitName = "Stronghold"
+aiName = "ArmoryProcess"
+aiName2 = "ArmoryProcess"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+LightingType = 1 
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 1
+requireName1 = "fbforg_b"
+requireText1 = "Build Forge"
+//requireName2 = "fbdowe_b"
+//requireText2 = "Build Dower"
+
+provideCount = 2
+provideName1 = "fbstro_b"
+provideName2 = "armo"
+
+upgradeName = "fbstrou_b"
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung_b"
+detectRange = 600
+
+[BuildingClass]
+soundAmbient = "sdow01.wav"
+
+[FactoryClass]
+soundBuild = "sbrecy02.wav"
+soundFinish = "iapc04.wav"
+
+reloadMsg = "fvrecy11.wav"
+rescueMsg = "fvrecy12.wav"
+
+[ArmoryGroup1]
+buildLabel = "Guns"
+buildItem1 = "apiong_b"
+buildItem2 = "aplock_b"
+buildItem3 = "apgaus_b"
+
+[ArmoryGroup2]
+buildLabel = "Cannons"
+buildItem1 = "apsplasma_b"
+buildItem2 = "apsonic_b"
+buildItem3 = "apquil_b"
+buildItem4 = "aparcc_b"
+
+[ArmoryGroup3]
+buildLabel = "Rockets"
+buildItem1 = "apmlock_b"
+buildItem2 = "apsting_b"
+
+[ArmoryGroup4]
+buildLabel = "Mortars"
+buildItem1 = "apsartl_b"
+buildItem2 = "apgas_b"
+buildItem3 = "apresn_b"
+buildItem4 = "appopg_b"
+
+[ArmoryGroup5]
+buildLabel = "Mines"
+buildItem1 = "apflar_b"
+buildItem2 = "apseek_b"
+buildItem3 = "approx_b"
+
+[ArmoryGroup6]
+buildLabel = "Specials"
+buildItem1 = "apblnk_b"
+buildItem2 = "apstatic_b"
+
+
+[ArmoryGroup7]
+buildLabel = "Shields"
+buildItem1 = "apshld_b"
+buildItem2 = "apdefl_b"
+buildItem3 = "apabso_b"
+
+[ArmoryGroup8]
+buildLabel = "Pilot"
+buildItem1 = "spbazo_b"
+buildItem2 = "spsnip_b"
+buildItem3 = "spgren_b"
+buildItem4 = "spamjet_b"
+
+[ArmoryGroup9]
+buildLabel = "Restricted"
+buildItem1 = "apsnuke_b" //"apwrcks_b"
+
+[Lod1]
+geometryName = "fbstroL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 400                    ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1
+

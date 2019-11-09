@@ -1,0 +1,73 @@
+[GameObjectClass]
+geometryName = "po_gt_test.xsi"
+geometryScale = 0.7
+classLabel = "turret"
+collisionRadius = 30.0
+scrapCost = 70
+scrapValue = 15
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addammo = 10
+unitName = "Bolt Turret"
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+
+
+weaponMask = 00111
+
+weaponHard1 = "hp_gun_1"
+\\recoilName1 = "recoil_1"
+weaponName1 = "g50calGT_ab"
+weaponAssault1 = 0
+
+weaponHard2 = "hp_gun_2"
+\\recoilName1 = "recoil_2"
+weaponName2 = "g50calGT_ab"
+weaponAssault2 = 0
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_light_1"
+//turretName4 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 700
+periodScan = 1.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 1
+engageRange = 600
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+killedMsg = "ivtank07.wav"
+diedMsg = "abetty3.wav"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 800
+
+//[Lod1]
+geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+geometryScale = 2.4
+distance = 550                   ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

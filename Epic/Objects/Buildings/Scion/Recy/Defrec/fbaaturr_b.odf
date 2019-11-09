@@ -1,0 +1,67 @@
+[GameObjectClass]
+geometryName = "fbdturr_b.XSI"
+geometryScale = 2.4
+baseName = "aaturr"
+classLabel = "turret"
+collisionRadius = 1.0
+scrapCost = 15
+scrapValue = 0
+powerCost = -1
+maxHealth = 20000
+maxAmmo = 20000 
+addHealth = 30
+addAmmo = 50
+unitName = "Defense Turret"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 1
+
+armorClass = H
+
+//upgradeName = "ibgunturr"
+
+requireCount = 0
+
+//provideCount = 0
+//provideName1 = "ibgtow"
+
+///// WEAPON ////////////////////
+
+weaponMask = 00011
+weaponHard1 = "hp_gun_1"
+weaponName1 = "ggauss_cb"
+weaponHard2 = "hp_rocket_1"
+weaponName2 = "gfsamiss1"
+
+
+/////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotlite1"
+
+turretCount = 2
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 1200
+periodScan = 1.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 1.0
+engageRange = 7500
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 800

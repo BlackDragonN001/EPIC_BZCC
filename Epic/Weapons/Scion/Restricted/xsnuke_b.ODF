@@ -1,0 +1,90 @@
+// ==================
+// SINGULARITY MINE EXPLOSION
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "shipxpl.wav"
+
+damageRadius = 150.0
+
+damageValue(N) = 200
+damageValue(L) = 150
+damageValue(H) = 100
+
+damageValue(S) = 150
+damageValue(D) = 200
+damageValue(A) = 100
+
+kickRadius = 150.0
+kickOmega = 20.0
+kickVeloc = 15.0
+
+particleTypes = 3
+
+particleClass1 = "xsnuke_b.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xsnuke_b.ring1"
+particleCount2 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass3 = "xsnuke_b.ring2"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_light"
+startColor = "255 255 255 255"
+finishColor = "0 255 0 0"
+startRadius = 150.0 // 350
+finishRadius = 0.0 // 150
+animateTime = 3.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[ring1]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" //ring2
+textureBlend = "one one modulate"
+startColor = "200 255 200 90"
+finishColor = "150 255 150 0"
+startRadius = 3.0
+finishRadius = 150.0
+animateTime = 1.0
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -25.0
+AddYaw = -25.0
+AddRoll = -25.0
+
+[ring2]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" //ring2
+textureBlend = "one one modulate"
+startColor = "200 255 200 90"
+finishColor = "150 255 150 0"
+startRadius = 3.0
+finishRadius = 150.0
+animateTime = 1.0
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 25.0
+AddYaw = 25.0
+AddRoll = 25.0

@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsonicwpn_ab"
+ordName = "sonicwpn_cb"
+wpnName = "Sonic Pulse"
+fireSound = "sonic01.wav"
+wpnReticle = "gsonic_c"
+wpnCategory = "CANN"
+isAssault = 0
+aiRange = 450
+
+[CannonClass]
+shotDelay = 2 
+shotAlternate = 1

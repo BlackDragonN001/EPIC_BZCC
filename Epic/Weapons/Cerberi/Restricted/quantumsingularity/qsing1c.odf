@@ -1,0 +1,242 @@
+[GameObjectClass] //annoyingly delicate. Want it to shoot, stay at altitude, and be tuggable all at same time.
+geometryName = "QSING02.xsi"
+animCount = 0
+classLabel = "turrettank"
+scrapCost = 0
+customCost = 0
+scrapValue = 1
+buildTime = 0.0
+customTime = 0.0
+maxHealth = 1200
+maxAmmo = 0
+addHealth = -10
+addAmmo = 0
+unitName = "Quantum Singularity"
+ainame = "AttachOffensive"
+ainame2 = "AttachOffensive"
+//ainame = "AssaultTankProcess" //"TurretTankFriend"
+//aiName2 = "AssaultTankProcess" //"TurretTankEnemy"
+//aiName = "GunTowerFriend"
+//aiName2 = "GunTowerEnemy"
+ainame = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.0
+isAssault = 0
+canDetect = 0
+Tuggable = 1
+canInteract = 1
+powerCost = 0
+isStealth = 1
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+canSnipe = 0
+isGrouped = 0
+needGroup = 0
+IsLimited = 0
+CanSelect = false
+NoShadow = true
+CanDemolish = false
+PilotConfig = "ispilo"
+//ScanTeamLimit = 3
+CanBeIdleVictim = false
+CanAcceptPowerups = false
+
+armorClass = L
+
+DeployOnBuild = 0
+
+Lifespan = 120
+
+explosionName = "xqsingburst" // Big Burst of Bang Bang
+
+ScrapClass1 = "qsing2a" // Spawn the Terror
+ScrapClass2 = "qsing2a" 
+ScrapClass3 = "qsing2a"
+
+EffectHard1 = "hp_gun_1"
+EffectName1 = "qsing1c.render"
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_Gun_1"
+weaponName1 = "qsing1ca" //Gun I want it to shoot while still being tuggable. 
+weaponAssault1 = 1
+
+//////////////////////////////////
+
+turretCount = 2
+turretName1 = "hp_turret_x"
+turretName2 = "hp_turret_y"
+//turretName3 = "hp_turret_y"
+//turretName4 = "HP_eyepoint"
+
+[CraftClass]
+rangeScan = 10000 //1000000
+periodScan = 0.0
+velocJam = 1.0
+engageRange = 10000 //1000000
+//weaponPitch = 1.6
+MustBeLinedUpToHit = false
+MustBeLinedUpToFire = false
+TurretTankAttackRange = 10000 //1000000.0
+DoWeaponCanHitCheck = false
+SitAttackCheckAbleToHit = false
+//AttackTaskUsesGroups = false
+FireWhenCanHitFriends = true
+GunTowerProcessCheckCantHit = false
+//blastDist = 10000
+
+damageEffect1 = "NULL"
+damageEffect2 = "NULL"
+damageEffect3 = "NULL"
+damageEffect4 = "NULL"
+
+AllowedControlsWhenTugged = 31 //full control
+
+canRescue = 0
+canBailout = 0
+NoShadow = true
+CanRecycle = false
+CanAIEject = false
+
+attackTask = "ArtlSubAttack" //"AimFireAttack"
+subAttackTask = "ArtlSubAttack"
+defendTask = "AimFireAttack"
+waitTask = "ArtlSubAttack" //"AimFireAttack"
+subAttackClass = "ANS"
+
+//attackTask = "AssaultTankAttack"
+//subAttackTask = "SupportSubAttack"
+//subAttackClass = "ANS"
+
+/attackTask = "ArtlAttack" 	//attackTask = "ArtlTankAttack"
+/subAttackTask = "ArtlSubAttack"	//subAttackTask = "ArtlTankSubAttack"
+/subAttackClass = "ANN"
+
+[HoverCraftClass] // Dont touch, this makes the singularity field uneffected by gravity.
+setAltitude = 0.0
+accelDragStop = 0.0
+alphaTrack = 0.0
+alphaDamp = 0.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+rollStrafe = 0.0
+rollSteer = 0.0
+
+velocForward = 0.0
+velocReverse = 0.0
+velocStrafe = 0.0
+accelThrust = 0.0
+accelBrake = 0.0
+omegaSpin = 5.0
+omegaTurn = 0.0
+alphaSteer = 0.0
+accelJump = 0.0
+
+soundThrust = "silence.wav"
+soundSteer = "silence.wav"
+
+[DeployableClass]
+timeDeploy = 0.0
+timeUndeploy = 0.0
+soundDeploy = "silence.wav"
+soundUndeploy = "silence.wav"
+canAttackWhenUndeployed = true 
+
+[TurretTankClass]
+omegaTurret = 2.0
+alphaTurret = 5.0
+//CanDemolish = false
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 10000
+
+/////////////////////////////////////////////
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "qsing1c.flare"
+renderName2 = "qsing1c.light"
+renderName3 = "qsing1c.field"
+renderName4 = "qsing1c.field2"
+renderName5 = "qsing1c.static"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga" //"lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 3.0
+rotationRate = -0.75
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 255 255 1500"
+finishColor = "255 255 255 1500"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+
+[Static]
+renderBase = "draw_static"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 50"
+finishColor = "255 255 255 0"
+startRadius = 12.0
+finishRadius = 0
+animateTime = 0.4
+emitDelay = 0.005
+emitDelayVar = 0.0
+innerRadius = 0.0
+outerRadius = 0.2
+segmentTime = 0.4
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 0"
+finishColor = "200 250 255 20"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 50.0
+AddYaw = 50.0
+AddRoll = 50.0
+
+[Field2]
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 0"
+finishColor = "200 250 255 20"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -50.0
+AddYaw = -50.0
+AddRoll = -50.0

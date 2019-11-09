@@ -1,0 +1,31 @@
+[GameObjectClass]
+geometryName = "EDFTEST.xsi"
+geometryScale = 0.25
+classLabel = "jammer"
+scrapCost = 8
+scrapValue = 0
+maxHealth = 7500
+maxAmmo = 0
+unitName = "Apartments"
+heatSignature = 0.8
+imageSignature = 0.5
+radarSignature = 0.5
+collisionRadius = 5.0
+canDetect = 1
+canInteract = 1
+canSnipe = 0
+canCollide = 1
+explosionName = "bcollapse_m"
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103
+
+[PoweredBuildingClass]
+powerCost = 0
+detectRange = 150
+
+[JammerTowerClass]
+jammerRange = 30.0
+
+

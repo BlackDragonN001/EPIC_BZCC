@@ -1,0 +1,68 @@
+[GameObjectClass]
+geometryName = "sbtowe00.xsi"
+geometryScale = 2.4
+classLabel = "turret"
+collisionRadius = 1.0
+scrapCost = 50
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "CCA Gun Tower"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "ibcbun_b"
+requireText1 = "Build Relay Bunk"
+
+provideCount = 1
+provideName1 = "ibgtow_b"
+
+//upgradeName = "ibbertha_b"
+
+
+weaponMask = 00011
+weaponHard1 = "hp_cannon_1"
+weaponName1 = "gchain_ab"
+weaponAssault1 = 0
+weaponHard2 = "hp_cannon_2"
+weaponName2 = "gchain_ab"
+weaponAssault2 = 0
+
+lightHard1 = "hp_light_01"
+lightName1 = "spotwhite"
+
+turretCount = 4
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+turretName3 = "hp_light_01"
+turretName3 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 600
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 0.5
+engageRange = 600
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 600
+
+//[Lod1]
+//geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+//geometryScale = 2.4
+//distance = 550                   ;bsphere under 200 pixel => switch to lod1
+//dontShiftLOD = 1

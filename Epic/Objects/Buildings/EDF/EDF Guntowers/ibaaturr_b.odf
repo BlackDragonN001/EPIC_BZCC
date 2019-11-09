@@ -1,0 +1,67 @@
+[GameObjectClass]
+geometryName = "ibaaturr00_b.XSI"
+geometryScale = 2
+baseName = "aaturr"
+classLabel = "turret"
+collisionRadius = 1.0
+scrapCost = 15
+scrapValue = 0
+powerCost = -1
+maxHealth = 20000
+maxAmmo = 20000 
+addHealth = 30
+addAmmo = 300
+unitName = "AA Turret"
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+heatSignature = 0.3
+imageSignature = 1.0
+radarSignature = 0.2
+isAssault = 0
+
+armorClass = H
+
+//upgradeName = "ibgunturr"
+
+requireCount = 0
+
+//provideCount = 0
+//provideName1 = "ibgtow"
+
+///// WEAPON ////////////////////
+
+weaponMask = 00011
+weaponHard1 = "hp_rocket_1"
+weaponName1 = "gfafmsl_cb"
+weaponHard2 = "hp_rocket_2"
+weaponName2 = "gfafmsl_cb"
+
+
+/////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotlite1"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 600
+periodScan = 1.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 1.0
+engageRange = 450
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 500

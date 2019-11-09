@@ -1,0 +1,44 @@
+[Size]
+MetersPerGrid = 24.0
+HeightGranularity = 0.15
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 5.0
+Tile = 1
+Color = "151 158 103 255"
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=3
+MusicTrack2=4
+MusicTrack3=5
+MusicTrack4=6
+MusicTrack5=7
+
+[Texture] 
+TileTexture1 = "volcanic.tga" 
+TileTexture2 = "fac_junk1.tga" 
+TileTexture3 = "fac_floor.tga" 
+TileTexture4 = "lumprock.tga"
+TileTexture5 = "temple_rock.tga"
+TileTexture6 = "shalerock.tga" 
+TileTexture7 = "fac_cap.tga" 
+TileTexture8 = "jagrock.tga"
+TileTexture9 = "fac_gravel.tga"
+TileTexture10 = "soilcrack.tga"
+TileTexture11 = "fac_ore.tga"
+TileTexture12 = "temple_grass2.tga"
+TileTexture13 = "rockface2.tga"//"u_goodrock2.tga"
+TileTexture14 = "temple_gravel.tga"//
+TileTexture15 = "shalerock.tga"
+
+

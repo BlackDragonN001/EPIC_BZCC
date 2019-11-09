@@ -1,0 +1,225 @@
+[GameObjectClass]
+
+baseName = "fvbashar_b"
+classLabel = "iv_walker"
+cockpitName = "ivwalk_cockpit.xsi"
+geometryName = "bashar_skel_b.xsi"
+geometryScale = 0.37
+
+animCount = 10
+animName1 = "idle"
+animFile1 = "bashar_idle_2b.xsi"
+
+animName2 = "idle2"
+animFile2 = "bashar_idle_2b.xsi"
+
+animName3 = "idle3"
+animFile3 = "bashar_idle_2b.xsi"
+
+animName4 = "sitdown"
+animFile4 = "bashar_idle_2b.xsi"
+
+animName5 = "walk"
+animFile5 = "bashar_walk_2b.xsi"
+
+animName6 = "turn"
+animFile6 = "bashar_walk_2b.xsi"
+
+animName7 = "death"
+animFile7 = "bashar_death_2b.xsi"
+
+animName8 = "death2"
+animFile8 = "bashar_death_2b.xsi"
+
+animName9 = "death3"
+animFile9 = "bashar_death_2b.xsi"
+
+animName10 = "run"
+animFile10 = "bashar_run_2b.xsi"
+
+scrapValue = 0
+//scrapCost = 90
+//customCost = 95
+//buildTime = 10.0
+//customTime = 10.0
+scrapCost = 20
+scrapReturn = 10
+customCost = 20
+buildTime = 5.0
+customTime = 5.0
+maxHealth = 3800
+maxAmmo = 1900
+addAmmo = 20
+AIAddAmmo = 50
+unitName = "The Bashar"
+aiName = "GechProcess"
+heatSignature = 0.1
+imageSignature = 0.1
+radarSignature = 0.1
+collisionRadius = 20.0
+isAssault = 0
+
+LightingType = 1
+
+//VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+explosionName = "xprsxpl"
+
+armorClass = L
+
+requireCount = 1
+requireName1 = "fbantm_b"
+requireText1 = "Build Antenna"
+
+provideCount = 1
+provideName1 = "bhero"
+
+limitClass1 = "bhero" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 1
+limitClass1Text = "Unique Unit"
+
+isGrouped = 1   // add to a command group 
+needGroup = 0 	// need free group to build 
+isLimited = 0 	// add to the limit count 
+needLimit = 0 	// need free limit to build 
+canDetect = 1   // can attack other pilots through attack command 
+canEject = 0
+canInteract = 1 // can interact using the reticle 
+canSelect = 1
+canTarget = 1   // can target
+needPilot = 0
+
+
+CanAcceptPowerups = false
+
+
+//requireCount = 2
+//requireName1 = "ibfact_b"
+//requireText1 = "Build Factory"
+//requireName2 = "ibtcen_b"
+//requireText2 = "Build Tech Cen"
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+weaponHard1 = "HP_gun_2"
+weaponName1 = "ggaussbash_ab"
+weaponAssault1 = 1
+recoilName1 = "recoil"
+weaponHard2 = "HP_special_1"
+weaponName2 = ""
+weaponAssault2 = 0
+//weaponHard3 = "HP_shield_1"
+//weaponName3 = ""
+//weaponAssault3 = 0
+//weaponHard4 = "HP_GUN_1"
+//weaponName4 = "glaser_cb"
+//weaponAssault4 = 0
+
+//////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+PathingType = 1 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+AvoidType = -1 // -1 = auto, 0 = None, 1 = force, 2 = plan
+GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower model
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+ClosestEnemyGoodEyes = yes
+CanAIPForceIdle = false
+
+rangeScan = 1200.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 1000
+detectRange = 250
+
+braccelFactor = 0.5
+velFactor = 0.5
+strafeFactor = 0.5
+steerFactor = 1.5
+omegaFactor = 0.2//0.2
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "AssaultTankSubAttack"
+subAttackClass = "NNN"
+
+canHunt = 1
+canRescue = 0
+
+AllowLinkWeapons = true
+
+damageEffect1 = "Dmgprs1"
+damageEffect2 = "Dmgprs1"
+damageEffect3 = "Dmgprs2"
+damageEffect4 = "Dmgprs2"
+
+selectWaitMsg = "jak02.wav"
+selectAttackMsg = "rhin06.wav"
+selectFollowMsg = "jak02.wav"
+selectGoMsg = "jak02d.wav"
+selectOtherMsg = "jak02.wav"
+
+goMsg = "jak02d.wav"
+attackMsg = "rhin06.wav"
+followMeMsg = "jak02d.wav"
+followMsg = "jak02d.wav"
+repairMsg = "jak02.wav"
+reloadMsg = "jak07.wav"
+rescueMsg = "jak02c.wav"
+recycleMsg = "jak08.wav"
+otherMsg = "jak02d.wav" 
+holdMsg = "jak02b.wav"
+user1Msg = ""  
+killedMsg = "ivwalk07.wav"
+diedMsg = "abetty3.wav"
+
+avoidSpeed = 10;
+topSpeed = 20;
+
+
+// Angles are in degress
+[WalkerClass]
+CanWaterDamage = false
+FRICTION_COEF = 0.1//0.35
+
+headYawRate	= 150.0 
+minHeadYaw = -30.0
+maxHeadYaw =  30.0
+minHeadPitch = -10.0
+maxHeadPitch = 30.0
+
+animRate = 2.0
+
+alphaDamp = 5.0
+omegaTurn = 160//40.0
+omegaTurnAttenuation = 0.5f
+
+alphaSteer = 0.01//0.1
+velocJump = 0
+alphaTrack = 20.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+accelThrust = 8.0
+velocForward = 20.0
+velocReverse = 5.0
+
+headpiece = "head"
+rightfootpiece = "hp_rfoot";
+leftfootpiece = "hp_lfoot";
+
+jumpSound  = "jump.wav"
+landSound  = "rhin01.wav"
+stepSound  = "running.wav"
+
+engineSound = "silence.wav"
+

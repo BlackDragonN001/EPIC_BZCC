@@ -1,0 +1,15 @@
+[GameObjectClass] 
+geometryName = "ioartl00.xsi" 
+classLabel = "spraybomb" 
+scrapCost = 0 
+scrapValue = 0 
+maxHealth = 150 
+maxHeat = 0 
+maxAmmo = 100 
+unitName = "RUN NOW!!" 
+[SprayBuildingClass] 
+payloadName = "spider2" 
+fireSound = "smort02.wav" 
+triggerDelay = .2 
+setAltitude = 3.0 
+anglePitch = .5 

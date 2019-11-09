@@ -1,0 +1,182 @@
+[GameObjectClass]
+baseName = "ivcorvs"
+glowTexture = "ivdesa0.pic"
+geometryName = "ivdestroy.xsi"
+geometryScale = 0.4
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 140
+customCost = 160
+buildTime = 45.0
+customTime = 45.0
+maxHealth = 60000
+addHealth = 25
+maxAmmo = 8000
+addAmmo = 600
+unitName = "EDF Destroyer"
+aiName = "APCProcess"
+explosionName = "xivdests"
+collisionRadius = 300.0
+
+heatSignature = 30.0
+imageSignature = 80.0
+radarSignature = 50.0
+isAssault = 1
+armorClass = l
+needPilot = 1
+cockpitName = "ivscav_cockpit.xsi"
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivstorms.render"
+effectHard2 = "hp_trail_2"
+effectName2 = "ivstorms.render"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivspbombsa.trail"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivspbombsa.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gdescan"
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gdescan" // "gsgun"
+weaponAssault2 = 0
+//weaponHard3 = "HP_gun_2"
+//weaponName3 = "gclusta"
+//weaponAssault3 = 0
+weaponHard4 = "HP_cannon_1"
+weaponName4 = "gblasts_a"
+weaponAssault4 = 1
+weaponHard5 = "HP_cannon_2"
+weaponName5 = "gblasts_a"
+weaponAssault5 = 1
+
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 3000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 3000
+
+ejectratio = 0
+
+braccelFactor = 0.1
+velFactor = 0.2
+steerFactor = 5
+omegaFactor = 0.1
+strafeFactor = 0.5
+
+avoidSpeed = 70;
+topSpeed = 150;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 100 // []
+velocReverse = 40.0 // []
+velocStrafe = 20.0 // []
+accelThrust = 4.0 //acceleration []
+accelDragStop = 3.0 //how fast it stops once hands are off controls []
+accelJump = 00.0 // []
+
+setAltitude =500.0 // how high off the ground
+
+alphaTrack = 5.0 //springs speed it rights itself []
+alphaDamp = 3.0 //shocks []
+
+pitchPitch = 0 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.1 //rolls while strafing []
+omegaSpin = 0.2 //spinning in place speed []
+omegaTurn = 0.2 //turning while moving speed []
+alphaSteer = 3.0 //how fast it responds to steering []
+rollSteer = 0.1 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivcorvs.trailer"
+//renderName2 = "ivspbombsa.flame"
+renderName2 = "sprocketa.trailer"
+//renderName2 = "sprocketa.flame"
+renderName3 = "sprocketa.Light1"
+//renderName3 = "sprocketa.Light2"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 255"
+finishColor = "0 0 255 0"
+startRadius = 3
+finishRadius = 2
+segmentTime = 3.0
+animateTime = 0.3
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 9000                 ;...distance over this many meters => switch to lod2

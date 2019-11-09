@@ -1,0 +1,69 @@
+[GameObjectClass]
+geometryName = "cbgnode00.xsi"
+glowTexture = "cbtcena0.pic"
+geometryScale = 2.5
+classLabel = "commtower"
+collisionRadius = 20.0
+scrapCost = 70
+scrapReturn = 35
+scrapValue = 10
+maxHealth = 5000
+maxAmmo = 0
+PowerCost = 0
+unitName = "Defense Node"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+//canCollide = 1
+IsSingle = 0
+
+explosionName = "XBHXPL_b"
+
+LightingType = 1
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 1
+requireName1 = "cbpgen_b"
+requireText1 = "Build Power Node"
+requireName2 = "cbcbun_b"
+requireText2 = "Build Uplink"
+
+
+provideCount = 2
+provideName1 = "cbgnode_b"
+provideName2 = "gtow"
+
+effectHard1 = "hp_com"
+effectName1 = "cbfact_b.dark"
+
+
+[BuildingClass]
+soundAmbient = "icomm01.wav"
+
+[CommBunkerClass]
+rangeScan = 2000
+periodScan = 1.0
+viewDist = 250
+
+[PoweredBuildingClass]
+PoweredByTaps = false
+
+powerTap1 = "HP_TAP_1"
+powerTap2 = "HP_TAP_2"
+
+AutoBuildTap1 = true
+AutoBuildTap2 = true
+
+powerName1 = "cbgtowl_b"
+powerName2 = "cbaatowl_b"
+
+detectRange = 600
+

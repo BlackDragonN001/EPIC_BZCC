@@ -1,0 +1,394 @@
+[Start]
+scrapCount = 40
+consClass = "cvcons_b"
+scavClass = "cvscav_c"
+//DLLCanSwitch = false
+IdleAllCraft = true
+CheckProvides = true
+
+[Cheat]
+moneyAmount = 35
+moneyDelay = 10
+
+[IdleDispatcher]
+ScavIdleSeconds = 1
+UnitIdleSeconds = 120
+BomberIdleSeconds = 0
+MaxBomberTargets = 0
+MinAttackForce = 3
+MaxAttackForce = 99
+MinMissionSeconds = 5
+
+[Plan1]
+planType = "BuildMinimums"
+planPriority = 210
+buildType1 = "cvscav_c"
+buildCount1 = 3
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 205
+doNextOnFail = 1
+
+[Plan3]
+planType = "BuildMinimums"
+planPriority = 200
+buildType1 = "cvscout_b"
+buildCount1 = 3
+buildType2 = "cvcons_b"
+buildCount2 = 2
+
+[Plan4]
+planType = "CollectPool"
+planPriority = 195
+doNextOnFail = 1
+
+[Plan5]
+//plancondition = "HisExists"
+//planconditionclass = "scup"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 190
+targetType = "scup"
+targetType1 = "recy"
+attackType1 = "cvscout_b"
+attackType2 = "cvscout_b"
+attackType3 = "cvscout_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan6]
+planType = "BaseBuildMinimums"
+planPriority = 185
+buildType1 = "cbpgen_b"
+buildType2 = "cbcbun_b"
+
+
+[Plan7]
+planType = "BuildMinimums"
+planPriority = 180
+buildType1 = "cvrgdron_b"
+buildCount1 = 3
+
+[Plan8]
+planType = "CollectPool"
+planPriority = 175
+doNextOnFail = 1
+
+[Plan9]
+//plancondition = "HisExists"
+//planconditionclass = "recy"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 170
+targetType = "recy"
+targetType1 = "scup"
+attackType1 = "cvrgdron_b"
+attackType2 = "cvrgdron_b"
+attackType3 = "cvrgdron_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+
+[Plan10]
+planType = "BuildMinimums"
+planPriority = 165
+buildType1 = "cvrmdron_b"
+buildCount1 = 4
+
+[Plan11]
+planType = "CollectPool"
+planPriority = 160
+doNextOnFail = 1
+
+[Plan12]
+//plancondition = "HisExists"
+//planconditionclass = "cbun"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 155
+targetType = "cbun"
+targetType1 = "recy"
+attackType1 = "cvrmdron_b"
+attackType2 = "cvrmdron_b"
+attackType3 = "cvrmdron_b"
+attackType4 = "cvrmdron_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan13]
+planType = "BaseBuildMinimums"
+planPriority = 150
+buildType1 = "cbsbay_b"
+buildType2 = "cbarmo_b"
+
+[Plan14]
+planType = "BuildMinimums"
+planPriority = 145
+buildType1 = "cvtank_b"
+buildCount1 = 3
+
+[Plan15]
+planType = "CollectPool"
+planPriority = 142
+doNextOnFail = 1
+
+[Plan16]
+//plancondition = "HisExists"
+//planconditionclass = "pgen"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 140
+targetType = "pgen"
+targetType1 = "scup"
+attackType1 = "cvtank_b"
+attackType2 = "cvtank_b"
+attackType3 = "cvtank_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan17]
+planType = "BuildMinimums"
+planPriority = 135
+buildType1 = "cvrbomb_b"
+buildCount1 = 3
+
+[Plan18]
+planType = "BaseBuildMinimums"
+planPriority = 130
+buildType1 = "cbfact_b"
+buildType2 = "cbtcen_b"
+
+[Plan19]
+//plancondition = "HisExists"
+//planconditionclass = "gtow"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 125
+targetType = "gtow"
+targetType1 = "pgen"
+attackType1 = "cvrbomb_b"
+attackType2 = "cvrbomb_b"
+attackType3 = "cvrbomb_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan20]
+planType = "BuildMinimums"
+planPriority = 120
+buildType1 = "cvhtank_b"
+buildCount1 = 2
+buildType2 = "cvtalon_b"
+buildCount2 = 2
+
+[Plan21]
+planType = "BaseBuildMinimums"
+planPriority = 115
+buildType1 = "cbgnode_b"
+buildCount1 = 3
+
+
+[Plan22]
+planType = "BuildMinimums"
+planPriority = 110
+buildType1 = "cvserv_b"
+buildCount1 = 3
+
+[Plan23]
+planType = "CollectPool"
+planPriority = 105
+doNextOnFail = 1
+
+[Plan24]
+//plancondition = "HisExists"
+//planconditionclass = "sbay"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 102
+targetType = "sbay"
+targetType1 = "cbun"
+targetType2 = "fact"
+attackType1 = "cvtalon_b"
+attackType2 = "cvtalon_b"
+attackType3 = "cvhtank_b"
+attackType4 = "cvhtank_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan25]
+planType = "BaseBuildMinimums"
+planPriority = 100
+buildType1 = "cbshldgen_b"
+doNextOnFail = 1
+
+[Plan26]
+planType = "BuildMinimums"
+planPriority = 95
+buildType1 = "cvover_b"
+buildCount1 = 3
+buildType2 = "cvwraith_b"
+buildCount2 = 2
+
+[Plan27]
+planType = "CollectPool"
+planPriority = 85
+doNextOnFail = 1
+
+[Plan28]
+//plancondition = "HisExists"
+//planconditionclass = "armo"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 75
+targetType = "armo"
+targetType1 = "pgen"
+targetType2 = "scup"
+attackType1 = "cvover_b"
+attackType2 = "cvover_b"
+attackType3 = "cvover_b"
+attackType4 = "cvwraith_b"
+attackType5 = "cvwraith_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+
+[Plan29]
+planType = "BuildMinimums"
+planPriority = 70
+buildType1 = "cvdcar_b"
+buildCount1 = 3
+//buildType2 = "cvcitadel_b"
+//buildCount2 = 2
+
+[Plan30]
+planType = "CollectPool"
+planPriority = 65
+doNextOnFail = 1
+
+
+[Plan31]
+//plancondition = "HisExists"
+//planconditionclass = "fact"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 50
+targetType = "fact"
+targetType1 = "armo"
+targetType2 = "sbay"
+targetType3 = "gtow"
+attackType1 = "cvdcar_b"
+attackType2 = "cvdcar_b"
+attackType3 = "cvdcar_b"
+attackType4 = "cvcitadel_b"
+//attackType5 = "cvcitadel_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan32]
+planType = "CollectPool"
+planPriority = 45
+doNextOnFail = 1
+
+//[Plan33]
+//planPriority = 1200
+//CheckProvides = true
+//planType = "SwitchAIP"
+//planCondition = "Exists"
+//planConditionClass = "cbscav_m"
+//planCompare = ">="
+//planConditionCount = 4
+//planConditionClassProvided = true
+//NextAIP = "EPIC_CC2.aip"
+//maxTries = 0
+//ContinueEvenIfFail = true
+
+
+[Plan33]
+planType = "BuildMinimums"
+planPriority = 40
+buildType1 = "cvwalk_b"
+buildCount1 = 2
+buildType2 = "cvraven_b"
+buildCount2 = 3
+
+[Plan34]
+planType = "BaseBuildMinimums"
+planPriority = 35
+buildType1 = "cbjamm_b"
+buildCount1 = 3
+
+
+
+[Plan35]
+//plancondition = "HisExists"
+//planconditionclass = "tcen"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 30
+targetType = "tcen"
+targetType1 = "fact"
+targetType2 = "recy"
+targetType3 = "gtow"
+attackType1 = "cvwalk_b"
+attackType2 = "cvwalk_b"
+attackType3 = "cvraven_b"
+attackType4 = "cvraven_b"
+attackType5 = "cvraven_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan36]
+//plancondition = "HisExists"
+//planconditionclass = "tcen"
+//planCompare = ">="
+//planconditioncount = 1
+planType = "Attacker"
+planPriority = 80
+targetType = "tcen"
+targetType1 = "fact"
+targetType2 = "recy"
+targetType3 = "gtow"
+attackType1 = "cvcitadel_b"
+AttackAnything = true
+buildIfNoIdle = true
+maxAttacks = 0
+
+[Plan37]
+planType = "BaseBuildMinimums"
+planPriority = 73
+buildType1 = "cbport1_b"
+doNextOnFail = 1
+
+[Plan38]
+planType = "Upgrade"
+planPriority = 72
+planCondition = "NotExists"
+planConditionClass = "cbport2_b"
+planConditionCount = 1
+unitType = "cbport1_b"
+
+[Plan39]
+planType = "Upgrade"
+planPriority = 71
+planCondition = "NotExists"
+planConditionClass = "cbport3_b"
+planConditionCount = 1
+unitType = "cbport2_b"

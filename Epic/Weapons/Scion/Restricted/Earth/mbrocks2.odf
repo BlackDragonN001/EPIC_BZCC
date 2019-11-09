@@ -1,0 +1,99 @@
+[OrdnanceClass]
+classLabel = "grenade"//"bouncebomb"
+
+shotGeometry = "sparrck.xsi"
+xplGround = "xmortgnd_b"
+xplVehicle = "xmortxpl_b"
+xplBuilding = "xmortxpl_b"
+xplExpire = "xmortxpl_b"
+
+shotSound = ""
+
+renderName = "mbrocks2.render"
+
+ammoCost = 1
+lifeSpan = 60 // 1e30
+shotSpeed = 70.0
+
+damageValue(N) = 500
+damageValue(L) = 400
+damageValue(H) = 300
+damageValue(S) = 400
+damageValue(D) = 300
+damageValue(A) = 500
+
+//[BounceBombClass]
+//soundBounce = "xbombf.wav"
+//bounceRatio = 0.3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "mbrocks2.trail"
+renderName2 = "mbrocks2.light"
+renderName3 = "mbrocks2.smoke"
+renderName4 = "mbrocks2.flame"
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 24"
+finishColor = "55 55 55 0"
+startRadius = 8
+finishRadius = 16
+animateTime = 2.0
+rotationRate = 2.0
+emitDelay = 0.12
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "15.0 15.0 15.0"
+emitLife = 2.0
+
+[Light]
+renderBase = "draw_light"
+startColor = "250 150 0 6000"
+finishColor = "250 80 0 2550"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 15
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flm5.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "180 170 160 0"
+startRadius = 8
+finishRadius = 2
+animateTime = 1.2
+rotationRate = 2.0
+emitDelay = 0.15
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "15.0 15.0 15.0"
+emitLife = 1.2
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "mbrocks2.flameemit"
+emitdelay = 0.1
+delayVar = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "26.0 10.0 26.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flm5.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 255"
+finishColor = "180 170 160 0"
+startRadius =  8
+finishRadius = 2
+animateTime = 0.3
+rotationrate = 1

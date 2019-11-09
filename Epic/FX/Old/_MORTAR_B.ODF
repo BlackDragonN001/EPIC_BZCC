@@ -1,0 +1,37 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "ioartl00.xsi"
+shotSound = "baz03.wav"
+
+xplGround = "xmortgnd_b"
+xplVehicle = "xmortxpl_b"
+xplBuilding = "xmortbxpl_b"
+
+renderName = "mortar_b.render"
+
+ammoCost = 50
+lifeSpan = 1e30
+shotSpeed = 86.6
+
+damageValue(N) = 400 // none
+damageValue(L) = 350 // light
+damageValue(H) = 300 // heavy
+
+damageValue(S) = 350 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 400 // absorbtion
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "164 164 164 64"
+finishColor = "230 230 230 0"
+startRadius = 0.5
+finishRadius = 1.5
+animateTime = 3.0
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 3.0

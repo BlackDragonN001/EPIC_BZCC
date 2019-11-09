@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = "cvacomet00.xsi"
+geometryScale = 1
+classLabel = "torpedo"
+baseName = "grccmi" // "hvrckt"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 500
+maxAmmo = 100
+unitName = "Tracker"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 1.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+velocForward = 90.0
+accelThrust = 50.0
+omegaTurn = 2.0
+alphaSteer = 5.0
+lifeSpan = 20.0
+xplBlast = "xcvctaxpl_b"
+
+soundThrust = "cerbcomet.wav"

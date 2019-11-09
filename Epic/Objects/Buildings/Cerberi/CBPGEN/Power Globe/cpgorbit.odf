@@ -1,0 +1,63 @@
+[GameObjectClass]
+geometryName = ""// gen
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 3000
+unitName = "Generator"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+canCollide = 1
+weaponHard1 = "Generator" //arc mine
+weaponName1 = "corbita"
+//weaponHard2 = "Generator" //arc mine
+//weaponName2 = "gshield"//orbita
+effectHard1 = "Generator"
+effectName1 = "cpgorbit.render"
+
+//explosionName = "cshipxpl" //orbitxpl
+
+[MineClass]
+lifeSpan = 90000
+
+[WeaponMineClass]
+searchRadius = 6000.0
+heightScale = 2.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "cpgorbit.light"
+//renderName2 = "cxpgorbit.sphere"
+
+[light]
+renderBase = "draw_light"
+//lightType = "point"
+textureName = "slightflare.tga"
+startColor = "127 0 255 0"
+finishColor = "127 0 255 455"
+startRadius = 50.0
+finishRadius = 50.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[sphere]
+simulateBase = "sim_null"
+lifeTime = 9000
+renderBase = "draw_sphere"
+textureName = "generator.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 210"
+finishColor = "0 0 255 255"
+startRadius = 1.5
+finishRadius = 1.5
+animateTime = 2.1
+latitudeBands = 8
+longitudeSegments = 16
+
+
+

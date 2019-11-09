@@ -1,0 +1,80 @@
+[GameObjectClass]
+geometryName = "ibmainbase_b.xsi"
+glowTexture = "edfbasea0.pic"
+geometryScale = 17
+classLabel = "powered"
+//animCount = 1
+//animName1 = "loop"
+//animFile1 = "ibradar01.xsi"
+scrapCost = 300
+scrapValue = 50
+maxHealth = 30000
+maxAmmo = 0
+unitName = "EDF Shipyard"
+heatSignature = 5.0
+imageSignature = 10.0
+radarSignature = 10.0
+collisionRadius = 100.0
+isAssault = 1
+ownsTerrain = 1
+//canCollide = 1
+explosionName = "XnukeGND_b"
+
+armorClass = H
+
+requireCount = 0
+
+lightHard1 = "hp_emit_1"
+lightName1 = "o_lblue_nf"
+
+lightHard2 = "hp_emit_2"
+lightName2 = "omnigreen"
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "ibubigref.light3"
+
+//effectHard2 = "hp_emit_2"
+//effectName2 = "ibubigref.light3"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ibubigref.light3"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ibubigref.light3"
+//effectHard5 = "hp_emit_5"
+//effectName5 = "ibubigref.light3"
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+justFlat = 1
+
+[PoweredBuildingClass]
+detectRange = 1500
+
+PoweredByTaps = false
+
+powerTap1 = "hp_tap_1"
+powerTap2 = "hp_tap_2"
+powerTap3 = "hp_tap_3"
+powerTap4 = "hp_tap_4"
+powerTap5 = "hp_tap_5"
+powerTap6 = "hp_tap_6"
+
+AutoBuildTap1 = true
+AutoBuildTap2 = true
+AutoBuildTap3 = true
+AutoBuildTap4 = true
+AutoBuildTap5 = true
+AutoBuildTap6 = true
+
+powerName1 = "ibgtap_b"
+powerName2 = "ibgtap_b"
+powerName3 = "ibaatap_b"
+powerName4 = "ibaatap_b"
+powerName5 = "ibgtap_b"//"ibigtap_b"
+powerName6 = "ibgtap_b"
+
+//powerTap1 = "HP_tap_1"
+//powerName = "ibaaturr_u"
+
+//[Lod1]
+//geometryName = "ibpgenL1.xsi" ;geometry for lod1
+//distance = 64                    ;bsphere under 200 pixel => switch to lod1

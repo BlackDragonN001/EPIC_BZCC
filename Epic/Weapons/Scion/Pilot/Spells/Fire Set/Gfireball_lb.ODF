@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gfireball_lb"
+ordName = "fireball_lb"
+wpnName = "Flame Tongue"
+fireSound = "tmiss03b.wav"
+wpnReticle = "gsalvo"
+wpnCategory = "GUN"
+aiRange = 350
+isAssault = 0
+
+[CannonClass]
+shotDelay = 2.0
+salvoCount = 5
+salvoDelay = 0.2
+shotVariance = 0.4
+shotAlternate = 1

@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "cpmdron_b"
+wpnName = "Msl Drone"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 2
+wpnCategory = "MORT"
+AllowAimHigh = true 
+flashName = "gcpgdron_b.flash"
+
+aiRange = 5000.0
+
+[CannonClass]
+shotdelay = 20
+salvoCount = 3
+salvoDelay = 5
+shotVariance = 0.05
+shotAlternate = 1

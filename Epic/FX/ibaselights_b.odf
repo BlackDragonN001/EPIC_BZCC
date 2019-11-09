@@ -1,0 +1,116 @@
+[Rflash]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "iBaselights_B.Rflashemit"
+emitdelay = 4
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[RflashEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .6
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 1250"
+finishColor = "255 0 0 1250"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = .6
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Gflash]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "iBaselights_B.Gflashemit"
+emitdelay = 5
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[GflashEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .8
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 1850"
+finishColor = "0 255 0 1850"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = .8
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Bluflash]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "iBaselights_B.Bluflashemit"
+emitdelay = 5
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BluflashEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .8
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "0 80 255 1850"
+finishColor = "0 80 255 1850"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = .8
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[oflash]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "iBaselights_B.oflashemit"
+emitdelay = 5
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[oflashEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .8
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "250 130 0 1850"
+finishColor = "250 130 0 1850"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = .8
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+[yLIGHT]
+simulateBase = "sim_null"
+//lifeTime = 10
+renderBase = "draw_light"
+textureName = "NULL"
+textureBlend = "one one modulate"
+startColor = "255 225 200 280"
+finishColor = "255 225 200 280"
+startRadius = 160.0 // 350
+finishRadius = 160.0 // 150
+animateTime = 1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+LensFlare = 0

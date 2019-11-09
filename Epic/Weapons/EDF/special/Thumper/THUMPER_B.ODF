@@ -1,0 +1,30 @@
+[OrdnanceClass]
+classLabel = "seismic"
+
+
+shotSound = "gquak00.wav"
+
+
+ammoCost = 50
+lifeSpan = 10.0
+shotSpeed = 30.0
+
+
+damageValue(N) = 250
+damageValue(L) = 200
+damageValue(H) = 150
+damageValue(S) = 200
+damageValue(D) = 150
+damageValue(A) = 250
+
+
+[SeismicClass]
+waveRadius = 150
+waveHeight = 3
+rampUpTime = 5
+rampDownTime = 2
+sweepOmega = 100
+sweepVeloc = 50
+shakeOmega = 5
+shakeVeloc = 25
+buildingScale = 3

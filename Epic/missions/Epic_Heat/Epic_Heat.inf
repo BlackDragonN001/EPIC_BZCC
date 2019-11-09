@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 11: High Heat"
+mapTga = "Epic_Heat.bmp"
+mapDesc = "Epic_Heat.des"
+mySide = 1

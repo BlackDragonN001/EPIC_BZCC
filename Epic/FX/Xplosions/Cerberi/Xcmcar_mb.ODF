@@ -1,0 +1,266 @@
+// ===================
+// Med CERBERI MISSILE VEHICLE HIT BY sLAOR
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 8
+
+particleClass2 = "Xcmcar_mb.CLOUD"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "Xcmcar_mb.flame2"
+particleCount3 = 1
+particleVeloc3 = "0 0 0"
+
+//particleClass4 = "Xcmcar_mb.flame"
+//particleCount4 = 1
+//particleVeloc4 = "0 0 0"
+
+particleClass1 = "Xcmcar_mb.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass5 = "Xcmcar_mb.shock"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "Xcmcar_mb.flame3"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "Xcmcar_mb.ring"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "Xcmcar_mb.flash"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+explSound = "wmgr1.wav"
+
+damageRadius = 20.0
+
+damageValue(N) = 50 // none
+damageValue(L) = 20 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 25 // standard
+damageValue(D) = 50 // deflections
+damageValue(A) = 10 // absorbtion
+
+kickRadius = 20.0
+kickOmega = 2.0
+kickVeloc = 4.0
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "blunuke.tga"// ringb2
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 250"// 180
+finishColor = "200 200 255 0"
+startRadius = 1 //5.0
+finishRadius = 4 // 50 
+animateTime = 0.2 //3.5
+
+[flash]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.1
+textureName = "sparks.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 255 255"
+finishColor = "55 55 155 0"
+startRadius = 0.1
+finishRadius = 7
+animateTime = 0.4
+
+
+
+
+
+[sparks]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "rox.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "125 120 255 655"
+finishColor = "0 0 0 0"
+startRadius = 2
+finishRadius = 9
+animateTime = 0.2
+
+[cloud]
+simulateBase = "sim_smoke"
+lifeTime = .21
+renderBase = "draw_emit"
+emitName = "Xcmcar_mb.cloudemit"
+emitDelay = 0.07
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "5.0 8.0 5.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 4.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 90"
+finishColor = "60 60 60 0"
+startRadius = 8
+finishRadius = 15
+animateTime = 4.5
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.12
+renderBase = "draw_emit"
+emitName = "Xcmcar_mb.flameemit"
+emitDelay = 0.03
+emitVelocity = "0.0 8.0 0.0"
+emitVariance = "10.0 10.0 10.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "cflm3.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 255 255"
+finishColor = "55 55 255 0" //
+startRadius = 3.0
+finishRadius = 0.1
+animateTime = 0.3
+rotationRate = 5.0
+
+[flame2]
+simulateBase = "sim_smoke"
+lifeTime = 0.24
+renderBase = "draw_emit"
+emitName = "Xcmcar_mb.flame2emit"
+emitDelay = 0.01
+emitVelocity = "0 0 0"
+emitVariance = "15.0 15.0 15.0"
+
+[flame2emit]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 90"
+finishColor = "60 60 60 0"
+startRadius = 3
+finishRadius = 6
+animateTime = 2.5
+
+[_flame2emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.7
+renderBase = "draw_twirl"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 255 455"
+finishColor = "55 5 255 0" //
+startRadius = 0.8
+finishRadius = 0.01
+animateTime = 0.7
+//rotationRate = 5.0
+
+[flame3]
+simulateBase = "sim_smoke"
+lifeTime = 0.24
+renderBase = "draw_emit"
+emitName = "Xcmcar_mb.flame3emit"
+emitDelay = 0.03
+emitVelocity = "0 0 0"
+emitVariance = "15.0 15.0 15.0"
+
+[flame3emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "cflm2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 255 255"
+finishColor = "55 55 255 0" //
+startRadius = 2.0
+finishRadius = .1
+animateTime = 0.4
+rotationRate = 5.0
+
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_light"
+startColor = "255 255 255 4265"
+finishColor = "0 0 55 0"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 0.4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.15
+renderBase = "draw_sphere"
+textureName = "cv_shield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 50"
+finishColor = "55 55 155 0"
+startRadius = 0.1
+finishRadius = 18.0
+animateTime = 0.15
+latitudeBands = 8
+longitudeSegments = 16
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "sblunuke.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "10 150 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+animateTime = 0.4
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "40 40 40 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 1.0
+rotaionRate = 10
+
+[Splat]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 255"
+finishColor = "0 255 255 0"
+startRadius = 0.1
+finishRadius = 0.75
+animateTime = 0.5

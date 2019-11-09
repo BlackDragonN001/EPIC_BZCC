@@ -1,0 +1,99 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "smort03.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "xshdwcar"
+xplBuilding = "xshdwbld"
+renderName = "shadowaa_u.render"
+
+ammoCost = 25
+lifeSpan = 25.0 // 800m
+shotSpeed = 150.0
+
+damageValue(N) = 800 // none
+damageValue(L) = 480 // light
+damageValue(H) = 140 // heavy
+
+damageValue(S) = 580 // standard
+damageValue(D) = 440 // deflection
+damageValue(A) = 800 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "shadowaa_u.flare"
+renderName2 = "shadowaa_u.smoke"
+renderName3 = "shadow_c.flame"
+renderName4 = "itorpu.trailer2"
+renderName5 = "shadowaa_u.wake"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 255 600"
+finishColor = "200 255 255 600"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "220 255 230 100"
+finishColor = "255 255 255 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 1.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "100 200 253 255"
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 255 100 220"
+finishColor = "255 255 255 0"
+startRadius = 0.4
+finishRadius = 0.01
+segmentTime = 0.05
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.4
+
+[wake]
+simulateBase = "sim_dust"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "uwake.tga" //ssmoke.tga
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "uwake.tga"//strail2.tga
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "0 100 55 120"
+finishColor = "0 50 20 0"
+startRadius = 0.5
+finishRadius = 5
+segmentTime = 0.4
+animateTime = 0.3
+
+

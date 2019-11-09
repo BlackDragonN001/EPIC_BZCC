@@ -1,0 +1,35 @@
+[GameObjectClass]
+geometryName = "igmits00.xsi"
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = "MITS"
+effectHard1 = "MITS"
+effectName1 = "mitsmin2_b.field"
+
+[MineClass]
+lifeSpan = 15.0
+
+[MagnetMineClass]
+triggerDelay = 0.0
+fieldRadius = 30.0
+objPushCenter = -60.0
+objPushEdge = -6.0
+objDrag = 2.0
+ordPushCenter = -600.0
+ordPushEdge = -60.0
+ordDrag = 5.0
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 0"
+finishColor = "0 0 255 31"
+startRadius = 1.0
+finishRadius = 30.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16

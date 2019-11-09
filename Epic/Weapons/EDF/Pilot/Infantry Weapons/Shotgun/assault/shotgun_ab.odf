@@ -1,0 +1,50 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+renderName = "shotgun_ab.render"
+
+ammoCost = 5
+lifeSpan = 0.35
+shotSpeed = 600.0
+damageValue(N) = 50
+damageValue(L) = 25
+damageValue(H) = 10
+damageValue(S) = 50
+damageValue(D) = 25
+damageValue(A) = 10
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "shotgun_ab.shot"
+renderName2 = "shotgun_ab.trail"
+
+
+[shot]
+renderBase = "draw_twirl"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 127"
+finishColor = "255 127 0 127"
+startRadius = 0.3
+finishRadius = 0.3
+animateTime = .35
+
+[trail]
+simulateBase = "sim_null"
+lifetime = 0.35
+renderBase = "draw_trail"
+//textureName = "ssmoke.tga"
+//textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+textureName = "wingtrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.25
+startColor = "255 255 255 20"
+finishColor = "255 255 255 0"
+startRadius = 0.08
+finishRadius = 0.01
+segmentTime = 0.35
+animateTime = 0.35

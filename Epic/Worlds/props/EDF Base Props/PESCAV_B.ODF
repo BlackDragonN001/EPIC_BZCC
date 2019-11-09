@@ -1,0 +1,63 @@
+[GameObjectClass]
+geometryName = "pescav00_b.xsi"
+geometryScale = 1.5
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "scavenger debris"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canDetect = 1
+canInteract = 0
+canSnipe = 0
+canCollide = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "pescav.render"
+
+[BuildingClass]
+
+[render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "pescav.smokeemitter"
+renderName2 = "pescav.flameemitter"
+
+[SmokeEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "-5.0 5.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 2.0
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 128"
+finishColor = "0 0 0 0"
+startRadius = 2
+finishRadius = 5
+animateTime = 2.0
+rotationRate = 2.0
+
+[FlameEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "-5.0 5.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.5 0.5 0.5"
+emitLife = 1.0
+textureName = "sfire.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 2
+finishRadius = .5
+animateTime = 1.0
+rotationRate = 10.0
+

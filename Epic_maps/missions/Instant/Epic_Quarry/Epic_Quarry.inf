@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 12: Quarry"
+mapTga = "Epic_quarry.bmp"
+mapDesc = "Epic_quarry.des"
+mySide = 1

@@ -1,0 +1,209 @@
+// ==================
+// SUPER STABBER GROUND HIT
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xbombf.wav"
+
+damageRadius = 2.0
+
+damageValue(N) = 20
+damageValue(L) = 0
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+
+particleTypes = 12
+
+particleClass1 = "xcerbgnd_m.ring"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xcerbgnd_m.chunks"
+particleCount2 = 10
+particleVeloc2 = "15.0 7.5 15.0"
+particleBias2 = "0.0 5.0 0.0"
+
+particleClass3 = "xcerbgnd_m.thrust"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xcerbgnd_m.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xcerbgnd_m.cloud"
+particleCount5 = 1
+particleVeloc5 = "0.0 10.0 0.0"
+
+particleClass6 = "xcerbgnd_m.flame"
+particleCount6 = 2
+particleVeloc6 = "0.0 10.0 0.0"
+
+particleClass7 = "xcerbgnd_m.light"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "xcerbgnd_m.posroll"
+particleCount8 = 8
+particleVeloc8 = "5.0 0.0 5.0"
+
+particleClass9 = "xcerbgnd_m.char"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+
+particleClass11 = "debris.chunks"
+particleCount11 = 5
+particleVeloc11 = "15.0 10.5 15.0"
+particleBias11 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 8
+particleVeloc10 = "18.0 10.5 18.0"
+particleBias10 = "0.0 5.0 0.0"
+
+particleClass12 = "debris.tchunks"
+particleCount12 = 12
+particleVeloc12 = "25.0 6.5 25.0"
+particleBias12 = "0.0 5.0 0.0"
+
+
+
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 15.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 15.0
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "dirt.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 100 200 255"
+finishColor = "0 0 0 0"
+startRadius = 0.3
+finishRadius = 0.3
+animateTime = 3.0
+
+[Thrust]
+simulateBase = "sim_null"
+lifeTime = 1.3
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "ground.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "105 85 255 150"
+finishColor = "5 0 20 0 0"
+startRadius = 0.5
+finishRadius = 2.2
+animateTime = 1.3
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 135"
+finishColor = "40 0 200 0"
+startRadius = 0.2
+finishRadius = 3.2
+animateTime = 0.25
+latitudeBands = 8
+longitudeSegments = 16
+
+[cloud]
+simulateBase = "sim_dust"
+lifeTime = .5
+renderBase = "draw_emit"
+emitName = "xcerbgnd_m.cloudemit"
+emitDelay = 0.5
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "0.0 1.0 0.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.3
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 10 95"
+finishColor = "20 20 20 0"
+startRadius = 1.0
+finishRadius = 2.0
+animateTime = 1.3
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xcerbgnd_m.flameemit"
+emitDelay = 0.1
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "fire.tga" // flame2
+textureBlend = "one one modulate"
+startColor = " 180 150 255 255"
+finishColor = "0 0 0 0"
+startRadius = 0.0
+finishRadius = 3.0
+animateTime = 0.4
+rotationRate = 5.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.2
+renderBase = "draw_light"
+startColor = "180 100 255 965"
+finishColor = "0 0 255 0"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 1.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[posroll]
+simulateBase = "sim_dust"
+lifeTime = 3
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 85"
+finishColor = "100 100 100 0"
+startRadius = 0.5
+finishRadius = 1.5
+animateTime = 3
+rotationRate = 2.0
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 155 100 255 255"
+finishColor = "0 0 255 0"
+startRadius = 5.0
+finishRadius = 0.5
+animateTime = 3.0

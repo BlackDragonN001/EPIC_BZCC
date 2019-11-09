@@ -1,0 +1,81 @@
+[GameObjectClass]
+geometryName = "igflar00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1500
+maxAmmo = 0
+unitName = "Acid Cloud"
+effectHard1 = "Acid Cloud"
+effectName1 = "gasbomb2_b.render"
+
+canTarget = 0
+canInteract = 0
+heatSignature = 5
+imageSignature = 5
+radarsignature = 5
+
+[MineClass]
+lifeSpan = 20.0
+
+[FlareMineClass]
+payloadName = NULL
+fireSound = "smine01.wav"
+
+triggerDelay = 5.0
+
+shotDelay = 1e30
+
+shotVariance = 1.0
+
+damageRadius = 150.0
+
+damageValue(N) = 30 // none
+damageValue(L) = 30 // light
+damageValue(H) = 30 // heavy
+
+damageValue(S) = 30 // standard
+damageValue(D) = 30 // deflection
+damageValue(A) = 30 // absorbtion
+
+kickRadius = 0.0
+kickVeloc = 0.0
+kickOmega = 0.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gasbomb2_b.core"
+renderName2 = "gasbomb2_b.cloudemit"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "acidcloud.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "63 127 0 127"
+finishColor = "31 63 0 63"
+startRadius = 2.0
+finishRadius = 20.0
+animateTime = 5.0
+rotationRate = 2.0
+
+[CloudEmit]
+renderBase = "draw_emit"
+emitName = "gasbomb2_b.cloudpuff"
+emitDelay = 0.05
+emitVariance = "90.0 15.0 90.0"
+emitVelocity = "0.0 0.0 0.0"
+emitBias = "0 0 0"
+
+[CloudPuff]
+simulateBase = "sim_smoke"
+lifeTime = 5.0
+renderBase = "draw_twirl"
+textureName = "acidcloud.tga"
+textureBlend = "one one modulate"
+startColor = "30 50 30 120"
+finishColor = "80 100 80 0"
+startRadius = 30.0
+finishRadius = 20.0
+animateTime = 12.0
+rotationRate = 0.5

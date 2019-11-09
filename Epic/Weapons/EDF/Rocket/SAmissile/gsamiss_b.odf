@@ -1,0 +1,25 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+altName = "gsamiss_b"
+ordName = "samiss_b"
+wpnName = "AA Seeker"
+fireSound = "gshad01.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 800 // 5000
+
+[LauncherClass]
+lockRange = 800.0  // was 170 GEC
+shotDelay = 0.5
+lockDelay = 15.0
+coneAngle = 15 //.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "sserv02.wav" //"lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"
+shotAlternate = 1
+
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team

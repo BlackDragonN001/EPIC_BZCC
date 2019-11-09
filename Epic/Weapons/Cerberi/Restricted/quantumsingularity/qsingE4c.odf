@@ -1,0 +1,46 @@
+[GameObjectClass] //First Jammer and item used to spawn the rest of the Effects.
+classLabel = "jammer"
+geometryName = "QSING00.XSI"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+explosionName = "xqsingtemp"
+canDetect = 1
+Tuggable = 1
+canInteract = 1
+powerCost = 0
+isStealth = 0
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+LeaveExplodeScorch = false
+explosionName = "null"
+
+[BuildingClass]
+lifespan = 0.3
+
+UseCollapse = false 
+UseChunks = false
+UseExplosion = true
+
+
+[PoweredBuildingClass]
+powerTap1 = "hp_fire"
+powerName1 = "qsingE4d" //Create the Large Flaremine
+powerTap2 = "hp_fire"
+powerName2 = "qsingE4e" //Create the Medium Flaremine
+//detectRange = 100
+
+[BuildingClass]
+DoBettyLost = false
+
+[JammerTowerClass]
+jammerRange = 200.0
+DampTeamFilter = 0 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team
+JamScannerTeamFilter = 0 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team

@@ -1,0 +1,32 @@
+//
+// EpicAIPlist.txt - List for alternate AIP sets to be picked from before
+// a MPI game. [IA also soon?]
+//
+// Translation: a way to pick a MOD before a game, and have it not
+// cause bad assets, assuming the author wrote it well.
+//
+// Format of lines: AIP basename, space separator, description.  Lines
+// starting with // are ignored.
+//
+// For each base name, there need to be at least 24 AIP files on disk:
+// [basename][CPURace][HumanRace][PlanType].aip
+//
+// where CPURace & HumanRace are 'f' (Scion) or 'i' (ISDF). PlanType
+// is one of the following:
+// 0 - Startup
+// 1 - Early game (1/4 chance of 1 or 3 being used)
+// 2 - Early game (1/4 chance of 1 or 3 being used)
+// 3 - Early game (1/4 chance of 1 or 3 being used)
+// 4 - Early game (1/4 chance of 1 or 3 being used)
+// A - Anti-Assault (when the humans have some heavy units)
+// C - Coup de Grace - Human Recycler destroyed
+// E - End-game - AI Recycler destroyed
+// L - Late-game
+// S - Anti-siege (humans near CPU recycler)
+// X - Middle-game (50/50 chance of 1 or 3 being used)
+// Y - Middle-game (50/50 chance of 1 or 3 being used)
+//
+// The first field on each line must be 5 characters or longer, or the
+// line will be ignored.
+
+Epic_  Epic AIP's

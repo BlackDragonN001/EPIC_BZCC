@@ -1,0 +1,44 @@
+[GameObjectClass]
+mrmFactor = 0
+baseName = "fbscav"
+geometryName = "fbscav_DEPLOY_b.xsi"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "fbscav_DEPLOY_b.xsi"
+geometryScale = 2
+classLabel = "extractor"
+scrapCost = 20
+scrapReturn = 10
+scrapValue = 15
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Extractor"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+isAssault = 1
+canSelect = 1
+ownsTerrain = 1
+
+explosionName = "xscionxplb"
+
+armorClass = H
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "fbscav_b"
+provideName2 = "scup"
+
+
+upgradeName = "fbscup_b"
+
+[BuildingClass]
+soundAmbient = "iext01.wav"
+
+[ExtractorClass]
+initDelay = 12.0
+scrapDelay = 1.0
+scrapHold = 20
+detectRange = 600

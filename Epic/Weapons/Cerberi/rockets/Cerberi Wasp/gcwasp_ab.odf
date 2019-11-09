@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "dispenser"
+altName = "gcwasp_cb"
+ordName = NULL		// <-- this is important!
+wpnName = "Tracker"
+fireSound = "gwasp00.wav"
+wpnReticle = "gmlock_a"
+wpnCategory = "ROCK"
+aiRange = 700
+isAssault = 1
+
+[DispenserClass]
+shotDelay = 4.0
+objectClass = "cwasp_ab"

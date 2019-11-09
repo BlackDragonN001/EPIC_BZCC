@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "ghclust"
+ordName = "hclust"
+wpnName = "Inferno Msl"
+fireSound = "tmiss03b.wav"
+wpnReticle = "gsalvo"
+wpnCategory = "ROCK"
+aiRange = 600
+isAssault = 0
+
+[CannonClass]
+shotDelay = 6.0
+salvoCount = 4
+salvoDelay = 0.2
+shotVariance = 1.2

@@ -1,0 +1,60 @@
+[GameObjectClass]
+geometryName = "ibsbay_b.xsi"
+geometryScale = 2
+classLabel = "supplydepot"
+collisionRadius = 4.0
+scrapCost = 50
+scrapReturn = 25
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Service Bay"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+LightingType = 1 
+
+armorClass = H
+
+requireCount = 1
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+
+explosionName = "ixshipxplw"
+
+provideCount = 2
+provideName1 = "ibsbay_b"
+provideName2 = "sbay"
+
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue"
+lightHard4 = "hp_light_4"
+lightName4 = "spotblue"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 1
+tunnel01Z0 = 1
+tunnel01Dx = 4
+tunnel01Dz = 4
+tunnel01Edge = "twwt"
+
+[SupplyDepotClass]
+supplyRange = 70.0
+supplyRate = 150.0
+supplySound = "mnu_empt.wav"
+ServiceBuildings = false
+
+
+[Lod1]
+geometryName = "ibsbayL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 264                    ;bsphere under 200 pixel => switch to lod1
+

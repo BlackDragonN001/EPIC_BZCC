@@ -1,0 +1,62 @@
+[GameObjectClass]
+geometryName = "fbantm00_b.xsi"
+geometryScale = 2.5
+classLabel = "commtower"
+collisionRadius = 1.0
+scrapCost = 60
+scrapReturn = 30
+scrapValue = 3
+maxHealth = 6000
+maxAmmo = 0
+powerCost = 0
+unitName = "Antenna"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+
+LightingType = 1 
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+upgradeName = "fbover_b"
+
+requireCount = 1
+requireName1 = "fbkiln_b"
+requireText1 = "Build Kiln"
+
+provideCount = 2
+provideName1 = "fbantm_b"
+provideName2 = "cbun"
+
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung_b"
+detectRange = 1200
+
+[BuildingClass]
+soundAmbient = "santm01.wav"
+
+[CommBunkerClass]
+rangeScan = 1200
+periodScan = 0.0
+viewDist = 250
+MaxviewDist = 500
+MinViewDist = 80
+
+[Lod1]
+geometryName = "fbantmL1_b.xsi" ;geometry for lod1
+geometryScale = 2.5
+radius = 500                    ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

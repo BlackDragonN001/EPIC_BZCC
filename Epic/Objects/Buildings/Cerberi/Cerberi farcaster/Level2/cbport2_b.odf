@@ -1,0 +1,187 @@
+[GameObjectClass]
+CategoryTypeOverride = 5
+
+geometryName = "cbportal_b.xsi"
+geometryScale = 15
+classLabel = "powered" //"turret"
+collisionRadius = 30.0
+scrapCost = 100
+scrapReturn = 50
+scrapValue = 15
+maxHealth = 3000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addAmmo = 50
+unitName = "Farcaster II"
+//aiName = "GunTowerFriend"
+//aiName2 = "GunTowerEnemy"
+heatSignature = 20.0
+imageSignature = 10.0
+radarSignature = 20.0
+isAssault = 1
+ownsTerrain = 1
+armorClass = H
+powerCost = 0
+
+LightingType = 1
+
+canInteract = 1
+isGrouped = 0
+needGroup = 0
+issingle = 1
+
+explosionName = "XBHXPL_b"
+
+requireCount = 4
+requireName1 = "cbcbun_b"
+requireText1 = "Build Uplink"
+requireName2 = "cbpgen_b"
+requireText2 = "Build Power Node "
+requireName3 = "cbarmo_b"
+requireText3 = "Build Catalyser"
+requireName4 = "cbfact_b"
+requireText4 = "Build Crucible"
+
+provideCount = 3
+provideName1 = "cbport2_b"
+provideName2 = "cbport1_b"
+provideName3 = "base"
+
+//limitClass1 = "cbport1_b"
+//limitClass1Count = 1
+//limitClass1Text = "Only One Allowed"
+
+upgradeName = "cbport3_b"
+
+weaponMask = 00011
+weaponHard1 = "hp_mortar_1"
+weaponName1 = "gcptalon_b"
+weaponAssault1 = 0
+weaponHard2 = "hp_mortar_2"
+weaponName2 = "gcpmtalon_b"
+weaponAssault2 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cbcbun_b.dark"
+effectHard2 = "hp_emit_2"
+effectName2 = "cbport2_b.render"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "cbport1_b.cables1"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "cbport1_b.cables2"
+
+[PoweredBuildingClass]
+PoweredByTaps = false
+
+CanBasepanelSelect = false
+
+powerTap1 = "hp_tap_1"
+powerName1 = "cbport2tap"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+AllowLinkWeapons = true
+rangeScan = 4500
+periodScan = 4.0
+velocJam = 0.0
+weaponPitch = 0.4
+steerFactor = 5//0.2
+engageRange = 4500
+
+[TurretCraftClass]
+omegaTurret = 1.0
+detectRange = 10
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+//renderName1 = "cbport2_b.Field1"
+//renderName2 = "cbport2_b.bolts"
+renderName1 = "cbport2_b.matter"
+renderName2 = "cbport2_b.matter2"
+
+[light]
+renderBase = "draw_light"
+//lightType = "point"
+textureName = "slightflare.tga"
+startColor = "127 0 255 0"
+finishColor = "127 0 255 455"
+startRadius = 40.0
+finishRadius = 40.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Field1]
+simulateBase = "sim_null"
+renderBase = "draw_sphere"
+textureName = "cv_shield.tga"//"cflmball.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 0"
+finishColor = "50 100 255 30"
+startRadius = 8.0
+finishRadius = 8.0 // 30
+animateTime = 1.0
+latitudeBands = 8
+longitudeSegments = 16
+InitialPitch = -0.5
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 45.0
+AddYaw = 50.0
+AddRoll = 40.0
+
+
+[matter]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "cbport2_b.matteremit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matteremit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 9.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[matter2]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "cbport2_b.matter2emit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matter2emit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "sparksa.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 0"
+finishColor = "0 0 0 155"
+startRadius = 19.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

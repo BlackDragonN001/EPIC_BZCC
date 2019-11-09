@@ -1,0 +1,4 @@
+[ShieldEffect]
+noFirstPerson = 1
+latitudeBands = 16
+longitudeSegments = 32

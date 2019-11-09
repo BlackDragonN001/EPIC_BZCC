@@ -1,0 +1,60 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = "gspstab.xsi"
+shotSound = "gquil03.wav"
+
+xplGround = "xcrabgnd_a"
+xplVehicle = "xcrabcar_a"
+xplBuilding = "xcrabcar_a"
+
+renderName = "crab_a.render"
+
+ammoCost = 6
+lifeSpan = 0.17 // 50m
+shotSpeed = 250.0
+
+damageValue(N) = 12.7 // none //
+damageValue(L) = 10.4 // light // 
+damageValue(H) = 6.34 // heavy // 
+
+damageValue(S) = 10.4 // standard // 
+damageValue(D) = 10.1 // deflection // 
+damageValue(A) = 12.7 // absorbtion // 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "crab_a.trail"
+renderName2 = "crab_a.light"
+renderName3 = "crab_a.trail2"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "bulhit.tga"
+textureBlend = "one one modulate"
+startColor = "55 70 50 100"
+finishColor = "5 70 0 0"
+textureRate = 0.004
+startRadius = 0.19
+finishRadius = 0.005
+segmentTime = 0.3
+ 
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "55 100 0 200"
+finishColor = "5 100 0 300"
+startRadius = 2.0 
+finishRadius = 2.0 
+
+[Trail2]
+renderBase = "draw_trail"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "55 200 0 55"
+finishColor = "255 255 255 0"
+textureRate = 0.004
+startRadius = 0.01
+finishRadius = 0.001
+segmentTime = 1.75

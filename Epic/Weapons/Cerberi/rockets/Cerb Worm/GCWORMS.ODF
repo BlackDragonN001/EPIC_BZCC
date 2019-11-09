@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gcworms"
+ordName = "cworms"
+wpnName = "Worm Battery"
+fireSound = "satshot.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 600
+flashName = "gcworms.flash"
+
+[CannonClass]
+shotDelay = 1.2
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "210 180 255 300"
+finishColor = "10 0 55 300"
+startRadius = 2.0
+finishRadius = 4.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

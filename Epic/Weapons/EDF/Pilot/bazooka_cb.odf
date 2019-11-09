@@ -1,0 +1,86 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "iorckt00.xsi"
+shotSound = "fmiss02.wav"
+
+renderName = "bazooka_cb.render"
+
+xplGround = "xbazgnd_cb"
+xplVehicle = "xbazxpl_cb"
+xplBuilding = "xbazxpl_cb"
+xplExpire = "xtagcar_cb"
+
+ammoCost = 6
+
+lifeSpan = 2.5 // 150m
+shotSpeed = 120.0
+
+damageValue(N) = 200
+damageValue(L) = 100
+damageValue(H) = 50
+
+damageValue(S) = 150
+damageValue(D) = 100
+damageValue(A) = 200
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "bazooka_cb.flare"
+renderName2 = "bazooka_cb.smoke"
+renderName3 = "bazooka_cb.flame"
+renderName4 = "bazooka_cb.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 0.5
+animateTime = 1.0
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.5 1.5 1.0"
+emitLife = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.01
+
+[trail]
+simulateBase = "sim_dust"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "ssmoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "255 255 255 40"
+finishColor = "255 255 255 0"
+startRadius = 0.08
+finishRadius = 0.01
+segmentTime = 1.0
+animateTime = 0.5
+animateTime = 0.1
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.5 1.5 1.0"
+emitLife = 0.8

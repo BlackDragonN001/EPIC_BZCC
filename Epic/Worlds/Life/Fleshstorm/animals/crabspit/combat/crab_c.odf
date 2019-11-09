@@ -1,0 +1,78 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = "gspstab.xsi"
+shotSound = "gquil01.wav"
+
+xplGround = "xcrabgnd"
+xplVehicle = "xcrabcar"
+xplBuilding = "xcrabcar"
+
+renderName = "crab_c.render"
+
+ammoCost = 7
+lifeSpan = 0.48 // 120m
+shotSpeed = 250.0
+
+damageValue(N) = 60 // none // 300
+damageValue(L) = 52 // light // 260
+damageValue(H) = 40 // heavy // 200
+
+damageValue(S) = 52 // standard // 260
+damageValue(D) = 30 // deflection // 150
+damageValue(A) = 60 // absorbtion // 300
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "crab_c.trail"
+renderName2 = "crab_c.sparkle"
+renderName3 = "crab_c.light"
+renderName4 = "crab_c.smoke"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "grndchar.tga" // shadow
+textureBlend = "srcalpha invsrcalpha modulatealpha" //"one one modulate"
+startColor = "255 255 255 255"
+finishColor = "165 100 100 0" //"65 0 0 0"
+textureRate = 0.004
+startRadius = 0.1
+finishRadius = 0.001
+segmentTime = 0.4
+ 
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 200 255"
+finishColor = "255 0 0 0"
+startRadius = 0.03
+finishRadius = 0.07
+animateTime = 1.0
+emitDelay = 0.002
+emitVariance = "0.5 0.5 0.5"
+emitLife = 1.5
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 400"
+finishColor = "255 0 0 255"
+startRadius = 1.2 
+finishRadius = 1.2 
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor =   "255 255 255 20" //"153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 2.0
+emitDelay = 0.07
+emitVelocity = "0.2 0.2 0.2"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 3.0

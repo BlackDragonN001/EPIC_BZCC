@@ -1,0 +1,268 @@
+[GameObjectClass]
+baseName = "ispilo"
+classLabel = "person"
+
+canInteract = 1 // can interact using the reticle 
+isGrouped = 1   // add to a command group 
+needGroup = 0 	// need free group to build 
+isLimited = 0 	// add to the limit count 
+needLimit = 0 	// need free limit to build 
+canDetect = 1   // can attack other pilots through attack command 
+canTarget = 1   // can target
+needPilot = 0
+
+canSelect = 1
+canRescue = 0
+canEject = 0
+
+CanAcceptPowerups = false
+
+//VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+provideCount = 1
+provideName1 = "isaasol_b"
+
+//limitClass1 = "isaasol_b" // e.g. "ibrecy", *NO* ".odf" on item
+//limitClass1Count = 10
+//limitClass1Text = "Squad Limit Reached"
+
+geometryName = "ispilo_rifle_skel_hb.xsi"
+geometryScale = 0.16
+
+animCount = 15
+
+// empty-handed animations
+animName1 = "stand"
+animFile1 = "ispilo_rifle_skel_2b.xsi"
+animName2 = "walk"
+animFile2 = "ispilo_rifle_run_2b.xsi"
+animName3 = "crouch"
+animFile3 = "ispilo_rifle_crouch_2b.xsi"
+animName4 = "jump"
+animFile4 = "ispilo_rifle_jump_2b.xsi"
+
+// combat mode animations
+animName5 = "standC"
+animFile5 = "ispilo_rifle_skel_2b.xsi"
+animName6 = "walkC"
+animFile6 = "ispilo_rifle_run_2b.xsi"
+animName7 = "crouchC"
+animFile7 = "ispilo_rifle_crouch_2b.xsi"
+animName8 = "jumpC"
+animFile8 = "ispilo_rifle_jump_2b.xsi"
+
+// assault mode animations
+animName9 = "standA"
+animFile9 = "ispilo_bazooka_skel_2b.xsi"
+animName10 = "walkA"
+animFile10 = "ispilo_bazooka_run_2b.xsi"
+animName11 = "crouchA"
+animFile11 = "ispilo_bazooka_crouch_2b.xsi"
+animName12 = "jumpA"
+animFile12 = "ispilo_bazooka_jump_2b.xsi"
+
+
+// Death animations
+animName13 = "DeathA"
+animFile13 = "ispilo_rifle_death01_2b.xsi"
+animName14 = "DeathC"
+animFile14 = "ispilo_bazooka_death01_2b.xsi"
+
+scrapCost = 5
+scrapValue = 0
+buildTime = 6.0
+customTime = 6.0
+pilotCost = 1
+maxHealth = 250
+addhealth = 0.1
+maxAmmo = 40
+addAmmo = 5
+aiAddAmmo = 50
+unitName = "AA Commando"
+aiName = "SoldierProcess"
+//aiName = "PersonFriend"
+//aiName2 = "PersonEnemy"
+heatSignature = 0.4
+imageSignature = 0.4
+radarSignature = 0.2
+
+LightingType = 1
+
+collisionRadius = 5
+armorClass = L
+
+weaponMask = 00001
+weaponHard1 = "HP_HAND_1"
+visualHard1 = "HP_DOCK_H"
+weaponAssault1 = 0
+weaponName1 = "igsam_cb"
+
+//weaponHard4 = "HP_GUN_1"
+//visualHard4 = "HP_DOCK_P"
+//weaponAssault4 = 0
+//weaponName4 = "gminigun_cb"
+
+//weaponHard2 = "HP_HAND_1"
+//visualHard2 = "HP_DOCK_H"
+//weaponAssault2 = 1
+//weaponName2 = "igmgren_ab"
+
+//weaponHard3 = "HP_PACK_1"
+//visualHard3 = "HP_DOCK_P"
+//weaponAssault3 = 0
+//weaponName3 = "iggren_b"
+
+//weaponHard5 = "HP_special_1"
+//visualHard3 = "HP_special_1"
+//weaponAssault5 = 1
+//weaponName5 = "gblink_b"
+
+
+
+turretCount = 6
+turretName1 = "torso"
+turretName2 = "head"
+turretName3 = "larm"
+turretName4 = "rarm"
+turretName5 = "eyebone"
+turretName6 = "hp_eyepoint_1"
+
+[CraftClass]
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+PathingType = 0 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+AvoidType = -1 // -1 = auto, 0 = None, 1 = force, 2 = plan
+GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower model
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+
+rangeScan = 800.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 800
+detectRange = 300
+
+braccelFactor = 0.5
+velFactor = 0.5
+strafeFactor = 0.5
+steerFactor = 1.5
+omegaFactor = 0.2
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "MortarBikeSubAttack"
+subAttackClass = "NNN"
+
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+
+
+//canHunt = 1
+//AllowLinkWeapons = true
+
+damageEffect1 = "Dmgprs1"
+damageEffect2 = "Dmgprs1"
+damageEffect3 = "Dmgprs2"
+damageEffect4 = "Dmgprs2"
+
+selectWaitMsg = "ivmisl05.wav"
+selectAttackMsg = "ivmisl02.wav"
+selectFollowMsg = "ivmisl04.wav"
+selectGoMsg = "ivmisl04.wav"
+selectOtherMsg = "ivmisl05.wav"
+holdMsg = "ivmisl12.wav"
+
+goMsg = "ivmisl04.wav"
+attackMsg = "ivmisl06.wav"
+followMeMsg = "ivmisl08.wav"
+followMsg = "ivmisl03.wav"
+repairMsg = "ivmisl09.wav"
+reloadMsg = "ivmisl09.wav"
+rescueMsg = "ivmisl10.wav"
+recycleMsg = "ivmisl11.wav"
+otherMsg = "ivmisl05.wav" 
+holdMsg = "ivmisl12.wav"
+user1Msg = ""  
+killedMsg = "ivmisl07.wav"
+
+[PersonClass]
+UseFastTransitions = true
+autoDeploy = false
+PersonMass = 100.0
+PersonRadius = 25.0 //3
+
+// crawling mode
+alphaDampCrawl    = 5.0
+alphaSteerCrawl   = 5.0
+alphaTrackCrawl   = 10.0
+pitchPitchCrawl   = 0.0
+pitchThrustCrawl  = 0.0
+rollStrafeCrawl   = 0.0
+velocForwardCrawl = 0.0
+velocReverseCrawl = 0.0
+velocStrafeCrawl  = 0.0
+accelThrustCrawl  = 20.0
+omegaSpinCrawl    = 0.5
+omegaTurnCrawl    = 0.5
+velocJumpCrawl    = 0.0
+pitchScaleCrawl   = 0.5
+
+// running mode
+accelThrustRun   = 40.0
+alphaDampRun     = 8.0
+alphaSteerRun    = 1.0
+alphaTrackRun    = 20.0
+omegaSpinRun     = 1.0
+omegaTurnRun     = 1.0
+pitchPitchRun    = 0.1
+pitchThrustRun   = 0.1
+rollStrafeRun    = 0.1
+velocForwardRun  = 10.0
+velocReverseRun  = 7.0
+velocStrafeRun   = 7.0
+velocJumpRun     = 0.0
+pitchScaleRun    = 1.0
+
+// flying mode
+alphaDampFly      = 2.0
+alphaSteerFly     = 1.0
+alphaTrackFly     = 5.0
+pitchPitchFly     = 0.99
+pitchThrustFly    = 0.99
+rollStrafeFly     = 0.15
+velocForwardFly   = 3.0
+velocReverseFly   = 3.0
+velocStrafeFly    = 3.0
+accelThrustFly    = 3.0
+omegaSpinFly      = 1.0
+omegaTurnFly      = 1.0
+velocJumpFly      = 0.0
+pitchScaleFly     = 1.5
+
+// sound effects
+painSound1 = "ipain01.wav";
+painSound2 = "ipain02.wav";
+painSound3 = "ipain03.wav";
+painSound4 = "ipain04.wav";
+painSound5 = "ipain02.wav";
+painSound6 = "ipain04.wav";
+burnSound1 = "iburn01.wav";
+burnSound2 = "iburn01.wav";
+dieSound1  = "ideath01.wav";
+dieSound2  = "ideath01b.wav";
+dieSound3  = "ideath02.wav";
+dieSound4  = "ideath04.wav";
+dieSound5  = "ideath04.wav";
+crushSound = "isquish01.wav";
+jumpSound  = "ijump01b.wav";
+landSound  = "iland01.wav";
+stepSound  = "running.wav"
+
+
+// animation rate
+animRate = 10.0

@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "dispenser"
+//ordName = "cvtank_b"
+wpnName = "Spawner"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPEC"
+aiRange = 1800
+isAssault = 0
+
+[DispenserClass]
+shotDelay = 5.0
+objectClass = "cvtank_b"
+

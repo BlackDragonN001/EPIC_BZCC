@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsaturn_ab"
+ordName = "saturn_cb"
+wpnName = "Saturn Battery"
+fireSound = "satshot.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 360
+
+[CannonClass]
+shotDelay = 0.6
+shotAlternate = 1

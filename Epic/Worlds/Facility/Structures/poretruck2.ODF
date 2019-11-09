@@ -1,0 +1,116 @@
+[GameObjectClass]
+geometryName = "poretruck.xsi"
+geometryScale = 1.0
+classLabel = "deploybuilding" //"trackedvehicle" //"powered"
+//animCount = 1
+//animName1 = "loop"
+//animFile1 = "ibradar01.xsi"
+scrapCost = 30
+scrapValue = 3
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Alien Artifact"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+isAssault = 1
+ownsTerrain = 1
+needPilot = 1
+canSnipe = 1
+
+armorClass = H
+
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_lblue_nf"
+
+LightingType = 1
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "ibubigref.light3"
+
+//effectHard2 = "hp_emit_2"
+//effectName2 = "ibubigref.light3"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ibubigref.light3"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ibubigref.light3"
+//effectHard5 = "hp_emit_5"
+//effectName5 = "ibubigref.light3"
+
+
+[CraftClass]
+GotoTaskHasLeader = 1
+AttackTaskUsesGroups = 1
+
+canRescue = 1
+
+AllowLinkWeapons = true
+xplCrash = "ixshipxplb"
+rangeScan = 900.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 700
+ejectRatio = 0.5
+
+//braccelFactor = 0.01f
+//omegaFactor = 0.2f
+//strafeFactor = 0.1f
+steerFactor = 0.6f
+//velFactor = 0.4f
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+selectWaitMsg = "ivatank04.wav"
+selectAttackMsg = "ivatank01.wav"
+selectFollowMsg = "ivatank08.wav"
+selectGoMsg = "ivatank02.wav"
+selectOtherMsg = "ivatank04.wav"
+
+goMsg = "ivatank05.wav"
+attackMsg = "ivatank06.wav"
+followMeMsg = "ivatank08.wav"
+followMsg = "ivatank08.wav"
+repairMsg = "ivatank09.wav"
+reloadMsg = "ivatank09.wav"
+rescueMsg = "ivatank10.wav"
+recycleMsg = "ivatank11.wav"
+otherMsg = "ivatank04.wav" 
+holdMsg = "ivatank12.wav"
+
+user1Msg = ""  
+killedMsg = "ivatank07.wav"
+diedMsg = "abetty3.wav"
+
+
+[TrackedVehicleClass]
+TREAD_STATIC_FRICTION = 1.5
+
+accelBrake = 50.0
+accelDrag = 20.0
+accelDragFull = 30.0
+accelDragStop = 40.0
+accelThrust = 10.0
+alphaSteer = 1.5
+omegaSpin = 1.0
+omegaTurn = 0.5
+velocForward = 25.0
+velocReverse = 20.0
+
+engineSound	= "iatank01.wav"
+treadSound = "iatank02.wav"
+
+
+[DeployBuildingClass]
+CanDeploy = false // if false, won't get option to deploy
+
+//powerTap1 = "HP_tap_1"
+//powerName = "ibaaturr_u"
+
+//[Lod1]
+//geometryName = "ibpgenL1.xsi" ;geometry for lod1
+//distance = 64                    ;bsphere under 200 pixel => switch to lod1

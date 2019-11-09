@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 14: Warzone"
+mapTga = "Epic_warzone.bmp"
+mapDesc = "Epic_warzone.des"
+mySide = 1

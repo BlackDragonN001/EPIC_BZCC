@@ -1,0 +1,68 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "sonicpulse_ab.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "sonicpulse_ab.xdebris"
+particleCount2 = 1
+particleVeloc2 = "0.0 -8000.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "sonicpulse_ab.debriss"
+particleCount3 = 1
+particleVeloc3 = "0.0 -8000.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+
+explSound = ""
+
+damageRadius = 25.0
+
+damageValue(N) = 560
+damageValue(L) = 460
+damageValue(H) = 360
+
+damageValue(S) = 460
+damageValue(D) = 560
+damageValue(A) = 360
+
+kickRadius = 25.0
+kickOmega = 5.0
+kickVeloc = 15.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "100 100 100 10"
+finishColor = "150 150 150 0"
+startRadius = 0.1
+finishRadius = 50
+animateTime = 0.2
+latitudeBands = 6
+longitudeSegments = 12
+
+[debriss]
+simulateBase = "sim_dust"
+lifeTime = 0.0005
+renderBase = "draw_emit"
+emitName = "debris.schunks"
+emitdelay = 0.0002
+//delayVar = 0.1
+emitVelocity = "0.0 5 0.0"
+emitVariance = "56.0 10.0 56.0"
+
+[debris]
+simulateBase = "sim_dust"
+lifeTime = 0.0005
+renderBase = "draw_emit"
+emitName = "debris.chunks"
+emitdelay = 0.0001
+//delayVar = 0.1
+emitVelocity = "0.0 3 0.0"
+emitVariance = "`30.0 5.0 30.0"

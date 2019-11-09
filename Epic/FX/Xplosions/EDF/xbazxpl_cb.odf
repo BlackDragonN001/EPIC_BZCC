@@ -1,0 +1,50 @@
+// =============
+// BAZOOKA EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 11
+
+particleClass4 = "xbazgnd_cb.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass2 = "xbazgnd_cb.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xbazgnd_cb.flame"
+particleCount3 = 1
+particleVeloc3 = "0.0 10.0 0.0"
+
+particleClass1 = "xbazgnd_cb.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass5 = "xbazgnd_cb.sparks"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+//particleClass6 = "xstabgnd_cb.posroll"
+//particleCount6 = 1
+//particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xbazgnd_cb.flame2"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+explSound = "baz02.wav"
+
+damageRadius = 20.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 5 // absorbtion
+
+

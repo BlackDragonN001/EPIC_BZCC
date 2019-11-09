@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gquill_ab"
+ordName = "quill_cb"
+wpnName = "Quill"
+fireSound = "chaff01.wav"
+wpnReticle = "gquill_cb"
+wpnCategory = "CANN"
+isAssault = 0
+aiRange = 360
+
+[CannonClass]
+shotDelay = 1.0
+salvoCount = 5
+salvoDelay = 0.02
+shotVariance = 0.05
+shotAlternate = 0

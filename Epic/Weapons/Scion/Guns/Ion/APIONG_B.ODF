@@ -1,0 +1,27 @@
+[GameObjectClass]
+baseName = "apiong"
+geometryName = "apgun00.xsi"
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "fbkiln_b"
+requireText1 = "Build Kiln"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyan"
+
+effectHard1 = "hp_light_1"
+effectName1 = "apchain_b.flare"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "giongn_cb"

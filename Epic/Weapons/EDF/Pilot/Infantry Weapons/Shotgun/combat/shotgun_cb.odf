@@ -1,0 +1,61 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+renderName = "shotgun_cb.render"
+
+ammoCost = 1
+lifeSpan = .2
+shotSpeed = 500.0
+damageValue(N) = 15
+damageValue(L) = 8
+damageValue(H) = 2
+damageValue(S) = 8
+damageValue(D) = 3
+damageValue(A) = 15
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "shotgun_cb.smoke"
+renderName2 = "shotgun_cb.trail"
+renderName2 = "shotgun_cb.shot"
+
+[shot]
+renderBase = "draw_twirl"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 127"
+finishColor = "255 127 0 127"
+startRadius = 0.35
+finishRadius = 0.3
+animateTime = .25
+
+[smoke]
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "70 70 90 40"
+finishColor = "200 200 200 0"
+startRadius = 0.3
+finishRadius = 1
+animateTime = .1
+lifetime = .1
+
+[trail]
+simulateBase = "sim_null"
+lifetime = 0.25
+renderBase = "draw_trail"
+//textureName = "ssmoke.tga"
+//textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+textureName = "wingtrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.25
+startColor = "255 255 55 20"
+finishColor = "255 255 255 0"
+startRadius = 0.15
+finishRadius = 0.01
+segmentTime = 0.1
+animateTime = 0.1

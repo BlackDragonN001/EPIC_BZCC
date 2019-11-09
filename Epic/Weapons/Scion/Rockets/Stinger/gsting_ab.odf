@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsting_cb"
+ordName = "stinger_ab";
+wpnName = "Swarm Launcher"
+fireSound = "gmagg06.wav"
+wpnReticle = "gsting_a"
+wpnCategory = "ROCK"
+isAssault = 1
+aiRange = 300
+
+[CannonClass]
+shotDelay = 3.0
+salvoDelay = 0.1
+salvoCount = 10
+shotVariance = 0.5

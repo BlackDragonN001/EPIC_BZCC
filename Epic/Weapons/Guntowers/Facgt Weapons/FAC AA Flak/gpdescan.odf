@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "pdescan"
+//altname = "gcapcan_c"
+wpnName = "Flak Cannon"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "cann"
+aiRange = 1200
+isAssault = 0
+//wpnPriority = 1
+//flashName = "gcscats.flash"
+flashName = NULL
+AllowAimHigh = false
+
+[CannonClass]
+shotDelay = 0.4
+//salvoCount = 1
+//salvoDelay = 0.
+

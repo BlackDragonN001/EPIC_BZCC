@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic: High & Low"
+mapTga = "Epic_HiLo.dxtbz2"
+mapDesc = "Epic_HiLo.txt"
+mySide = 1

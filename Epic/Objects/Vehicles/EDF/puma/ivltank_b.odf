@@ -1,0 +1,161 @@
+[GameObjectClass]
+baseName = "ivltank_b"
+
+unitIcon = "icon_ivltank_b.tga"
+infoName = "ivltank_b.inf"
+unitStatus = "wire_ivltank_b.tga"
+
+geometryScale = 0.22
+geometryName = "ivltankBD.xsi"
+cockpitName= "ivtank_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 20
+scrapCost = 50
+scrapReturn = 25
+customCost = 60
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 3000
+maxAmmo = 2000
+addAmmo = 5
+unitName = "Light Tank"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 2.0
+imageSignature = 2.0
+radarSignature = 0.4
+
+SmartIsAirUnitCheck = false
+
+explosionName = "null"
+
+isAssault = 0
+
+armorClass = L
+
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "ivltank_b"
+provideName2 = "ltnk"
+
+requireCount = 2
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+requireName2 = "ibcbun_b"
+requireText2 = "Build Relay Bunk"
+
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gatstab_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gshadow_cb"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_SPECIAL_1"
+weaponName3 = ""
+weaponAssault3 = 0
+
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+
+effectHard1 = "hp_com_1"
+effectName1 = "ivtank_b.glow"
+effectMaxAltitude1 = 15
+
+effectHard2 = "hp_com_1"
+effectName2 = "ivtank_b.trailer1"
+effectMaxAltitude2 = 10
+
+[CraftClass]
+canHunt = true
+AllowLinkWeapons = true
+FireWhenCanHitFriends = false
+
+xplCrash = "ixshipxpl"
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 900.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 500
+ejectRatio = 0.5
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "ANS"
+
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+
+OffensiveProcessIsDistractable = false
+OffensiveProcessIsDistractableAITeam = true
+
+//braccelFactor = 0.03
+//velFactor = 0.1
+//steerFactor = 1
+//omegaFactor = 0.1
+//strafeFactor = 0.5
+
+avoidSpeed = 40;
+topSpeed = 60;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 75 // []
+velocReverse = 30 // []
+velocStrafe = 25.0 // []
+accelThrust = 24.0 //acceleration []
+accelDragStop = 15.0 //how fast it stops once hands are off controls []
+accelJump = 25.0 // []
+
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.25 //nose up []
+pitchThrust = 0.1 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 2.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+

@@ -1,0 +1,30 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+renderName = "tracer_b.render"
+
+ammoCost = 0.5
+lifeSpan = 0.5 // 200.1m
+shotSpeed = 600.0
+
+damageValue(N) = 5
+damageValue(L) = 3
+damageValue(H) = 1
+
+damageValue(S) = 3
+damageValue(D) = 5
+damageValue(A) = 3
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 127 127 255"
+finishColor = "0 0 255 0"
+startRadius = 0.03
+finishRadius = 0.045
+segmentTime = 0.05

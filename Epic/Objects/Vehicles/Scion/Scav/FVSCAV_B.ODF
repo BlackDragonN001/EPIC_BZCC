@@ -1,0 +1,93 @@
+[GameObjectClass]
+baseName = "fvscav"
+geometryName = "fvscav_skel_b.xsi"
+geometryScale = 2
+glowTexture = "fvscava0.pic"
+cockpitName = "fvscav_cockpit.xsi"
+classLabel = "scavenger"
+scrapValue = 10
+scrapCost = 20
+buildTime = 10.0
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Harvester"
+aiName = "ScavProcess"
+aiName2 = "ScavProcess"
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 2.0
+isAssault = 1
+collisionRadius = 30.0
+
+armorClass = H
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "fvscav_b"
+provideName2 = "scav"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivatank_b.render" //"ivtank_b.trailer"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivatank_b.render"
+
+[CraftClass]
+xplCrash = "xscionxplb"
+rangeScan = 600.0
+periodScan = 0.0
+velocJam = 0.0
+
+TeamTransferrable = true
+GotoTaskHasLeader = false
+
+braccelFactor = 0.1f
+strafeFactor = 0.1f
+steerFactor = 1.0f
+omegaFactor = 0.3f
+velFactor = 0.3f
+
+selectGoMsg = "fvscav02.wav"
+selectOtherMsg = "fvscav01.wav"
+selectWaitMsg = "fvscav01.wav"
+holdMsg = "fvscav06.wav"
+goMsg = "fvscav04.wav"
+stopMsg = "fvscav04.wav"
+followMsg = "fvscav03.wav"
+followMeMsg = "fvscav07.wav"
+rescueMsg = "fvscav11.wav"
+repairMsg = "fvscav08.wav"
+recycleMsg = "fvscav10.wav"
+otherMsg = "fvscav04.wav"
+holdMsg = "fvrecy04.wav"
+
+
+[TrackedVehicleClass]
+accelBrake = 70.0
+accelDrag = 20.0
+accelDragFull = 60.0
+accelDragStop = 38.0	// how fast it stops once hands are off controls [5.9]
+accelThrust = 5.0
+alphaSteer = 0.8
+omegaSpin = 1.0
+omegaTurn = 0.6
+velocForward = 25.0
+velocReverse = 20.0
+
+TREAD_STATIC_FRICTION = 4.0
+CENTER_SHIFT = -1.0		// -1.0 for bottom, 0.0 for center, +1.0 for top
+
+engineSound = "sscav01.wav"
+treadSound = "sscav01.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "srecy02.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold = 20
+deployClass = "fbscav_b"
+deployOffset = -4.1

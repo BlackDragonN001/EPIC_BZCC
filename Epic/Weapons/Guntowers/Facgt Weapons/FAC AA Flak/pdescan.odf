@@ -1,0 +1,46 @@
+[OrdnanceClass]
+classLabel = "radarpopper"
+
+IsArcing = 0
+shotSound = null
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+renderName = "null"
+
+ammoCost = 20
+lifeSpan = 0.3
+shotSpeed = 1.0
+
+damageValue(N) = 180 // none
+damageValue(L) = 160 // light
+damageValue(H) = 70 // heavy
+
+damageValue(S) = 160 // standard
+damageValue(D) = 180 // deflection
+damageValue(A) = 90 // absorbtion
+
+[RadarPopperClass]
+launchXpl = "xcapfir"
+launchOrd = "pdesshell"
+aimAngle = 1
+targetAngle = 3.1416                                     
+
+[PopperClass]
+aimAngle = 1
+targetAngle = 3.1416 
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 10 63"
+finishColor = "200 50 0 0"
+startRadius = 0.1
+finishRadius = 0.5
+animateTime = 0.2
+emitDelay = 0.005
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.2

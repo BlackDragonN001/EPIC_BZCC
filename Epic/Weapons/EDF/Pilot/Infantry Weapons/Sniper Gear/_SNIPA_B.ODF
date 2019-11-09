@@ -1,0 +1,36 @@
+[OrdnanceClass]
+classLabel = "snipershell"
+
+renderName = "snipa_b.render"
+
+shotGeometry = NULL
+
+xplGround = "xbulgnd_b"
+xplVehicle = "xbulcar_b"
+xplBuilding = "xbulbld_b"
+
+ammoCost = 30
+lifeSpan = 600e-6 // 300m
+shotSpeed = 1e6
+
+damageValue(N) = 150
+damageValue(L) = 80
+damageValue(H) = 10
+
+damageValue(S) = 50
+damageValue(D) = 0
+damageValue(A) = 100
+
+[SniperShellClass]
+killRadius = 1
+killLength = 30.0
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "ssontrail.tga"
+startColor = "255 255 255 100"
+finishColor = "255 255 255 0"
+startRadius = 0.03
+finishRadius = 0.01
+segmentTime = 0.5

@@ -1,0 +1,269 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons_b"
+scavClass = "fvscav_b"
+
+[Cheat]
+moneyAmount = 25
+moneyDelay = 10
+
+[IdleDispatcher]
+ScavIdleSeconds = 25
+UnitIdleSeconds = 120
+MinAttackForce = 3 // min # of idle units before dispatch
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 210
+buildtype1 = "fvscav_b"
+buildcount1 = 4
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 205
+doNextOnFail = 1
+
+[plan3]
+plantype = "buildminimums"
+planpriority = 200
+buildtype1 = "fvscout_b"
+buildcount1 = 4
+
+[Plan4]
+plantype = "buildminimums"
+planpriority = 195
+buildtype1 = "fvcons_b"
+buildcount1 = 2
+
+[plan5]
+plancondition = "HisExists"
+planconditionclass = "fvscav_b"
+planconditioncount = 1
+plantype = "attacker"
+planpriority = 190
+targettype = "fvscav_b"
+attacktype1 = "fvscout_b"
+attacktype2 = "fvscout_b"
+attacktype3 = "fvscout_b"
+attacktype4 = "fvscout_b"
+maxtries = 1
+
+[plan6]
+plantype = "basebuildminimums"
+planpriority = 185
+buildtype1 = "fbkiln_b"
+buildtype2 = "fbantm_b"
+buildtype3 = "fbbarr_b"
+
+[plan7]
+plantype = "buildminimums"
+planpriority = 180
+buildtype1 = "sssold_b"
+buildcount1 = 6
+
+[plan8]
+plantype = "collectpool"
+planpriority = 175
+donextonfail = 1
+
+[plan9]
+plancondition = "HisExists"
+planconditionclass = "fvcons_b"
+planconditioncount = 1
+plantype = "attacker"
+planpriority = 170
+targettype = "fvcons_b"
+attacktype1 = "sssold_b"
+attacktype2 = "sssold_b"
+attacktype3 = "sssold_b"
+attacktype4 = "sssold_b"
+attacktype5 = "sssold_b"
+attacktype6 = "sssold_b"
+maxtries = 1
+
+[plan10]
+plantype = "buildminimums"
+planpriority = 165
+buildtype1 = "fvwarlock_b"
+buildcount1 = 4
+
+[plan11]
+plantype = "collectpool"
+planpriority = 160
+donextonfail = 1
+
+[plan12]
+plancondition = "HisExists"
+planconditionclass = "fbscav_b"
+planconditioncount = 1
+plantype = "attacker"
+planpriority = 155
+targettype = "fbscav_b"
+attacktype1 = "fvwarlock_b"
+attacktype2 = "fvwarlock_b"
+attacktype3 = "fvwarlock_b"
+attacktype4 = "fvwarlock_b"
+maxtries = 1
+
+[plan13]
+plancondition = "NotExists"
+planconditionclass = "fbforg_b"
+planconditioncount = 1
+plantype = "upgrade"
+planpriority = 150
+Unittype = "fbkiln_b"
+
+[plan14]
+plantype = "buildminimums"
+planpriority = 145
+buildtype1 = "fvjakr_b"
+buildcount1 = 4
+
+[plan15]
+plantype = "basebuildminimums"
+planpriority = 142
+buildtype1 = "fbstro_b"
+buildtype2 = "fbdowe_b"
+
+
+[plan16]
+plancondition = "Hisexists"
+planconditionclass = "fbkiln_b"
+planconditioncount = 1
+plantype = "attacker"
+planpriority = 140
+targettype = "fbkiln_b"
+attacktype1 = "fvjakr_b"
+attacktype2 = "fvjakr_b"
+attacktype3 = "fvjakr_b"
+attacktype4 = "fvjakr_b"
+maxtries = 1
+
+[plan17]
+plantype = "buildminimums"
+planpriority = 135
+buildtype1 = "fvsent_b"
+buildcount1 = 3
+
+[plan18]
+plancondition = "NotExists"
+planconditionclass = "fbover_b"
+planconditioncount = 1
+plantype = "upgrade"
+planpriority = 130
+Unittype = "fbantm_b"
+
+[plan19]
+plancondition = "HisExists"
+planconditionclass = "fbspir_b"
+planconditioncount = 1
+plantype = "attacker"
+planpriority = 125
+targettype = "fbspir_b"
+attacktype1 = "fvsent_b"
+attacktype2 = "fvsent_b"
+attacktype3 = "fvsent_b"
+
+[plan20]
+plantype = "buildminimums"
+planpriority = 120
+buildtype1 = "fvartl_b"
+buildcount1 = 3
+
+[plan21]
+plantype = "basebuildminimums"
+planpriority = 115
+buildtype1 = "fbspir_b"
+buildtype2 = "fbspir_b"
+
+
+[plan22]
+plantype = "buildminimums"
+planpriority = 110
+buildtype1 = "fvserv_b"
+buildcount1 = 3
+
+[plan23]
+plantype = "collectpool"
+planpriority = 105
+donextonfail = 1
+
+[plan24]
+plantype = "basebuildminimums"
+planpriority = 100
+buildtype1 = "fbspir_b"
+donextonfail = 1
+
+
+[plan25]
+plancondition = "Hisexists"
+planconditionclass = "fbstro_b"
+planconditioncount = 1
+planpriority = 85
+plantype = "attacker"
+targettype = "fbstro_b"
+attacktype1 = "fvartl_b"
+attacktype2 = "fvartl_b"
+attacktype3 = "fvartl_b"
+maxtries = 1
+
+
+[plan26]
+plantype = "buildminimums"
+planpriority = 80
+buildtype1 = "fvltank_b"
+buildcount1 = 3
+
+
+[plan27]
+plantype = "collectpool"
+planpriority = 75
+donextonfail = 1
+
+[plan28]
+plancondition = "Hisexists"
+planconditionclass = "fbdowe_b"
+planconditioncount = 1
+plantype = "attacker"
+targettype = "fbdowe_b"
+planpriority = 70
+attacktype1 = "fvltank_b"
+attacktype2 = "fvltank_b"
+attacktype3 = "fvltank_b"
+maxtries = 1
+
+[plan29]
+plantype = "buildminimums"
+planpriority = 68
+buildtype1 = "fvbashar_b"
+buildcount1 = 1
+buildtype2 = "fvseraph_b"
+buildcount2 = 1
+
+
+[plan30]
+plantype = "collectpool"
+planpriority = 65
+donextonfail = 1
+
+
+[plan31]
+plancondition = "Hisexists"
+planconditionclass = "fbantm_b"
+planconditioncount = 1
+plantype = "attacker"
+targettype = "fbantm_b"
+planpriority = 62
+attacktype1 = "fvbashar_b"
+attacktype2 = "fvseraph_b"
+maxtries = 1
+
+
+
+[plan32]
+plantype = "collectpool"
+planpriority = 55
+donextonfail = 1
+
+
+

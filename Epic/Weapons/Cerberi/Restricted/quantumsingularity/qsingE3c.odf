@@ -1,0 +1,22 @@
+// ==============
+// BULLET CAR HIT
+// ==============
+
+[ExplosionClass]
+classLabel = "explosion"
+FriendlyFireDamage = true
+
+particleTypes = 0
+
+//explSound = "silence.wav" //"wmgr1.wav"
+damageRadius = 100.0
+damageValue(N) = 40
+damageValue(L) = 40
+damageValue(H) = 40
+damageValue(S) = 40
+damageValue(D) = 40
+damageValue(A) = 40
+
+kickRadius = 120.0
+kickOmega = 10.0
+kickVeloc = -2.0

@@ -1,0 +1,73 @@
+[GameObjectClass]
+mrmFactor = 0
+geometryName = "fbgspir_b.xsi" //"fbspir00_b.xsi"
+glowTexture = "fvrecya0.pic"
+//animCount = 1
+//animName1 = "deploy"
+//animFile1 = "fbspir00_b.xsi"
+geometryScale = 13
+classLabel = "turret"
+collisionRadius = 40.0
+scrapCost = 75
+scrapReturn = 40
+scrapValue = 40
+powerCost = 0
+maxHealth = 6000
+maxAmmo = 10000
+unitName = "Gun Spire"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+//canCollide = 1
+
+//meshcollide = 1
+
+armorClass = H
+explosionName = "xscionbld"
+
+LightingType = 1 
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 0
+
+provideCount = 2
+provideName1 = "fbspir_b"
+provideName2 = "gtow"
+
+///// WEAPON ////////////////////
+
+weaponMask = 00001
+weaponHard1 = "hp_cannon_1"
+weaponName1 = "gspbolt_b"
+
+/////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "sgtow01.wav"
+//meshcollide = 1
+
+[CraftClass]
+rangeScan = 1200.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 1.0
+engageRange = 1200
+
+[TurretCraftClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung_b"
+omegaTurret = 2.0
+detectRange = 1200

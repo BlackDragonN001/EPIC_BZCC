@@ -1,0 +1,109 @@
+[GameObjectClass] // Spawns a unit at altitude for effects
+classLabel = "jammer"
+geometryName = "QSING00.XSI"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Quantum Singularity"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+explosionName = "null"
+canDetect = 0
+Tuggable = 0
+canInteract = 0
+powerCost = 0
+isStealth = 0
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+LeaveExplodeScorch = false
+
+//EffectHard1 = "hp_fire"
+//EffectName1 = "qsing2a.render"
+
+[BuildingClass]
+lifespan = 0.3
+
+UseCollapse = false 
+UseChunks = false
+UseExplosion = true
+
+
+[PoweredBuildingClass]
+powerTap1 = "hp_fire"
+powerName1 = "qsing1b" //Create the Tuggable Version
+
+[BuildingClass]
+DoBettyLost = false
+
+[JammerTowerClass]
+jammerRange = 200.0
+DampTeamFilter = 0 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team
+JamScannerTeamFilter = 0 // 0 = all teams, 1 = same team only, 2 = allies, 3 = enemies, 4 = not same team
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "qsing2a.flare"
+renderName2 = "qsing2a.light"
+renderName3 = "qsing2a.field"
+renderName4 = "qsing2a.field2"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "cxflare.tga" //"lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 6.0
+finishRadius = 6.0
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 255 255 2500"
+finishColor = "255 255 255 2500"
+startRadius = 50.0
+finishRadius = 50.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 0"
+finishColor = "200 250 255 20"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 50.0
+AddYaw = 50.0
+AddRoll = 50.0
+
+[Field2]
+renderBase = "draw_sphere"
+textureName = "electrofield.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 0"
+finishColor = "200 250 255 20"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -50.0
+AddYaw = -50.0
+AddRoll = -50.0

@@ -1,0 +1,17 @@
+
+[Hand]
+weaponCount = 6
+weaponName1 = "apsnip_b"
+weaponName2 = "apassrif_b"
+weaponName3 = "apmgren_b"
+weaponName4 = "apbazo_b"
+weaponName5 = "apbeamrif_b"
+weaponName6 = "apsam_b"
+
+[Pack]
+weaponCount = 4
+weaponName1 = "aphjetp_b"
+weaponName2 = "apsatc_b"
+weaponName3 = "apgren_b"
+weaponName4 = "apsatcom_b"
+

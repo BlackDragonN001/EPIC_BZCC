@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "targeting"
+altName = "gtaggun_ab"
+ordName = "swarmer_cb"
+wpnName = "TAG Cannon"
+fireSound = "tmiss03b.wav"
+wpnReticle = "gtaggun.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 600
+flashName = "gmortar_b.flash"
+
+[TargetingGunClass]
+leaderName = "leader_cb"
+leaderSound = "tmiss01.wav"
+shotDelay = 0.5
+shotAlternate = 1 //0
+firstDelay = 0.5
+salvoDelay = 0.1 //0.5
+salvoCount = 6 //5
+salvoPitch = 0.4
+shotpitch = 0.4
+lockingReticle = "gtaggun.1"
+lockedReticle = "gtaggun.2"

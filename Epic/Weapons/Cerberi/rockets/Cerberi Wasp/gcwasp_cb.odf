@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+altName = "gcwasp_ab"
+ordName = NULL		// <-- this is important!
+wpnName = "Swarmer"
+fireSound = "gwasp00.wav"
+wpnReticle = "gmlock_a"
+wpnCategory = "ROCK"
+aiRange = 600
+isAssault = 0
+
+[DispenserClass]
+//salvoCount = 5
+//salvoDelay = 0.1
+//shotVariance = 0.8
+shotDelay = 2.0
+objectClass = "cwasp_cb"

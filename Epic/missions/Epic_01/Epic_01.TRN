@@ -1,0 +1,38 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.1
+MinX = -1024
+MinZ = -1024
+Width = 2048
+Depth = 2048
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture] 
+TileTexture1 = "u_barren1.tga" 
+TileTexture2 = "u_cliff1u.tga" 
+TileTexture3 = "u_cliff1v.tga" 
+TileTexture4 = "u_cliff41u.tga"
+TileTexture5 = "u_cliff41v.tga"
+TileTexture6 = "dunesL.PIC" 
+TileTexture7 = "u_dune2.tga" 
+TileTexture8 = "u_flatrock.tga"
+TileTexture9 = "u_crackdirt.tga"
+TileTexture10 = "muddyrock.tga"
+TileTexture11 = "growth0.tga"
+TileTexture12 = "grassysand.tga"
+TileTexture13 = "u_goodrock2.tga"

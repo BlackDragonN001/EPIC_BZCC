@@ -1,0 +1,43 @@
+[GameObjectClass] // Create light pull.
+geometryName = "QSING01.xsi"
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Quantum Singularity"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+canDetect = 0
+Tuggable = 0
+canInteract = 0
+powerCost = 0
+isStealth = 1
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+explosionName = "null"
+LeaveExplodeScorch = false
+
+//fectHard1 = "hp_fire"
+//effectName1 = "mcurmin.render"
+
+[MineClass]
+lifeSpan = 120 //1e6 //120.0
+
+[MagnetMineClass]
+triggerDelay = 0.0
+fieldRadius = 1000.0
+objPushCenter = -40.0
+objPushEdge = -2.0
+objDragCenter = 1.0
+objDragEdge = 0.5
+ordPushCenter = 0.0 //-2000.0
+ordPushEdge = 0.0 //-2000.0
+ordDragCenter = 0.0 //10.0
+ordDragEdge = 0.0 //10.0
+
+TeamFilter = 0
+

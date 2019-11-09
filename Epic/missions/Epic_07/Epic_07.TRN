@@ -1,0 +1,41 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.1
+MinX = -1024
+MinZ = -1024
+Width = 2048
+Depth = 2048
+Height=100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+Gravity = 20
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture] 
+TileTexture1 = "greydirt.tga"//"tunnel8_b.tga" 
+TileTexture2 = "shalerock.tga" 
+TileTexture3 = "drymud.tga" 
+TileTexture4 = "fac_wall1_u.tga"
+TileTexture5 = "fac_wall1_v.tga"
+TileTexture6 = "fac_wall2_u.tga" 
+TileTexture7 = "fac_wall2_v.tga" 
+TileTexture8 = "fac_wall3_u.tga"
+TileTexture9 = "fac_wall3_v.tga"
+TileTexture10 = "fac_wall4_u.tga"
+TileTexture11 = "fac_wall4_v.tga"
+TileTexture12 = "fac_roof.tga"
+TileTexture13 = "rockface2.tga"
+TileTexture14 = "fac_floor.tga"
+TileTexture15 = "fac_junk1.tga"

@@ -1,0 +1,96 @@
+[GameObjectClass]
+geometryName = "cbrecy_3.xsi" //"Cbrecy03_b.xsi"
+geometryScale = 12
+classLabel = "recycler"
+scrapCost = 55
+scrapValue = 10
+maxHealth = 20000
+maxAmmo = 0
+unitName = "Processor"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+explosionName = "XBHXPL_b"
+
+LightingType = 1
+
+armorClass = H
+
+provideCount = 2
+provideName1 = "cbrecy_b"
+provideName2 = "recy"
+
+collisionRadius = 40.0
+
+lightHard1 = "hp_light_1"
+lightName1 = "cpower_light2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue1_b2"
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue1_b2"
+lightHard4 = "hp_light_4"
+lightName4 = "spotblue1_b2"
+
+effectHard1 = "hp_light_1"
+effectName1 = "cbfact_b.dark"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+
+
+soundAmbient = "ibfact00.wav"// play ambient sound
+
+[RecyclerClass]
+scrapHold = 40
+scrapDelay = 1.0
+
+[FactoryClass]
+soundBuild = "cvo_mid_fabrication_logged.wav"
+soundFinish = "cvo_mid_fabrication_complete.wav"
+reloadMsg = "cvo_mid_fabrication_logged.wav"
+rescueMsg = "cvo_mid_fabrication_complete.wav"
+//reloadMsg = "cvo_mid_servicing.wav"
+//rescueMsg = "cvo_mid_rescuing.wav"
+
+KickAllCraft = true // Fix for harpies getting stuck in ground.
+
+//ChromeEffect = 1
+//AnimateChrome = true
+//ChromeTexture = "cchrome.tga"
+
+[BuildGroup1]
+BuildLabel = "Utility"
+buildItem1 = "cvhscav_b" //"cvscav_m"
+buildItem2 = "cvcons_b"
+buildItem3 = "cvserv_b"
+
+[BuildGroup2]
+BuildLabel = "Defensive"
+buildItem1 = "cvturr_b"
+buildItem2 = "cvmlay_b"
+
+[BuildGroup3]
+BuildLabel = "Offensive"
+buildItem1 = "cvrgdron_b"
+buildItem2 = "cvrmdron_b"
+buildItem3 = "cvscout_b"
+buildItem4 = "cvtank_b"
+buildItem5 = "cvrbomb_b"
+buildItem6 = "cvhtank_b"
+buildItem7 = "cvwalk_b"
+
+
+
+
+//[Lod1]
+//geometryName = "cbrecyL1_b.xsi" ;geometry for lod1
+//geometryScale = 3
+//distance = 900                    ;bsphere under 200 pixel => switch to lod1
+//dontShiftLOD = 1

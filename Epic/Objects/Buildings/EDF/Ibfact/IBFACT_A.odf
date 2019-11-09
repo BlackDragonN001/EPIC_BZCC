@@ -1,0 +1,69 @@
+[GameObjectClass]
+geometryName = "ibfact3_a.xsi"
+geometryScale = 18
+glowTexture = "edfbasea0.pic"
+classLabel = "factory"
+scrapCost = 55
+scrapReturn = 25
+scrapValue = 10
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Factory"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+canSelect = 1
+canInteract = 1
+ownsTerrain = 1
+//canCollide = 0 //Negated just in case -GBD
+IsSingle = 1
+
+LightingType = 1 
+
+armorClass = H
+
+//explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "ibpgen_b"
+requireText1 = "Build Power"
+
+provideCount = 2
+provideName1 = "ibfact_b"
+provideName2 = "fact"
+
+collisionRadius = 25.0
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 6 // start point from the left of the building 
+tunnel01Z0 = 12 // start point from the top of the building 
+tunnel01DX = 4 // width from left to right 
+tunnel01DZ = 7 // width from top to bottom 
+tunnel01Edge = "wwtw"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+
+// DropOff Location
+DropoffDX = 0.0
+DropoffDZ = 47.0

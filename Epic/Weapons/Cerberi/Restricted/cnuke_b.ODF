@@ -1,0 +1,263 @@
+[GameObjectClass]
+geometryName = NULL //"defmine.xsi" // "igflar00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+explosionName = "xcnuke_b"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+EffectHard1 = " "
+EffectName1 = "cnuke_b.render"
+
+[MineClass]
+lifeSpan = 30.0
+
+[FlareMineClass]
+payloadName = NULL //"cnukeb_b"
+fireSound = ""
+triggerDelay = 0.0
+shotDelay = 1e6
+shotVariance = 0.0
+damageRadius = 600.0
+damageValue(N) = 150 // none
+damageValue(L) = 125 // light
+damageValue(H) = 100 // heavy
+damageValue(S) = 125 // standard
+damageValue(D) = 150 // deflection
+damageValue(A) = 100 // absorbtion
+kickRadius = 600.0
+kickVeloc = -5.0
+kickOmega = 1.5
+
+fieldRadius = 600.0
+objPushCenter = -250.0
+objPushEdge = 0.0
+objDrag = 2.0
+ordPushCenter = 0.0
+ordPushEdge = 0.0
+ordDrag = 2.0
+
+
+[render]
+renderBase = "draw_multi"
+renderCount = 8
+renderName1 = "cnuke_b.sphere"
+renderName2 = "cnuke_b.sparks"
+renderName3 = "cnuke_b.pulse"
+renderName4 = "cnuke_b.bolts"
+renderName5 = "cnuke_b.core"
+renderName6 = "cnuke_b.ground"
+renderName7 = "cnuke_b.matter"
+renderName8 = "cnuke_b.matter2"
+
+[sphere]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_sphere"
+textureName = "bhsphere.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha" // "one one modulate"
+startColor = "45 30 50 0"
+finishColor = "0 0 0 150"
+startRadius = 200.0
+finishRadius = 0.0
+animateTime = 10.0
+latitudeBands = 32
+longitudeSegments = 64
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 350.0
+AddYaw = 280.0
+AddRoll = 480.0
+
+[matter]
+simulateBase = "sim_smoke"
+lifeTime = 9.5
+renderBase = "draw_emit"
+emitName = "cnuke_b.matteremit"
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matteremit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 200.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+BottomInteractsWithTerrain = false
+
+[matter2]
+simulateBase = "sim_smoke"
+lifeTime = 9.0
+renderBase = "draw_emit"
+emitName = "cnuke_b.matter2emit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matter2emit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "sparksa.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 0"
+finishColor = "0 0 0 155"
+startRadius = 300.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+BottomInteractsWithTerrain = false
+
+[pulse]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_sprite"
+textureName = "raindrop.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "220 205 255 0"
+finishColor = "0 0 55 60"
+startRadius = 1000.0
+finishRadius = 0.0
+animateTime = 10.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[bolts]
+simulateBase = "sim_smoke"
+lifeTime = 8.0
+renderBase = "draw_emit"
+emitName = "cnuke_b.boltemit"
+emitDelay = 0.1 //0.005
+emitVelocity = "-50.0 150.0 -50.0"
+emitVariance = "875.0 875.0 875.0"
+
+[boltemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.8
+renderBase = "draw_bolt"
+textureName = "mini.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 80"
+finishColor = "0 0 55 0"
+startRadius = 0.4
+finishRadius = 0.05
+segmentLength = 1.0
+segmentVariance = "1.5 1.5 0.0"
+animateTime = 0.8
+textureRate = 0.1 //.01
+
+[core]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_sprite"
+textureName = "edfpulse.tga"//"plasxblue.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "220 205 255 00"
+finishColor = "220 205 255 2550"
+startRadius = 8.0
+finishRadius = 20.0
+animateTime = 10.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 1.0
+
+[sparks]
+simulateBase = "sim_smoke"
+lifeTime = 10.0
+renderBase = "draw_emit"
+emitName = "cnuke_b.sparksemit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[sparksemit]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "sparks.tga"
+textureBlend = "one one modulate"
+startColor = "200 180 240 0"
+finishColor = "255 250 255 100"
+startRadius = 200.0
+finishRadius = 0.0
+animateTime = 3.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[ring2]
+simulateBase = "sim_smoke"
+lifeTime = 9.0
+renderBase = "draw_emit"
+emitName = "cnuke_b.ring2emit"
+emitDelay = 0.5
+emitVelocity = "0.0 150.0 0.0"
+emitVariance = "875.0 875.0 875.0"
+
+[Ring2emit]
+simulateBase = "sim_null"
+lifeTime = 4.0
+renderBase = "draw_planar"
+textureName = "xbhchar2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 25"
+finishColor = "255 255 255 0"
+startRadius = 600.0
+finishRadius = 20.0
+animateTime = 4.0
+
+[ground]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_emit"
+emitName = "cnuke_b.groundemit"
+emitDelay = 2
+emitVelocity = "0.0 150.0 0.0"
+emitVariance = "875.0 875.0 875.0"
+
+[groundemit]
+simulateBase = "sim_null"
+lifeTime = 2.5
+renderBase = "draw_planar"
+textureName = "GRNDCHAR.tga" //"ano2.pic"
+textureBlend =  "srcalpha invsrcalpha modulatealpha" // "one one modulate" //
+startColor = "0 0 0 150"
+finishColor = "0 0 0 250"
+startRadius = 200.0
+finishRadius = 600.0
+animateTime = 2.5
+
+[dome]
+simulateBase = "sim_smoke"
+lifeTime = 10.0
+renderBase = "draw_sphere"
+textureName = "dome.pic"
+textureBlend = "srcalpha invsrcalpha modulatealpha" // "one one modulate"
+startColor = "0 0 0 50"
+finishColor = "0 0 0 150"
+startRadius = 900.0
+finishRadius = 900.0
+animateTime = 10.0
+latitudeBands = 16
+longitudeSegments = 32
+
+

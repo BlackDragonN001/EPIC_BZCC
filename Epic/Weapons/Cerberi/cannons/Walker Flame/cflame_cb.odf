@@ -1,0 +1,68 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.0
+xplGround = "xicehit"
+xplVehicle = "xicehit"
+xplBuilding = "xicehit"
+
+renderName = "cflame_cb.render"
+ammoCost = 1
+lifeSpan = 1.0
+shotSpeed = 180.0
+
+damageValue(N) = 35 // none
+damageValue(L) = 10 // light
+damageValue(H) = 2 // heavy
+
+damageValue(S) = 10 // standard
+damageValue(D) = 35 // deflection
+damageValue(A) = 5 // assault
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cflame_cb.smoke"
+//renderName2 = "cflame_cb.puff"
+renderName3 = "cflame_cb.puff1"
+
+[smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 50"
+finishColor = "0 0 0 0"
+startRadius = 2.0
+finishRadius = 10.0
+animateTime = 1.2
+emitDelay = 0.2
+DelayVar = 0.25
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+//emitLife = 60.0
+
+[Puff]
+renderBase = "draw_twirl_trail"
+textureName = "cplas2.tga"
+textureBlend = "one one modulate"
+startColor = "190 190 255 200"
+finishColor = "40 70 255 0"
+startRadius = 2
+finishRadius = 7.0
+animateTime = 0.2
+emitDelay = 0.05
+DelayVar = 0.05
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.2
+
+[Puff1]
+renderBase = "draw_twirl"
+textureName = "cplas2.tga"
+textureBlend = "one one modulate"
+startColor = "190 190 255 200"
+finishColor = "40 70 255 0"
+startRadius = 0.5
+finishRadius = 7.0
+animateTime = 1.0

@@ -1,0 +1,118 @@
+// ================
+// FLASH GROUND HIT by Slaor
+// ================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 5
+particleClass1 = "xflagnd_b.ring"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xflagnd_b.core"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xflagnd_b.cloud"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xflagnd_b.flame"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xflagnd_b.light"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+explSound = "xsv2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 2.0
+animateTime = 0.4
+
+[cloud]
+simulateBase = "sim_dust"
+lifeTime = .08
+renderBase = "draw_emit"
+emitName = "xflagnd_b.cloudemit"
+emitDelay = 0.07
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 4.5
+renderBase = "draw_twirl"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 50"
+finishColor = "60 60 60 0"
+startRadius = 1.5
+finishRadius = 6.0 //
+animateTime = 4.5
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.32
+renderBase = "draw_emit"
+emitName = "xflagnd_b.flameemit"
+emitDelay = 0.08
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "3.0 4.0 3.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "yflm1.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 255 255"
+finishColor = "255 200 100 0" //
+startRadius = 2
+finishRadius = 0.1
+animateTime = 0.4
+rotationRate = 1.0
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 12.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 25"
+finishColor = "0 0 0 0"
+startRadius = 3.0
+finishRadius = 3.0
+animateTime = 12.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_light"
+startColor = "255 255 200 850"
+finishColor = "255 100 0 0"
+startRadius = 20.0 // 350
+finishRadius = 10.0 // 150
+animateTime = 0.25
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+

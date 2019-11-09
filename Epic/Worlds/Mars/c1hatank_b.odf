@@ -1,0 +1,109 @@
+[GameObjectClass]
+baseName = "ivatank"
+geometryName = "cvhatank00_b.xsi"
+geometryScale = 3
+classLabel = "assaulttank"
+scrapValue = 40
+scrapCost = 50
+customCost = 50
+buildTime = 55.0
+customTime = 60.0
+maxHealth = 35000
+maxAmmo = 13000
+addAmmo = 40
+unitName = "Dominator"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+heatSignature = 0.5
+imageSignature = 5.0
+radarSignature = 5.0
+isAssault = 1
+
+needPilot = 1
+canSnipe = 0
+
+explosionName = "XCERBXPLb"
+
+armorClass = H
+	
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gbhmort_b"
+weaponAssault1 = 0
+weaponHard2 = "HP_CannoN_2"
+weaponName2 = "gcworms"
+weaponAssault2 = 0
+weaponHard3 = "HP_cannon_3"
+weaponName3 = "gcworms"
+weaponAssault3 = 0
+//weaponHard4 = "HP_GUN_3"
+//weaponName4 = "gcworms"
+//weaponAssault4 = 0
+
+////////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[CraftClass]
+rangeScan = 2000.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 1200
+
+braccelFactor = 0.01
+velFactor = 0.4
+steerFactor = 1.2
+omegaFactor = 0.2
+strafeFactor = 0.1
+
+selectWaitMsg = "ivatank04.wav"
+selectAttackMsg = "ivatank01.wav"
+selectFollowMsg = "ivatank08.wav"
+selectGoMsg = "ivatank02.wav"
+selectOtherMsg = "ivatank04.wav"
+
+goMsg = "ivatank05.wav"
+attackMsg = "ivatank06.wav"
+followMeMsg = "ivatank08.wav"
+followMsg = "ivatank08.wav"
+repairMsg = "ivatank09.wav"
+reloadMsg = "ivatank09.wav"
+rescueMsg = "ivatank10.wav"
+recycleMsg = "ivatank11.wav"
+otherMsg = "ivatank04.wav" 
+holdMsg = "ivatank12.wav"
+
+user1Msg = ""  
+killedMsg = "ivatank07.wav"
+diedMsg = ""
+
+[TrackedVehicleClass]
+accelThrust = 10.0
+accelBrake = 50.0
+accelDrag = 20.0
+accelDragFull = 30.0
+accelDragStop = 40.0
+alphaSteer = 1.5
+omegaSpin = 4.0
+omegaTurn = 0.5
+velocForward = 30.0
+velocReverse = 15.0
+
+TREAD_STATIC_FRICTION = 4.0
+
+engineSound	= "iatank01.wav"
+treadSound = "iatank02.wav"
+
+
+[AssaultTankClass]
+yawRate = 4.0
+pitchMin = -1.2
+pitchMax = 1.9
+
+
+
+

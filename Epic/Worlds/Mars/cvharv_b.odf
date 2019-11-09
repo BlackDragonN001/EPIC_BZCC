@@ -1,0 +1,188 @@
+// (c) BZ2CP unit "Demon"
+// Model by Slaor and Pastell
+// Cerberization Animation by Fishbone
+
+[GameObjectClass]
+geometryName = "harv_skel.xsi"
+geometryScale = 1.6
+animCount = 1
+animName1 = "cerberize"
+animFile1 = "harv_cerb.xsi"
+glowTexture = "cvdcara0.pic"
+baseName = "cvharv"
+classLabel="apc"
+aiName = "APCProcess"
+scrapValue = 20
+scrapCost = 100
+maxHealth = 4000
+addHealth = 10
+maxAmmo = 1000
+addAmmo = 0
+explosionName = "shipxplc"
+buildTime = 60.0
+customTime = 60.0
+collisionRadius = 90.0
+//powerCost = 5
+isStealth = 1
+
+
+requireCount = 4
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
+requireName2 = "cbcbun_b"
+requireText2 = "Build Controller"
+requireName3 = "cbsbay_b"
+requireText3 = "Build Regenerator"
+requireName4 = "cbtcen_b"
+requireText4 = "Build Core Matrix"
+
+unitName = "Demon"
+
+
+heatSignature = 0.8
+imageSignature = 0.8
+radarSignature = 0.1
+
+isAssault = 1
+
+needPilot = 0
+
+armorClass = H
+
+effectHard1 = "hp_light_1"
+effectName1 = "cvharv_b.light"
+effectHard2 = "hp_light_2"
+effectName2 = "cvharv_b.light"
+effectHard3 = "hp_light_3"
+effectName3 = "cvharv_b.light"
+
+[CraftClass]
+xplChunk = "xcerbchunk"
+xplCrash = "XCERBXPLb"
+rangeScan = 2000.0
+periodScan = 2.0
+velocJam = 2.0
+engageRange = 1600
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 30;
+topSpeed = 60;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+setAltitude = 15.0
+accelDragStop = 5.0
+alphaTrack = 20.0
+alphaDamp = 10.0
+pitchPitch = 0.10
+pitchThrust = 0.1
+rollStrafe = 0.0
+rollSteer = 0.0
+
+velocForward = 80.0
+velocReverse = 40.0
+velocStrafe = 30.0
+accelThrust = 50.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 390.0
+soundThrust = "carrier.wav"
+
+//[SavClass]
+//flightAltitude = 150.0
+//soundDeploy = "avsave6.wav"
+//soundUndeploy = "avsave5.wav"
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 100.0
+timeDeploy = 20.0
+flightAltitude = 75.0
+SoldierExtraLife = 10
+
+[light]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cvhar_b.light1"
+renderName2 = "cvhar_b.glow"
+renderName3 = "cvhar_b.trailer1"
+
+[light1]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "120 80 255 2550"
+finishColor = "120 80 255 2550"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+animateTime = 0.2
+rotationRate = 1.0
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "150 100 250 15"
+finishColor = "150 100 250 15"
+startRadius =  12.0
+finishRadius = 12.0
+animateTime = 1.2
+rotationrate = 0
+
+
+[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cvcar_b.trailer1emit"
+emitdelay = 0.031
+delayVar = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "26.0 0.0 26.0"
+
+[trailer1emit]
+simulateBase = "sim_dust"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 135 120 45"
+finishColor = "180 170 160 0"
+startRadius =  0//1.8
+finishRadius = 4
+animateTime = 1.5
+rotationrate = 1

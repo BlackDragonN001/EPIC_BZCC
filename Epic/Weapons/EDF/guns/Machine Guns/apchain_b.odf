@@ -1,0 +1,43 @@
+[GameObjectClass]
+baseName = "apchain"
+geometryName = "apgun00.xsi"
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyan"
+
+effectHard1 = "hp_light_1"
+effectName1 = "apchain_b.flare"
+
+requireCount = 1
+requireName1 = "ibarmo_b"
+requireText1 = "Build Armory"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gchain_cb"
+
+[flare]
+simulateBase = "sim_null"
+//lifeTime = 2.0
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 0 200 85"
+finishColor = "200 100 255 0"
+startRadius = 0.8
+finishRadius = 5
+animateTime = 7
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 -3.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 7

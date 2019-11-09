@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName = "apcann00.xsi"
+classLabel = "wpnpower"
+scrapCost = 4
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "ibtrain_b"
+requireText1 = "Build Training Facility"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "igshot_cb"

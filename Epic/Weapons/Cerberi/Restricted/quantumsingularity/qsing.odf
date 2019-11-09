@@ -1,0 +1,97 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = "ioartl00.xsi"
+shotSound = "baz03.wav"
+xplGround = "xgasxpl"
+xplVehicle = "xgasxpl"
+xplBuilding = "xgasxpl"
+
+rendername = "qsing.render"
+
+ammoCost = 350
+lifeSpan = 1e30
+shotSpeed = 60.0
+
+damageValue(N) = 250
+damageValue(L) = 150
+damageValue(H) = 125
+damageValue(S) = 250
+damageValue(D) = 125
+damageValue(A) = 250
+
+[SprayBombClass]
+payloadName = "qsing1a"
+
+// Thank you Nathan :)
+HitExplodeTypes = 6
+BuildSprayOnHit = true //false
+ExplodeOnHit = false //true
+
+bounceRatio = 0.1
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "qsing.flare"
+renderName2 = "qsing.trail"
+renderName3 = "qsing.trail2"
+renderName4 = "qsing.trail3"
+renderName5 = "qsing.light"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "cpulse.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 10.0
+finishRadius = 10.0
+
+[Trail]
+renderBase = "draw_twirl_trail"
+textureName = "cxflare2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 65" 
+finishColor = "255 255 255 0" 
+startRadius = 1.5
+finishRadius = 0.0
+animateTime = 0.7
+emitDelay = 0.01
+emitLife = 1.0
+rotationrate = 10 //20
+
+[Trail2]
+renderBase = "draw_twirl_trail"
+textureName = "edfbshock.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 65" 
+finishColor = "255 255 255 0" 
+startRadius = 2.0
+finishRadius = 5.0
+animateTime = 0.7
+emitDelay = 0.02
+emitLife = 0.8
+rotationrate = 10 //20
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0
+
+[Trail3]
+renderBase = "draw_trail"
+textureName = "sootrail.tga"
+textureBlend = //srcalpha invsrcalpha modulatealpha"//"one one modulate"
+textureRate = 0.08
+startColor =   "0 0 0 150" //"153 153 153 128"
+finishColor = "10 10 10 0
+startRadius = 0.5
+finishRadius = 5.0
+animateTime = 0.3
+segmentTime = 0.3

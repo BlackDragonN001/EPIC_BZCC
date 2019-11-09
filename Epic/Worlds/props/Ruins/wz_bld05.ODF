@@ -1,0 +1,47 @@
+[GameObjectClass]
+geometryName = "wz_bld05.xsi"
+geometryScale = 13
+classLabel = "powered"
+//animCount = 1
+//animName1 = "loop"
+//animFile1 = "ibradar01.xsi"
+scrapCost = 30
+scrapValue = 3
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Ruin"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 42.0
+isAssault = 1
+ownsTerrain = 1
+canCollide = 0
+canDetect = 0
+canInteract = 0
+
+explosionName = "bcollapse_m"
+
+
+LightingType = 1
+NoShadow = false 
+AllowHQShadows = true
+
+armorClass = H
+
+requireCount = 0
+
+
+
+[BuildingClass]
+//soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 500
+
+//powerTap1 = "HP_tap_1"
+//powerName = "ibaaturr_u"
+
+//[Lod1]
+//geometryName = "ibpgenL1.xsi" ;geometry for lod1
+//distance = 64                    ;bsphere under 200 pixel => switch to lod1

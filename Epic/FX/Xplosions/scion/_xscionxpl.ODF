@@ -1,0 +1,215 @@
+// ===================
+// Scion Vehicle Explosion
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 10
+
+particleClass1 = "xscionxpl.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xscionxpl.puff"
+particleCount2 = 40
+particleVeloc2 = "95.0 125.0 95.0"
+
+particleClass3 = "xscionxpl.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xscionxpl.core2"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xscionxpl.ring1"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xscionxpl.ring2"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xscionxpl.ring3"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "xscionxpl.shock"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "xscionxpl.smoke"
+particleCount9 = 1
+particleVeloc9 = "8.0 2.0 8.0"
+
+particleClass10 = "xscionxpl.ground"
+particleCount10 = 1
+particleVeloc10 = "0.0 0.0 0.0"
+
+
+explSound = "xsv2.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 60 // light
+damageValue(H) = 20 // heavy
+
+damageValue(S) = 60 // standard
+damageValue(D) = 100 // deflections
+damageValue(A) = 20 // absorbtion
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 130 255"
+finishColor = "255 255 0 0"
+startRadius = 1.0
+finishRadius = 25.0
+animateTime = 1.5
+
+[Core2]
+simulateBase = "sim_null"
+lifeTime = 1.6
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "plasxgold.tga"// ringb2
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = "250 250 255 220"// 180
+finishColor = "250 250 50 0"
+startRadius = 12.0 //5.0
+finishRadius = 8.0 // 50 
+animateTime = 1.6 //3.5
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 2.2
+renderBase = "draw_twirl"
+textureName = "slightflare.tga"//"sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 250 255"
+finishColor = "255 155 5 0"
+startRadius = 2.0
+finishRadius = 0.5
+animateTime = 2.2
+
+[light]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_emit"
+emitName = "xscionxpl.lightemit"
+emitDelay = 2
+emitVelocity = "0.0 180.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Lightemit]
+simulateBase = "sim_null"
+lifeTime = 1.4
+renderBase = "draw_light"
+startColor = "255 255 255 8550"
+finishColor = "255 150 0 0"
+startRadius = 280.0 // 350
+finishRadius = 250.0 // 150
+animateTime = 1.4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[ring1]
+simulateBase = "sim_null"
+lifeTime = 0.6
+renderBase = "draw_sphere"
+textureName = "tflamesphere.tga" //ring2
+textureBlend = "one one modulate"
+startColor = "255 255 0 60"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 20.0
+animateTime = 0.4
+latitudeBands = 8
+longitudeSegments = 16
+
+[ring2]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "tflamesphere.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 100 90"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 15.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[ring3]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "tflamesphere.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 100 120"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 12.0
+animateTime = 0.5
+latitudeBands = 8
+longitudeSegments = 16
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "sciyshock.tga" //ringa3
+textureBlend = "one one modulate" //"srcalpha invsrcalpha modulatealpha"
+startColor = " 255 255 150 90"
+finishColor = "255 255 255 0"
+startRadius = 5.0
+finishRadius = 15.0 // 50
+animateTime = 0.7
+
+[posroll]
+simulateBase = "sim_dust"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "40 40 40 0"
+startRadius = 1.0
+finishRadius = 2
+animateTime = 2.0
+rotationRate = 2.0
+
+[ground]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_planar"
+textureName = "sciyshock.tga"
+textureBlend = "one one modulate"
+startColor = "150 150 0 150"
+finishColor = "250 250 250 0"
+startRadius = 5.0
+finishRadius = 15.0
+animateTime = 0.7
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 5.0
+renderBase = "draw_twirl"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 40 40 40 255"
+finishColor = "90 90 90 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 5.0
+rotationRate = 0.6

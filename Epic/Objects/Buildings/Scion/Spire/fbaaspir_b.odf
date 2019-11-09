@@ -1,0 +1,81 @@
+//Epic Scion AA Spire
+//Model by Slaor 2010
+
+
+[GameObjectClass]
+mrmFactor = 0
+geometryName = "fbaaspir_b.xsi"
+
+geometryScale = 13
+classLabel = "turret"
+collisionRadius = 40.0
+scrapCost = 75
+scrapReturn = 40
+scrapValue = 40
+powerCost = 0
+maxHealth = 6000
+maxAmmo = 10000
+unitName = "AA Spire"
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+explosionName = "xscionbld"
+armorClass = H
+
+
+LightingType = 1 
+
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 2
+requireName1 = "fbantm_b"
+requireText1 = "Build Antenna"
+requireName2 = "fbstro_b"
+requireText2 = "Build Stronghold"
+
+provideCount = 2
+provideName1 = "fbaaspir_b"
+provideName2 = "gtow"
+
+///// WEAPON ////////////////////
+
+weaponMask = 00011
+weaponHard1 = "hp_rocket_1"
+weaponName1 = "gairsting_b"
+weaponHard2 = "hp_rocket_2"
+weaponName2 = "gairsting_b"
+
+/////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[BuildingClass]
+soundAmbient = "sgtow01.wav"
+
+[CraftClass]
+rangeScan = 1500.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.0
+steerFactor = 1.0
+engageRange = 1500
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[TurretCraftClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung_b"
+omegaTurret = 2.0
+detectRange = 1550

@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gfafmsl_ab"
+ordName = "fafmsl_cb"
+wpnName = "FAF Msl"
+fireSound = "crckt01.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 360
+flashName = "gmortar_b.flash"
+
+[CannonClass]
+shotDelay = 1.0 // 1/sec
+shotAlternate = 1

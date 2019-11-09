@@ -1,0 +1,96 @@
+[GameObjectClass]
+baseName = "cvrecy_b"
+geometryName = "cvrecy_b.xsi"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "cvrecy_b.xsi"
+geometryScale = 12
+classLabel = "recyclervehicle"
+collisionRadius = 7.0
+scrapCost = 0
+scrapValue = 100
+maxHealth = 20000
+maxAmmo = 0
+unitName = "Nucleus"
+aiName = "DeployBuildingFriend"
+aiName2 = "DeployBuildingEnemy"
+heatSignature = 2.0
+imageSignature = 5.0
+radarSignature = 5.0
+isAssault = 1
+canCollide = 1
+boxCollide = 1
+
+explosionName = "XBHXPL_b"
+
+mass = 500000
+
+lightHard1 = "hp_light_1"
+lightName1 = "cpower_light2"
+
+[CraftClass]
+GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower model
+
+rangeScan = 400.0f
+periodScan = 0.0f
+velocJam = 0.0f
+TeamTransferrable = false
+
+selectUser1Msg = "cvo_mid_building.wav"  // building
+selectUser2Msg = "cvo_mid_access_denied.wav"  // can't do
+selectWaitMsg = "cvo_mid_directive_logged.wav"  // yes sir
+selectGoMsg = "cvo_mid_onmyway.wav"  // in transit
+selectOtherMsg = "cvo_mid_waiting.wav"  // yes sir
+holdMsg = "cvo_mid_holding_pattern.wav"
+attackMsg = "cvo_mid_directive_logged.wav"
+goMsg = "cvo_mid_onmyway.wav"
+goObjectMsg = "cvo_mid_directive_logged.wav"
+user1Msg = "cvo_mid_building.wav"
+user2Msg = "cvo_mid_fabrication_complete.wav"
+followMsg = "cvo_mid_following.wav"
+otherMsg = "cvo_mid_waiting.wav"
+
+avoidSpeed = 10
+topSpeed = 15
+
+
+
+[TrackedVehicleClass]
+
+//AIomegaSpin = 0.6
+//AIomegaTurn = 0.6
+//AIalphaSteer = 0.8
+//AIvelocForward = 15.0
+//AIvelocReverse = 10.0
+//AIaccelThrust = 5.0
+
+accelThrust = 5.0
+accelBrake = 70.0
+accelDrag = 20.0
+accelDragFull = 60.0
+accelDragStop = 38.0	// how fast it stops once hands are off controls [5.9]
+alphaSteer = 0.4
+omegaSpin = 0.2
+omegaTurn = 0.2
+velocForward = 10.0
+velocReverse = 10.0
+
+TREAD_STATIC_FRICTION = 4.0
+CENTER_SHIFT = -1.0		// -1.0 for bottom, 0.0 for center, +1.0 for top
+
+engineSound = "irecy01.wav"
+treadSound = "irecy01b.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 10.0
+timeUndeploy = 10.0
+soundDeploy = "irecy03.wav"
+
+DoExtraBuildzoneCheck = false // false = 1.0 .. 1.3pb1 behavior, true = pb2 .. current
+
+[DeployBuildingClass]
+deployName = "cbrecy_MPI"
+
+[RecyclerVehicleClass]
+scrapHold = 40
+

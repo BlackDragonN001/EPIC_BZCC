@@ -1,0 +1,97 @@
+[GameObjectClass]
+geometryName = "ibfact3_b.xsi"
+geometryScale = 18
+glowTexture = "edfbasea0.pic"
+classLabel = "factory"
+scrapCost = 55
+scrapReturn = 25
+scrapValue = 10
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Factory"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+//canCollide = 0 //Why was this here? It should have made the building impassable, -GBD
+IsSingle = 1
+
+LightingType = 1 
+
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "ibpgen_b"
+requireText1 = "Build Power"
+
+provideCount = 2
+provideName1 = "ibfact_b"
+provideName2 = "fact"
+
+collisionRadius = 25.0
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 6 // start point from the left of the building 
+tunnel01Z0 = 12 // start point from the top of the building 
+tunnel01DX = 4 // width from left to right 
+tunnel01DZ = 7 // width from top to bottom 
+tunnel01Edge = "wwtw"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+// DropOff Location
+DropoffDX = 0.0
+DropoffDZ = 47.0
+
+[BuildGroup1]
+BuildLabel = "Combat"
+buildItem1 = "ivmbike_b"
+buildItem2 = "ivmisl_b"
+buildItem3 = "ivltank_b"
+buildItem4 = "ivtank_b"
+
+[BuildGroup3]
+BuildLabel = "Assault"
+buildItem1 = "ivrckt_b"
+buildItem2 = "ivatank_b"
+buildItem3 = "ivwalk_b"
+buildItem4 = "ivrbomb_b"
+buildItem5 = "ivartl_b"
+
+[BuildGroup5]
+BuildLabel = "Air Force"
+buildItem1 = "ivapc_b"
+builditem2 = "ivpanther_b"
+buildItem3 = "ivfighter_b"
+buildItem4 = "ivspbomb_b"
+//buildItem5 = "ivbomb_b"
+//buildItem6 = "ivpfighter_b"
+
+
+[Lod1]
+geometryName = "ibfactL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 600
+dontShiftLOD = 1

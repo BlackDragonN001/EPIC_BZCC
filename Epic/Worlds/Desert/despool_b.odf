@@ -1,0 +1,49 @@
+[GameObjectClass]
+geometryName = "despool_b.xsi"
+geometryScale = 0.5
+classLabel = "deposit"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 20000
+maxAmmo = 0
+unitName = "Biometal Pool"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canCollide = 0
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "despool_b.render"
+
+[BuildingClass]
+//justTerrain = 1
+//isTerrain = 1
+//justFlat = 1
+
+tunnelCount = 1
+
+tunnel01X0 = 1
+tunnel01Z0 = 1
+tunnel01DX = 2
+tunnel01DZ = 2
+tunnel01Edge = "wwtw"
+
+[DepositClass]
+
+[Render]
+maxDist = 3000
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 150
+finishColor = "76 76 76 0"
+startRadius = 3.5
+finishRadius = 8.0
+animateTime = 4.0
+emitDelay = 0.1
+emitVelocity = "0.5 8.0 0.5"
+emitVariance = "5.0 1.0 5.0"
+emitInherit = "3 3 3"
+emitLife = 4.0

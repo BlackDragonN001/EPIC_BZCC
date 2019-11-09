@@ -1,0 +1,151 @@
+[GameObjectClass]
+baseName = "cvgdron"
+geometryName = "cvgdron00_b.xsi"
+geometryScale = 1.0
+glowTexture = "cvgdrona0.pic"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 400
+maxAmmo = 1800
+addAmmo = 15
+unitName = "Mosquito"
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+explosionName = "xcerbxpld"
+collisionRadius = 10.0
+
+VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+LightingType = 1
+
+heatSignature = 1.5
+imageSignature = 1.5
+radarSignature = 0.1
+
+isAssault = 0
+
+needPilot=0
+
+armorClass = N
+
+Lifespan = 60 // -1 == infinite; > 0 is # seconds of life before it goes *boom*
+
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "cvgdron_b.tail"
+
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gclaser_cb"
+weaponAssault1 = 0
+//weaponHard2 = "HP_GUN_2"
+//weaponName2 = "gclaser_cb"
+//weaponAssault2 = 0
+
+////////////////////////////////////
+ 
+[CraftClass]
+xplCrash = "xcerbxpld"
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 1500.0f
+periodScan = 2.0f
+velocJam = 2.0f
+engageRange = 1500
+
+//braccelFactor = 0.03
+//velFactor = 0.2
+//steerFactor = 1.5
+//omegaFactor = 0.2
+//strafeFactor = 0.2
+
+avoidSpeed = 40;
+topSpeed = 50;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+
+
+[HoverCraftClass]
+velocForward = 90 // []
+velocReverse = 55.0 // []
+velocStrafe = 45.0 // []
+accelThrust = 30.0 //acceleration []
+accelDragStop = 5.0 //how fast it stops once hands are off controls []
+accelJump = 35.0 // []
+
+setAltitude = 1.5 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.30 //nose up []
+pitchThrust = 0.02 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 3.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.00 //rolls while steering []
+
+soundThrust = "gdron.wav"
+soundTurbo = "gdronth.wav"
+
+[tail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "cvgdron_b.trail"
+renderName2 = "cvgdron_b.soot"
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail2.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "105 105 105 255"
+finishColor = "105 105 105 255"
+startRadius = 0.8
+finishRadius = 0.01
+segmentTime = 0.15
+segmentVariance = "1 1 0"
+animateTime = 0.15
+
+[soot]
+renderBase = "draw_trail"
+textureName = "sootrail.tga"
+textureBlend = //srcalpha invsrcalpha modulatealpha"//"one one modulate"
+textureRate = 0.05
+startColor =   "0 0 0 100" //"153 153 153 128"
+finishColor = "100 100 100 0
+startRadius = 1.0
+finishRadius = 5.5
+animateTime = 0.5
+segmentTime = 1
+

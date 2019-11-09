@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gjax_b"
+ordName = "jax_b"
+wpnName = "JAX"
+fireSound = "jax01.wav"
+wpnReticle = "gjax.0"
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 60
+
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.5
+shotPitch = 3.0

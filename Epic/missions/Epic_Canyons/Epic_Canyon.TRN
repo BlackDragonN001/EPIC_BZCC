@@ -1,0 +1,34 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.4
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 5.0
+Tile = 1
+Color = "151 158 103 255"
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=2
+MusicTrack2=3
+MusicTrack3=4
+MusicTrack4=5
+
+[Texture]
+TileTexture1 = "a_chitin.tga"
+TileTexture2 = "a_organic1.tga"
+TileTexture3 = "a_organic4.tga"
+TileTexture4 = "a_organic3.tga"
+TileTexture5 = "a_slate1.tga"
+TileTexture6 = "a_slimerock.tga"
+
+

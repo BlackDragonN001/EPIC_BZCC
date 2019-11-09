@@ -1,0 +1,204 @@
+[GameObjectClass]
+baseName = "ivscout_b"
+
+unitIcon = "icon_ivscout.tga"
+infoName = "ivscout_b.inf"
+unitStatus = "wire_ivscout.tga"
+
+geometryName = "ivscout00_b.xsi"
+
+cockpitName= "ivscout_cockpit.xsi"
+animCount = 3
+animName1 = "forward"
+animFile1 = "ivscoutsf_b.xsi"
+animName2 = "neutral"
+animFile2 = "ivscoutsn_b.xsi"
+animName3 = "reverse"
+animFile3 = "ivscoutsr_b.xsi"
+
+geometryScale = 1.4
+classLabel = "wingman"
+scrapValue = 15
+scrapCost = 50
+scrapReturn = 25
+customCost = 50
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 1800
+maxAmmo = 1500
+addAmmo = 1
+unitName = "Scout"
+aiName = "ScoutFriend"
+aiName2 = "ScoutEnemy"
+collisionRadius = 40.0
+
+BoxCollide = 1
+
+heatSignature = 0.5
+imageSignature = 3.0
+radarSignature = 0.3
+
+explosionName = "null"//"ixshipxpl"
+
+isAssault = 0
+//isStealth = 1
+
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "ivscout_b"
+provideName2 = "scout"
+
+
+armorClass = L
+
+requireCount = 0
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gminigun_cb"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gminigun_cb"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 = "gfafmsl_cb"
+weaponAssault3 = 0
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = ""
+weaponAssault4 = 0
+
+//////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2_b"
+lightHard2 = "hp_light_2"
+lightName2 =  
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivscout_b.trailer1"
+
+effectHard2 = "hp_emit_1"
+effectName2 = "ivscout_b.glow"
+
+[CraftClass]
+canHunt = true
+AllowLinkWeapons = true
+xplCrash = "ixshipxpls"
+rangeScan = 1400.0f
+periodScan = 5.0f
+velocJam = 10.0f
+engageRange = 750
+ejectRatio = 0.05
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+//braccelFactor = 0.05
+//velFactor = 0.2
+//steerFactor = 1.0
+//omegaFactor = 0.5
+//strafeFactor = 0.2
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "NNS"
+
+topSpeed = 90
+
+selectWaitMsg = "ivscout04.wav"
+selectAttackMsg = "ivscout01.wav"
+selectFollowMsg = "ivscout03.wav"
+selectGoMsg = "ivscout02.wav"
+selectOtherMsg = "ivscout04.wav"
+
+goMsg = "ivscout05.wav"
+attackMsg = "ivscout06.wav"
+followMeMsg = "ivscout03.wav"
+followMsg = "ivscout08.wav"
+repairMsg = "ivscout09.wav"
+reloadMsg = "ivscout09.wav"
+rescueMsg = "ivscout10.wav"
+recycleMsg = "ivscout11.wav"
+otherMsg = "ivscout10.wav" 
+holdMsg = "ivscout12.wav"
+user1Msg = ""  
+killedMsg = "ivscout07.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+velocForward = 90.0 // [40]
+velocReverse = 20.0 // [10]
+velocStrafe = 30.0 // [20]
+accelThrust = 25.0 // acceleration [25.]
+accelDragStop = 15.0 // how fast it stops once hands are off controls [5.9]
+accelJump = 18.0
+aiAccelDrag = 10
+
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself [5.]
+alphaDamp = 8.0 //shocks [5.]
+
+pitchPitch = 0.25 // nose up [.1]
+pitchThrust = 0.05 // nose down [.1]
+
+rollStrafe = 0.1 // rolls while strafing [1.7]
+omegaSpin = 3.5 // spinning in place speed [3.5]
+omegaTurn = 3.5 // turning while moving speed [3.45]
+alphaSteer = 5.5 // how fast it responds to steering [3.]
+rollSteer = 0.1 // rolls while steering [.35]
+
+soundThrust = "ieng01b.wav"
+soundTurbo = "avtanke3.wav"
+
+animSteer = "steer"
+
+[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivscout_b.traileremit"
+emitDelay = 0.067
+delayVariance = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "20.0 0.0 20.0"
+
+[traileremit]
+simulateBase = "sim_dust"
+lifeTime = 1.3
+renderBase = "draw_sprite"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "160 155 150 30"
+finishColor = "180 180 180 0"
+startRadius =  0.2
+finishRadius = 2.8
+animateTime = 1.3
+rotationrate = 1
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "100 180 250 20"
+finishColor = "100 180 250 20"
+startRadius =  6.5
+finishRadius = 6.5
+animateTime = 1.2
+rotationrate = 1
+
+[Lod1]
+geometryName = "ivscoutL1_b.xsi" ;geometry for lod1
+//geometryScale = 1.4
+distance = 120
+
+[Lod2]
+geometryName = "ivscoutL2_b.xsi" ;geometry for lod2
+//geometryScale = 1.4
+distance = 180                 ;...distance over this many meters => switch to lod2

@@ -1,0 +1,100 @@
+[OrdnanceClass]
+classLabel = "spraybomb" //"bouncebomb"
+shotGeometry = NULL
+
+xplGround = "xsnuke_b"
+xplVehicle = "xsnuke_b"
+xplBuilding = "xsnuke_b"
+xplExpire = "xsnuke_b"
+
+renderName = "snuke2_b.render"
+
+ammoCost = 1
+lifeSpan = 60.0
+shotSpeed = 50.0
+
+damageValue(N) = 500
+damageValue(L) = 400
+damageValue(H) = 300
+damageValue(S) = 400
+damageValue(D) = 500
+damageValue(A) = 300
+
+[SprayBombClass]
+payloadName = "snuke3_b" //NULL //"splintb2"
+
+// Thank you Nathan :)
+HitExplodeTypes = 6 //7
+BuildSprayOnHit = false
+ExplodeOnHit = true
+SoundBounce = "jax02b.wav"
+
+//[BounceBombClass]
+bounceRatio = 0.5
+bounceSound = "jax02b.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "snuke2_b.field1"
+renderName2 = "snuke2_b.field2"
+renderName3 = "snuke2_b.core"
+renderName4 = "snuke2_b.light"
+
+[Field1]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 200 50"
+finishColor = "200 255 200 15"
+startRadius = 4.0
+finishRadius = 4.0
+animateTime = 1.0
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 25.0
+AddYaw = 25.0
+AddRoll = 25.0
+
+[Field2]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 200 50"
+finishColor = "200 255 200 15"
+startRadius = 4.0
+finishRadius = 4.0
+animateTime = 1.0
+latitudeBands = 16
+longitudeSegments = 32
+InitialPitch = 0.0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = -25.0
+AddYaw = -25.0
+AddRoll = -25.0
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "127 255 0 255"
+finishColor = "127 255 0 255"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 3.0
+rotationRate = 2.0
+bottomInteractsWithTerrain = false
+
+[Light]
+renderBase = "draw_light"
+startColor = "175 255 175 255"
+finishColor = "175 255 175 255"
+startRadius = 100.0
+finishRadius = 100.0
+attenuateConstant = 0.0
+attenuateLinear = 0.0
+attenuateQuadratic = 0.0

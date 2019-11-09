@@ -1,0 +1,272 @@
+// ===============
+// SONIC CANNON GROUND HIT
+// ===============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "sonic02.wav"
+damageRadius = 10.0
+
+damageValue(N) = 150 // none
+damageValue(L) = 100 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 150 // deflection
+damageValue(A) = 50 // absorbtion
+
+kickRadius = 20.0
+kickOmega = 15.0
+kickVeloc = 15.0
+
+particleTypes = 15
+
+particleClass1 = "xsonicgnd_cb.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xgasgnd.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 10.0 0.0"
+
+//particleClass3 = "xgasgnd.flame"
+//particleCount3 = 2
+//particleVeloc3 = "0.0 10.0 0.0"
+
+//particleClass4 = "xsonicgnd_cb.light"
+//particleCount4 = 1
+//particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xgasgnd.ring"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xgasgnd.posroll"
+particleCount6 = 8
+particleVeloc6 = "8.0 0.0 8.0"
+
+particleClass7 = "xsonicgnd_cb.shocks"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "xsonicgnd_cb.core"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "debris.chunks"
+particleCount9 = 10
+particleVeloc9 = "15.0 17.5 15.0"
+particleBias9 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 15
+particleVeloc10 = "18.0 20.5 18.0"
+particleBias10 = "0.0 5.0 0.0"
+
+particleClass11 = "debris.posroll"
+particleCount11 = 8
+particleVeloc11 = "10.0 0.0 10.0"
+
+//particleClass14 = "debris.trail"
+//particleCount14 = 6
+//particleVeloc14 = "40.0 60.0 40.0"
+
+particleClass13 = "xsonicgnd_cb.char"
+particleCount13 = 1
+particleVeloc13 = "0.0 0.0 0.0"
+
+particleClass15 = "xsonicgnd_cb.ground"
+particleCount15 = 1
+particleVeloc15 = "0.0 0.0 0.0"
+
+particleClass12 = "xsonicgnd_cb.shocks2"
+particleCount12 = 1
+particleVeloc12 = "0.0 0.0 0.0"
+
+///////////////////////////////
+
+explSound = "mort02.wav"
+damageRadius = 60.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 5 // absorbtion
+
+///////////////////////////////
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "edfshock.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 200 57"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 5.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[Shocks]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "ringb2u.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 55"
+finishColor = "255 255 255 0"
+startRadius = .3
+finishRadius = 3.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[Shocks2]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "ringb2u.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 55"
+finishColor = "255 255 255 0"
+startRadius = .2
+finishRadius = 4.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[cloud]
+simulateBase = "sim_dust"
+lifeTime = .5
+renderBase = "draw_emit"
+emitName = "xgasgnd.cloudemit"
+emitDelay = 0.5
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "0.0 1.0 0.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "40 40 40 255"
+finishColor = "90 90 90 0"
+startRadius = 1
+finishRadius = 5
+animateTime = 2
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xgasgnd.flameemit"
+emitDelay = 0.1
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = .5
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 0
+finishRadius = 4
+animateTime = .5
+rotationRate = 5
+
+[light]
+simulateBase = "sim_smoke"
+lifeTime = .2
+renderBase = "draw_emit"
+emitName = "xmortgnd_b.lightemit"
+emitDelay = .1
+emitVelocity = "0.0 180.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Lightemit]
+simulateBase = "sim_null"
+lifeTime = .4
+renderBase = "draw_light"
+startColor = "250 210 100 2550"
+finishColor = "255 0 0 0"
+startRadius = 120.0 // 350
+finishRadius = 120.0 // 150
+animateTime = .44
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[ring]
+simulateBase = "sim_null"
+lifeTime = 10
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 6.0
+finishRadius = 6.0
+animateTime = 5
+
+[posroll]
+simulateBase = "sim_dust"
+lifeTime = 4
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "32 32 32 255"
+finishColor = "127 127 127 0"
+startRadius = 1
+finishRadius = 2.5
+animateTime = 4
+rotationRate = 2
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 2.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "ground.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 255"
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 3.0
+animateTime = 2.5
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 12.0
+renderBase = "draw_planar"
+textureName = "soncrack.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 10
+finishRadius = 10
+animateTime = 12.0
+
+
+[ground]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "_ssonic.tga"
+textureBlend = "one one modulate"
+startColor = "100 100 100 120"
+finishColor = "50 50 50 0"
+startRadius = 5.0
+finishRadius = 15.0
+animateTime = 0.5
+

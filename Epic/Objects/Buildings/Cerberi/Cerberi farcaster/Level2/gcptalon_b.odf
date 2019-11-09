@@ -1,0 +1,68 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "cptalon_b"
+wpnName = "Talon"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 2
+wpnCategory = "MORT"
+AllowAimHigh = true 
+flashname = "gcptalon_b.flash"
+
+aiRange = 4500.0
+
+[CannonClass]
+shotdelay = 35
+salvoCount = 3
+salvoDelay = 0.25
+shotVariance = 0.3
+shotAlternate = 1
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gcptalon_b.light1"
+renderName2 = "gcptalon_b.thrust"
+//renderName3 = "gcptalon_b.shock"
+
+[Light1]
+simulateBase = "sim_null"
+lifeTime = 2
+renderBase = "draw_light"
+startColor = "120 80 255 5050"
+finishColor = "120 80 255 0"
+startRadius = 500.0
+finishRadius = 5.0
+animateTime = 2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Thrust]
+simulateBase = "sim_null"
+lifeTime = .5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "raindrop.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 160"
+finishColor = "255 0 255 0"
+startRadius = 1.0
+finishRadius = 280
+animateTime = .5
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 2
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "rift.tga" //ringa3
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 660"
+finishColor = "255 255 255 0"
+startRadius = 10.0
+finishRadius = 0.0 // 50
+animateTime = 2

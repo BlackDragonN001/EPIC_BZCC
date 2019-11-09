@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = "iggren00.xsi"
+geometryScale = 0.12
+ordName = "satpop"
+wpnName = "Orbital Strike"
+wpnIcon = "wire_iggren%d.tga"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "PACK"
+localAmmo = 1
+
+[CannonClass]
+shotDelay = 120.0

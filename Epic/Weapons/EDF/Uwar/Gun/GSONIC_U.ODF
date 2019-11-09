@@ -1,0 +1,13 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "sonicblast_u"
+altName = "gsonic_u"
+wpnName = "Kinetic Pulse"
+fireSound = "sonic01.wav"
+wpnReticle = "gsonic_c"
+wpnCategory = "CANN"
+aiRange = 450
+
+[CannonClass]
+shotDelay = 1.0 // 1/sec
+shotAlternate = 1

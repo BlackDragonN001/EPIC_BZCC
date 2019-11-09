@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "multilauncher"
+altName = "gmlock_ab"
+ordName = "locker_b"
+wpnName = "Multi Lock"
+fireSound = "gsand00.wav"
+wpnReticle = "gmlock_c.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 510
+
+[LauncherClass]
+lockRange = 510.0
+shotDelay = 1.0
+lockDelay = 2.0
+coneAngle = 0.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gmlock_c.1"
+
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+
+[MultiLauncherClass]
+targetCount = 5
+loseAngle = 0.2

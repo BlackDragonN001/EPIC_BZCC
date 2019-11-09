@@ -1,0 +1,153 @@
+[GameObjectClass]
+baseName = "fvcons_b"
+
+unitIcon = "icon_fvcons.tga"
+infoName = "fvcons_b.inf"
+unitStatus = "wire_fvcons.tga"
+
+geometryName = "fvconst_skel_b.xsi"
+glowTexture = "fvconsa0.pic"
+classLabel = "constructionrig"
+
+animCount = 12
+
+animName1 = "idle"
+animFile1 = "fvconst_idle_b.xsi"
+
+animName2 = "idle2"
+animFile2 = "fvconst_idle_b.xsi"
+
+animName3 = "idle3"
+animFile3 = "fvconst_idle_b.xsi"
+
+animName4 = "sitdown"
+animFile4 = "fvconst_idle_b.xsi"
+
+animName5 = "walk"
+animFile5 = "fvconst_walk_b.xsi"
+
+animName6 = "turn"
+animFile6 = "fvconst_turn_b.xsi"
+
+animName7 = "death"
+animFile7 = "fvconst_death01_b.xsi"
+
+animName8 = "death2"
+animFile8 = "fvconst_death02_b.xsi"
+
+animName9 = "death3"
+animFile9 = "fvconst_death02_b.xsi"
+
+animName10 = "cons"
+animFile10 = "fvconst_DEPLOY_b.xsi"
+
+animName11 = "cons2"
+animFile11 = "fvconst_DEPLOY_b.xsi"
+
+animName12 = "cons3"
+animFile12 = "fvconst_DEPLOY_b.xsi"
+
+
+//collisionRadius = 7.0
+geometryScale = 3.0
+scrapValue = 20
+scrapCost = 40
+buildTime = 10.0
+maxHealth = 2000
+maxAmmo = 0
+collisionRadius = 5.0
+unitName = "Builder"
+aiName = "RigFriend"
+aiName2 = "RigEnemy"
+unitIcon = "icon_fvconst.tga"
+heatSignature = 1.0
+imageSignature = 2.0
+radarSignature = 2.0
+isAssault = 1
+
+armorClass = H
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "fvcons_b"
+provideName2 = "cons"
+
+requireCount = 0
+
+[CraftClass]
+rangeScan = 1200.0f
+periodScan = 5.0f
+velocJam = 5.0f
+TeamTransferrable = false
+
+selectUser1Msg = "fvcons01.wav"
+selectUser2Msg = "fvcons11.wav"
+selectWaitMsg = "fvcons04.wav"
+selectGoMsg = "fvcons03.wav"
+selectFollowMsg = "fvcons03.wav"
+selectOtherMsg = "fvcons02.wav"
+recycleMsg = "fvcons09.wav"
+attackMsg = "fvcons04.wav"
+goMsg = "fvcons05.wav"
+goObjectMsg = "fvcons05.wav"
+user1Msg = "fvcons12.wav"
+user2Msg = "fvcons13.wav"
+followMsg = "fvcons02.wav"
+otherMsg = "fvcons05.wav"
+diedMsg = ""
+holdMsg = "fvcons10.wav"
+
+[HoverCraftClass]
+velocForward = 20
+velocReverse = 8.0
+velocStrafe = 0.0
+accelThrust = 20.0
+accelBrake = 70.0
+
+accelDragStop = 2.0
+accelJump = 0.0
+
+setAltitude = 0.0 // how high off the ground
+
+alphaTrack = 20.0
+alphaDamp = 5.0
+
+pitchPitch = 0.0 //nose up
+pitchThrust = 0.0 //nose down
+
+rollStrafe = 0.0 //rolls while strafing
+omegaSpin = 3.0 //spinning in place speed
+omegaTurn = 2.0 //turning while moving speed
+alphaSteer = 2.0 //how fast it responds to steering
+rollSteer = 0.0 //rolls while steering
+
+accelDragFull = 0.0 //nothing
+
+
+soundThrust = "scons01.wav"
+soundSteer = "avcnste1.wav"
+soundDeploy = "avartle0.wav"
+soundUndeploy = "avartle4.wav"
+
+[DeployableClass]
+timeDeploy = 2.0
+timeUndeploy = 2.0
+soundDeploy = "avartle0.wav"
+soundUndeploy = "avartle4.wav"
+
+[ConstructionRigClass]
+buildLabel = "Structures"
+buildItem1 = "fbkiln_b"
+buildItem2 = "fbspir_b"
+buildItem3 = "fbantm_b"
+buildItem4 = "fbdowe_b"
+buildItem5 = "fbstro_b"
+buildItem6 = "fbjamm_b"
+//buildItem7 = "fblung_b"
+buildItem7 = "fbaaspir_b"
+buildItem8 = "fbbarr_b"
+
+
+
+

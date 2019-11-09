@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gfrbomb_b"
+ordName = "frbomb_b"
+wpnName = "EM Torpedo"
+fireSound = "gpopp00.wav"
+wpnReticle = "grktbomb"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 900
+
+[CannonClass]
+shotDelay = 6.0
+shotAlternate = 1
+

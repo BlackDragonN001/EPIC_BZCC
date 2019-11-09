@@ -1,0 +1,41 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = NULL
+//shotSound = "silence.wav"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+//rendername = "qsinge4b.render"
+
+ammoCost = 0
+lifeSpan = 1e6.0
+shotSpeed = 60.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[SprayBombClass]
+payloadName = "qsinge4c"
+bounceRatio = 0.001
+bounceSound = "silence.wav"
+bounceBuilding = 0
+bounceVehicle = 0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "qsinge4b.light"
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 155 0 400"
+finishColor = "255 155 0 400"
+startRadius = 10
+finishRadius = 75
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

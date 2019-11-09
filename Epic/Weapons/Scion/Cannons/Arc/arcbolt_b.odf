@@ -1,0 +1,34 @@
+[OrdnanceClass]
+classLabel =  "bullet" //"beam"
+
+shotGeometry = NULL
+xplGround = "xarcgnd_ab"
+xplVehicle = "xarccar_ab"
+xplBuilding = "xarccar_ab"
+
+renderName = "arcbolt_b.render"
+
+ammoCost = 20
+lifeSpan = 175e-6 // 175m
+shotSpeed = 3e6
+
+damageValue(N) = 100 // none // 500 // 250
+damageValue(L) = 100 // light // 500 // 250
+damageValue(H) = 75 // heavy // 375 // 187.5
+
+damageValue(S) = 75 // standard // 375 // 187.5
+damageValue(D) = 100 // deflection // 500 // 250
+damageValue(A) = 50 // absorbtion // 500 // 125
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "arc_b.tga"
+textureBlend = "one one modulate"
+startColor = "180 200 255 255"
+finishColor = "0 50 255 0"
+startRadius = 0.7
+finishRadius = 0.01
+segmentLength = 7.0 
+segmentVariance = "2.0 2.0 0.5"
+animateTime = 0.8 // 0.2
+textureRate = .5

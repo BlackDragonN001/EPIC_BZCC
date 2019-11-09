@@ -1,0 +1,87 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotGeometryScale = 2
+shotSound = "Ordin_b.wav"
+
+xplGround = "xstabgnd_cb"
+xplVehicle = "Xflak_b"
+xplBuilding = "Xflak_b"
+xplExpire = "xstabcar_cb"
+renderName = "shadow_cb.render"//"samiss_b.render"
+
+ammoCost = 20
+lifeSpan = 15.0 // 800m
+shotSpeed = 240.0
+
+damageValue(N) = 500 // none
+damageValue(L) = 280 // light
+damageValue(H) = 150 // heavy
+
+damageValue(S) = 350 // standard
+damageValue(D) = 260 // deflection
+damageValue(A) = 480 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 5 //1.5
+omegaWaver = 0.3
+rateWaver = 2.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "samiss_b.flare"
+renderName2 = "samiss_b.exhaust"
+renderName3 = "samiss_b.flame"
+renderName4 = "samiss_b.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 3.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.8
+finishRadius = 1.8
+segmentTime = 0.25
+animateTime = 0.2
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 100 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "255 250 50 255"
+finishColor = "250 0 0 0"
+startRadius = 0.2
+finishRadius = 0.4
+segmentTime = 1.0
+animateTime = 0.05
+
+
+

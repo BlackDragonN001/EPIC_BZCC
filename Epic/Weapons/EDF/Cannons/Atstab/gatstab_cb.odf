@@ -1,0 +1,45 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gatstab_ab"
+ordName = "atstab_cb"
+wpnName = "AT-Stab"
+fireSound = "gmagg02.wav"
+wpnReticle = "gatstab"
+wpnCategory = "CANN"
+isAssault = 0
+flashName = "gmortar_b.flash"
+aiRange = 400
+
+[CannonClass]
+shotDelay = 0.5 // 2/sec
+shotAlternate = 0
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gatstab_ab.muz"
+renderName2 = "gatstab_ab.light"
+
+[muz]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "55 155 255 255"
+startRadius = 15.0
+finishRadius = 2
+animateTime = 0.1
+geomName = "g_sflash.xsi"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "155 200 255 250"
+finishColor = "0 0 255 250"
+startRadius = 12.0
+finishRadius = 12.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

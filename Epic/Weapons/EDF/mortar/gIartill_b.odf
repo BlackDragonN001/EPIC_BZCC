@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "ishell_b"
+wpnName = "Howitzer"
+fireSound = "mort01.wav"
+wpnReticle = "ghartil"
+wpnLadder = "gmortar.L0"
+wpnPriority = 6
+wpnCategory = "MORT"
+aiRange = 1050
+//isAssault = 1
+
+[CannonClass]
+shotDelay = 5.0

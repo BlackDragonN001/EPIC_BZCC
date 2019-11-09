@@ -1,0 +1,56 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotSound = "igtow04.wav"
+renderName = "sbazooka_cb.render"
+
+xplGround = "xsbazgnd_cb"
+xplVehicle = "xsbazcar_cb"
+xplBuilding = "xsbazcar_cb"
+
+ammoCost = 1.2
+lifeSpan = 2
+shotSpeed = 200.0
+
+damageValue(N) = 25 // none
+damageValue(L) = 15 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 15 // standard
+damageValue(D) = 25 // deflection
+damageValue(A) = 5 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "sbazooka_cb.flare"
+renderName2 = "sbazooka_cb.halo"
+//renderName3 = "sbazooka_c.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 63"
+finishColor = "255 255 255 63"
+startRadius = 0.75
+finishRadius = 0.75
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 127"
+finishColor = "0 127 255 127"
+startRadius = 0.75
+finishRadius = 0.75
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 50"
+finishColor = "0 0 255 0"
+startRadius = 0.75
+finishRadius = 0.0
+segmentTime = 0.3

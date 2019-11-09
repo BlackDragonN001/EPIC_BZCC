@@ -1,0 +1,40 @@
+// Death Field mine, for large casms or holes to nothingness. 
+// Kills Thingies, Dead. - GBD
+
+[GameObjectClass]
+geometryName = NULL
+classLabel = "flare"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+addAmmo = 0
+unitName = ""
+heatSignature = 0
+canInteract = 0
+collisionRadius = 0
+scanTeamLimit = 3
+DoIdleDispatch = false
+CanBeIdleVictim = false
+CanAcceptPowerups = false
+explosionName = NULL
+
+[MineClass]
+lifeSpan = 15.0
+
+[FlareMineClass]
+payloadName = NULL
+fireSound = NULL
+triggerDelay = 0.0
+shotDelay = 0.1
+shotVariance = 0.0
+damageRadius = 500 //250.0
+damageValue(N) = 150 // none
+damageValue(L) = 150 // light
+damageValue(H) = 150 // heavy
+damageValue(S) = 150 // standard
+damageValue(D) = 150 // deflection
+damageValue(A) = 150 // absorbtion
+kickRadius = 0.0 //0.0
+kickVeloc = 0.0
+kickOmega = 0.0

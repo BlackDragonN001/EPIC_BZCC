@@ -1,0 +1,67 @@
+[GameObjectClass]
+geometryName = "dummygt_b.xsi"
+classLabel = "turret"
+collisionRadius = 0
+powercost = 0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "Power Core"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+isAssault = 0
+ownsTerrain = 0
+armorClass = H
+canDetect = 0
+canInteract = 0
+canCollide = 0
+
+//explosionName = "ixshipxplw"
+
+//upgradeName = "cbaatowl_b"
+
+
+
+
+
+weaponMask = 11111
+
+weaponHard1 = "hp_gun_1"
+weaponName1 = "gcfxfield_b"
+weaponAssault1 = 0
+
+weaponHard2 = "hp_gun_2"
+weaponName2 = "corbita"
+weaponAssault2 = 0
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotwhite"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_light_1"
+turretName4 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 6000
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 2.0
+steerFactor = 0.5
+engageRange = 6000
+AllowLinkWeapons = true
+FireWhenCanHitFriends = true
+GunTowerProcessCheckCantHit = true 
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 6000
+

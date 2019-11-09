@@ -1,0 +1,95 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "cvcomet00.xsi"
+shotSound = "Ordin_b.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "Xcmcar_mb"
+xplBuilding = "Xcmcar_mb"
+renderName = "caamiss.render"
+
+ammoCost = 400
+lifeSpan = 8.0 // 800m
+shotSpeed = 250.0
+
+damageValue(N) = 400 // none
+damageValue(L) = 200 // light
+damageValue(H) = 100 // heavy
+
+damageValue(S) = 300 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 500 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 1.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "caamiss.flare"
+renderName2 = "caamiss.exhaust"
+renderName3 = "caamiss.light"
+renderName4 = "caamiss.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "180 120 255 255"
+finishColor = "120 80 255 255"
+startRadius = 3.0
+finishRadius = 3.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "scerbbeam.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "180 120 255 255"
+finishColor = "150 120 255 0"
+startRadius = 0.8
+finishRadius = 0.6
+segmentTime = 0.25
+animateTime = 0.2
+
+[Light]
+renderBase = "draw_light"
+startColor = "180 80 255 800"
+finishColor = "180 80 255 800"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 8
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "180 50 255 180"
+finishColor = "150 0 255 0"
+startRadius = 0.2
+finishRadius = 0.2
+segmentTime = 3.0
+animateTime = 0.05
+
+
+

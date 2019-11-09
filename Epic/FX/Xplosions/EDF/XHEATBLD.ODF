@@ -1,0 +1,80 @@
+// ====================
+// MISSILE BUILDING HIT
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "xheatbld.smoke"
+particleCount1 = 1
+particleVeloc1 = "0.0 1.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "xheatbld.flame"
+particleCount2 = 1
+particleVeloc2 = "0.0 1.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "xheatbld.spark"
+particleCount3 = 8
+particleVeloc3 = "10.0 10.0 10.0"
+particleBias3 = "0.0 1.0 0.0"
+
+explSound = "xms2.wav"
+damageRadius = 10.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 10 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 10 // absorbtion
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 128"
+finishColor = "0 0 0 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 0.5
+rotationRate = 2.0
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.5
+
+[Flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl_trail"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 0.5
+rotationRate = 10.0
+emitDelay = 0.03
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.5
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.05
+animateTime = 2.0
+rotationRate = 20.0

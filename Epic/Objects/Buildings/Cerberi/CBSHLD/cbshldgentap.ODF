@@ -1,0 +1,25 @@
+[GameObjectClass]
+geometryName = NULL 
+classLabel = "magnet"
+scrapCost = 0
+scrapReturn = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Entropic Shield"
+
+[MineClass]
+lifeSpan = 1E6
+ammoCost = 3000
+
+[MagnetMineClass]
+triggerDelay = 1.0
+fieldRadius = 400.0
+objPushCenter = 0.0
+objPushEdge = 5.0
+objDrag = 0.0
+ordPushCenter = 0.0
+ordPushEdge = 600.0
+ordDrag = 1.0
+
+TeamFilter = 68 // (4 + 64)  // Only Ordnance/Units Not On the Same Team Affected

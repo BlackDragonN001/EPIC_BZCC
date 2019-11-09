@@ -1,0 +1,30 @@
+[WeaponClass]
+classLabel = "cannon" // "machinegun"
+ordName = "mbolt_b"
+wpnName = "Arc Blast"
+fireSound = "bltm01.wav"
+wpnReticle = "gbolt" / "octagon"
+wpnCategory = "CANN"
+flashName = "gspbolt_b.flash"
+aiRange = 600
+
+[CannonClass]
+//shotDelay = 0.1
+shotDelay = 2.0
+salvoCount = 5
+salvoDelay = 0.1 //02
+//shotVariance = 0.0
+
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 255 600"
+finishColor = "50 0 255 600"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 0.08
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

@@ -1,0 +1,28 @@
+[GameObjectClass]
+geometryName = "appack00.xsi"
+classLabel = "wpnpower"
+scrapCost = 30
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+
+unitName = "ISDF Hoverpack"
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "ibtcen_b"
+requireText1 = "Build Tech Center"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnired-ap"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "ighjetp_b"

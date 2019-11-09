@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "gantry02_b.xsi"
+geometryScale = 3
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Gantry"
+heatSignature = 0.1
+imageSignature = 4.0
+radarSignature = 1.0
+collisionRadius = 5.0
+
+candetect = 0
+caninteract = 0
+
+boxcollide = 1
+
+
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103

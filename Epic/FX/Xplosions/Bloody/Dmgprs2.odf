@@ -1,0 +1,100 @@
+// ==================
+// HUMAN HVY DAMAGE STATE
+//
+// by Slaor
+// 
+// ==================
+
+[Dmgprs2]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "Dmgprs2.splats"
+renderName2 = "Dmgprs2.splats2"
+renderName3 = "Dmgprs2.spray""
+
+
+[splats]
+simulateBase = "sim_smoke"
+//lifeTime = 1000
+renderBase = "draw_emit"
+emitName = "Dmgprs2.splatemit"
+emitDelay = 1
+emitDelayVar = 0.9
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[splatemit]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+//emitDelay = 0.09
+//emitDelayVar = 0.02
+//emitVelocity = "0.0 0.1 0.0"
+//emitVariance = "0.9 0.9 0.9"
+//emitInherit = "0.0 0.0 0.0"
+//emitLife = 2.0 //4
+textureName = "bludsplat1.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 150 150 200"
+finishColor = "50 50 50 0"
+startRadius = 0.09
+finishRadius = 0.13
+animateTime = 3.0 //.5
+//rotationRate = 2.0
+
+
+[splats2]
+simulateBase = "sim_smoke"
+//lifeTime = 1000
+renderBase = "draw_emit"
+emitName = "Dmgprs2.splatemit2"
+emitDelay = 2
+emitDelayVar = 1
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "6.0 1.0 6.0"
+
+[splatemit2]
+simulateBase = "sim_null"
+lifeTime = 3.5
+renderBase = "draw_planar"
+//emitDelay = 0.09
+//emitDelayVar = 0.02
+//emitVelocity = "0.0 0.1 0.0"
+//emitVariance = "0.9 0.9 0.9"
+//emitInherit = "0.0 0.0 0.0"
+//emitLife = 2.0 //4
+textureName = "bludsplat2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "160 160 160 210"
+finishColor = "50 50 50 0"
+startRadius = 0.1
+finishRadius = 0.13
+animateTime = 3.5 //.5
+//rotationRate = 2.0
+
+[spray]
+simulateBase = "sim_null"
+//lifeTime = 1000
+renderBase = "draw_emit"
+emitName = "Dmgprs2.sprayemit"
+emitDelay = 0.8
+emitDelayVar = 0.6
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "6.0 1.0 6.0"
+
+[sprayemit]
+simulateBase = "sim_ember"
+lifeTime = 0.3
+renderBase = "draw_trail"
+texturename = "wettrail.tga"
+textureBlend = "one one modulate"
+startColor = "150 30 50 205"
+finishColor = "50 0 0 0"
+startRadius = 0.10
+finishRadius = 0.0
+trailTime = 0.3
+segmentTime = 0.1
+animateTime = 0.3
+
+
+

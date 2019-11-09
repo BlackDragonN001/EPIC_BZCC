@@ -1,0 +1,30 @@
+[GameObjectClass] // Create Time Dialation Fields
+geometryName = "QSING01.XSI"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 100
+unitName = ""
+heatSignature = 0.0
+canDetect = 0
+Tuggable = 0
+canInteract = 0
+powerCost = 0
+isStealth = 1
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+explosionName = "null"
+LeaveExplodeScorch = false
+
+[MineClass]
+lifeSpan = 120 //1e6 //120
+
+[FlareMineClass]
+payloadName = "qsingE4b"
+//fireSound = "silence.wav"
+triggerDelay = 0.0
+shotDelay = 5.0
+shotVariance = 5.0
+

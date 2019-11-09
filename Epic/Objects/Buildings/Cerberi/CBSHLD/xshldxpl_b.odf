@@ -1,0 +1,50 @@
+// ===============
+// PLASMA BALL GROUND HIT
+// ===============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xfire1.wav"
+damageRadius = 10.0
+
+damageValue(N) = 1000 // none
+damageValue(L) = 1000 // light
+damageValue(H) = 1000 // heavy
+
+damageValue(S) = 150 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 100 // absorbtion
+
+particleTypes = 1
+particleClass1 = "xshldxpl_b.field"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+//particleClass2 = "xsplasgnd_a.puff"
+particleCount2 = 4
+particleVeloc2 = "7.0 7.0 7.0"
+
+//particleClass3 = "xsplasgnd_a.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+//particleClass4 = "xsplasgnd_a.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+//particleClass5 = "xsplasgnd_a.splat"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "cv_shield.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 180"
+finishColor = "0 0 200 0"
+startRadius = 400.0
+finishRadius = 300.0
+animateTime = 0.5
+latitudeBands = 8
+longitudeSegments = 16

@@ -1,0 +1,24 @@
+[GameObjectClass]
+baseName = "apmlock"
+geometryName = "apmisl00.xsi"
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "fbstro_b"
+requireText1 = "Build Stronghold"
+
+effectHard1 = "hp_light_1"
+effectName1 = "apshdw_b.flare"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gmlock_cb"

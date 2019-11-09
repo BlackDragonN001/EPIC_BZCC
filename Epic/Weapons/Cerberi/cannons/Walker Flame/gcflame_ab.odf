@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gcflame_cb"
+ordName = "cflame_ab"
+wpnName = "Flamethrower"
+fireSound = "gflas00.wav"
+wpnReticle = "gminigun"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 150
+
+[CannonClass]
+shotDelay = 0.03
+shotVariance = 0.1
+

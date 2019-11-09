@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "cliff2_b.xsi"
+geometryScale = 4
+classLabel = "terrain"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "peclif01"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+
+
+[BuildingClass]
+justTerrain = 1
+isTerrain = 1
+justFlat = 1

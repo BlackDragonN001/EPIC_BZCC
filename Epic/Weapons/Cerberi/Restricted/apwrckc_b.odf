@@ -1,0 +1,17 @@
+[GameObjectClass]
+geometryName = "apwrck00.x"
+classLabel = "daywrecker"
+scrapCost = 60
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 0
+unitName = "Day Wrecker"
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "cbfact_b"
+requireText1 = "Build Crucible"
+
+[DayWreckerClass]
+xplBlast = "xwrcks_b"
+

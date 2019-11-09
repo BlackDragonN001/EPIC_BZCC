@@ -1,0 +1,100 @@
+[GameObjectClass]
+geometryName = "ivmhq_deploy_b.xsi"
+geometryScale = 1.5
+cockpitName = "ivscav_cockpit.xsi"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "ivmhq_deploy.xsi"
+classLabel = "commvehicle"
+geometryScale = 1.0
+scrapValue = 20
+scrapCost = 60
+scrapReturn = 30
+buildTime = 10.0
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Command Vehicle"
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 2.0
+isAssault = 1
+CanDeploy = 1
+armorClass = H
+
+LightingType = 1
+
+explosionName = "null"
+
+isSingle = 1 //Determines whether only one of a certain unit or building can be built per team.
+limitClass1 = "ivmhq" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 1
+limitClass1Text = "Limited One"
+
+requireCount = 1
+requireName1 = "ibtcen"
+requireText1 = "Build Tech"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2" 
+
+[CraftClass]
+xplCrash = "ixshipxplb"
+CanDeploy = 1
+rangeScan = 1200.0
+periodScan = 0.0
+velocJam = 0.0
+
+braccelFactor = 0.1
+velFactor =	0.3
+steerFactor = 1.0
+omegaFactor = 0.3
+
+TeamTransferrable = false
+
+selectOtherMsg = "ivscav01.wav"
+selectWaitMsg = "ivscav01.wav"
+selectGoMsg = "ivscav02.wav"
+selectFollowMsg = "ivscav03.wav"
+selectPickupMsg = "ivscav01.wav"
+selectDropoffMsg = "ivscav01.wav"
+otherMsg = "ivscav11.wav"
+goMsg = "ivscav04.wav"
+goObjectMsg = "ivscav13.wav"
+followMsg = "ivscav03.wav"
+followMeMsg = "ivscav07.wav"
+repairMsg = "ivscav08.wav"
+rescueMsg = "ivscav09.wav"
+recycleMsg = "ivscav10.wav"
+holdMsg = "ivscav04.wav"
+
+[TrackedVehicleClass]
+accelBrake = 50.0
+accelDrag = 20.0
+accelDragFull = 30.0
+accelDragStop = 40.0
+accelThrust = 5.0
+alphaSteer = 2.0
+omegaSpin = 1.0
+omegaTurn = 0.5
+velocForward = 15.0
+velocReverse = 10.0
+
+TREAD_STATIC_FRICTION = 4.0
+
+engineSound	= "iscav01.wav"
+treadSound = "iscav01b.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[CommVehicleClass]
+MinViewDist = 50.0 // If specified, minimum height of commbunker view
+MaxViewDist = 250.0 // If specified, maximim height of commbunker view
+viewDist = 100
+DoBettyOn = true // true = bettyvoice when switched on
+DoBettyOff = true // true = bettyvoice when switched on.

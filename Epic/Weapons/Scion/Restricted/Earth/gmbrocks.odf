@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Rocks"
+fireSound = "gflar00.wav"
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+isAssault = 0
+flashName = "gmortar_b.flash"
+
+[DispenserClass]
+shotDelay = 0.5
+objectClass = "mbrocks"
+flashName = "gmortar_b.flash"

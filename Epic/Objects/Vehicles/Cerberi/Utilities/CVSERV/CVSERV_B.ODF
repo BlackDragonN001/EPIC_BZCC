@@ -1,0 +1,204 @@
+[GameObjectClass]
+baseName = "cvserv_b"
+geometryName = "cv_overseer.xsi"
+cockpitName = "ivserv_cockpit.xsi"
+geometryScale = 1.0
+classLabel = "serviceH"
+scrapValue = 30
+scrapReturn = 35
+scrapCost = 70
+buildTime = 20.0
+maxHealth = 2500
+maxAmmo = 1200
+unitName = "Thrall"
+aiName = "ServiceHProcess"
+aiName2 = "ServiceHProcess"
+heatSignature = 0.1
+imageSignature = 1.0
+radarSignature = 0.0
+isAssault = 0
+collisionRadius = 20.0
+canSnipe = 0 // No?
+
+armorClass = L
+
+LightingType = 1
+
+requireCount = 2
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
+requireName2 = "cbsbay_b"
+requireText2 = "Build Slave Node"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cvserv_b.light"
+effectHard2 = "hp_emit_2"
+effectName2 = "cvhtank_b.beams2"
+effectHard3 = "hp_emit_3"
+effectName3 = "cvhtank_b.beams3"
+effectHard4 = "hp_emit_4"
+effectName4 = "cvhtank_b.beams4"
+
+explosionName = "XCERBXPL"
+
+provideCount = 2
+provideName1 = "cvserv_b"
+provideName2 = "serv"
+
+[CraftClass]
+rangeScan = 900.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 900
+
+PathingType = 0
+
+//braccelFactor = 0.09
+//velFactor = 0.3
+//steerFactor = 1.0
+//omegaFactor = 0.2
+//strafeFactor = 0.1
+
+CanInteractWithTerminal = true
+
+TeamTransferrable = true
+
+selectAttackMsg = "cvo_hi_service_ready.wav"
+selectGoMsg = "cvo_hi_going.wav"
+selectFollowMsg = "cvo_hi_following.wav"
+selectOtherMsg = "cvo_hi_service_ready.wav"
+
+goMsg = "cvo_hi_directive_logged.wav"
+goObjectMsg = "cvo_hi_directive_logged.wav"
+attackMsg = "cvo_hi_repairing.wav"
+followMeMsg = "cvo_hi_repairing.wav"
+followMsg = "cvo_hi_directive_logged.wav"
+repairMsg = "cvo_hi_repairing.wav"
+reloadMsg = "cvo_hi_repairing.wav"
+rescueMsg = "cvo_hi_rescuing.wav"
+recycleMsg = "cvo_hi_recycling.wav"
+holdMsg = "cvo_hi_awaiting_directives.wav"
+user1Msg = "cvo_hi_repairing.wav"
+killedMsg = ""
+diedMsg = "cvo_mid_service_dead.wav"
+
+[HoverCraftClass]
+velocForward = 18 // []
+velocReverse = 12.0 // []
+velocStrafe = 12.0 // []
+accelThrust = 10.0 //acceleration []
+accelDragStop = 12.0 //how fast it stops once hands are off controls []
+accelJump = 25.0 // []
+
+setAltitude = 1.0 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.4 //nose up []
+pitchThrust = 0.05 //nose down []
+
+rollStrafe = 0.13 //rolls while strafing []
+omegaSpin = 4.0 //spinning in place speed []
+omegaTurn = 5.5 //turning while moving speed []
+alphaSteer = 6.5 //how fast it responds to steering []
+rollSteer = 0.2 //rolls while steering []
+
+soundThrust = "cvbomb.wav"
+soundTurbo = "cvbomb1.wav"
+
+[ServiceTruckH]
+supplyRange = 40.0
+supplyRadius = 15.0
+supplyRate = 20.0
+supplySound = "mnu_empt.wav"
+supplyEffect = "cvserv.supply"
+supplyHard = "hp_special_1"
+
+localAmmoRate = 5
+
+// Individual classification tweakers
+serviceSTs = 1 // was 1
+serviceBuildings = 1 //was 1
+serviceCraft = 1
+serviceAllies = true
+servicePilots = 0
+serviceOther = 0
+
+objPush = 0.0f // Used while servicing. Factor based on distance from truck to target
+objDrag = 0.0f // Used while servicing. Factor based on target's velocity
+
+
+[Supply]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "cvserv.halo"
+renderName2 = "cvserv.bolt"
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "sparticle.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 20 127"
+finishColor = "0 0 0 0"
+startRadius = 5.0
+finishRadius = 1.0
+animateTime = 0.3
+
+[Bolt]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 50 63"
+finishColor = "0 0 10 0"
+startRadius = 1.0
+finishRadius = 0.3
+segmentLength = 2.0
+segmentVariance = "0.5 0.5 0.5"
+animateTime = 0.3
+textureRate = 0.05
+textureSpeed = -0.5
+
+
+[light]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "cvserv_b.glow"
+renderName2 = "cvserv_b.trailer1"
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "150 100 250 10"
+finishColor = "150 100 250 10"
+startRadius =  5.0
+finishRadius = 5.0
+animateTime = 1.2
+rotationrate = 0
+
+
+[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cvhscav_b.trailer1emit"
+emitdelay = 0.031
+delayVar = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "26.0 0.0 26.0"
+
+[trailer1emit]
+simulateBase = "sim_dust"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 135 120 45"
+finishColor = "180 170 160 0"
+startRadius =  0//1.8
+finishRadius = 3
+animateTime = 1.5
+rotationrate = 1

@@ -1,0 +1,16 @@
+[GameObjectClass]
+classLabel = "satchel"
+geometryName = "sgsatc01.xsi"
+geometryScale = 0.12
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 1
+unitName = "Satchel"
+
+[BuildingClass]
+soundAmbient = "switch01.wav"
+
+[MineClass]
+lifeSpan = 30.0
+xplBlast = "xsatxpl_b"

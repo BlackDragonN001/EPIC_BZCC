@@ -1,0 +1,147 @@
+// ========================
+// PULSE STABBER PULSE EMIT
+// ========================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "gtagg00.wav"
+
+
+damageRadius = 30.0
+
+damageValue(N) = 150
+damageValue(L) = 100
+damageValue(H) = 50
+
+damageValue(S) = 90
+damageValue(D) = 150
+damageValue(A) = 50
+
+
+particleTypes = 4
+
+//particleClass1 = "xpulemit_cb.shock"
+//particleCount1 = 1
+//particleVeloc1 = "0.0 0.0 0.0"
+//particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "xpulemit_cb.flame"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass1 = "xpulemit_cb.cloud"
+particleCount1 = 1
+particleVeloc1 = "9.0 9.0 0.0"
+
+particleClass3 = "xpulemit_cb.sparks"
+particleCount3 = 1
+particleVeloc3 = "0.0 10.0 0.0"
+
+particleClass4 = "xpulemit_cb.flame2"
+particleCount4 = 1
+particleVeloc4 = "0.0 10.0 0.0"
+
+
+particleClass5 = "xpulemit_cb.light"
+particleCount5 = 1
+particleVeloc5 = "0.0 10.0 0.0"
+
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 127 63"
+finishColor = "255 0 127 0"
+startRadius = 0.1
+finishRadius = 15.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[Flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xpulemit_cb.flameemit"
+emitDelay = 0.03
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "8.0 8.0 8.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "flm1_s.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 0 117 255"
+startRadius = 0.1
+finishRadius = 1.5
+animateTime = 0.2
+rotationRate = 10.0
+
+[cloud]
+simulateBase = "sim_smoke"
+lifeTime = .14
+renderBase = "draw_emit"
+emitName = "xpulemit_cb.cloudemit"
+emitDelay = 0.07
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "8.0 8.0 8.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 60"
+finishColor = "60 60 60 0"
+startRadius = 1.5
+finishRadius = 4.0 //
+animateTime = 3.5
+
+[sparks]
+simulateBase = "sim_ember"
+lifeTime = 0.35
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "ssparks.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "255 250 200 255"
+finishColor = "55 20 0 0"
+startRadius = 3
+finishRadius = 6
+animateTime = 0.35
+
+[flame2]
+simulateBase = "sim_ember"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "imisl_s.tga"//"ssparks.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 255"
+finishColor = "55 20 0 0"
+startRadius = 3
+finishRadius = 4
+animateTime = 0.2
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_light"
+startColor = "255 210 100 2550"
+finishColor = "50 15 0 0"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

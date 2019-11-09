@@ -1,0 +1,66 @@
+[GameObjectClass]
+geometryName = "fbover00_b.xsi"
+geometryScale = 2.5
+classLabel = "commtower"
+collisionRadius = 1.0
+scrapCost = 80
+scrapReturn = 40
+scrapValue = 3
+maxHealth = 8000
+maxAmmo = 0
+powerCost = 0
+unitName = "Overseer Array"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+isSingle = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+
+LightingType = 1 
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 2
+requireName1 = "fbantm_b"
+requireText1 = "Build Antenna"
+requireName2 = "fbforg_b"
+requireText2 = "Build Forge"
+
+provideCount = 3
+provideName1 = "fbantm_b"
+provideName2 = "fbover_b"
+provideName3 = "cbun"
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerTap2 = "HP_TAP_2"
+powerName = "fblung_b"
+detectRange = 600
+
+[BuildingClass]
+soundAmbient = "santm01.wav"
+
+[CommTowerClass]
+rangeScan = 6000 // copied from ibcbun.odf... fix this?
+periodScan = 0.0
+viewDist = 250
+MaxviewDist = 800
+MinViewDist = 40
+
+[Lod1]
+geometryName = "fboverL1_b.xsi" ;geometry for lod1
+geometryScale = 2.5
+distance = 500                    ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1
+
+

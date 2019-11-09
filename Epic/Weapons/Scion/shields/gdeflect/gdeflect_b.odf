@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "shieldup"
+ordName = NULL
+wpnName = "Deflection"
+fireSound = "gphan00.wav"
+wpnReticle = "gdeflect"
+wpnPriority = 0
+wpnCategory = "SHIE"
+
+[ShieldUpgradeClass]
+
+// deflection shield (anti-physical)
+shieldClass = "D"
+
+animateTime = 0.65
+colorRange = 0.8
+scaleStart = 0.2
+scaleFinish = 1.0
+
+// [white->white->white]
+textureName = "wasplat.tga"
+startColor = "255 255 255 100"
+middleColor = "255 255 255 120"
+finishColor = "255 255 255 0"

@@ -1,0 +1,113 @@
+[GameObjectClass]
+geometryName = "pitmaw00.xsi"
+geometryScale = 15
+classLabel = "turret"
+collisionRadius = 40.0
+scrapCost = 40
+scrapValue = 10
+maxHealth = 9000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "Pit Maw"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 0
+armorClass = H
+isStealth = 0
+powercost = 0
+
+explosionName = "ixshipxplb"
+
+requireCount = 1
+requireName1 = "ibcbun_b"
+requireText1 = "Build Relay Bunk"
+
+provideCount = 1
+provideName1 = "ibgtow_b"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "pitmaw00_b.render"
+
+//upgradeName = "ibbertha_b"
+
+
+weaponMask = 00111
+weaponHard1 = "hp_gun_1"
+//recoilName1 = "recoil_1"
+weaponName1 = "pmtentacle_cb"//"gpitsnare"//"gplasgt_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "hp_gun_2"
+//recoilName2 = "recoil_2"
+weaponName2 = ""//"gplasgt_cb"
+weaponAssault2 = 0
+
+//weaponHard3 = "hp_cannon_3"
+//recoilName3 = "recoil_3"
+//weaponName3 = "g50calGT_ab"//"gplasgt_cb"
+//weaponAssault3 = 0
+
+lightHard1 = "hp_gun_1"
+lightName1 = "spotwhite"
+
+turretCount = 3
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_light_1"
+turretName3 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 600
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 0.5
+engageRange = 600
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "ANS"
+
+GunTowerProcessCheckCantHit = false 
+
+killedMsg = "ivtank07.wav"
+diedMsg = "abetty2.wav"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 600
+
+//[Lod1]
+geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+geometryScale = 2.4
+distance = 550                   ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1
+
+[render]
+renderBase = "draw_multi"
+renderCount = 3
+//renderName1 = "tbfact_a.blight1"
+//renderName2 = "tbfact_a.tendons2"
+renderName3 = "pitmaw00_b.steam"
+
+[Steam]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "140 140 120 97"
+finishColor = "210 210 140 0"
+startRadius = 10
+finishRadius = 30
+animateTime = 5.0
+emitDelay = 0.2
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "3 2 3"
+emitLife = 5.0
+delayVar = 0.15

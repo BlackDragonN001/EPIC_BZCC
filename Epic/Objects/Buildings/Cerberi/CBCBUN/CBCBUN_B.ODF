@@ -1,0 +1,155 @@
+[GameObjectClass]
+geometryName = "cbnode.xsi"
+geometryScale = 10.0 //2.0
+glowTexture = "cvrecya0.pic"
+classLabel = "commtower"
+collisionRadius = 15.0
+scrapCost = 50
+scrapReturn = 25
+scrapValue = 10
+maxHealth = 5000
+maxAmmo = 0
+PowerCost = 0
+unitName = "Uplink"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+//CanCollide = 1
+IsSingle = 0
+
+LightingType = 1
+
+armorClass = H
+
+buildSupport = B
+buildRequire = B
+
+requireCount = 1
+requireName1 = "cbpgen_b"
+requireText1 = "Build Power Node"
+
+provideCount = 2
+provideName1 = "cbcbun_b"
+provideName2 = "cbun"
+
+//upgradeName = "cbtarg_b"
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "cbcbun_b.cables"
+effectHard2 = "hp_emit_2"
+effectName2 = "cbcbun_b.cables"
+
+
+[BuildingClass]
+soundAmbient = "icomm01.wav"
+
+[CommBunkerClass]
+rangeScan = 4000
+periodScan = 0.0
+viewDist = 250
+MaxviewDist = 500
+MinViewDist = 80
+
+[PoweredBuildingClass]
+detectRange = 2700
+PowerCost = 0
+
+[cables]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cbcbun_b.cables1"
+renderName2 = "cbcbun_b.cables2"
+renderName3 = "cbcbun_b.dark"
+renderName4 = "cbcbun_b.steam"
+
+[cables1]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbcbun_b.cables1emit"
+emitDelay = 6
+emitVelocity = "0.0 0.0 0.0"//.4 0 0
+emitVariance = "80.0 0.0 80.0"// .5 .5 .5
+
+[cables1emit]
+simulateBase = "sim_ember"
+lifeTime = 1.25
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "65 65 65 35500"
+finishColor = "65 65 65 0"
+startRadius = 0.28
+finishRadius = 0.28
+segmentTime = 48
+//segmentVariance = "1 1 0"
+animateTime = 48
+
+[cables2]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbcbun_b.cables2emit"
+emitDelay = 8
+emitVelocity = "0.0 0.0 0.0"//.4 0 0
+emitVariance = "60.0 0.0 60.0"// .5 .5 .5
+
+[cables2emit]
+simulateBase = "sim_ember"
+lifeTime = 1.25
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "55 55 55 35500"
+finishColor = "55 55 55 0"
+startRadius = 0.58
+finishRadius = 0.58
+segmentTime = 48
+//segmentVariance = "1 1 0"
+animateTime = 48
+
+[dark]
+simulateBase = "sim_null"
+lifeTime = 5e30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 40.0
+finishRadius = 40.0
+animateTime = 0.5
+
+[steam]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbcbun_b.steamemit"
+emitDelay = 2.9
+emitVelocity = "0.0 35.0 0.0"//.4 0 0
+emitVariance = "0.0 1.0 0.0"// .5 .5 .5
+
+[steamemit]
+simulateBase = "sim_ember"
+lifeTime = 3
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "sootrail.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor =   "0 0 0 100" //"153 153 153 128"
+finishColor = "100 100 100 0
+startRadius = 2
+finishRadius = 4
+segmentTime = 3
+segmentVariance = "1 1 0"
+animateTime = 3
+

@@ -1,0 +1,441 @@
+// (c) BZ2CP unit "Citadel"
+// Model by Slaor
+
+[GameObjectClass]
+
+
+baseName = "cvcitadel"
+Mass = 100000000
+mrmFactor = 1
+
+provideCount = 2
+provideName1 = "cvcitadel"
+provideName2 = "artl"
+//provideName2 = "cerberi_big"
+
+limitClass1 = "cvcitadel" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 1
+limitClass1Text = "Unique Unit"
+
+//limitClass2 = "cerberi_big" // e.g. "ibrecy", *NO* ".odf" on item
+//limitClass2Count = 1
+//limitClass2Text = "Access denied"
+
+geometryName = "cvcitadel_b.xsi"
+geometryScale = 1.0 //9
+
+classLabel = "artillery"
+
+scrapValue = 50
+scrapReturn = 60
+scrapCost = 120
+maxHealth = 50000
+addHealth = 10
+maxAmmo = 60000
+addAmmo = 300
+
+aiAddAmmo = 40
+
+buildTime = 200.0
+customTime = 200.0
+
+explosionName = "xcerbxplb"
+boxCollide = 1
+collisionRadius = 300.0
+//powercost = 7
+isSingle = 1
+
+LightingType = 1
+
+unitName = "Citadel"
+
+aiName = "AttachWingman"
+aiName2 = "AttachWingman"
+
+heatSignature = 180
+imageSignature = 150.8
+radarSignature = 120
+needPilot = 0
+canSnipe = 0 // No?
+
+isAssault = 1
+
+requireCount = 5
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
+requireName2 = "cbcbun_b"
+requireText2 = "Build Uplink"
+requireName3 = "cbsbay_b"
+requireText3 = "Build Slave Node"
+requireName4 = "cbtcen_b"
+requireText4 = "Build Core Matrix"
+requireName5 = "cbfact_b"
+requireText5 = "Build Crucible"
+
+
+armorClass = H
+
+weaponMask = 11111
+
+weaponHard1 = "HP_cannon_1"
+weaponName1 = "gcbeam_b"
+weaponAssault1 = 1
+
+//weaponHard2 = "HP_cannon_1"
+//weaponName2 = "gvtmdron_b"
+//weaponAssault2 = 0
+
+//weaponHard3 = "HP_cannon_1"
+//weaponName3 = "gvtdron_b"
+//weaponAssault3 = 0
+
+weaponHard2 = "HP_SPECIAL_1"
+weaponAssault2 = 0
+weaponName2 = "gshield"
+
+//weaponHard4 = "HP_rocket_2"
+//weaponName4 = "gvmcar_b"
+//weaponAssault4 = 0
+
+
+effectHard1 = "hp_emit_2"
+effectName1 = "cvcitadel_b.beams1"
+effectHard2 = "hp_emit_3"
+effectName2 = "cvcitadel_b.beams2"
+effectHard3 = "hp_emit_4"
+effectName3 = "cvcitadel_b.beams3"
+effectHard4 = "hp_emit_5"
+effectName4 = "cvcitadel_b.beams4"
+
+effectHard5 = "hp_emit_1"
+effectName5 = "cvcitadel_b.dark"
+
+effectHard7 = "hp_cannon_1"
+effectName7 = "cvcitadel_b.blackhole"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[CraftClass]
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+
+ejectratio = 0
+IgnoreDestroyedTargets = true
+
+CanInteractWithTerminal = true
+
+xplChunk = "XBHXPL_b"
+xplCrash = "XBHXPL_b"
+OBJECT_ELASTICITY = 0
+
+weaponPitch = 1.5
+
+rangeScan = 2000.0
+periodScan = 2.0
+velocJam = 2.0
+engageRange = 1800
+
+allowLinkWeapons = 1
+
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "ADS"	// include air units as attack targets only when deployed
+
+braccelFactor = 0.05f
+strafeFactor = 0.1f
+steerFactor = 0.05f
+omegaFactor = 0.1f
+velFactor = 0.2f
+
+avoidSpeed = 5;
+topSpeed = 10;
+
+selectWaitMsg = "cvo_big_awaiting_directives.wav"
+selectAttackMsg = "cvo_big_terminate_all_humans.wav"
+selectFollowMsg = "cvo_big_following.wav"
+selectGoMsg = "cvo_big_directive_logged.wav"
+selectOtherMsg = "cvo_big_offense_online.wav"
+holdMsg = "cvo_big_holding_pattern.wav"
+
+goMsg = "cvo_big_directive_logged.wav"
+attackMsg = "cvo_big_target_acquired.wav"
+followMeMsg = "cvo_big_following.wav"
+followMsg = "cvo_big_following.wav"
+repairMsg = "cvo_big_repairing.wav"
+reloadMsg = "cvo_big_ill_be_back.wav"
+rescueMsg = "cvo_big_rescuing.wav"
+recycleMsg = "cvo_big_recycling.wav"
+otherMsg = "cvo_big_offense_online.wav" 
+
+user1Msg = ""  
+killedMsg = "cvo_big_resistance_is_useless.wav"
+diedMsg = "cvo_mid_citadel_offline.wav"
+
+[HoverCraftClass]
+setAltitude = 100.0
+accelDragStop = 30.0
+accelDragFull = 30.0
+alphaTrack = 6.0
+alphaDamp = 6.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+rollStrafe = 0.0
+rollSteer = 0.0
+
+velocForward = 10.0
+velocReverse = 10.0
+velocStrafe = 10.0
+accelThrust = 10.0
+accelBrake = 75.0
+omegaSpin = 1
+omegaTurn = 1
+alphaSteer = 8.0
+accelJump = 0.0
+
+soundThrust = "ssent01d.wav"
+
+soundDeploy = "avartle0.wav"
+soundUndeploy = "avartle4.wav"
+
+[ArtilleryClass]
+omegaTurret = 2.0
+heightDeploy = -50.0
+timeDeploy = 15.0
+timeUndeploy = 15.0
+soundDeploy = ""
+soundUndeploy = ""
+
+[DeployableClass]
+idleAttackBuildings = -1 // -1 = auto (unlock), 0 = force undeployed, 1 = force deployed
+idleAttackCraft = -1 // -1 = auto (unlock), 0 = force undeployed, 1 = force deployed
+canAttackWhenDeployed = true // if false, weapons inoperative when deployed
+canAttackWhenUndeployed = false // if false, weapons inoperative when undeployed
+
+ScanTeamLimitDeployed = 0 // 0 = all teams (default), 1 = same team only, 2 = allies only 
+isStealthDeployed = true // just like under DeployableClass
+
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cvdcars.trailer"
+//renderName2 = "ivspbombsa.flame"
+renderName2 = "sprocketa.trailer"
+//renderName2 = "sprocketa.flame"
+renderName3 = "sprocketa.Light1"
+//renderName3 = "sprocketa.Light2"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 80 255 255"
+finishColor = "50 0 255 0"
+startRadius = 4
+finishRadius = 3
+segmentTime = 3.0
+animateTime = 0.3
+
+//[flame]
+//renderBase = "draw_trail"
+//textureName = "tflame.tga"
+//textureBlend = "one one modulate"
+//textureRate = 0.05 //.05
+//startColor = "255 255 255 255"
+//finishColor = "255 255 255 0"
+//startRadius = 1.0
+//finishRadius = 1.0
+//segmentTime = 0.03
+//animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[beams1]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvcitadel_b.beams1emit"
+emitDelay = 2.1
+emitvar = 0.4
+emitVelocity = "0 -3500 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+emitInherit = "1.0 1.0 1.0"
+
+[beams1emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 455"
+finishColor = "100 120 255 0"
+startRadius = 0.5
+finishRadius = 2
+segmentLength = 3.2
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.15
+textureRate = 0.1 //.01
+
+[beams2]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvcitadel_b.beams1emit"
+emitDelay = 2.9
+emitvar = 0.6
+emitVelocity = "0 -4500 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+emitInherit = "1.0 1.0 1.0"
+
+[beams2emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.25
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 450"
+finishColor = "100 120 255 0"
+startRadius = 0.5
+finishRadius = 2
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.25
+textureRate = 0.1 //.01
+
+[beams3]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvcitadel_b.beams1emit"
+emitDelay = 5.7
+delayVar = 0.5
+emitVelocity = "0 -4500 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+emitInherit = "1.0 1.0 1.0"
+
+[beams3emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 250"
+finishColor = "100 120 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.15
+textureRate = 0.1 //.01
+
+[beams4]
+simulateBase = "sim_smoke"
+lifeTime = 1e30
+renderBase = "draw_emit"
+emitName = "cvcitadel_b.beams1emit"
+emitDelay = 4.7
+delayVar = 0.5
+emitVelocity = "0 -4500 0"//"0.0 220.0 0.0"
+emitVariance = "500.0 40.0 500.0"
+
+[beams4emit]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "120 180 255 250"
+finishColor = "100 120 255 0"
+startRadius = 0.1
+finishRadius = 0.5
+segmentLength = 2.5
+segmentVariance = "4.0 2.0 3.0"
+animateTime = 0.15
+textureRate = 0.1 //.01
+
+[dark]
+simulateBase = "sim_null"
+lifeTime = 5e30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 120.0
+finishRadius = 120.0
+animateTime = 0.5
+
+
+[blackhole]
+renderBase = "draw_multi"
+renderCount = 2
+//renderName1 = "cbport3_b.Field1"
+//renderName2 = "cbport3_b.bolts"
+renderName1 = "cvcitadel_b.matter"
+renderName2 = "cvcitadel_b.matter2"
+
+[matter]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "cvcitadel_b.matteremit"
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matteremit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 30.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[matter2]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "cvcitadel_b.matter2emit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matter2emit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "sparksa.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 0"
+finishColor = "0 0 0 155"
+startRadius = 48.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+

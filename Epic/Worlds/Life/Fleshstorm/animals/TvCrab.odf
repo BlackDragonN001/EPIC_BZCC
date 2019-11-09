@@ -1,0 +1,132 @@
+[GameObjectClass]
+baseName = "TvCrab"
+classLabel = "fv_walker"
+geometryName = "TvCrab_skel.xsi"
+cockpitName = "fvwalk_cockpit.xsi"
+geometryScale = 0.8
+
+animCount = 10
+animName1 = "idle"
+animFile1 = "TvCrab_walk.xsi"
+
+animName2 = "idle2"
+animFile2 = "TvCrab_walk.xsi"
+
+animName3 = "idle3"
+animFile3 = "TvCrab_walk.xsi"
+
+animName4 = "sitdown"
+animFile4 = "TvCrab_walk.xsi"
+
+animName5 = "walk"
+animFile5 = "TvCrab_walk.xsi"
+
+animName6 = "turn"
+animFile6 = "TvCrab_walk.xsi"
+
+animName7 = "death"
+animFile7 = "TvCrab_Death.xsi"
+
+animName8 = "death2"
+animFile8 = "TvCrab_Death.xsi"
+
+animName9 = "death3"
+animFile9 = "TvCrab_Death.xsi"
+
+animName10 = "run"
+animFile10 = "TvCrab_walk.xsi"
+
+scrapValue = 0
+scrapCost = 10
+customCost = 10
+buildTime = 20.0
+customTime = 20.0
+maxHealth = 970
+maxAmmo = 500
+addAmmo = 20
+addhealth = 20
+unitName = "Tremor Crab"
+aiName = "GechProcess"
+aiName2 = "GechProcess"
+heatSignature = 1.0
+imageSignature = 5.0
+radarSignature = 5.0
+collisionRadius = 4.0
+isAssault = 1
+explosionName = "xswarmV"
+
+needPilot=0
+
+armorClass = H
+
+requireCount = 0
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gcrab_a"
+weaponAssault1 = 1
+
+
+//////////////////////////////////  
+
+[CraftClass]
+rangeScan = 200.0
+periodScan = 5.0
+velocJam = 0.0
+engageRange = 100
+
+selectWaitMsg = "fvwalk04.wav"
+selectAttackMsg = "fvwalk01.wav"
+selectFollowMsg = "fvwalk03.wav"
+selectGoMsg = "fvwalk02.wav"
+selectOtherMsg = "fvwalk04.wav"
+holdMsg = "fvwalk12.wav"
+goMsg = "fvwalk05.wav"
+attackMsg = "fvwalk06.wav"
+followMeMsg = "fvwalk08.wav"
+followMsg = "fvwalk03.wav"
+repairMsg = "fvwalk09.wav"
+reloadMsg = "fvwalk09.wav"
+rescueMsg = "fvwalk10.wav"
+recycleMsg = "fvwalk11.wav"
+otherMsg = "fvwalk05.wav" 
+
+user1Msg = ""  
+killedMsg = "fvwalk07.wav"
+diedMsg = ""
+
+topSpeed = 15
+avoidSpeed = 10
+
+[WalkerClass]
+headYawRate	= 60.0 
+minHeadYaw = -80.0
+maxHeadYaw =  80.0
+minHeadPitch = -20.0
+maxHeadPitch = 40.0
+
+alphaDamp = 5.0
+omegaTurn = 35.0
+omegaTurnAttenuation = 0.6f
+
+velocJump = 0
+alphaTrack = 30.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+accelThrust = 4.0
+velocForward = 10.0
+velocReverse = 9.0
+
+
+
+headpiece = "head"
+rightfootpiece = "hp_rfoot";
+leftfootpiece = "hp_lfoot";
+
+stepSound  = "fwstep01.wav"
+engineSound	= "srecy01.wav"
+jumpSound  = "avwalke2.wav"
+attackSpeed = 15

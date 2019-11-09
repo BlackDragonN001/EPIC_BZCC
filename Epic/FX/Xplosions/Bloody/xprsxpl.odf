@@ -1,0 +1,122 @@
+[ExplosionClass]
+classLabel = "explosion"
+explSound = "death.wav"
+
+particleTypes = 4
+particleClass1 = "xprsxpl.bloodcloud"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+//particleClass2 = "xprsxpl.ground1"
+//particleCount2 = 1
+//particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xprsxpl.ground2"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 3.0 0.0"
+
+particleClass4 = "xprsxpl.chunk1"
+particleCount4 = 5
+particleVeloc4 = "5 5 5"
+particleBias4 = "0 1.0 0"
+
+particleClass5 = "xprsxpl.chunk2"
+particleCount5 = 4
+particleVeloc5 = "4 7 4"
+particleBias5 = " 0.0 2.0 0.0"
+
+//particleClass6 = "xprsxpl.head"
+//particleCount6 = 1
+//particleVeloc6 = "0.0 0.0 0.0"
+
+[BloodCloud]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_sprite"
+textureName = "explosion2.pic"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "104 12 02 200"
+finishColor = "104 12 02 0"
+startRadius = 1.0
+finishRadius = 5.0
+animateTime = 0.4
+
+[Ground2]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "bludpool1.tga" //"splat.pic"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "250 210 210 555"
+finishColor = "100 100 102 0"
+startRadius = 1
+finishRadius = 3
+animateTime = 10
+
+[Ground1]
+simulateBase = "sim_null"
+lifeTime = 30.0
+renderBase = "draw_planar"
+textureName = "splat.tga"
+textureBlend = "one one modulate"
+startColor = "90 0 0 255"
+finishColor = "50 0 0 0"
+startRadius = 2.5
+finishRadius = 3.2
+animateTime = 30.0
+
+[Chunks]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_sprite"
+textureName = "puff-blood.pic"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "104 12 02 200"
+finishColor = "104 12 02 0"
+startRadius = 0.2
+finishRadius = 0.1
+animateTime = 2.0
+
+[Chunk1]
+simulatebase = "sim_chunk"
+lifeTime = 1.5
+renderbase = "draw_trail"
+textureName = "wettrail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 0 0 255"
+finishColor = "100 0 0 0"
+startRadius = 0.06
+finishRadius = 0
+textureRate = -1
+animateTime = 0.3
+SegmentTime = 0.3
+
+[Chunk2]
+simulatebase = "sim_chunk"
+lifeTime = 1.5
+renderbase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 0 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.06
+finishRadius = 0.08
+animateTime = 1.5
+latitudeBands = 2
+longitudeSegments = 4
+
+[Head]
+SimulateBase = "sim_null"
+lifeTime = 2.5
+renderbase = "draw_geom"
+textureName = NULL
+textureBlend = NULL
+startColor = "0 0 0 255"
+finishColor = "0 0 0 255"
+startRadius = 1.0
+finishRadius = 1.0
+animateTime = 2.5
+geomName = "head.xsi"
+
+

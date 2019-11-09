@@ -1,0 +1,36 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "ioartl00.xsi"
+shotSound = "Ordin_c.wav"
+
+xplGround = "xgasxpl"
+xplVehicle = "xgasxpl"
+xplBuilding = "xgasxpl"
+
+renderName = "artill_b.render"
+
+ammoCost = 5
+lifeSpan = 60.0
+shotSpeed = 130.0
+
+damageValue(N) = 250
+damageValue(L) = 250
+damageValue(H) = 250
+damageValue(S) = 250
+damageValue(D) = 250
+damageValue(A) = 250
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 64"
+finishColor = "255 255 255 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 2.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 2.0

@@ -1,0 +1,151 @@
+// ===================
+// Med CERBERI Cutter Ground HIT BY sLAOR
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 5
+
+
+particleClass1 = "Xcutgnd_b.smoke"
+particleCount1 = 1
+particleVeloc1 = "0 0 0"
+
+particleClass2 = "Xcutgnd_b.sparks"
+particleCount2 = 1
+particleVeloc2 = "0 0 0"
+
+particleClass4 = "Xcutgnd_b.debris1"
+particleCount4 = 1
+particleVeloc4 = "0 0 0"
+
+particleClass3 = "Xcutgnd_b.scorch"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+//particleClass5 = "Xcutgnd_b.blade"
+//particleCount5 = 1
+//particleVeloc5 = "0.0 0.0 0.0"
+
+
+explSound = "arc01.wav"
+
+damageRadius = 1.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflections
+damageValue(A) = 5 // absorbtion
+
+kickRadius = 1.0
+kickOmega = 1.0
+kickVeloc = 0.5
+
+[blade]
+simulateBase = "sim_null"
+lifeTime = 0.11
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 0.0
+textureName = "cblade1.tga"// ringb2
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "155 155 155 255"// 180
+finishColor = "155 155 155 255"
+startRadius = 1.5 //5.0
+finishRadius = 1.5 // 50 
+animateTime = 0.11 //3.5
+rotationRate = 90
+
+[scorch]
+simulateBase = "sim_null"
+lifeTime = 3
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "10 10 10 0"
+startRadius = 2.5
+finishRadius = 1.0
+animateTime = 3
+
+[sparks]
+simulateBase = "sim_dust"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "Xcutgnd_b.sparksemit"
+emitDelay = 0.02
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "18.0 18.0 18.0"
+
+[sparksemit]
+simulateBase = "sim_ember"
+lifeTime = 1
+renderBase = "draw_twirl"
+textureName = "wflm1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 190"
+finishColor = "60 0 0 0"
+startRadius = .1
+finishRadius = .0
+animateTime = 1
+
+[debris1]
+simulateBase = "sim_dust"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "Xcutgnd_b.debris1emit"
+emitDelay = 0.02
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "18.0 18.0 18.0"
+
+[debris1emit]
+simulateBase = "sim_ember"
+lifeTime = 3.5
+renderBase = "draw_sprite"
+textureName = "gravel64.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 120 120 5550"
+finishColor = "120 120 120 0"
+startRadius = 0.2
+finishRadius = 0.2
+animateTime = 3.5
+
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "Xcutgnd_b.smokeemit"
+emitDelay = 0.1
+emitVelocity = "0.0 6.0 0.0"
+emitVariance = "6.0 6.0 6.0"
+
+[smokeemit]
+simulateBase = "sim_smoke"
+lifeTime = 2
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "80 70 60 140"
+finishColor = "160 150 100 0"
+startRadius = 2
+finishRadius = 6
+animateTime = 2
+
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 250 100 265"
+finishColor = "255 200 50 265"
+startRadius = 2.0
+finishRadius = 2.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

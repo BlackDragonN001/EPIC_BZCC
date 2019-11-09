@@ -1,0 +1,200 @@
+[GameObjectClass]
+baseName = "ivmbike_b"
+
+unitIcon = "icon_ivmbike.tga"
+infoName = "ivmbike_b.inf"
+unitStatus = "wire_ivmbike.tga"
+
+
+geometryName = "ivmbik00_b.xsi"
+cockpitName = "ivmbike_cockpit.xsi"
+classLabel = "wingman"
+animCount = 3
+animName1 = "forward"
+animFile1 = "ivmbiksf_b.xsi"
+animName2 = "neutral"
+animFile2 = "ivmbiksn_b.xsi"
+animName3 = "reverse"
+animFile3 = "ivmbiksr_b.xsi"
+geometryScale = 1.3
+scrapValue = 15
+scrapCost = 45
+scrapReturn = 20
+customCost = 60
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 1200
+maxAmmo = 1000
+addAmmo = 3
+unitName = "Mtr Bike"
+aiName = "AttachWingman"
+aiName2 = "AttachWingman"
+explosionName = "null"//"ixshipxpl"
+collisionRadius = 40.0
+
+BoxCollide = 1
+
+heatSignature = 3.0
+imageSignature = 1.0
+radarSignature = 0.1
+//isStealth = 1
+
+isAssault = 0
+
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "ivmbike_b"
+provideName2 = "sent"
+
+
+armorClass = N
+
+requireCount = 2
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+requireName2 = "ibarmo_b"
+requireText2 = "Build Armory"
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_MORTAR_1"
+weaponName1 = "gmortar_b"
+weaponAssault1 = 0
+
+//////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivmbike_b.trailer1"
+effectHard2 = "hp_emit_1"
+effectName2 = "ivmbike_b.glow"
+
+[CraftClass]
+canHunt = true
+AllowLinkWeapons = true
+xplCrash = "ixshipxpls"
+rangeScan = 750.0f
+periodScan = 5.0f
+velocJam = 15.0f
+engageRange = 600
+ejectRatio = 0.5
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+//braccelFactor = 0.05f;
+//strafeFactor = 0.1f;
+//steerFactor = 1.0f;
+//omegaFactor = 0.2f;
+//velFactor = 0.2f;
+
+avoidSpeed = 40;
+topSpeed = 60;
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "MortarBikeSubAttack"
+subAttackClass = "NNN"
+// include air units as attack targets
+// doesn't need to deploy to sub attack
+// doesn't move towards unit in sub attack
+
+selectWaitMsg = "ivmbike04.wav"
+selectAttackMsg = "ivmbike01.wav"
+selectFollowMsg = "ivmbike03.wav"
+selectGoMsg = "ivmbike02.wav"
+selectOtherMsg = "ivmbike04.wav"
+
+goMsg = "ivmbike05.wav"
+attackMsg = "ivmbike06.wav"
+followMeMsg = "ivmbike08.wav"
+followMsg = "ivmbike10.wav"
+repairMsg = "ivmbike09.wav"
+reloadMsg = "ivmbike09.wav"
+rescueMsg = "ivmbike10.wav"
+recycleMsg = "ivmbike11.wav"
+otherMsg = "ivmbike02.wav" 
+holdMsg = "ivmbike12.wav"
+
+user1Msg = ""  
+killedMsg = "ivmbike07.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+velocForward = 75.0 
+velocReverse = 40.0
+velocStrafe = 35.0
+accelThrust = 50.0 //acceleration
+accelBrake = 75.0 //braking
+accelDragStop = 50.0 //how fast it stops once hands are off controls
+accelJump = 45.0
+
+setAltitude = 2 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself [5]
+alphaDamp = 8.3 //shocks [5]
+
+pitchPitch = 0.25 //nose up [.25]
+pitchThrust = 0.2 //nose down [.25]
+
+rollStrafe = 0.15 //rolls while strafing [.25]
+omegaSpin = 5.0 //spinning in place speed [4.]
+omegaTurn = 1.5 //turning while moving speed [2.0]
+alphaSteer = 4.8 //how fast it speeds up and slows down to steering [5.5]
+rollSteer = 0.16 //rolls while steering [.4]
+
+
+soundThrust = "ibike01.wav"
+
+
+[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivMBIKE_b.traileremit"
+emitDelay = 0.1
+delayVariance = 0.05
+emitVelocity = "0.0 0 0.0"
+emitVariance = "15.0 0.0 15.0"
+
+[traileremit]
+simulateBase = "sim_dust"
+lifeTime = 2.3
+renderBase = "draw_sprite"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "160 155 150 30"
+finishColor = "180 180 180 0"
+startRadius =  .4
+finishRadius = 3.5
+animateTime = 2.3
+rotationrate = 1
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "00 80 250 30"
+finishColor = "00 80 250 30"
+startRadius =  3
+finishRadius = 3
+animateTime = 1.2
+rotationrate = 1
+
+
+[Lod1]
+geometryName = "ivmbikL1_b.xsi" ;geometry for lod1
+
+geometryScale = 1.3
+distance = 150                 ;...distance over this many meters => switch to lod2
+
+[Lod2]
+geometryName = "ivmbikL2_b.xsi" ;geometry for lod2
+geometryScale = 1.3
+distance = 200                 ;...distance over this many meters => switch to lod2

@@ -1,0 +1,31 @@
+[GameObjectClass]
+geometryName = "fblung00_b.xsi"
+classLabel = "powerlung"
+animCount = 1
+animName1 = "loop"
+animFile1 = "fblung00_b.xsi"
+geometryScale = 1.5
+collisionRadius = 1.0
+scrapCost = 20
+scrapReturn = 10
+scrapValue = 3
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Lung"
+heatSignature = 0.8
+imageSignature = 1.0
+radarSignature = 1.0
+canCollide = 1
+isAssault = 0
+explosionName = "xbldxpl"
+ClearBuildZone = 0
+
+armorClass = H
+
+provideCount = 2
+provideName1 = "fblung_b"
+provideName2 = "pgen"
+
+
+[BuildingClass]
+soundAmbient = 

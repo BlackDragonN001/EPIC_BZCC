@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "cannon"
+//altName = "gshadow_c"
+ordName = "corbitb"
+wpnName = "Orbital"
+fireSound = ""
+wpnReticle = "gsalvo"
+wpnCategory = "GUN"
+aiRange = 6000
+isAssault = 0
+AllowAimHigh = true 
+
+[CannonClass]
+shotDelay = 0.9
+salvoCount = 2
+salvoDelay = 0.01
+shotVariance = 12.0
+coneAngle = 2

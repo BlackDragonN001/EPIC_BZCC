@@ -1,0 +1,49 @@
+//
+// StratStarting.txt - Vehicles possible to start with in strat/MPI
+//
+// Format of lines: unique identifier, space separator, odf filename, space
+// separator, description Lines starting with // are ignored.
+//
+// NOTE: do not put .odf extension on odf filename; added automatically
+// on loading
+//
+// Also, please remember that these vehicle names will be changed to
+// the appropriate race at runtime, so make sure they exist across
+// races -- for example, ivmbike has no scion counterpart (fvmbike).
+// 
+// Unlike MPVehicles.txt, there are no XSI names. You still need to
+// have a unique identifier for the first part of the name, due to
+// code reasons. No more than 32 craft can be listed here. Also, do
+// *NOT* put more than 6 different types of units in here, as that'll
+// exceed the F#-keys available in MPI. There's a 4-player limit on
+// MPI, which means F8-F10 must be reserved for allies. With the
+// recycler on F1, that means the rest of the groups must fit in
+// F2..F6.
+//
+// The first 2 fields on each line must be 5 characters or longer, or
+// the line will be ignored.
+
+Turr01 ivturr_b Turret / Guardian
+Turr02 ivturr_b Turret / Guardian
+Turr03 ivturr_b Turret / Guardian
+Turr04 ivturr_b Turret / Guardian
+Scav01 ivscav_c Scav
+Scav02 ivscav_c Scav
+Scav03 ivscav_c Scav
+Scav04 ivscav_c Scav
+Scout01 ivscout_b Scout
+Scout02 ivscout_b Scout
+Scout03 ivscout_b Scout
+Scout04 ivscout_b Scout
+Tank01 ivtank_b Sabre / Warrior
+Tank02 ivtank_b Sabre / Warrior
+Tank03 ivtank_b Sabre / Warrior
+Tank04 ivtank_b Sabre / Warrior
+ATank01 ivatank_b Assault Tank / Titan
+ATank02 ivatank_b Assault Tank / Titan
+ATank03 ivatank_b Assault Tank / Titan
+ATank04 ivatank_b Assault Tank / Titan
+Serv01 ivserv_b Service Truck / Healer
+Serv02 ivserv_b Service Truck / Healer
+Serv03 ivserv_b Service Truck / Healer
+Serv04 ivserv_b Service Truck / Healer

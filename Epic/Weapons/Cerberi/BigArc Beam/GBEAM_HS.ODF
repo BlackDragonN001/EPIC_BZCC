@@ -1,0 +1,52 @@
+[WeaponClass]
+classLabel = "arccannon"
+altName = "gbeam_hs"
+ordName = NULL
+wpnName = "Arc Stream"
+fireSound = "arc02.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 0
+aiRange = 900
+flashName = "gbeam_hs.flash"
+
+[ArcCannonClass]
+startDist = 1000.0
+
+finishDist = 1000.0
+
+travelVeloc = 500.0
+
+coneAngle = 0.45
+
+ammoCost = 150.0
+
+damageValue(N) = 250.0 // none
+damageValue(L) = 140.0 // light
+damageValue(H) = 100.0 // heavy
+
+damageValue(S) = 70.0 // standard
+damageValue(D) = 100.0 // deflection
+damageValue(A) = 50.0 // absorbtion
+
+activeSound = "arc01.wav"
+
+xplGround = "xbulgnd"
+xplVehicle = "xarccar_a"
+xplBuilding = "xarccar_a"
+
+[Flash]
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 120"
+finishColor = "120 50 0 0"
+startRadius = 2.0
+finishRadius = 0.1
+segmentLength = 10.0
+segmentVariance = "8.5 8.5 8.5"
+animateTime = 1.0
+textureRate = 0.003
+textureSpeed = -1
+
+

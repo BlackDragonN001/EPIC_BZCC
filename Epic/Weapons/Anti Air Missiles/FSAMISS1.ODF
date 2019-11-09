@@ -1,0 +1,61 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "Ordin_b.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "xaasxpl"
+xplBuilding = "xaasxpl"
+
+renderName = "fsamiss1.render"
+
+ammoCost = 25
+lifeSpan = 5.0 // 1000m
+shotSpeed = 200.0
+
+damageValue(N) = 800 // none
+damageValue(L) = 480 // light
+damageValue(H) = 140 // heavy
+
+damageValue(S) = 580 // standard
+damageValue(D) = 440 // deflection
+damageValue(A) = 800 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "fsamiss1.flare"
+renderName2 = "fsamiss1.halo"
+renderName3 = "fsamiss1.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 1.8
+finishRadius = 1.8
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 63"
+finishColor = "0 127 255 63"
+startRadius = 1.8
+finishRadius = 1.8
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.4
+finishRadius = 0.0
+segmentTime = 1.2

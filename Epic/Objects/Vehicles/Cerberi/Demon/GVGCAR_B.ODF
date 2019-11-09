@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "dispenser"
+//ordName = "cvgdron_b"
+wpnName = "Gun Drone"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPEC"
+aiRange = 1350
+isAssault = 0
+
+[DispenserClass]
+shotDelay = 3.0
+objectClass = "cvgdron_b"
+

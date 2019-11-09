@@ -1,0 +1,54 @@
+[OrdnanceClass]
+classLabel = "beam"
+
+shotGeometry = NULL
+xplGround = "xflagnd_b"
+xplVehicle = "xflacar"
+xplBuilding = "xflabld"
+
+renderName = "flash_ab.render"
+
+ammoCost = 16
+lifeSpan = 100e-6 // 100m
+shotSpeed = 3e6
+
+damageValue(N) = 30 // none // 600/sec
+damageValue(L) = 25 // light // 500/sec
+damageValue(H) = 20 // heavy // 400/sec
+
+damageValue(S) = 22 // standard // 450
+damageValue(D) = 30 // deflection // 600
+damageValue(A) = 15 // absorbtion // 300
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "flash_ab.core"
+renderName2 = "flash_ab.fringe"
+
+[Core]
+renderBase = "draw_bolt"
+textureName = NULL
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 0 0"
+startRadius = 0.15
+finishRadius = 0.075
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.2
+textureRate = 0.01
+
+[Fringe]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 1.5
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3
+textureRate = 0.02
+textureSpeed = -5.0

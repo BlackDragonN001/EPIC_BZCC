@@ -1,0 +1,156 @@
+//(c)BZ2CP unit "Brawler"
+// Created by Slaor and Pastell
+
+[GameObjectClass]
+baseName = "fvrbomb_b"
+
+unitIcon = "icon_fvrbomb_b.tga"
+infoName = "fvrbomb_b.inf"
+unitStatus = "wire_fvrbomb_b.tga"
+
+geometryName = "fvbomb_b.xsi"
+geometryScale = 1.4
+cockpitName = "fvrbomb_cockpit.xsi"
+
+animCount = 3
+
+animName1 = "forward"
+animFile1 = "fvbombsf_b.xsi"
+animName2 = "neutral"
+animFile2 = "fvbombsn_b.xsi"
+animName3 = "reverse"
+animFile3 = "fvbombsr_b.xsi"
+
+classLabel = "wingman"
+scrapValue = 30
+scrapReturn = 35
+scrapCost = 70
+customCost = 80
+buildTime = 15.0
+customTime = 20.0
+maxHealth = 4000
+maxAmmo = 4000
+addAmmo = 5
+unitName = "Brawler"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 1.5
+imageSignature = 1.5
+radarSignature = 0.3
+collisionRadius = 40.0
+
+canSnipe = 0
+
+isAssault = 1
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "fvrbomb_b"
+provideName2 = "rbomb"
+
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "fbforg_b"
+requireText1 = "Upgrade Kiln"
+requireName2 = "fbstro_b"
+requireText2 = "Build Stronghold"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gsting_cb"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_3"
+weaponName2 = "gsting_cb"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_2"
+weaponName3 = "gfrbomb_b"
+weaponAssault3 = 1
+weaponHard4 = "HP_GUN_1"
+weaponName4 = "ggauss_cb"
+weaponAssault4 = 0
+weaponHard5 = "HP_GUN_2"
+weaponName5 = "ggauss_cb"
+weaponAssault5 = 0
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2" 
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivtank_b.trailer"
+
+[CraftClass]
+canHunt = true
+xplCrash = "xscionxplb"
+rangeScan = 750.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 600
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "ANS"
+
+//braccelFactor = 0.03
+//velFactor = 0.2
+//steerFactor = 1.5
+//omegaFactor = 0.2
+//strafeFactor = 0.2
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 47 // []
+velocReverse = 22.0 // []
+velocStrafe = 23.0 // []
+accelThrust = 25.0 //acceleration []
+accelDragStop = 12.0 //how fast it stops once hands are off controls []
+accelJump = 25.0 // []
+
+setAltitude = 2.5 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.35 //nose up []
+pitchThrust = 0.1 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 5.0 //spinning in place speed []
+omegaTurn = 1.9 //turning while moving speed []
+alphaSteer = 6.0 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "ssent01j.wav"
+soundTurbo = "smort03.wav"
+

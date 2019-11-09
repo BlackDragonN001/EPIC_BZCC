@@ -1,0 +1,21 @@
+Changelog for EPIC 2.1 by General BlackDragon:
+
+=== Changes since EPIC 2.0 ===
+
+- Fixed Map preview images being upside down vertically.
+- Fixed incorrect Height scale on BZ2 stock maps converted to EPIC. (25% > 75%)
+
+=== Changes since EPIC 1.0 ===
+
+- Converted all Textures to DXTBZ2 format.
+- EPIC DLL re-written from scratch by General BlackDragon. Now handles IA and ST/MPI modes, all in one DLL package. Support for FFA Alliances and mutliple AI teams.
+- Made all MPI maps able to be played in either ST or MPI modes, and made them inherit Terrains from their IA versions.
+- Added new Extra Option pages, with FFA Alliance and MPI/ST toggle switches.
+- Made Cerberi a playable race.
+- Numerous bug fixes for Cerberi.
+- Added super-weapons to MPI-only Recycler Armories
+	- ISDF get a modified version of the Nuke from Steeveeo's Recycler Variant.
+	- Scions get a super jax like bomb.
+	- Cerberi get a black hole bomb, based on the Singularity Mortar.
+- Made Cerberi Comm Bunkers remote selectable from any vehicle as Cerberi.
+- Enabled commented out CanHunt = true, now that Hunt works properly in 1.3. Only added to hover offensive units, not Tracked / Walkers yet.

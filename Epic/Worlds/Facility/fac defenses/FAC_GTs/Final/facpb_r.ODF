@@ -1,0 +1,132 @@
+[GameObjectClass]
+geometryName = "facpb_r.xsi"
+geometryScale = 0.4
+classLabel = "turret"
+collisionRadius = 40.0
+
+powercost = 0
+scrapCost = 70
+scrapValue = 15
+maxHealth = 2000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addammo = 10
+unitName = "Rocket Sentry"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+//aiName = "SupportProcess"
+//aiName2 = "SupportProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+armorClass = H
+
+
+
+explosionName = "ixshipxplw"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "facpb_r.lightr"
+effectHard2 = "hp_emit_2"
+effectName2 = "facpb_r.lighta"
+effectHard3 = "hp_emit_3"
+effectName3 = "facpb_r.steam"
+
+
+weaponMask = 00111
+
+weaponHard1 = "hp_rocket_1"
+recoilName1 = "turret_x_1"
+weaponName1 = "gfafmsl_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "hp_rocket_2"
+recoilName2 = "turret_x_1"
+weaponName2 = "gfafmsl_cb"
+weaponAssault2 = 0
+
+weaponHard3 = "hp_rocket_3"
+recoilName3 = "turret_x_1"
+weaponName3 = "gfafmsl_cb"
+weaponAssault3 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_light_1"
+turretName4 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 700
+periodScan = 1.0
+velocJam = 0.0
+weaponPitch = 0.5
+steerFactor = 1
+engageRange = 500
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+killedMsg = "ivtank07.wav"
+diedMsg = "abetty3.wav"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 800
+
+//[Lod1]
+geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+geometryScale = 2.4
+distance = 550                   ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1
+
+[Steam]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.5
+emitDelayVar = 0.1
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 3.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 130"
+finishColor = "250 250 250 0"
+startRadius = 2
+finishRadius = 4
+animateTime = 3.0
+rotationRate = 0.2
+
+[lighta]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "100 35 0 800"
+finishColor = "100 35 0 800"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[lightr]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "80 0 0 500"
+finishColor = "80 0 0 500"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

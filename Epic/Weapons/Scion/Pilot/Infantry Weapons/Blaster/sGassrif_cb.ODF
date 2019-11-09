@@ -1,0 +1,31 @@
+[WeaponClass]
+classLabel = "machinegun"
+
+
+altName = "sgassrif_ab"
+ordName = "sassrif_cb"
+wpnName = "Blaster"
+fireSound = "lasgun.wav"
+wpnReticle = "gchain"
+wpnCategory = "HAND"
+isAssault = 0
+flashName = "sgassrif_cb.flash"
+aiRange = 350
+
+[CannonClass]
+shotDelay = 0.24
+shotVariance = 0.001
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "55 255 0 300"
+finishColor = "0 100 0 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

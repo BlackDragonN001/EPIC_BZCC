@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "shieldup"
+ordName = NULL
+wpnName = "Absorbtion"
+fireSound = "gphan00.wav"
+wpnReticle = "gabsorb"
+wpnPriority = 0
+wpnCategory = "SHIE"
+
+[ShieldUpgradeClass]
+
+// absorption shield (anti-energy)
+shieldClass = "A"
+
+animateTime = 1.0
+colorRange = 0.7
+scaleStart = 0.2
+scaleFinish = 1.0
+
+// [white->yellow->red]
+texturename = "ring.tga"
+startColor = "255 255 255 10"
+middleColor = "200 190 100 90"
+finishColor = "150 80 0 0"

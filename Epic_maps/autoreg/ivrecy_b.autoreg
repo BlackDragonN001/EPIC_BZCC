@@ -1,0 +1,16 @@
+[RecyclerList]
+ODFName = "ivrecy_b"
+Description = "Epic Recycler"
+
+[RecyclerListFFA]
+ODFName = "ivrecy_b"
+Description = "Epic Recycler"
+
+[RecyclerListMPI]
+ODFName = "ivrecy_b"
+Description = "Epic Recycler"
+
+[IAHumanRecyclerList]
+ODFName = "ivrecy_b"
+Description = "Epic Recycler"
+

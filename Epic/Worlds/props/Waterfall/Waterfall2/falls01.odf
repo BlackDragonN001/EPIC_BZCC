@@ -1,0 +1,48 @@
+[GameObjectClass]
+geometryName = "falls1.xsi"
+geometryScale = 2
+classLabel = "computer"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 0
+maxAmmo = 0
+unitName = "waterfall"
+heatSignature = 0.0
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canCollide = 0
+canInteract = 0
+
+
+[ComputerClass]
+ShieldVel = 0.55
+ShieldAmp = 0.02
+Shield = "shield"
+
+
+[BuildingClass]
+SoundAmbient = "arc01.wav"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "falls01.render"
+
+
+[BuildingClass]
+
+[render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.65
+emitDelayVar = 0.53
+emitVelocity = "-0.0 15.0 00.0"
+emitVariance = "5.0 5.0 5.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 11.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "205 205 205 200"
+finishColor = "255 255 255 0"
+startRadius = 12
+finishRadius = 20
+animateTime = 2.0
+rotationRate = 2.0

@@ -1,0 +1,40 @@
+[OrdnanceClass]
+classLabel = "radarpopper"
+
+shotGeometry = "ioartl00.xsi"
+shotSound = "Ordin_c.wav"
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+renderName = "cworms.render"//"cpopper_b.render"
+
+ammoCost = 20
+lifeSpan = 3
+shotSpeed = 75.0
+
+damageValue(N) = 15 // none
+damageValue(L) = 10 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 10 // standard
+damageValue(D) = 5 // deflection
+damageValue(A) = 15 // absorbtion
+
+[RadarPopperClass]
+launchXpl = "xpopfir"
+launchOrd = "cpoproc_b"
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "sparticle.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 63"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.5
+animateTime = 0.2
+emitDelay = 0.005
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.2

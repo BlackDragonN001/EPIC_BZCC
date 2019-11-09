@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = NULL
+classLabel = "spraymine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxHeat = 0
+maxAmmo = 3000 //sprays anchors to slow down ships for 15 seconds.
+heatSignature = 0.0
+unitName = ""
+canDetect = 0
+canInteract = 0
+explosionName = "null"
+LeaveExplodeScorch = false
+
+[SprayBuildingClass]
+payloadName = "qsingE4db"
+jumpSound = ""
+fireSound = ""
+triggerDelay = 0.0
+shotDelay = 0.005 //Ties in with ammo to make spray duration, dont touch!
+setAltitude = 3.0
+omegaSpin = 10.0
+anglePitch = 1.4 //0.9 //3.6//0.25

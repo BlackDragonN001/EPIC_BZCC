@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = NULL //"gmflar00.x"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1000
+unitName = ""
+heatSignature = 100.0
+explosionName = "defflarxpl"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+[MineClass]
+lifeSpan = 10.0
+
+[FlareMineClass]
+payloadName = "snuke2_b"
+fireSound = ""
+triggerDelay = 0.0
+shotDelay = 0.1
+shotVariance = 1.8
+

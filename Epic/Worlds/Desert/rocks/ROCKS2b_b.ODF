@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "rockS2b_b.xsi"
+geometryScale = 5
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Rock"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 15.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+canCollide = 1
+
+[BuildingClass]
+isTerrain = 1
+justTerrain = 1
+justFlat = 1

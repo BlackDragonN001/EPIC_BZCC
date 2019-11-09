@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic: Sea Battle"
+mapTga = "Epic_SB.dxtbz2"
+mapDesc = "Epic_SB.txt"
+mySide = 1

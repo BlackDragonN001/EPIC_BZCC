@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = NULL
+classLabel = "spraymine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxHeat = 0
+maxAmmo = 12
+heatSignature = 0.0
+unitName = ""
+explosionName = "null"
+LeaveExplodeScorch = false
+
+[SprayBuildingClass]
+payloadName = "qsingE8d"
+//jumpSound = ""
+//fireSound = ""
+triggerDelay = 0.0
+shotDelay = 0.0416
+setAltitude = 0.2
+omegaSpin = 20.0
+anglePitch = 0.25

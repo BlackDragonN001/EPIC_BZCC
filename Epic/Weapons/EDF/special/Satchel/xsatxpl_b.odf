@@ -1,0 +1,106 @@
+// =================
+// SATCHEL EXPLOSION
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 15
+
+particleClass1 = "xmmortgnd_b.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xmmortgnd_b.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 6.0 0.0"
+
+particleClass3 = "xgasgnd.flame"
+particleCount3 = 2
+particleVeloc3 = "0.0 5.0 0.0"
+
+particleClass4 = "xmmortgnd_b.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xmmortgnd_b.shocks3"
+particleCount5 = 1
+particleVeloc5 = "0.0 5.0 0.0"
+
+particleClass6 = "xmmortgnd_b.sparks"
+particleCount6 = 1
+particleVeloc6 = "0.0 -4.0 0.0"
+
+particleClass7 = "xmmortgnd_b.shocks"
+particleCount7 = 1
+particleVeloc7 = "0.0 5.0 0.0"
+
+particleClass8 = "xmmortgnd_b.core"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "debris.chunks"
+particleCount9 = 10
+particleVeloc9 = "25.0 27.5 25.0"
+particleBias9 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 15
+particleVeloc10 = "28.0 30.5 28.0"
+particleBias10 = "0.0 5.0 0.0"
+
+particleClass11 = "xmmortgnd_b.posroll"
+particleCount11 = 1
+particleVeloc11 = "10.0 0.0 10.0"
+
+particleClass12 = "xmmortgnd_b.trail"
+particleCount12 = 6
+particleVeloc12 = "80.0 80.0 80.0"
+
+particleClass13 = "xmmortgnd_b.char"
+particleCount13 = 1
+particleVeloc13 = "0.0 0.0 0.0"
+
+particleClass14 = "xmmortgnd_b.shocks2"
+particleCount14 = 1
+particleVeloc14 = "0.0 5.0 0.0"
+
+particleClass15 = "xmmortgnd_b.dirt"
+particleCount15 = 1
+particleVeloc15 = "0.0 -58.0 0.0"
+
+
+explSound = "xmv1.wav"
+damageRadius = 80.0
+damageValue(N) = 7000
+damageValue(L) = 6000
+damageValue(H) = 5000
+damageValue(S) = 6000
+damageValue(D) = 7000
+damageValue(A) = 5000
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 3.0
+finishRadius = 50.0
+animateTime = 1.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 255 127"
+finishColor = "0 0 255 0"
+startRadius = 3.0
+finishRadius = 80.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16

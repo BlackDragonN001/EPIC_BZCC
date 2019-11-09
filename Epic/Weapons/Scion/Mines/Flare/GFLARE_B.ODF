@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Solar Flare"
+fireSound = "mmine01.wav"
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+isAssault = 0
+
+[DispenserClass]
+shotDelay = 2.0
+objectClass = "flaremine_b"

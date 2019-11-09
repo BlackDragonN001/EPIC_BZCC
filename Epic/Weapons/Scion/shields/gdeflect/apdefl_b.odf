@@ -1,0 +1,26 @@
+[GameObjectClass]
+baseName = "apdefl"
+geometryName = "apshld00.xsi"
+classLabel = "wpnpower"
+scrapCost = 30
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omniyellow"
+
+requireCount = 2
+requireName1 = "fbkiln_b"
+requireText1 = "Build Kiln"
+requireName2 = "fbantm_b"
+requireText2 = "Build Antenna"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gdeflect_b"

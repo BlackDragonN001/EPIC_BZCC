@@ -1,0 +1,13 @@
+[WeaponClass]
+classLabel = "terrainexpose"
+ordName = NULL
+wpnName = "SITE Camera"
+fireSound = "gsite00.wav"
+wpnReticle = "gsitecam.0"
+wpnPriority = 0
+wpnCategory = "SPEC"
+
+[SpecialItemClass]
+activeSound = 
+expireSound = "gsite02.wav"
+ammoCost = 10

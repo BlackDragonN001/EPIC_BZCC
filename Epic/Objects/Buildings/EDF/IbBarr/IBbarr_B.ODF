@@ -1,0 +1,106 @@
+[GameObjectClass]
+CategoryTypeOverride = 4 \\Hit '4' to activate
+
+geometryName = "ibarmou_b.xsi"
+geometryScale = 1.5
+classLabel = "factory"
+scrapCost = 45
+scrapReturn = 25
+scrapValue = 10
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Barracks"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+
+LightingType = 1
+
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "ibpgen_b"
+requireText1 = "Build Power"
+
+provideCount = 2
+provideName1 = "ibtrain_b"
+provideName2 = "barr"
+
+collisionRadius = 25.0
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 3
+tunnel01Z0 = 3
+tunnel01DX = 2
+tunnel01DZ = 4
+tunnel01Edge = "wwtw"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+WeaponConfig = "iiweapon"
+BaseSlot = 4
+
+[BuildGroup1]
+BuildLabel = "Infantry"
+buildItem1 = "ispilo_b"
+buildItem2 = "issold_b"
+buildItem3 = "ISsgSOLD_b"
+buildItem4 = "isHsold_b"
+
+buildItem5 = "ivspbk_b"
+
+
+[BuildGroup3]
+BuildLabel = "Specialist"
+buildItem1 = "issniper_b"
+//buildItem2 = "isdmsol_b"
+buildItem2 = "ismgsol_b"
+buildItem3 = "isbmsol_b"
+buildItem4 = "isaasol_b"
+
+[BuildGroup5]
+BuildLabel = "Weapons"
+buildItem1 = "apsnip_b"
+buildItem2 = "apassrif_b"
+buildItem3 = "apmgren_b"
+buildItem4 = "apbazo_b"
+buildItem5 = "apbeamrif_b"
+buildItem6 = "apsam_b"
+//buildItem7 = "apsatcom_b"
+
+[BuildGroup7]
+BuildLabel = "Pack"
+buildItem1 = "aphjetp_b"
+builditem2 = "apsatc_b"
+buildItem3 = "apgren_b"
+buildItem4 = "apsatcom_b"
+//buildItem5 = "ivbomb_b"
+//buildItem6 = "ivpfighter_b"
+
+
+//[Lod1]
+geometryName = "ibfactL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 600
+dontShiftLOD = 1

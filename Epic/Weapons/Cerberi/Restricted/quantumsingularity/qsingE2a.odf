@@ -1,0 +1,43 @@
+[GameObjectClass] // Create the medium damage field.
+geometryName = "QSING01.XSI"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Quantum Singularity"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+collisionRadius = 0
+canDetect = 0
+Tuggable = 0
+canInteract = 0
+powerCost = 0
+isStealth = 1
+ownsTerrain = 0
+isTerrain = 0
+canCollide = 0
+LeaveExplodeScorch = false
+explosionName = "null"
+
+[MineClass]
+lifeSpan = 120 //1e6 //120.0
+
+[FlareMineClass]
+payloadName = "qsingE2b" //"flarepuff"
+//fireSound = "smine01.wav"
+triggerDelay = 0.0
+shotDelay = 0.02
+shotVariance = 0.0
+damageRadius = 0.0 //100.0
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+kickRadius = 0.0 //300.0
+kickVeloc = 0.0 //-2.0
+kickOmega = 0.0
+

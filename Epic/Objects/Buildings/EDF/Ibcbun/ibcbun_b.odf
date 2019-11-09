@@ -1,0 +1,59 @@
+[GameObjectClass]
+geometryName = "ibcbun_b.xsi"
+geometryScale = 2
+classLabel = "commbunker"
+collisionRadius = 2.0
+scrapCost = 50
+scrapReturn = 25
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Relay Bunker"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+
+LightingType = 1 
+
+explosionName = "ixshipxplw"
+
+armorClass = H
+
+requireCount = 1
+requireName1 = "ibpgen_b"
+requireText1 = "Build Power"
+
+provideCount = 2
+provideName1 = "ibcbun_b"
+provideName2 = "cbun"
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_lblue_nf"
+
+effectHard1 = "hp_light_2"
+effectName1 = "ibaselights_b.gflash"
+
+[BuildingClass]
+soundAmbient = "icomm01.wav"
+
+[CommBunkerClass]
+rangeScan = 4000
+periodScan = 0.0
+viewDist = 250
+MaxviewDist = 500
+MinViewDist = 80
+
+[PoweredBuildingClass]
+detectRange = 3000
+
+[Lod1]
+geometryName = "ibcbunL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 360                    ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

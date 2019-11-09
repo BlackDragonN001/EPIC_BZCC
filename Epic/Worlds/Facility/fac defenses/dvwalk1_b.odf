@@ -1,0 +1,210 @@
+[GameObjectClass]
+baseName = "fvcwalk"
+classLabel = "iv_walker"
+cockpitName = "ivwalk_cockpit.xsi"
+geometryName = "dv_walk1.xsi"
+geometryScale = 0.4
+
+animCount = 10
+animName1 = "idle"
+animFile1 = "ivwalk2_idle.xsi"
+
+animName2 = "idle2"
+animFile2 = "ivwalk2_idle2.xsi"
+
+animName3 = "idle3"
+animFile3 = "ivwalk2_idle3.xsi"
+
+animName4 = "sitdown"
+animFile4 = "ivwalk2_sit.xsi"
+
+animName5 = "walk"
+animFile5 = "ivwalk2_walk.xsi"
+
+animName6 = "turn"
+animFile6 = "ivwalk2_turn.xsi"
+
+animName7 = "death"
+animFile7 = "ivwalk2_death1.xsi"
+
+animName8 = "death2"
+animFile8 = "ivwalk2_death2.xsi"
+
+animName9 = "death3"
+animFile9 = "ivwalk2_death2.xsi"
+
+animName10 = "run"
+animFile10 = "ivwalk2_walk.xsi"
+
+scrapValue = 50
+scrapCost = 100
+customCost = 105
+buildTime = 20.0
+customTime = 20.0
+maxHealth = 8370
+maxAmmo = 8000
+addAmmo = 50
+unitName = "Scorcher"
+aiName = "GechProcess"
+heatSignature = 2
+imageSignature = 5.0
+radarSignature = 5.0
+collisionRadius = 25.0
+isAssault = 1
+
+armorClass = H
+needpilot = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "dvwalk1_b.flamer"
+effectHard2 = "hp_emit_2"
+effectName2 = "dvwalk1_b.steam"
+effectHard3 = "hp_emit_3"
+effectName3 = "dvwalk1_b.lighta"
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+weaponHard1 = "HP_cannon_1"
+weaponName1 = "gsplasma_ab"
+weaponAssault1 = 0
+weaponHard2 = "HP_SPECIAL_1"
+weaponName2 = "gproxmin_b"
+weaponAssault2 = 0
+
+
+//////////////////////////////////
+
+[CraftClass]
+rangeScan = 600.0
+periodScan = 5.0
+velocJam = 0.0
+engageRange = 500
+
+selectWaitMsg = "fvcwalksecure.wav"
+selectAttackMsg = "TargetAcquired.wav"
+selectFollowMsg = "ivwalk2search.wav"
+selectGoMsg = "ivwalk2scan.wav"
+selectOtherMsg = "ivwalk2search.wav"
+
+goMsg = "ivwalk2scan.wav"
+attackMsg = "TargetAcquired.wav"
+followMeMsg = "ivwalk2search.wav"
+followMsg = "ivwalk2search.wav"
+repairMsg = "ivwalk2search.wav"
+reloadMsg = "ivwalk2search.wav"
+rescueMsg = "ivwalk2search.wav"
+recycleMsg = "ivwalk2search.wav"
+otherMsg = "ivwalk2search.wav" 
+holdMsg = "ivwalk2scan.wav"
+user1Msg = ""  
+killedMsg = "ivwalk2lost.wav"
+diedMsg = "CriticalDamage.wav"
+
+
+// Angles are in degress
+[WalkerClass]
+is13Walker = true
+//Walker12Type = 0
+
+headYawRate	= 100.0 
+minHeadYaw = -90.0
+maxHeadYaw =  90.0
+minHeadPitch = -30.0
+maxHeadPitch = 30.0
+
+alphaDamp = 5.0
+omegaTurn = 40.0
+omegaTurnAttenuation = 0.5f
+
+alphaSteer = 0.1
+velocJump = 0;
+alphaTrack = 20.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+accelThrust = 8.0
+velocForward = 20.0
+velocReverse = 16.0
+
+headpiece = "head"
+rightfootpiece = "rfoot";
+leftfootpiece = "lfoot";
+
+jumpSound  = "avwalke2.wav"
+landSound  = "avwalke3.wav"
+stepSound  = "fvcwalkwalk.wav"
+
+engineSound	= "iatank01.wav"
+
+[flamer]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "dvwalk1_b.smokeEmitter"
+renderName2 = "dvwalk1_b.FlameEmitter"
+
+[SmokeEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "0.0 4.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 2.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 60"
+finishColor = "80 80 80 0"
+startRadius = 0.6
+finishRadius = 1.5
+animateTime = 2.0
+rotationRate = 2.0
+
+[FlameEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.5 0.5 0.5"
+emitLife = 1.0
+textureName = "flm1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 0.7
+finishRadius = 0.3
+animateTime = 1.0
+rotationRate = 10.0
+
+[Steam]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.5
+emitDelayVar = 0.1
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 3.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 130"
+finishColor = "250 250 250 0"
+startRadius = 2
+finishRadius = 4
+animateTime = 3.0
+rotationRate = 0.2
+
+[lighta]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "150 75 0 600"
+finishColor = "150 75 0 600"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+

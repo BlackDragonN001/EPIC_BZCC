@@ -1,0 +1,18 @@
+[GameObjectClass]
+geometryName = "pbwseg02_b.xsi"
+geometryScale = 2
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Debris"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+ownsTerrain = 1
+canCollide = 0
+
+[BuildingClass]
+

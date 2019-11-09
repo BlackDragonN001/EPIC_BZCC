@@ -1,0 +1,52 @@
+[GameObjectClass]
+geometryName = "sbtowe00.xsi"
+geometryScale = 2.4
+classLabel = "turret"
+collisionRadius = 10.0
+scrapCost = 50
+scrapValue = 10
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "CCA Gun Tower"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+
+powercost = 0
+
+buildSupport = "F"
+buildRequire = "A"
+
+
+
+weaponMask = 00011
+weaponHard1 = "hp_cannon_01"
+recoilName1 = "recoil_r"
+weaponName1 = "gsovGT_ab"
+weaponAssault1 = 0
+weaponHard2 = "hp_cannon_02"
+recoilName2 = "recoil_l"
+weaponName2 = "gsovGT_ab"
+weaponAssault2 = 0
+
+turretCount = 2
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+
+[BuildingClass]
+soundAmbient = "abtowee0.wav"
+
+[CraftClass]
+rangeScan = 600
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 0.5
+engageRange = 600
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 600

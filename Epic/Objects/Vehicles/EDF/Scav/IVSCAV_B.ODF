@@ -1,0 +1,117 @@
+[GameObjectClass]
+baseName = "ivscav"
+geometryName = "ivscav00_b.xsi"
+cockpitName = "ivscav_cockpit.xsi"
+animCount = 1
+animName1 = "deploy"
+animFile1 = "ivscav00_b.xsi"
+classLabel = "scavenger"
+geometryScale = 1.5
+scrapValue = 10
+scrapCost = 20
+buildTime = 10.0
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Scavenger"
+aiName = "ScavProcess"
+aiName2 = "ScavProcess"
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 2.0
+isAssault = 1
+collisionRadius = 30.0
+
+BoxCollide = 1
+
+explosionName = "null"//"ixshipxplw"
+
+armorClass = H
+
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2" 
+
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "ivscav_b"
+provideName2 = "scav"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivatank_b.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivatank_b.render"
+
+[CraftClass]
+xplCrash = "ixshipxplb"
+rangeScan = 1200.0
+periodScan = 0.0
+velocJam = 0.0
+
+braccelFactor = 0.1
+velFactor =	0.3
+steerFactor = 1.0
+omegaFactor = 0.3
+
+TeamTransferrable = true
+selectWaitMsg = "ivscav01.wav"
+selectGoMsg = "ivscav02.wav"
+selectPickupMsg = "ivscav05.wav"
+selectDropoffMsg = "ivscav05.wav"
+selectOtherMsg = "ivscav01.wav"
+selectFollowMsg = "ivscav03.wav"
+holdMsg = "ivscav11.wav"
+goMsg = "ivscav04.wav"
+stopMsg = "ivscav04.wav"
+followMsg = "ivscav11.wav"
+followMeMsg = "ivscav07.wav"
+rescueMsg = "ivscav11.wav"
+repairMsg = "ivscav08.wav"
+recycleMsg = "ivscav10.wav"
+otherMsg = "ivscav13.wav"
+diedMsg = "abetty4.wav"
+
+
+
+[TrackedVehicleClass]
+accelBrake = 70.0
+accelDrag = 20.0
+accelDragFull = 60.0
+accelDragStop = 38.0	// how fast it stops once hands are off controls [5.9]
+accelThrust = 5.0
+alphaSteer = 0.8
+omegaSpin = 1.0
+omegaTurn = 0.6
+velocForward = 25.0
+velocReverse = 20.0
+
+TREAD_STATIC_FRICTION = 4.0
+CENTER_SHIFT = -1.0		// -1.0 for bottom, 0.0 for center, +1.0 for top
+
+engineSound = "iscav01.wav"
+treadSound = "iscav01b.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold = 20
+deployClass = "ibscav_b"
+deployOffset = 4.1
+
+
+[Lod1]
+geometryName = "ivscavL1_b.xsi" ;geometry for lod1
+geometryScale = 1.5
+distance = 200
+
+[Lod2]
+geometryName = "ivscavL2_b.xsi" ;geometry for lod2
+geometryScale = 1.5
+distance = 350                ;...distance over this many meters => switch to lod2

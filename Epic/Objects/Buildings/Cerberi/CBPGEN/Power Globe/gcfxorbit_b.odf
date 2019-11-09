@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+//altName = "gfafmsl_ab"
+ordName = "corbitb"
+wpnName = "Orbital"
+//fireSound = "crckt01.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 6000
+//flashName = "gmortar_b.flash"
+
+[CannonClass]
+shotDelay = 1.0 // 1/sec
+shotAlternate = 1

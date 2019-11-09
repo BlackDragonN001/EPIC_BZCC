@@ -1,0 +1,32 @@
+[OrdnanceClass] 
+classLabel = "spraybomb" 
+shotGeometry = "ioartl00.xsi" 
+shotSound = "baz03.wav" 
+xplGround = NULL 
+xplVehicle = NULL 
+xplBuilding = NULL 
+rendername = "spider2.render" 
+ammoCost = 20 
+lifeSpan = 1e30 
+shotSpeed = 45.0 
+damageValue(N) = 0 
+damageValue(L) = 0 
+damageValue(H) = 0 
+damageValue(S) = 0 
+damageValue(D) = 0 
+damageValue(A) = 0 
+[SprayBombClass] 
+payloadName = "fvatank"
+[Render] 
+renderBase = "draw_twirl_trail" 
+textureName = "smoke.tga" 
+textureBlend = "srcalpha invsrcalpha modulatealpha" 
+startColor = "51 191 221 128" 
+finishColor = "200 204 51 120" 
+startRadius = 0.2 
+finishRadius = 2.0 
+animateTime = 2.0 
+emitDelay = 0.01 
+emitVelocity = "0.0 0.0 0.0" 
+emitVariance = "1.0 1.0 1.0" 
+emitLife = 8

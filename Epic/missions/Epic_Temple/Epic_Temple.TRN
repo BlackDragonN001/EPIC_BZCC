@@ -1,0 +1,41 @@
+[Size]
+MetersPerGrid = 24.0
+HeightGranularity = 0.2
+MinX = -512
+MinZ = -512
+Width = 1024
+Depth = 1024
+Height = 1000
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+Gravity = 20
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture] 
+TileTexture1 = "temple_grass2.tga"//"tunnel8_b.tga" 
+TileTexture2 = "temple_rock.tga"//"rockface2.tga" 
+TileTexture3 = "temple_gravel.tga" 
+TileTexture4 = "temple_wall_u.tga"
+TileTexture5 = "temple_wall_v.tga"
+TileTexture6 = "temple_city_u.tga" 
+TileTexture7 = "temple_city_v.tga" 
+TileTexture8 = "temple_arch_u.tga"
+TileTexture9 = "temple_arch_v.tga"
+TileTexture10 = "temple_gates_u.tga"
+TileTexture11 = "temple_gates_v.tga"
+TileTexture12 = "temple_grass.tga"
+TileTexture13 = "temple_ruin.tga"
+TileTexture14 = "temple_flagstones.tga"
+TileTexture15 = "temple_leaves.tga"

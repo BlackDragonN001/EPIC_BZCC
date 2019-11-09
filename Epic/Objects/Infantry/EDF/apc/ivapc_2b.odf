@@ -1,0 +1,255 @@
+[GameObjectClass]
+provideCount = 1
+provideName1 = "ivapc"
+
+limitClass1 = "ivapc" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 5
+limitClass1Text = "Squad Limit Reached"
+
+baseName = "ivapc_b"
+geometryName = "ivapc01_b.xsi"
+geometryScale = 1.1
+
+animCount = 1
+animName1 = "deploy"
+animFile1 = "ivapc00_b.xsi"
+
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "assaulthover"//"turrettank"//"artillery"//"aircraft"
+scrapValue = 50
+scrapCost = 80 //90
+customCost = 100
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 4000
+addHealth = 2
+maxAmmo = 6000
+addAmmo = 400
+unitName = "APC"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+
+//aiName = "AttachOffensive"
+//aiName2 = "AttachOffensive
+
+//aiName = "AirCraftFriend"
+//aiName2 = "AirCraftEnemy"
+//explosionName = "ixshipxplw"
+
+CanAcceptPowerups = false
+
+heatSignature = 10.0
+imageSignature = 10.0
+radarSignature = 0.0
+
+isstealth = 1
+isAssault = 0
+armorClass = n
+needPilot = 1
+cockpitName = "ivturr_cockpit.xsi"
+collisionRadius = 60.0
+
+BoxCollide = 1
+
+LightingType = 1
+
+SmartIsAirUnitCheck = false
+VehicleSearchFilter = 4 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+requireCount = 2
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+
+requireName2 = "ibbarr_b"
+requireText2 = "Build Barracks"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivspbomb_b.trail"
+effectHard2 = "hp_emit_4"
+effectName2 = "chain_cb.trail"//"ivfighter_b.smoke"
+effectHard3 = "hp_emit_2"
+effectName3 = "ivspbomb_b.trail"//"ivfighter_b.smoke"
+effectHard4 = "hp_emit_5"
+effectName4 = "chain_cb.trail"//"ivfighter_b.smoke"
+effectHard5 = "hp_emit_3"
+effectName5 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard6 = "hp_emit_6"
+//effectName6 = "chain_cb.trail"//"ivfighters.smoke"
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gchain_cb"
+weaponAssault1 = 0
+recoilName1 = "recoil_1"
+
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gchain_cb" // "gsgun"
+weaponAssault2 = 0
+recoilName2 = "recoil_2"
+
+weaponHard3 = "HP_gun_3"
+weaponName3 = "gasold_b"
+weaponAssault3 = 0
+
+//weaponHard4 = "HP_SPECIAL_1"
+//weaponName4 = "thruster" //"gredfld_b"
+//weaponAssault4 = 0
+
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+turretCount = 2
+turretName1 = "hp_turret_y"
+turretName2 = "hp_turret_x"
+
+[CraftClass]
+xplCrash = "ixshipxplb"
+
+
+LeaveExplodeScorch = false
+//MaxScorchHeight = 20.0
+
+rangeScan = 1200.0f
+periodScan = 1.0f
+velocJam = 5.0f
+engageRange = 600
+canHunt = 0
+AllowLinkWeapons = true
+
+ejectratio = 0
+
+weaponPitch = 0.5
+
+
+
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "AD"	// include air units as attack targets only when deployed
+
+
+AttackTaskUsesGroups = false
+
+ClosestEnemyGoodEyes = yes
+
+OffensiveProcessIsDistractable = false 
+
+braccelFactor = 0.5 //0.03
+velFactor = 0.4//0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.8
+
+avoidSpeed = 50;
+topSpeed = 100;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+selectOtherMsg = "avapcvj.wav"
+
+goMsg = "avapcv0.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+followMeMsg = "avapcv3.wav"
+repairMsg = "avapcv4.wav"
+recycleMsg = "avapcv6.wav"
+rescueMsg = "avapcv5.wav"
+otherMsg = "avapcvh.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+setAltitude = 10.0
+accelDragStop = 20.0
+accelDragFull = 5.0
+alphaTrack = 10.0
+alphaDamp = 3.0
+pitchPitch = 0.1
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 65.0
+velocReverse = 35.0
+velocStrafe = 15.0
+accelThrust = 20.0
+accelBrake = 50.0
+omegaSpin = 2
+omegaTurn = 1
+alphaSteer = 5.0
+accelJump = 15.0 
+
+alphaTrack = 8.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+soundThrust = "iapc02.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[AssaultTankClass]
+yawRate = 4.0
+pitchMin = -0.2
+pitchMax = 0.3
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivspbomb_b.trailer"
+renderName2 = "ivspbomb_b.light"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 60"
+finishColor = "0 0 255 0"
+startRadius = 1
+finishRadius = 0.8
+segmentTime = .2
+animateTime = .2
+emit velocity = 0 0 -80
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "ivapcL1_b.xsi" ;geometry for lod1
+geometryScale = 1.4
+distance = 600   

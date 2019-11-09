@@ -1,0 +1,289 @@
+[GameObjectClass]
+baseName = "cvover_b"
+
+unitIcon = "icon_cvover_b.png"
+infoName = "cvover_b.inf"
+unitStatus = "wire_cvover_b.png"
+
+geometryName = "cvover00.xsi"
+geometryScale = 1.8
+glowtexture = "cbtcena0.pic"
+//cockpitName= "ivtank_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 10
+scrapCost = 80
+scrapReturn = 40
+customCost = 100
+buildTime = 20.0
+customTime = 30.0
+maxHealth = 4000
+addhealth = 15
+maxAmmo = 8000
+addAmmo = 500
+aiAddAmmo = 50
+unitName = "Overlord"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "xcerbxpld"
+
+provideCount = 2
+provideName1 = "cvover_b"
+provideName2 = "bomb"
+
+//powercost = 3 //2
+
+
+
+heatSignature = 8.0
+imageSignature = 20.0
+radarSignature = 10.0
+isAssault = 0
+armorClass = N
+isFlying = 1
+needPilot = 1
+CanAcceptPowerups = false
+collisionRadius = 100.0
+
+requireCount = 3
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
+requireName2 = "cbcbun_b"
+requireText2 = "Build Uplink"
+requireName3 = "cbtcen_b"
+requireText3 = "Build Core Matrix"
+
+
+
+cockpitName = "ivtank_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cvover_b.trail"
+effectHard2 = "hp_emit_4"
+effectName2 = "cvover_b.tail"
+effectHard3 = "hp_emit_3"
+effectName3 = "cvover_b.tail"
+effectHard4 = "hp_emit_2"
+effectName4 = "cvover_b.tail"
+effectHard5 = "hp_emit_5"
+effectName5 = "cvover_b.tail"
+//effectHard6 = "hp_light_2"
+//effectName6 = "cvtalons.light"
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "cvover_b.light1"
+//lightHard2 = "hp_light_2"
+//lightName2 = "cvtalons.light"
+//effectHard7 = "hp_light_3"
+//effectName7 = "cvtalons.light"
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gctorps"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gadder_ab"
+weaponAssault2 = 0
+//weaponHard3 = "HP_CANNON_1"
+//weaponName3 = "Gcutter_ab"
+//weaponAssault3 = 1
+//weaponHard4 = "HP_CANNON_2"
+//weaponName4 = "Gcutter_ab"
+//weaponAssault4 = 1
+//weaponHard5 = "HP_SPECIAL"
+//weaponName5 = "thrusterai"
+//weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+
+[CraftClass]
+xplChunk = "xcerbchunk"
+xplCrash = "XCERBXPLw"
+rangeScan = 1200.0f
+periodScan = 0.0f
+velocJam = 5.0f
+engageRange = 1000
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+ejectRatio = 0
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+subAttackTask = "AimFireAttack"
+subAttackClass = "ANN"
+
+ClosestEnemyGoodEyes = true 
+
+FireWhenCanHitFriends = false
+
+AttackTaskUsesGroups = false
+GotoTaskHasLeader = false
+
+//braccelFactor = 0.5 //0.05
+//velFactor = 0.3 //0.3
+steerFactor = 1.7
+omegaFactor = 0.3
+strafeFactor = 0.03
+
+avoidSpeed = 60;
+topSpeed = 120; //350
+
+selectWaitMsg = "cvo_mid_holding_pattern.wav"
+selectAttackMsg = "cvo_big_terminate_all_humans.wav"
+selectFollowMsg = "cvo_big_following.wav"
+selectGoMsg = "cvo_big_directive_logged.wav"
+selectOtherMsg = "cvo_mid_all_systems_go.wav"
+holdMsg = "cvo_big_holding_pattern.wav"
+
+goMsg = "cvo_big_directive_logged.wav"
+attackMsg = "cvo_mid_target_acquired.wav"
+followMeMsg = "cvo_mid_following.wav"
+followMsg = "cvo_mid_following.wav"
+repairMsg = "cvo_mid_servicing.wav"
+reloadMsg = "cvo_mid_servicing.wav"
+rescueMsg = "cvo_mid_rescuing.wav"
+recycleMsg = "cvo_mid_recycling.wav"
+otherMsg = "cvo_big_offense_online.wav" 
+
+user1Msg = ""  
+killedMsg = "cvo_mid_crush_kill_destroy.wav"
+diedMsg = "cvo_mid_offensive_destroyed.wav"
+
+[AirCraftClass]
+velocSet(L) = 15.0 // minimum velocity
+velocSet(M) = 55.0 // cruising velocity
+velocSet(H) = 80.0 // maximum velocity
+accelThrust = 60.0 // thrust acceleration
+accelBrake = 80.0 // brake acceleration
+accelDrag = 50	//	10.0 // drag acceleration
+omegaSteer(L) = 24	//	4.51 // steer turn rate at minimum
+omegaSteer(M) = 16	//	2.52 // steer turn rate at cruising
+omegaSteer(H) = 8	//	1.59 // steer turn rate at maximum
+omegaStrafe(L) = 3.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 1.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.76 // airbrake turn rate at maximum
+alphaSteer = 5.0 // steering angular acceleration
+alphaStrafe = 10.0 // airbrake angular acceleration
+minAltitude = 250.0 // minimum altitude
+maxAltitude = 700.0 // maximum altitude
+alphaLevel = 8.0 // leveling angular acceleration
+alphaDamp = 3.0 // damping angular acceleration
+pitchPitch = 0.5 // maximum pitch angle
+rollSteer = 0.3	//	0.7 // maximum roll angle from steering
+rollStrafe = 0.4 // maximum roll angle from airbraking
+timeDeploy = 6 // time to deploy
+timeUndeploy = 6 // time to undeploy
+
+AlwaysDeployed = true
+AlwaysUndeployed = false
+AltitudeLookahead = 1.0
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 380
+AILiftSpring = 35.0
+LiftSpring = 12.5 
+
+soundThrust = "enginetal.wav"
+soundTurbo = "enginetal.wav"
+
+
+
+
+////////////////////////////
+
+[tail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "cvover_b.trail"
+renderName2 = "cvover_b.soot"
+//renderName3 = "cvover_b.flame"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 50 255 100"
+finishColor = "50 0 150 0"
+startRadius = 0.7
+finishRadius = 0.3
+segmentTime = 2.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "130 80 255 155"
+finishColor = "50 0 155 0"
+startRadius = 1.5
+finishRadius = 0.3
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "120 80 255 2150"
+finishColor = "120 80 255 2150"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "100 50 255 250"
+finishColor = "100 50 255 250"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[soot]
+renderBase = "draw_trail"
+textureName = "sootrail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"//"one one modulate"
+textureRate = 0.05
+startColor =   "0 0 0 150" //"153 153 153 128"
+finishColor = "100 100 100 0
+startRadius = 1.7
+finishRadius = 12.5
+animateTime = 1.6
+segmentTime = 1.6
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail3.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "125 125 125 255"
+finishColor = "105 105 105 255"
+startRadius = 0.8
+finishRadius = 0.03
+segmentTime = 0.35
+segmentVariance = "1 1 0"
+animateTime = 0.4

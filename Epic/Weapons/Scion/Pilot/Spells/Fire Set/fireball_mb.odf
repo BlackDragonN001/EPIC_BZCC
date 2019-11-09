@@ -1,0 +1,116 @@
+[OrdnanceClass]
+classLabel = "BULLET"
+shotSound = "igtow04.wav"
+shotGeometry = NULL
+shotRadius = 2.0
+xplGround = "xsplasgnd_cb"
+xplVehicle = "xsplascar_cb"
+xplBuilding = "xsplascar_cb"
+xplExpire = "xsplascar_cb"
+
+renderName = "fireball_mb.render"
+
+ammoCost = 30
+lifeSpan = 2.2 // 100m
+shotSpeed = 100.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 80 // light
+damageValue(H) = 16 // heavy
+
+damageValue(S) = 80 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 16 // absorbption
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 6
+renderName2 = "fireball_mb.flare1"
+renderName4 = "fireball_mb.trailr"
+renderName5 = "fireball_mb.trailb"
+renderName3 = "fireball_mb.trail"
+renderName1 = "fireball_mb.trails"
+renderName6 = "fireball_mb.LIGHT"
+
+[Flare1]
+renderBase = "draw_sprite"
+textureName = "yelflare.tga"//"flm1.tga"//"sflame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 200 55" //255 155 155 255"
+finishColor = "255 200 200 55"
+startRadius = 0.6
+finishRadius = 0.6
+rotationRate = 5.0
+animateTime = 0.5
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.02
+
+[TrailR]
+renderBase = "draw_twirl_trail"
+textureName = "sflm1.tga"//"flm7.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 255 255 255"
+startRadius = 0.5
+finishRadius = 0.3
+rotationRate = 0.6
+animateTime = 0.2
+emitDelay = 0.003
+emitVelocity = "0.1 0.1 0.0"
+emitVariance = "5.0 5.0 0.0"
+emitLife = 0.2
+
+[Trailb]
+renderBase = "draw_twirl_trail"
+textureName = "sflm2.tga"//"flm3.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 255 255 255"
+startRadius = 0.4
+finishRadius = 0.2
+rotationRate = -0.4
+animateTime = 0.25
+emitDelay = 0.004
+emitVelocity = "0.1 0.1 0.0"
+emitVariance = "5.0 5.0 0.0"
+emitLife = 0.25
+
+[trail]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.3 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.85
+finishRadius = 0.2
+segmentTime = 0.12
+animateTime = 0.12
+
+[Trails]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+finishColor = "60 60 60 0" //255 155 155 255"
+startColor = "0 0 0 80"
+startRadius = 0.3
+finishRadius = 0.5
+rotationRate = -0.4
+animateTime = 0.4
+emitDelay = 0.004
+emitVelocity = "0.1 0.1 0.0"
+emitVariance = "5.0 5.0 0.0"
+emitLife = 0.4
+
+[Light]
+renderBase = "draw_light"
+startColor = "250 250 0 250"
+finishColor = "250 250 0 250"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

@@ -1,0 +1,91 @@
+// ====================
+// SUPER STABBER BUILDING HIT
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 11
+particleClass1 = "xsuperbld.smoke"
+particleCount1 = 1
+particleVeloc1 = "0.0 1.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "xsuperbld.flame"
+particleCount2 = 1
+particleVeloc2 = "0.0 1.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "xsuperbld.spark"
+particleCount3 = 8
+particleVeloc3 = "10.0 10.0 10.0"
+particleBias3 = "0.0 1.0 0.0"
+
+particleClass11 = "debris.chunks"
+particleCount11 = 5
+particleVeloc11 = "15.0 17.5 15.0"
+particleBias11 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 8
+particleVeloc10 = "18.0 20.5 18.0"
+particleBias10 = "0.0 5.0 0.0"
+
+explSound = "xms2.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 2.8
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 128"
+finishColor = "0 0 0 0"
+startRadius = 1
+finishRadius = 3.0
+animateTime = 2.0
+rotationRate = 2.0
+emitDelay = 0.10
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 2.8
+
+[Flame]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_twirl_trail"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 0.7
+finishRadius = 0.1
+animateTime = 0.5
+rotationRate = 10.0
+emitDelay = 0.05
+emitVelocity = "1.0 3.0 1.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 2.5
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.05
+animateTime = 2.0
+rotationRate = 20.0

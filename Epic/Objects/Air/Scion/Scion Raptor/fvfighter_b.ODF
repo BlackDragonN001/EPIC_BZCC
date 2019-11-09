@@ -1,0 +1,236 @@
+[GameObjectClass]
+provideCount = 2
+provideName1 = "fvfighter"
+provideName2 = "figh"
+
+limitClass1 = "fvfighter" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 20
+limitClass1Text = "Squad Limit Reached"
+
+baseName = "fvfighter_b"
+GlowTexture = "cvcorva0.pic"
+geometryName = "cvcorvs.xsi"
+geometryScale = 0.07
+
+cockpitName= "fvtank_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapReturn = 35
+scrapCost = 70
+customCost = 85
+buildTime = 20.0
+customTime = 25.0
+maxHealth = 3500
+addHealth = 3
+maxAmmo = 4500
+addAmmo = 50
+aiAddAmmo = 50
+unitName = "Raptor"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "xscionxpl"
+collisionRadius = 360.0
+
+heatSignature = 8.0
+imageSignature = 12.0
+radarSignature = 25.0
+
+isAssault = 0
+armorClass = n
+needPilot = 1
+isFlying = 1
+CanAcceptPowerups = false
+
+SmartIsAirUnitCheck = false
+VehicleSearchFilter = 0 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+
+effectHard1 = "hp_trail_1"
+effectName1 = "fvfighter_b.trail"
+effectHard2 = "hp_trail_2"
+effectName2 = "fvfighter_b.trail"
+effectHard3 = "hp_emit_3"
+effectName3 = "fvfighter_b.trail"
+effectHard4 = "hp_emit_4"
+effectName4 = "fvfighter_b.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_ROCKET_2"
+weaponName1 = "gairsting_b"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gairsting_b" 
+weaponAssault2 = 0
+
+weaponHard3 = "HP_CANNON_1"
+weaponName3 = "gsonic_cb"
+weaponAssault3 = 0
+
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "thruster"
+visualhard5 = "HP_SPECIAL_1"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+xplCrash = "xscionxplb"
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+ejectratio = 0
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 1200.0f
+periodScan = 0.0f
+velocJam = 5.0f
+engageRange = 900
+
+AllowLinkWeapons = true
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+subAttackTask = "AimFireAttack"
+subAttackClass = "ANN"
+
+ClosestEnemyGoodEyes = true 
+
+FireWhenCanHitFriends = false
+
+AttackTaskUsesGroups = false
+GotoTaskHasLeader = false
+
+//braccelFactor = 0.01 //0.03
+//velFactor = 0.8//0.2
+steerFactor = 0.4//1.5
+omegaFactor = 0.1
+strafeFactor = 0.01
+
+avoidSpeed = 90;
+topSpeed = 250;
+
+selectWaitMsg = "fvtank05.wav"
+selectAttackMsg = "fvtank02.wav"
+selectFollowMsg = "fvtank04.wav"
+selectGoMsg = "fvtank04.wav"
+selectOtherMsg = "fvtank05.wav"
+holdMsg = "fvtank12.wav"
+
+goMsg = "fvtank04.wav"
+attackMsg = "fvtank06.wav"
+followMeMsg = "fvtank08.wav"
+followMsg = "fvtank03.wav"
+repairMsg = "fvtank09.wav"
+reloadMsg = "fvtank09.wav"
+rescueMsg = "fvtank10.wav"
+recycleMsg = "fvtank11.wav"
+otherMsg = "fvtank05.wav" 
+holdMsg = "fvtank12.wav"
+user1Msg = ""  
+killedMsg = "fvtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+velocSet(L) = 75.0 // minimum velocity
+velocSet(M) = 125.0 // cruising velocity
+velocSet(H) = 210.0 // maximum velocity
+accelThrust = 55.0 // thrust acceleration
+accelBrake = 35.0 // brake acceleration
+accelDrag = 75	//10.0 // drag acceleration
+omegaSteer(L) = 7//4.51 // steer turn rate at minimum
+omegaSteer(M) = 5//2.52 // steer turn rate at cruising
+omegaSteer(H) = 3//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0.8 //1.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.6//0.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.4 //0.76 // airbrake turn rate at maximum
+alphaSteer = 15.0 // steering angular acceleration
+alphaStrafe = 5.0 // airbrake angular acceleration
+minAltitude = 350.0 // minimum altitude
+maxAltitude = 950.0 // maximum altitude
+alphaLevel = 3.0 // 10 leveling angular acceleration
+alphaDamp = 4.0 // 5 damping angular acceleration
+pitchPitch = 0.3 //	0.5 // maximum pitch angle
+rollSteer = 0.9 //	0.7 // maximum roll angle from steering
+rollStrafe = 0.9 // maximum roll angle from airbraking
+timeDeploy = 5 // time to deploy
+timeUndeploy = 5 // time to undeploy
+
+AlwaysDeployed = false
+AlwaysUndeployed = false
+AltitudeLookahead = 1
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 460
+AILiftSpring = 70.0
+LiftSpring = 40.5 
+
+soundThrust = "lowamb.wav"
+soundTurbo = "lowamb.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "fvfighter_b.trailer"
+renderName2 = "fvfighter_b.flame"
+renderName3 = "fvfighter_b.Light1"
+
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 150"
+finishColor = "0 0 255 0"
+startRadius = 1.1
+finishRadius = 0.8
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 255"
+finishColor = "0 100 255 0"
+startRadius = 4
+finishRadius = 0.8
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 7.0
+finishRadius = 7.0
+rotationRate = 10.0
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 5000                 ;...distance over this many meters => switch to lod2

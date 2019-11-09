@@ -1,0 +1,71 @@
+[OrdnanceClass]
+classLabel = "pulse"
+shotGeometry = "gatstab.xsi"
+shotSound = "Ordin_a.wav"
+renderName = "plstab_a.render"
+xplGround = "xpulgnd_a"
+xplVehicle = "xpulhit_a"
+xplBuilding = "xpulhit_a"
+
+ammoCost = 30
+lifeSpan = 4.5 // 200.6m
+shotSpeed = 140.0
+
+damageValue(N) = 210 // none // 140 + 225 +/-
+damageValue(L) = 200 // light // 133 + 125 +/-
+damageValue(H) = 190 // heavy // 126 + 75 +/-
+
+damageValue(S) = 200 // standard // 133 + 125 +/-
+damageValue(D) = 190 // deflection // 126 + 255 +/-
+damageValue(A) = 210 // absorbtion // 140 + 75 +/-
+
+[PulseShellClass]
+pulseDelay = 0.3
+pulsePeriod = 0.3
+xplPulse = "xpulemit_ab"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "plstab_a.smoke"
+renderName2 = "plstab_a.flame"
+renderName3 = "plstab_a.light"
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 0 20 200"
+finishColor = "180 150 150 0"
+startRadius = 0.1
+finishRadius = 1.0
+animateTime = 0.15
+rotationRate = 10.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.15
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 127 255"
+finishColor = "255 0 0 255"
+startRadius = 0.15
+finishRadius = 0.02
+animateTime = 0.1
+rotationRate = 10.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.1
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.0
+finishRadius = 1.0

@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Storm"
+fireSound = ""
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+aiRange = 400
+
+[DispenserClass]
+shotDelay = 21.0
+objectClass = "lsmine_b"

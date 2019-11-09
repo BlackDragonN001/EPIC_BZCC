@@ -1,0 +1,82 @@
+[GameObjectClass]
+geometryName = "NULL"
+geometryScale = 0.0
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 2000
+maxAmmo = 3000
+unitName = "Shield Generator"
+effectHard1 = "Shield Generator"
+effectName1 = "cshldgen.render"
+
+[MineClass]
+lifeSpan = 60.0
+ammoCost = 3000
+
+[MagnetMineClass]
+triggerDelay = 1.0
+fieldRadius = 150.0
+objPushCenter = 0.0
+objPushEdge = 5.0
+objDrag = 0.0
+ordPushCenter = 0.0
+ordPushEdge = 350.0
+ordDrag = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cshldgen.field"
+renderName2 = "cshldgen.swirl1"
+renderName3 = "cshldgen.swirl2"
+renderName4 = "cshldgen.particle"
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "cerbshield.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 5 180"
+finishColor = "0 100 200 100"
+startRadius = 10.0
+finishRadius = 150.0
+animateTime = 2.0
+latitudeBands = 8
+longitudeSegments = 16
+
+[Swirl1]
+simulateBase = "sim_null"
+lifeTime = 60.0
+renderBase = "draw_planar"
+textureName = "cerbshield.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 125"
+finishColor = "0 0 255 0"
+startRadius = 30.0
+finishRadius = 5.0
+animateTime = 60.0
+
+[Swirl2]
+simulateBase = "sim_null"
+lifeTime = 20.0
+renderBase = "draw_planar"
+textureName = "bhole2.tga"
+textureBlend = "one one modulate"
+startColor = "100 100 255 200"
+finishColor = "200 100 255 125"
+startRadius = 1.0
+finishRadius = 10.0
+animateTime = 45.0
+
+[Particle]
+renderBase = "draw_twirl_trail"
+textureName = "plasma.tga" // flame
+textureblend = "one one modulate"
+startColor = "100 100 255 200"
+finishColor = "00 100 200 50"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 3.0
+emitDelay = 0.01
+emitVariance = "15.0 15.0 15.0"
+emitLife = 3.0

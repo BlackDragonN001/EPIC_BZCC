@@ -1,0 +1,44 @@
+[GameObjectClass]
+geometryName = "ibtargeter_bepic.XSI"
+geometryScale = 3.4
+classLabel = "sensor"
+animCount = 1
+animName1 = "EPICloop"
+animFile1 = "ibtargeter_bepic.XSI"
+RunAnimation = "EPICloop"
+RunAnimIsLooped = true
+scrapCost = 10
+scrapReturn = 5
+scrapValue = 3
+maxHealth = 2000
+maxAmmo = 0
+unitName = "Targeter"
+heatSignature = 10.0
+imageSignature = 20.0
+radarSignature = 50.0
+collisionRadius = 30.0
+isAssault = 1
+ownsTerrain = 1
+canCollide = 1
+
+
+LightingType = 1 
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "ibtcen_b"
+requireText1 = "Build Tech Center"
+requireName2 = "ibcbun_b"
+requireText2 = "Build Relay Bunk"
+
+provideCount = 2
+providename1 = "ibtarg_b"
+provideName2 = "jamm"
+
+
+[BuildingClass]
+
+[MotionSensorClass]
+rangeScan = 1800.0
+MaxBuildings = 0

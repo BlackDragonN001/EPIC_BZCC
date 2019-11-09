@@ -1,0 +1,37 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "ioartl00.xsi"
+shotSound = "baz03.wav"
+
+xplGround = "xmortgnd_b"
+xplVehicle = "xmortxpl_b"
+xplBuilding = "xmortxpl_b"
+
+renderName = "blastt_b.render"
+
+ammoCost = 50
+lifeSpan = 1e30
+shotSpeed = 415
+
+damageValue(N) = 1800 // none
+damageValue(L) = 1750 // light
+damageValue(H) = 1600 // heavy
+
+damageValue(S) = 1650 // standard
+damageValue(D) = 1700 // deflection
+damageValue(A) = 1600 // absorbtion
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "164 164 164 64"
+finishColor = "230 230 230 0"
+startRadius = 0.5
+finishRadius = 1.0
+animateTime = 3.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 2.0

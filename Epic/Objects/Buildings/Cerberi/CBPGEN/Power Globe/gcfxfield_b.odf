@@ -1,0 +1,39 @@
+[WeaponClass]
+classLabel = "magnetgun"
+ordName = NULL
+wpnName = "Containment Field"
+fireSound = ""
+wpnReticle = "gsonic_a"
+wpnCategory = "GUN"
+flashName = "gcfxfield_b.flash"
+flashTime = 5e30
+isAssault = 0
+
+aiRange = 6000
+
+[MagnetGunClass]
+ammoCost = 0.0
+//activeSound = "mag01.wav"
+coneAngle = 6.29
+fieldRadius = 30.0
+objPushCenter = 00.0
+objPushEdge = -350.0
+objDrag = 0.1
+ordPushCenter = -800.0
+ordPushEdge = -800//-400 //-400.0
+ordDragcentre = 0.1
+ordDragEdge = 5 //0.2
+//TeamFilter = 0
+
+[Flash]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 0"
+finishColor = "150 0 255 30"
+startRadius = 1.0
+finishRadius = 19.0 // 30
+animateTime = 1.0
+latitudeBands = 8
+longitudeSegments = 16
+

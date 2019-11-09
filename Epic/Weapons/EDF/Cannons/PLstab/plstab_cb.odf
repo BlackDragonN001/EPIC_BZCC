@@ -1,0 +1,60 @@
+[OrdnanceClass]
+classLabel = "pulse"
+shotGeometry = "gatstab.xsi"
+shotSound = "Ordin_c.wav"
+renderName = "mortar_b.render"//"plstab_cb.render"
+xplGround = "xflak_b"
+xplVehicle = "xflak_b"
+xplBuilding = "xflak_b"
+xplExpire = "xflak_b"
+
+ammoCost = 14
+lifeSpan = 2.6
+shotSpeed = 290.0
+
+damageValue(N) = 220 // none // 300
+damageValue(L) = 110 // light // 260
+damageValue(H) = 50 // heavy // 210
+
+damageValue(S) = 210 // standard // 260
+damageValue(D) = 190 // deflection // 270
+damageValue(A) = 220 // absorbtion // 240
+
+[PulseShellClass]
+pulseDelay = 1.2
+pulsePeriod = 0.3
+xplPulse = "xflak_b"
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "plstab_cb.trail"
+renderName2 = "plstab_cb.smoke"
+
+[smoke]
+renderBase = "draw_twirl_trail"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 64"
+finishColor = "30 30 30 0"
+startRadius = 0.6
+finishRadius = 0.1
+animateTime = 0.6
+emitDelay = 0.015
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 60.0
+
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor =   "0 0 0 0" //"153 153 153 128"
+finishColor = "30 30 30 0
+startRadius = 0.2
+finishRadius = 1.5
+animateTime = 3.0
+segmentTime = 3.0

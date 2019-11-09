@@ -1,0 +1,92 @@
+[GameObjectClass]
+geometryName = "fbkiln00_b.xsi"
+geometryScale = 2
+classLabel = "factory"
+collisionRadius = 1.0
+scrapCost = 60
+scrapReturn = 30
+scrapValue = 3
+maxHealth = 6000
+maxAmmo = 0
+powerCost = 0
+unitName = "Kiln"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F"
+
+LightingType = 1 
+
+
+upgradeName = "fbforg_b"
+
+requireCount = 0
+
+provideCount = 2
+provideName1 = "fbkiln_b"
+provideName2 = "fact"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotyellow"
+lightHard2 = "hp_light_2"
+lightName2 = "spotyellow"
+
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung_b"
+detectRange = 600
+
+[BuildingClass]
+soundAmbient = "sdow01.wav"
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 3
+//tunnel01DX = 2
+//tunnel01DZ = 4
+//tunnel01Edge = "wwtw"
+
+[FactoryClass]
+soundBuild = "sbrecy02.wav"
+soundFinish = "iapc04.wav"
+
+DropoffDX = 0.0
+DropoffDZ = 64.0
+
+[BuildGroup1]
+BuildLabel = "Combat"
+buildItem1 = "fvsent_b"
+buildItem2 = "fvarch_b"
+buildItem3 = "fvltank_b"
+buildItem4 = "fvtank_b"
+
+//[BuildGroup3]
+//BuildLabel = "Assault"
+//buildItem1 = "fvwalk_b"
+//buildItem2 = "fvatank_b"
+//buildItem3 = "fvrbomb_b"
+//buildItem4 = "fvartl_b"
+
+
+reloadMsg = "fvrecy11.wav"
+rescueMsg = "fvrecy12.wav"
+
+
+[Lod1]
+geometryName = "fbkilnL1_b.xsi" ;geometry for lod1
+geometryScale = 2.0
+distance = 500
+dontShiftLOD = 1
+
+

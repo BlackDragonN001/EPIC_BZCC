@@ -1,0 +1,117 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "iorckt00.xsi"
+shotSound = "crckt02.wav"
+
+renderName = "fafmsl_ab.render"
+
+xplGround = "xheatgnd_b"
+xplVehicle = "xheatcar_b"
+xplBuilding = "xheatcar_b"
+xplExpire = "xtagcar_cb"
+
+ammoCost = 125
+lifeSpan = 6.67 // 400.2m
+shotSpeed = 180.0
+
+damageValue(N) = 900 // none
+damageValue(L) = 800 // light
+damageValue(H) = 700 // heavy
+
+damageValue(S) = 800 // standard
+damageValue(D) = 700 // deflection
+damageValue(A) = 900 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 1.0
+omegaWaver = 0.2
+rateWaver = 7.0
+
+[ThermalMissileClass]
+coneAngle = 0.3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName2 = "fafmsl_ab.flare"
+renderName3 = "fafmsl_ab.smoke"
+renderName4 = "fafmsl_ab.flame"
+renderName1 = "fafmsl_ab.trail"
+renderName5 = "fafmsl_ab.missile"
+
+[missile]
+maxdist = 2000
+lifetime = 5e30
+
+renderBase = "draw_geom"
+geomName = "iorckt_lge.xsi"
+geometryScale = 50
+
+
+textureName = "ivwalk00.pic"//"cflmball.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 255"
+finishColor = "200 200 200 255"
+startRadius = 14
+finishRadius = 14
+//animateTime = 1.0
+//latitudeBands = 7
+//longitudeSegments = 12
+InitialPitch = 0
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 0.0
+AddYaw = 0.0
+AddRoll = 0.0
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 5.0
+finishRadius = 5.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 108"
+finishColor = "153 153 153 0"
+startRadius = 1.0
+finishRadius = 5.0
+animateTime = 2.0
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 2.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.5
+finishRadius = 0.2
+animateTime = 0.2
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.2
+
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor =   "30 30 30 80" //"153 153 153 128"
+finishColor = "60 60 60 0
+startRadius = 0.8
+finishRadius = 4.2
+animateTime = 1.5
+segmentTime = 3.0

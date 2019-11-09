@@ -1,0 +1,31 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "XpGUNGND"
+xplVehicle = "xpguncar"
+xplBuilding = "xpguncar"
+
+renderName = "assrif_ab.render"
+
+ammoCost = 0.6
+lifeSpan = 0.5 // 250m  135 GEC
+shotSpeed = 500.0
+
+damageValue(N) = 24 // none // 120
+damageValue(L) = 15 // light // 120
+damageValue(H) = 12 // heavy // 40
+
+damageValue(S) = 15 // standard // 100
+damageValue(D) = 9 // deflection // 60
+damageValue(A) = 24 // absorbtion // 120
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 100 0 250"
+finishColor = "255 0 0 100"
+startRadius = 0.01
+finishRadius = 0.005
+segmentTime = 0.05

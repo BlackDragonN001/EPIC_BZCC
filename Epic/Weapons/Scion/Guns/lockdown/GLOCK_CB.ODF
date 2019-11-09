@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "glock_ab"
+ordName = "lockdown_cb"
+wpnName = "EMP Lockdown"
+fireSound = "glock01.wav"
+wpnReticle = "glock"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 300
+
+[CannonClass]
+shotDelay =  2.0
+

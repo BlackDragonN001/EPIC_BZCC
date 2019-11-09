@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic: Ground Zero"
+mapTga = "Epic_GZ.bmp"
+mapDesc = "Epic_GZ.txt"
+mySide = 1

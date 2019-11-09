@@ -1,0 +1,164 @@
+[GameObjectClass]
+geometryName = "fvbsub.xsi"
+geometryScale = 36
+//glowTexture = "ivbsubglow.tga"
+classLabel = "recycler"
+powerCost = 0
+scrapCost = 0
+scrapValue = 10
+maxHealth = 12000
+maxAmmo = 0
+unitName = "Scion Flagship"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+explosionName = "ukamixpl"
+
+collisionRadius = 4.0
+
+LightingType = 1
+
+armorClass = H
+
+lightHard1 = "hp_light_1"
+lightName1 = "uspotb1"
+
+lightHard2 = "hp_light_2"
+lightName2 = "uspotb1"
+lightHard3 = "hp_light_3"
+lightName3 = "uspotb1"
+lightHard4 = "hp_light_4"
+lightName4 = "uspotb1"
+lightHard5 = "hp_light_5"
+lightName5 = "spotblue1_b"
+lightHard6 = "hp_light_6"
+lightName6 = "spotblue1_b"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fbrecysub.light2"
+effectHard2 = "hp_emit_2"
+effectName2 = "fbrecysub.light2"
+effectHard3 = "hp_emit_3"
+effectName3 = "fbrecysub.light2"
+effectHard4 = "hp_emit_4"
+effectName4 = "fbrecysub.light2"
+
+effectHard5 = "hp_emit_5"
+effectName5 = "fbrecysub.light"
+effectHard6 = "hp_emit_6"
+effectName6 = "fbrecysub.light"
+effectHard7 = "hp_emit_7"
+effectName7 = "fbrecysub.light"
+effectHard8 = "hp_emit_8"
+effectName8 = "fbrecysub.light"
+
+effectHard9 = "hp_trail_1"
+effectName9 = "fbrecysub.bigtrail"
+effectHard10 = "hp_trail_2"
+effectName10 = "fbrecysub.trail"
+effectHard11 = "hp_trail_3"
+effectName11 = "fbrecysub.trail"
+
+//upgradeName = "ibrecy_tb"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerName = "fbaaturr_b"
+
+[BuildingClass]
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 3
+//tunnel01DX = 2
+//tunnel01DZ = 4
+//tunnel01Edge = "wwtw"
+
+soundAmbient = "ibrecy01.wav"
+
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+buildItem1 = "ivscav_b"
+buildItem2 = "ivscout_b"
+buildItem3 = "ivturr_b"
+buildItem4 = "ivtug_b"
+buildItem5 = "ivcons_b"
+buildItem6 = "ivserv_b"
+buildItem7 = "apserv"
+buildItem8 = "ivpanther_b"
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+[RecyclerClass]
+scrapHold = 40
+scrapDelay = 3.0 // # of seconds before +1 scrap
+
+[Lod1]
+//geometryName = "ibrecyL1_b.xsi" ;geometry for lod1
+//geometryScale = 2
+//distance = 400
+//dontShiftLOD = 1
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "150 20 20 2050"
+finishColor = "150 20 20 2050"
+startRadius = 80.0
+finishRadius = 80.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+[light2]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "10 150 0 1050"
+finishColor = "10 150 0 1050"
+startRadius = 40.0
+finishRadius = 40.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light3]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "10 150 240 3050"
+finishColor = "10 150 240 3050"
+startRadius = 160.0
+finishRadius = 160.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light4]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "250 200 50 3050"
+finishColor = "250 200 50 3050"
+startRadius = 160.0
+finishRadius = 160.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

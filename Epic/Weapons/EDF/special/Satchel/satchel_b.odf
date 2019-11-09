@@ -1,0 +1,19 @@
+[GameObjectClass]
+classLabel = "satchel"
+geometryName = "igsatc00.xsi"
+geometryScale = 0.15
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 1
+unitName = "Satchel"
+
+[BuildingClass]
+soundAmbient = "switch01.wav"
+
+[MineClass]
+lifeSpan = 30.0
+xplBlast = "xsatxpl_b"
+
+[SatchelChargeClass]
+UseCockpitTimer = true

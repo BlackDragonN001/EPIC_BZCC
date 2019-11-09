@@ -1,0 +1,109 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 3.0
+xplGround = "xmaggnd6_a"
+xplVehicle = "xmagcar6_a"
+xplBuilding = "xmagcar6_a"
+
+renderName = "charge6_ab.render"
+
+ammoCost = 700
+lifeSpan = 2.0 // 120m
+shotSpeed = 180.0
+
+damageValue(N) = 6375 // none // 850
+damageValue(L) = 4125 // light // 550
+damageValue(H) = 2250 // heavy // 300
+
+damageValue(S) = 4125 // standard // 550
+damageValue(D) = 6375 // deflection // 850
+damageValue(A) = 3000 // absorbtion // 400
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "charge6_ab.flare1"
+renderName2 = "charge6_ab.light"
+renderName3 = "charge6_ab.trailb"
+
+[Flare1]
+renderBase = "draw_twirl_trail"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 255 255"
+finishColor = "200 200 79 255"
+startRadius = 0.9 		//.75
+finishRadius = 2.0 		// 1.5
+//rotationRate = 10.0 	// 10.0
+animateTime = 0.03		//.02
+emitDelay =  0.005		//.007
+emitVelocity = "5.5 5.5 5.5"
+emitVariance = "10.0 10.0 10.0"
+emitLife = 0.03			//.02
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 255 0 500"
+finishColor = "255 0 100 500"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[TrailB]
+renderBase = "draw_emit"
+emitName = "charge6_ab.sparkb"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "6.0 6.0 6.0"
+
+[SparkB]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "charge6_ab.sparkflareb"
+//renderName2 = "charge6_ab.sparktrailb"
+//renderName2 = "charge6_ab.sparklight"
+
+[SparkFlareB]
+//renderBase = "draw_sprite"
+renderBase = "draw_twirl_trail"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "200 150 255 255"
+finishColor = "170 0 255 0"
+startRadius = 0.4
+finishRadius = 0.01
+animateTime = 1.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.002
+
+[SparkTrailB]
+renderBase = "draw_trail"
+textureName = NULL //"bulhit.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 255 255"
+finishColor = "255 255 0 0"
+textureRate = 0.004
+startRadius = 0.1
+finishRadius = 0.001
+segmentTime = 0.25
+//trailTime = 0.5
+
+[SparkLight]
+renderBase = "draw_light"
+startColor = "255 0 255 100"
+finishColor = "250 255 0 100"
+startRadius = 0.2
+finishRadius = 0.2
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

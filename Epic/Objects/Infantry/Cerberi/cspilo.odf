@@ -1,0 +1,199 @@
+[GameObjectClass]
+baseName = "ispilo"
+classLabel = "person"
+geometryName = "ispilo_rifle_skel_2b.xsi"
+geometryScale = 0.15
+
+CanAcceptPowerups = true
+
+VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+animCount = 15
+
+// empty-handed animations
+animName1 = "stand"
+animFile1 = "ispilo_rifle_skel_2b.xsi"
+animName2 = "walk"
+animFile2 = "ispilo_rifle_run_2b.xsi"
+animName3 = "crouch"
+animFile3 = "ispilo_rifle_crouch_2b.xsi"
+animName4 = "jump"
+animFile4 = "ispilo_rifle_jump_2b.xsi"
+
+// combat mode animations
+animName5 = "standC"
+animFile5 = "ispilo_rifle_skel_2b.xsi"
+animName6 = "walkC"
+animFile6 = "ispilo_rifle_run_2b.xsi"
+animName7 = "crouchC"
+animFile7 = "ispilo_rifle_crouch_2b.xsi"
+animName8 = "jumpC"
+animFile8 = "ispilo_rifle_jump_2b.xsi"
+
+// assault mode animations
+animName9 = "standA"
+animFile9 = "ispilo_bazooka_skel_2b.xsi"
+animName10 = "walkA"
+animFile10 = "ispilo_bazooka_run_2b.xsi"
+animName11 = "crouchA"
+animFile11 = "ispilo_bazooka_crouch_2b.xsi"
+animName12 = "jumpA"
+animFile12 = "ispilo_bazooka_jump_2b.xsi"
+
+
+// Death animations
+animName13 = "DeathA"
+animFile13 = "ispilo_rifle_death01_2b.xsi"
+animName14 = "DeathC"
+animFile14 = "ispilo_bazooka_death01_2b.xsi"
+
+//Speaking
+animName15 = "speak"
+animFile15 = "ispilo_rifle_talkloop.xsi"
+
+
+scrapCost = 5
+scrapValue = 0
+pilotCost = 1
+maxHealth = 100
+addhealth = 0
+maxAmmo = 30
+addAmmo = 3
+aiAddAmmo = 10
+unitName = "Cerberi Pilot"
+aiName = "PersonFriend"
+aiName2 = "PersonEnemy"
+heatSignature = 0.2
+imageSignature = 0.2
+radarSignature = 0.1
+//isStealth = 1
+
+LightingType = 1
+
+armorClass = N
+
+weaponMask = 11111
+weaponHard1 = "HP_HAND_1"
+visualHard1 = "HP_DOCK_H"
+weaponAssault1 = 0
+//weaponName1 = "igsnip_cb"
+weaponName1 = "igsnip_cb"
+
+//weaponHard4 = "HP_GUN_1"
+//visualHard4 = "HP_DOCK_P"
+//weaponAssault4 = 0
+//weaponName4 = "gminigun_cb"
+
+weaponHard2 = "HP_HAND_1"
+visualHard2 = "HP_DOCK_H"
+weaponAssault2 = 1
+//weaponName2 = "igsnip_ab"
+weaponName2 = "igsnip_ab"
+
+weaponHard3 = "HP_PACK_1"
+visualHard3 = "HP_DOCK_P"
+weaponAssault3 = 0
+weaponName3 = "ighjetp_b"
+
+//weaponHard5 = "HP_special_1"
+//visualHard3 = "HP_special_1"
+//weaponAssault5 = 1
+//weaponName5 = "gblink_b"
+
+
+
+turretCount = 6
+turretName1 = "torso"
+turretName2 = "head"
+turretName3 = "larm"
+turretName4 = "rarm"
+turretName5 = "eyebone"
+turretName6 = "hp_eyepoint_1"
+
+[CraftClass]
+PersonRetreatRecycleDist = 50.0
+
+rangeScan = 300.0f
+braccelFactor = 0.5
+velFactor = 0.1
+strafeFactor = 0.5
+steerFactor = 1.5
+omegaFactor = 0.2
+
+avoidSpeed = 13.0
+topSpeed = 15.0
+
+[PersonClass]
+autoDeploy = false
+PersonMass = 10.0
+
+// crawling mode
+alphaDampCrawl    = 1.0
+alphaTrackCrawl   = 10.0
+pitchPitchCrawl   = 0.0
+pitchThrustCrawl  = 0.0
+rollStrafeCrawl   = 0.0
+velocForwardCrawl = 0.0
+velocReverseCrawl = 0.0
+velocStrafeCrawl  = 0.0
+accelThrustCrawl  = 20.0
+omegaSpinCrawl    = 1.5
+omegaTurnCrawl    = 1.5
+alphaSteerCrawl   = 5.0
+velocJumpCrawl    = 10.0
+//pitchScaleCrawl   = 0.5
+
+// running mode
+alphaDampRun     = 10.0
+alphaTrackRun    = 20.0
+pitchPitchRun    = 0.0
+pitchThrustRun   = 0.0
+rollStrafeRun    = 0.0
+velocForwardRun  = 11.0
+velocReverseRun  = 8.0
+velocStrafeRun   = 8.0
+accelThrustRun   = 40.0
+omegaSpinRun     = 3.5
+omegaTurnRun     = 2.5
+alphaSteerRun    = 10.0
+velocJumpRun     = 6.0
+//pitchScaleRun    = 1.5
+
+// flying mode
+alphaDampFly      = 2.0
+alphaTrackFly     = 5.0
+pitchPitchFly     = 0.75
+pitchThrustFly    = 0.15
+rollStrafeFly     = 0.15
+velocForwardFly   = 30.0
+velocReverseFly   = 20.0
+velocStrafeFly    = 15.0
+accelThrustFly    = 15.0
+omegaSpinFly      = 2.0
+omegaTurnFly      = 1.0
+alphaSteerFly     = 10.0
+velocJumpFly      = 10.0
+//pitchScaleFly     = 1.0
+
+// sound effects
+painSound1 = "ipain01.wav";
+painSound2 = "ipain02.wav";
+painSound3 = "ipain03.wav";
+painSound4 = "ipain04.wav";
+painSound5 = "ipain02.wav";
+painSound6 = "ipain04.wav";
+burnSound1 = "iburn01.wav";
+burnSound2 = "iburn01.wav";
+dieSound1  = "ideath01.wav";
+dieSound2  = "ideath01b.wav";
+dieSound3  = "ideath02.wav";
+dieSound4  = "ideath04.wav";
+dieSound5  = "ideath04.wav";
+crushSound = "isquish01.wav";
+jumpSound  = "ijump01b.wav";
+landSound  = "iland01.wav";
+stepSound  = "running.wav"
+
+
+// animation rate
+animRate = 8.0

@@ -1,0 +1,98 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = "sonic03b.wav"
+
+shotGeometry = NULL
+shotRadius = 3.0
+xplGround = "xsonicgnd_c"
+xplVehicle = "xsoniccar_c"
+xplBuilding = "xsoniccar_c"
+
+renderName = "sonicblast_u.render"
+
+ammoCost = 30
+lifeSpan = 1.5 // 150m
+shotSpeed = 400.0
+
+damageValue(N) = 400 // none
+damageValue(L) = 270 // light
+damageValue(H) = 100 // heavy
+
+damageValue(S) = 270 // standard
+damageValue(D) = 400 // deflection
+damageValue(A) = 170 // absorbtion
+
+[MagnetShellClass]
+triggerDelay = 0.0
+fieldRadius = 10.0 // 20.0 // 2.76
+objPushCenter = 30.0
+objPushEdge = 3.0
+objDrag = 0.1
+ordPushCenter = 300.0 // 300.0 // 700.0
+ordPushEdge = 30.0 // 30.0 // 500.0
+ordDrag = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "sonicblast_u.Core"
+renderName2 = "sonicblast_u.Flare"
+rendername3 = "sonicblast_u.trailer"
+rendername4 = "sonicblast_u.light"
+
+[Core]
+renderBase = "draw_twirl_trail"
+textureName = "splasma.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 230 255" 
+finishColor = "150 230 180 255" 
+startRadius = 0.2
+finishRadius = 0.2
+rotationRate = 10.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.005
+
+[Flare]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureBlend = "one one modulate"
+startColor = "100 255 180 45" 
+finishColor = "0 100 65 0" 
+startRadius = 0.1
+finishRadius = 4.5
+animateTime = 1.0
+emitDelay = 0.04
+emitLife = 1.5
+rotationrate = 0.3
+
+[trailer]
+simulateBase = "sim_dust"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "sbubbles.tga" //ssmoke.tga
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "sbubbles.tga"//strail2.tga
+textureBlend = "one one modulate"
+textureRate = 0.4
+startColor = "200 255 255 60"
+finishColor = "200 255 255 0"
+startRadius = 0.2
+finishRadius = 2.0
+segmentTime = 2
+animateTime = 5
+
+//[Light]
+renderBase = "draw_light"
+startColor = "100 100 255 1500"
+finishColor = "100 100 255 1500"
+startRadius = 65.0
+finishRadius = 65.0
+animateTime = 6
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

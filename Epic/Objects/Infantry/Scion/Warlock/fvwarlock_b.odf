@@ -1,0 +1,146 @@
+// Scion Warlock by Slaor 
+
+[GameObjectClass]
+
+baseName = "fvwarlock"
+
+provideCount = 1
+provideName1 = "warlock"
+
+limitClass1 = "warlock" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 10
+limitClass1Text = "Squad Limit Reached"
+
+classLabel = "wingman"
+geometryName = "sswarlock_b.xsi"
+geometryScale = 0.155
+
+isGrouped = 1
+
+CanAcceptPowerups = false
+
+
+scrapCost = 20
+scrapReturn = 10
+scrapValue = 0
+buildTime = 10.0
+customTime = 10.0
+pilotCost = 1
+maxHealth = 350
+maxAmmo = 50
+addAmmo = 15
+unitName = "Warlock"
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+SmartIsAirUnitCheck = false
+
+heatSignature = 0.5
+imageSignature = 0.4
+radarSignature = 0.1
+collisionRadius = 40.0
+
+canDetect = 1
+canInteract = 1
+needgroup = 0
+needPilot = 0
+canSelect = 1
+canRescue = 0
+caneject = 0
+isStealth = 1
+
+explosionName = "null"
+
+boxCollide = 1
+
+LightingType = 1
+
+armorClass = N //L
+
+requireCount = 1
+requireName1 = "fbantm_b"
+requireText1 = "Build Antenna"
+
+
+VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+weaponMask = 11111
+weaponHard1 = "HP_gun_1"
+weaponAssault1 = 0
+weaponName1 = "gfireball_lb"
+
+weaponHard2 = "HP_gun_2"
+weaponAssault2 = 0
+weaponName2 = "gflamefld_b"
+
+weaponHard3 = "HP_gun_3"
+weaponAssault3 = 1
+weaponName3 = "gfireball_mb"
+
+weaponHard4 = "HP_special_1"
+weaponAssault4 = 1
+weaponName4 = ""
+
+weaponHard5 = "HP_shield"
+weaponAssault5 = 0
+weaponName5 = "gfireshield"
+
+
+
+[CraftClass]
+PersonRetreatRecycleDist = 50.0
+
+rangeScan = 650.0f
+braccelFactor = 0.5
+velFactor = 0.5
+strafeFactor = 0.5
+steerFactor = 1.5
+omegaFactor = 0.2//0.2
+
+xplCrash = "xprsxpl"
+damageEffect1 = "Dmgprs1"
+damageEffect2 = "Dmgprs1"
+damageEffect3 = "Dmgprs2"
+damageEffect4 = "Dmgprs2"
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "MortarBikeSubAttack"
+subAttackClass = "ANS"
+
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = false
+
+engageRange = 600
+detectrange = 300
+canHunt = 1
+AllowLinkWeapons = true
+
+
+[HoverCraftClass]
+velocForward = 18 // []
+velocReverse = 12.0 // []
+velocStrafe = 12.0 // []
+accelThrust = 25.0 //acceleration []
+accelDragStop = 6.0 //how fast it stops once hands are off controls []
+accelJump = 10.0 // []
+
+setAltitude = 1 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.1 //nose up []
+pitchThrust = -0.08 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 4.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.04 //rolls while steering []
+
+SoundThrust = "silence.wav"
+SoundTurbo = "silence.wav"

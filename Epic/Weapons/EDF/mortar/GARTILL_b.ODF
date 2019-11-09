@@ -1,0 +1,13 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "artill_b"
+wpnName = "Artillery"
+fireSound = "ghart00.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "MORT"
+isAssault = 1
+aiRange = 525
+
+[CannonClass]
+shotDelay = 5.0

@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "cbtwos00_b.xsi"
+geometryScale = 12
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Barracks"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+ownsTerrain = 1
+canCollide = 0
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 0
+tunnel01Z0 = 1
+tunnel01DX = 4
+tunnel01DZ = 2
+tunnel01Edge = "wfwf"

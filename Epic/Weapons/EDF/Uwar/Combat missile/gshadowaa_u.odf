@@ -1,0 +1,25 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+altName = "gshadowaa_u"
+ordName = "shadowaa_u"
+wpnName = "Smart Torpedo"
+fireSound = "gsand00.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 1800
+
+[LauncherClass]
+lockRange = 1800.0  // was 170 GEC
+shotDelay = 1.0
+lockDelay = 15
+coneAngle = 50
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"
+shotAlternate = 1
+
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team

@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gcflame_ab"
+ordName = "cflame_cb"
+wpnName = "Scorcher"
+fireSound = "gflas00.wav"
+wpnReticle = "gminigun"
+wpnCategory = "CANN"
+isAssault = 0
+aiRange = 150
+
+[CannonClass]
+shotDelay = 0.03
+shotVariance = 0.2
+

@@ -1,0 +1,56 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "XbulcaR"
+
+renderName = "assrif_cb.render"
+
+ammoCost = 0.6
+lifeSpan = 0.5 // 250m  135 GEC
+shotSpeed = 500.0
+
+damageValue(N) = 12 // none // 120
+damageValue(L) = 7 // light // 120
+damageValue(H) = 2 // heavy // 40
+
+damageValue(S) = 7 // standard // 100
+damageValue(D) = 2 // deflection // 60
+damageValue(A) = 12 // absorbtion // 120
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "assrif_cb.flare"
+renderName2 = "assrif_cb.trail"
+
+[flare]
+maxDist = 2000
+renderBase = "draw_twirl_trail"
+textureName = "sblast.tga"
+textureBlend = "one one modulate"
+startColor = "255 220 150 150"
+finishColor = "250 127 0 64"
+startRadius = 0.07
+finishRadius = 0.05
+animateTime = 0.025
+rotationRate = 0.0
+emitDelay = 0.0002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.025
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "wingtrail.tga"//"strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "200 200 200 10"
+finishColor = "255 255 255 0"
+startRadius = 0.04
+finishRadius = 0.2
+segmentTime = 0.3
+animateTime = 0.3
+lifetime = 0.3

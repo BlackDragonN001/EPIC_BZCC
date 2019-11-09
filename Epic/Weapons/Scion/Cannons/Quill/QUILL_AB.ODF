@@ -1,0 +1,100 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = "gspstab.xsi"
+shotSound = "gquil03.wav"
+
+xplGround = "xquillgnd_a"
+xplVehicle = "xquillcar_a"
+xplBuilding = "xquillcar_a"
+
+renderName = "quill_ab.render"
+
+ammoCost = 10
+lifeSpan = 0.2 // 50m
+shotSpeed = 750.0
+
+damageValue(N) = 26.7 // none // 400.5
+damageValue(L) = 25.4 // light // 381
+damageValue(H) = 23.34 // heavy // 350.1
+
+damageValue(S) = 25.4 // standard // 381
+damageValue(D) = 20 // deflection // 300
+damageValue(A) = 26.7 // absorbtion // 400.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "quill_ab.trail"
+renderName2 = "quill_ab.light"
+renderName3 = "quill_ab.strail"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 150 55"
+finishColor = "255 0 0 0"
+textureRate = .05
+startRadius = .6
+finishRadius = 0.005
+segmentTime = 0.18
+ 
+
+//[Light]
+renderBase = "draw_light"
+startColor = "250 250 0 150"
+finishColor = "250 250 0 150"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+//[Trail2]
+renderBase = "draw_trail"
+textureName = "imisl_s.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "255 0 0 255"
+finishColor = "255 255 255 0"
+animateTime = 0.3
+textureRate = 5
+startRadius = 0.2
+finishRadius = 0.001
+segmentTime = 1.75
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 400"
+finishColor = "255 0 0 255"
+startRadius = 2.2 
+finishRadius = 2.2 
+
+//[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor =   "255 255 255 20" //"153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 2.0
+emitDelay = 0.07
+emitVelocity = "0.2 0.2 0.2"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 3.0
+
+[STrail]
+renderBase = "draw_trail"
+textureName = "ssontrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor =   "80 80 80 40" //"153 153 153 128"
+finishColor = "150 150 150 0
+startRadius = 0.01
+finishRadius = 1
+animateTime = 0.7
+segmentTime = 0.7

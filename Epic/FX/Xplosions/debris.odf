@@ -1,0 +1,126 @@
+// ========================
+// GROUND HIT
+// ========================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xms2.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 4
+
+particleClass1 = "debris.chunks"
+particleCount1 = 10
+particleVeloc1 = "5.0 7.5 5.0"
+particleBias1 = "0.0 5.0 0.0"
+
+particleClass2 = "debris.schunks"
+particleCount2 = 15
+particleVeloc2 = "8.0 10.5 8.0"
+particleBias2 = "0.0 5.0 0.0"
+
+particleClass3 = "debris.posroll"
+particleCount3 = 8
+particleVeloc3 = "5.0 0.0 5.0"
+
+particleClass4 = "debris.trail"
+particleCount4 = 8
+particleVeloc4 = "30.0 40.0 30.0"
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 5.0
+renderBase = "draw_sprite"
+textureName = "gravel64.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 0.4
+finishRadius = 0.4
+animateTime = 5.0
+
+[//Chunks]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "debris.rock"
+emitDelay = 0.01
+emitVelocity = "2.0 3.0 3.0"//.4 0 0
+emitVariance = "5.0 5.0 0.0"// .5 .5 .5
+
+[rock]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "gravel64.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 0.4
+finishRadius = 0.4
+animateTime = 0.8
+rotationRate = 0.1
+
+
+[sChunks]
+simulateBase = "sim_ember"
+lifeTime = 4.5
+renderBase = "draw_sprite"
+textureName = "gravel64.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 120 120 255"
+finishColor = "120 120 120 255"
+startRadius = 0.2
+finishRadius = 0.2
+animateTime = 3.5
+
+[tChunks]
+simulateBase = "sim_ember"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "gravel64.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 120 120 255"
+finishColor = "120 120 120 255"
+startRadius = 0.08
+finishRadius = 0.08
+animateTime = 0.5
+
+[posroll]
+simulateBase = "sim_dust"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "32 32 32 255"
+finishColor = "127 127 127 0"
+startRadius = 1.0
+finishRadius = 0.5
+animateTime = 2.0
+rotationRate = 2.0
+
+[trail]
+simulateBase = "sim_ember"
+lifeTime = 1.5
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 50 50 100"
+finishColor = "130 130 130 0"
+startRadius = .4
+finishRadius = 1.5
+animateTime = 4
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 4

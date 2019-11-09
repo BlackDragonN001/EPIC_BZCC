@@ -1,0 +1,114 @@
+[GameObjectClass]
+geometryName = "fac_pgen_b.xsi"
+geometryScale = 0.5
+classLabel = "powerplant"
+//animCount = 1
+//animName1 = "loop"
+//animFile1 = "ibpgen00.xsi"
+scrapCost = 30
+scrapValue = 3
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Sifter"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 30.0
+isAssault = 1
+ownsTerrain = 1
+cancollide = 0
+
+explosionName = "ixshipxplw"
+
+armorClass = H
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "facpgen_b"
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "facpgen_b.matter"
+effectHard2 = "hp_emit_2"
+effectName2 = "facpgen_b.lighta"
+effectHard3 = "hp_emit_3"
+effectName3 = "facpgen_b.lightr"
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 500
+
+//[Lod1]
+geometryName = "ibpgenL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 460                    ;bsphere under 200 pixel => switch to lod1
+
+[Steam]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.5
+emitDelayVar = 0.1
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 3.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 130"
+finishColor = "250 250 250 0"
+startRadius = 2
+finishRadius = 4
+animateTime = 3.0
+rotationRate = 0.2
+
+[lighta]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "100 35 0 800"
+finishColor = "100 35 0 800"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[lightr]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "80 0 0 500"
+finishColor = "80 0 0 500"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[matter]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "facpgen_b.matteremit"
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matteremit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "sparks.tga"
+textureBlend = "one one modulate"
+startColor = "50 40 0 0"
+finishColor = "250 240 155 150"
+startRadius = 16.0
+finishRadius = 0.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

@@ -1,0 +1,66 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+altName = "gshadowaa_b"
+ordName = "shadowaa_b"
+wpnName = "Shadower Msl"
+fireSound = "gsand00.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 1300
+flashName = "gmortar_b.flash"
+
+shotAlternate = true
+
+[LauncherClass]
+lockRange = 1300.0  // was 170 GEC
+shotDelay = 2.0
+lockDelay = 1.5
+coneAngle = 0.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"
+
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 9
+
+renderName1 = "gmortar_b.light"
+renderName2 = "gbcann_cb.e2"
+renderName3 = "gbcann_cb.e1"
+renderName4 = "xgbcann_cb.e4"
+renderName5 = "gbcann_cb.e5"
+renderName6 = "gbcann_cb.e6"
+renderName7 = "gbcann_cb.e7"
+renderName8 = "gbcann_cb.e8"
+renderName9 = "gshadow_cb.smoke"
+
+
+
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = 0.25
+renderBase = "draw_emit"
+emitName = "gshadow_cb.smokeemit"
+emitDelay = 0.02
+emitDelayVar = 0.02
+emitVelocity = "0.0 0.0 -30.0"
+emitVariance = "5.0 5.0 5.0"
+emitInherit = "0.2 0.2 0.2"
+
+[smokeemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.7
+renderBase = "draw_twirl"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "190 190 190 60"
+finishColor = "255 255 255 0"
+startRadius = 0.3
+finishRadius = 3
+animateTime = 0.7
+rotationRate = 2.0

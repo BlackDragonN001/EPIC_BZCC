@@ -1,0 +1,71 @@
+[WeaponClass]
+classLabel = "chargegun"
+altName = "gmaggun_cb"
+ordName = NULL;
+wpnName = "MAG"
+fireSound = "mag01.wav"
+wpnReticle = "gmaggun.0"
+wpnCategory = "CANN"
+
+isAssault = 1
+
+aiRange = 360
+
+[ChargeGunClass]
+startRate = 11025.0
+deltaRate = 4000.0
+startVolume = 40.0
+deltaVolume = 20.0
+
+ordnanceCount = 7
+
+shotDelay1 = 0.0
+salvoCount1 = 0
+salvoDelay1 = 0
+fireSound1 = NULL
+ordName1 = NULL
+wpnReticle1 = "gmaggun.0"
+
+shotDelay2 = 0.5
+salvoCount2 = 6
+salvoDelay2 = 0.1
+fireSound2 = "mag02.wav"
+ordName2 = "charge1_ab"
+wpnReticle2 = "gmaggun.1"
+
+shotDelay3 = 1.0
+salvoCount3 = 5
+salvoDelay3 = 0.15
+fireSound3 = "mag03.wav"
+ordName3 = "charge2_ab"
+wpnReticle3 = "gmaggun.2"
+
+shotDelay4 = 2.0
+salvoCount4 = 4
+salvoDelay4 = 0.2
+fireSound4 = "mag04.wav"
+ordName4 = "charge3_ab"
+wpnReticle4 = "gmaggun.3"
+
+shotDelay5 = 3.5
+salvoCount5 = 3
+salvoDelay5 = 0.3
+fireSound5 = "mag05.wav"
+ordName5 = "charge4_ab"
+wpnReticle5 = "gmaggun.4"
+
+shotDelay6 = 5.0
+salvoCount6 = 2
+salvoDelay6 = 0.5
+fireSound6 = "mag06.wav"
+ordName6 = "charge5_ab"
+wpnReticle6 = "gmaggun.5"
+
+shotDelay7 = 7.5
+salvoCount7 = 1
+salvoDelay7 = 0.0
+fireSound7 = "mag07.wav"
+ordName7 = "charge6_ab"
+wpnReticle7 = "gmaggun.6"
+
+holdRate = 100.0

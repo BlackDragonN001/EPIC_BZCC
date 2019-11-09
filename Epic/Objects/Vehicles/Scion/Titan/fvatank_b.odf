@@ -1,0 +1,137 @@
+[GameObjectClass]
+baseName = "fvatank_b"
+
+unitIcon = "icon_fvatank.tga"
+infoName = "fvatank_b.inf"
+unitStatus = "wire_fvatank.tga"
+
+geometryName = "fvtitan_skel_b.xsi"
+geometryScale = 1.5
+glowTexture = "fvatanka0.pic"
+cockpitName = "fvtitan_cockpit.xsi"
+classLabel = "assaulttank"
+scrapValue = 60
+scrapReturn = 45
+scrapCost = 90
+customCost = 100
+buildTime = 15.0
+customTime = 20.0
+maxHealth = 6000
+addhealth = 9
+maxAmmo = 6000
+addAmmo = 10
+unitName = "Titan"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+heatSignature = 0.5
+imageSignature = 5.0
+radarSignature = 5.0
+isAssault = 1
+collisionRadius = 50.0
+
+armorClass = H
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "fvatank_b"
+provideName2 = "atank"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivatank_b.render" //"ivtank_b.trailer"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivatank_b.render"
+
+requireCount = 3
+requireName1 = "fbforg_b"
+requireText1 = "Upgrade Kiln"
+requireName2 = "fbover_b"
+requireText2 = "Upgrade Antenna"
+requireName3 = "fbstro_b"
+requireText3 = "Build Stronghold"
+
+/////// weapons ///////////////////
+
+weaponMask = 01111
+weaponHard1 = "HP_CANNON_1"
+recoilName1 = "cube2"
+weaponName1 = "garc_cb"
+weaponAssault1 = 0
+weaponHard2 = "HP_CANNON_2"
+recoilName2 = "cube4"
+weaponName2 = "garc_cb"
+weaponAssault2 = 0
+weaponHard3 = "HP_GUN_1"
+recoilName3 = "cube2"
+weaponName3 = "giongn_cb"
+weaponAssault3 = 0
+weaponHard4 = "HP_GUN_2"
+recoilName4 = "cube4"
+weaponName4 = "giongn_cb"
+weaponAssault4 = 0
+
+//////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+
+[CraftClass]
+xplCrash = "xscionxplb"
+
+rangeScan = 900.0f
+periodScan = 5.0f
+velocJam =0.0f
+engageRange = 700
+
+selectWaitMsg = "fvatank04.wav"
+selectAttackMsg = "fvatank01.wav"
+selectFollowMsg = "fvatank03.wav"
+selectGoMsg = "fvatank02.wav"
+selectOtherMsg = "fvatank04.wav"
+
+goMsg = "fvatank06.wav"
+attackMsg = "fvatank05.wav"
+followMeMsg = "fvatank08.wav"
+followMsg = "fvatank03.wav"
+repairMsg = "fvatank09.wav"
+reloadMsg = "fvatank09.wav"
+rescueMsg = "fvatank10.wav"
+recycleMsg = "fvatank11.wav"
+otherMsg = "fvatank06.wav" 
+holdMsg = "fvatank09.wav"
+user1Msg = ""  
+killedMsg = "fvatank07.wav"
+diedMsg = ""
+
+//braccelFactor = 0.09
+//velFactor = 0.1
+steerFactor = 0.6
+//omegaFactor = 0.1
+
+avoidSpeed = 16
+
+[TrackedVehicleClass]
+accelThrust = 10.0
+accelBrake = 50.0
+accelDrag = 20.0
+accelDragFull = 30.0
+accelDragStop = 40.0
+alphaSteer = 2.0
+omegaSpin = 1.0
+omegaTurn = 0.5
+velocForward = 30.0
+velocReverse = 10.0
+
+engineSound = "fatank02.wav"
+treadSound = "fatank02.wav"
+
+TREAD_STATIC_FRICTION = 1.5
+
+[AssaultTankClass]
+yawRate = 2.0
+yawAlpha = 5.0
+pitchMin = -0.1
+pitchMax = 0.5
+//recoilName1 = "cube2"
+//recoilName2 = "cube4"

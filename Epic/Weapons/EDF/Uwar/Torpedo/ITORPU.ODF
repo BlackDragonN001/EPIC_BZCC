@@ -1,0 +1,155 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "cvcomet00.xsi"
+shotSound = "satord.wav"
+
+renderName = "itorpu.render"
+
+xplGround = "xsprocketu"
+xplVehicle = "xsprocketu"
+xplBuilding = "xsprocketu"
+
+ammoCost = 40
+lifeSpan = 6 
+shotSpeed = 160.0
+
+damageValue(N) = 800 // none
+damageValue(L) = 500 // light
+damageValue(H) = 300 // heavy
+
+damageValue(S) = 500 // standard
+damageValue(D) = 700 // deflection
+damageValue(A) = 400 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.2
+
+[ThermalMissileClass]
+coneAngle = 0.2
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "itorpu.trailer"
+//renderName2 = "sprocketa.flame"
+renderName2 = "itorpu.Light1"
+renderName3 = "itorpu.Light"
+renderName4 = "itorpu.trailer2"
+renderName5 = "itorpu.wake"
+
+//[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 64 127 64"
+finishColor = "200 200 255 0"
+startRadius = 0.2
+finishRadius = 2.0
+rotationRate = 2.0
+animateTime = 0.1
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.1
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "cavitate.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "80 220 175 130"
+finishColor = "0 90 60 0"
+startRadius = 2
+finishRadius = 0.1
+segmentTime = 0.4
+animateTime = 2.5
+
+[trailer2]
+renderBase = "draw_trail"
+textureName = "sbubbles.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 255 255 100"
+finishColor = "180 255 255 0"
+startRadius = 2
+finishRadius = 4
+segmentTime = 3
+animateTime = 7
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "0 0 255 80"
+startRadius = 3
+finishRadius = 0.02
+rotationRate = 10.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.02
+
+[Light1]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "180 105 255 255"
+finishColor = "180 105 255 255"
+startRadius = 7.0
+finishRadius = 7.0
+rotationRate = 10.0
+
+//[Light2]
+renderBase = "draw_sprite"
+textureName = "sgodlight2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 5.0
+finishRadius = 5.0
+rotationRate = -8.0
+
+[Light]
+renderBase = "draw_light"
+startColor = "100 180 255 2500"
+finishColor = "100 180 255 2500"
+startRadius = 85.0
+finishRadius = 85.0
+animateTime = 6
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+//[trailer]
+simulateBase = "sim_dust"//dust
+lifeTime = 1.5 //2.5
+renderBase = "draw_trail"
+textureName = "scerbbeam.tga"
+textureBlend = "one one modulate"
+textureRate = 0.08
+startColor = "180 80 255 250"
+finishColor = "0 0 100 0"
+startRadius = 0.2
+finishRadius = 1.0
+segmentTime = 0.2
+animateTime = 0.8
+
+[wake]
+simulateBase = "sim_dust"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "uwake.tga" //ssmoke.tga
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "uwake.tga"//strail2.tga
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "0 100 55 100"
+finishColor = "0 50 20 0"
+startRadius = 0.5
+finishRadius = 5
+segmentTime = 0.5
+animateTime = 0.3

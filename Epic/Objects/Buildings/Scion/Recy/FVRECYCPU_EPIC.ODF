@@ -1,0 +1,73 @@
+[GameObjectClass]
+baseName = "fvrecy"
+geometryName = "fvrecy_skel_b.xsi"
+geometryScale = 2.4
+glowTexture = "fvrecya0.pic"
+classLabel = "recyclervehicle"
+collisionRadius = 10.0
+scrapCost = 0
+scrapValue = 10
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Matriach"
+aiName = "DeployBuildingFriend"
+aiName2 = "DeployBuildingEnemy"
+heatSignature = 2.0
+imageSignature = 5.0
+radarSignature = 5.0
+isAssault = 1
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+[CraftClass]
+rangeScan = 2400.0
+periodScan = 5.0
+velocJam = 0.0
+TeamTransferrable = false
+
+LightingType = 1 
+
+
+selectWaitMsg = "fvrecy04.wav"
+selectUser1Msg = "fvrecy01.wav"
+selectGoMsg = "fvrecy02.wav"
+selectReadyMsg = "fvrecy04.wav"
+selectUser2Msg = "fvrecy04.wav"
+holdMsg = "fvrecy04.wav"
+goMsg = "fvrecy05.wav"
+repairMsg = ""
+attackMsg = ""
+followMsg = "fvrecy03.wav"
+reloadMsg = "fvrecy11.wav"
+rescueMsg = "fvrecy12.wav"
+otherMsg = "fvrecy04.wav"
+
+deployedMsg = "fvrecy10.wav"
+packedMsg = ""
+diedMsg = ""
+
+[TrackedVehicleClass]
+TREAD_STATIC_FRICTION = 3
+velocForward = 20.0
+velocReverse = 20.0
+accelThrust = 50.0
+omegaSpin = 1.0
+
+engineSound = "fatank02.wav"
+treadSound = "fatank02.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 10.0
+timeUndeploy = 10.0
+soundDeploy = "srecy02.wav"
+soundUndeploy = "avrecye5.wav"
+
+DoExtraBuildzoneCheck = false // false = 1.0 .. 1.3pb1 behavior, true = pb2 .. current
+
+[DeployBuildingClass]
+deployName = "fbrecy_MPI"
+
+[RecyclerVehicleClass]
+scrapHold = 40

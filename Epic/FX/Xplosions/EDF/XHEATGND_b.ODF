@@ -1,0 +1,118 @@
+// ==================
+// MISSILE GROUND HIT
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particletypes = 14
+
+particleClass1 = "xflak_b.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xflak_b.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 10.0 0.0"
+
+//particleClass3 = "xgasgnd.flame"
+//particleCount3 = 2
+//particleVeloc3 = "0.0 5.0 0.0"
+
+particleClass4 = "xflak_b.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xflak_b.fire"
+particleCount5 = 1
+particleVeloc5 = "0.0 -55.0 0.0"
+
+particleClass6 = "xflak_b.sparks"
+particleCount6 = 1
+particleVeloc6 = "0.0 -2.0 0.0"
+
+particleClass7 = "xflak_b.shocks"
+particleCount7 = 1
+particleVeloc7 = "0.0 5.0 0.0"
+
+particleClass8 = "xflak_b.core"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "debris.chunks"
+particleCount9 = 10
+particleVeloc9 = "165.0 67.5 165.0"
+particleBias9 = "0.0 5.0 0.0"
+
+particleClass10 = "debris.schunks"
+particleCount10 = 15
+particleVeloc10 = "138.0 60.5 138.0"
+particleBias10 = "0.0 5.0 0.0"
+
+particleClass11 = "xflak_b.posroll"
+particleCount11 = 1
+particleVeloc11 = "10.0 0.0 10.0"
+
+particleClass12 = "xflak_b.trail"
+particleCount12 = 6
+particleVeloc12 = "80.0 80.0 80.0"
+
+particleClass13 = "xflak_b.char"
+particleCount13 = 1
+particleVeloc13 = "0.0 0.0 0.0"
+
+particleClass14 = "xflak_b.shocks2"
+particleCount14 = 1
+particleVeloc14 = "0.0 5.0 0.0"
+
+explSound = "xms2.wav"
+
+damageRadius = 10.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 10 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 10 // absorbtion
+
+kickRadius = 25.0
+kickOmega = 2.0
+kickVeloc = 6.0
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 3.0
+finishRadius = 3.0
+animateTime = 10.0
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "dirt.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 0.3
+finishRadius = 0.3
+animateTime = 3.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "64 64 64 127"
+finishColor = "64 64 64 0"
+startRadius = 0.5
+finishRadius = 5.0
+animateTime = 4.0

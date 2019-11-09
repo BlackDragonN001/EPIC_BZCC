@@ -1,0 +1,57 @@
+[ISDF Gun]
+weaponCount = 5
+weaponName1 = "apmini_b"
+weaponName2 = "aplase_b"
+weaponName3 = "appumm_b"
+weaponName4 = "apchain_b"
+weaponName5 = "apbchain_b"
+
+[ISDF Cannon]
+weaponCount = 8
+weaponName1 = "apstab_b"
+weaponName2 = "appstb_b"
+weaponName3 = "apsstb_b"
+weaponName4 = "applas_b"
+weaponName5 = "apblst_b"
+weaponName6 = "apmagg_b"
+weaponName7 = "apxvstab_b"
+weaponName8 = "apbcann_b"
+
+[ISDF Rocket]
+weaponCount = 5
+weaponName1 = "apfafm_b"
+weaponName2 = "aptagg_b"
+weaponName3 = "apshdw_b"
+weaponName4 = "apsaturn_b"
+weaponName5 = "apsamiss_b"
+
+[ISDF Mortar]
+weaponCount = 4
+weaponName1 = "apartl_b"
+weaponName2 = "apmdmg_b"
+weaponName3 = "apmort_b"
+weaponName4 = "apspln_b"
+
+[ISDF Special]
+weaponCount = 8
+weaponName1 = "apflar_b"
+weaponName2 = "apmcur_b"
+weaponName3 = "apmits_b"
+weaponName4 = "approx_b"
+weaponName5 = "apphan_b"
+weaponName6 = "apredf_b"
+weaponName7 = "apsite_b"
+weaponName8 = "apchainm_b"
+
+[ISDF Hand]
+weaponCount = 2
+weaponName1 = "apbazo_b"
+weaponName2 = "apsnip_b"
+weaponName3 = "apsam_b"
+
+[ISDF Pack]
+weaponCount = 3
+weaponName1 = "apgren_b"
+weaponName2 = "apamjet_b"
+weaponName3 = "apsatc_b"
+

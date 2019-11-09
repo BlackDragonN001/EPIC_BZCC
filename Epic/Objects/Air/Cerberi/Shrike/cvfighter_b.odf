@@ -1,0 +1,272 @@
+[GameObjectClass]
+provideCount = 2
+provideName1 = "cvfighter"
+provideName2 = "figh"
+
+limitClass1 = "cvfighter" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 20
+limitClass1Text = "Control Limit Reached"
+
+baseName = "cvfighter_b"
+
+unitIcon = "icon_cvfighter_b.tga"
+infoName = "cvfighter_b.inf"
+unitStatus = "wire_cvfighter_b.tga"
+
+geometryName = "cvfighter00_b.xsi"
+geometryScale = 1
+//cockpitName= "ivtank_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapReturn = 25
+scrapCost = 50
+customCost = 65
+buildTime = 12.0
+customTime = 12.0
+maxHealth = 1500
+addhealth = 5
+maxAmmo = 5000
+addAmmo = 50
+unitName = "Shrike"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+
+
+collisionRadius = 240.0
+boxCollide = 1
+explosionName = "xcerbxpld"
+
+
+heatSignature = 2.0
+imageSignature = 20.0
+radarSignature = 10.0
+isAssault = 0
+armorClass = N
+CanAcceptPowerups = false
+
+needPilot = 1
+CanAcceptPowerups = false
+isFlying = true
+
+SmartIsAirUnitCheck = false
+VehicleSearchFilter = 0 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+
+requireCount = 2
+requireName1 = "cbcbun_b"
+requireText1 = "Build Uplink"
+requireName2 = "cbpgen_b"
+requireText2 = "Build Power Node"
+
+
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cvtalon_b.tail"
+//effectHard2 = "hp_emit_2"
+//effectName2 = "cvtalons.trailer"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "cvtalons.trailer"
+//effectHard4 = "hp_trail_1"
+//effectName4 = "cvtalons.flame"
+
+effectHard5 = "hp_emit_2"
+effectName5 = "cvtalon_b.light"
+effectHard6 = "hp_emit_3"
+effectName6 = "cvtalon_b.light"
+effectHard7 = "hp_emit_4"
+effectName7 = "cvtalon_b.light"
+/////// weapons ///////////////////
+
+weaponMask = 11111 
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "Gclaser_ab"
+weaponAssault1 = 0
+weaponHard2 = "HP_Rocket_1"
+weaponName2 = "gcworms"
+weaponAssault2 = 0
+weaponHard3 = "HP_Rocket_2"
+weaponName3 = "gcworms"
+weaponAssault3 = 0
+//weaponHard4 = "HP_ROCKET_2"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 0
+//weaponHard2 = "HP_SPECIAL_1"
+//weaponName2 = "gphantom"
+//weaponAssault2 = 0
+//weaponHard3 = "HP_GUN_3"
+//weaponName3 = "gcworms"
+//weaponAssault3 = 0
+
+
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+
+[CraftClass]
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+xplCrash = "xcerbxpl"
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+ejectratio = 0
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 1200.0f
+periodScan = 0.0f
+velocJam = 5.0f
+engageRange = 900
+
+AllowLinkWeapons = true
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+subAttackTask = "AimFireAttack"
+subAttackClass = "ANN"
+
+ClosestEnemyGoodEyes = true 
+
+FireWhenCanHitFriends = false
+
+AttackTaskUsesGroups = false
+GotoTaskHasLeader = false
+
+//braccelFactor = 0.01 //0.03
+//velFactor = 0.8//0.2
+//steerFactor = 0.3//1.5
+omegaFactor = 0.1
+strafeFactor = 0.01
+
+avoidSpeed = 90;
+topSpeed = 250;
+
+selectWaitMsg = "cvo_hi_holding_pattern.wav"
+selectAttackMsg = "cvo_hi_target_acquired.wav"
+selectFollowMsg = "cvo_hi_following.wav"
+selectGoMsg = "cvo_hi_directive_logged.wav"
+selectOtherMsg = "cvo_hi_stealth_online.wav"
+holdMsg = "cvo_hi_holding_pattern.wav"
+
+goMsg = "cvo_hi_directive_logged.wav"
+attackMsg = "cvo_hi_target_acquired.wav"
+followMeMsg = "cvo_hi_following.wav"
+followMsg = "cvo_hi_following.wav"
+repairMsg = "cvo_hi_repairing.wav"
+reloadMsg = "cvo_hi_repairing.wav"
+rescueMsg = "cvo_hi_rescuing.wav"
+recycleMsg = "cvo_hi_recycling.wav"
+otherMsg = "cvo_hi_stealth_online.wav" 
+
+user1Msg = ""  
+killedMsg = "cvo_hi_target_destroyed.wav"
+
+[AirCraftClass]
+velocSet(L) = 35.0 // minimum velocity
+velocSet(M) = 75.0 // cruising velocity
+velocSet(H) = 160.0 // maximum velocity
+accelThrust = 45.0 // thrust acceleration
+accelBrake = 20.0 // brake acceleration
+accelDrag = 65//10.0 // drag acceleration
+omegaSteer(L) = 6//4.51 // steer turn rate at minimum
+omegaSteer(M) = 5//2.52 // steer turn rate at cruising
+omegaSteer(H) = 4//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0.8 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.6 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.4 // airbrake turn rate at maximum
+alphaSteer = 10.0 // steering angular acceleration
+alphaStrafe = 4.0 // airbrake angular acceleration
+minAltitude = 100.0 // minimum altitude
+maxAltitude = 400.0 // maximum altitude
+alphaLevel = 3.0 // leveling angular acceleration
+alphaDamp = 6.0 // damping angular acceleration
+pitchPitch = 0.5 // maximum pitch angle
+rollSteer = 0.9//0.7 // maximum roll angle from steering
+rollStrafe = 0.9 // maximum roll angle from airbraking
+timeDeploy = 5 // time to deploy
+timeUndeploy = 5 // time to undeploy
+
+AlwaysDeployed = true
+AlwaysUndeployed = false
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 150
+AILiftSpring = 90 // 15.0
+LiftSpring = 30.5 
+AltitudeLookahead = 1.0
+
+soundThrust = "jpack01.wav"
+soundBrake = "wmflame.wav"
+soundDeploy = "wmflame.wav"
+soundUndeploy = "wmflame.wav"
+soundTurbo = "avtanke3.wav"
+
+
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "cvtalonsa.trailer"
+//renderName2 = "cvtalonsa.flame"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "190 60 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.7
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "180 20 255 850"
+finishColor = "180 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 1200                 ;...distance over this many meters => switch to lod2
+
+
+
+

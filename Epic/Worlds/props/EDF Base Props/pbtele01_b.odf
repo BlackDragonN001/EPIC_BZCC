@@ -1,0 +1,38 @@
+[GameObjectClass]
+geometryName = "pbtele01_b.xsi"
+geometryScale = 2
+classLabel = "i76building"
+collisionRadius = 1.0
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Telephone Pole"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+canCollide = 0
+ownsTerrain = 0
+
+armorClass = H
+
+effectHard1 = "hp_emit_1"
+effectName1 = "pbtele01.render"
+
+effectHard2 = "hp_emit_2"
+effectName2 = "pbtele01.render"
+
+[BuildingClass]
+justFlat = 1
+
+[render]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 2.0
+finishRadius = 2.0

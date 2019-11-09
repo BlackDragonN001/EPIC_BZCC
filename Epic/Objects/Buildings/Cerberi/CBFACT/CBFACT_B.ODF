@@ -1,0 +1,81 @@
+[GameObjectClass]
+geometryName = "cbfact00_b.xsi"
+geometryScale = 1.0 //8
+classLabel = "factory"
+scrapCost = 80
+scrapReturn = 40
+scrapValue = 10
+maxHealth = 14000
+maxAmmo = 0
+unitName = "Crucible"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+PowerCost = 0
+
+explosionName = "XBHXPL_b"
+
+LightingType = 1
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "cbpgen_b"
+requireText1 = "Build Power Node"
+requireName2 = "cbcbun_b"
+requireText2 = "Build Uplink"
+
+
+provideCount = 2
+provideName1 = "cbfact_b"
+provideName2 = "fact"
+
+collisionRadius = 20.0
+
+
+effectHard1 = "hp_emit_2"
+effectName1 = "cbfact_b.dark"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "cvo_mid_fabrication_logged.wav"
+soundFinish = "cvo_mid_fabrication_complete.wav"
+reloadMsg = "cvo_mid_fabrication_logged.wav"
+rescueMsg = "cvo_mid_fabrication_complete.wav"
+
+KickAllCraft = true
+
+buildItem1 = "cvtalon_b"
+buildItem2 = "cvfighter_b"
+buildItem3 = "cvwraith_b"
+buildItem4 = "cvover_b"
+buildItem5 = "cvdcar_b"
+
+buildItem7 = "cvcitadel_b"
+
+[dark]
+simulateBase = "sim_null"
+lifeTime = 5e30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 50.0
+finishRadius = 50.0
+animateTime = 0.5
+
+
+

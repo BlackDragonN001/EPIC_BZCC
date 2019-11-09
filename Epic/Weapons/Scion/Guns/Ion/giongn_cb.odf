@@ -1,0 +1,29 @@
+[WeaponClass]
+baseName = "gatstab"
+altName = "giongn_ab"
+classLabel = "machinegun"
+ordName = "ionize_cb"
+wpnName = "Ion Gun"
+fireSound = "igun01.wav"
+wpnReticle = "gion"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 300
+flashName = "giongn_cb.flash"
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.02
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 255"
+finishColor = "0 255 0 0"
+startRadius = 3.0
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"
+
+

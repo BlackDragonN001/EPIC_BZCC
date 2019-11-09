@@ -1,0 +1,46 @@
+[GameObjectClass]
+geometryName = "pbwseg05_b.xsi"
+geometryScale = 2
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Barracks"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 10.0
+ownsTerrain = 1
+canCollide = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "pbwsegE5.render"
+
+[BuildingClass]
+
+[render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "2.0 3.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 10.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 64"
+finishColor = "0 0 0 0"
+startRadius = 2
+finishRadius = 5.0
+animateTime = 10.0
+rotationRate = 2.0
+
+
+
+
+
+
+
+
+

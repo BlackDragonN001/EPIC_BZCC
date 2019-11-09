@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = NULL //"spawn01.xsi"
+animCount = 0
+classLabel = "objectspawn"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = ""
+canInteract = 0
+canDetect = 0
+explosionName = "null"
+
+lifespan = 0.3
+
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.0
+
+[ObjectSpawnClass]
+spawnName = "qsing1c"
+spawnDelay = 0.2
+spawnSound = "silence.wav"

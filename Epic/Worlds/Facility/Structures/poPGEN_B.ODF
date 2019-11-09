@@ -1,0 +1,43 @@
+[GameObjectClass]
+geometryName = "ibpgen_b.xsi"
+geometryScale = 2
+classLabel = "powerplant"
+//animCount = 1
+//animName1 = "loop"
+//animFile1 = "ibpgen00.xsi"
+scrapCost = 30
+scrapValue = 3
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Power"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 2.0
+isAssault = 1
+ownsTerrain = 1
+
+LightingType = 1
+
+explosionName = "ixshipxplw"
+
+armorClass = H
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "ibpgen_b"
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_lblue_nf"
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 500
+
+[Lod1]
+geometryName = "ibpgenL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 460                    ;bsphere under 200 pixel => switch to lod1

@@ -1,0 +1,179 @@
+[GameObjectClass]
+baseName = "ivcorvs"
+GlowTexture = "ivfriga0.pic"
+geometryName = "ivtfrigate.xsi"
+geometryScale = 1.5
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 60
+customCost = 75
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 15000
+addHealth = 15
+maxAmmo = 4000
+addAmmo = 80
+unitName = "EDF T-Frigate"
+aiName = "APCProcess"
+explosionName = "xfrigxpl"//"ixftrxpl"
+collisionRadius = 300.0
+
+heatSignature = 12.0
+imageSignature = 40.0
+radarSignature = 30.0
+isAssault = 1
+armorClass = L
+needPilot = 1
+cockpitName = "ivscav_cockpit.xsi"
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivtfrigs.trail"
+//effectHard2 = "hp_trail_2"
+//effectName2 = "ivcorvs.trail"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ivspbombsa.trail"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ivspbombsa.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gsprocketa"
+weaponAssault1 = 1
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gsprocketa"
+weaponAssault2 = 1
+weaponHard3 = "HP_CANNON_1"
+weaponName3 = "gcapcan_c" // "gsgun"
+weaponAssault3 = 0
+weaponHard4 = "HP_CANNON_2"
+weaponName4 = "gcapcan_c"
+weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "THRUSTcorv"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+xplCrash = "null"//"xfrigxpl"
+xplChunks = "null"
+rangeScan = 2500.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 2000
+
+ejectratio = 0
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.5
+
+avoidSpeed = 70;
+topSpeed = 150;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 140 // []
+velocReverse = 60.0 // []
+velocStrafe = 30.0 // []
+accelThrust = 15.0 //acceleration []
+accelDragStop = 7.0 //how fast it stops once hands are off controls []
+accelJump = -100.0 // []
+
+setAltitude =200.0 // how high off the ground
+
+alphaTrack = 8.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+pitchPitch = 2 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.15 //rolls while strafing []
+omegaSpin = 2.0 //spinning in place speed []
+omegaTurn = 1.0 //turning while moving speed []
+alphaSteer = 2.0 //how fast it responds to steering []
+rollSteer = 0.25 //rolls while steering []
+
+soundThrust = "lowamb.wav"
+soundTurbo = "lowamb.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivtfrigs.trailer"
+renderName2 = "ivtfrigs.flame"
+renderName3 = "ivtfrigs.Light1"
+
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 150"
+finishColor = "0 0 255 0"
+startRadius = 5
+finishRadius = 3
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 255"
+finishColor = "0 100 255 0"
+startRadius = 8
+finishRadius = 2
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 20.0
+finishRadius = 20.0
+rotationRate = 10.0
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 5000                 ;...distance over this many meters => switch to lod2

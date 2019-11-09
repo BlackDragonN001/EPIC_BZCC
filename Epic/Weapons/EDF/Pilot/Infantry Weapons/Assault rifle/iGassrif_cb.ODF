@@ -1,0 +1,60 @@
+[WeaponClass]
+classLabel = "machinegun"
+
+// external geometry
+geometryName = "igassrif_skel.xsi"
+geometryScale = 0.15
+animCount = 4
+animName1 = "stand"
+animFile1 = "igbeamrif_skel.xsi"
+animName2 = "walk"
+animFile2 = "igbeamrif_skel.xsi"
+animName3 = "crouch"
+animFile3 = "igbeamrif_skel.xsi"
+animName4 = "jump"
+animFile4 = "igbeamrif_skel.xsi"
+
+// cockpit geometry
+cockpitName = "iwassrif_cockpit_skel_b.xsi"
+cockpitScale = 0.12
+animCountCockpit = 4
+
+animNameCockpit1 = "stand"
+animFileCockpit1 = "iwbazo_cockpit_stand.xsi"
+
+animNameCockpit2 = "walk"
+animFileCockpit2 = "iwbazo_cockpit_run.xsi"
+
+animNameCockpit3 = "crouch"
+animFileCockpit3 = "iwbazo_cockpit_stand.xsi"
+
+animNameCockpit4 = "jump"
+animFileCockpit4 = "iwbazo_cockpit_stand.xsi"
+
+altName = "igassrif_ab"
+ordName = "assrif_cb"
+wpnName = "Assault Rifle"
+fireSound = "magun.wav"
+wpnReticle = "gchain"
+wpnCategory = "HAND"
+isAssault = 0
+flashName = "gshellgun_p.flash"
+aiRange = 300
+
+[CannonClass]
+shotDelay = 0.06
+shotVariance = 0.005
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 0 300"
+finishColor = "255 0 0 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

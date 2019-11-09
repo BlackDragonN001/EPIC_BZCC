@@ -1,0 +1,104 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.0
+xplGround = "xsplasgnd_ab"
+xplVehicle = "xsplascar_ab"
+xplBuilding = "xsplascar_ab"
+
+renderName = "plasstream_b.render"
+
+ammoCost = 2.25
+lifeSpan = 1.5 // 40m
+shotSpeed = 80.0
+
+damageValue(N) = 12 // none // 300
+damageValue(L) = 8 // light // 200
+damageValue(H) = 6 // heavy // 100
+
+damageValue(S) = 8 // standard // 300
+damageValue(D) = 12 // deflection // 500
+damageValue(A) = 6 // assault // 100
+
+[Render]
+renderBase = "draw_multi"
+
+renderCount = 5
+renderName5 = "plasstream_b.core"
+renderName2 = "plasstream_b.puff"
+renderName3 = "plasstream_b.puff2"
+renderName4 = "plasstream_b.puff3"
+renderName1 = "plasstream_b.puff4"
+//renderName6 = "plasstream_b.puff5"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "sflm2.tga"//"flm1.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 255" //255 155 155 255"
+finishColor = "255 255 255 55"
+startRadius = 0.6
+finishRadius = 4.5
+animateTime = 1.5
+rotationrate = .5
+
+[Puff]
+renderBase = "draw_twirl"
+textureName = "sflm1.tga"//"flm7.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 160"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 8.0
+rotationrate = 1
+animateTime = 1.5
+
+[Puff2]
+renderBase = "draw_twirl"
+textureName = "sflm3.tga"//"flm6.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 160"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 5.0
+rotationrate = 1
+animateTime = 1.0
+
+[Puff3]
+renderBase = "draw_twirl"
+textureName = "sflm3.tga"//"flm4.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 160"
+finishColor = "255 255 255 0"
+startRadius = 0.2
+finishRadius = 7.0
+rotationrate = -0.5
+animateTime = 1.5
+
+[Puff4]
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga" //flame2
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 130"
+finishColor = "55 55 55 0"
+startRadius = 0.05
+finishRadius = 10.0
+rotationrate = -0.8
+animateTime = 1.9
+emitvelocity = "0 5 0"
+emitbias = "0 5 0"
+
+//[Puff5]
+renderBase = "draw_twirl"
+textureName = "sflame2.tga"
+textureBlend = "one one modulate"
+startColor = "60 0 190 160"//"255 255 200 128"
+finishColor = "255 150 55 0"
+startRadius = 2
+finishRadius = 0.1
+rotationrate = -0.8
+animateTime = 1.9
+emitvelocity = "0 5 0"
+emitbias = "0 5 0"
+

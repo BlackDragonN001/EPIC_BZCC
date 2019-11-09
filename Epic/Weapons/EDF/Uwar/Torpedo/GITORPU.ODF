@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gitorpu"
+ordName = "itorpu"
+wpnName = "Torpedo"
+fireSound = "satshot.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 1000
+flashName = "gcworms.flash"
+
+[CannonClass]
+shotDelay = 4
+shotAlternate = 0
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "20 120 255 700"
+finishColor = "10 120 255 700"
+startRadius = 2.0
+finishRadius = 4.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

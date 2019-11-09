@@ -1,0 +1,15 @@
+[GameObjectClass] 
+geometryName = "ioartl00.xsi" 
+classLabel = "spraybomb" 
+scrapCost = 0 
+scrapValue = 0 
+maxHealth = 150 
+maxHeat = 0 
+maxAmmo = 20 
+unitName = "DOOM TO YOU ALL!!" 
+[SprayBuildingClass] 
+payloadName = "spider3" 
+fireSound = "smort02.wav" 
+triggerDelay = 1
+setAltitude = 3.0 
+anglePitch = 1.58

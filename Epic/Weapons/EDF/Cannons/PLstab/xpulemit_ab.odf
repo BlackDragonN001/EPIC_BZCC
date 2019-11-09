@@ -1,0 +1,38 @@
+// ========================
+// PULSE STABBER PULSE EMIT
+// ========================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 1
+particleClass1 = "xpulemit_ab.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+explSound = "gtagg00.wav"
+
+damageRadius = 45.0
+
+damageValue(N) = 225
+damageValue(L) = 125
+damageValue(H) = 75
+
+damageValue(S) = 125
+damageValue(D) = 225
+damageValue(A) = 75
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 127 63"
+finishColor = "255 0 127 0"
+startRadius = 0.1
+finishRadius = 16.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16

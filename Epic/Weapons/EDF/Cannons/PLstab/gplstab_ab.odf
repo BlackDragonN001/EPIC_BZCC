@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gplstab_cb"
+ordName = "plstab_ab"
+wpnName = "PL-Stab"
+fireSound = "gmagg06.wav"
+wpnReticle = "gplstab"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 600
+flashName = "gmortar_b.flash"
+
+[CannonClass]
+shotDelay = 1.5 // 2/3sec
+shotAlternate = 0

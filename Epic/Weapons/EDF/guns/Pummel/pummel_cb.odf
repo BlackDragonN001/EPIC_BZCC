@@ -1,0 +1,18 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 1
+lifeSpan = 0.33 // 99m
+shotSpeed = 900.0
+
+damageValue(N) = 15 // none
+damageValue(L) = 13 // light
+damageValue(H) = 10 // heavy
+
+damageValue(S) = 13 // standard
+damageValue(D) = 10 // deflection
+damageValue(A) = 15 // absorbtion

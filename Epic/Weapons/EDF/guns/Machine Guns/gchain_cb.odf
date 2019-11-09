@@ -1,0 +1,70 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gchain_ab"
+ordName = "chain_cb"
+wpnName = "Chain Gun"
+fireSound = "gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gchain_cb.flash"
+aiRange = 300
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.1
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gchain_cb.muz"
+renderName2 = "gchain_cb.light"
+renderName3 = "gchain_cb.smoke"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 100 250"
+finishColor = "255 100 0 150"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 0
+
+[muz]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 7.5
+finishRadius = 2.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"
+
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "gchain_cb.smokeemit"
+emitDelay = 0.1
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "0.1 1.0 0.1"
+
+[smokeemit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 180"
+finishColor = "160 160 160 0"
+startRadius = 0.2
+finishRadius = 0.8 //
+animateTime = 1.0

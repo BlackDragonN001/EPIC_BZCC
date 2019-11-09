@@ -1,0 +1,46 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gchain_cb"
+ordName = "chain_ab"
+wpnName = "Chain Gun"
+fireSound = "gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 1
+flashName = "gchain_cb.flash"
+aiRange = 360
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.05
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gchain_ab.muz"
+renderName2 = "gchain_ab.light"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 200 100 250"
+finishColor = "255 100 0 250"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 0
+
+[muz]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 7.5
+finishRadius = 2.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

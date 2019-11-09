@@ -1,0 +1,61 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "sgmloc00.xsi"
+shotSound = "smort03.wav"
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+renderName = "locker.render"
+
+ammoCost = 25
+lifeSpan = 12.0 // 800m
+shotSpeed = 200.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 180 // light
+damageValue(H) = 140 // heavy
+
+damageValue(S) = 180 // standard
+damageValue(D) = 140 // deflection
+damageValue(A) = 200 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 1.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "locker.flare"
+renderName2 = "locker.halo"
+renderName3 = "locker.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 63"
+finishColor = "0 127 255 63"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.1
+finishRadius = 0.0
+segmentTime = 1.0

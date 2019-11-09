@@ -1,0 +1,85 @@
+// =============
+// POPPER LAUNCH
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "xlightfir_b.cloud"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xlightfir_b.cloud2"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xlightfir_b.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+explSound = "thclap.wav"
+damageRadius = 10.0
+damageValue(N) = 50
+damageValue(L) = 50
+damageValue(H) = 50
+damageValue(S) = 50
+damageValue(D) = 50
+damageValue(A) = 50
+
+[cloud]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_emit"
+emitName = "xlightfir_b.cloudemit"
+emitDelay = 0.2
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "45.0 15.0 45.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 120 120 70"
+finishColor = "160 160 160 0"
+startRadius =  60
+finishRadius = 80.0
+animateTime = 3.0
+rotationrate = 1
+
+[cloud2]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_emit"
+emitName = "xlightfir_b.cloud2emit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "85.0 35.0 85.0"
+
+[cloud2emit]
+simulateBase = "sim_smoke"
+lifeTime = 4
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "120 120 120 70"
+finishColor = "160 160 160 0"
+startRadius =  40
+finishRadius = 30.0
+animateTime = 4
+rotationrate = 1
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "100 205 255 25500"
+finishColor = "5 5 50 0"
+startRadius = 505.0
+finishRadius = 205.0
+animateTime = 2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 1
+

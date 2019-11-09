@@ -1,0 +1,196 @@
+// =============
+// MORTAR HITTING BUILDING OR VEHICLE EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 10
+particleClass5 = "xmortxpl_b.core"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass2 = "xmortgnd_b.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 10.0 0.0"
+
+particleClass4 = "xmortxpl_b.shockw"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass3 = "xmortgnd_b.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass1 = "xmortxpl_b.posroll"
+particleCount1 = 3
+particleVeloc1 = "0.0 15.0 0.0"
+
+particleClass7 = "xmortxpl_b.shocks"
+particleCount7 = 1
+particleVeloc7 = "0.0 5.0 0.0"
+
+particleClass6 = "xmortxpl_b.shocks2"
+particleCount6 = 1
+particleVeloc6 = "0.0 5.0 0.0"
+
+particleClass9 = "xmortgnd_b.shock"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+
+particleClass8 = "xmortgnd_b.fire"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass10 = "xmortgnd_b.sparks"
+particleCount10 = 1
+particleVeloc10 = "0.0 0.0 0.0"
+
+explSound = "xmv1.wav"
+damageRadius = 60.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 5 // absorbtion
+
+kickRadius = 35.0
+kickOmega = 4.0
+kickVeloc = 8.0
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = .4
+renderBase = "draw_twirl"
+textureName = "flamexpl2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 150 100 0"
+startRadius = 6.0
+finishRadius = 5.0
+animateTime = .4
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "edfshock.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 57"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 60.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[Shockw]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_sphere"
+textureName = "tflamesphere.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 15.0
+animateTime = 0.4
+latitudeBands = 8
+longitudeSegments = 16
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = .4
+renderBase = "draw_light"
+startColor = "250 210 100 2550"
+finishColor = "255 0 0 0"
+startRadius = 120.0 // 350
+finishRadius = 120.0 // 150
+animateTime = .44
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 0
+
+[smoke]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 120"
+finishColor = "140 140 140 0"
+startRadius = 1.0
+finishRadius = 8.0
+rotationrate = .4
+animateTime = 1.5
+
+[posroll]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_emit"
+emitName = "xmortxpl_b.posemit"
+emitDelay = 0.05
+emitVelocity = "0.0 0 0.0"
+emitVariance = "18.0 18.0 18.0"
+
+[posemit]
+simulateBase = "sim_dust"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 120"
+finishColor = "140 140 140 0"
+startRadius =  5
+finishRadius = 8.0
+animateTime = 1.5
+rotationrate = -6
+
+[Shocks]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_emit"
+emitName = "xmortgnd_b.shocksemit"
+emitDelay = 0.05
+emitVelocity = "0.0 18 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[shocksemit]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_twirl"
+textureName = "flm7.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 255 255 255"
+startRadius = 8
+finishRadius = 1
+animateTime = 1
+rotationRate = 10.0
+
+[Shocks2]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_emit"
+emitName = "xmortgnd_b.shocksemit"
+emitDelay = 0.03
+emitVelocity = "0.0 18 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[shocks2emit]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_twirl"
+textureName = "flm6.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 255 255 255"
+startRadius = 8
+finishRadius = 1
+animateTime = 1
+rotationRate = 10.0

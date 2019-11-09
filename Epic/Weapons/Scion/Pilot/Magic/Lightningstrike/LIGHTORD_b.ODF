@@ -1,0 +1,35 @@
+[OrdnanceClass]
+classLabel =  "bullet" //"beam"
+
+shotGeometry = NULL
+xplGround = "xarcgnd_ab"
+xplVehicle = "xarccar_ab"
+xplBuilding = "xarccar_ab"
+
+renderName = "lightord_b.render"
+
+ammoCost = 200
+lifeSpan = 175e-6 // 175m
+shotSpeed = 100e6
+
+damageValue(N) = 300 // none // 500 // 250
+damageValue(L) = 200 // light // 500 // 250
+damageValue(H) = 100 // heavy // 375 // 187.5
+
+damageValue(S) = 200 // standard // 375 // 187.5
+damageValue(D) = 300 // deflection // 500 // 250
+damageValue(A) = 100 // absorbtion // 500 // 125
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "arc_b.tga"
+textureBlend = "one one modulate"
+startColor = "250 250 255 455"
+finishColor = "0 50 255 0"
+startRadius = 2
+finishRadius = 0.01
+segmentLength = 21.0 
+segmentVariance = "15.0 15.0 15.0"
+animateTime = 1.5 // 0.2
+textureRate = 2.5
+

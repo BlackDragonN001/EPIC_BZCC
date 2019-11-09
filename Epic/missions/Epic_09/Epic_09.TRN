@@ -1,0 +1,40 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.1
+MinX = -28672
+MinZ = -28672
+Width = 57344
+Depth = 57344
+Height = 100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture] 
+TileTexture1 = "tunnel8_b.tga" 
+TileTexture2 = "u_cliff1u.tga" 
+TileTexture3 = "u_cliff1v.tga" 
+TileTexture4 = "edfroad2.tga"
+TileTexture5 = "edfwallu1.tga"
+TileTexture6 = "u_dunes.tga" 
+TileTexture7 = "edfbay1.tga" 
+TileTexture8 = "u_flatrock.tga"
+TileTexture9 = "edfroad1.tga"
+TileTexture10 = "edfwallu2.tga"
+TileTexture11 = "edfwallv1.tga"
+TileTexture12 = "edfwallv2.tga"
+TileTexture13 = "u_goodrock2.tga"
+TileTexture14 = "edfbay2.tga"
+TileTexture15 = "edfwall3.tga"

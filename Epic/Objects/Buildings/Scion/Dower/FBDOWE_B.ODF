@@ -1,0 +1,74 @@
+[GameObjectClass]
+geometryName = "fbdowe00_b.xsi"
+geometryScale = 2
+classLabel = "supplydepot"
+collisionRadius = 1.0
+scrapCost = 50
+scrapReturn = 25
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+powerCost = 0
+unitName = "Dower"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+//isSingle = 0
+
+explosionName = "xscionbld"
+
+armorClass = H
+
+
+LightingType = 1 
+
+
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 1
+requireName1 = "fbkiln_b"
+requireText1 = "Build Kiln"
+
+provideCount = 2
+provideName1 = "fbdowe_b"
+provideName2 = "sbay"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omniyellow"
+lightHard2 = "hp_light_2"
+lightName2 = "omniyellow"
+lightHard3 = "hp_light_3"
+lightName3 = "omniyellow"
+lightHard4 = "hp_light_4"
+lightName4 = "omniyellow"
+
+[BuildingClass]
+soundAmbient = "sdow01.wav"
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 1
+//tunnel01Dx = 4
+//tunnel01Dz = 4
+//tunnel01Edge = "ttww"
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung_b"
+detectRange = 600
+
+[SupplyDepotClass]
+supplyRange = 80.0
+supplyRate = 150.0
+supplySound = "mnu_empt.wav"
+
+//[Lod1]
+//geometryName = "fbdoweL1_b.xsi" ;geometry for lod1
+//geometryScale = 2.0
+//radius = 500                    ;bsphere under 200 //pixel => switch to lod1
+
+

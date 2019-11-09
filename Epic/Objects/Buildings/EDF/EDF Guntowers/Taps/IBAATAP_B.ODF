@@ -1,0 +1,86 @@
+[GameObjectClass]
+geometryName = "ibaatap_b.xsi"
+geometryScale = 25
+classLabel = "turret"
+collisionRadius = 60.0
+scrapCost = 70
+scrapValue = 15
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addammo = 10
+unitName = "Missile Tower"
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+//ownsTerrain = 1
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+requireCount = 2
+requireName1 = "ibcbun_b"
+requireText1 = "Build Relay Bunk"
+requireName2 = "ibarmo_b"
+requireText2 = "Build Armoury"
+
+provideCount = 1
+provideName1 = "ibaatow_b"
+
+//upgradeName = "ibbertha_b"
+
+
+weaponMask = 00111
+weaponHard1 = "hp_rocket_1"
+//recoilName1 = "recoil_1"
+weaponName1 = "gshadowaa_b"
+weaponAssault1 = 0
+
+weaponHard2 = "hp_rocket_2"
+//recoilName2 = "recoil_2"
+weaponName2 = "gshadowaa_b"
+weaponAssault2 = 0
+
+//weaponHard3 = "hp_cannon_3"
+//recoilName3 = "recoil_3"
+//weaponName3 = "gshadowaa_b"
+//weaponAssault3 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_light_1"
+//turretName4 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 1200
+periodScan = 1.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 1
+engageRange = 900
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+killedMsg = "ivtank07.wav"
+diedMsg = "abetty3.wav"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 800
+
+//[Lod1]
+geometryName = "ibgtowL1_b.xsi" ;geometry for lod1
+geometryScale = 2.4
+distance = 550                   ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

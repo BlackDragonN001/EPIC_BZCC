@@ -1,0 +1,92 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "sgstng00.xsi"
+shotSound = "crckt02.wav"
+
+renderName = "stinger_ab.render"
+
+xplGround = "xmslgnd"
+xplVehicle = "xstingcar_c"
+xplBuilding = "xstingcar_c"
+
+ammoCost = 25
+lifeSpan = 2.5 // 100m
+shotSpeed = 120.0
+
+damageValue(N) = 140 // 280 // none // 480 960 1440 1920 2400 2880
+damageValue(L) = 125 // 250 // light // 375 750 1125 1500 1875 2250
+damageValue(H) = 100 // 200 // heavy // 250 500 750 100 1250 1500
+
+damageValue(S) = 125 // 250 // standard // 375 750 1125 1500 1875 2250
+damageValue(D) = 100 // 200 // deflection // 400 800 1200 1600 2000 2400
+damageValue(A) = 140 // 280 // absorbtion // 330 660 990 1320 1675 1980
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 1.0
+omegaWaver = 1.0
+rateWaver = 4.0
+
+[ThermalMissileClass]
+coneAngle = 0.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "stinger_cb.flare"
+renderName2 = "stinger_cb.halo"
+renderName3 = "stinger_cb.flame"
+renderName4 = "stinger_cb.trail"
+renderName5 = "stinger_ab.light"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.5
+finishRadius = 1.5
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 0 164"
+finishColor = "255 200 0 164"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 100 255"
+finishColor = "255 200 0 0"
+startRadius = 0.2
+finishRadius = 0.02
+segmentTime = 0.3
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga" // "smoke.tga" // trail2
+textureBlend = "one one modulate" // "srcalpha invsrcalpha modulatealpha" 
+textureRate = 0.004
+startColor =  "255 255 100 28"// "100 0 0 100" 
+finishColor =  "100 100 60 0" // "100 100 100 0"
+startRadius = 0.2
+finishRadius = 0.8
+segmentTime = 1.9
+
+
+[Light]
+renderBase = "draw_light"
+startColor = "250 250 0 450"
+finishColor = "250 250 0 450"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

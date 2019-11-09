@@ -1,0 +1,12941 @@
+version [1] =
+1183
+saveType [1] =
+0
+binarySave [1] =
+false
+msn_filename = Epic_GZ_MP.bzn
+seq_count [1] =
+172
+saveType [1] =
+0
+g_TerrainName = Epic_GZ
+size [1] =
+136
+[GameObject]
+objClass = ivscout_b
+seqno [1] =
+80000b
+team [1] =
+17
+isUser [1] =
+true
+objAddr = 18106B40
+transform [1] =
+  right.x [1] =
+-9.27837372e-001
+  right.y [1] =
+-1.53049939e-009
+  right.z [1] =
+3.72973531e-001
+  up.x [1] =
+-4.92159685e-004
+  up.y [1] =
+9.99994695e-001
+  up.z [1] =
+-1.22432946e-003
+  front.x [1] =
+-3.72971714e-001
+  front.y [1] =
+-1.31993124e-003
+  front.z [1] =
+-9.27832782e-001
+  posit.x [1] =
+3.28971161e+002
+  posit.y [1] =
+-1.16898222e+001
+  posit.z [1] =
+-4.21999397e+001
+abandoned [1] =
+0
+curAmmo [1] =
+1.50000000e+003
+maxAmmo [1] =
+1.50000000e+003
+addAmmo [1] =
+1.00000000e+000
+curPilot = psuser
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.18378535e+004
+ mass_inv [1] =
+8.44747774e-005
+ v_mag [1] =
+8.26299924e-007
+ v_mag_inv [1] =
+1.21021438e+006
+ I [1] =
+1.36166422e+005
+ k_i [1] =
+7.34395462e-006
+ v [1] =
+  x [1] =
+-4.06793710e-010
+  y [1] =
+8.26299186e-007
+  z [1] =
+-1.01196629e-009
+ omega [1] =
+  x [1] =
+-3.93140798e-011
+  y [1] =
+1.97328745e-006
+  z [1] =
+-4.99448038e-009
+ Accel [1] =
+  x [1] =
+5.66558485e-015
+  y [1] =
+1.10767754e-023
+  z [1] =
+-2.27746217e-015
+name = Scout
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+true
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800021
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1848B970
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.64800000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+2.24000000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800022
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18636000
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.98400000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.64800000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800023
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186323E0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.13600000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.39200000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800024
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18632C00
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.85600000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.64800000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800025
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18633410
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.39200000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.13600000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800026
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186227C0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.64800000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+1.85600000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800027
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186233F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.39200000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-1.98400000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800028
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18624020
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.26400000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.39200000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800029
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18624C50
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.98400000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.64800000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+80002a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18625880
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.85600000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.64800000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+80002b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186264B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.64800000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-1.85600000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+80002c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18638600
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.13600000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.39200000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+80002d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18639360
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-6.40000000e+001
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+-3.26400000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+80002e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863A0B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-6.40000000e+001
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+3.26400000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+80002f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863AE10
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.26400000e+003
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+6.40000000e+001
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800030
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863BB60
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.26400000e+003
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+6.40000000e+001
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800031
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863C8B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.08800000e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+-1.60000000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800032
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863D6B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.60000000e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+-1.21600000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800033
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863E400
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.21600000e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+1.60000000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = despool_b
+seqno [1] =
+800034
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863F160
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.60000000e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+1.21600000e+003
+saveClass = 
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+1.64167688e+005
+ mass_inv [1] =
+6.09133258e-006
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+9.08050900e+006
+ k_i [1] =
+1.10125988e-007
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Biometal Pool
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800035
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1863FEB0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.52884998e+003
+  posit.y [1] =
+5.71255989e+001
+  posit.z [1] =
+1.14164001e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800036
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186433F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.47620996e+003
+  posit.y [1] =
+5.39842987e+001
+  posit.z [1] =
+1.25469995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800037
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18643DE0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.62834998e+003
+  posit.y [1] =
+5.59874992e+001
+  posit.z [1] =
+1.32383997e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800038
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186447E0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.73373999e+003
+  posit.y [1] =
+5.40000000e+001
+  posit.z [1] =
+1.31966003e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800039
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186451D0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.64630005e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+1.19822998e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80003a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186457B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.64665002e+003
+  posit.y [1] =
+5.40000000e+001
+  posit.z [1] =
+1.08694995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80003b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186461B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.11606006e+003
+  posit.y [1] =
+5.83699989e+001
+  posit.z [1] =
+-1.66968994e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80003c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18646BA0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.02964001e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+-1.66290002e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80003d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18647180
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.04614001e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+-1.59131006e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80003e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1868D5C0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.15901001e+003
+  posit.y [1] =
+5.77453995e+001
+  posit.z [1] =
+-1.55731006e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80003f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1868DB60
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.07052002e+003
+  posit.y [1] =
+5.89253998e+001
+  posit.z [1] =
+-1.43451001e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800040
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1868E510
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.18120996e+003
+  posit.y [1] =
+5.74889984e+001
+  posit.z [1] =
+-1.59833997e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800041
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1868EAA0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.68969995e+003
+  posit.y [1] =
+5.40000000e+001
+  posit.z [1] =
+-1.34656006e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800042
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1868F450
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.65056995e+003
+  posit.y [1] =
+5.85521011e+001
+  posit.z [1] =
+-1.28040002e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800043
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1868FE00
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.53838000e+003
+  posit.y [1] =
+5.84897995e+001
+  posit.z [1] =
+-1.28219995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800044
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186907B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.49703003e+003
+  posit.y [1] =
+5.76683006e+001
+  posit.z [1] =
+-1.18618005e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800045
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18691160
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.59552002e+003
+  posit.y [1] =
+5.77629013e+001
+  posit.z [1] =
+-1.13243005e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800046
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18691B10
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.64906995e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+-1.25891003e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800047
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186920B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.21677002e+003
+  posit.y [1] =
+3.40820003e+000
+  posit.z [1] =
+-2.50776997e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800048
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18692A60
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.29750000e+003
+  posit.y [1] =
+4.80072021e+000
+  posit.z [1] =
+-2.35321999e+000
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800049
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18692FF0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.21595996e+003
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+7.34404984e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80004a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18693590
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.18042993e+003
+  posit.y [1] =
+1.45773005e+000
+  posit.z [1] =
+1.65046005e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80004b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18693F40
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.33491992e+003
+  posit.y [1] =
+0.00000000e+000
+  posit.z [1] =
+2.05925003e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80004c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186948F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.26367993e+003
+  posit.y [1] =
+4.99996996e+000
+  posit.z [1] =
+5.92811012e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80004d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18694E80
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.32605005e+003
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+3.00960007e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80004e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18695420
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.23267993e+003
+  posit.y [1] =
+4.57480001e+000
+  posit.z [1] =
+-5.44257021e+000
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80004f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18695DD0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.19000000e+003
+  posit.y [1] =
+4.53128004e+000
+  posit.z [1] =
+8.32104034e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800050
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18696780
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.39506006e+003
+  posit.y [1] =
+0.00000000e+000
+  posit.z [1] =
+7.83621979e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800051
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18697130
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.32336011e+003
+  posit.y [1] =
+4.27338004e-001
+  posit.z [1] =
+1.72738007e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800052
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18697AE0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.16853003e+003
+  posit.y [1] =
+0.00000000e+000
+  posit.z [1] =
+1.63923004e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800053
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18698490
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.18733997e+003
+  posit.y [1] =
+5.85999985e+001
+  posit.z [1] =
+1.57706995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800054
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18698A20
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.24732996e+003
+  posit.y [1] =
+5.84711990e+001
+  posit.z [1] =
+1.53325000e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800055
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186993D0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.28568005e+003
+  posit.y [1] =
+5.83338013e+001
+  posit.z [1] =
+1.63583997e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800056
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 18699D80
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.08929004e+003
+  posit.y [1] =
+5.41250992e+001
+  posit.z [1] =
+1.64737000e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800057
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869A730
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.22076001e+003
+  posit.y [1] =
+5.43198013e+001
+  posit.z [1] =
+1.72469995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800058
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869B0E0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.31431995e+003
+  posit.y [1] =
+5.40252991e+001
+  posit.z [1] =
+1.69267004e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800059
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869BA90
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-7.45032978e+000
+  posit.y [1] =
+4.88113022e+000
+  posit.z [1] =
+3.19788989e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80005a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869C440
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.17859001e+002
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+3.20477002e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80005b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869C9E0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.06505997e+002
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+3.31088989e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80005c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869CF70
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+6.59962006e+001
+  posit.y [1] =
+1.29577994e+000
+  posit.z [1] =
+3.30991992e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80005d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869D920
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-7.04924011e+001
+  posit.y [1] =
+1.28185999e+000
+  posit.z [1] =
+3.40416992e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80005e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869E2D0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.46006012e+001
+  posit.y [1] =
+3.12597990e+000
+  posit.z [1] =
+3.22050000e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80005f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869E870
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.05266998e+002
+  posit.y [1] =
+5.00000000e+000
+  posit.z [1] =
+-3.30971997e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800060
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869EE00
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.81910995e+002
+  posit.y [1] =
+8.19702029e-001
+  posit.z [1] =
+-3.32864990e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800061
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869F7B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.20589996e+002
+  posit.y [1] =
+5.00003004e+000
+  posit.z [1] =
+-3.22542993e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800062
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 1869FD50
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.31495018e+001
+  posit.y [1] =
+5.29940987e+000
+  posit.z [1] =
+-3.23319995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800063
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A0700
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-4.09163017e+001
+  posit.y [1] =
+4.73611021e+000
+  posit.z [1] =
+-3.16040991e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800064
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A10B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+5.37524986e+001
+  posit.y [1] =
+3.68746996e+000
+  posit.z [1] =
+-3.25751001e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800065
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A1640
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+5.54782982e+001
+  posit.y [1] =
+1.54876995e+000
+  posit.z [1] =
+-3.33030005e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800066
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A1FF0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.09811011e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.48636011e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800067
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A29A0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.06713989e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.39897998e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800068
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A3350
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.22014990e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.39366992e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800069
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A3D00
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.63243994e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-1.88771997e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80006a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A42A0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.70402002e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-1.89257996e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80006b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A4830
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.66704004e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-1.80720996e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80006c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A4DD0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.88470996e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.64704004e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80006d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A5360
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.82714001e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.72504004e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80006e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A5D10
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.79393994e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.60608008e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80006f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A62B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.99939001e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.71455005e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800070
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A6C60
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-2.06507007e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.66609009e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800071
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A7610
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.91298999e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.60694995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800072
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A7FC0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.26387988e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.42865991e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800073
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A8550
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.33650000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.41188989e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800074
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A8F00
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.28559009e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-3.31644995e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800075
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A98B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.34513989e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-1.99203003e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800076
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186A9E50
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.38832007e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+-2.04072998e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800077
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AA3E0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.47588989e+003
+  posit.y [1] =
+1.08086998e+002
+  posit.z [1] =
+-1.94331006e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800078
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AAD90
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.62891992e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+2.21020996e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800079
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AB330
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.68636011e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+2.18553003e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80007a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AB8C0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.68037988e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+2.30632007e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80007b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AC270
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.09470996e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.36712012e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80007c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AC850
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.18139990e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.34691992e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80007d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186ACE30
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.19842993e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.42722998e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80007e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AD410
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.97952002e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.66975000e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80007f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AD9F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.96864001e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.58248999e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800080
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AE3F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-2.09506006e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.67287988e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800081
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AEDE0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.89775000e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.66252002e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800082
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AF3C0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.85680005e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.59654004e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800083
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AF9A0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.79381995e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.69208008e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800084
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186AFF80
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.47510010e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.13432007e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800085
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B0980
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.40822998e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.07421997e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800086
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B0F60
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.34546997e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+3.17467993e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800087
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B1540
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.71118994e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+1.82295996e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800088
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B1B20
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.59379004e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+1.80441003e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800089
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B2100
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.68793994e+003
+  posit.y [1] =
+1.06800003e+002
+  posit.z [1] =
+1.92247998e+003
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+0
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80008b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B2AF0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-7.17070984e+002
+  posit.y [1] =
+8.82660007e+000
+  posit.z [1] =
+3.05287994e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80008c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B34F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-5.85609985e+002
+  posit.y [1] =
+1.72731991e+001
+  posit.z [1] =
+5.60942993e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80008d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B3EE0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.80320007e+002
+  posit.y [1] =
+1.26241999e+001
+  posit.z [1] =
+7.30909973e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80008e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B48E0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-1.41660004e+002
+  posit.y [1] =
+1.34137001e+001
+  posit.z [1] =
+8.19422974e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80008f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B52D0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+6.69358978e+001
+  posit.y [1] =
+1.36227999e+001
+  posit.z [1] =
+8.41955994e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800090
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B5CD0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+3.24377014e+002
+  posit.y [1] =
+1.30193996e+001
+  posit.z [1] =
+7.44031006e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800091
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B66C0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+4.72151001e+002
+  posit.y [1] =
+1.26788998e+001
+  posit.z [1] =
+6.39984985e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800092
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B70C0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+6.26700989e+002
+  posit.y [1] =
+1.40950003e+001
+  posit.z [1] =
+4.54638000e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800093
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B7AB0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+7.57422974e+002
+  posit.y [1] =
+1.59733000e+001
+  posit.z [1] =
+3.00670013e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800094
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B84B0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+8.19335999e+002
+  posit.y [1] =
+1.47438002e+001
+  posit.z [1] =
+1.21329002e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800095
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B8EA0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+8.22039001e+002
+  posit.y [1] =
+1.42901001e+001
+  posit.z [1] =
+3.03220997e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800096
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B9480
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+8.20601013e+002
+  posit.y [1] =
+1.39726000e+001
+  posit.z [1] =
+-9.18880005e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800097
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186B9E80
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+8.25682983e+002
+  posit.y [1] =
+1.59769001e+001
+  posit.z [1] =
+-2.58681000e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800098
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BA870
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+7.30679016e+002
+  posit.y [1] =
+1.57706003e+001
+  posit.z [1] =
+-4.68628998e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+800099
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BB270
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+6.03158020e+002
+  posit.y [1] =
+2.10926991e+001
+  posit.z [1] =
+-6.23427002e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80009a
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BBC60
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+4.49079987e+002
+  posit.y [1] =
+1.41140003e+001
+  posit.z [1] =
+-7.14945007e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80009b
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BC660
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+2.99407013e+002
+  posit.y [1] =
+1.62169991e+001
+  posit.z [1] =
+-8.36216980e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80009c
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BD050
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+1.24369003e+002
+  posit.y [1] =
+1.59343996e+001
+  posit.z [1] =
+-8.79018982e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80009d
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BDA50
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-9.14940033e+001
+  posit.y [1] =
+1.37635002e+001
+  posit.z [1] =
+-8.39752991e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80009e
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BE440
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-2.50535995e+002
+  posit.y [1] =
+1.39196997e+001
+  posit.z [1] =
+-8.16135986e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+80009f
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BEE40
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-3.91516998e+002
+  posit.y [1] =
+1.36803999e+001
+  posit.z [1] =
+-7.61104004e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a0
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186BF830
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-5.49802979e+002
+  posit.y [1] =
+1.47412004e+001
+  posit.z [1] =
+-6.98070007e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a1
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C0230
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-6.69375000e+002
+  posit.y [1] =
+1.77479992e+001
+  posit.z [1] =
+-6.01539001e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a2
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C0C20
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-7.51765015e+002
+  posit.y [1] =
+2.03127995e+001
+  posit.z [1] =
+-4.51777008e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a3
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C1620
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-8.16077026e+002
+  posit.y [1] =
+1.44209995e+001
+  posit.z [1] =
+-3.39067993e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a4
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C2010
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-8.44997009e+002
+  posit.y [1] =
+1.34110003e+001
+  posit.z [1] =
+-1.85850998e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a8
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C2A10
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-8.41796997e+002
+  posit.y [1] =
+1.23184004e+001
+  posit.z [1] =
+-4.14724007e+001
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000a9
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C3400
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-8.09361023e+002
+  posit.y [1] =
+1.06311998e+001
+  posit.z [1] =
+1.10783997e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000aa
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C3E00
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-6.60888977e+002
+  posit.y [1] =
+9.67632961e+000
+  posit.z [1] =
+4.29686005e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+[GameObject]
+objClass = npscrx
+seqno [1] =
+8000ab
+team [1] =
+0
+isUser [1] =
+false
+objAddr = 186C47F0
+transform [1] =
+  right.x [1] =
+9.99995649e-001
+  right.y [1] =
+0.00000000e+000
+  right.z [1] =
+0.00000000e+000
+  up.x [1] =
+0.00000000e+000
+  up.y [1] =
+9.99995649e-001
+  up.z [1] =
+0.00000000e+000
+  front.x [1] =
+0.00000000e+000
+  front.y [1] =
+0.00000000e+000
+  front.z [1] =
+9.99991298e-001
+  posit.x [1] =
+-4.88833008e+002
+  posit.y [1] =
+1.26132002e+001
+  posit.z [1] =
+6.55021973e+002
+illumination [1] =
+1.00000000e+000
+euler =
+ mass [1] =
+3.59826584e+001
+ mass_inv [1] =
+2.77911648e-002
+ v_mag [1] =
+0.00000000e+000
+ v_mag_inv [1] =
+1.00000002e+030
+ I [1] =
+8.54279709e+000
+ k_i [1] =
+1.17057681e-001
+ v [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ omega [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+ Accel [1] =
+  x [1] =
+0.00000000e+000
+  y [1] =
+0.00000000e+000
+  z [1] =
+0.00000000e+000
+name = Scrap
+saveFlags [1] =
+l
+isVisible [1] =
+65535
+EffectsMask [1] =
+65535
+isSeen [1] =
+2
+groupNumber [1] =
+-1
+undefaicmd =
+priority [1] =
+0
+what = 00000000
+who [1] =
+0
+where = 00000000
+param [1] =
+0
+aiProcess [1] =
+false
+independence [1] =
+
+groupTargets = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+dllName = Epic.dll
+[AiMission]
+[AOIs]
+size [1] =
+0
+[AiPaths]
+count [1] =
+7
+name = AiPath
+sObject = 186C6DE8
+size [1] =
+6
+label = Stage3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+8.68937012e+002
+  z [1] =
+-2.11988989e+003
+pathType = 00000000
+name = AiPath
+sObject = 186C6DD0
+size [1] =
+6
+label = Stage2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+1.92706995e+003
+  z [1] =
+-9.42294006e+002
+pathType = 00000000
+name = AiPath
+sObject = 186C6DB8
+size [1] =
+4
+label = Recy
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+3.02707007e+003
+  z [1] =
+-3.02651001e+003
+pathType = 00000000
+name = AiPath
+sObject = 186C6DA0
+size [1] =
+7
+label = Enemy_3
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+2.90912988e+003
+  z [1] =
+2.90434009e+003
+pathType = 00000000
+name = AiPath
+sObject = 186C6D88
+size [1] =
+7
+label = Enemy_2
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-2.93032007e+003
+  z [1] =
+-2.93068994e+003
+pathType = 00000000
+name = AiPath
+sObject = 186C6D70
+size [1] =
+7
+label = Enemy_1
+pointCount [1] =
+1
+points [1] =
+  x [1] =
+-2.94506006e+003
+  z [1] =
+2.92644995e+003
+pathType = 00000000
+name = AiPath
+sObject = 186C6E00
+size [1] =
+6
+label = Stage1
+pointCount [1] =
+2
+points [2] =
+  x [1] =
+1.50040002e+003
+  z [1] =
+-1.57376001e+003
+  x [1] =
+4.09600000e+003
+  z [1] =
+4.09600000e+003
+pathType = 00000000
+hasEntered [1] =
+false
+ownerObj [1] =
+0
+ownerObj [1] =
+0
+ownerObj [1] =
+0
+PadData = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+PadData2 = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

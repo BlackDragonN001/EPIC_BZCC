@@ -1,0 +1,27 @@
+[GameObjectClass]
+geometryName = "ibbstr00_wz.xsi"
+geometryScale = 3
+classLabel = "terrain"
+collisionRadius = 1.0
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Wall Strut"
+heatSignature = 1.0
+imageSignature = 0.5
+radarSignature = 1.0
+
+lightingType = 1
+
+armorClass = H
+
+[BuildingClass]
+tunnelCount = 1
+bldEdge = "wwww"
+
+tunnel01X0 = 1
+tunnel01Z0 = 0
+tunnel01DX = 2
+tunnel01DZ = 4
+tunnel01Edge = "twfw"

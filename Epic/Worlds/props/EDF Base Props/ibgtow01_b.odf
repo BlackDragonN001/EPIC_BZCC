@@ -1,0 +1,16 @@
+[GameObjectClass]
+geometryName = "ibgtow01_b.xsi"
+geometryScale = 2.4
+classLabel = "i76building"
+collisionRadius = 1.0
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Gun Tower"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+canCollide = 1
+
+[BuildingClass]

@@ -1,0 +1,63 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gparbst_cb"
+ordName = "parbst_ab"
+wpnName = "Particle Shredder"
+fireSound = "chaff01.wav"
+wpnReticle = "gfang_a"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 500
+flashname = "gparbst_ab.flash"
+
+[CannonClass]
+shotDelay = 2.0 // .5/sec
+salvoCount = 8
+salvoDelay = 0.02
+shotVariance = 0.15
+shotAlternate = 1
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gparbst_ab.smoke"
+renderName2 = "gparbst_ab.sparks"
+renderName3 = "gparbst_ab.light"
+
+[Smoke]
+lifeTime = 2
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"//"one one modulate"
+startColor = "0 0 0 50"
+finishColor = "0 0 0 0"
+startRadius = 0.5
+finishRadius = 2
+animateTime = 1.5
+emitDelay = 0.1
+emitVariance = "2 2 2"
+emitvelocity = "0 5 0"
+emitLife = 1.5
+
+[Sparks]
+lifetime = 0.1
+renderBase = "draw_sprite"
+textureName = "sparks.tga"
+textureBlend = "one one modulate"
+startColor = "200 180 255 400"
+finishColor = "80 50 100 0"
+startRadius = 0.1 
+finishRadius = 2
+animateTime 0.1
+
+[Light]
+lifetime = 0.6
+renderBase = "draw_light"
+startColor = "205 165 255 655"
+finishColor = "50 0 250 0"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.6
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

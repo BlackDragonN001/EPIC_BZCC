@@ -1,0 +1,128 @@
+// ================
+// GAUSS CANNON GROUND HIT
+// ================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xemt2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 8
+
+particleClass1 = "xgaussgnd_b.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xgaussgnd_b.ring"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xgaussgnd_b.char"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xgaussgnd_b.cloud"
+particleCount4 = 1
+particleVeloc4 = "0.0 10.0 0.0"
+
+particleClass5 = "xgaussgnd_b.flame"
+particleCount5 = 1
+particleVeloc5 = "0.0 1.0 0.0"
+particleBias5 = "0.0 0.0 0.0"
+
+//particleClass6 = "xstabgnd_c.posroll"
+//particleCount6 = 6
+//particleVeloc6 = "5.0 0.0 5.0"
+
+//particleClass7 = "debris.chunks"
+//particleCount7 = 3
+//particleVeloc7 = "10.0 14.5 10.0"
+//particleBias7 = "0.0 5.0 0.0"
+
+particleClass8 = "debris.schunks"
+particleCount8 = 6
+particleVeloc8 = "15.0 18.5 15.0"
+particleBias8 = "0.0 5.0 0.0"
+
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 185 155"
+finishColor = "50 5 0 0"
+startRadius = 0.5
+finishRadius = 4.0
+animateTime = 0.2
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 10.0
+
+[Char]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+textureName = "mistring.tga"
+textureBlend = "one one modulate"
+startColor = "255 227 55 200"
+finishColor = "50 00 0 0"
+startRadius = 4.0
+finishRadius = 0.5
+animateTime = 3.0
+
+[cloud]
+simulateBase = "sim_dust"
+lifeTime = 2.0
+renderBase = "draw_emit"
+emitName = "xgaussgnd.cloudemit"
+emitDelay = 0.25
+emitVelocity = "0.0 1.5 0.0"
+emitVariance = "1.0 0.0 1.0"
+
+[cloudemit]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 80"
+finishColor = "150 150 150 0"
+startRadius =  0.2
+finishRadius = 2.0
+animateTime = 2.0
+
+[Flame]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl_trail"
+textureName = "sflame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 100 55 0"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 0.5
+rotationRate = 10.0
+emitDelay = 0.03
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 2.0

@@ -1,0 +1,232 @@
+[GameObjectClass]
+CategoryTypeOverride = 4 \\Hit '4' to activate
+
+geometryName = "cbbarr_b.xsi"
+geometryScale = 2
+classLabel = "factory"
+scrapCost = 55
+scrapReturn = 25
+scrapValue = 10
+maxHealth = 6000
+maxAmmo = 0
+unitName = "BioProcessor"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+powerCost = 0
+ownsTerrain = 1
+isSingle = 1
+
+LightingType = 1
+
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "cbsbay_b"
+requireText1 = "Build Slave Node"
+
+provideCount = 2
+provideName1 = "cbbarr_b"
+provideName2 = "barr"
+
+collisionRadius = 25.0
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cbbarr_b.cables1"
+effectHard2 = "hp_emit_2"
+effectName2 = "cbbarr_b.cables2"
+effectHard3 = "hp_emit_3"
+effectName3 = "cbbarr_b.dark"
+effectHard4 = "hp_light_1"
+effectName4 = "cbbarr_b.skull"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 3
+//tunnel01DX = 2
+//tunnel01DZ = 4
+//tunnel01Edge = "wwtw"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+WeaponConfig = "iiweapon"
+BaseSlot = 4
+
+KickAllCraft = true
+
+
+
+[cables]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "cbbarr_b.cables1"
+renderName2 = "cbbarr_b.cables2"
+//renderName3 = "cbbarr_b.dark"
+//renderName4 = "cbbarr_b.steam"
+
+[cables1]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbbarr_b.cables1emit"
+emitDelay = 12
+emitVelocity = "0.0 0.0 -10.0"//.4 0 0
+emitVariance = "35.0 0.0 30.0"// .5 .5 .5
+
+[cables1emit]
+simulateBase = "sim_ember"
+lifeTime = 1.67
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "65 65 65 35500"
+finishColor = "65 65 65 0"
+startRadius = 0.18
+finishRadius = 0.18
+segmentTime = 48
+//segmentVariance = "1 1 0"
+animateTime = 48
+
+[cables2]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbbarr_b.cables2emit"
+emitDelay = 16
+emitVelocity = "0.0 0.0 -10.0"//.4 0 0
+emitVariance = "25.0 0.0 20.0"// .5 .5 .5
+
+[cables2emit]
+simulateBase = "sim_ember"
+lifeTime = 1.50
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail4.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "55 55 55 35500"
+finishColor = "55 55 55 0"
+startRadius = 0.28
+finishRadius = 0.28
+segmentTime = 48
+//segmentVariance = "1 1 0"
+animateTime = 48
+
+[dark]
+simulateBase = "sim_null"
+lifeTime = 5e30
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 225"
+finishColor = "0 0 0 225"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.5
+
+[steam]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cbcbun_b.steamemit"
+emitDelay = 2.9
+emitVelocity = "0.0 30.0 0.0"//.4 0 0
+emitVariance = "0.0 1.0 0.0"// .5 .5 .5
+
+[steamemit]
+simulateBase = "sim_ember"
+lifeTime = 3
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "sootrail.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor =   "0 0 0 100" //"153 153 153 128"
+finishColor = "100 100 100 0
+startRadius = 2
+finishRadius = 4
+segmentTime = 3
+segmentVariance = "1 1 0"
+animateTime = 3
+
+[skull]
+simulateBase = "sim_null"
+renderBase = "draw_sphere"
+textureName = "skull512.tga"//"cflmball.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 0"
+finishColor = "255 255 255 200"
+startRadius = 2.0
+finishRadius = 2.0 // 30
+animateTime = 5.0
+latitudeBands = 5
+longitudeSegments = 9
+InitialPitch = 90
+InitialYaw = 0.0
+InitialRoll = 90.0
+AddPitch = 0.0
+AddYaw = 0.0
+AddRoll = 0.0
+
+
+[BuildGroup1]
+BuildLabel = "Drone"
+buildItem1 = "ispilo_b"
+buildItem2 = "issold_b"
+buildItem3 = "isHsold_b"
+
+buildItem5 = "ivspbk_b"
+
+
+[BuildGroup3]
+BuildLabel = "Avatar"
+buildItem1 = "issniper_b"
+buildItem2 = "isdmsol_b"
+buildItem3 = "ismgsol_b"
+buildItem4 = "isbmsol_b"
+buildItem5 = "isaasol_b"
+
+[BuildGroup5]
+BuildLabel = "Weapons"
+buildItem1 = "apsnip_b"
+buildItem2 = "apassrif_b"
+buildItem3 = "apmgren_b"
+buildItem4 = "apbazo_b"
+buildItem5 = "apbeamrif_b"
+buildItem6 = "apsam_b"
+//buildItem7 = "apsatcom_b"
+
+[BuildGroup7]
+BuildLabel = "Utilities"
+buildItem1 = "aphjetp_b"
+builditem2 = "apsatc_b"
+buildItem3 = "apgren_b"
+buildItem4 = "apsatcom_b"
+//buildItem5 = "ivbomb_b"
+//buildItem6 = "ivpfighter_b"
+
+
+

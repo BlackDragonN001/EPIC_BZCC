@@ -1,0 +1,212 @@
+[GameObjectClass]
+baseName = "fvsent_b"
+
+unitIcon = "icon_fvsent.tga"
+infoName = "fvsent_b.inf"
+unitStatus = "wire_fvsent.tga"
+
+glowTexture = "fvsenta0.pic"
+geometryName = "fvsent_skel_b.xsi"
+cockpitName = "fvsent_cockpit.xsi"
+geometryScale = 2
+classLabel = "morphtank"
+animCount = 7
+animName1 = "forward"
+animFile1 = "fvsent_ASF_b.xsi"
+animName2 = "neutral"
+animFile2 = "fvsent_ASN_b.xsi"
+animName3 = "reverse"
+animFile3 = "fvsent_ASR_b.xsi"
+animName4 = "deploy"
+animFile4 = "fvsent_MORPH_b.xsi"
+animName5 = "forward2"
+animFile5 = "fvsent_MSF_b.xsi"
+animName6 = "neutral2"
+animFile6 = "fvsent_MSN_b.xsi"
+animName7 = "reverse2"
+animFile7 = "fvsent_MSR_b.xsi"
+scrapValue = 10
+scrapReturn = 25
+scrapCost = 50
+customCost = 50
+buildTime = 15.0
+customTime = 20.0
+maxHealth = 1500
+maxAmmo = 2500
+collisionRadius = 30.0
+
+addAmmo = 3.0
+addhealth = 0.0
+
+unitName = "Sentry"
+
+//explosionName = "xscionxpl"
+
+aiName = "SentryProcess"
+aiName2 = "SentryProcess"
+
+heatSignature = 0.5
+imageSignature = 2.5
+radarSignature = 0.3
+
+LightingType = 1 
+
+provideCount = 2
+provideName1 = "fvsent_b"
+provideName2 = "sent"
+
+
+isAssault = 0
+isStealth = 1
+
+armorClass = L
+
+requireCount = 1
+requireName1 = "fbkiln_b"
+requireText1 = "Build Kiln"
+
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "giongn_cb"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "giongn_cb"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_SPECIAL_1"
+weaponName3 = "gseeker_b"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_SHIELD"
+weaponName4 = ""
+weaponAssault4 = 0
+
+//////////////////////////////////
+
+effectHard1 = "hp_com_1"
+effectName1 = "fvtank_b.glow"
+
+[CraftClass]
+canHunt = true
+xplCrash = "xscionxpl"
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 850.0
+periodScan = 5.0
+velocJam = 1.0
+engageRange = 650
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "NNS"
+
+selectWaitMsg = "fvsent04.wav"
+selectAttackMsg = "fvsent01.wav"
+selectFollowMsg = "fvsent03.wav"
+selectGoMsg = "fvsent02.wav"
+selectOtherMsg = "fvsent04.wav"
+holdMsg = "fvsent12.wav"
+goMsg = "fvsent05.wav"
+attackMsg = "fvsent06.wav"
+followMeMsg = "fvsent08.wav"
+followMsg = "fvsent03.wav"
+repairMsg = "fvsent09.wav"
+reloadMsg = "fvsent09.wav"
+rescueMsg = "fvsent10.wav"
+recycleMsg = "fvsent11.wav"
+otherMsg = "fvsent04.wav" 
+holdMsg = "fvscout12.wav"
+user1Msg = ""  
+killedMsg = "fvsent07.wav"
+diedMsg = ""
+
+//braccelFactor = 0.04
+//velFactor = 0.1
+//steerFactor = 1.5
+//omegaFactor = 0.2
+//strafeFactor = 0.3
+
+avoidSpeed = 20
+
+// COMBAT MODE /////////////////////
+
+[HoverCraftClass]
+velocForward = 95.0
+velocReverse = 30.0
+velocStrafe = 37.0
+accelThrust = 25.0 //acceleration
+accelDragStop = 15.0 //how fast it stops once hands are off controls
+accelJump = 25.0
+
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 23.0 //springs speed it rights itself []
+alphaDamp = 9.0 //shocks []
+
+pitchPitch = 0.3 //nose up [.2]
+pitchThrust = 0.1 //nose down [.15]
+
+rollStrafe = 0.08 //rolls while strafing
+omegaSpin = 2.2 //spinning in place speed
+omegaTurn = 3.5 //turning while moving speed
+alphaSteer = 4.2 //how fast it responds to steering
+rollSteer = 0.17 //rolls while steering
+
+soundThrust = "avtanke0.wav"
+
+
+
+// ASSAULT MODE /////////////////////
+
+[MorphTankClass]
+addAmmo = 0.0
+addhealth = 5.0
+engageRange = 500
+isAssault = 0
+
+maxHealth = 1500
+maxAmmo = 2500
+addAmmo = 3.0
+addhealth = 0.0
+
+unitName = "Sentry"
+
+rangeScan = 750.0f
+periodScan = 5.0f
+velocJam = 5.0f
+
+velocForward = 50.0
+velocReverse = 15.0
+velocStrafe = 37.0
+accelThrust = 15.0 //acceleration
+accelDragStop = 20.0 //how fast it stops once hands are off controls
+accelJump = 22.0
+
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 23.0 //springs speed it rights itself []
+alphaDamp = 9.0 //shocks []
+
+pitchPitch = 0.3 //nose up [.2]
+pitchThrust = 0.1 //nose down [.15]
+
+rollStrafe = 0.05 //rolls while strafing
+omegaSpin = 2.8 //spinning in place speed
+omegaTurn = 3.3 //turning while moving speed
+alphaSteer = 3.9 //how fast it responds to steering
+rollSteer = 0.09 //rolls while steering
+
+soundThrust = "ssent01c.wav"
+
+
+[DeployableClass]
+
+timeDeploy = 1.2
+timeUndeploy = 1.2
+soundDeploy = "morph01.wav"
+soundUndeploy = "morph01b.wav"

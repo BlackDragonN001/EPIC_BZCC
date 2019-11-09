@@ -1,0 +1,112 @@
+[OrdnanceClass]
+classLabel = "pulse"
+// shotGeometry = "gatstab.xsi"
+shotGeometry = ""
+shotSound = "sonic03b.wav"
+renderName = "sonicwpn_ab.render"
+shotRadius = -50
+xplGround = ""
+xplVehicle = ""
+xplBuilding = ""
+
+ammoCost = 100
+lifeSpan = 0.28 // 145m max damg, 175m min dmg
+shotSpeed = 300
+
+damageValue(N) = 0 // none 
+damageValue(L) = 0 // light 
+damageValue(H) = 0 // heavy 
+
+damageValue(S) = 0 // standard 
+damageValue(D) = 0 // deflection 
+damageValue(A) = 0 // absorbtion 
+
+[PulseShellClass]
+pulseDelay = 0.08
+pulsePeriod = 0.05
+xplPulse = "sonicpulse_ab"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "sonicwpn_ab.trailer"
+renderName4 = "sonicwpn_ab.dust"
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "100 120 100 10"
+finishColor = "100 100 80 0"
+startRadius = 10.0
+finishRadius = 10.0
+
+[trailer]
+simulateBase = "sim_dust"
+lifeTime = 2.2
+renderBase = "draw_emit"
+emitName = "sonicwpn_ab.traileremit"
+emitdelay = 2.3
+//delayVar = 0.1
+emitVelocity = "0.0 0 300.0"
+emitVariance = "0.0 0.0 0.0"
+
+[traileremit]
+simulateBase = "sim_dust"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "sbubbles.tga" //ssmoke.tga
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "255 255 255 25"
+finishColor = "255 255 255 0"
+startRadius = 0.5
+finishRadius = 6
+segmentTime = 1.5
+animateTime = 1
+
+[dust]
+simulateBase = "sim_dust"
+lifeTime = 2.2
+renderBase = "draw_emit"
+emitName = "sonicwpn_ab.trailer1emit"
+emitdelay = 0.015
+delayVar = 0.01
+emitVelocity = "0.0 0 0.0"
+emitVariance = "46.0 0.0 26.0"
+
+[trailer1emit]
+simulateBase = "sim_dust"
+lifeTime = 1.5
+renderBase = "draw_sprite"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "150 135 120 45"
+finishColor = "180 170 160 0"
+startRadius =  0//1.8
+finishRadius = 7
+animateTime = 1.5
+rotationrate = 1
+
+[debriss]
+simulateBase = "sim_dust"
+lifeTime = 2.2
+renderBase = "draw_emit"
+emitName = "debris.schunks"
+emitdelay = 0.1
+//delayVar = 0.1
+emitVelocity = "0.0 10 0.0"
+emitVariance = "16.0 20.0 16.0"
+
+[debriss]
+simulateBase = "sim_dust"
+lifeTime = 2.2
+renderBase = "draw_emit"
+emitName = "debris.chunks"
+emitdelay = 0.2
+//delayVar = 0.1
+emitVelocity = "0.0 10 0.0"
+emitVariance = "`10.0 15.0 10.0"
+

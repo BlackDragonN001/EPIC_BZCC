@@ -1,0 +1,119 @@
+//
+// EPICMPVehicles.odf - listing of multiplayer vehicles usable in BZ2
+//
+//
+// Tip: do not put .odf extension on cfg# = "" entries; added automatically on loading
+// 
+
+[MPVehicles]
+xsi1 = "ivscout00_b.xsi"
+cfg1 = "ivscout_b"
+Description1 = "Thunderbolt"
+
+xsi2 = "ivtank00_b.xsi"
+cfg2 = "ivtank_b"
+Description2 = "Sabre"
+
+xsi3 = "ivmbik00_b.xsi"
+cfg3 = "ivmbike_b"
+Description3 = "Jackal"
+
+xsi4 = "ivmisl00_b.xsi"
+cfg4 = "ivmisl_b"
+Description4 = "Avenger"
+
+xsi5 = "ivltankBD.xsi"
+cfg5 = "ivltank_b"
+Description5 = "Light Tank"
+
+xsi6 = "ivrbomb_b.xsi"
+cfg6 = "ivrbomb_b"
+Description6 = "Hammer"
+
+xsi7 = "ivatnk00_b.xsi"
+cfg7 = "ivatank_b"
+Description7 = "Bulldog"
+
+xsi8 = "ivrckt00_b.xsi"
+cfg8 = "ivrckt_b"
+Description8 = "Rocket Tank"
+
+xsi9 = "ivwalk_skel_b.xsi"
+cfg9 = "ivwalk_b"
+Description9 = "Attila LM"
+
+xsi10 = "ispilo_rifle_skel.xsi"
+cfg10 = "ispilo"
+Description10 = "ISDF Pilot"
+
+xsi11 = "ivturr00_b.xsi"
+cfg11 = "ivturr_b"
+Description11 = "Rattler"
+
+xsi12 = "fvscout_skel_b.xsi"
+cfg12 = "fvscout_b"
+Description12 = "Drone"
+
+xsi13 = "fvtank_skel_b.xsi"
+cfg13 = "fvtank_b"
+Description13 = "Warrior"
+
+xsi14 = "fvsent_skel_b.xsi"
+cfg14 = "fvsent_b"
+Description14 = "Sentry"
+
+xsi15 = "fvlancer_skel.xsi"
+cfg15 = "fvarch_b"
+Description15 = "Lancer"
+
+xsi16 = "fvltank_skel_b.xsi"
+cfg16 = "fvltank_b"
+Description16 = "Dragoon"
+
+xsi17 = "fvbomb_b.xsi"
+cfg17 = "fvrbomb_b"
+Description17 = "Brawler"
+
+xsi18 = "fvtitan_skel_b.xsi"
+cfg18 = "fvatank_b"
+Description18 = "Titan"
+
+xsi19 = "fvwalk_skel.xsi"
+cfg19 = "fvwalk_b"
+Description19 = "Mauler"
+
+xsi20 = "fvturr_skel.xsi"
+cfg20 = "fvturr_b"
+Description20 = "Guardian"
+
+xsi21 = "sspilo_rifle_skel.xsi"
+cfg21 = "fspilo"
+Description21 = "Scion Pilot"
+
+xsi22 = "cvscout00_b.xsi"
+cfg22 = "cvscout_b"
+Description22 = "Hydra"
+
+xsi23 = "cvtank00_b.xsi"
+cfg23 = "cvtank_b"
+Description23 = "Reaper"
+
+xsi24 = "cvrbomb00_b.xsi"
+cfg24 = "cvrbomb_b"
+Description24 = "Siren"
+
+xsi25 = "cvhatank_b.xsi"
+cfg25 = "cvhtank_b"
+Description25 = "Dread"
+
+xsi26 = "cvdcar00_b.xsi"
+cfg26 = "cvdcar_b"
+Description26 = "Demon"
+
+xsi27 = "ivcerb_skel_b.xsi"
+cfg27 = "cvwalk_b"
+Description27 = "Executioner"
+
+xsi28 = "cvturr01_skel_b.xsi"
+cfg28 = "cvturr_b"
+Description28 = "Manticore"

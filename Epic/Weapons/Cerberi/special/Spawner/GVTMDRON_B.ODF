@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+//ordName = "cvgdron_b"
+wpnName = "Talon Spawn"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPEC"
+aiRange = 2000
+isAssault = 0
+
+[DispenserClass]
+shotDelay = 6.0
+
+shotVariance = 0.05
+shotAlternate = 1
+objectClass = "cvtmdron_b"
+

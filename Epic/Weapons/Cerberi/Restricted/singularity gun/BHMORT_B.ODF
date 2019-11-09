@@ -1,0 +1,37 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = "ioartl00.xsi"
+shotSound = "baz03.wav"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+rendername = "bhmort_b.render"
+
+ammoCost = 1
+lifeSpan = 1e30
+shotSpeed = 300.0
+
+damageValue(N) = 500
+damageValue(L) = 550
+damageValue(H) = 600
+damageValue(S) = 400
+damageValue(D) = 550
+damageValue(A) = 300
+
+[SprayBombClass]
+payloadName = "bhflare_b" //GO class
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 55"
+finishColor = "0 0 0 0"
+startRadius = 0.3
+finishRadius = 1
+animateTime = 2.0
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.5 0.5 0.5"
+//emitLife = 2.0
+

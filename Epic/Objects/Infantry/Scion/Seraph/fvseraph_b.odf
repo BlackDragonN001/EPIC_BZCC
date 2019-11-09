@@ -1,0 +1,322 @@
+[GameObjectClass]
+
+baseName = "fvseraph_b"
+geometryName = "sseraph_b.xsi"
+geometryScale = 1.0
+
+renderName = "fvseraph_b.render"
+
+//animCount = 1
+//animName1 = "deploy"
+//animFile1 = "ivapc00_b.xsi"
+
+//classLabel = "assaulthover"	//"turrettank"//"artillery"//"aircraft"
+classLabel = "wingman"
+scrapValue = 0
+//scrapCost = 100 //90
+//customCost = 100
+//buildTime = 25.0
+//customTime = 30.0
+scrapCost = 30
+scrapReturn = 15
+customCost = 30
+buildTime = 10.0
+customTime = 1.0
+maxHealth = 2000
+addHealth = 20
+maxAmmo = 6000
+addAmmo = 400
+AIAddAmmo = 50
+unitName = "Seraph"
+collisionRadius = 40.0
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 2.0
+imageSignature = 2.0
+radarSignature = 2.0
+
+isstealth = 0
+isAssault = 1
+armorClass = L
+needPilot = 0
+cockpitName = "ivturr_cockpit.xsi"
+collisionRadius = 60.0
+
+LightingType = 1
+
+BoxCollide = 1
+
+SmartIsAirUnitCheck = false
+
+//VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+provideCount = 1
+provideName1 = "shero"
+
+requireCount = 2
+requireName1 = "fbbarr_b"
+requireText1 = "Build Enclave"
+requireName2 = "fbover_b"
+requireText2 = "Upgrade Antenna"
+
+limitClass1 = "shero" // e.g. "ibrecy", *NO* ".odf" on item
+limitClass1Count = 1
+limitClass1Text = "Unique Unit"
+
+isGrouped = 1   // add to a command group 
+needGroup = 0 	// need free group to build 
+isLimited = 0 	// add to the limit count 
+needLimit = 0 	// need free limit to build 
+canDetect = 1   // can attack other pilots through attack command 
+canEject = 0
+canInteract = 1 // can interact using the reticle 
+canSelect = 1
+canTarget = 1   // can target
+needPilot = 0
+
+CanAcceptPowerups = false
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fvseraph_b.render"
+
+
+//effectHard2 = "hp_emit_4"
+//effectName2 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard3 = "hp_emit_2"
+//effectName3 = "ivspbomb_b.trail"//"ivfighter_b.smoke"
+//effectHard4 = "hp_emit_5"
+//effectName4 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard5 = "hp_emit_3"
+//effectName5 = "chain_cb.trail"//"ivfighter_b.smoke"
+//effectHard6 = "hp_emit_6"
+//effectName6 = "chain_cb.trail"//"ivfighters.smoke"
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+
+weaponHard1 = "HP_cannon_1"
+weaponName1 = "garc_cb"
+weaponAssault1 = 0
+recoilName1 = "hp_emit_1"
+
+weaponHard2 = "HP_cannon_2"
+weaponName2 = "gplight_b" // "gsgun"
+weaponAssault2 = 1
+recoilName2 = "recoil_2"
+
+weaponHard3 = "HP_shield"
+weaponName3 = "gasold_b"
+weaponAssault3 = 0
+
+
+
+////////////////////////////////////
+
+
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[CraftClass]
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+PathingType = 0 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+AvoidType = -1 // -1 = auto, 0 = None, 1 = force, 2 = plan
+GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower model
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+ClosestEnemyGoodEyes = yes
+CanAIPForceIdle = false
+
+ejectratio = 0
+xplCrash = "ixshipxplb"
+
+LeaveExplodeScorch = false
+//MaxScorchHeight = 20.0
+
+rangeScan = 500.0f
+periodScan = 4.0f
+velocJam = 0.0f
+engageRange = 500
+detectRange = 200
+
+braccelFactor = 0.5
+velFactor = 0.5
+strafeFactor = 0.5
+steerFactor = 1.5
+omegaFactor = 0.2//0.2
+
+canHunt = 1
+canRescue = 0
+
+AllowLinkWeapons = true
+
+weaponPitch = 0.5
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "MortarBikeSubAttack"
+subAttackClass = "NNN"
+
+braccelFactor = 0.5 //0.03
+velFactor = 0.4//0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.8
+
+avoidSpeed = 10;
+topSpeed = 20;
+
+damageEffect1 = "Dmgprs1"
+damageEffect2 = "Dmgprs1"
+damageEffect3 = "Dmgprs2"
+damageEffect4 = "Dmgprs2"
+
+selectWaitMsg = "scion0309.wav"
+selectDropoffMsg = "scion0309.wav"
+selectPickupMsg = "scion0309.wav"
+selectOtherMsg = "fvrecy04.wav"
+selectReadyMsg = "fvrecy04.wav"
+
+holdMsg = "fvrecy04.wav"
+goMsg = "fvrecy02.wav"
+attackMsg = "scion0126.wav"
+followMsg = "scion0123.wav"
+followMeMsg = "scion0123.wav"
+repairMsg = "fvrecy07.wav"
+recycleMsg = "scion0309.wav"
+rescueMsg = "scion0123.wav"
+otherMsg = "fvrecy04.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "scion0313.wav"//"abetty3.wav"
+
+// you have my word on it" - scion0123.wav
+// more hostiles,i needbackup" - scion0126.wav
+// watch your fire - scngen30.wav
+// the base is ours - scion0211.wav
+// as you wish - scion0309.wav
+// negative...too many...braking up - scion0313.wav
+
+// enroute - fvrecy02.wav
+// yes - ...04
+
+[HoverCraftClass]
+accelBrake = 50.0
+accelDragFull = 5.0
+accelDragStop = 20.0
+accelJump = 10.0
+accelThrust = 25.0
+
+alphaDamp = 3.0
+alphaSteer = 5.0
+alphaTrack = 10.0
+
+omegaSpin = 2
+omegaTurn = 1
+
+pitchPitch = 0.1
+pitchThrust = 0.15
+
+rollStrafe = 0.1
+rollSteer = 0.1
+
+setAltitude = 3.0
+
+velocForward = 20.0
+velocReverse = 15.0
+velocStrafe = 15.0
+
+soundThrust = "ssent01d.wav"
+
+////////////////////////////
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+//renderName1 = "fvseraph_b.Field1"
+renderName1 = "fvseraph_b.glow"
+renderName2 = "fvseraph_b.matter"
+renderName3 = "fvseraph_b.light"
+
+[Field1]
+simulateBase = "sim_null"
+renderBase = "draw_sphere"
+textureName = "cv_shield.tga"//"cflmball.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 0"
+finishColor = "50 100 255 30"
+startRadius = .15
+finishRadius = .15 // 30
+animateTime = 1.0
+latitudeBands = 7
+longitudeSegments = 12
+InitialPitch = -0.5
+InitialYaw = 0.0
+InitialRoll = 0.0
+AddPitch = 45.0
+AddYaw = 50.0
+AddRoll = 40.0
+
+[matter]
+simulateBase = "sim_smoke"
+//lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "fvseraph_b.matteremit"
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[matteremit]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_twirl"
+textureName = "sparks.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 80 40"
+finishColor = "250 240 255 150"
+startRadius = 1.0
+finishRadius = 0.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 250"
+finishColor = "20 20 255 250"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "150 100 250 25"
+finishColor = "150 100 250 25"
+startRadius =  12.0
+finishRadius = 12.0
+animateTime = 1.2
+rotationrate = 0
+
+
+[Lod1]
+geometryName = "null" ;geometry for lod1
+geometryScale = 1
+distance = 1000   

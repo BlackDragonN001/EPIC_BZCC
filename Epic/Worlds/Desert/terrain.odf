@@ -1,0 +1,13 @@
+[GameObjectClass]
+geometryName = "terrain.xsi"
+classLabel = "terrain"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "terrain"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+
+[BuildingClass]

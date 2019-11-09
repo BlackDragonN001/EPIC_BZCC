@@ -1,0 +1,85 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "smort03.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "xgasxpl"
+xplBuilding = "xshdwbld"
+renderName = "miss1.render"
+
+ammoCost = 10
+lifeSpan = 8.0 // 800m
+shotSpeed = 120.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 180 // light
+damageValue(H) = 140 // heavy
+
+damageValue(S) = 180 // standard
+damageValue(D) = 140 // deflection
+damageValue(A) = 200 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "miss1.flare"
+renderName2 = "miss1.smoke"
+renderName3 = "miss1.flame"
+renderName4 = "miss1.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 1.0
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "255 200 50 255"
+finishColor = "250 250 250 0"
+startRadius = 0.2
+finishRadius = 0.4
+segmentTime = 3.0
+animateTime = 0.05
+
+
+

@@ -1,0 +1,91 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "sgstng00.xsi"
+shotSound = "adderord.wav"
+
+renderName = "adders.render"
+
+xplGround = "xbazgnd_c"
+xplVehicle = "xbazxpl_c"
+xplBuilding = "xbazxpl_c"
+
+ammoCost = 15
+lifeSpan = 8.5 
+shotSpeed = 250.0
+
+damageValue(N) = 100 // none // 390
+damageValue(L) = 70 // light // 210
+damageValue(H) = 40 // heavy // 45
+
+damageValue(S) = 70 // standard // 210
+damageValue(D) = 90 // deflection // 180
+damageValue(A) = 50 // absorbtion // 255
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5
+
+[ThermalMissileClass]
+coneAngle = 1.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "adders.flame"
+renderName2 = "adders.light"
+renderName3 = "adders.trail"
+
+[Light]
+renderBase = "draw_light"
+startColor = "105 165 255 455"
+finishColor = "50 0 250 455"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 8.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sparticle.tga"
+//textureName = "sblast.tga"
+textureBlend = "one one modulate"
+startColor = "85 30 255 255"
+finishColor = "10 5 202 0"
+startRadius = 0.5
+finishRadius = 0.05
+animateTime = 0.5
+rotationRate = 3.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.2 0.2 0.2"
+emitLife = 1
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.01
+emitDelayVar = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+//emitInherit = "1.5 1.5 1.0"
+emitLife = 1.2
+textureName = "ssssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 0 90 128"
+finishColor = "5 5 5 5"
+startRadius = 0.30
+finishRadius = 0.1
+animateTime = 1.2
+rotationRate = 1.0
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "85 30 255 220"
+finishColor = "10 5 202 0"
+startRadius = 0.35
+finishRadius = 0.01
+segmentTime = 0.1

@@ -1,0 +1,297 @@
+[GameObjectClass]
+baseName = "ivtank_b"
+
+unitIcon = "icon_ivtank.tga"
+infoName = "ivtank_b.inf"
+unitStatus = "wire_ivtank.tga"
+
+geometryName = "ivtank00_b.xsi"
+geometryScale = 1.7
+cockpitName= "ivtank_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 20
+scrapReturn = 25
+scrapCost = 55
+customCost = 65
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 3500
+maxAmmo = 2200
+addAmmo = 5
+unitName = "Tank"
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+//aiName = "RocketTankFriend"
+//aiName2 = "RocketTankEnemy"
+collisionRadius = 50
+
+BoxCollide = 1
+
+SmartIsAirUnitCheck = false
+//VehicleSearchFilter = 0 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
+
+
+heatSignature = 2.0
+imageSignature = 2.5
+radarSignature = 0.5
+
+explosionName = "NULL"//"ixshipxpl"//xflak
+
+
+isAssault = 0
+
+armorClass = L
+
+provideCount = 2
+provideName1 = "ivtank_b"
+provideName2 = "tank"
+
+
+LightingType = 1 
+
+
+requireCount = 2
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+requireName2 = "ibcbun_b"
+requireText2 = "Build Relay Bunk"
+
+cockpitName = "ivtank_cockpit.xsi"
+
+/////// weapons ///////////////////
+
+weaponMask = 10111
+
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gatstab_cb"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_1"
+weaponName2 = "gminigun_cb"
+weaponAssault2 = 0
+weaponHard3 = "HP_GUN_2"
+weaponName3 = "gminigun_cb"
+weaponAssault3 = 0
+weaponHard4 = "HP_MORTAR_1"
+weaponName4 = "gmortar_b"
+weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = ""
+weaponAssault5 = 0
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2_b"
+lightHard2 = "hp_light_2"
+lightName2 =  
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivtank_b.glow"
+effectMaxAltitude1 = 15
+
+effectHard2 = "hp_emit_1"
+effectName2 = "ivtank_b.trailer1"
+effectMaxAltitude2 = 10
+
+
+
+[CraftClass]
+canHunt = true
+AllowLinkWeapons = true
+FireWhenCanHitFriends = false
+
+xplCrash = "ixshipxpl"
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+rangeScan = 900.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 500
+ejectRatio = 0.5
+
+attackTask = "MortarBikeAttack"
+subAttackTask = "AimFireAttack"
+subAttackClass = "NNS"
+
+AttackTaskUsesGroups = false
+IgnoreDestroyedTargets = true 
+RetargetOnStrafe = true
+
+OffensiveProcessIsDistractable = false
+OffensiveProcessIsDistractableAITeam = true
+
+//braccelFactor = 0.03
+//velFactor = 0.1
+//steerFactor = 1
+//omegaFactor = 0.1
+//strafeFactor = 0.5
+
+avoidSpeed = 40;
+topSpeed = 60;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+velocForward = 60.5 // []
+velocReverse = 30.0 // []
+velocStrafe = 25.0 // []
+accelThrust = 24.0 //acceleration []
+accelDragStop = 15.0 //how fast it stops once hands are off controls []
+accelJump = 23.0 // []
+w
+setAltitude = 2.0 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.25 //nose up []
+pitchThrust = 0.1 //nose down []
+
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 6.0 //spinning in place speed []
+omegaTurn = 2.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+[Lod1]
+geometryName = "ivtankL1_b.xsi" ;geometry for lod1
+geometryScale = 1.8
+distance = 250                 ;...distance over this many meters => switch to lod2
+
+[Lod2]
+geometryName = "ivtankL2_b.xsi" ;geometry for lod2
+geometryScale = 1.8
+distance = 350                 ;...distance over this many meters => switch to lod2
+
+[Trail]//trail
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "0.0 2.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 3.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 150"
+finishColor = "255 255 255 0"
+startRadius = 0.7
+finishRadius = 3.1
+animateTime = 3.0
+rotationRate = 2.0
+
+//[Trailer]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "170 170 170 108" //"153 153 153 128"
+finishColor = "253 253 253 0"
+startRadius = 1
+finishRadius = 2
+animateTime = 2.0
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 2.0
+
+
+//[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivtank_b.trailer2"
+emitDelay = 0.3
+delayVariance = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "6.0 0.0 6.0"
+
+[trailer1]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivtank_b.trailer1emit"
+emitdelay = 0.3
+delayVar = 0.05
+emitVelocity = "0.0 0 0.0"
+emitVariance = "8.0 0.0 8.0"
+
+[trailer1emit]
+maxDist = 180
+simulateBase = "sim_dust"
+lifeTime = 3
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "160 155 150 10"
+finishColor = "180 180 180 0"
+startRadius =  3 //1.8
+finishRadius = 7
+animateTime = 3
+rotationrate = 1
+
+
+[trailer2]
+simulateBase = "sim_dust"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivtank_b.trailer1emit"
+emitdelay = 0.0333
+delayVar = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "16.0 0.0 16.0"
+
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "100 180 250 20"
+finishColor = "100 180 250 20"
+startRadius =  8.0
+finishRadius = 8.0
+animateTime = 1.2
+rotationrate = 1
+
+
+
+[trailer]
+simulateBase = "sim_ember"
+lifetime = 1
+renderBase = "draw_trail"
+//textureName = "sbubbles.tga" //ssmoke.tga
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "255 255 255 40"
+finishColor = "255 255 255 0"
+startRadius = 0.5
+finishRadius = 6
+segmentTime = 1.5
+animateTime = 0.5

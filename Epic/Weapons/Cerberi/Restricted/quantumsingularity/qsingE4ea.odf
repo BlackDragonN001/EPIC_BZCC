@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = NULL
+classLabel = "spraymine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxHeat = 0
+maxAmmo = 6000 //sprays for 15 seconds like anchor
+heatSignature = 0.0
+unitName = ""
+canDetect = 0
+canInteract = 0
+explosionName = "null"
+LeaveExplodeScorch = false
+
+[SprayBuildingClass]
+payloadName = "qsingE4eb"
+jumpSound = ""
+fireSound = ""
+triggerDelay = 0.0
+shotDelay = 0.0025
+setAltitude = 3.0
+omegaSpin = 100.0
+anglePitch = 0.25

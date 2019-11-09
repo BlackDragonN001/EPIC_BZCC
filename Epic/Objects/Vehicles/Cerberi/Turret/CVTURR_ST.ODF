@@ -1,0 +1,17 @@
+[GameObjectClass]
+
+classLabel = "cvturr_b"
+
+explosionName = "XCERBXPL"
+
+LightingType = 1
+
+[CraftClass]
+
+CanInteractWithTerminal = true
+
+[HoverCraftClass]
+
+[TurretTankClass]
+
+[Lod1]

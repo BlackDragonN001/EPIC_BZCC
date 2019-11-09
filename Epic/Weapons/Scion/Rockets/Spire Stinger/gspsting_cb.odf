@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gspsting_cb"
+ordName = "spirestinger_cb"
+wpnName = "Stinger Msl"
+fireSound = "gsand00.wav"
+wpnReticle = "gsting_c"
+wpnCategory = "ROCK"
+aiRange = 1500
+isAssault = 0
+
+[CannonClass]
+shotDelay = 1.0
+salvoDelay = 0.1
+salvoCount = 5
+shotAlternate = 1

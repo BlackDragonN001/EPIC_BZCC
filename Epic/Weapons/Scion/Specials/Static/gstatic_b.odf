@@ -1,0 +1,100 @@
+[WeaponClass]
+classLabel = "damagefield"
+ordName = NULL
+wpnName = "Static Charge"
+fireSound = "stat01.wav"
+wpnReticle = "gstatic.0"
+wpnCategory = "SPEC"
+isAssault = 0
+flashName = "gstatic_b.render"
+
+[DamageFieldClass]
+ammoCost = 50//200.0
+damageRadius = 30.0
+
+damageValue(N) = 400.0 // none
+damageValue(L) = 300.0 // light
+damageValue(H) = 100.0 // heavy
+
+damageValue(S) = 300.0 // standard
+damageValue(D) = 400.0 // deflection
+damageValue(A) = 100.0 // absorbtion
+
+activeSound = "static1.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gstatic_b.sparks"
+renderName2 = "gstatic_b.sparks2"
+renderName3 = "gstatic_b.glow"
+
+
+[sparks]
+renderBase = "draw_static"
+textureName = "static1.tga"
+textureBlend = "one one modulate"
+startColor = "185 255 185 125"
+finishColor = "155 155 155 0"
+startRadius = 0.1//0.1
+finishRadius = 0.5//0.5
+emitDelay = 0.01
+emitDelayVar = 0.015
+innerRadius = 3.0
+outerRadius = 9//15.0
+segmentTime = 0.4
+
+[sparks2]
+renderBase = "draw_static"
+textureName = "static1.tga"
+textureBlend = "one one modulate"
+startColor = "185 255 255 105"
+finishColor = "155 155 155 0"
+startRadius = 0.05//0.1
+finishRadius = 0.2//0.5
+emitDelay = 0.03
+emitDelayVar = 0.015
+innerRadius = 2.0
+outerRadius = 15.0
+segmentTime = 0.4
+
+[glow]
+simulateBase = "sim_null"
+lifeTime = 10e30
+renderBase = "draw_planar"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "150 200 250 20"
+finishColor = "150 200 250 20"
+startRadius =  12.0
+finishRadius = 12.0
+animateTime = 1.2
+rotationrate = 1
+
+
+[blade]
+renderBase = "draw_static"
+textureName = "blade1.tga"//"static1.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"//"one one modulate"
+startColor = "185 185 185 555"
+finishColor = "155 155 155 0"
+startRadius = 0.3//0.1
+finishRadius = 0.4//0.5
+emitDelay = 0.01
+emitDelayVar = 0.015
+innerRadius = 3.0
+outerRadius = 8//15.0
+segmentTime = 0.4
+
+[ball]
+simulateBase = "sim_null"
+renderBase = "draw_sphere"
+textureName = "steelball.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"//"one one modulate"
+startColor = "180 180 180 255"
+finishColor = "180 180 180 255"
+startRadius = 4
+finishRadius = 4
+animateTime = 0.2
+latitudeBands = 6
+longitudeSegments = 12

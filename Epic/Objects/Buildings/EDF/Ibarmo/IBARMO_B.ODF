@@ -1,0 +1,129 @@
+[GameObjectClass]
+geometryName = "ibarmo_b.xsi"
+geometryScale = 3
+classLabel = "armory"
+collisionRadius = 2.0
+scrapCost = 60
+scrapReturn = 30
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Armory"
+aiName = "ArmoryProcess"
+aiName2 = "ArmoryProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+LightingType = 1 
+
+armorClass = H
+
+explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "ibfact_b"
+requireText1 = "Build Factory"
+
+provideCount = 2
+provideName1 = "ibarmo_b"
+provideName2 = "armo"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue"
+
+//upgradeName = "ibarmou_b"
+
+[BuildingClass]
+soundAmbient = "iarm01.wav"
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+diedMsg = "abetty14.wav"
+
+[ArmoryClass]
+//scaleVelY = 0.5
+soundBuild = "" // set to "somefile.wav"
+soundCancel = "" // set to "somefile.wav"
+soundFinish = "" // set to "somefile.wav" 
+
+
+[ArmoryGroup1]
+buildLabel = "Guns"
+buildItem1 = "apmini_b"
+buildItem2 = "aplase_b"
+buildItem3 = "appumm_b"
+buildItem4 = "apchain_b"
+buildItem5 = "apbchain_b"
+
+[ArmoryGroup2]
+buildLabel = "Cannons"
+buildItem1 = "apstab_b"
+buildItem2 = "appstb_b"
+buildItem3 = "apsstb_b"
+buildItem4 = "applas_b"
+buildItem5 = "apblst_b"
+buildItem6 = "apmagg_b"
+buildItem7 = "aprfstab_b"
+buildItem8 = "apbcann_b"
+//buildItem9 = "apflash_b"
+
+[ArmoryGroup3]
+buildLabel = "Rockets"
+buildItem1 = "aptagg_b"
+buildItem2 = "apfafm_b"
+buildItem3 = "apshdw_b"
+buildItem4 = "apsaturn_b"
+//buildItem5 = "apsamiss_b"
+
+[ArmoryGroup4]
+buildLabel = "Mortars"
+buildItem1 = "apmort_b"
+buildItem2 = "apmdmg_b"
+buildItem3 = "apspln_b"
+//buildItem4 = "apminfield_b"
+
+[ArmoryGroup5]
+buildLabel = "Mines"
+buildItem1 = "apflar_b"
+buildItem2 = "apmcur_b"
+buildItem3 = "apmits_b"
+buildItem4 = "approx_b"
+buildItem5 = "apchainm_b"
+
+[ArmoryGroup6]
+buildLabel = "Specials"
+buildItem1 = "apredf_b"
+buildItem2 = "apphan_b"
+buildItem3 = "apsite_b"
+//buildItem4 = "apminfield_b"
+//buildItem5 = "apthumper_b"
+
+[ArmoryGroup7]
+buildLabel = "Pilot"
+buildItem1 = "apbazo_b"
+buildItem2 = "apsnip_b"
+buildItem3 = "apgren_b"
+buildItem4 = "apamjet_b"
+buildItem5 = "apsatc_b"
+buildItem6 = "apsam_b"
+buildItem7 = "apsatcom_b"
+
+//[ArmoryGroup8]
+//buildLabel = "Restricted"
+//buildItem1 = "apnukest_srvb" //"apwrcki_b"
+//buildItem2 = "apsatlink_b"
+//buildItem3 = "applight_b"
+//buildItem4 = "apson2_b"
+//buildItem5 = "aprocks_b"

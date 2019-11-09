@@ -1,0 +1,40 @@
+[GameObjectClass]
+geometryName = "rbridge1_b.xsi"
+geometryScale = 2
+classLabel = "terrain"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 50000
+maxAmmo = 0
+unitName = "Rock Bridge"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+
+[BuildingClass]
+justTerrain = 1
+justFlat = 1
+
+tunnelCount = 3
+
+tunnel01X0 = 1
+tunnel01Z0 = 0
+tunnel01DX = 2
+tunnel01DZ = 4
+tunnel01Edge = "ffff"
+
+tunnel02X0 = 0
+tunnel02Z0 = 1
+tunnel02DX = 1
+tunnel02DZ = 2
+tunnel02Edge = "wfwf"
+
+tunnel03X0 = 3
+tunnel03Z0 = 1
+tunnel03DX = 1
+tunnel03DZ = 2
+tunnel03Edge = "wfwf"

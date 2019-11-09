@@ -1,0 +1,45 @@
+[GameObjectClass]
+geometryName = "dead_09c.xsi"
+geometryScale = 4
+classLabel = "plant"
+collisionRadius = 5.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 0
+unitName = "Dead Tree"
+heatSignature = 0.1
+imageSignature = 0.0
+radarSignature = 0.2
+explosionName = "xplnxpl"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+[BuildingClass]
+
+[PlantClass]
+standUp = 1
+
+typeOfDeath = 4        // 0:none, 1:explode, 2:fall, 3:burn, 4:carFall&bulletBurn
+hitRadius = 3          // collision cylinder radius
+deadTime = -1           // will regenerate after N seconds (-1: stay dead forever)
+growTime = 4           // it will take N seconds to grow
+
+burnTime = 4          // it will take N seconds to burn
+fallTime = 2           // it will take N seconds to fall over
+
+hitGroundName = "xplnxpl"
+hitByCarName = "xplnxpl"
+hitByBulletName = "xplnxpl"
+
+bigFlame = "treefire"
+smallFlame = "treeflame"
+
+darkRadius = 48         // 28m radius
+darkScale = .3  // 1/8 of the original intensity
+
+[Lod1]
+geometryName = "null" ;geometry for lod1
+
+distance = 470                 ;...distance over this many meters => switch to lod2

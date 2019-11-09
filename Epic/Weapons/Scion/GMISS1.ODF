@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+//altName = "glas"
+ordName = "miss1"
+wpnName = "Shadower Msl"
+fireSound = "sonic02.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 500
+
+[LauncherClass]
+lockRange = 500.0  // was 170 GEC
+shotDelay = 3.0
+lockDelay = 3.0
+coneAngle = 0.3 //.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"

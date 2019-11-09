@@ -1,0 +1,36 @@
+[OrdnanceClass]
+classLabel = "grenade"
+shotGeometry = "gatstab.xsi"
+geometryScale = 0.15
+shotSound = "baz03.wav"
+xplGround = "xgrengnd_b"
+xplVehicle = "xgrenxpl_b"
+xplBuilding = "xgrenxpl_b"
+
+renderName = "grenade_b.render"
+
+ammoCost = 1
+lifeSpan = 1e30
+shotSpeed = 56.5
+
+damageValue(N) = 500 // none
+damageValue(L) = 400 // light
+damageValue(H) = 250 // heavy
+
+damageValue(S) = 400 // standard
+damageValue(D) = 250 // deflection
+damageValue(A) = 500 // absorbtion
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 32"
+finishColor = "255 255 255 0"
+startRadius = 0.2
+finishRadius = 0.5
+animateTime = 1.0
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 1.0

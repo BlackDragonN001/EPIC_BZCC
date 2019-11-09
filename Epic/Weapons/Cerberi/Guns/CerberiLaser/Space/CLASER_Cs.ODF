@@ -1,0 +1,28 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+//xplGround = "xclasgnd_cb"
+xplVehicle = "xclasgnd_cb"
+xplBuilding = "xclasgnd_cb"
+renderName = "claser_cs.render"
+
+ammoCost = 1
+lifeSpan = 1.5 // 100+
+shotSpeed = 450.0
+
+damageValue(N) = 30 // none
+damageValue(L) = 20 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 20 // standard
+damageValue(D) = 30 // deflection
+damageValue(A) = 5 // absorbtion
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "120 100 255 200"
+finishColor = "0 0 200 20"
+startRadius = 0.06
+finishRadius = 0.01
+segmentTime = 0.1

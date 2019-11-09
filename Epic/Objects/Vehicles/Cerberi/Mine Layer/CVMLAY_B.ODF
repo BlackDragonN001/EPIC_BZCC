@@ -1,0 +1,126 @@
+// (c) BZ2CP Unit "Harpie"
+// Model by Slaor and Pastell
+
+[GameObjectClass]
+
+baseName = "cvmlay"
+geometryName = "cvmlay00.xsi"
+
+//animCount = 3
+//animName1 = "forward"
+//animFile1 = "evmislsf.xsi"
+//animName2 = "neutral"
+//animFile2 = "evmislsn.xsi"
+//animName3 = "reverse"
+//animFile3 = "evmislsr.xsi"
+classLabel = "minelayer" //"wingman"
+
+explosionName = "XCERBXPL"
+
+scrapValue = 30
+scrapCost = 55
+scrapReturn = 25
+customCost = 65
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 2200
+maxAmmo = 3000
+addAmmo = 5
+unitName = "Harpie"
+canSnipe = 0 // No?
+
+aiName = "MineLayerFriend" //"TankFriend"
+aiName2 = "MineLayerEnemy" //"TankEnemy"
+
+heatSignature = 1.5
+imageSignature = 1.5
+radarSignature = 0.3
+
+canSnipe = 1
+
+LightingType = 1
+
+provideCount = 2
+provideName1 = "cvmlay_b"
+provideName2 = "minea"
+
+isAssault = 0
+
+armorClass = L
+
+requireCount = 1
+requireName1 = "cbcbun_b"
+requireText1 = "Build Uplink"
+
+/////// weapons ///////////////////
+
+weaponMask = 00001
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 = "gproxmin_b"
+weaponAssault1 = 0
+
+////////////////////////////////////
+
+[CraftClass]
+rangeScan = 550.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 180
+
+CanInteractWithTerminal = true
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 30;
+topSpeed = 50;
+
+selectWaitMsg = "cvo_mid_defense_online.wav"
+selectAttackMsg = "cvo_mid_defense_active.wav"
+selectFollowMsg = "cvo_mid_following.wav"
+selectGoMsg = "cvo_mid_onmyway.wav"
+selectOtherMsg = "cvo_mid_defense_online.wav"
+
+
+goMsg = "cvo_mid_onmyway.wav"
+attackMsg = "cvo_mid_defend_the_core.wav"
+followMeMsg = "cvo_mid_following.wav"
+followMsg = "cvo_mid_following.wav"
+repairMsg = "cvo_mid_servicing.wav"
+reloadMsg = "cvo_mid_servicing.wav"
+rescueMsg = "cvo_mid_rescuing.wav"
+recycleMsg = "cvo_mid_recycling.wav"
+otherMsg = "cvo_mid_defense_online.wav" 
+holdMsg = "cvo_mid_holding.wav"
+user1Msg = ""  
+killedMsg = "cvo_mid_defense_nominal.wav"
+diedMsg = "cvo_mid_defensive_destroyed.wav"
+
+[HoverCraftClass]
+velocForward = 49.5 // []
+velocReverse = 25.0 // []
+velocStrafe = 18.0 // []
+accelThrust = 20.0 //acceleration []
+accelDragStop = 12.0 //how fast it stops once hands are off controls []
+accelJump = 12.0 // []
+
+setAltitude = 1.3 // how high off the ground
+
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+
+pitchPitch = 0.35 //nose up []
+pitchThrust = 0.1 //nose down []
+
+rollStrafe = 0.13 //rolls while strafing []
+omegaSpin = 4.0 //spinning in place speed []
+omegaTurn = 5.5 //turning while moving speed []
+alphaSteer = 6.5 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "evmsljmp.wav"
+soundTurbo = "evmsleng.wav"
+

@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gfrbombs"
+ordName = "frbombs"
+wpnName = "Ion Torpedo"
+fireSound = "gpopp00.wav"
+wpnReticle = "grktbomb"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 1200
+
+[CannonClass]
+shotDelay = 4.0
+shotAlternate = 1
+

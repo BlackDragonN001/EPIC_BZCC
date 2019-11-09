@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "shieldup"
+ordName = NULL
+wpnName = "Mage Shield"
+fireSound = "gphan00.wav"
+wpnReticle = "gshield"
+wpnPriority = 0
+wpnCategory = "SHIE"
+
+[ShieldUpgradeClass]
+
+// stasis shield (balanced)
+shieldClass = "S"
+
+animateTime = 0.7
+colorRange = 0.5
+scaleStart = 0.2
+scaleFinish = 1.0
+
+// [white->cyan->blue]
+textureName = "spellshield1.tga"
+startColor = "255 255 255 10"
+middleColor = "150 200 255 110"
+finishColor = "0 100 255 0"

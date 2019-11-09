@@ -1,0 +1,65 @@
+[GameObjectClass]
+geometryName = "fac_buttress1.XSI"
+geometryScale = 5
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Buttress"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+ownsTerrain=0
+canCollide = 1
+boxcollide = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fac_butt1_b.flamer"
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103
+
+[flamer]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "fac_butt1_b.smokeEmitter"
+//renderName2 = "fachimney1_b.FlameEmitter"
+
+[SmokeEmitter]
+maxdist = 3000
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1
+emitDelayVar = 0.01
+emitVelocity = "0.0 15.0 3.0"
+emitVariance = "2.0 2.0 3.0"
+emitInherit = "0.6 0.6 0.6"
+emitLife = 20.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "80 80 50 10"
+finishColor = "150 150 70 0"
+startRadius = 12
+finishRadius = 90
+animateTime = 20.0
+rotationRate = 2.0
+
+[FlameEmitter]
+maxdist = 3000
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1
+emitDelayVar = 0.02
+emitVelocity = "0.0 12.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.5 0.5 0.5"
+emitLife = 2.0
+textureName = "flm1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 6
+finishRadius = 3
+animateTime = 2.0
+rotationRate = 3.0

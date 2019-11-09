@@ -1,0 +1,19 @@
+[WeaponClass] // Quantum Singularity Created by General BlackDragon
+// Warning: DO NOT *Insert Big Giant Font Here* NOT! Put more then 
+// 1 of these on a map at any given time. Two black holes on the same
+// map might tear the fabric of the universe apart, or worse... 
+// LIMIT THEIR FIRE POWER/UNITS THAT CAN FIRE THEM!
+classLabel = "mortar"
+ordName = "qsing"
+wpnName = "Quantum Singularity"
+fireSound = "gspli00.wav"
+wpnReticle = "gmortar"//splint"
+wpnLadder = "gsplint.L0"
+wpnPriority = 4
+wpnCategory = "MORT"
+//aiRange = 175
+localAmmo = 350 // Only 1 shot...Sorry :P
+
+[CannonClass]
+shotDelay = 1e6 // Firing this weapon again would cause Donald Rumsfeld to appear in your home.
+

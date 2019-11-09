@@ -1,0 +1,38 @@
+[GameObjectClass]
+geometryName = "apammo00.xsi"
+classLabel = "ammopack"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = "Ammo"
+aiName = "PowerUpProcess"
+
+lightHard1 = "light2"
+lightName1 = "omniblue"
+
+effectHard1 = "hp_light_1"
+effectName1 = "apammo_b.flare"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[AmmoPowerupClass]
+ammoUp = 500
+
+[flare]
+simulateBase = "sim_null"
+//lifeTime = 2.0
+renderBase = "draw_twirl_trail"
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 100 200 85"
+finishColor = "0 150 255 0"
+startRadius = 0.8
+finishRadius = 5
+animateTime = 7
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 -3.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 7

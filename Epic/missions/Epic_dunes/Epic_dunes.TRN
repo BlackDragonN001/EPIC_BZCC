@@ -1,0 +1,36 @@
+[Size]
+MetersPerGrid = 48.0
+HeightGranularity = 0.4
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 100.0
+Tile = 1
+Color = "170 150 120 255"
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=7
+MusicTrack2=8
+MusicTrack3=9
+MusicTrack4=10
+
+[Texture]
+TileTexture1 = "soilcrack.tga"
+TileTexture2 = "greydirt.tga"
+TileTexture3 = "lumprock.tga"
+TileTexture4 = "dunes1.tga"
+TileTexture5 = "rockface.tga"
+TileTexture6 = "shalerock.tga"
+TileTexture7 = "rockface2.tga"
+TileTexture8 = "dustcrack.tga"
+TileTexture9 = "drymud.tga"
+

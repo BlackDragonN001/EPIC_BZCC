@@ -1,0 +1,27 @@
+[GameObjectClass]
+geometryName = "apwrck00.x"
+classLabel = "daywrecker"
+scrapCost = 60
+scrapValue = 0
+maxHealth = 200
+maxAmmo = 0
+unitName = "Day Wrecker"
+aiName = "PowerUpProcess"
+rendername = "apwrcks_b.render"
+
+requireCount = 1
+requireName1 = "fbstrou_b"
+requireText1 = "Build Fortress"
+
+[DayWreckerClass]
+xplBlast = "xwrcks_b"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "sprocketa.trailer"
+renderName2 = "apwrcki_b.smoke"
+renderName3 = "sprocketa.Light1"
+renderName4 = "sprocketa.Light"
+
+

@@ -1,0 +1,68 @@
+[GameObjectClass]
+geometryName = "Cbrecy03_b.xsi"
+geometryScale = 3
+classLabel = "recycler"
+scrapCost = 55
+scrapValue = 10
+maxHealth = 20000
+addHealth = 200
+maxAmmo = 0
+unitName = "Processor"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+armorClass = H
+
+//requireCount = 1
+//requireName1 = "cbpgen"
+//requireText1 = "Build Power"
+
+provideCount = 1
+provideName1 = "cbrecy_b"
+
+collisionRadius = 4.0
+
+
+[PoweredBuildingClass]
+detectRange = 1000
+
+[BuildingClass]
+
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+buildItem1 = "cvscav_b"
+buildItem2 = "cvscout_b"
+//buildItem3 = "cvturr_b"
+buildItem4 = "cvmlay_b"
+buildItem5 = "cvcons_b"
+buildItem6 = "cvserv_b"
+buildItem7 = "cvtank_b"
+buildItem8 = "cvrbomb_b"
+buildItem9 = "cvhatank_b"
+buildItem10 = "cvwalk_b"
+
+
+
+[RecyclerClass]
+scrapHold = 200
+scrapDelay = 1.0
+
+//[Lod1]
+geometryName = "cbrecyL1_b.xsi" ;geometry for lod1
+geometryScale = 3
+distance = 900                    ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

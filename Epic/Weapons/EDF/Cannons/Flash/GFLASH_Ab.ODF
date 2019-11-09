@@ -1,0 +1,30 @@
+[WeaponClass]
+classLabel = "cannon" // "machinegun"
+altName = "gflash_cb"
+ordName = "flash_ab"
+wpnName = "Flash Burst"
+fireSound = "flash01.wav"
+wpnReticle = "gflashgn"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 100
+flashName = "gflash_cb.flash"
+
+[CannonClass]
+shotDelay =  2.5 // 0.05
+salvoCount = 30
+salvoDelay = 0.1
+shotVariance = 0.05
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 255 0 500"
+finishColor = "255 0 0 500"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

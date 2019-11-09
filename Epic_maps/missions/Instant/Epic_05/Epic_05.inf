@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 03: Desert"
+mapTga = "Epic_05.bmp"
+mapDesc = "Epic_05.des"
+mySide = 1

@@ -1,0 +1,42 @@
+[GameObjectClass]
+geometryName = "gmbolt00.x"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 9000
+maxAmmo = 100
+unitName = "Storm"
+heatSignature = 0.0
+explosionName = "null"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+//weaponHard1 = "Storm"
+//weaponName1 = "gplight_b"
+
+[MineClass]
+lifeSpan = 14
+
+[FlareMineClass]
+payloadName = "plight_b"
+fireSound = ""
+triggerDelay = 2
+shotDelay = 15
+salvocount = 10
+salvodelay = 0.1
+shotVariance = 0.15
+damageRadius = 0.0
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+kickRadius = 0.1
+kickVeloc = 0.0
+kickOmega = 0.0
+
+//[WeaponMineClass]
+//searchRadius = 400.0
+//heightScale = 2.0

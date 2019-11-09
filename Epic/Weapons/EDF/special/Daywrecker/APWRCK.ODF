@@ -1,0 +1,17 @@
+[GameObjectClass]
+geometryName = "daywrecker00.XSI"
+classLabel = "daywrecker"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 0
+unitName = "Day Wrecker"
+aiName = "PowerUpProcess"
+
+requireCount = 1
+requireName1 = "ibarmo_b"
+requireText1 = "Build Armory"
+
+[DayWreckerClass]
+xplBlast = "xbmbxpl"
+

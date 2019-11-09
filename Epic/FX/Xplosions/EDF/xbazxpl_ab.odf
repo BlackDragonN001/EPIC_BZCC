@@ -1,0 +1,121 @@
+// =============
+// BAZOOKA EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 14
+
+particleClass1 = "xflak_b.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xflak_b.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 10.0 0.0"
+
+//particleClass3 = "xgasgnd.flame"
+//particleCount3 = 2
+//particleVeloc3 = "0.0 5.0 0.0"
+
+particleClass4 = "xflak_b.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xflak_b.fire"
+particleCount5 = 1
+particleVeloc5 = "0.0 -55.0 0.0"
+
+particleClass6 = "xflak_b.sparks"
+particleCount6 = 1
+particleVeloc6 = "0.0 -2.0 0.0"
+
+particleClass7 = "xflak_b.shocks"
+particleCount7 = 1
+particleVeloc7 = "0.0 5.0 0.0"
+
+particleClass8 = "xflak_b.core"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+//particleClass9 = "debris.chunks"
+//particleCount9 = 10
+//particleVeloc9 = "65.0 67.5 65.0"
+//particleBias9 = "0.0 5.0 0.0"
+
+//particleClass10 = "debris.schunks"
+//particleCount10 = 15
+//particleVeloc10 = "98.0 60.5 98.0"
+//particleBias10 = "0.0 5.0 0.0"
+
+particleClass11 = "xflak_b.posroll"
+particleCount11 = 1
+particleVeloc11 = "10.0 0.0 10.0"
+
+particleClass12 = "xflak_b.trail"
+particleCount12 = 6
+particleVeloc12 = "80.0 80.0 80.0"
+
+//particleClass13 = "xflak_b.char"
+//particleCount13 = 1
+//particleVeloc13 = "0.0 0.0 0.0"
+
+particleClass14 = "xflak_b.shocks2"
+particleCount14 = 1
+particleVeloc14 = "0.0 5.0 0.0"
+
+explSound = "baz02.wav"
+
+damageRadius = 50.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 5 // absorbtion
+
+kickRadius = 10.0
+kickOmega = 4.0
+kickVeloc = 3.0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 3.0
+finishRadius = 30.0
+animateTime = 1.5
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 127"
+finishColor = "255 0 0 0"
+startRadius = 3.0
+finishRadius = 60.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.5
+renderBase = "draw_light"
+startColor = "255 255 63 2550"
+finishColor = "255 0 0 0"
+startRadius = 60.0
+finishRadius = 60.0
+animateTime = 1.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

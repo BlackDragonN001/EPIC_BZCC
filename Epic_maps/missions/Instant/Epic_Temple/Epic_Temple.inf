@@ -1,0 +1,5 @@
+[DESCRIPTION]
+missionName = "Epic 13: Temple"
+mapTga = "Epic_Temple.bmp"
+mapDesc = "Epic_Temple.des"
+mySide = 1

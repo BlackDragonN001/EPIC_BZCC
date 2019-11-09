@@ -1,0 +1,47 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gplasgt_cb"
+ordName = "plasma_cb"
+wpnName = "Plasma"
+fireSound = "igtow03.wav"
+wpnReticle = "gplasma"
+wpnCategory = "CANN"
+isAssault = 0
+flashName = "gplasma_cb.flash"
+aiRange = 600
+
+[CannonClass]
+shotDelay = 0.75 // 2/sec
+shotAlternate = 1
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gplasma_ab.muz"
+renderName2 = "gplasma_ab.light"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "150 255 100 250"
+finishColor = "50 255 100 250"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 1
+
+[muz]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 80 127"
+finishColor = "0 255 0 0"
+startRadius = 3.0
+finishRadius = 1.0
+animateTime = 0.1
+latitudeBands = 8
+longitudeSegments = 16

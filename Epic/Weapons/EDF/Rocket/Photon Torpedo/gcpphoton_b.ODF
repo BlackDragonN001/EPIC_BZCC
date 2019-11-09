@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "multilauncher"
+ordName = "cpphoton_b"
+//altName = "gcpphoton_ab"
+wpnName = "Photon Torpedo"
+fireSound = "mag03.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+aiRange = 660
+isAssault = 1
+
+[LauncherClass]
+lockRange = 275.0
+shotDelay = 1.5
+lockDelay = 2.2
+coneAngle = 0.32
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gmlock_c.1"
+
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+
+[MultiLauncherClass]
+targetCount = 4
+loseAngle = 1.25

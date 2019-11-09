@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "lsbm_b"
+wpnName = "Storm SB"
+fireSound = "smort01.wav"
+wpnReticle = "gsplint"
+wpnLadder = "gsplint.L0"
+wpnPriority = 4
+wpnCategory = "SPEC"
+aiRange = 175
+
+[CannonClass]
+shotDelay = 3.0
+salvoCount = 20
+shotVariance = 0.7
+shotpitch = 0.4

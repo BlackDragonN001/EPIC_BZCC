@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "cpmtalon_b"
+wpnName = "Talon"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 2
+wpnCategory = "MORT"
+AllowAimHigh = true 
+flashname = "gcptalon_b.flash"
+
+aiRange = 4500.0
+
+[CannonClass]
+shotdelay = 55
+salvoCount = 3
+salvoDelay = 0.25
+shotVariance = 0.3
+shotAlternate = 1

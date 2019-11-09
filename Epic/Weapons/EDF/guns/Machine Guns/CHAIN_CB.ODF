@@ -1,0 +1,56 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+renderName = "chain_cb.render"
+
+ammoCost = 2.5
+lifeSpan = 0.45 // 105m  135 GEC
+shotSpeed = 900.0
+
+damageValue(N) = 25 // none // 320
+damageValue(L) = 16 // light // 320
+damageValue(H) = 12 // heavy // 240
+
+damageValue(S) = 15 // standard // 300
+damageValue(D) = 8 // deflection // 160
+damageValue(A) = 16 // absorbtion // 320
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "chain_cb.flare"
+renderName2 = "chain_cb.trail"
+
+[flare]
+maxDist = 2000
+renderBase = "draw_twirl_trail"
+textureName = "sblast.tga"
+textureBlend = "one one modulate"
+startColor = "255 230 180 150"
+finishColor = "150 50 0 64"
+startRadius = 0.15
+finishRadius = 0.09
+animateTime = 0.02
+rotationRate = 0.0
+emitDelay = 0.0002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.025
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "250 250 200 20"
+finishColor = "155 55 0 0"
+startRadius = 0.15
+finishRadius = 0.4
+segmentTime = 0.4
+animateTime = 0.4
+lifetime = 0.4

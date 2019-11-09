@@ -1,0 +1,110 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = "ioartl00.xsi" // NULL //"firemsl.xsi" //"sgwasp00.xsi"
+geometryScale = 5.5
+
+xplGround = "xbcannxp"
+xplVehicle = "xbcanncar"
+xplBuilding = "xbcanncar"
+
+renderName = "bcann_cb.render"
+
+ammoCost = 95
+lifeSpan = 142e-2 // 115m  135 GEC
+shotSpeed = 5e2
+
+damageValue(N) = 400 // none // 320
+damageValue(L) = 350 // light // 320
+damageValue(H) = 250 // heavy // 240
+
+damageValue(S) = 400 // standard // 300
+damageValue(D) = 350 // deflection // 160
+damageValue(A) = 450 // absorbtion // 320
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.0
+
+[ThermalMissileClass]
+coneAngle = 0.0
+
+[render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "bcann_cb.e1"
+renderName2 = "bcann_cb.e2"
+renderName3 = "bcann_cb.e3"
+renderName4 = "bcann_cb.e4"
+renderName4 = "bcann_cb.flare"
+
+[e1]
+simulateBase = "sim_null"
+lifeTime = 0.1 //.1
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 255 100 200"
+finishColor = "200 100 0 80"
+startRadius = 0.5 //.05
+finishRadius = 0.04 // .05
+segmentTime = 0.05 //.1
+animateTime = 0.1 //.1
+
+[e2]
+simulateBase = "sim_null"
+lifeTime = 1.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 130 0 255"
+finishColor = "255 130 0 255"
+startRadius = 0.3
+finishRadius = 0.1
+
+[e3]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "bcann_cb.trail2"
+emitDelay = 0.005
+emitVelocity = "1.0 1.0 1.0"//.4 0 0
+emitVariance = "0.0 0.0 0.0"// .5 .5 .5
+
+[trail2]
+simulateBase = "sim_null"//dust
+lifeTime = 1.5 //2.5
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "255 200 100 200"
+finishColor = "255 100 0 0"
+startRadius = 0.05
+finishRadius = 0.8
+segmentTime = 1.0
+animateTime = 1.5
+
+[e4]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.1
+startColor = "255 150 70 30"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 0.9
+segmentTime = 0.5//3.0
+animateTime = 0.01
+
+[Flare]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureBlend = "one one modulate"
+startColor = "255 220 200 65" 
+finishColor = "255 255 255 0" 
+startRadius = 0.1
+finishRadius = 1.5
+animateTime = 0.7
+emitDelay = 0.0001
+emitLife = 0.5
+rotationrate = 20

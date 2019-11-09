@@ -1,0 +1,87 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.0
+xplGround = "xflmhit"
+xplVehicle = "xflmhit"
+xplBuilding = "xflmhit"
+
+renderName = "flare_b.render"
+ammoCost = 1
+lifeSpan = 1.0
+shotSpeed = 90.0
+
+damageValue(N) = 25
+damageValue(L) = 10
+damageValue(H) = 2
+damageValue(S) = 10
+damageValue(D) = 15
+damageValue(A) = 5
+
+[Render]
+renderBase = "draw_multi"
+
+renderCount = 5
+renderName5 = "flare_b.core"
+renderName2 = "flare_b.puff"
+renderName3 = "flare_b.puff2"
+renderName4 = "flare_b.puff3"
+renderName1 = "flare_b.puff4"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "sflm1.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 255" //255 155 155 255"
+finishColor = "255 255 255 55"
+startRadius = 3
+finishRadius = 7.5
+animateTime = 1.5
+rotationrate = .5
+
+[Puff]
+renderBase = "draw_twirl"
+textureName = "sflm2.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 2
+finishRadius = 8.0
+rotationrate = 1
+animateTime = 1.5
+
+[Puff2]
+renderBase = "draw_twirl"
+textureName = "slightflare.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 155 255"
+finishColor = "195 155 55 0"
+startRadius = 2
+finishRadius = 2.0
+rotationrate = 1
+animateTime = 1.0
+
+[Puff3]
+renderBase = "draw_twirl"
+textureName = "sflm3.tga" //flame2
+textureBlend = "one one modulate"
+startColor = "255 255 255 160"
+finishColor = "255 255 255 0"
+startRadius = 2
+finishRadius = 7.0
+rotationrate = -0.5
+animateTime = 1.5
+
+[Puff4]
+renderBase = "draw_twirl"
+textureName = "sssmoke.tga" //flame2
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 30"
+finishColor = "55 55 55 0"
+startRadius = .1
+finishRadius = 15.0
+rotationrate = -0.8
+animateTime = 2.9
+emitvelocity = "0 5 0"
+emitbias = "0 5 0"

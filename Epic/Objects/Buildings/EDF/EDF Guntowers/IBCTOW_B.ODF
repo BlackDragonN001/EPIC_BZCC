@@ -1,0 +1,63 @@
+[GameObjectClass]
+geometryName = "ibbomb_b.xsi"
+geometryScale = 2
+classLabel = "sensor"
+scrapCost = 100
+scrapReturn = 50
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Control Tower"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+ownsTerrain = 1
+
+isSingle = 1
+
+LightingType = 1 
+
+armorClass = H
+
+BuildRequire = B
+BuildSupport = B
+
+explosionName = "ixshipxplw"
+
+requireCount = 1
+requireName1 = "ibtrain_b"
+requireText1 = "Build Barracks"
+
+provideCount = 2
+provideName1 = "ibbomb_b"
+provideName2 = "base"
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_blue_nf"
+lightHard2 = "hp_light_1"
+lightName2 = "ibspot"
+
+[PoweredBuildingClass]
+detectRange = 3000
+rangeScan = 2000
+
+//[BuildingClass]
+//tunnelCount = 1
+
+//tunnel01X0 = 1
+//tunnel01Z0 = 1
+//tunnel01Dx = 4
+//tunnel01Dz = 4
+//tunnel01Edge = "twwt"
+
+//[SupplyDepotClass]
+//supplyRange = 70.0
+//supplyRate = 150.0
+//supplySound = "mnu_empt.wav"
+
+
+[Lod1]
+geometryName = "ibbombL1_b.xsi" ;geometry for lod1
+geometryScale = 2
+distance = 380

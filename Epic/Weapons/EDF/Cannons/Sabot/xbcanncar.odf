@@ -1,0 +1,84 @@
+// =============
+// BCANNON HITTING BUILDING OR VEHICLE EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 4
+particleClass1 = "xbcanncar.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xbcanncar.shock"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xbcanncar.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xbcanncar.spark"
+particleCount4 = 10
+particleVeloc4 = "20.5 20.5 20.5"
+
+explSound = "xmv1.wav"
+damageRadius = 50.0
+
+damageValue(N) = 50 // none
+damageValue(L) = 15 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 30 // standard
+damageValue(D) = 10 // deflection
+damageValue(A) = 50 // absorbtion
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 23 200"
+finishColor = "255 0 0 0"
+startRadius = 2.0
+finishRadius = 10.0
+animateTime = 1.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 10 90"
+finishColor = "200 0 0 0"
+startRadius = 3.0
+finishRadius = 20.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_light"
+startColor = "255 189 10 1250"
+finishColor = "255 0 0 0"
+startRadius = 50.0
+finishRadius = 0.0
+animateTime = 0.7
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "175 100 0 200"
+finishColor = "255 0 0 0"
+startRadius = 0.5
+finishRadius = 0.2
+animateTime = 3.0
+rotationRate = 50.0

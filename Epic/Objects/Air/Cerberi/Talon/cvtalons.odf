@@ -1,0 +1,265 @@
+[GameObjectClass]
+baseName = "cvtalons"
+geometryName = "cvsdron_b.xsi"
+glowTexture = "cvscava0.pic"
+geometryScale = 3 //0.8
+cockpitName= "ivtank_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 40
+customCost = 55
+buildTime = 10.0
+customTime = 15.0
+maxHealth = 500// 1800
+addhealth = 0 //5
+maxAmmo = 5000
+addAmmo = 50
+unitName = "Talon"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+//explosionName = "shipxpl2"
+explosionName = "xcerbxpld"//"xcerbsml_b"//shipxplc"
+collisionRadius = 50
+
+provideCount = 2
+provideName1 = "cvtalons"
+provideName2 = "figh"
+
+boxcollide = 1
+NoShadow = 1
+heatSignature = 3.0
+imageSignature = 10.0
+radarSignature = 10.0
+isAssault = 0
+armorClass = N
+needsPilot = 0
+
+LightingType = 1
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cvtalons.trail"
+effectHard2 = "hp_emit_4"
+effectName2 = "cvtalons.tail"
+effectHard3 = "hp_emit_3"
+effectName3 = "cvtalons.tail"
+effectHard4 = "hp_emit_2"
+effectName4 = "cvtalons.tail"
+
+effectHard5 = "hp_light_1"
+effectName5 = "cvtalons.light"
+effectHard6 = "hp_light_2"
+effectName6 = "cvtalons.light"
+effectHard7 = "hp_light_3"
+effectName7 = "cvtalons.light"
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gclaser_cs"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gclaser_cs"
+weaponAssault2 = 0
+//weaponHard3 = "HP_ROCKET_1"
+//weaponName3 = "gaamiss1"
+//weaponAssault3 = 0
+//weaponHard4 = "HP_ROCKET_2"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL" //special
+weaponName5 = "thruster"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+xplChunk = null
+xplCrash = "xcerbxpl"
+rangeScan = 4000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 3000
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+
+modeText28 = "Force Takeoff"
+modeText29 = "Force Land"
+modeText30 = "Unlock"
+
+LeaveExplodeScorch = false
+AllowLinkWeapons = true
+
+AircraftAttackMustDeploy = true
+attackTask = "MortarBikeAttack"
+subattackTask = "MortarBikeAttack"
+
+ClosestEnemyGoodEyes = true
+
+braccelFactor = 0.5 //0.05
+velFactor = 0.5 //0.3
+steerFactor = 1.7
+omegaFactor = 0.3
+
+
+strafeFactor = 0.03
+
+avoidSpeed = 80;
+topSpeed = 290; //350
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+velocSet(L) = 15.0 // minimum velocity
+velocSet(M) = 55.0 // cruising velocity
+velocSet(H) = 80.0 // maximum velocity
+accelThrust = 60.0 // thrust acceleration
+accelBrake = 80.0 // brake acceleration
+accelDrag = 50	//	10.0 // drag acceleration
+omegaSteer(L) = 24	//	4.51 // steer turn rate at minimum
+omegaSteer(M) = 16	//	2.52 // steer turn rate at cruising
+omegaSteer(H) = 8	//	1.59 // steer turn rate at maximum
+omegaStrafe(L) = 3.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 1.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.76 // airbrake turn rate at maximum
+alphaSteer = 5.0 // steering angular acceleration
+alphaStrafe = 10.0 // airbrake angular acceleration
+minAltitude = 50.0 // minimum altitude
+maxAltitude = 100.0 // maximum altitude
+alphaLevel = 8.0 // leveling angular acceleration
+alphaDamp = 3.0 // damping angular acceleration
+pitchPitch = 0.5 // maximum pitch angle
+rollSteer = 0.3	//	0.7 // maximum roll angle from steering
+rollStrafe = 0.4 // maximum roll angle from airbraking
+timeDeploy = 0.5 // time to deploy
+timeUndeploy = 1.5 // time to undeploy
+
+AlwaysDeployed = true
+AlwaysUndeployed = false
+AltitudeLookahead = 0.1
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 60
+AILiftSpring = 15.0
+LiftSpring = 12.5 
+
+soundThrust = "enginetal.wav"
+soundTurbo = "enginetal.wav"
+
+
+
+////////////////////////////
+
+[trail]
+maxdist = 100000
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cvtalons.trailer"
+//renderName2 = "cvtalons.flame"
+renderName3 = "cvtalons.Light1"
+
+
+[trailer]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "ssontrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.1
+startColor = "150 100 255 220"
+finishColor = "0 0 120 0"
+startRadius = 2.5
+finishRadius = 7.3
+segmentTime = 4.0
+animateTime = 1.8
+
+[flame]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 100 255 255"
+finishColor = "150 0 255 0"
+startRadius = 1.5
+finishRadius = 0.3
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "120 80 255 2250"
+finishColor = "120 80 255 2250"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "100 50 255 650"
+finishColor = "100 50 255 650"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Tail]
+maxdist = 100000
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail3.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "85 85 85 255"
+finishColor = "85 85 85 255"
+startRadius = 0.7
+finishRadius = 0.0
+segmentTime = 0.15
+segmentVariance = "2 2 0"
+animateTime = 0.2
+
+
+//[Lod1]
+//geometryName = "iocmet00.xsi" ;geometry for lod1
+//distance = 1500                 ;...distance over this many meters => switch to lod2
+
+
+
+

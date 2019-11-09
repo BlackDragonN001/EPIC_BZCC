@@ -1,0 +1,92 @@
+// ===================
+// MISSILE VEHICLE HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 5
+
+particleClass2 = "xfafmsl_B.CLOUD"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xfafmsl_B.SPARKS"
+particleCount3 = 1
+particleVeloc3 = "0 0 0"
+
+particleClass4 = "xfafmsl_B.SPARK"
+particleCount4 = 1
+particleVeloc4 = "0 0 0"
+
+particleClass1 = "xfafmsl_b.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass5 = "xfafmsl_b.flame"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+explSound = "xsv2.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = 75 // none
+damageValue(L) = 45 // light
+damageValue(H) = 15 // heavy
+
+damageValue(S) = 40 // standard
+damageValue(D) = 75 // deflection
+damageValue(A) = 25 // absorbtion
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "sprocket1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 150 150 0"
+startRadius = 10.0
+finishRadius = 1.5
+animateTime = 1.5
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 2.0
+finishRadius = 0.1
+animateTime = 1.5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 255 255 605"
+finishColor = "0 0 255 0"
+startRadius = 120.0
+finishRadius = 120.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = ""//"ringb2u.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 200 30"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 30.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16

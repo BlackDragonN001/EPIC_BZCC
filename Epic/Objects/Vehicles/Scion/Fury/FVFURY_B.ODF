@@ -1,0 +1,170 @@
+[GameObjectClass]
+baseName = "fvfury_b"
+
+unitIcon = "icon_fvfury_b.png"
+infoName = "fvfury_b.inf"
+unitStatus = "wire_fvfury_b.png"
+
+mrmFactor = 0
+classLabel = "wingman" //"sav" //"assaulthover"
+geometryScale = 3.0
+geometryName = "fvfury00_b.xsi" //"fvfurynew_b.xsi" // I want to stab whoever made fvfurynew_b.xsi. -GBD
+glowTexture = "fvrecya0.pic"
+
+scrapValue = 30
+scrapCost = 90
+scrapReturn = 45
+customCost = 100
+buildTime = 20.0
+buildTime = 20.0
+maxHealth = 12000
+maxAmmo = 20000
+addAmmo = 5
+unitName = "Fury"
+aiName = "RocketTankFriend" //"AssaultTankProcess"
+aiName2 = "RocketTankEnemy" //"AssaultTankProcess"
+
+heatSignature = 16.0
+imageSignature = 8.1
+radarSignature = 1.0
+collisionRadius = 50.0
+
+explosionName = "xscionxpl"
+
+isAssault = 1
+isStealth = 0
+
+LightingType = 1 
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fvfury_b.ball"
+
+armorClass = L
+
+requireCount = 2
+requireName1 = "fbforg_b"
+requireText1 = "Upgrade Kiln"
+requireName2 = "fbover_b"
+requireText2 = "Upgrade Antenna"
+
+///// WEAPONS ////////////////////
+weaponMask = 11111
+
+weaponHard1 = "HP_Cannon_1"
+weaponName1 = "garc_ab"
+weaponAssault1 = 1
+
+weaponHard2 = "HP_rocket_1"
+weaponName2 = "gmlock_ab"
+weaponAssault2 = 1
+
+weaponHard3 = "HP_rocket_2"
+weaponName3 = "gmlock_ab"
+weaponAssault3 = 1
+
+
+//////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_eyepoint"
+
+[CraftClass]
+canHunt = true
+xplCrash = "xscionxplb"
+rangeScan = 1200.0f
+periodScan = 5.0f
+velocJam = 0.0f
+engageRange = 700
+blastDist = 350
+
+allowLinkWeapons = true
+
+// this is a hack until the artil model becomes more like a turret
+weaponPitch = 1.5
+
+//braccelFactor = 0.05f
+//strafeFactor = 0.1f
+//steerFactor = 1.0f
+//omegaFactor = 0.1f
+//velFactor = 0.5f
+
+selectWaitMsg = "fvartl04.wav"
+selectAttackMsg = "fvartl01.wav"
+selectFollowMsg = "fvartl03.wav"
+selectGoMsg = "fvartl02.wav"
+selectOtherMsg = "fvartl04.wav"
+holdMsg = "fvartl12.wav"
+goMsg = "fvartl05.wav"
+attackMsg = "fvartl06.wav"
+followMeMsg = "fvartl08.wav"
+followMsg = "fvartl03.wav"
+repairMsg = "fvartl09.wav"
+reloadMsg = "fvartl09.wav"
+rescueMsg = "fvartl10.wav"
+recycleMsg = "fvartl11.wav"
+otherMsg = "fvartl05.wav" 
+
+user1Msg = ""  
+killedMsg = "fvartl07.wav"
+diedMsg = ""
+
+//attackTask = "ArtlAttack"
+//subAttackTask = "ArtlSubAttack"
+//subAttackClass = "AD"	// include air units as attack targets only when deployed
+
+[HoverCraftClass]
+setAltitude = 55.0
+accelDragStop = 5.0 //2.0
+accelDragFull = 2.0 //1.0
+alphaTrack = 5.0
+alphaDamp = 15.0
+pitchPitch = 0.05
+pitchThrust = 0.05
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 60 //30.0
+velocReverse = 60 //30.0
+velocStrafe = 30.0
+accelThrust = 5.0
+accelBrake = 5.0
+omegaSpin = 0.5
+omegaTurn = 0.5
+alphaSteer = 1.0
+accelJump = 15.0
+
+soundThrust = "ssent01d.wav"
+
+soundDeploy = "avartle0.wav"
+soundUndeploy = "avartle4.wav"
+
+[AssaultHoverClass] 
+yawRate = 4.0
+yawAlpha = 5.0
+pitchMin = -0.6
+pitchMax = 0.6
+
+
+[Ball]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_emit"
+emitName = "fvfury_b.ballemit"
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Ballemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_twirl"
+textureName = "bluarchit.tga"
+textureBlend = "one one modulate"
+startColor = "200 250 255 255"
+finishColor = "200 250 255 0"
+startRadius = 6.0
+finishRadius = 8.0
+rotationrate = -14
+animateTime = 1.0

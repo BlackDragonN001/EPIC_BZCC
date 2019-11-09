@@ -1,0 +1,13 @@
+[WeaponClass]
+classLabel = "seismic"
+altName = "gthumper_b"
+ordName = "thumper_b"
+wpnName = "Thumper"
+//fireSound = "satshot.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 120
+
+[SeismicClass]
+shotDelay = 20

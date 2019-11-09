@@ -1,0 +1,69 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = "gatstab.xsi"
+shotGeometryScale = 2
+shotSound = "baz03.wav"
+
+renderName = "mortar_b.render"
+
+xplGround = "xbazgnd_ab"
+xplVehicle = "xbazxpl_ab"
+xplBuilding = "xbazxpl_ab"
+
+ammoCost = 30
+lifeSpan = 4.0 // 200m
+shotSpeed = 100.0
+
+damageValue(N) = 1500
+damageValue(L) = 1250
+damageValue(H) = 1000
+
+damageValue(S) = 1250
+damageValue(D) = 1000
+damageValue(A) = 1500
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "mgren_ab.flare"
+renderName2 = "mgren_ab.smoke"
+renderName3 = "mgren_ab.flame"
+renderName4 = "mgren_cb.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 5.0
+finishRadius = 5.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "ssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 128"
+finishColor = "153 153 153 0"
+startRadius = 0.5
+finishRadius = 1.5
+animateTime = 2.0
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.5 1.5 1.0"
+emitLife = 2.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 0.03
+animateTime = 0.2
+emitDelay = 0.003
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.5 1.5 1.0"
+emitLife = 0.2

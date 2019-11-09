@@ -1,0 +1,30 @@
+[Size]
+MetersPerGrid = 32.0
+HeightGranularity = 0.3
+MinX = -2048
+MinZ = -2048
+Width = 1024
+Depth = 1024
+Height = 100
+Tile = 1
+color=149 123 87 255
+
+[NormalView]
+HeightErrorLimit0 = 0.0
+HeightErrorLimit1 = 0.0
+HeightErrorLimit2 = 0.0
+ColorErrorLimit0 = 0.0
+ColorErrorLimit1 = 0.0
+ColorErrorLimit2 = 0.0
+
+[World]
+MusicTrack1=9
+MusicTrack2=3
+MusicTrack3=4
+
+[Texture]
+TileTexture1  = "bane.tga"
+TileTexture2  = "bane2.tga"
+TileTexture3  = "bane3.tga"
+TileTexture4  = "bane4.tga"
+TileTexture5  = "bane5.tga"
