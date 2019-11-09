@@ -143,7 +143,6 @@ RetargetOnStrafe = true
 PersonRetreatRecycleDist = 50.0
 rangeScan = 500
 engageRange = 500
-detectRange = 100
 braccelFactor = 0.5
 velFactor = 0.5
 strafeFactor = 0.5
@@ -153,12 +152,6 @@ omegaFactor = 0.2
 attackTask = "MortarBikeAttack"
 subAttackTask = "MortarBikeSubAttack"
 subAttackClass = "NNN"
-
-AttackTaskUsesGroups = false
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
 
 
 //canHunt = 1
@@ -174,7 +167,6 @@ selectAttackMsg = "ivtank02.wav"
 selectFollowMsg = "ivtank04.wav"
 selectGoMsg = "ivtank04.wav"
 selectOtherMsg = "ivtank05.wav"
-holdMsg = "ivtank12.wav"
 
 goMsg = "ivtank04.wav"
 attackMsg = "ivtank06.wav"

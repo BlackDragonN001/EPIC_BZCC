@@ -73,27 +73,6 @@ strafeFactor = 0.2
 avoidSpeed = 20;
 topSpeed = 30;
 
-selectWaitMsg = ""
-selectAttackMsg = ""
-selectFollowMsg = ""
-selectGoMsg = ""
-selectOtherMsg = ""
-holdMsg = ""
-
-goMsg = ""
-attackMsg = ""
-followMeMsg = ""
-followMsg = ""
-repairMsg = ""
-reloadMsg = ""
-rescueMsg = ""
-recycleMsg = ""
-otherMsg = "" 
-holdMsg = ""
-user1Msg = ""  
-killedMsg = ""
-diedMsg = ""
-
 [HoverCraftClass]
 DAMAGE_SCALE = 10
 velocForward = 28.5 // []

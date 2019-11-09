@@ -15,7 +15,6 @@ unitStatus = "wire_ivspbomb_b.png"
 
 geometryName = "ivmanta01_b.xsi"
 geometryScale = 1.4
-//cockpitName= "ivmisl_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 0
 scrapReturn = 40

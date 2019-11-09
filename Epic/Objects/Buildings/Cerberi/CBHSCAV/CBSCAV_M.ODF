@@ -30,17 +30,6 @@ provideCount = 2
 provideName1 = "cbscav_m"
 provideName2 = "scup"
 
-[BuildingClass]
-// an ambient sound would be nice
-loadAsDummy=1
-dummyVersion=1103
-
-[ExtractorClass]
-initDelay = 12.0
-scrapDelay = 0.75
-scrapHold = 20
-detectRange = 1000
-
 effectHard1 = "hp_light_1"
 effectName1 = "cbscav_m.smoke"
 

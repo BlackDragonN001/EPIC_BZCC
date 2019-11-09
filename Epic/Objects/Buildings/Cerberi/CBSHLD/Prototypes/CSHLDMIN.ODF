@@ -8,7 +8,7 @@ maxHealth = 2000
 maxAmmo = 3000
 unitName = "Shield Generator"
 effectHard1 = "Shield Generator"
-effectName1 = "cshldgen_b.render"
+effectName1 = "cshldmin.render"
 ownsterrain=1
 
 [MineClass]
@@ -28,10 +28,10 @@ ordDrag = 1.0
 [Render]
 renderBase = "draw_multi"
 renderCount = 2
-renderName1 = "cshldgen_b.field"
-//renderName2 = "cshldgen_b.swirl1"
-//renderName3 = "cshldgen_b.swirl2"
-renderName4 = "cshldgen_b.particle"
+renderName1 = "cshldmin.field"
+//renderName2 = "cshldmin.swirl1"
+//renderName3 = "cshldmin.swirl2"
+renderName4 = "cshldmin.particle"
 
 [Field]
 renderBase = "draw_sphere"

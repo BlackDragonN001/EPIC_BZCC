@@ -128,6 +128,7 @@ GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower mo
 AttackTaskUsesGroups = false
 IgnoreDestroyedTargets = true 
 RetargetOnStrafe = true
+FireWhenCanHitFriends = false
 
 //blastDist = 1000
 PersonRetreatRecycleDist = 50.0
@@ -149,13 +150,6 @@ detectRange = 80
 attackTask = "AssaultTankAttack"
 subAttackTask = "ArcherSubAttack"
 subAttackClass = "NNN"
-
-AttackTaskUsesGroups = true
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-
-
-FireWhenCanHitFriends = false
 
 damageEffect1 = "Dmgprs1"
 damageEffect2 = "Dmgprs1"

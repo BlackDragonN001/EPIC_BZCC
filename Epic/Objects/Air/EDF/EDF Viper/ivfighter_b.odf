@@ -16,7 +16,7 @@ unitStatus = "wire_ivfighter_b.png"
 
 geometryName = "ivvipers01_b.xsi"
 geometryScale = 4
-cockpitName = "ivrckt_cockpit.xsi"
+cockpitName = "ivrckt_cockpit.xsi" //"ivscout_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 0
 scrapReturn = 30
@@ -60,9 +60,6 @@ requireText2 = "Build Relay Bunk"
 requireName3 = "ibarmo_b"
 requireText3 = "Build Armoury"
 
-
-
-//cockpitName = "ivscout_cockpit.xsi"
 
 effectHard1 = "hp_emit_1"
 effectName1 = "ivfighter_b.trail"

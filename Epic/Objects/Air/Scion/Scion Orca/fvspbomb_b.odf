@@ -18,7 +18,7 @@ limitClass1Text = "Squad Limit Reached"
 
 renderName = "fvspbomb_b.trail"
 
-cockpitName = "fvtank_cockpit.xsi"
+cockpitName = "Fvturr_cockpit.xsi" //"fvtank_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 0
 scrapReturn = 45
@@ -43,7 +43,6 @@ radarSignature = 30.0
 isAssault = 0
 armorClass = n
 needPilot = 1
-cockpitName = "Fvturr_cockpit.xsi"
 
 SmartIsAirUnitCheck = false
 VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots+animals) 3(plants only), 4(buildings only)
@@ -97,7 +96,6 @@ weaponAssault2 = 0
 [CraftClass]
 
 PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
-canHunt = 1
 ejectratio = 0
 
 modeText28 = "Force Takeoff"
@@ -152,7 +150,6 @@ selectAttackMsg = "ivtank02.wav"
 selectFollowMsg = "ivtank04.wav"
 selectGoMsg = "ivtank04.wav"
 selectOtherMsg = "ivtank05.wav"
-holdMsg = "ivtank12.wav"
 
 goMsg = "ivtank04.wav"
 attackMsg = "ivtank06.wav"

@@ -52,8 +52,7 @@ attenuateQuadratic = 0.0
 
 [Flame]
 renderBase = "draw_twirl_trail"
-textureName = "sparticle.tga"
-textureName = "sblast.tga"
+textureName = "sblast.tga" //"sparticle.tga"
 textureBlend = "one one modulate"
 startColor = "0 3 202 255"
 finishColor = "0 5 202 0"

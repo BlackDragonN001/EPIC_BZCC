@@ -42,7 +42,6 @@ radarSignature = 12.0
 isAssault = 0
 armorClass = N
 needPilot = 1
-cockpitName = "ivscout_cockpit.xsi"
 isFlying = 1
 
 requireCount = 2

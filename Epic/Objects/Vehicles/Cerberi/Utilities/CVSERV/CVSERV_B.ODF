@@ -112,7 +112,7 @@ supplyRange = 40.0
 supplyRadius = 15.0
 supplyRate = 20.0
 supplySound = "mnu_empt.wav"
-supplyEffect = "cvserv.supply"
+supplyEffect = "cvserv_b.supply"
 supplyHard = "hp_special_1"
 
 localAmmoRate = 5
@@ -132,8 +132,8 @@ objDrag = 0.0f // Used while servicing. Factor based on target's velocity
 [Supply]
 renderBase = "draw_multi"
 renderCount = 2
-renderName1 = "cvserv.halo"
-renderName2 = "cvserv.bolt"
+renderName1 = "cvserv_b.halo"
+renderName2 = "cvserv_b.bolt"
 
 [Halo]
 renderBase = "draw_twirl"

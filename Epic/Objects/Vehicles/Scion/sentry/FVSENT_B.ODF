@@ -110,7 +110,7 @@ selectAttackMsg = "fvsent01.wav"
 selectFollowMsg = "fvsent03.wav"
 selectGoMsg = "fvsent02.wav"
 selectOtherMsg = "fvsent04.wav"
-holdMsg = "fvsent12.wav"
+
 goMsg = "fvsent05.wav"
 attackMsg = "fvsent06.wav"
 followMeMsg = "fvsent08.wav"

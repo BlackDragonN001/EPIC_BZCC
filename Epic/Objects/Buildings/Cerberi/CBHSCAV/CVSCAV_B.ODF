@@ -138,9 +138,6 @@ attenuateConstant = 0.0
 attenuateLinear = 1.0
 attenuateQuadratic = 0.0
 
-animateTime = 0.2
-rotationRate = 1.0
-
 [glow]
 simulateBase = "sim_null"
 lifeTime = 10e30

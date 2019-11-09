@@ -8,7 +8,7 @@ unitStatus = "wire_ivfighter_b.png"
 
 geometryName = "sviper.xsi"
 geometryScale = 1.5
-cockpitName = "ivrckt_cockpit.xsi"
+cockpitName = "ivrckt_cockpit.xsi" //"ivscout_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 0
 scrapCost = 5 //70
@@ -45,9 +45,6 @@ requireName3 = "ibarmo_b"
 requireText3 = "Build Armoury"
 requireName4 = "ibbomb_b"
 requireText4 = "Build Control Tower"
-
-
-//cockpitName = "ivscout_cockpit.xsi"
 
 effectHard1 = "hp_emit_1"
 effectName1 = "ivspbomb_b.trail"

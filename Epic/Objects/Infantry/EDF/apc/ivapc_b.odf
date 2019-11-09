@@ -18,8 +18,8 @@ animCount = 1
 animName1 = "deploy"
 animFile1 = "ivapc00_b.xsi"
 
-//cockpitName= "ivmisl_cockpit.xsi"
-classLabel = "turrettank"//"artillery"//"aircraft"
+cockpitName = "ivturr_cockpit.xsi" //"ivmisl_cockpit.xsi"
+classLabel = "turrettank" //"artillery" //"aircraft"
 scrapValue = 50
 scrapCost = 80 //90
 customCost = 100
@@ -49,7 +49,6 @@ isstealth = 1
 isAssault = 0
 armorClass = n
 needPilot = 1
-cockpitName = "ivturr_cockpit.xsi"
 collisionRadius = 60.0
 
 BoxCollide = 1

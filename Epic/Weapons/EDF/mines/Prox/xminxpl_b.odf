@@ -16,7 +16,7 @@ particleClass2 = "xmmortgnd_b.cloud"
 particleCount2 = 1
 particleVeloc2 = "0.0 6.0 0.0"
 
-particleClass3 = "xgasgnd.flame"
+particleClass3 = "xmmortgnd_b.flame"
 particleCount3 = 2
 particleVeloc3 = "0.0 5.0 0.0"
 

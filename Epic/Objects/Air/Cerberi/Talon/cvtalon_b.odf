@@ -12,7 +12,7 @@ unitStatus = "wire_cvtalon_b.png"
 geometryName = "cvsdron_b.xsi"
 glowTexture = "cvscava0.pic"
 geometryScale = 3 //0.8
-//cockpitName= "ivtank_cockpit.xsi"
+cockpitName= "ivtank_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 10
 scrapReturn = 20
@@ -43,8 +43,6 @@ collisionRadius = 30.0
 requireCount = 1
 requireName1 = "cbcbun_b"
 requireText1 = "Build Uplink"
-
-cockpitName = "ivtank_cockpit.xsi"
 
 //effectHard1 = "hp_emit_1"
 //effectName1 = "cvtalon_b.trail"

@@ -8,5 +8,5 @@ aiRange = 700
 
 [DispenserClass]
 shotDelay = 60.0
-objectClass = "cshldgen_b"
+objectClass = "cshldmin"
 ammoCost = 10

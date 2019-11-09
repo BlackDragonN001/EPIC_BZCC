@@ -15,7 +15,7 @@ glowTexture = "cbtcena0.pic"
 //animName1 = "deploy"
 //animFile1 = "fvdrop_open_b.xsi"
 
-//cockpitName= "ivmisl_cockpit.xsi"
+cockpitName = "ivturr_cockpit.xsi" //"ivmisl_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 20
 scrapCost = 150 //90
@@ -38,7 +38,6 @@ radarSignature = 30.0
 isAssault = 1
 armorClass = L
 //needPilot = 1
-cockpitName = "ivturr_cockpit.xsi"
 
 meshCollide = 1
 

@@ -36,8 +36,6 @@ heatSignature = 1.5
 imageSignature = 1.5
 radarSignature = 0.3
 
-canSnipe = 1
-
 LightingType = 1
 
 provideCount = 2

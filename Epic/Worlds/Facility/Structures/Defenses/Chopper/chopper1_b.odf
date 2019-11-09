@@ -14,8 +14,8 @@ geometryScale = 2.6
 //animName1 = "deploy"
 //animFile1 = "ivapc00_b.xsi"
 
-//cockpitName= "ivmisl_cockpit.xsi"
-classLabel = "assaulthover"//"turrettank"//"artillery"//"aircraft"
+cockpitName = "ivturr_cockpit.xsi" //"ivmisl_cockpit.xsi"
+classLabel = "assaulthover" //"turrettank" //"artillery" //"aircraft"
 scrapValue = 10
 scrapCost = 30 //90
 customCost = 40
@@ -46,7 +46,6 @@ isstealth = 0
 isAssault = 0
 armorClass = L
 //needPilot = 0
-cockpitName = "ivturr_cockpit.xsi"
 collisionRadius = 60.0
 
 BoxCollide = 1

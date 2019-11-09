@@ -8,7 +8,7 @@ unitStatus = "wire_cvover_b.png"
 geometryName = "cvover00.xsi"
 geometryScale = 1.8
 glowtexture = "cbtcena0.pic"
-//cockpitName= "ivtank_cockpit.xsi"
+cockpitName= "ivtank_cockpit.xsi"
 classLabel = "aircraft"
 scrapValue = 10
 scrapCost = 80
@@ -52,9 +52,6 @@ requireText2 = "Build Uplink"
 requireName3 = "cbtcen_b"
 requireText3 = "Build Core Matrix"
 
-
-
-cockpitName = "ivtank_cockpit.xsi"
 
 effectHard1 = "hp_emit_1"
 effectName1 = "cvover_b.trail"

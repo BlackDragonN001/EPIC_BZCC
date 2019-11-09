@@ -39,7 +39,6 @@ weaponAssault1 = 0
 ////////////////////////////////////
  
 [CraftClass]
-canHunt = 1
 //xplCrash = "xstbgnd_b"
 
 rangeScan = 800.0f
@@ -70,7 +69,6 @@ selectAttackMsg = "ivtank02.wav"
 selectFollowMsg = "ivtank04.wav"
 selectGoMsg = "ivtank04.wav"
 selectOtherMsg = "ivtank05.wav"
-holdMsg = "ivtank12.wav"
 
 goMsg = "ivtank04.wav"
 attackMsg = "ivtank06.wav"

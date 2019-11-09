@@ -1,7 +1,7 @@
 [GameObjectClass]
 baseName = "cvcons_b"
 geometryName = "Cvconst02_skel_b.xsi"
-geometryScale = 1.8
+geometryScale = 2.0 //1.8
 classLabel = "constructionrig"
 
 animCount = 12
@@ -45,14 +45,12 @@ animFile12 = "Cvconst02_deploy_b.xsi"
 explosionName = "XCERBXPL"
 
 
-//collisionRadius = 7.0
-geometryScale = 2.0
+collisionRadius = 20.0
 scrapValue = 20
 scrapCost = 40
 buildTime = 10.0
 maxHealth = 2000
 maxAmmo = 0
-collisionRadius = 5.0
 unitName = "Fabricator"
 aiName = "RigFriend"
 aiName2 = "RigEnemy"
@@ -61,7 +59,6 @@ heatSignature = 1.0
 imageSignature = 2.0
 radarSignature = 2.0
 isAssault = 1
-collisionRadius = 20.0
 
 provideCount = 2
 provideName1 = "cvcons_b"

@@ -34,7 +34,7 @@ weaponName1 = "gcforcefield"
 weaponAssault1 = 0
 
 lightHard1 = "hp_light_1"
-lightName1 = "spothadean"
+lightName1 = "" //"spothadean"
 
 turretCount = 4
 turretName1 = "turret_y_1"

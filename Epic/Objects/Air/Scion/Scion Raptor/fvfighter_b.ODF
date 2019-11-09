@@ -132,7 +132,6 @@ selectAttackMsg = "fvtank02.wav"
 selectFollowMsg = "fvtank04.wav"
 selectGoMsg = "fvtank04.wav"
 selectOtherMsg = "fvtank05.wav"
-holdMsg = "fvtank12.wav"
 
 goMsg = "fvtank04.wav"
 attackMsg = "fvtank06.wav"

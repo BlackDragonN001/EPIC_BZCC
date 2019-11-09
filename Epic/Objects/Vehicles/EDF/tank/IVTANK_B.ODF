@@ -56,8 +56,6 @@ requireText1 = "Build Factory"
 requireName2 = "ibcbun_b"
 requireText2 = "Build Relay Bunk"
 
-cockpitName = "ivtank_cockpit.xsi"
-
 /////// weapons ///////////////////
 
 weaponMask = 10111

@@ -30,8 +30,6 @@ requireText1 = "Build Factory"
 requireName2 = "ibcbun"
 requireText2 = "Build Relay Bunk"
 
-cockpitName = "ivtank_cockpit.xsi"
-
 /////// weapons ///////////////////
 
 weaponMask = 00011
@@ -64,7 +62,6 @@ selectAttackMsg = "dalek.wav"
 selectFollowMsg = "Iobey.wav"
 selectGoMsg = "Iobey.wav"
 selectOtherMsg = "Iobey.wav"
-holdMsg = "Iobey.wav"
 
 goMsg = "Iobey.wav"
 attackMsg = "dalek.wav"

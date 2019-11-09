@@ -15,7 +15,7 @@ infoName = "ivpanther_b.inf"
 unitStatus = "wire_ivpanther_b.png"
 
 geometryName = "ivpanther00.xsi"
-//cockpitName= "ivscout_cockpit.xsi"
+cockpitName= "ivscout_cockpit.xsi"
 classLabel = "aircraft"//"wingman"
 scrapValue = 0
 scrapReturn = 25
@@ -42,7 +42,6 @@ radarSignature = 12.0
 
 isAssault = 0
 armorClass = N
-cockpitName = "ivscout_cockpit.xsi"
 needPilot = 1
 isFlying = 1
 

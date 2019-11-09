@@ -43,7 +43,7 @@ lightName2 = "spotblue"
 //upgradeName = "ibarmou_b"
 
 [BuildingClass]
-soundAmbient = "iarm01.wav"
+soundAmbient = "iabomb01.wav" //"iarm01.wav"
 
 [PoweredBuildingClass]
 detectRange = 1000
@@ -57,12 +57,6 @@ rescueMsg = "cvo_mid_crate_complete.wav"
 
 effectHard1 = "hp_emit_1"
 effectName1 = "cbtcen_b.render"
-
-[BuildingClass]
-soundAmbient = "iabomb01.wav"
-
-[PoweredBuildingClass]
-detectRange = 100
 
 [ArmoryClass]
 //scaleVelY = 0.5

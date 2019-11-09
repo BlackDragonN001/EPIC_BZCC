@@ -155,13 +155,6 @@ attackTask = "MortarBikeAttack"
 subAttackTask = "MortarBikeSubAttack"
 subAttackClass = "NNN"
 
-AttackTaskUsesGroups = false
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-
-
 //canHunt = 1
 //AllowLinkWeapons = true
 
@@ -175,7 +168,6 @@ selectAttackMsg = "ivmisl02.wav"
 selectFollowMsg = "ivmisl04.wav"
 selectGoMsg = "ivmisl04.wav"
 selectOtherMsg = "ivmisl05.wav"
-holdMsg = "ivmisl12.wav"
 
 goMsg = "ivmisl04.wav"
 attackMsg = "ivmisl06.wav"

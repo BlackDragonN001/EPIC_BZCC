@@ -3,7 +3,7 @@ baseName = "ivcorvs"
 glowTexture = "ivdesa0.pic"
 geometryName = "ivdestroy.xsi"
 geometryScale = 0.4
-//cockpitName= "ivmisl_cockpit.xsi"
+cockpitName = "ivscav_cockpit.xsi" //"ivmisl_cockpit.xsi"
 classLabel = "wingman"
 scrapValue = 0
 scrapCost = 140
@@ -25,7 +25,6 @@ radarSignature = 50.0
 isAssault = 1
 armorClass = l
 needPilot = 1
-cockpitName = "ivscav_cockpit.xsi"
 
 effectHard1 = "hp_trail_1"
 effectName1 = "ivstorms.render"
@@ -86,7 +85,6 @@ selectAttackMsg = "ivtank02.wav"
 selectFollowMsg = "ivtank04.wav"
 selectGoMsg = "ivtank04.wav"
 selectOtherMsg = "ivtank05.wav"
-holdMsg = "ivtank12.wav"
 
 goMsg = "ivtank04.wav"
 attackMsg = "ivtank06.wav"

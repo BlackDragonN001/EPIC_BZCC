@@ -37,7 +37,6 @@ radarSignature = 30.0
 isAssault = 1
 armorClass = l
 //needPilot = 1
-cockpitName = "ivturr_cockpit.xsi"
 
 meshCollide = 1
 
@@ -144,7 +143,6 @@ selectAttackMsg = "ivtank02.wav"
 selectFollowMsg = "ivtank04.wav"
 selectGoMsg = "ivtank04.wav"
 selectOtherMsg = "ivtank05.wav"
-holdMsg = "ivtank12.wav"
 
 goMsg = "ivtank04.wav"
 attackMsg = "ivtank06.wav"

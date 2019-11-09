@@ -18,6 +18,6 @@ collisionRadius = 5.0
 ownsTerrain = 1
 
 [ObjectSpawnClass]
-spawnName = "cshldgen_b"
+spawnName = "cshldmin"
 spawnDelay = 80.0
 spawnSound = "spawn.wav"

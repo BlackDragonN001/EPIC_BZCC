@@ -26,11 +26,11 @@ particleClass1 = "xsonicgnd_cb.shock"
 particleCount1 = 1
 particleVeloc1 = "0.0 0.0 0.0"
 
-particleClass2 = "xgasgnd.cloud"
+particleClass2 = "xsonicgnd_cb.cloud"
 particleCount2 = 1
 particleVeloc2 = "0.0 10.0 0.0"
 
-//particleClass3 = "xgasgnd.flame"
+//particleClass3 = "xsonicgnd_cb.flame"
 //particleCount3 = 2
 //particleVeloc3 = "0.0 10.0 0.0"
 
@@ -38,11 +38,11 @@ particleVeloc2 = "0.0 10.0 0.0"
 //particleCount4 = 1
 //particleVeloc4 = "0.0 0.0 0.0"
 
-particleClass5 = "xgasgnd.ring"
+particleClass5 = "xsonicgnd_cb.ring"
 particleCount5 = 1
 particleVeloc5 = "0.0 0.0 0.0"
 
-particleClass6 = "xgasgnd.posroll"
+particleClass6 = "xsonicgnd_cb.posroll"
 particleCount6 = 8
 particleVeloc6 = "8.0 0.0 8.0"
 
@@ -86,18 +86,6 @@ particleVeloc12 = "0.0 0.0 0.0"
 
 ///////////////////////////////
 
-explSound = "mort02.wav"
-damageRadius = 60.0
-
-damageValue(N) = 100 // none
-damageValue(L) = 50 // light
-damageValue(H) = 5 // heavy
-
-damageValue(S) = 50 // standard
-damageValue(D) = 100 // deflection
-damageValue(A) = 5 // absorbtion
-
-///////////////////////////////
 
 [Shock]
 simulateBase = "sim_null"
