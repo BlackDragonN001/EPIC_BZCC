@@ -1,7 +1,7 @@
 [GameObjectClass]
 baseName = "cvserv_b"
 geometryName = "cv_overseer.xsi"
-cockpitName = "ivserv_cockpit.xsi"
+//cockpitName = "ivserv_cockpit.xsi"
 geometryScale = 1.0
 classLabel = "serviceH"
 scrapValue = 30
