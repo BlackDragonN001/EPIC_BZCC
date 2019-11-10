@@ -1,15 +1,9 @@
 [GameObjectClass]
 baseName = "apblst"
-geometryName = "apcann00.xsi"
-classLabel = "wpnpower"
-scrapCost = 20
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
-lightHard1 = "hp_light_1"
+classLabel = "apcannon"
+scrapCost = 20
+
 lightName1 = "omnipurple"
 
 effectHard1 = "hp_light_1"
@@ -24,8 +18,6 @@ requireName3 = "ibtcen_b"
 requireText3 = "Build Tech Center"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "gblast_cb"

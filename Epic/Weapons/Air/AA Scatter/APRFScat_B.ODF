@@ -1,14 +1,8 @@
 [GameObjectClass]
-geometryName = "apgun00.xsi"
-classLabel = "wpnpower"
+baseName = "aprfscat_b"
+classLabel = "apgun"
 scrapCost = 30
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
-lightHard1 = "hp_light_1"
 lightName1 = "omnipurple"
 
 requireCount = 1
@@ -16,8 +10,6 @@ requireName1 = "ibfact_b"
 requireText1 = "Build Factory"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "grfscat_cb"

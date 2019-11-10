@@ -1,14 +1,10 @@
 [GameObjectClass]
-geometryName = "apcann00.xsi"
-classLabel = "wpnpower"
-scrapCost = 20
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
+baseName = "apcplasma"
 
-lightHard1 = "hp_light_1"
+classLabel = "apcannon"
+
+scrapCost = 20
+
 lightName1 = "omnipurple"
 
 requireCount = 2
@@ -18,8 +14,6 @@ requireName2 = "cbsbay_b"
 requireText2 = "Build Slave Node"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "gcplasma_c"

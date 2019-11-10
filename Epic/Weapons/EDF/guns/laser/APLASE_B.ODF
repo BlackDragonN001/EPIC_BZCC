@@ -1,15 +1,9 @@
 [GameObjectClass]
 baseName = "aplase"
-geometryName = "apgun00.xsi"
-classLabel = "wpnpower"
-scrapCost = 20
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
-lightHard1 = "hp_light_1"
+classLabel = "apgun"
+scrapCost = 20
+
 lightName1 = "omnicyan"
 
 effectHard1 = "hp_light_1"
@@ -20,8 +14,6 @@ requireName1 = "ibsbay_b"
 requireText1 = "Build Service Bay"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "glaser_cb"

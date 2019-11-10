@@ -1,13 +1,8 @@
 [GameObjectClass]
 baseName = "apquil"
-geometryName = "apcann00.xsi"
-classLabel = "wpnpower"
+
+classLabel = "apcannon"
 scrapCost = 20
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
 requireCount = 2
 requireName1 = "fbdowe_b"
@@ -15,16 +10,12 @@ requireText1 = "Build Dower"
 requireName2 = "fbantm_b"
 requireText2 = "Build Antenna Mound"
 
-lightHard1 = "hp_light_1"
 lightName1 = "omnipurple"
-
 
 effectHard1 = "hp_light_1"
 effectName1 = "apsstb_b.flare"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "gquill_cb"

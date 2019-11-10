@@ -1,12 +1,7 @@
 [GameObjectClass]
-geometryName = "apmisl00.xsi"
-classLabel = "wpnpower"
+baseName = "apsamiss_b"
+classLabel = "aprocket"
 scrapCost = 20
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
 requireCount = 2
 requireName1 = "ibarmo_b"
@@ -18,8 +13,6 @@ effectHard1 = "hp_light_1"
 effectName1 = "apshdw_b.flare"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "gsamiss_b"

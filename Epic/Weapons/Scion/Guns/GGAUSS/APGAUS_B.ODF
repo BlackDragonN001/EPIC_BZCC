@@ -1,15 +1,9 @@
 [GameObjectClass]
 baseName = "apgaus"
-geometryName = "apgun00.xsi"
-classLabel = "wpnpower"
-scrapCost = 30
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
-lightHard1 = "hp_light_1"
+classLabel = "apgun"
+scrapCost = 30
+
 lightName1 = "omnicyan"
 
 requireCount = 2
@@ -22,8 +16,6 @@ effectHard1 = "hp_light_1"
 effectName1 = "apchain_b.flare"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "ggauss_cb"

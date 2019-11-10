@@ -1,28 +1,19 @@
 [GameObjectClass]
 baseName = "apflar"
-geometryName = "apspec00.xsi"
-classLabel = "wpnpower"
+
+classLabel = "apspecial"
 scrapCost = 20
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
 requireCount = 1
 requireName1 = "ibarmo_b"
 requireText1 = "Build Armory"
 
-lightHard1 = "hp_light_1"
 lightName1 = "omnired"
-
 
 effectHard1 = "hp_light_1"
 effectName1 = "apmits_b.flare"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "gflare_b"

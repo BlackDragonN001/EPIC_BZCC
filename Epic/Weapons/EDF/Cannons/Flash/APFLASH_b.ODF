@@ -1,15 +1,9 @@
 [GameObjectClass]
 baseName = "apflash"
-geometryName = "apcann00.xsi"
-classLabel = "wpnpower"
-scrapCost = 30
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
-lightHard1 = "hp_light_1"
+classLabel = "apcannon"
+scrapCost = 30
+
 lightName1 = "omnipurple"
 
 effectHard1 = "hp_light_1"
@@ -22,8 +16,6 @@ requireName2 = "ibcbun_b"
 requireText2 = "Build Comm Bunk"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "gflash_cb"

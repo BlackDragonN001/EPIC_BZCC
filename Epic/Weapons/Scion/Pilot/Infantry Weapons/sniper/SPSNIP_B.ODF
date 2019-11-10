@@ -1,13 +1,7 @@
 [GameObjectClass]
-[GameObjectClass]
-geometryName = "apspec00.xsi"
-classLabel = "wpnpower"
+baseName = "spsnip_b"
+classLabel = "apspecial"
 scrapCost = 30
-scrapValue = 0
-maxHealth = 150
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
 
 requireCount = 2
 requireName1 = "fbantm_b"
@@ -15,12 +9,9 @@ requireText1 = "Build Antenna Mound"
 requireName2 = "fbover_b"
 requireText2 = "Upgrade Antenna Mound"
 
-lightHard1 = "hp_light_1"
 lightName1 = "omnired"
 
 [PowerUpClass]
-soundPickup = "pickup01.wav"
-soundReject = "reject.wav"
 
 [WeaponPowerupClass]
 weaponName = "sgsnip_cb"

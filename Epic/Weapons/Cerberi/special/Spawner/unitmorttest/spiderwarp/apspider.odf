@@ -1,21 +1,15 @@
 [GameObjectClass]
-geometryName = "apmort00.xsi"
-classLabel = "wpnpower"
+baseName = "apspider"
+classLabel = "apmortar"
 scrapCost = 40
-scrapValue = 10
-maxHealth = 3000
-maxAmmo = 0
-unitName = NULL
-aiName = "PowerUpProcess"
+
 requireCount = 1
 requireName1 = "ibarmo_b"
 requireText1 = "Build Armory"
-lightHard1 = "hp_light_1"
+
 lightName1 = "omnibrown"
 
 [PowerUpClass]
-soundPickup = "reject.wav"
-soundReject = "pickup01.wav"
 
 [WeaponPowerupClass]
 weaponName = "gspider"
