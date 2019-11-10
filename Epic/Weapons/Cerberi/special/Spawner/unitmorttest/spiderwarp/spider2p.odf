@@ -7,6 +7,7 @@ maxHealth = 150
 maxHeat = 0 
 maxAmmo = 20 
 unitName = "DOOM TO YOU ALL!!" 
+
 [SprayBuildingClass] 
 payloadName = "spider3" 
 fireSound = "smort02.wav" 

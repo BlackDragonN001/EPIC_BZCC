@@ -7,6 +7,7 @@ maxHealth = 150
 maxHeat = 0 
 maxAmmo = 100 
 unitName = "Spider Bomb" 
+
 [SprayBuildingClass] 
 payloadName = "spider1" 
 fireSound = "smort02.wav" 

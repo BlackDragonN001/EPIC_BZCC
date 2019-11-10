@@ -2,9 +2,10 @@
 classLabel = "spraybomb" 
 shotGeometry = "ioartl00.xsi" 
 shotSound = "baz03.wav" 
-xplGround = spider1p 
-xplVehicle = spider1p  
-xplBuilding = spider1p 
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+
 rendername = "spider1.render" 
 ammoCost = 20 
 lifeSpan = 1e30 
@@ -15,8 +16,10 @@ damageValue(H) = 0
 damageValue(S) = 0 
 damageValue(D) = 0 
 damageValue(A) = 0 
+
 [SprayBombClass] 
 payloadName = "spider1p" 
+
 [Render] 
 renderBase = "draw_twirl_trail" 
 textureName = "smoke.tga" 
