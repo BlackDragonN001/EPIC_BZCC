@@ -4,14 +4,15 @@ classLabel = "cannon"
 // don't need any geometry
 // (sgsnip_c already has it)
 
-ordName = "ssnipe_b"
+ordName = "fsnipe_b"
 wpnName = "Sniper"
 fireSound = "gsnipe00.wav"
 wpnReticle = "grifle_s"
 wpnCategory = "HAND"
 isAssault = 1
 isFlying = 0
-altName = "sgsnip_cb"
+altName = "fgsnip_cb"
+flashName = "fgsnip_ab.flash"
 
 [CannonClass]
 shotDelay = 1.0

@@ -40,11 +40,11 @@ weaponName3 = "apabso_b"
 
 [Scion Hand]
 weaponCount = 2
-weaponName1 = "spbazo_b"
-weaponName2 = "spsnip_b"
+weaponName1 = "fpbazo_b"
+weaponName2 = "fpsnip_b"
 
 [Scion Pack]
 weaponCount = 3
-weaponName1 = "spgren_b"
-weaponName2 = "spamjet_b"
-weaponName3 = "spsatc_b"
+weaponName1 = "fpgren_b"
+weaponName2 = "fpamjet_b"
+weaponName3 = "fpsatc_b"

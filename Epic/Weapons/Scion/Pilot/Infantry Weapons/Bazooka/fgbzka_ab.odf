@@ -4,15 +4,15 @@ classLabel = "cannon"
 // don't need any geometry
 // (sgbzka_c already has it)
 
-ordName = "sbazooka_a"
+ordName = "fbazooka_ab"
 wpnName = "Bazooka"
 fireSound = "gchain01.wav" //"shotgun1.wav"
 wpnReticle = "gshotgun"
 wpnCategory = "HAND"
 isAssault = 1
 isFlying = 1
-altName = "sgbzka_c"
-flashName = "sgbzka_a.flash"
+altName = "fgbzka_cb"
+flashName = "fgbzka_ab.flash"
 
 [CannonClass]
 shotDelay = 0.2

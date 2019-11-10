@@ -1,16 +1,15 @@
 [WeaponClass]
 classLabel = "mortar"
-geometryName = "sggren00_b.xsi"
-geometryScale = 0.15
-ordName = "s_grenade_b"
+geometryName = "fggren00.xsi"
+geometryScale = 0.12
+ordName = "f_grenade_b"
 wpnName = "Grenade"
 wpnIcon = "wire_iggren%d.tga"
 fireSound = "ghart00.wav"
 wpnReticle = "gmortar"
 wpnLadder = "gmortar.L0"
 wpnCategory = "PACK"
-isAssault = 0
-localAmmo = 8
+localAmmo = 5
 
 [CannonClass]
 shotDelay = 1.5

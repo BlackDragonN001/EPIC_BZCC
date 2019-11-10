@@ -1,15 +1,15 @@
 [WeaponClass]
 classLabel = "jetpack"
-geometryName = "sgjetp00.xsi"
+geometryName = "fgjetp00.xsi"
 geometryScale = 0.12
 animCount = 1
 animName1 = "launch"
-animFile1 = "sgjetp00.xsi"
+animFile1 = "fgjetp00.xsi"
 ordName = NULL
 wpnName = "Booster"
 wpnIcon = "wire_igjetp%d.tga"
 fireSound = "whcan.wav"
-flashName = "sgamjet_b.render"
+flashName = "fgamjet_b.render"
 wpnReticle = "gphantom.0"
 wpnPriority = 0
 wpnCategory = "PACK"
@@ -25,9 +25,9 @@ expireSound = "jpack02.wav"
 [Render]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "ighover_b.flare"
-renderName2 = "ighover_b.smoke"
-renderName3 = "ighover_b.flame"
+renderName1 = "fgamjet_b.flare"
+renderName2 = "fgamjet_b.smoke"
+renderName3 = "fgamjet_b.flame"
 
 [Flare]
 renderBase = "draw_light"

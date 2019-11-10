@@ -3,7 +3,7 @@ classLabel = "bullet"
 shotGeometry = NULL
 shotSound = "igtow04.wav"
 
-renderName = "sbazooka_a.render"
+renderName = "fbazooka_ab.render"
 
 xplGround = "xsbazgnd_a"
 xplVehicle = "xsbazcar_a"
@@ -25,9 +25,9 @@ damageValue(A) = 30 // absorbtion
 [Render]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "sbazooka_a.flare"
-renderName2 = "sbazooka_a.halo"
-renderName3 = "sbazooka_a.trail"
+renderName1 = "fbazooka_ab.flare"
+renderName2 = "fbazooka_ab.halo"
+renderName3 = "fbazooka_ab.trail"
 
 [Flare]
 renderBase = "draw_sprite"

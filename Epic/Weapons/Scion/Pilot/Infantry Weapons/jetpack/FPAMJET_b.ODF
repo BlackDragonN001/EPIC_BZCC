@@ -1,5 +1,5 @@
 [GameObjectClass]
-baseName = "spamjet_b"
+baseName = "fpamjet_b"
 classLabel = "apspecial"
 scrapCost = 30
 
@@ -12,4 +12,4 @@ lightName1 = "omnired"
 [PowerUpClass]
 
 [WeaponPowerupClass]
-weaponName = "sgamjet_b"
+weaponName = "fgamjet_b"

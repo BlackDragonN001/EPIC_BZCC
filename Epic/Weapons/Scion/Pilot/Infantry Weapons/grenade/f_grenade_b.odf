@@ -6,7 +6,7 @@ shotSound = "Ordin_c.wav"
 xplGround = "xgasgnd"
 xplVehicle = "xgasxpl"
 xplBuilding = "xgasxpl"
-renderName = "s_grenade_b.render"
+renderName = "f_grenade_b.render"
 
 ammoCost = 1
 lifeSpan = 1e30

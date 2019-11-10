@@ -63,7 +63,7 @@ weaponMask = 11111
 weaponHard1 = "HP_HAND_1"
 visualHard1 = "HP_DOCK_H"
 weaponAssault1 = 0
-weaponName1 = "sgsnip_cb"
+weaponName1 = "fgsnip_cb"
 
 weaponHard2 = "HP_GUN_1"
 //visualHard2 = "HP_DOCK_P"
@@ -73,17 +73,17 @@ weaponName2 = ""
 weaponHard3 = "HP_HAND_1"
 visualHard3 = "HP_DOCK_H"
 weaponAssault3 = 1
-weaponName3 = "sgsnip_ab"
+weaponName3 = "fgsnip_ab"
 
 weaponHard4 = "HP_PACK_1"
 visualHard4 = "HP_DOCK_P"
 weaponAssault4 = 0
-weaponName4 = "sgamjet_b"
+weaponName4 = "fgamjet_b"
 
 //weaponHard5 = "HP_special_1"
 //visualHard5 = "HP_special_1"
 //weaponAssault5 = 0
-//weaponName5 = "sggren_b"
+//weaponName5 = "fggren_b"
 
 turretCount = 6
 turretName1 = "torso"

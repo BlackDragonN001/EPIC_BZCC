@@ -1,6 +1,6 @@
 [GameObjectClass]
 classLabel = "satchel"
-geometryName = "sgsatc01.xsi"
+geometryName = "fgsatc01.xsi"
 geometryScale = 0.12
 scrapCost = 0
 scrapValue = 0

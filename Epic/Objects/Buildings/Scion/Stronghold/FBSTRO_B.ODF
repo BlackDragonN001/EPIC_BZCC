@@ -100,10 +100,10 @@ buildItem3 = "apabso_b"
 
 [ArmoryGroup8]
 buildLabel = "Pilot"
-buildItem1 = "spbazo_b"
-buildItem2 = "spsnip_b"
-buildItem3 = "spgren_b"
-buildItem4 = "spamjet_b"
+buildItem1 = "fpbazo_b"
+buildItem2 = "fpsnip_b"
+buildItem3 = "fpgren_b"
+buildItem4 = "fpamjet_b"
 
 //[ArmoryGroup9]
 //buildLabel = "Restricted"

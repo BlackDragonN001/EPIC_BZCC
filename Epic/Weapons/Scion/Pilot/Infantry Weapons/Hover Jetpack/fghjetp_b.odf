@@ -1,37 +1,42 @@
 [WeaponClass]
 classLabel = "jetpack"
-geometryName = "sgjetp00.xsi"
+geometryName = "fgjetp00.xsi"
 geometryScale = 0.12
 animCount = 1
 animName1 = "launch"
-animFile1 = "sgjetp00.xsi"
+animFile1 = "fgjetp00.xsi"
 ordName = NULL
-wpnName = "Booster"
-wpnIcon = "wire_igjetp%d.tga"
+wpnName = "Hoverpack"
+wpnIcon = "wire_igjetp1.tga"
 fireSound = "whcan.wav"
-flashName = "sgjetp.render"
+flashName = "fghjetp_b.render"
 wpnReticle = "gphantom.0"
 wpnPriority = 0
 wpnCategory = "PACK"
-localAmmo = 1
+localAmmo = 30
+addLocalAmmo = 1.0
+isFlying = 1
+aiRange = 150
+canSelect = true
 
 [JetPackClass]
-ammoCost = 1
-burnTime = 3.0
-accelThrust = 30.0
+burnTime = 0.0
+accelThrust = 40.0
+setAltitude = 90.0
+ForwardThrust = 5.0 //40.0
 activeSound = "jpack01.wav"
 expireSound = "jpack02.wav"
 
 [Render]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "sgjetp.flare"
-renderName2 = "sgjetp.smoke"
-renderName3 = "sgjetp.flame"
+renderName1 = "fghjetp_b.flare"
+renderName2 = "fghjetp_b.smoke"
+renderName3 = "fghjetp_b.flame"
 
 [Flare]
 renderBase = "draw_sprite"
-textureName = "lightflare.tga"
+textureName = "slightflare.tga"
 textureBlend = "one one modulate"
 startColor = "255 255 255 255"
 finishColor = "255 255 255 255"
@@ -40,7 +45,7 @@ finishRadius = 2.0
 
 [Smoke]
 renderBase = "draw_twirl_trail"
-textureName = "smoke.tga"
+textureName = "sssmoke.tga"
 textureBlend = "srcalpha invsrcalpha modulatealpha"
 startColor = "153 153 153 63"
 finishColor = "31 31 31 0"
@@ -54,7 +59,7 @@ emitLife = 3.0
 
 [Flame]
 renderBase = "draw_twirl_trail"
-textureName = "flame.tga"
+textureName = "sflame.tga"
 textureBlend = "one one modulate"
 startColor = "255 255 63 255"
 finishColor = "255 0 0 0"

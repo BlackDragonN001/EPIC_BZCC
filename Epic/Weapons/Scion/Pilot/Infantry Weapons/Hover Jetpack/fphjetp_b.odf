@@ -1,5 +1,5 @@
 [GameObjectClass]
-baseName = "sphjetp_b"
+baseName = "fphjetp_b"
 classLabel = "appack"
 scrapCost = 30
 
@@ -16,4 +16,4 @@ lightName1 = "omnired-ap"
 [PowerUpClass]
 
 [WeaponPowerupClass]
-weaponName = "sghjetp_b"
+weaponName = "fghjetp_b"

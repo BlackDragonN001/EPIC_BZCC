@@ -5,7 +5,7 @@ shotGeometry = NULL
 xplGround = "xlgtgnd"
 xplVehicle = "xlgtcar"
 xplBuilding = "xlgtbld"
-renderName = "ssnipe.render"
+renderName = "fsnipe.render"
 
 ammoCost = 100
 lifeSpan = 0.3 // 300m
@@ -26,9 +26,9 @@ killLength = 20.0
 [Render]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "ssnipe.core"
-renderName2 = "ssnipe.halo"
-renderName3 = "ssnipe.trail"
+renderName1 = "fsnipe.core"
+renderName2 = "fsnipe.halo"
+renderName3 = "fsnipe.trail"
 
 [Core]
 renderBase = "draw_twirl"

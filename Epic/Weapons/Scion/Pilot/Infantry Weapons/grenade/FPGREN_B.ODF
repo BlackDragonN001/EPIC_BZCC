@@ -1,6 +1,6 @@
 [GameObjectClass]
-baseName = "spgren_b"
-classLabel = "aphand"
+baseName = "fpgren_b"
+classLabel = "appack"
 scrapCost = 30
 
 requireCount = 1
@@ -12,4 +12,4 @@ lightName1 = "omnired"
 [PowerUpClass]
 
 [WeaponPowerupClass]
-weaponName = "sggren_b"
+weaponName = "fggren_b"
