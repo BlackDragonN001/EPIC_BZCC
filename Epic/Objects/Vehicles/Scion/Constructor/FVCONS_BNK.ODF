@@ -1,7 +1,7 @@
 [GameObjectClass]
 baseName = "fvcons_b"
 
-unitIcon = "icon_fvcons.tga"
+unitIcon = "icon_fvcons.tga" //"icon_fvconst.tga"
 infoName = "fvcons_b.inf"
 unitStatus = "wire_fvcons.tga"
 
@@ -59,7 +59,6 @@ collisionRadius = 5.0
 unitName = "Builder"
 aiName = "RigFriend"
 aiName2 = "RigEnemy"
-unitIcon = "icon_fvconst.tga"
 heatSignature = 1.0
 imageSignature = 2.0
 radarSignature = 2.0

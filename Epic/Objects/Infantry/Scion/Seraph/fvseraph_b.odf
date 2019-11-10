@@ -28,7 +28,7 @@ maxAmmo = 6000
 addAmmo = 400
 AIAddAmmo = 50
 unitName = "Seraph"
-collisionRadius = 40.0
+collisionRadius = 60.0
 
 aiName = "RocketTankFriend"
 aiName2 = "RocketTankEnemy"
@@ -40,9 +40,7 @@ radarSignature = 2.0
 isstealth = 0
 isAssault = 1
 armorClass = L
-needPilot = 0
 cockpitName = "ivturr_cockpit.xsi"
-collisionRadius = 60.0
 
 LightingType = 1
 
@@ -148,11 +146,11 @@ velocJam = 0.0f
 engageRange = 500
 detectRange = 200
 
-braccelFactor = 0.5
-velFactor = 0.5
-strafeFactor = 0.5
+braccelFactor = 0.5 //0.03
+velFactor = 0.4//0.2
 steerFactor = 1.5
-omegaFactor = 0.2//0.2
+omegaFactor = 0.2
+strafeFactor = 0.8
 
 canHunt = 1
 canRescue = 0
@@ -165,11 +163,6 @@ attackTask = "MortarBikeAttack"
 subAttackTask = "MortarBikeSubAttack"
 subAttackClass = "NNN"
 
-braccelFactor = 0.5 //0.03
-velFactor = 0.4//0.2
-steerFactor = 1.5
-omegaFactor = 0.2
-strafeFactor = 0.8
 
 avoidSpeed = 10;
 topSpeed = 20;

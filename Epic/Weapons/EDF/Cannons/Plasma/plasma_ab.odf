@@ -1,8 +1,7 @@
 [OrdnanceClass]
 classLabel = "bullet"
-shotSound = "igtow04.wav"
 shotGeometry = NULL
-shotSound = "gflas00.wav"
+shotSound = "gflas00.wav" //"igtow04.wav"
 xplGround = "xplasgnd_cb"
 xplVehicle = "xplascar_cb"
 xplBuilding = "xplascar_cb"

@@ -19,4 +19,4 @@ soundPickup = "pickup01.wav"
 soundReject = "reject.wav"
 
 [WeaponPowerupClass]
-weaponName = "gcptdron_b"
+weaponName = "gcptalon_b"

@@ -142,12 +142,6 @@ attackTask = "MortarBikeAttack"
 subAttackTask = "MortarBikeSubAttack"
 subAttackClass = "NNN"
 
-AttackTaskUsesGroups = false
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-
 
 engageRange = 2000
 //canHunt = 1

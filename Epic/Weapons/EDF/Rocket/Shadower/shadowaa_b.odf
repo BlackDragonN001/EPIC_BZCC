@@ -28,7 +28,6 @@ omegaTurn = 1.5
 accelThrust = 75.0
 ramptime = 0.5
 delayTime = 0.5
-TeamFilter = 4
 velocForward = 150
 avoidRange = 35
 avoidStrength = 150

@@ -36,7 +36,7 @@ provideName2 = "base"
 lightHard1 = "hp_light_1"
 lightName1 = "o_blue_nf"
 lightHard2 = "hp_light_1"
-lightName2 = "ibspot"
+lightName2 = "spotwhite3"
 
 [PoweredBuildingClass]
 detectRange = 3000

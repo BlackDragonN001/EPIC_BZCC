@@ -39,12 +39,11 @@ renderCount = 3
 renderName1 = "swarmer_c.flame"
 renderName2 = "swarmer_c.halo"
 renderName3 = "swarmer_c.trail"
-//renderName3 = "swarmer_c.fire"
+//renderName4 = "swarmer_c.fire"
 
 [Flame]
 renderBase = "draw_twirl_trail"
-textureName = "particle.tga"
-textureName = "blast.tga"
+textureName = "blast.tga" //"particle.tga"
 textureBlend = "one one modulate"
 startColor = "190 190 100 255"
 finishColor = "255 0 0 0"

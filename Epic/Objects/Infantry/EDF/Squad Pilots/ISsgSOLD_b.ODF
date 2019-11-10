@@ -124,7 +124,7 @@ OffensiveProcessMadTime = 5.0
 PathingType = 2 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
 AvoidType = -1 // -1 = auto, 0 = None, 1 = force, 2 = plan
 GotoTaskHasLeader = false // if true, gotos will be done in a leader/follower model
-AttackTaskUsesGroups = false
+AttackTaskUsesGroups = true //false
 IgnoreDestroyedTargets = true 
 RetargetOnStrafe = true
 
@@ -141,11 +141,6 @@ omegaFactor = 0.2 //0.2
 attackTask = "MortarBikeAttack"
 subAttackTask = "MortarBikeSubAttack"
 subAttackClass = "NNN"
-
-AttackTaskUsesGroups = true//false
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-
 
 //canHunt = 1
 //AllowLinkWeapons = true

@@ -6,7 +6,6 @@ animCount = 1
 animName1 = "deploy"
 animFile1 = "ivmhq_deploy.xsi"
 classLabel = "commvehicle"
-geometryScale = 1.0
 scrapValue = 20
 scrapCost = 60
 scrapReturn = 30

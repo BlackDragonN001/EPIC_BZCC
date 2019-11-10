@@ -36,9 +36,6 @@ renderName6 = "spstab_ab.smoke"
 
 [Flare]
 renderBase = "draw_light"
-startColor = "255 255 55 300"
-finishColor = "255 255 55 300"
-textureBlend = "one one modulate"
 startColor = "55 155 255 325"
 finishColor = "55 155 255 325"
 startRadius = 20.0

@@ -7,21 +7,20 @@ unitStatus = "wire_fvartl.tga"
 
 mrmFactor = 0
 classLabel = "artillery"
-geometryScale = 2.0
+geometryScale = 1.5 //2.0
 geometryName = "fvartl_skel_b.xsi"
 glowTexture = "fvartla0.pic"
 
 animCount = 1
 animName1 = "deploy"
 animFile1 = "fvartl_skel_b.xsi"
-geometryScale = 1.5
 
 scrapValue = 20
 scrapCost = 65
 scrapReturn = 30
 customCost = 70
 buildTime = 20.0
-buildTime = 20.0
+customTime = 20.0
 maxHealth = 1000
 maxAmmo = 2000
 addAmmo = 0

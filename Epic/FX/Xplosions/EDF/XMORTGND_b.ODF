@@ -127,29 +127,6 @@ finishRadius = 4
 animateTime = 1
 rotationRate = 4.0
 
-
-[flame]
-simulateBase = "sim_smoke"
-lifeTime = 0.1
-renderBase = "draw_emit"
-emitName = "xmortgnd_b.flameemit"
-emitDelay = 0.1
-emitVelocity = "0.0 3.0 0.0"
-emitVariance = "0.0 0.0 0.0"
-
-[flameemit]
-simulateBase = "sim_smoke"
-lifeTime = .5
-renderBase = "draw_twirl"
-textureName = "flame2.tga"
-textureBlend = "one one modulate"
-startColor = " 255 255 200 255"
-finishColor = "255 0 0 0"
-startRadius = 0
-finishRadius = 4
-animateTime = .5
-rotationRate = 5
-
 [fire]
 simulateBase = "sim_smoke"
 lifeTime = 0.15

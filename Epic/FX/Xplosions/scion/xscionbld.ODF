@@ -173,7 +173,6 @@ lifeTime = 5.0
 renderBase = "draw_trail"
 textureName = "wingtrail.tga"
 textureBlend = "one one modulate"
-textureBlend = "one one modulate"
 startColor = "200 150 250 250"
 finishColor = "0 0 255 20"
 startRadius = 0.06

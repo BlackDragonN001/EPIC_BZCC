@@ -27,8 +27,6 @@ explosionName = "xcerbxplb"
 
 upgradeName = "cbaatowl_b"
 
-armorClass = H
-
 buildSupport = "A"
 buildRequire = "F"
 

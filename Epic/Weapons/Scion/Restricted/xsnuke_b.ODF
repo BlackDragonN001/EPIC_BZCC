@@ -29,7 +29,7 @@ particleVeloc1 = "0.0 0.0 0.0"
 
 particleClass2 = "xsnuke_b.ring1"
 particleCount2 = 1
-particleVeloc1 = "0.0 0.0 0.0"
+particleVeloc2 = "0.0 0.0 0.0"
 
 particleClass3 = "xsnuke_b.ring2"
 particleCount3 = 1

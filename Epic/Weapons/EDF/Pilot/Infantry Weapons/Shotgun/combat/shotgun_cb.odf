@@ -21,7 +21,7 @@ renderBase = "draw_multi"
 renderCount = 3
 renderName1 = "shotgun_cb.smoke"
 renderName2 = "shotgun_cb.trail"
-renderName2 = "shotgun_cb.shot"
+renderName3 = "shotgun_cb.shot"
 
 [shot]
 renderBase = "draw_twirl"

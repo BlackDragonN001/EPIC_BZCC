@@ -16,7 +16,6 @@ animName2 = "neutral"
 animFile2 = "IvMine_00SN.xsi"
 animName3 = "reverse"
 animFile3 = "IvMine_00SR.xsi"
-classLabel = "wingman"
 scrapValue = 30
 scrapCost = 50
 buildTime = 10.0

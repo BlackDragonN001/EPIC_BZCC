@@ -193,7 +193,7 @@ planpriority = 115
 buildtype1 = "fbspir_b"
 buildcount1 = 4
 buildtype2 = "fbbarr_b"
-buildcount1 = 2
+buildcount2 = 2
 
 [plan22]
 plantype = "buildminimums"
@@ -258,8 +258,8 @@ donextonfail = 1
 plantype = "attacker"
 planpriority = 70
 targettype = "ibsbay_B"
-targettype = "ibarmo_B"
-targettype = "ibgtow_B"
+targettype1 = "ibarmo_B"
+targettype2 = "ibgtow_B"
 attacktype1 = "fvatank_b"
 attacktype2 = "fvatank_b"
 attacktype3 = "fvartl_b"

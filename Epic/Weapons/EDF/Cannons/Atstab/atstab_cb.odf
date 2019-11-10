@@ -26,21 +26,18 @@ damageValue(A) = 130 // absorbtion // 130
 renderBase = "draw_multi"
 renderCount = 6
 renderName1 = "atstab_cb.flare"
-renderName5 = "atstab_cb.exhaust"
-renderName3 = "atstab_cb.flame"
 renderName2 = "atstab_cb.Trail"
+renderName3 = "atstab_cb.flame"
 renderName4 = "atstab_cb.Trails"
+renderName5 = "atstab_cb.exhaust"
 renderName6 = "atstab_cb.smoke"
 
 [Flare]
 renderBase = "draw_light"
-startColor = "80 255 255 70"
-finishColor = "80 255 255 70"
-textureBlend = "one one modulate"
-startColor = "55 155 255 255"
-finishColor = "55 155 255 255"
-startRadius = 10.0
-finishRadius = 10.0
+startColor = "80 255 255 250"
+finishColor = "80 255 255 250"
+startRadius = 20.0
+finishRadius = 20.0
 animateTime = 0.5
 attenuateConstant = 0.0
 attenuateLinear = 1.0
@@ -136,14 +133,3 @@ emitDelay = 0.001
 emitVelocity = "0.0 0.0 0.0"
 emitVariance = "2.0 2.0 2.0"
 emitLife = 0.02
-
-[Flare]
-renderBase = "draw_light"
-startColor = "80 255 255 250"
-finishColor = "80 255 255 250"
-startRadius = 20.0
-finishRadius = 20.0
-animateTime = 0.5
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0

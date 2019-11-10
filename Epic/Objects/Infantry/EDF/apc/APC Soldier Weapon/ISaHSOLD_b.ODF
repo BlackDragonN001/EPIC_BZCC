@@ -74,9 +74,6 @@ aiName = "SoldierProcess"
 heatSignature = 0.2
 imageSignature = 0.2
 radarSignature = 0.1
-canDetect = 1
-canInteract = 1
-needGroup = 0
 
 LightingType = 1
 
@@ -143,12 +140,6 @@ omegaFactor = 0.2
 attackTask = "MortarBikeAttack"
 subAttackTask = "MortarBikeSubAttack"
 subAttackClass = "NNN"
-
-AttackTaskUsesGroups = false
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
-IgnoreDestroyedTargets = true 
-RetargetOnStrafe = true
 
 
 //canHunt = 1

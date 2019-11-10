@@ -171,8 +171,6 @@ isAssault = 0
 
 maxHealth = 1500
 maxAmmo = 2500
-addAmmo = 3.0
-addhealth = 0.0
 
 unitName = "Sentry"
 
