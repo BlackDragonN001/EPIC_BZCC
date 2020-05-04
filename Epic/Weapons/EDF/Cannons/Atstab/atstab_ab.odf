@@ -35,13 +35,10 @@ renderName6 = "atstab_ab.smoke"
 
 [Flare]
 renderBase = "draw_light"
-startColor = "80 255 255 270"
-finishColor = "80 255 255 270"
-textureBlend = "one one modulate"
-startColor = "55 155 255 255"
-finishColor = "55 155 255 255"
-startRadius = 10.0
-finishRadius = 10.0
+startColor = "80 255 255 250"
+finishColor = "80 255 255 250"
+startRadius = 20.0
+finishRadius = 20.0
 animateTime = 0.5
 attenuateConstant = 0.0
 attenuateLinear = 1.0
@@ -137,14 +134,3 @@ emitDelay = 0.001
 emitVelocity = "0.0 0.0 0.0"
 emitVariance = "2.0 2.0 2.0"
 emitLife = 0.02
-
-[Flare]
-renderBase = "draw_light"
-startColor = "80 255 255 250"
-finishColor = "80 255 255 250"
-startRadius = 20.0
-finishRadius = 20.0
-animateTime = 0.5
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
