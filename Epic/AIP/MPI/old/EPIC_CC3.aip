@@ -246,11 +246,11 @@ donextonfail = 1
 
 [plan30]
 plancondition = "Hisexists"
-planconditionclass = "cbrecy_mpi"
+planconditionclass = "cbrecy_b"
 planCompare = ">="
 planconditioncount = 1
 plantype = "attacker"
-targettype = "cbrecy_mpi"
+targettype = "cbrecy_b"
 planpriority = 50
 attacktype1 = "cvdcar_b"
 attacktype2 = "cvdcar_b"

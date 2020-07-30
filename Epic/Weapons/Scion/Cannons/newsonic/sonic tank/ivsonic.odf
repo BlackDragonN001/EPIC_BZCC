@@ -33,7 +33,7 @@ requireText3 = "Build Service Bay"
 
 weaponMask = 00001
 weaponHard1 = "HP_CANNON_1"
-weaponName1 = "gsonicwpn_a"
+weaponName1 = "gsonicwpn_ab"
 weaponAssault1 = 1
 
 ////////////////////////////////////

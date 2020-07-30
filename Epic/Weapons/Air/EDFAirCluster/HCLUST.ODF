@@ -4,8 +4,9 @@ shotGeometry = "iorckt00.xsi"
 shotSound = "gshad02.wav"
 
 //xplGround = "xshdwgnd"
-xplVehicle = "xsprinkcar"
-xplBuilding = "xsprinkcar"
+xplVehicle = "xclustcar_b"
+xplBuilding = "xclustcar_b"
+
 renderName = "hclust.render"
 
 ammoCost = 120

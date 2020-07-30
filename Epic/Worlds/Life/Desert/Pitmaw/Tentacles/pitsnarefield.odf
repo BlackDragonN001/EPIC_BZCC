@@ -1,5 +1,5 @@
 [GameObjectClass]
-geometryName = "gsnare00.x"
+geometryName = NULL //"gsnare00.x"
 classLabel = "weaponmine"
 scrapCost = 0
 scrapValue = 0

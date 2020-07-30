@@ -1,18 +1,4 @@
-[WeaponClass]
-classLabel = "machinegun"
-ordName = "shellgun"
-wpnName = "Shell Gun"
-fireSound = "shellgun.wav"
-wpnReticle = "gchain"
-wpnCategory = "GUN"
-isAssault = 0
-flashName = "gshellgun_p.flash"
-aiRange = 180
-
-[CannonClass]
-shotDelay = 0.14
-shotVariance = 0.01
-
+// effect ODF only now. -GBD
 [flash]
 renderBase = "draw_multi"
 renderCount = 8

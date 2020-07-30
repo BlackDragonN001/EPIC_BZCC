@@ -18,7 +18,7 @@ maxHealth = 4000
 addHealth = 10
 maxAmmo = 1000
 addAmmo = 0
-explosionName = "shipxplc"
+explosionName = "xcerbxpld"//"xcerbsml_b"//shipxplc"
 buildTime = 60.0
 customTime = 60.0
 collisionRadius = 90.0
@@ -129,9 +129,9 @@ SoldierExtraLife = 10
 [light]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "cvhar_b.light1"
-renderName2 = "cvhar_b.glow"
-renderName3 = "cvhar_b.trailer1"
+renderName1 = "cvharv_b.light1"
+renderName2 = "cvharv_b.glow"
+renderName3 = "cvharv_b.trailer1"
 
 [light1]
 simulateBase = "sim_null"

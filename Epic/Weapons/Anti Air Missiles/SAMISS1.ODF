@@ -26,11 +26,11 @@ omegaTurn = 3.0
 
 [Render]
 renderBase = "draw_multi"
-renderCount = 4
+renderCount = 3
 renderName1 = "samiss1.flare"
 renderName2 = "samiss1.exhaust"
-renderName3 = "samiss1.flame"
-renderName4 = "samiss1.trail"
+//renderName3 = "samiss1.flame"
+renderName3 = "samiss1.trail"
 
 [Flare]
 renderBase = "draw_sprite"

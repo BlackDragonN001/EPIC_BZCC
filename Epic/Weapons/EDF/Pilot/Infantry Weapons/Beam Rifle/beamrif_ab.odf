@@ -24,11 +24,11 @@ damageValue(A) = 1500
 
 [Render]
 renderBase = "draw_multi"
-renderCount = 4
+renderCount = 3
 renderName1 = "beamrif_ab.flare"
 renderName2 = "beamrif_ab.smoke"
 renderName3 = "beamrif_ab.flame"
-renderName4 = "beamrif_ab.trail"
+//renderName4 = "beamrif_ab.trail"
 
 [Flare]
 renderBase = "draw_sprite"

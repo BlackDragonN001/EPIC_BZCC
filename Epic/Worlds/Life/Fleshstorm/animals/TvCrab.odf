@@ -53,7 +53,7 @@ imageSignature = 5.0
 radarSignature = 5.0
 collisionRadius = 4.0
 isAssault = 1
-explosionName = "xswarmV"
+//explosionName = "xswarmV" // Fleshstorm Asset
 
 needPilot=0
 

@@ -12,7 +12,7 @@ radarSignature = 0.0
 collisionRadius = 1.0
 
 effectHard1 = "hp_emit_1"
-effectName1 = "mepool01.render"
+effectName1 = "facpool02.render"
 
 [BuildingClass]
 tunnelCount = 1

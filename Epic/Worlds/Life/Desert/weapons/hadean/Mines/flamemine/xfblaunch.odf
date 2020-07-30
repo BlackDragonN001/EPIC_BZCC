@@ -6,10 +6,10 @@
 classLabel = "explosion"
 
 particleTypes = 8
-particleClass1 = "axfblaunch.core"
+particleClass1 = "xfblaunch.core"
 particleCount1 = 1
 particleVeloc1 = "0.0 0.0 0.0"
-particleClass2 = "axfblaunch.puff"
+particleClass2 = "xfblaunch.puff"
 particleCount2 = 30
 particleVeloc2 = "90.0 90.0 90.0"
 particleClass3 = "xfblaunch.char"

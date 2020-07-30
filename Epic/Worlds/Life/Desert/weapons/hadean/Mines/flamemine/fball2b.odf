@@ -18,7 +18,7 @@ objectClass = "fball2c"
 [render]
 renderBase = "draw_multi"
 renderCount = 5
-renderName1 = "ffball2b.smoke"
+renderName1 = "fball2b.smoke"
 renderName2 = "fball2b.flame"
 renderName3 = "fball2b.trailer"
 renderName4 = "fball2b.light"

@@ -27,7 +27,7 @@ particleCount1 = 1
 particleVeloc1 = "0.0 5.0 0.0"
 particleBias1 = "5.0 5.0 0.0"
 
-particleClass2 = "axfbseeke.flame"
+particleClass2 = "bubxpl.flame"
 particleCount2 = 1
 particleVeloc2 = "0.0 2.0 0.0"
 particleBias2 = "0.0 0.0 0.0"
@@ -36,7 +36,7 @@ particleClass3 = "bubxpl.puff"
 particleCount3 = 15
 particleVeloc3 = "20.0 20.0 20.0"
 
-particleClass4 = "xbubxpl.trail"
+particleClass4 = "bubxpl.trail"
 particleCount4 = 10
 particleVeloc4 = "2.0 2.0 10.0"
 particleBias4 = "5.0 5.0 5.0"
@@ -45,7 +45,9 @@ particleClass5 = "bubxpl.chunks2"
 particleCount5 = 20
 particleVeloc5 = "8.0 8.0.0 8.0"
 particleBias5 = "0.0 8.0 0.0"
+
 [bubble]
+simulateBase = "sim_smoke"
 lifeTime = 1.0
 renderBase = "draw_sphere"
 textureName = "vsmoke.tga"

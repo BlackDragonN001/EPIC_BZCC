@@ -16,7 +16,7 @@ maxAmmo = 8000
 addAmmo = 600
 unitName = "EDF Destroyer"
 aiName = "APCProcess"
-explosionName = "xivdests"
+//explosionName = "xivdests"
 collisionRadius = 300.0
 
 heatSignature = 30.0
@@ -31,9 +31,9 @@ effectName1 = "ivstorms.render"
 effectHard2 = "hp_trail_2"
 effectName2 = "ivstorms.render"
 effectHard3 = "hp_emit_3"
-effectName3 = "ivspbombsa.trail"
+effectName3 = "i1dests.trail"
 effectHard4 = "hp_emit_4"
-effectName4 = "ivspbombsa.trail"
+effectName4 = "i1dests.trail"
 
 /////// weapons ///////////////////
 

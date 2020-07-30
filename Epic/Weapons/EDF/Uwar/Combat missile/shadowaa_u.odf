@@ -67,18 +67,11 @@ renderBase = "draw_trail"
 textureBlend = "one one modulate"
 textureName = "strail.tga"
 startColor = "255 255 100 220"
-finishColor = "255 255 255 0"
-startRadius = 0.4
-finishRadius = 0.01
-segmentTime = 0.05
 finishColor = "255 0 0 0"
 startRadius = 0.2
 finishRadius = 0.05
+segmentTime = 0.05
 animateTime = 0.1
-emitDelay = 0.002
-emitVelocity = "0.0 0.0 0.0"
-emitVariance = "3.0 3.0 2.0"
-emitLife = 0.4
 
 [wake]
 simulateBase = "sim_dust"

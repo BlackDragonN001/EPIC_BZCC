@@ -1,6 +1,6 @@
 [WeaponClass]
-classLabel = "seismic"
-altName = "gthumper_b"
+classLabel = "cannon"
+//altName = "gthumper_b"
 ordName = "thumper_b"
 wpnName = "Thumper"
 //fireSound = "satshot.wav"
@@ -9,5 +9,5 @@ wpnCategory = "SPEC"
 isAssault = 0
 aiRange = 120
 
-[SeismicClass]
+[CannonClass]
 shotDelay = 20

@@ -25,12 +25,12 @@ explosionName = "ixshipxplw"
 weaponMask = 00111
 
 weaponHard1 = "hp_gun_1"
-\\recoilName1 = "recoil_1"
+//recoilName1 = "recoil_1"
 weaponName1 = "g50calGT_ab"
 weaponAssault1 = 0
 
 weaponHard2 = "hp_gun_2"
-\\recoilName1 = "recoil_2"
+//recoilName1 = "recoil_2"
 weaponName2 = "g50calGT_ab"
 weaponAssault2 = 0
 

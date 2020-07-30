@@ -67,17 +67,17 @@ finishRadius = 6
 segmentTime = 1.5
 animateTime = 1
 
-[dust]
+[dust2]
 simulateBase = "sim_dust"
 lifeTime = 2.2
 renderBase = "draw_emit"
-emitName = "sonicwpn_ab.trailer1emit"
+emitName = "sonicwpn_ab.trailer2emit"
 emitdelay = 0.015
 delayVar = 0.01
 emitVelocity = "0.0 0 0.0"
 emitVariance = "46.0 0.0 26.0"
 
-[trailer1emit]
+[trailer2emit]
 simulateBase = "sim_dust"
 lifeTime = 2.5
 renderBase = "draw_sprite"
@@ -100,7 +100,7 @@ emitdelay = 0.1
 emitVelocity = "0.0 10 0.0"
 emitVariance = "16.0 20.0 16.0"
 
-[debriss]
+[debriss2]
 simulateBase = "sim_dust"
 lifeTime = 2.2
 renderBase = "draw_emit"
@@ -108,5 +108,5 @@ emitName = "debris.chunks"
 emitdelay = 0.2
 //delayVar = 0.1
 emitVelocity = "0.0 10 0.0"
-emitVariance = "`10.0 15.0 10.0"
+emitVariance = "10.0 15.0 10.0"
 

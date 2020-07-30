@@ -1,9 +1,0 @@
-[GameObjectClass]
-baseName = "apaamiss1"
-classLabel = "aprocket"
-scrapCost = 20
-
-[PowerUpClass]
-
-[WeaponPowerupClass]
-weaponName = "gaamiss1"

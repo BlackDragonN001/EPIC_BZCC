@@ -1,6 +1,6 @@
 [OrdnanceClass]
 classLabel = "grenade"
-shotGeometry = "sgproj00_b.xsi"
+shotGeometry = "fgproj00_b.xsi"
 geometryScale = 0.1
 shotSound = "Ordin_c.wav"
 xplGround = "xgasgnd"

@@ -52,7 +52,7 @@ doNextOnFail = 1
 plantype = "attacker"
 planpriority = 190
 targettype = "cbscav_m"
-targettype1 = "cbrecy_MPI"
+targettype1 = "cbrecy_b"
 attacktype1 = "ivscout_b"
 attacktype2 = "ivscout_b"
 attacktype3 = "ivscout_b"
@@ -81,12 +81,12 @@ donextonfail = 1
 
 [plan9]
 //plancondition = "HisExists"
-//planconditionclass = "cbrecy_MPI"
+//planconditionclass = "cbrecy_b"
 //planCompare = ">="
 //planconditioncount = 1
 plantype = "attacker"
 planpriority = 170
-targettype = "cbrecy_MPI"
+targettype = "cbrecy_b"
 targettype1 = "cbscav_m"
 targettype2 = "cbpgen_b"
 attacktype1 = "ivltank_b"
@@ -297,7 +297,7 @@ donextonfail = 1
 plantype = "attacker"
 planpriority = 62
 targettype = "cbfact_b"
-targettype1 = "cbrecy_MPI"
+targettype1 = "cbrecy_b"
 targettype2 = "cbtcen_b"
 attacktype1 = "ivartl_b"
 attacktype2 = "ivartl_b"

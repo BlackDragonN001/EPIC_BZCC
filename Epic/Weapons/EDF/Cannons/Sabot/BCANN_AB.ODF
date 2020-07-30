@@ -3,9 +3,9 @@ classLabel = "thermalmissile"
 shotGeometry = "ioartl00.xsi" // NULL //"firemsl.xsi" //"sgwasp00.xsi"
 geometryScale = 7
 
-xplGround = "xshellgnd"
-xplVehicle = "xshellcar"
-xplBuilding = "xshellcar"
+xplGround = "xgasxpl"
+xplVehicle = "xgasxpl"
+xplBuilding = "xgasxpl"
 
 renderName = "bcann_ab.render"
 

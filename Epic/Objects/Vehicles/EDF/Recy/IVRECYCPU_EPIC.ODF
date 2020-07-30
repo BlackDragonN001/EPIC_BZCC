@@ -67,7 +67,7 @@ soundDeploy = "irecy03.wav"
 DoExtraBuildzoneCheck = false // false = 1.0 .. 1.3pb1 behavior, true = pb2 .. current
 
 [DeployBuildingClass]
-deployName = "ibrecy_MPI"
+deployName = "ibrecy_b"
 
 [RecyclerVehicleClass]
 scrapHold = 40

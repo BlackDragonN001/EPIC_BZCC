@@ -5,9 +5,9 @@ shotGeometry = "ioartl00.xsi"
 geometryScale = 1.8
 shotSound = "baz03.wav"
 
-xplGround = "xstabgnd_b"
-xplVehicle = "xstabcar_b"
-xplBuilding = "xstabcar_b"
+xplGround = "xcarpgnd_b"
+xplVehicle = "xmortxpl_b"
+xplBuilding = "xmortxpl_b"
 
 renderName = "carpet_cb.render"
 

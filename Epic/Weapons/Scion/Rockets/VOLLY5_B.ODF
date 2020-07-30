@@ -4,7 +4,7 @@ classLabel = "thermalmissile"
 shotGeometry = "sgstng00.xsi"
 shotSound = "crckt02.wav"
 
-renderName = "volly5.render"
+renderName = "volly5_b.render"
 
 xplGround = "xmslgnd"
 xplVehicle = "xstingcar_c"
@@ -32,13 +32,12 @@ coneAngle = 0.08
 [Render]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "volly5.flame"
-renderName2 = "volly5.halo"
-renderName3 = "volly5.trail"
+renderName1 = "volly5_b.flame"
+renderName2 = "volly5_b.halo"
+renderName3 = "volly5_b.trail"
 
 [Flame]
 renderBase = "draw_twirl_trail"
-textureName = "particle.tga"
 textureName = "blast.tga"
 textureBlend = "one one modulate"
 startColor = "255 255 100 128"

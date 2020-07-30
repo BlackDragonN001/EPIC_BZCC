@@ -84,7 +84,7 @@ particleVeloc7 = "1.0 1.0 1.0"
 simulateBase = "sim_smoke"
 lifeTime = 0.1
 renderBase = "draw_emit"
-emitName = "xsprocketa.cloud1emit"
+emitName = "xsprocketu.cloud1emit"
 emitDelay = 0.3
 emitVelocity = "0.0 0.0 0.0"
 emitVariance = "0.0 0.0 0.0"
@@ -106,7 +106,7 @@ rotationRate = 0.0
 simulateBase = "sim_smoke"
 lifeTime = 0.1
 renderBase = "draw_emit"
-emitName = "xsprocketa.cloud2emit"
+emitName = "xsprocketu.cloud2emit"
 emitDelay = 0.3
 emitVelocity = "0.1 0.0 0.0"//.4 0 0
 emitVariance = "0.5 0.5 0.5"// .5 .5 .5
@@ -128,7 +128,7 @@ rotationRate = -2// .25
 simulateBase = "sim_smoke"
 lifeTime = 0.1
 renderBase = "draw_emit"
-emitName = "xsprocketa.cloud3emit"
+emitName = "xsprocketu.cloud3emit"
 emitDelay = 0.3
 emitVelocity = "0.1 0.0 0.0"// .4
 emitVariance = "0.5 0.5 0.5"
@@ -155,7 +155,7 @@ emitDelay = 0.3
 emitVelocity = "0.1 0.0 0.0"// .4
 emitVariance = "0.0 0.0 0.0"
 
-//.5[cloud4emit]
+[cloud4emit]
 simulateBase = "sim_smoke"
 lifeTime = 2.8
 renderBase = "draw_twirl"

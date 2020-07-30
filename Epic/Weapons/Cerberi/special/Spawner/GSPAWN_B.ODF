@@ -8,7 +8,7 @@ wpnLadder = "gsplint.L0"
 wpnPriority = 4
 wpnCategory = "MORT"
 aiRange = 500
-flashName = "xbhmin2.render"
+//flashName = "gspawn_b.render"
 isAssault = 0
 
 [CannonClass]
@@ -17,9 +17,9 @@ shotDelay = 10.0
 [render]
 renderBase = "draw_multi"
 renderCount = 0
-renderName1 = "bhmin2.sphere"
-renderName2 = "bhmin2.bolt"
-renderName3 = "bhmin2.light"
+renderName1 = "gspawn_b.sphere"
+renderName2 = "gspawn_b.bolt"
+renderName3 = "gspawn_b.light"
 
 [sphere]
 simulateBase = "sim_smoke"

@@ -31,8 +31,8 @@ soundBounce = "bbounce.wav"
 [Render]
 renderBase = "draw_multi"
 renderCount = 2
-renderName1 = "xvstab_c.light"
-renderName2 = "xvstab_c.smoke"
+renderName1 = "xvstab_cb.light"
+renderName2 = "xvstab_cb.smoke"
 
 [Light]
 renderBase = "draw_sprite"

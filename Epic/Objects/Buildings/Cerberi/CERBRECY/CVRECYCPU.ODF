@@ -10,6 +10,6 @@ explosionName = "XBHXPL_b"
 [DeployableClass]
 
 [DeployBuildingHClass]
-deployName = "cbrecy_MPI"
+deployName = "cbrecy_b"
 
 [RecyclerVehicleHClass]

@@ -19,7 +19,7 @@ damageValue(A) = 0 // absorbtion
 
 particleTypes = 5
 
-particleClass1 = "xxsupercar.shock"
+particleClass1 = "xpointxpl.shock"
 particleCount1 = 1
 particleVeloc1 = "0.0 0.0 0.0"
 
@@ -31,11 +31,11 @@ particleClass3 = "xpointxpl.light"
 particleCount3 = 1
 particleVeloc3 = "0.0 0.0 0.0"
 
-particleClass4 = "xxsupercar.puff"
+particleClass4 = "xpointxpl.puff"
 particleCount4 = 5
 particleVeloc4 = "6.0 6.0 6.0"
 
-particleClass5 = "xxsupercar.spark"
+particleClass5 = "xpointxpl.spark"
 particleCount5 = 20
 particleVeloc5 = "15.0 15.0 15.0"
 

@@ -62,9 +62,9 @@ VehicleSearchFilter = 2 // == 0(vehicles only), 1(pilots only) 2(vehicles+pilots
 
 
 effectHard1 = "hp_emit_1"
-effectName1 = "chopper1_b.trail"
+effectName1 = "chopper1_b.render" //trail"
 effectHard2 = "hp_emit_2"
-effectName2 = "chopper1_b.trail"
+effectName2 = "chopper1_b.render" //trail"
 effectHard3 = "hp_emit_3"
 effectName3 = "chopper1_b.prop"
 

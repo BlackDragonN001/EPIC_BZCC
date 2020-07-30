@@ -25,13 +25,13 @@ damageValue(A) = 200 // absorbtion
 
 [render]
 renderBase = "draw_multi"
-renderCount = 5
+renderCount = 4
 renderName1 = "meteord.smokeemitter"
 renderName2 = "meteord.flameemitter"
 renderName3 = "meteord.light"
-renderName4 = "meteord.flame"
-renderName5 = "meteord.trail1"
-renderName6 = "meteord.trail2"
+//renderName4 = "meteord.flame"
+renderName4 = "meteord.trail1"
+//renderName5 = "meteord.trail2"
 
 
 [SmokeEmitter]

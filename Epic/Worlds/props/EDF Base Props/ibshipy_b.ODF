@@ -18,6 +18,7 @@ collisionRadius = 1.0
 isAssault = 1
 ownsTerrain = 1
 //canCollide = 1
+canInteract = false
 
 armorClass = H
 

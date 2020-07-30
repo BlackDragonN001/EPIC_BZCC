@@ -6,11 +6,11 @@ animCount = 1
 animName1 = "launch"
 animFile1 = "igjetp00.xsi"
 ordName = NULL
-altName = "igmortar_b"
+//altName = "igmortar_b"
 wpnName = "Flight"
 wpnIcon = "wire_igjetp1.tga"
 fireSound = "whcan.wav"
-flashName = "igshamjet.render"
+flashName = "igshamjet_b.render"
 wpnReticle = "gphantom.0"
 wpnPriority = 0
 wpnCategory = "PACK"
@@ -26,9 +26,9 @@ shotDelay = 5
 [Render]
 renderBase = "draw_multi"
 renderCount = 3
-renderName1 = "igshamjet.flare"
-renderName2 = "igshamjet.smoke"
-renderName3 = "igshamjet.flame"
+renderName1 = "igshamjet_b.flare"
+renderName2 = "igshamjet_b.smoke"
+renderName3 = "igshamjet_b.flame"
 
 [Flare]
 renderBase = "draw_light"

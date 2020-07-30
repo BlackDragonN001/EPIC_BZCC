@@ -2,7 +2,7 @@
 classLabel = "beam"
 
 shotGeometry = NULL
-xplGround = "xppoinxpl"
+xplGround = "xpointxpl"
 xplVehicle = "xpointxpl"
 xplBuilding = "xpointxpl"
 

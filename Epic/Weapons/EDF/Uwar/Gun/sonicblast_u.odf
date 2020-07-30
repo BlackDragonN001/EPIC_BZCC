@@ -35,11 +35,11 @@ ordDrag = 1.0
 
 [Render]
 renderBase = "draw_multi"
-renderCount = 4
+renderCount = 3
 renderName1 = "sonicblast_u.Core"
 renderName2 = "sonicblast_u.Flare"
 rendername3 = "sonicblast_u.trailer"
-rendername4 = "sonicblast_u.light"
+//rendername4 = "sonicblast_u.light"
 
 [Core]
 renderBase = "draw_twirl_trail"
