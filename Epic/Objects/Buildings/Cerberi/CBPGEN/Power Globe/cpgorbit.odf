@@ -23,7 +23,7 @@ effectName1 = "cpgorbit.render"
 lifeSpan = 90000
 
 [WeaponMineClass]
-searchRadius = 6000.0
+searchRadius = 1e6
 heightScale = 2.0
 
 [Render]
