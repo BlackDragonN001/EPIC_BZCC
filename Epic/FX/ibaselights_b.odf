@@ -19,9 +19,9 @@ finishColor = "255 0 0 1250"
 startRadius = 40.0 // 350
 finishRadius = 40.0 // 150
 animateTime = .6
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Gflash]
 simulateBase = "sim_SMOKE"
@@ -44,9 +44,9 @@ finishColor = "0 255 0 1850"
 startRadius = 40.0 // 350
 finishRadius = 40.0 // 150
 animateTime = .8
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Bluflash]
 simulateBase = "sim_SMOKE"
@@ -69,9 +69,9 @@ finishColor = "0 80 255 1850"
 startRadius = 40.0 // 350
 finishRadius = 40.0 // 150
 animateTime = .8
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [oflash]
 simulateBase = "sim_SMOKE"
@@ -94,9 +94,9 @@ finishColor = "250 130 0 1850"
 startRadius = 40.0 // 350
 finishRadius = 40.0 // 150
 animateTime = .8
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 
 [yLIGHT]
@@ -108,7 +108,7 @@ finishColor = "255 225 200 280"
 startRadius = 160.0 // 350
 finishRadius = 160.0 // 150
 animateTime = 1
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 LensFlare = 0

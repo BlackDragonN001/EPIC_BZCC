@@ -105,9 +105,9 @@ finishColor = "127 0 255 455"
 startRadius = 30.0
 finishRadius = 30.0
 animateTime = 0.2
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Field1]
 simulateBase = "sim_null"
@@ -150,9 +150,6 @@ finishColor = "0 0 0 225"
 startRadius = 6.0
 finishRadius = 0.0
 animateTime = 1.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 [matter2]
 simulateBase = "sim_smoke"
@@ -174,9 +171,6 @@ finishColor = "0 0 0 155"
 startRadius = 14.0
 finishRadius = 0.0
 animateTime = 1.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 [dark]
 simulateBase = "sim_null"

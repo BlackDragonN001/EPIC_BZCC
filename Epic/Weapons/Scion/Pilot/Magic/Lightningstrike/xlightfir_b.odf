@@ -78,8 +78,8 @@ finishColor = "5 5 50 0"
 startRadius = 505.0
 finishRadius = 205.0
 animateTime = 2
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 lensflare = 1
 

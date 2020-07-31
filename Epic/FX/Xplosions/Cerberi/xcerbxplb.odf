@@ -273,9 +273,9 @@ finishColor = "100 0 155 0"
 startRadius = 350.0 // 350
 finishRadius = 300.0 // 150
 animateTime = 3.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 
 [posroll]
@@ -314,9 +314,9 @@ finishColor = "255 150 0 0"
 startRadius = 4.0
 finishRadius = 1.0
 animateTime = 3.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [ring1]
 simulateBase = "sim_null"

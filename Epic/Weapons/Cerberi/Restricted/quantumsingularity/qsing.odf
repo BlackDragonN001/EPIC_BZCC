@@ -80,9 +80,9 @@ finishColor = "255 255 255 255"
 startRadius = 15.0
 finishRadius = 15.0
 animateTime = 0.5
-attenuateConstant = 0.0
+attenuateConstant = 1.0
 attenuateLinear = 0.0
-attenuateQuadratic = 0.0
+attenuateQuadratic = 15.0
 
 [Trail3]
 renderBase = "draw_trail"

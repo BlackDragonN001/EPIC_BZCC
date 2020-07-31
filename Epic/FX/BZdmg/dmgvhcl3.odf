@@ -95,9 +95,9 @@ startRadius = 60.0
 finishRadius = 60.0
 animateTime = 0.1
 rotationRate = 5.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 //emitDelayVar = 3.9
 
 [embers]
@@ -183,9 +183,9 @@ startRadius = 100.0
 finishRadius = 100.0
 animateTime = 0.5
 rotationRate = 5.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 //emitDelayVar = 3.9
 lensflare = 0
 

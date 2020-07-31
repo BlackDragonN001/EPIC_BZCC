@@ -221,9 +221,9 @@ finishColor = "120 80 255 2250"
 startRadius = 25.0
 finishRadius = 25.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [light]
 maxdist = 100000
@@ -235,9 +235,9 @@ finishColor = "100 50 255 650"
 startRadius = 5.0
 finishRadius = 5.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Tail]
 maxdist = 100000

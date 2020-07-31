@@ -42,9 +42,9 @@ startColor = "255 255 255 0"
 finishColor = "255 255 255 0"
 startRadius = 400.0
 finishRadius = 400.0
-attenuateConstant = 0.0
+attenuateConstant = 1.0
 attenuateLinear = 0.0
-attenuateQuadratic = 0.0
+attenuateQuadratic = 15.0
 
 [Static]
 simulateBase = "sim_null"

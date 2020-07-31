@@ -40,9 +40,9 @@ finishColor = "255 0 0 350"
 startRadius = 2.0 // 350
 finishRadius = 2.0 // 150
 //animateTime = .3
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 
 [Trail]

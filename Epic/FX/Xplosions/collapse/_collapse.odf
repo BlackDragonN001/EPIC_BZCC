@@ -175,9 +175,9 @@ rotationRate = 0.4
 //startRadius = 100.0
 //finishRadius = 50.0
 //animateTime = 4.0
-//attenuateConstant = 0.0
-//attenuateLinear = 1.0
-//attenuateQuadratic = 0.0
+//attenuateConstant = 1.0
+//attenuateLinear = 0.0
+//attenuateQuadratic = 15.0
 
 [Spark]
 simulateBase = "sim_smoke"

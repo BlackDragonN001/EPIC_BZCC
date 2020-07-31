@@ -127,9 +127,9 @@ finishColor = "0 0 255 0"
 startRadius = 180.0 // 350
 finishRadius = 150.0 // 150
 animateTime = 0.8.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [beams]
 simulateBase = "sim_dust"

@@ -95,9 +95,6 @@ finishColor = "0 0 55 200"
 startRadius = 30.0
 finishRadius = 0.0
 animateTime = 3.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 [pulse]
 simulateBase = "sim_smoke"
@@ -128,9 +125,6 @@ finishColor = "0 0 55 60"
 startRadius = 250.0
 finishRadius = 0.0
 animateTime = 2.5
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 [bolts]
 simulateBase = "sim_smoke"
@@ -185,9 +179,6 @@ finishColor = "220 205 255 2550"
 startRadius = 2.0
 finishRadius = 5.0
 animateTime = 2.5
-attenuateConstant = 0.0
-attenuateLinear = 0.0
-attenuateQuadratic = 1.0
 
 [sparks]
 simulateBase = "sim_smoke"
@@ -209,9 +200,6 @@ finishColor = "255 250 255 100"
 startRadius = 50.0
 finishRadius = 0.0
 animateTime = 3.0
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 [ring2]
 simulateBase = "sim_smoke"

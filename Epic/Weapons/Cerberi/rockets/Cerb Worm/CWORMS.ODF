@@ -47,9 +47,9 @@ finishColor = "100 55 250 400"
 startRadius = 20.0
 finishRadius = 20.0
 animateTime = 0.3
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Flare]
 renderBase = "draw_light"
@@ -58,9 +58,9 @@ finishColor = "50 40 235 500"
 startRadius = 15.0
 finishRadius = 15.0
 animateTime = 0.1
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Sparkle]
 renderBase = "draw_twirl_trail"

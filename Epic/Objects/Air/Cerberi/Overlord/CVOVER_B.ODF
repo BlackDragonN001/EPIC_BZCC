@@ -242,9 +242,9 @@ finishColor = "120 80 255 2150"
 startRadius = 15.0
 finishRadius = 15.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [light]
 simulateBase = "sim_null"
@@ -255,9 +255,9 @@ finishColor = "100 50 255 250"
 startRadius = 5.0
 finishRadius = 5.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [soot]
 renderBase = "draw_trail"

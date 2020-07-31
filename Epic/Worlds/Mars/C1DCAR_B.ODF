@@ -143,9 +143,9 @@ finishColor = "120 80 255 2550"
 startRadius = 15.0
 finishRadius = 15.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 animateTime = 0.2
 rotationRate = 1.0

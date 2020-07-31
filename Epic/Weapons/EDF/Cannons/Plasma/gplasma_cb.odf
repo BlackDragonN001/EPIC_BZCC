@@ -30,9 +30,9 @@ finishColor = "50 255 100 450"
 startRadius = 15.0
 finishRadius = 15.0
 animateTime = 0.2
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 lensflare = 1
 
 [muz]

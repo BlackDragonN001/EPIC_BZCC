@@ -410,9 +410,9 @@ finishColor = "255 0 0 0"
 startRadius = 9//320.0 // 350
 finishRadius = 9//620.0 // 150
 animateTime = 9.5
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [light3]
 simulateBase = "sim_smoke"
@@ -432,9 +432,9 @@ finishColor = "55 0 0 0"
 startRadius = 320.0 // 350
 finishRadius = 620.0 // 150
 animateTime = 12
-attenuateConstant = 0.0
+attenuateConstant = 1.0
 attenuateLinear = 0.0
-attenuateQuadratic = 1.0
+attenuateQuadratic = 15.0
 lensflare = 0
 
 [Light2]
@@ -448,7 +448,7 @@ finishRadius = 9//620.0 // 150
 animateTime = 7
 attenuateConstant = 1.0
 attenuateLinear = 0.0
-attenuateQuadratic = 0.0
+attenuateQuadratic = 15.0
 
 [ring]
 simulateBase = "sim_null"

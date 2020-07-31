@@ -233,9 +233,9 @@ finishColor = "250 55 0 100"
 startRadius = 5.0
 finishRadius = 5.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [lightg]
 simulateBase = "sim_null"
@@ -246,9 +246,9 @@ finishColor = "0 255 0 100"
 startRadius = 5.0
 finishRadius = 5.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Trail]
 renderBase = "draw_trail"

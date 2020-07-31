@@ -119,9 +119,9 @@ finishColor = "150 20 20 2050"
 startRadius = 80.0
 finishRadius = 80.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 
 [light2]
@@ -133,9 +133,9 @@ finishColor = "10 150 0 1050"
 startRadius = 40.0
 finishRadius = 40.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [light3]
 simulateBase = "sim_null"
@@ -146,9 +146,9 @@ finishColor = "10 150 240 3050"
 startRadius = 160.0
 finishRadius = 160.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [light4]
 simulateBase = "sim_null"
@@ -159,6 +159,6 @@ finishColor = "250 200 50 3050"
 startRadius = 160.0
 finishRadius = 160.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0

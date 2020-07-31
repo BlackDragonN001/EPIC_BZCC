@@ -158,9 +158,9 @@ finishColor = "255 0 0 0"
 startRadius = 1e6.0
 finishRadius = 600.0
 animateTime = 20
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Flameringe]
 simulateBase = "sim_dust"

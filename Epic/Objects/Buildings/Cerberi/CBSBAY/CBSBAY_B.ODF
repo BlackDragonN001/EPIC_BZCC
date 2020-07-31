@@ -78,9 +78,9 @@ finishColor = "127 0 255 2455"
 startRadius = 50.0
 finishRadius = 50.0
 animateTime = 0.2
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Field1]
 simulateBase = "sim_null"
@@ -122,9 +122,6 @@ finishColor = "0 0 0 0"
 startRadius = 0.0
 finishRadius = 50.0
 animateTime = 2
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 
 [dark]

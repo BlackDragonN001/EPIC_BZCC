@@ -78,9 +78,9 @@ startColor = "0 0 0 0"
 finishColor = "0 0 0 0"
 startRadius = -50.0
 finishRadius = -50.0
-attenuateConstant = 0.0
+attenuateConstant = 1.0
 attenuateLinear = 0.0
-attenuateQuadratic = 0.0
+attenuateQuadratic = 15.0
 
 [Static]
 renderBase = "draw_static"

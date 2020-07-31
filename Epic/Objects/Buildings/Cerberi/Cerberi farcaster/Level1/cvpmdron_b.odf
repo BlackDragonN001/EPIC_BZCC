@@ -130,9 +130,9 @@ finishColor = "120 80 255 0"
 startRadius = 500.0
 finishRadius = 5.0
 animateTime = 2
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [Thrust]
 simulateBase = "sim_null"

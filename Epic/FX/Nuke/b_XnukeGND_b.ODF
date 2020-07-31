@@ -407,7 +407,7 @@ finishRadius = 620.0 // 150
 animateTime = 16
 attenuateConstant = 1.0
 attenuateLinear = 0.0
-attenuateQuadratic = 0.0
+attenuateQuadratic = 15.0
 
 [Light2]
 simulateBase = "sim_null"

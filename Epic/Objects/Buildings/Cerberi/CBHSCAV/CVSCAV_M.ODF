@@ -138,9 +138,9 @@ finishColor = "120 80 255 550"
 startRadius = 10.0
 finishRadius = 10.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [glow]
 simulateBase = "sim_null"

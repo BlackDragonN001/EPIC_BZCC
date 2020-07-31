@@ -278,9 +278,6 @@ finishColor = "250 240 255 150"
 startRadius = 1.0
 finishRadius = 0.0
 animateTime = 0.1
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
 
 [light]
 simulateBase = "sim_null"
@@ -291,9 +288,9 @@ finishColor = "20 20 255 250"
 startRadius = 25.0
 finishRadius = 25.0
 animateTime = 1e30
-attenuateConstant = 0.0
-attenuateLinear = 1.0
-attenuateQuadratic = 0.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
 
 [glow]
 simulateBase = "sim_null"

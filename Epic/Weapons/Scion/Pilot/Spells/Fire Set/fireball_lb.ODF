@@ -125,9 +125,9 @@ emitLife = 0.4
 // startRadius = 1.0
 // finishRadius = 3.0
 // animateTime = 3
-// attenuateConstant = 0.0
-// attenuateLinear = 1.0
-// attenuateQuadratic = 0.0
+// attenuateConstant = 1.0
+// attenuateLinear = 0.0
+// attenuateQuadratic = 15.0
 
 
 
