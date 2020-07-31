@@ -4,12 +4,12 @@ classLabel = "apmortar"
 scrapCost = 20
 
 requireCount = 1
-requireName1 = "fbstro_b"
-requireText1 = "Build Stronghold"
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
 
 lightName1 = "omnibrown"
 
 [PowerUpClass]
 
 [WeaponPowerupClass]
-weaponName = "gpopgun_b"
+weaponName = "gcpopgun_b"

@@ -4,8 +4,8 @@ classLabel = "apspecial"
 scrapCost = 20
 
 requireCount = 1
-requireName1 = "cbarmo"
-requireText1 = "Build Armory"
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
 
 lightName1 = "omnired"
 

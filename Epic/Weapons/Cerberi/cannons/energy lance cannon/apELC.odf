@@ -4,8 +4,8 @@ classLabel = "apcannon"
 scrapCost = 5
 
 requireCount = 1
-requireName1 = "cbarmo"
-requireText1 = "Build Armory"
+requireName1 = "cbarmo_b"
+requireText1 = "Build Catalyser"
 
 [PowerUpClass]
 

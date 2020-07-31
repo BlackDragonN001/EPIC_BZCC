@@ -4,8 +4,8 @@ classLabel = "apcannon"
 scrapCost = 30
 
 requireCount = 1
-requireName1 = "cvcbun_b"
-requireText1 = "Build Control`Node"
+requireName1 = "cbcbun_b"
+requireText1 = "Build Uplink"
 
 lightName1 = "omnipurple"
 
