@@ -1,6 +1,6 @@
 [GameObjectClass]
 geometryName = "poretruck.xsi"
-geometryScale = 5
+//geometryScale = 5
 classLabel = "powered"
 //animCount = 1
 //animName1 = "loop"
