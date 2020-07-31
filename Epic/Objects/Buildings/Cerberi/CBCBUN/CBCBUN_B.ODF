@@ -21,6 +21,8 @@ ownsTerrain = 1
 //CanCollide = 1
 IsSingle = 0
 
+categoryTypeOverride = 4
+
 LightingType = 1
 
 armorClass = H
