@@ -67,7 +67,7 @@ soundFinish = "iapc04.wav"
 
 [BuildGroup1]
 BuildLabel = "Warriors"
-buildItem1 = "fspilo_b"
+buildItem1 = "fspilo"
 buildItem2 = "fssold_b"
 buildItem3 = "fvjakr_b"
 buildItem4 = "fVrhinor_B"
