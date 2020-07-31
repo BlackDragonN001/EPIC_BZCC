@@ -7,6 +7,7 @@ scrapValue = 0
 maxHealth = 0
 maxAmmo = 0
 unitName = "Entropic Shield"
+canInteract = false
 
 [MineClass]
 lifeSpan = 1E6

@@ -7,7 +7,7 @@ unitStatus = "wire_ivmbike.tga"
 
 
 geometryName = "ivmbik00_b.xsi"
-cockpitName = "ivmbike_cockpit.xsi"
+cockpitName = "ivmbik_cockpit.xsi"
 classLabel = "wingman"
 animCount = 3
 animName1 = "forward"

@@ -58,7 +58,7 @@ buildtype3 = "fbbarr_b"
 [plan7]
 plantype = "buildminimums"
 planpriority = 180
-buildtype1 = "sssold_b"
+buildtype1 = "fssold_b"
 buildcount1 = 6
 
 [plan8]
@@ -73,12 +73,12 @@ planconditioncount = 1
 plantype = "attacker"
 planpriority = 170
 targettype = "fvcons_b"
-attacktype1 = "sssold_b"
-attacktype2 = "sssold_b"
-attacktype3 = "sssold_b"
-attacktype4 = "sssold_b"
-attacktype5 = "sssold_b"
-attacktype6 = "sssold_b"
+attacktype1 = "fssold_b"
+attacktype2 = "fssold_b"
+attacktype3 = "fssold_b"
+attacktype4 = "fssold_b"
+attacktype5 = "fssold_b"
+attacktype6 = "fssold_b"
 maxtries = 1
 
 [plan10]

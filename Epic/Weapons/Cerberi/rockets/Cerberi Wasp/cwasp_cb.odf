@@ -2,7 +2,7 @@
 geometryName = "cvccomet00.xsi"
 geometryScale = 0.4
 classLabel = "torpedo"
-baseName = "grccmi" // "hvrckt"
+baseName = "comet" // "hvrckt"
 scrapValue = 0
 scrapCost = 0
 maxHealth = 100
