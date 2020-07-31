@@ -66,23 +66,27 @@ topSpeed = 12
 
 
 [HoverCraftClass]
-accelBrake = 150.0 //70.0 
-accelDrag = 120.0 //20.0
-accelDragFull = 130.0 //50.0
-accelDragStop = 140.0 //40.0
-accelThrust = 0.25 //5.0
-alphaSteer = 150.0 //0.4
-omegaSpin = 5.4 //0.6
-omegaTurn = 2.2 //0.6
-velocForward = 5.0 //10.0 
-velocReverse = 20.0 //10.0
+setAltitude = 1.0
+accelDragStop = 30.0
+accelDragFull = 30.0
+alphaTrack = 6.0
+alphaDamp = 6.0
+pitchPitch = 0.0
+pitchThrust = 0.0
+rollStrafe = 0.0
+rollSteer = 0.0
 
-pitchThrust = 3.0
-rollSteer = 3.0
-alphaTrack = 8.0
+velocForward = 10.0
+velocReverse = 20.0
+velocStrafe = 10.0
+accelThrust = 10.0
+accelBrake = 75.0
+omegaSpin = 3.0
+omegaTurn = 2.0
+alphaSteer = 8.0
+accelJump = 100.0
 
-alphaDampX = 10.0
-alphaDampZ = 35.0 //30.0
+FlyingPhysics = true
 
 engineSound = "irecy01.wav"
 treadSound = "irecy01b.wav"
