@@ -25,7 +25,7 @@ isAssault = 1
 
 LightingType = 1
 
-explosionName = "null"//"ixshipxplw"
+explosionName = NULL //"ixshipxplw"
 
 armorClass = H
 

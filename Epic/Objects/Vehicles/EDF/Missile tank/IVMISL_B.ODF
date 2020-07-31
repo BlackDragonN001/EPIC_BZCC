@@ -41,7 +41,7 @@ ejectRatio = 0.05
 
 BoxCollide = 1
 
-explosionName = "null"//"ixshipxpl"
+explosionName = NULL //"ixshipxpl"
 
 isAssault = 0
 

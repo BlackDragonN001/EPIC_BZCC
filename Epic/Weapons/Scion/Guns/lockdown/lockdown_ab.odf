@@ -1,7 +1,7 @@
 [OrdnanceClass]
 classLabel = "lockdown"
 
-shotGeometry = "NULL"
+shotGeometry = NULL
 shotSound = "sandbag.wav"
 
 xplGround = "xglockgnd_a"

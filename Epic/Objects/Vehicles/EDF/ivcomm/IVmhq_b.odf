@@ -24,7 +24,7 @@ armorClass = H
 
 LightingType = 1
 
-explosionName = "null"
+explosionName = NULL
 
 isSingle = 1 //Determines whether only one of a certain unit or building can be built per team.
 limitClass1 = "ivmhq" // e.g. "ibrecy", *NO* ".odf" on item

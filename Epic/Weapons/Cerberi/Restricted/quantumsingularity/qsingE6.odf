@@ -9,7 +9,7 @@ maxAmmo = 0
 unitName = ""
 canInteract = 0
 canDetect = 0
-explosionName = "null"
+explosionName = NULL
 LeaveExplodeScorch = false
 
 lifespan = 0.3

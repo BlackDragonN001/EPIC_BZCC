@@ -38,7 +38,7 @@ heatSignature = 0.5
 imageSignature = 3.0
 radarSignature = 0.3
 
-explosionName = "null"//"ixshipxpl"
+explosionName = NULL //"ixshipxpl"
 
 isAssault = 0
 //isStealth = 1

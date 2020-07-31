@@ -1,6 +1,6 @@
 [OrdnanceClass]
 classLabel = "thermalmissile"
-shotGeometry = "null"
+shotGeometry = NULL
 
 
 shotSound = "gshad02.wav"

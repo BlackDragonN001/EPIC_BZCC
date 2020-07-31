@@ -25,6 +25,6 @@ standUp = 0
 //darkScale = .9  // 1/8 of the original intensity
 
 [Lod1]
-geometryName = "null" ;geometry for lod1
+geometryName = NULL ;geometry for lod1
 
 distance = 200                 ;...distance over this many meters => switch to lod2

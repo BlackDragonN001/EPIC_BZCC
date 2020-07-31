@@ -29,7 +29,7 @@ addAmmo = 3
 unitName = "Mtr Bike"
 aiName = "AttachWingman"
 aiName2 = "AttachWingman"
-explosionName = "null"//"ixshipxpl"
+explosionName = NULL //"ixshipxpl"
 collisionRadius = 40.0
 
 BoxCollide = 1

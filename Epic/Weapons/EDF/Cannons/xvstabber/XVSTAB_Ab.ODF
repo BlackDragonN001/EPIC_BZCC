@@ -2,7 +2,7 @@
 classLabel = "bouncebomb"
 //classlabel = "grenade"
 
-shotGeometry = "null"
+shotGeometry = NULL
 
 
 xplGround = "xxvstabcar"

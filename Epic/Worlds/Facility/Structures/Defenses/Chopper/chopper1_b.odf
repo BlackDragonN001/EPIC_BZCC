@@ -304,6 +304,6 @@ rotationrate = 0
 
 
 [Lod1]
-geometryName = "null" ;geometry for lod1
+geometryName = NULL ;geometry for lod1
 geometryScale = 1
 distance = 1000   

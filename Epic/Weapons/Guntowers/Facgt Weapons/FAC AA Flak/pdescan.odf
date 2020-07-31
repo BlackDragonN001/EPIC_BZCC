@@ -2,13 +2,13 @@
 classLabel = "radarpopper"
 
 IsArcing = 0
-shotSound = null
+shotSound = NULL
 
 xplGround = "xmslgnd"
 xplVehicle = "xmslcar"
 xplBuilding = "xmslbld"
 
-renderName = "null"
+//renderName = "pdescan.render"
 
 ammoCost = 20
 lifeSpan = 0.3

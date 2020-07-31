@@ -18,7 +18,7 @@ isStealth = 1
 ownsTerrain = 0
 isTerrain = 0
 canCollide = 0
-explosionName = "null"
+explosionName = NULL
 LeaveExplodeScorch = false
 
 //fectHard1 = "hp_fire"

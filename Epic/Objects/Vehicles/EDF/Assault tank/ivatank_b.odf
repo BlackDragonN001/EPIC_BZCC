@@ -35,7 +35,7 @@ provideName2 = "atank"
 LightingType = 1 
 
 
-explosionName = "null"//"ixshipxplw"
+explosionName = NULL //"ixshipxplw"
 
 
 effectHard1 = "hp_emit_1"

@@ -49,7 +49,7 @@ canRescue = 0
 caneject = 0
 isStealth = 1
 
-explosionName = "null"
+explosionName = NULL
 
 boxCollide = 1
 

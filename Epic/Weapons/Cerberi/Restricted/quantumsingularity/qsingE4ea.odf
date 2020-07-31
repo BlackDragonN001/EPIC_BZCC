@@ -10,7 +10,7 @@ heatSignature = 0.0
 unitName = ""
 canDetect = 0
 canInteract = 0
-explosionName = "null"
+explosionName = NULL
 LeaveExplodeScorch = false
 
 [SprayBuildingClass]

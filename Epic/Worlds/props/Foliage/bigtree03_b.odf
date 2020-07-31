@@ -44,7 +44,7 @@ darkRadius = 48         // 28m radius
 darkScale = .3  // 1/8 of the original intensity
 
 [Lod1]
-geometryName = "null" ;geometry for lod1
+geometryName = NULL ;geometry for lod1
 
 distance = 1050                 ;...distance over this many meters => switch to lod2
 

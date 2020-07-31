@@ -27,7 +27,7 @@ damageValue(H) = 0
 damageValue(S) = 0
 damageValue(D) = 0
 damageValue(A) = 0
-xplDone = "NULL"
+xplDone = NULL
 
 [Trail]
 renderBase = "draw_trail"

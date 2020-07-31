@@ -19,7 +19,7 @@ ownsTerrain = 0
 isTerrain = 0
 canCollide = 0
 LeaveExplodeScorch = false
-explosionName = "null"
+explosionName = NULL
 
 EffectHard1 = "hp_fire"
 EffectName1 = "qsingE1a.render"

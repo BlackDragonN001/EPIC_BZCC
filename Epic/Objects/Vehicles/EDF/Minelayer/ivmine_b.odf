@@ -28,7 +28,7 @@ heatSignature = 0.1
 imageSignature = 2.0
 radarSignature = 2.0
 
-explosionName = "null"
+explosionName = NULL
 canSnipe = 0
 
 isAssault = 1

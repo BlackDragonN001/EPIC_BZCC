@@ -43,11 +43,11 @@ requireText3 = "Build Factory"
 HasSeparateChunks = false
 NumChunks = 0
 NumChunks1 = 0
-chunkEffect1 = "null.xsi"  
-chunkEffect2 = "null.xsi" 
-chunkEffect3 = "null.xsi" 
-chunkEffect4 = "null.xsi" 
-chunkEffect5 = "null.xsi" 
+chunkEffect1 = NULL
+chunkEffect2 = NULL
+chunkEffect3 = NULL
+chunkEffect4 = NULL
+chunkEffect5 = NULL
 DAMAGE_SCALE = 10
 MIN_BOUNCE_VEL = 0.0
 

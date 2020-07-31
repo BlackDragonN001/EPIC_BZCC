@@ -91,10 +91,10 @@ FireWhenCanHitFriends = true
 GunTowerProcessCheckCantHit = false
 //blastDist = 10000
 
-damageEffect1 = "NULL"
-damageEffect2 = "NULL"
-damageEffect3 = "NULL"
-damageEffect4 = "NULL"
+damageEffect1 = NULL
+damageEffect2 = NULL
+damageEffect3 = NULL
+damageEffect4 = NULL
 
 AllowedControlsWhenTugged = 31 //full control
 

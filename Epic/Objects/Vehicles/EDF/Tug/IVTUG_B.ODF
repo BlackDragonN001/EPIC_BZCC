@@ -30,7 +30,7 @@ isStealth = 0
 
 BoxCollide = 1
 
-explosionName = "null"
+explosionName = NULL
 
 armorClass = L
 

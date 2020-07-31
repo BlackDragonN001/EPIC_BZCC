@@ -64,8 +64,8 @@ lightName1 = "spotblue2"
 lightName2 = "spotblue2"
 
 [CraftClass]
-xplCrash = "null"//"xfrigxpl"
-xplChunks = "null"
+xplCrash = NULL //"xfrigxpl"
+xplChunks = NULL
 rangeScan = 2500.0f
 periodScan = 5.0f
 velocJam = 5.0f

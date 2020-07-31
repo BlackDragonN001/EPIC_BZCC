@@ -1,6 +1,6 @@
 [OrdnanceClass]
 classLabel = "bullet"
-shotGeometry = "null"//"gspstab.xsi"
+shotGeometry = NULL //"gspstab.xsi"
 shotSound = "misord2.wav"
 
 xplGround = "xcerbgnd_m"

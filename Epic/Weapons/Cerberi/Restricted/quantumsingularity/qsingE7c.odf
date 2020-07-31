@@ -19,7 +19,7 @@ ownsTerrain = 0
 isTerrain = 0
 canCollide = 0
 LeaveExplodeScorch = false
-explosionName = "null"
+explosionName = NULL
 
 [MineClass]
 lifeSpan = 3.0 //120.0

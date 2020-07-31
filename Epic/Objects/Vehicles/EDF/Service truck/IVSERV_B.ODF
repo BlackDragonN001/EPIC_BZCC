@@ -30,7 +30,7 @@ collisionRadius = 20.0
 
 BoxCollide = 1
 
-explosionName = "null"//"ixshipxplw"
+explosionName = NULL /"ixshipxplw"
 
 armorClass = L
 

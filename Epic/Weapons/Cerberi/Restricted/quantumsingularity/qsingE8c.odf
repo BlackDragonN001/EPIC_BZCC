@@ -8,7 +8,7 @@ maxHeat = 0
 maxAmmo = 12
 heatSignature = 0.0
 unitName = ""
-explosionName = "null"
+explosionName = NULL
 LeaveExplodeScorch = false
 
 [SprayBuildingClass]

@@ -40,7 +40,7 @@ collisionRadius = 60.0
 
 BoxCollide = 0 //1 // Can't hit it while it's deploying/cant hit top when deployed. -GBD
 
-explosionName = "null"//"ixshipxplw"
+explosionName = NULL //"ixshipxplw"
 
 isStealth = 1
 

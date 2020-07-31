@@ -28,7 +28,7 @@ radarSignature = 0.4
 
 SmartIsAirUnitCheck = false
 
-explosionName = "null"
+explosionName = NULL
 
 isAssault = 0
 
