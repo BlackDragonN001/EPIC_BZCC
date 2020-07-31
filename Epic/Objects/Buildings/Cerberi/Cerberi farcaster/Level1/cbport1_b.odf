@@ -72,10 +72,10 @@ effectName2 = "cbport1_b.render"
 //effectHard4 = "hp_emit_4"
 //effectName4 = "cbport1_b.cables2"
 
-/turretCount = 3
-/turretName1 = "turret_y_1"
-/turretName2 = "turret_x_1"
-/turretName3 = "hp_eyepoint"
+//turretCount = 3
+//turretName1 = "turret_y_1"
+//turretName2 = "turret_x_1"
+//turretName3 = "hp_eyepoint"
 
 
 [PoweredBuildingClass]
