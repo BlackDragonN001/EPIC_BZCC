@@ -1,7 +1,7 @@
 [GameObjectClass]
 geometryName = "pbtunn03_b.xsi"
 geometryScale = 6
-classLabel = "terrain"
+classLabel = "i76building" //"terrain"
 scrapCost = 0
 scrapValue = 0
 maxHealth = 0
@@ -13,3 +13,12 @@ radarSignature = 1.0
 ownsTerrain = 1
 
 [BuildingClass]
+CanDemolish = false
+tunnelCount = 1
+bldEdge = "twfw"
+
+tunnel01X0 = 4
+tunnel01Z0 = 0
+tunnel01DX = 4
+tunnel01DZ = 4
+tunnel01Edge = "twfw"
