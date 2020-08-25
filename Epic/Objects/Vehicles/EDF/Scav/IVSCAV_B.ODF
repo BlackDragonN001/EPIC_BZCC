@@ -51,9 +51,9 @@ periodScan = 0.0
 velocJam = 0.0
 
 braccelFactor = 0.1
-velFactor =	0.3
+velFactor =	0.5
 steerFactor = 1.0
-omegaFactor = 0.3
+omegaFactor = 0.8
 
 TeamTransferrable = true
 selectWaitMsg = "ivscav01.wav"
@@ -81,7 +81,7 @@ accelDrag = 20.0
 accelDragFull = 60.0
 accelDragStop = 38.0	// how fast it stops once hands are off controls [5.9]
 accelThrust = 5.0
-alphaSteer = 0.8
+alphaSteer = 2.0 //0.8
 omegaSpin = 1.0
 omegaTurn = 0.6
 velocForward = 25.0
