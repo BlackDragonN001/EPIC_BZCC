@@ -27,6 +27,12 @@ isAssault = 0
 
 needPilot=0
 
+canSelect = 0
+isGrouped = 0
+needGroup = 0
+isLimited = 0
+needLimit = 0
+
 armorClass = N
 
 Lifespan = 60 // -1 == infinite; > 0 is # seconds of life before it goes *boom*
@@ -68,28 +74,6 @@ engageRange = 1500
 
 avoidSpeed = 40;
 topSpeed = 50;
-
-selectWaitMsg = "ivtank05.wav"
-selectAttackMsg = "ivtank02.wav"
-selectFollowMsg = "ivtank04.wav"
-selectGoMsg = "ivtank04.wav"
-selectOtherMsg = "ivtank05.wav"
-
-goMsg = "ivtank04.wav"
-attackMsg = "ivtank06.wav"
-followMeMsg = "ivtank08.wav"
-followMsg = "ivtank03.wav"
-repairMsg = "ivtank09.wav"
-reloadMsg = "ivtank09.wav"
-rescueMsg = "ivtank10.wav"
-recycleMsg = "ivtank11.wav"
-otherMsg = "ivtank05.wav" 
-holdMsg = "ivtank12.wav"
-user1Msg = ""  
-killedMsg = "ivtank07.wav"
-diedMsg = ""
-
-
 
 [HoverCraftClass]
 velocForward = 90 // []

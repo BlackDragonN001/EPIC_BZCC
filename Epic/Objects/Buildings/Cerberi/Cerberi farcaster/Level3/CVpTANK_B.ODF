@@ -30,7 +30,13 @@ maxAmmo = 3000
 addAmmo = 5
 unitName = "Krul"
 collisionRadius = 50.0
-needPilot = 1
+needPilot = 0
+
+canSelect = 0
+isGrouped = 0
+needGroup = 0
+isLimited = 0
+needLimit = 0
 
 aiName = "RocketTankFriend"
 aiName2 = "RocketTankEnemy"

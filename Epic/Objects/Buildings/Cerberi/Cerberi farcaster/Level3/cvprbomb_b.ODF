@@ -37,7 +37,12 @@ collisionRadius = 50.0
 heatSignature = 1.5
 imageSignature = 1.5
 radarSignature = 0.3
-needPilot = 1
+needPilot = 0
+canSelect = 0
+isGrouped = 0
+needGroup = 0
+isLimited = 0
+needLimit = 0
 
 explosionName = "XCERBXPLd"
 

@@ -34,7 +34,11 @@ armorClass = N
 effectHard1 = "hp_emit_1"
 effectName1 = "cvpgdron_b.render"
 
-
+canSelect = 0
+isGrouped = 0
+needGroup = 0
+isLimited = 0
+needLimit = 0
 
 /////// weapons ///////////////////
 

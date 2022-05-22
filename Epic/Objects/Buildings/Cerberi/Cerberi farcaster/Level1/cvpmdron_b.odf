@@ -37,6 +37,11 @@ effectName1 = "cvgdron_b.tail"
 effectHard2 = "hp_emit_1"
 effectName2 = "cvpmdron_b.render"
 
+canSelect = 0
+isGrouped = 0
+needGroup = 0
+isLimited = 0
+needLimit = 0
 
 
 /////// weapons ///////////////////
