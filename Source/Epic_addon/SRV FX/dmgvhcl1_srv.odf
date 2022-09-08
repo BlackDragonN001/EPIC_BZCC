@@ -1,0 +1,43 @@
+// ==================
+// LIGHT DAMAGE STATE
+// ==================
+
+[dmgvhcl1_srv]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "dmgvhcl1_srv.smokeemitter"
+renderName2 = "dmgvhcl1_srv.sparkemitter"
+
+[SmokeEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 2.0
+textureName = "cloudsmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 32"
+finishColor = "0 0 0 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 2.0
+rotationRate = 2.0
+
+[SparkEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.02
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+emitInherit = "1.0 1.0 1.0"
+emitLife = 1.0
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.05
+animateTime = 1.0
+rotationRate = 20.0

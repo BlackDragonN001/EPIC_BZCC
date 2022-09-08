@@ -1,0 +1,165 @@
+[Sparker_srv]
+baseName = "sparker"
+simulateBase = "sim_smoke"
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "sparker_srv.trail"
+renderName2 = "sparker_srv.rings"
+renderName3 = "sparker_srv.mist"
+renderName4 = "sparker_srv.PointFlare1"
+
+[trail]
+renderBase = "draw_emit"
+emitName = "sparker_srv.scatter"
+emitDelay = "0.035"
+emitVelocity = "0.0 6.0 0.0"
+emitVariance = "36 12.0 36"
+
+[Scatter]
+simulateBase = "sim_ember"
+renderBase = "draw_multi"
+lifeTime = 2.5
+renderCount = 2
+renderName1 = "sparker_srv.flare"
+renderName2 = "sparker_srv.trail2"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.3
+animateTime = 2.5
+
+[Trail2]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.1
+finishRadius = 0.05
+trailTime = 0.01
+segmentTime = 0.5 
+
+[Rings]
+renderBase = "draw_emit"
+emitName = "sparker_srv.ringemitter"
+emitDelay = "0.5"
+
+[RingEmitter]
+simulateBase = "sim_smoke"
+renderBase = "draw_multi"
+renderCount = 1
+//renderName1 = "sparker_srv.ring1"
+renderName1 = "sparker_srv.ring2"
+
+[Ring1]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "raindrop.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 64"
+finishColor = "0 0 255 0"
+startRadius = 25
+finishRadius = 1.0
+animateTime = 1.0
+
+[Ring2]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "raindrop.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 200"
+finishColor = "0 0 255 0"
+startRadius = 1
+finishRadius = 25.0
+animateTime = 1.0
+
+[Mist]
+renderBase = "draw_twirl_trail"
+textureName = "cloudsmokeadd.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 64"
+finishColor = "128 128 128 0"
+startRadius = 1
+finishRadius = 5
+animateTime = 3
+rotationrate = 1.5
+emitDelay = 0.02
+emitVelocity = "0.0 -2.5 0.0"
+emitVariance = "7.5 7.5 7.5"
+emitLife = 3
+maxdist = 300
+
+[MistOld]
+renderBase = "draw_emit"
+emitName = "sparker_srv.MistTrail"
+emitDelay = "0.005"
+emitVelocity = "6.0 1.0 6.0"
+emitVariance = "360 1 360"
+
+//[MistTrailEmitter]
+//simulateBase = "sim_smoke"
+//renderBase = "draw_multi"
+//renderCount = 2
+//renderName1 = "sparker_srv.MistTrails"
+//renderName2 = "sparker_srv.trailrings"
+
+[MistTrail]
+simulateBase = "sim_dust"
+lifetime = 2.0
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 8"
+finishColor = "0 0 255 0"
+startRadius = 0.2
+finishRadius = 1
+segmentLength = 1.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 2.0
+textureRate = 0.0
+
+//[TrailRings]
+//simulateBase = "sim_null"
+//lifetime = 2.0
+//renderBase = "draw_twirl_trail"
+//textureName = "raindrop.tga"
+//textureBlend = "one one modulate"
+//startColor = "0 255 255 8" 
+//finishColor = "0 0 255 0" 
+//startRadius = 0.3
+//finishRadius = 0.5
+//animateTime = 3.0
+//emitDelay = 0.003
+//emitLife = 2.0
+//rotationrate = 20
+
+[PointFlare1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "sparker_srv.flareemit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"//.4 0 0
+emitVariance = "2.5 2.5 2.5"// .5 .5 .5
+
+[flareemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_static"
+textureName = "static.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.05
+finishRadius = 0.3
+emitDelay = 0.05 //.01
+emitDelayVar = 0.0
+innerRadius = 0.01
+outerRadius = 5.0
+segmentTime = 0.4

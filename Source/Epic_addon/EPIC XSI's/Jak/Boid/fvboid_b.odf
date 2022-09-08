@@ -1,0 +1,191 @@
+[GameObjectClass]
+baseName = "fvboid_b"
+geometryName = "mcwing_skel_2b.xsi"
+
+//animCount = 1
+//animName1 = "fly"
+//animFile1 = "mcwing_fly_b.xsi"
+
+animCount = 4
+animName1 = "forward"
+animFile1 = "mcwing_fly_b.xsi"
+animName2 = "neutral"
+animFile2 = "mcwing_fly_b.xsi"
+animName3 = "reverse"
+animFile3 = "mcwing_fly_b.xsi"
+animName4 = "idle"
+animFile4 = "mcwing_fly_b.xsi"
+
+geometryScale = 0.2 //0.8
+//cockpitName= "ivtank_cockpit.xsi"
+classLabel = "aircraft"//"boid"
+scrapValue = 10
+scrapCost = 20
+customCost = 25
+buildTime = 15.0
+customTime = 20.0
+maxHealth = 500// 1800
+addhealth = 0 //5
+maxAmmo = 5000
+addAmmo = 50
+unitName = "Wing Raider"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+//explosionName = "xcerbxpld"//"xcerbsml_b"//shipxplc"
+
+heatSignature = 1.0
+imageSignature = 5.0
+radarSignature = 3.0
+isAssault = 0
+armorClass = N
+isFlying = 1
+ejectRatio = 0
+needPilot = 0
+
+
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fvboid_b.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gclaser_cb"
+weaponAssault1 = 0
+
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+//xplChunk = "xcerbchunk"
+xplCrash = "xcerbxpl"
+rangeScan = 1500.0f
+periodScan = 1.0f
+velocJam = 5.0f
+engageRange = 1000
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+
+LeaveExplodeScorch = false
+MaxScorchHeight = 20.0
+
+AircraftAttackMustDeploy = true
+attackTask = "DefendArea"
+defendTask = "DefendArea"
+waitTask = "DefendArea"
+
+ClosestEnemyGoodEyes = true
+
+braccelFactor = 0.1 //0.05
+velFactor = 0.4 //0.3
+steerFactor = 1.2
+omegaFactor = 0.4
+strafeFactor = 0.1
+
+avoidSpeed = 60;
+topSpeed = 120; //350
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+AlwaysDeployed = true
+AlwaysUndeployed = false
+
+velocSet(L) = 15.0 // minimum velocity
+velocSet(M) = 55.0 // cruising velocity
+velocSet(H) = 80.0 // maximum velocity
+accelThrust = 60.0 // thrust acceleration
+accelBrake = 80.0 // brake acceleration
+accelDrag = 50//10.0 // drag acceleration
+omegaSteer(L) = 24//4.51 // steer turn rate at minimum
+omegaSteer(M) = 16//2.52 // steer turn rate at cruising
+omegaSteer(H) = 8//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 3.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 1.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.76 // airbrake turn rate at maximum
+alphaSteer = 8.0 // steering angular acceleration
+alphaStrafe = 15.0 // airbrake angular acceleration
+minAltitude = 20.0 // minimum altitude
+maxAltitude = 100.0 // maximum altitude
+alphaLevel = 10.0 // leveling angular acceleration
+alphaDamp = 5.0 // damping angular acceleration
+pitchPitch = 0.5 // maximum pitch angle
+rollSteer = 0.8//0.7 // maximum roll angle from steering
+rollStrafe = 0.8 // maximum roll angle from airbraking
+timeDeploy = 0.5 // time to deploy
+timeUndeploy = 1.5 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 60
+AILiftSpring = 15.0
+LiftSpring = 12.5 
+
+soundThrust = "enginetal.wav"
+soundTurbo = "enginetal.wav"
+
+[Boid]
+animRate = 20
+
+
+////////////////////////////
+
+[tail]
+renderBase = "draw_multi"
+renderCount = 2
+//renderName1 = "cvtalon_b.soot"
+renderName2 = "fvboid_b.trail"
+
+//renderName3 = "cvtalon_b.Light1"
+
+
+
+
+[Trail]
+maxdist = 3000
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail3.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "85 85 85 255"
+finishColor = "85 85 85 255"
+startRadius = 0.3
+finishRadius = 0.0
+segmentTime = 0.25
+segmentVariance = "2 2 0"
+animateTime = 0.4
+
+
+
+
+
+

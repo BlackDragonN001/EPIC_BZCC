@@ -1,0 +1,43 @@
+// ======================
+// DESTROYED DAMAGE STATE
+// ======================
+
+[dmgvhcl4_srv]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "dmgvhcl4_srv.smokeemitter"
+renderName2 = "dmgvhcl4_srv.flameemitter"
+
+[SmokeEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 2.0
+textureName = "cloudsmokefull.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 2.0
+rotationRate = 2.0
+
+[FlameEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitInherit = "0.5 0.5 0.5"
+emitLife = 1.0
+textureName = "cloudsmokeadd.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 1.0
+finishRadius = 0.3
+animateTime = 1.0
+rotationRate = 10.0
