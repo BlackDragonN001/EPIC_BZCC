@@ -1769,7 +1769,7 @@ Frame frm-plate {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -2602,7 +2602,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -3041,7 +3041,7 @@ Frame frm-plate {
                                        0.500000;0.500000;0.500000;;
 
                                        SI_Texture2D  {
-                                          "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                                          "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                                           3;
                                           256;256;
                                           0;255;0;255;
@@ -3571,7 +3571,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -4010,7 +4010,7 @@ Frame frm-plate {
                                        0.500000;0.500000;0.500000;;
 
                                        SI_Texture2D  {
-                                          "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                                          "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                                           3;
                                           256;256;
                                           0;255;0;255;
@@ -4495,7 +4495,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -4683,7 +4683,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -5278,7 +5278,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -5805,7 +5805,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -5937,7 +5937,7 @@ Frame frm-plate {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvrecy00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -6159,7 +6159,7 @@ Frame frm-plate {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf01.pic";
+                     "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -6557,7 +6557,7 @@ Frame frm-plate {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf01.pic";
+                     "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -7056,7 +7056,7 @@ Frame frm-plate {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextw05.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextw05_d.pic";
                      4;
                      256;256;
                      0;255;0;255;

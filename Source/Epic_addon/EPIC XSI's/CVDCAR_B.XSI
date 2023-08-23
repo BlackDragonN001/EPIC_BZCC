@@ -534,7 +534,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvdcar00.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvdcar00.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -567,7 +567,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvrbomb02.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvrbomb02.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -2321,7 +2321,7 @@ Frame frm-hp_dummyroot_1 {
                   0;0.039216;0.039216;;
 
                   SI_Texture2D  {
-                     "E:\BZ2CP_Units\Textures_Medium\fvdcar01.bmp";
+                     "E:\BZ2CP_Units\Textures_Medium\cvdcar01.bmp";
                      3;
                      256;256;
                      0;255;0;255;
@@ -2354,7 +2354,7 @@ Frame frm-hp_dummyroot_1 {
                   0;0.039216;0.039216;;
 
                   SI_Texture2D  {
-                     "E:\BZ2CP_Units\Textures_Medium\fvrbomb02.bmp";
+                     "E:\BZ2CP_Units\Textures_Medium\cvrbomb02.bmp";
                      3;
                      256;256;
                      0;255;0;255;
@@ -2387,7 +2387,7 @@ Frame frm-hp_dummyroot_1 {
                   0;0.039216;0.039216;;
 
                   SI_Texture2D  {
-                     "E:\BZ2CP_Units\Textures_Medium\fvrbomb01.bmp";
+                     "E:\BZ2CP_Units\Textures_Medium\cvrbomb01.bmp";
                      3;
                      256;256;
                      0;255;0;255;
@@ -3290,7 +3290,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvdcar00.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvdcar00.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -3323,7 +3323,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvrbomb02.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvrbomb02.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -3482,7 +3482,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvdcar00.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvdcar00.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -3908,7 +3908,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvdcar01.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvdcar01.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -3941,7 +3941,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvrbomb02.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvrbomb02.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -3974,7 +3974,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvrbomb01.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvrbomb01.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -4985,7 +4985,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvdcar01.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvdcar01.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -5018,7 +5018,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvrbomb02.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvrbomb02.bmp";
                   3;
                   256;256;
                   0;255;0;255;
@@ -5051,7 +5051,7 @@ Frame frm-hp_dummyroot_1 {
                0;0.039216;0.039216;;
 
                SI_Texture2D  {
-                  "E:\BZ2CP_Units\Textures_Medium\fvrbomb01.bmp";
+                  "E:\BZ2CP_Units\Textures_Medium\cvrbomb01.bmp";
                   3;
                   256;256;
                   0;255;0;255;

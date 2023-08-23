@@ -4222,7 +4222,7 @@ Frame frm-dummyroot {
 					0.498039;0.498039;0.498039;;
 
 					SI_Texture2D {
-						"CBRECY~1.BMP";
+						"CBRECY01.BMP";
 						3;
 						0;0;
 						0;12594;0;543;
@@ -4939,7 +4939,7 @@ Frame frm-dummyroot {
 					0.498039;0.498039;0.498039;;
 
 					SI_Texture2D {
-						"CBRECY~1.BMP";
+						"CBRECY01.BMP";
 						3;
 						0;0;
 						0;12594;0;543;
@@ -5558,7 +5558,7 @@ Frame frm-dummyroot {
 					0.498039;0.498039;0.498039;;
 
 					SI_Texture2D {
-						"CBRECY~1.BMP";
+						"CBRECY01.BMP";
 						3;
 						0;0;
 						0;12594;0;543;

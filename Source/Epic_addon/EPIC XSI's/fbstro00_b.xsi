@@ -177,7 +177,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw01.pic";
+                     "fbextw01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -210,7 +210,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw04.pic";
+                     "fbextw04_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -243,7 +243,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw02.pic";
+                     "fbextw02_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -651,7 +651,7 @@ SI_Light  light1 {
                      0.5;0.5;0.5;;
 
                      SI_Texture2D  {
-                        "fbextw04.pic";
+                        "fbextw04_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -855,7 +855,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextf01.pic";
+                     "fbextf01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -1262,7 +1262,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw05.pic";
+                     "fbextw05_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -1295,7 +1295,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw02.pic";
+                     "fbextw02_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -1328,7 +1328,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw01.pic";
+                     "fbextw01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -1571,7 +1571,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextw05.pic";
+                     "fbextw05_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -1738,7 +1738,7 @@ SI_Light  light1 {
                   0.5;0.5;0.5;;
 
                   SI_Texture2D  {
-                     "fbextf01.pic";
+                     "fbextf01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;

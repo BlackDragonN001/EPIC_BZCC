@@ -200,7 +200,7 @@ Frame frm-terrain__h {
           1;
           0.500000;0.500000;0.500000;;
           TextureFilename {
-            "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf02.pic";
+            "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf02_d.pic";
           }
         }
       }
@@ -478,7 +478,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05_d.pic";
             }
           }
           SI_Material {
@@ -489,7 +489,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
             }
           }
           SI_Material {
@@ -500,7 +500,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01_d.pic";
             }
           }
         }
@@ -807,7 +807,7 @@ Frame frm-terrain__h {
                 1;
                 0.500000;0.500000;0.500000;;
                 TextureFilename {
-                  "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05.pic";
+                  "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05_d.pic";
                 }
               }
             }
@@ -857,7 +857,7 @@ Frame frm-terrain__h {
                   1;
                   0.500000;0.500000;0.500000;;
                   TextureFilename {
-                    "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05.pic";
+                    "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05_d.pic";
                   }
                 }
               }
@@ -1087,7 +1087,7 @@ Frame frm-terrain__h {
                     1;
                     0.500000;0.500000;0.500000;;
                     TextureFilename {
-                      "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+                      "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
                     }
                   }
                 }
@@ -1501,7 +1501,7 @@ Frame frm-terrain__h {
               1;
               0.500000;0.500000;0.500000;;
               TextureFilename {
-                "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw02.pic";
+                "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw02_d.pic";
               }
             }
             SI_Material {
@@ -1512,7 +1512,7 @@ Frame frm-terrain__h {
               1;
               0.500000;0.500000;0.500000;;
               TextureFilename {
-                "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbintf01.pic";
+                "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbintf01_d.pic";
               }
             }
           }
@@ -2092,7 +2092,7 @@ Frame frm-terrain__h {
                 1;
                 0.500000;0.500000;0.500000;;
                 TextureFilename {
-                  "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextw05.pic";
+                  "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextw05_d.pic";
                 }
               }
             }
@@ -2953,7 +2953,7 @@ Frame frm-terrain__h {
               1;
               0.500000;0.500000;0.500000;;
               TextureFilename {
-                "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05.pic";
+                "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw05_d.pic";
               }
             }
           }
@@ -3075,7 +3075,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
             }
           }
           SI_Material {
@@ -3086,7 +3086,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01_d.pic";
             }
           }
         }
@@ -3226,7 +3226,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
             }
           }
           SI_Material {
@@ -3237,7 +3237,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01_d.pic";
             }
           }
         }
@@ -3377,7 +3377,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
             }
           }
           SI_Material {
@@ -3388,7 +3388,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01_d.pic";
             }
           }
         }
@@ -3528,7 +3528,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
             }
           }
           SI_Material {
@@ -3539,7 +3539,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01_d.pic";
             }
           }
         }
@@ -3732,7 +3732,7 @@ Frame frm-terrain__h {
             1;
             0.500000;0.500000;0.500000;;
             TextureFilename {
-              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf02.pic";
+              "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf02_d.pic";
             }
           }
         }

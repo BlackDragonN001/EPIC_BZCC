@@ -192,7 +192,7 @@ Frame frm-dummy_h {
             0;0.498039;0.498039;;
 
             SI_Texture2D  {
-               "fbextf02.bmp";
+               "fbextf02_d.pic";
                3;
                256;256;
                0;255;0;255;
@@ -531,7 +531,7 @@ Frame frm-dummy_h {
                0;0.498039;0.498039;;
 
                SI_Texture2D  {
-                  "fbextw05.bmp";
+                  "fbextw05_d.pic";
                   3;
                   256;256;
                   0;255;0;255;
@@ -1028,7 +1028,7 @@ Frame frm-dummy_h {
                   1;1;1;;
 
                   SI_Texture2D  {
-                     "C:\Backup\Expanded\Pic\fbextw04.pic";
+                     "C:\Backup\Expanded\Pic\fbextw04_d.pic";
                      3;
                      256;256;
                      0;255;0;255;

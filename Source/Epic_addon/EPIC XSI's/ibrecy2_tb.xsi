@@ -9630,7 +9630,7 @@ Frame frm-obj72 {
 						1.000000;1.000000;1.000000;;
 
 						SI_Texture2D {
-							"ioface00.bmp";
+							"iofacer00.bmp";
 							3;
 							0;0;
 							0;12594;0;543;

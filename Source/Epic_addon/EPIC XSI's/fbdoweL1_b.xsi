@@ -279,7 +279,7 @@ Frame frm-obj1 {
             0.500000;0.500000;0.500000;;
 
             SI_Texture2D  {
-               "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf01.pic";
+               "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextf01_d.pic";
                3;
                256;256;
                0;255;0;255;
@@ -1073,7 +1073,7 @@ Frame frm-obj1 {
                0.500000;0.500000;0.500000;;
 
                SI_Texture2D  {
-                  "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04.pic";
+                  "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw04_d.pic";
                   4;
                   256;256;
                   0;255;0;255;
@@ -1380,7 +1380,7 @@ Frame frm-obj1 {
                0.500000;0.500000;0.500000;;
 
                SI_Texture2D  {
-                  "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01.pic";
+                  "Z:/modelsdirectory/FURY_Buildings/PICTURES/fbextw01_d.pic";
                   4;
                   256;256;
                   0;255;0;255;

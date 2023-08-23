@@ -96,7 +96,7 @@ Frame frm-terrain {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextf01.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextf01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -554,7 +554,7 @@ Frame frm-terrain {
                      0.500000;0.500000;0.500000;;
 
                      SI_Texture2D  {
-                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                        "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                         3;
                         256;256;
                         0;255;0;255;
@@ -1806,7 +1806,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -2256,7 +2256,7 @@ Frame frm-terrain {
                            0.500000;0.500000;0.500000;;
 
                            SI_Texture2D  {
-                              "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                              "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                               3;
                               256;256;
                               0;255;0;255;
@@ -2725,7 +2725,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -2857,7 +2857,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -2989,7 +2989,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -3315,7 +3315,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -4452,7 +4452,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -5395,7 +5395,7 @@ Frame frm-terrain {
                         0.500000;0.500000;0.500000;;
 
                         SI_Texture2D  {
-                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                           "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                            3;
                            256;256;
                            0;255;0;255;
@@ -5612,7 +5612,7 @@ Frame frm-terrain {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextf01.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_Buildings/PICTURES/fbextf01_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -5872,7 +5872,7 @@ Frame frm-terrain {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                      3;
                      256;256;
                      0;255;0;255;
@@ -13624,7 +13624,7 @@ Frame frm-collision__hc {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                      4;
                      256;256;
                      0;255;0;255;
@@ -13907,7 +13907,7 @@ Frame frm-collision__hc {
                   0.500000;0.500000;0.500000;;
 
                   SI_Texture2D  {
-                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00.pic";
+                     "//SERVER/Battlezone/modelsdirectory/FURY_vehicles/PICTURES/fvscav00_d.pic";
                      4;
                      256;256;
                      0;255;0;255;
