@@ -69,7 +69,7 @@ armorClass = L
 
 /////// weapons ///////////////////
 
-weaponMask = 00001
+weaponMask = 00011
 weaponHard1 = "HP_ROCKET_1"
 weaponName1 = "gcworms"
 weaponAssault1 = 0
