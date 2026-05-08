@@ -1,0 +1,196 @@
+[GameObjectClass]
+baseName = "ivcorvs"
+geometryName = "ivcorvette.xsi"
+geometryScale = 0.16
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 60
+customCost = 75
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 7000
+addHealth = 15
+maxAmmo = 800
+addAmmo = 60
+unitName = "Mamba Gunship"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "ixshipxplw"
+collisionRadius = 250.0
+
+heatSignature = 12.0
+imageSignature = 40.0
+radarSignature = 30.0
+isAssault = 0
+armorClass = L
+needPilot = 1
+cockpitName = "ivscav_cockpit.xsi"
+ejectratio = 0
+isFlying = 1
+CanAcceptPowerups = false
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivcorvs.trail"
+effectHard2 = "hp_trail_2"
+effectName2 = "ivcorvs.trail"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivspbombsa.trail"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivspbombsa.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard2 = "HP_CANNON_1"
+weaponName2 = "gcapcan_c"
+weaponAssault1 = 0
+//weaponHard2 = "HP_gun_1"
+//weaponName2 = "gsonics" // "gsgun"
+//weaponAssault2 = 0
+//weaponHard3 = "HP_gun_2"
+//weaponName3 = "gclusta"
+//weaponAssault3 = 0
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gclusta"
+weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "THRUSTcorv"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 2000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 1600
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.5
+
+avoidSpeed = 70;
+topSpeed = 150;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+AlwaysDeployed = true
+AlwaysUndeployed = false
+
+velocSet(L) = 0.0 // minimum velocity
+velocSet(M) = 45.0 // cruising velocity
+velocSet(H) = 200.0 // maximum velocity
+accelThrust = 30.0 // thrust acceleration
+accelBrake = 30.0 // brake acceleration
+accelDrag = 20//10.0 // drag acceleration
+omegaSteer(L) = 5//4.51 // steer turn rate at minimum
+omegaSteer(M) = 4//2.52 // steer turn rate at cruising
+omegaSteer(H) = 3//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 1.12 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.91 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.76 // airbrake turn rate at maximum
+alphaSteer = 6.0 // steering angular acceleration
+alphaStrafe = 8.0 // airbrake angular acceleration
+minAltitude = 170.0 // minimum altitude
+maxAltitude = 750.0 // maximum altitude
+alphaLevel = 2.5 // 10 leveling angular acceleration
+alphaDamp = 8.0//4 // 5 damping angular acceleration
+pitchPitch = 2.5//1.5//0.7 //0.5 // maximum pitch angle
+rollSteer = 1.6 //1 //0.7 // maximum roll angle from steering
+rollStrafe = 2 //1 // maximum roll angle from airbraking
+timeDeploy = 5 // time to deploy
+timeUndeploy = 5 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 450
+AILiftSpring = 25.0
+LiftSpring = 12.5 
+
+
+soundBrake = "wmflame.wav"
+soundDeploy = "wmflame.wav"
+soundUndeploy = "wmflame.wav"
+
+
+soundThrust = "lowamb.wav"
+soundTurbo = "lowamb.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivcorvs.trailer"
+renderName2 = "ivcorvs.flame"
+renderName3 = "ivcorvs.Light1"
+
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 150"
+finishColor = "0 0 255 0"
+startRadius = 1.1
+finishRadius = 0.8
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 255"
+finishColor = "0 100 255 0"
+startRadius = 4
+finishRadius = 0.8
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 7.0
+finishRadius = 7.0
+rotationRate = 10.0
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 5000                 ;...distance over this many meters => switch to lod2

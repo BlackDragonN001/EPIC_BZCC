@@ -1,0 +1,93 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = "sonic03b.wav"
+
+shotGeometry = NULL
+shotRadius = 2.0
+//xplGround = "xsonicgnd_c"
+xplVehicle = "xcblastcar"
+xplBuilding = "xcblastcar"
+
+renderName = "sonicblasts.render"
+
+ammoCost = 80
+lifeSpan = 2.5 // 150m
+shotSpeed = 800.0
+
+damageValue(N) = 500 // none
+damageValue(L) = 300 // light
+damageValue(H) = 100 // heavy
+
+damageValue(S) = 300 // standard
+damageValue(D) = 500 // deflection
+damageValue(A) = 100 // absorbtion
+
+[MagnetShellClass]
+triggerDelay = 0.0
+fieldRadius = 40.0 // 20.0 // 2.76
+objPushCenter = 30.0
+objPushEdge = 3.0
+objDrag = 0.1
+ordPushCenter = 300.0 // 300.0 // 700.0
+ordPushEdge = 50.0 // 30.0 // 500.0
+ordDrag = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "sonicblasts.Core"
+renderName2 = "sonicblasts.Flare"
+renderName3 = "sonicblasts.trail"
+renderName4 = "sonicblasts.light"
+
+
+[Core]
+renderBase = "draw_twirl_trail"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 255 255" 
+finishColor = "0 150 255 120" 
+startRadius = 2
+finishRadius = 2
+rotationRate = 0.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.005
+
+[Flare]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 255 65" 
+finishColor = "0 200 200 0" 
+startRadius = 2.5
+finishRadius = 4
+animateTime = 0.7
+emitDelay = 0.01
+emitLife = 0.5
+rotationrate = 20
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "200 255 255 220"
+finishColor = "0 155 255 0"
+startRadius = 0.8
+finishRadius = 0.01
+segmentTime = 0.3
+
+[Light]
+renderBase = "draw_light"
+startColor = "0 250 255 500"
+finishColor = "0 250 255 500"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

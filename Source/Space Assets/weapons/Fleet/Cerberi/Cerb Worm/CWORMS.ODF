@@ -1,0 +1,84 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "cvcomet00.xsi"
+shotSound = "satord.wav"
+
+renderName = "cworms.render"
+
+xplGround = "xwormacar"
+xplVehicle = "xwormacar"
+xplBuilding = "xwormacar"
+
+ammoCost = 20
+lifeSpan = 2 
+shotSpeed = 400.0
+
+damageValue(N) = 80 // none
+damageValue(L) = 70 // light
+damageValue(H) = 30 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 30 // deflection
+damageValue(A) = 70 // absorbtion
+
+[MissileClass]
+omegaTurn = 1.8
+
+[ThermalMissileClass]
+coneAngle = 0.4
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cworms.light"
+renderName2 = "cworms.flare"
+renderName3 = "cworms.sparkle"
+renderName4 = "cworms.trailer"
+
+[Light]
+renderBase = "draw_light"
+startColor = "100 55 250 400"
+finishColor = "100 55 250 400"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "100 55 255 255"
+finishColor = "100 55 255 255"
+startRadius = 2.5
+finishRadius = 2.5
+
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "plasma.tga" // flame
+textureblend = "one one modulate"
+startColor = "60 10 200 600"
+finishColor = "0 0 100 100"
+startRadius = 0.3
+finishRadius = 0.1
+animateTime = 1.0
+emitDelay = 0.005
+emitVariance = "3.0 3.0 3.0"
+emitLife = 1.5
+
+[trailer]
+simulateBase = "sim_dust"//dust
+lifeTime = 1.5 //2.5
+renderBase = "draw_trail"
+textureName = "scerbbeam.tga"
+textureBlend = "one one modulate"
+textureRate = 0.08
+startColor = "180 80 255 250"
+finishColor = "0 0 100 0"
+startRadius = 0.2
+finishRadius = 1.0
+segmentTime = 0.2
+animateTime = 0.8

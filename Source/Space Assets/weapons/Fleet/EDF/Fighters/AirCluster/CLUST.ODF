@@ -1,0 +1,87 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "gshad02.wav"
+
+xplGround = ""
+xplVehicle = "xclustcar"
+xplBuilding = "xclustcar"
+renderName = "clust.render"
+
+ammoCost = 20
+lifeSpan = 3.6 // 800m
+shotSpeed = 200.0
+
+damageValue(N) = 80 // none
+damageValue(L) = 60 // light
+damageValue(H) = 40 // heavy
+
+damageValue(S) = 60 // standard
+damageValue(D) = 40 // deflection
+damageValue(A) = 80 // absorbtion
+
+[MissileClass]
+omegaTurn = 20.0
+omegaWaver = 0.3
+rateWaver = 0.6
+
+[ThermalMissileClass]
+coneAngle = 15.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "clust.flare"
+renderName2 = "clust.exhaust"
+renderName3 = "clust.flame"
+renderName4 = "clust.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 200 200 200"
+finishColor = "255 50 50 100"
+startRadius = 3.0
+finishRadius = 3.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 100 155 150"
+finishColor = "180 70 100 0"
+startRadius = 0.2
+finishRadius = 1.0
+segmentTime = 0.25
+animateTime = 0.2
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 100 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "250 140 100 255"
+finishColor = "255 255 255 0"
+startRadius = 0.01
+finishRadius = 0.6
+segmentTime = 1.0
+animateTime = 0.05
+
+
+

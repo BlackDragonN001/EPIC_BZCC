@@ -1,0 +1,294 @@
+[GameObjectClass]
+baseName = "ivfrigs"
+GlowTexture = "ivfriga0.pic"
+geometryName = "ivpfrigs00_b.xsi"
+geometryScale = 1.5
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 90
+customCost = 105
+buildTime = 35.0
+customTime = 40.0
+maxHealth = 15000
+addHealth = 15
+maxAmmo = 4000
+addAmmo = 120
+unitName = "Assault Frigate"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "xivdests"
+collisionRadius = 2000.0
+NoShadow = 1 
+boxcollide = 1
+
+heatSignature = 24.0
+imageSignature = 50.0
+radarSignature = 40.0
+isAssault = 1
+armorClass = L
+needPilot = 1
+cockpitName = "ivscav_cockpit.xsi"
+ejectratio = 0
+isFlying = 1
+CanAcceptPowerups = false
+
+DeployOnBuild = 1
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivtfrigs.trail"
+
+effectHard2 = "hp_emit_1"
+effectName2 = "ivtfrigs.lightg"
+effectHard3 = "hp_emit_2"
+effectName3 = "ivtfrigs.lightg"
+effectHard4 = "hp_emit_3"
+effectName4 = "ivtfrigs.lightg"
+effectHard5 = "hp_emit_4"
+effectName5 = "ivtfrigs.lightr"
+effectHard6 = "hp_emit_5"
+effectName6 = "ivtfrigs.lightr"
+effectHard7 = "hp_emit_6"
+effectName7 = "ivtfrigs.lightr"
+
+
+/////// weapons ///////////////////
+
+weaponMask = 01111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gsplas_f"
+weaponAssault1 = 1
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gsplas_f"
+weaponAssault2 = 1
+weaponHard3 = "HP_CANNON_1"
+weaponName3 = "gcapcan_F" // "gsgun"
+weaponAssault3 = 0
+weaponHard4 = "HP_CANNON_2"
+weaponName4 = "gcapcan_F"
+weaponAssault4 = 0
+//weaponHard5 = "HP_SPECIAL_1"
+//weaponName5 = "THRUST_corv"
+//weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+//GROUND_ELASTICITY = 2//0.03125
+DAMAGE_SCALE = 0.01 //0.05
+CanInteractWithTerminal = true 
+WeaponsConverge = true
+RetargetOnStrafe = true
+CollideTerrainSound = "silence.wav"
+
+attackrange = 2700
+
+FireWhenCanHitFriends = false
+GotoTaskHasLeader = false 
+
+MaxWeaponPitch = 2
+MinWeaponPitch = -2
+
+AvoidType = 2 //plan
+
+
+damageEffect1 = "Dmgdest1"
+damageEffect2 = "Dmgdest2"
+damageEffect3 = "Dmgdest2"
+damageEffect4 = "Dmgdest3"
+xplCrash = "xivdests_crash"
+
+blastDist = 2700
+AttackTaskBlastDist = 2700.0
+waitRange = 1500.0
+
+LeaveExplodeScorch = false
+
+rangeScan = 7000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 2000
+
+//canHunt = 1
+
+//AllowLinkWeapons = 1
+//DoWeaponCanHitCheck = true 
+OffensiveProcessIsTenacious = 1
+OffensiveProcessIsTenaciousAITeam  = 0
+
+AircraftAttackMustDeploy = true
+attackTask = "AssaultTankAttack"
+subAttackTask = "SitAttack" //"ArtlSubAttack"//SitAttack//"RocketTankAttack"
+
+subAttackClass = "ANS"
+
+ClosestEnemyGoodEyes = yes 
+
+pitchfactor = 1.5
+braccelFactor = 0.03 //0.03
+velFactor = 0.1//0.2
+steerFactor = 0.5//1.5
+omegaFactor = 0.7 //0.2
+strafeFactor = 0.0
+
+avoidSpeed = 70;
+topSpeed = 200;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+selectReadyMsg = "frigcomplete.wav"
+
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = "friglost.wav"
+
+[AirCraftClass]
+AlwaysDeployed = true
+MaxTakeoffSpeed = 5000.0
+
+
+velocSet(L) = -10.0 // 5 minimum velocity
+velocSet(M) = 0.0 // 65 cruising velocity
+velocSet(H) = 220.0 // maximum velocity
+accelThrust = 30.0 // thrust acceleration
+accelBrake = 40.0 // brake acceleration
+accelDrag = 50//10.0 // drag acceleration
+omegaSteer(L) = 1//4.51 // steer turn rate at minimum
+omegaSteer(M) = 0.5//2.52 // steer turn rate at cruising
+omegaSteer(H) = 0.2//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0 // airbrake turn rate at minimum
+omegaStrafe(M) = 0 // airbrake turn rate at cruising
+omegaStrafe(H) = 0 // airbrake turn rate at maximum
+alphaSteer = 3.0 // steering angular acceleration
+alphaStrafe = 0.0 // airbrake angular acceleration
+minAltitude = 4000.0 // minimum altitude
+maxAltitude = 10000.0 // maximum altitude
+alphaLevel = 2.5 // 10 leveling angular acceleration
+alphaDamp = 10.0//4 // 5 damping angular acceleration
+pitchPitch = 3.5//1.5//0.7 //0.5 // maximum pitch angle
+rollSteer = 1.0 //1 //0.7 // maximum roll angle from steering
+rollStrafe = 3.2 //1 // maximum roll angle from airbraking
+timeDeploy = 30 // time to deploy
+timeUndeploy = 30 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+
+aiAltitude = 7100
+AILiftSpring = 30.0
+LiftSpring = 30 
+
+
+soundBrake = "wmflame.wav"
+soundDeploy = "wmflame.wav"
+soundUndeploy = "wmflame.wav"
+
+
+soundThrust = "lowamb.wav"
+soundTurbo = "lowamb.wav"
+
+
+////////////////////////////
+
+[trail]
+maxdist = 100000
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivtfrigs.trailer"
+renderName2 = "ivtfrigs.flame"
+renderName3 = "ivtfrigs.Light1"
+
+
+[trailer]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 150"
+finishColor = "0 0 255 0"
+startRadius = 5
+finishRadius = 3
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 255"
+finishColor = "0 100 255 0"
+startRadius = 8
+finishRadius = 2
+segmentTime = 0.5
+animateTime = 0.3
+
+[LightG]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 250 5 1750"
+finishColor = "20 250 5 1750"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lightr]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "200 0 0 2450"
+finishColor = "200 0 0 2450"
+startRadius = 8.0
+finishRadius = 8.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Light1]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "150 200 255 4450"
+finishColor = "150 200 255 4450"
+startRadius = 28.0
+finishRadius = 28.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 5000                 ;...distance over this many meters => switch to lod2

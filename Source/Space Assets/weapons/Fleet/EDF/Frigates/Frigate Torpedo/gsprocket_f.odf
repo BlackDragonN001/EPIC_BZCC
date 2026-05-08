@@ -1,0 +1,33 @@
+[WeaponClass]
+classLabel = "cannon"
+//altName = "gsprocketc"
+ordName = "sprocket_f"
+wpnName = "Torpedo Spread"
+fireSound = "sprocket.wav"
+wpnReticle = "grktbomb"
+wpnCategory = "ROCK"
+isAssault = 1
+aiRange = 3000
+flashname = "gsprocket_f.flash"
+
+
+[CannonClass]
+shotDelay = 7.0
+salvoCount = 3
+salvoDelay = 0.5
+shotVariance = 0.04
+shotalternate = 0
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 255 255 700"
+finishColor = "0 255 255 300"
+startRadius = 8.0
+finishRadius = 2.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

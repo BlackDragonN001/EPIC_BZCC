@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+altName = "gfsamiss1"
+ordName = "fsamiss1"
+wpnName = "Pulsar Msl"
+fireSound = "gshad01.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 1800 // 5000
+
+[LauncherClass]
+lockRange = 1800.0  // was 170 GEC
+shotDelay = 1
+lockDelay = 15.0
+coneAngle = 50 //.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "sserv02.wav" //"lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"

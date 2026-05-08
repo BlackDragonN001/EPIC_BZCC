@@ -1,0 +1,94 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = NULL
+
+xplGround = "xshellgnd"
+xplVehicle = "xshellcar"
+xplBuilding = "xshellcar"
+
+renderName = "shellgun_c.render"
+
+ammoCost = 3.25
+lifeSpan = 1.0 // 105m  135 GEC
+shotSpeed = 800.0
+
+damageValue(N) = 30 // none // 320
+damageValue(L) = 20 // light // 320
+damageValue(H) = 10 // heavy // 240
+
+damageValue(S) = 20 // standard // 300
+damageValue(D) = 15 // deflection // 160
+damageValue(A) = 30 // absorbtion // 320
+
+[MissileClass]
+omegaTurn = 0.1
+
+[ThermalMissileClass]
+coneAngle = 2.0
+
+[render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "shellguns_c.e1"
+renderName2 = "shellguns_c.e2"
+renderName3 = "xshellgun_c.e3"
+renderName4 = "shellgusn_c.e4"
+
+[e1]
+simulateBase = "sim_null"
+lifeTime = 0.1 //.1
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 180 80 250"
+finishColor = "200 0 0 80"
+startRadius = 0.08 //.05
+finishRadius = 0.04 // .05
+segmentTime = 0.05 //.1
+animateTime = 0.1 //.1
+
+[e2]
+simulateBase = "sim_null"
+lifeTime = 1.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 130 0 255"
+finishColor = "255 130 0 255"
+startRadius = 0.2
+finishRadius = 0.2
+
+[e3]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "shellgun_c.trail2"
+emitDelay = 0.005
+emitVelocity = "1.0 1.0 1.0"//.4 0 0
+emitVariance = "0.0 0.0 0.0"// .5 .5 .5
+
+[trail2]
+simulateBase = "sim_null"//dust
+lifeTime = 1.5 //2.5
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "255 150 50 255"
+finishColor = "255 0 0 0"
+startRadius = 0.08
+finishRadius = 0.7
+segmentTime = 0.5
+animateTime = 1.5
+
+[e4]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.1
+startColor = "255 100 0 30"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 0.6
+segmentTime = 0.5//3.0
+animateTime = 0.01

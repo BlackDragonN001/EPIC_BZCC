@@ -1,0 +1,21 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "capcan_f"
+//altname = "gcapcan_a"
+wpnName = "Plasma Cannon"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "cann"
+aiRange = 1800
+isAssault = 0
+//wpnPriority = 1
+flashName = "gsgun.flash"
+AllowAimHigh = false
+
+
+[CannonClass]
+shotDelay = 0.25
+salvoCount = 1
+salvoDelay = 0.01
+shotAlternate = 1
+

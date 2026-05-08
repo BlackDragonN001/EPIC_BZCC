@@ -1,0 +1,54 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+xplGround = "xgaussgnd"
+xplVehicle = "xgausscar"
+xplBuilding = "xgaussbld"
+
+renderName = "sbcannc.render"
+
+ammoCost = 10
+lifeSpan = 900e-3 // 150m
+shotSpeed = 1e3
+
+damageValue(N) = 195 // none 
+damageValue(L) = 175 // light 
+damageValue(H) = 135 // heavy 
+
+damageValue(S) = 175 // standard // 200
+damageValue(D) = 130 // deflection // 150
+damageValue(A) = 195 // absorbtion // 250
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "sbcannc.beam"
+renderName2 = "sbcannc.ring"
+
+[Beam]
+renderBase = "draw_bolt"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "0 127 255 0"
+startRadius = 0.1
+finishRadius = 0.05
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.06
+textureRate = 0.01
+textureSpeed = -0.1
+
+[Ring]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureblend = "one one modulate"
+startColor = "0 127 255 60"
+finishColor = "0 0 255 0"
+startRadius = 0.2
+finishRadius = 1.3
+animateTime = 1.0
+emitDelay = 0.003
+emitVariance = "0.2 0.2 0.2"
+emitLife = 1.5
+rotationRate = 2.0

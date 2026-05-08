@@ -1,0 +1,82 @@
+[GameObjectClass]
+geometryName = "recarr00.xsi"
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 50000
+maxAmmo = 0
+unitName = "carrier"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+canCollide = 0
+
+armorClass = H
+
+effectHard1 = "hp_emit_1"
+effectName1 = "recarr00.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "recarr00.render"
+effectHard3 = "hp_emit_3"
+effectName3 = "recarr00.render"
+effectHard4 = "hp_emit_4"
+effectName4 = "recarr00.render"
+effectHard5 = "hp_emit_5"
+effectName5 = "recarr00.render"
+effectHard6 = "hp_emit_6"
+effectName6 = "recarr00.render"
+effectHard7 = "hp_emit_7"
+effectName7 = "recarr00.render"
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103
+
+[render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "recarr00.smokeemitter"
+renderName2 = "recarr00.flameemitter"
+
+[SmokeEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1
+emitDelayVar = 0.03
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 10.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 128"
+finishColor = "0 0 0 0"
+startRadius = 4
+finishRadius = 15
+animateTime = 10.0
+rotationRate = 2.0
+
+[FlameEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "0.0 10.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.5 0.5 0.5"
+emitLife = 2.0
+textureName = "fire.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 6
+finishRadius = 1
+animateTime = 2.0
+rotationRate = 10.0
+
+
+
+

@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsprinks_a"
+ordName = "sprinks_c"
+wpnName = "Inferno C"
+fireSound = "xmag04.wav"
+wpnReticle = "gsting_c"
+wpnCategory = "ROCK"
+aiRange = 900
+isAssault = 0
+
+[CannonClass]
+shotDelay = 3.0
+salvoDelay = 0.2
+salvoCount = 4
+shotAlternate = 1

@@ -1,0 +1,207 @@
+[GameObjectClass]
+baseName = "ivpanther"
+geometryName = "ivspfight2.xsi"
+cockpitName = "ivrckt_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 50
+customCost = 65
+buildTime = 25.0
+customTime = 35.0
+maxHealth = 3500
+addHealth = 20
+maxAmmo = 4500
+addAmmo = 500
+unitName = "Lynx Fighter"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+//aiName = "AttachWingman"
+//aiName2 = "AttachWingman"
+explosionName = "ixftrxpl"
+collisionRadius = 150
+
+heatSignature = 8.0
+imageSignature = 16.0
+radarSignature = 15.0
+isAssault = 0
+armorClass = L
+needPilot = 1
+ejectRatio = 0
+
+//cockpitName = "ivscout_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivfighters.trail"
+effectHard2 = "hp_light_1"
+effectName2 = "ivfighters.light"
+effectHard3 = "hp_light_2"
+effectName3 = "ivfighters.light"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivfighters.trail"
+effectHard5 = "hp_light_3"
+effectName5 = "ivfighters.light"
+effectHard6 = "hp_light_4"
+effectName6 = "ivfighters.light"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gscatsa"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gaamiss1" // "gsgun"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_2"
+weaponName3 = "gaamiss1"
+weaponAssault3 = 0
+//weaponHard4 = "HP_MORTAR_1"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 1
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = "thruster"
+weaponAssault4 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "ivfighters.light"
+//lightHard2 = "hp_light_2"
+//lightName2 = "ivfighters.light"
+//lightHard3 = "hp_light_3"
+//lightName3 = "ivfighters.light"
+//lightHard4 = "hp_light_4"
+//lightName4 = "ivfighters.light"
+
+[CraftClass]
+xplCrash = "null"//"ixftrxpl"
+xplChunks = "null"
+rangeScan = 2800.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 2300
+
+braccelFactor = 0.2//0.03
+velFactor = 0.5 /0.2
+steerFactor = 1.5
+omegaFactor = 0.5//0.2
+strafeFactor = 0.5
+
+avoidSpeed = 80;
+topSpeed = 240;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 240 // []
+velocReverse = 100.0 // []
+velocStrafe = 60.0 // []
+accelThrust = 35.0 //acceleration []
+accelDragStop = 7.0 //how fast it stops once hands are off controls []
+accelJump = -100.0 // []
+
+setAltitude = 83.0 // how high off the ground
+
+alphaTrack = 14.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+pitchPitch = 2 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.42 //rolls while strafing []
+omegaSpin = 3.5 //spinning in place speed []
+omegaTurn = 2.5 //turning while moving speed []
+alphaSteer = 4.0 //how fast it responds to steering []
+rollSteer = 0.6 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+maxdist = 100000
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivfighters.trailer"
+renderName2 = "ivfighters.flame"
+renderName3 = "ivfighters.Light1"
+
+
+[trailer]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 100"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 0.3
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 180"
+finishColor = "0 100 255 0"
+startRadius = 1.5
+finishRadius = 0.3
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+maxdist = 100000
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 4.0
+finishRadius = 4.0
+rotationRate = 10.0
+
+[light]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 255 20 250"
+finishColor = "20 255 20 250"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+//[Lod1]
+//geometryName = "ivspfight_L1.xsi" ;geometry for lod1
+//geometryScale = 1.4
+//distance = 800   

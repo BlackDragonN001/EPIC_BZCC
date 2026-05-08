@@ -1,0 +1,318 @@
+// =============
+// Nuclear GROUND EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+///////////////////////////////
+
+particleTypes = 14
+
+//particleClass1 = "xivdests.shock"
+//particleCount1 = 1
+//particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xivdests.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xivdests.debris1"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xivdests.debris2"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xivdests.debris3"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.000 0.0"
+particleBias5 = "0.0 0.0 0.0"
+
+particleClass6 = "xivdests.shocks"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xivdests.shocks2"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "xivdests.shocks3"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "xivdests.shocks4"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+
+particleClass10 = "xivdests.pulse"
+particleCount10 = 1
+particleVeloc10 = "0.0 0.0 0.0"
+
+
+
+
+
+
+
+
+///////////////////////////////
+
+explSound = "mort02.wav"
+damageRadius = 480.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 100 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 50 // absorbtion
+
+kickRadius = 480.0
+kickVeloc = 50.0
+kickOmega = 1.0
+
+///////////////////////////////
+
+[Shock]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xivdests.shockemit"
+emitDelay = 0.1
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Shockemit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "fogring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 90"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 980.0
+animateTime = 0.5
+latitudeBands = 8
+longitudeSegments = 16
+
+[pulse]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_sprite"
+textureName = "edfpulse.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 555"
+finishColor = "100 20 00 5"
+startRadius = 70
+finishRadius = 290
+animateTime = 1.5
+rotationrate = 0.5
+
+[light]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = .1
+renderBase = "draw_emit"
+emitName = "xivdests.lightemit"
+emitDelay = .11
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Lightemit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_light"
+startColor = "250 210 100 79855"
+finishColor = "155 0 0 0"
+startRadius = 1500//320.0 // 350
+finishRadius = 100//620.0 // 150
+animateTime = 1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[debris1]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xivdests.debrisemit1"
+emitDelay = 0.007
+emitDelayVar = 0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "80.0 80.0 80.0"
+emitinherit = "0.8 0.8 0.8"
+
+[debris2]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xivdests.debrisemit2"
+emitDelay = 0.08
+emitDelayVar = 0
+emitVelocity = "0.0 20.0 0.0"
+emitVariance = "120.0 115.0 120.0"
+emitinherit = "0.8 0.8 0.8"
+
+[debris3]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xivdests.debrisemit3"
+emitDelay = 0.01
+emitDelayVar = 0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "140.0 125.0 140.0"
+emitinherit = "0.8 0.8 0.8"
+
+[debrisemit1]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 22.0
+renderBase = "draw_twirl"
+textureName = "spdebris1.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 5
+finishRadius = 5
+animateTime = 22.0
+rotationrate = 0.5
+
+
+[debrisemit2]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 25.0
+renderBase = "draw_twirl"
+textureName = "spdebris2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 8
+finishRadius = 8
+animateTime = 25.0
+rotationrate = -0.2
+
+[debrisemit3]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 21.0
+renderBase = "draw_twirl"
+textureName = "spdebris3.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 2
+finishRadius = 2
+animateTime = 21.0
+rotationrate = 0.1
+
+[Shocks]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_emit"
+emitName = "xivdests.shocksemit"
+emitDelay = 0.04
+emitVelocity = "0.0 0 0.0"
+emitVariance = "35.0 35.0 35.0"
+
+[shocksemit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_twirl"
+textureName = "firecld2.tga"//"sflm1.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+finishColor = "150 50 0 0" //255 155 155 255"
+startColor = "255 255 255 155"
+startRadius = 50
+finishRadius = 60
+animateTime = 1
+rotationRate = -0.2
+
+[Shocks2]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.25
+renderBase = "draw_emit"
+emitName = "xivdests.shocks2emit"
+emitDelay = 0.01
+emitVelocity = "0.0 0 0.0"
+emitVariance = "280.0 280.0 280.0"
+
+[shocks2emit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 7
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 235 155 255"
+startRadius = 9
+finishRadius = 0.1
+animateTime = 7
+rotationRate = -0.1
+
+[Shocks3]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_emit"
+emitName = "xivdests.shocks3emit"
+emitDelay = 0.03
+emitVelocity = "0.0 0 0.0"
+emitVariance = "65.0 65.0 65.0"
+
+[shocks3emit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 3
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 245 155 255"
+startRadius = 40
+finishRadius = 10
+animateTime = 3
+rotationRate = 0.2
+
+[Shocks4]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.25
+renderBase = "draw_emit"
+emitName = "xivdests.shocks4emit"
+emitDelay = 0.01
+emitVelocity = "0.0 0 0.0"
+emitVariance = "380.0 380.0 380.0"
+
+[shocks4emit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 6
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+finishColor = "50 0 0 0" //255 155 155 255"
+startColor = "255 235 155 255"
+startRadius = 6
+finishRadius = 0.1
+animateTime = 6
+rotationRate = -0.1
+
+
+

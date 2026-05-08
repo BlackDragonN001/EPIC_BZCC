@@ -1,0 +1,286 @@
+[GameObjectClass]
+baseName = "ivtank"
+geometryName = "cvovers00.xsi"
+geometryScale = 2.5
+glowtexture = "cbtcena0.pic"
+cockpitName= "ivtank_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 10
+scrapCost = 10
+customCost = 100
+buildTime = 30.0
+customTime = 40.0
+maxHealth = 9000
+addhealth = 15
+maxAmmo = 8000
+addAmmo = 500
+unitName = "Overlord"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "xcerbxpld"
+powercost = 0 //2
+collisionRadius = 150
+
+NoShadow = 1
+boxcollide = 1
+
+DeployonBuild = 1
+
+//explosionName = "shipxplc"
+
+heatSignature = 8.0
+imageSignature = 20.0
+radarSignature = 10.0
+isAssault = 0
+armorClass = n
+
+isFlying = 1
+ejectRatio = 0
+needPilot = 0
+CanAcceptPowerups = false
+
+//requireCount = 3
+//requireName1 = "cbarmo_b"
+//requireText1 = "Build Catalyser"
+//requireName2 = "cbcbun_b"
+//requireText2 = "Build Controller"
+//requireName3 = "cbtcen_b"
+//requireText3 = "Build Antimatter"
+
+
+
+cockpitName = "ivtank_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cvovers.trail"
+effectHard2 = "hp_emit_4"
+effectName2 = "cvovers.tail"
+effectHard3 = "hp_emit_3"
+effectName3 = "cvovers.tail"
+effectHard4 = "hp_emit_2"
+effectName4 = "cvovers.tail"
+effectHard5 = "hp_emit_5"
+effectName5 = "cvovers.tail"
+//effectHard6 = "hp_light_2"
+//effectName6 = "cvtalons.light"
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "cvover_b.light1"
+//lightHard2 = "hp_light_2"
+//lightName2 = "cvtalons.light"
+//effectHard7 = "hp_light_3"
+//effectName7 = "cvtalons.light"
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gctorps"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gctorps"
+weaponAssault2 = 0
+weaponHard3 = "HP_CANNON_1"
+weaponName3 = "Gcscats"
+weaponAssault3 = 0
+weaponHard4 = "HP_CANNON_2"
+weaponName4 = "Gcaamiss"
+weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL"
+weaponName5 = "thruster"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+
+[CraftClass]
+//GROUND_ELASTICITY = 2//0.03125
+DAMAGE_SCALE = 0.01 //0.05
+CanInteractWithTerminal = true 
+WeaponsConverge = true
+RetargetOnStrafe = true
+CollideTerrainSound = null
+
+FireWhenCanHitFriends = false
+
+MaxWeaponPitch = 2
+MinWeaponPitch = -2
+
+AvoidType = 1 //force
+
+//xplChunk = "xcerbchunk"
+xplCrash = "XCERBXPLb"
+rangeScan = 4400.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 2200
+
+PathingType = 4 // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer
+canHunt = 1
+
+AllowLinkWeapons = true
+DoWeaponCanHitCheck = true 
+OffensiveProcessIsTenacious = 1
+OffensiveProcessIsTenaciousAITeam  = 0
+
+AircraftAttackMustDeploy = true
+ClosestEnemyGoodEyes = yes
+
+braccelFactor = 0.5 //0.05
+velFactor = 0.8 //0.3
+steerFactor = 1.7
+omegaFactor = 0.1 /0.3
+strafeFactor = 0.03
+
+avoidSpeed = 80;
+topSpeed = 160;
+
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack"
+subAttackClass = "ANS"
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[AirCraftClass]
+AlwaysDeployed = true
+MaxTakeoffSpeed = 5000.0
+
+velocSet(L) = 35.0 // minimum velocity
+velocSet(M) = 85.0 // cruising velocity
+velocSet(H) = 160.0 // maximum velocity
+accelThrust = 40.0 // thrust acceleration
+accelBrake = 40.0 // brake acceleration
+accelDrag = 20//50//10.0 // drag acceleration
+omegaSteer(L) = 5//4.51 // steer turn rate at minimum
+omegaSteer(M) = 4//2.52 // steer turn rate at cruising
+omegaSteer(H) = 3//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0 // airbrake turn rate at minimum
+omegaStrafe(M) = 0 // airbrake turn rate at cruising
+omegaStrafe(H) = 0 // airbrake turn rate at maximum
+alphaSteer = 5.0 // steering angular acceleration
+alphaStrafe = 0 // airbrake angular acceleration
+minAltitude = 4000.0 // minimum altitude
+maxAltitude = 10000.0 // maximum altitude
+alphaLevel = 2.0 // leveling angular acceleration
+alphaDamp = 10.0 // damping angular acceleration
+pitchPitch = 3.5 // maximum pitch angle
+rollSteer = 1.8//0.7 // maximum roll angle from steering
+rollStrafe = 3.8 // maximum roll angle from airbraking
+timeDeploy = 15 // time to deploy
+timeUndeploy = 15 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 7200
+AILiftSpring = 15.0
+LiftSpring = 12.5 
+
+soundThrust = "enginetal.wav"
+soundTurbo = "enginetal.wav"
+
+
+
+
+////////////////////////////
+
+[trail]
+maxdist = 100000
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cvovers.trailer"
+//renderName2 = "cvovers.flame"
+renderName3 = "cvovers.Light1"
+
+
+[trailer]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "ssontrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.02
+startColor = "180 140 255 220"
+finishColor = "0 0 160 0"
+startRadius = 4.5
+finishRadius = 12.3
+segmentTime = 4.0
+animateTime = 1.8
+
+[flame]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 100 255 255"
+finishColor = "150 0 255 0"
+startRadius = 3
+finishRadius = 0.6
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "120 80 255 4450"
+finishColor = "120 80 255 4450"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "100 50 255 250"
+finishColor = "100 50 255 250"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Tail]
+maxdist = 100000
+renderBase = "draw_trail"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureName = "cerbtail3.tga"
+//textureBlend = "one one modulate"
+textureRate = -1
+startColor = "125 125 125 255"
+finishColor = "105 105 105 255"
+startRadius = 1
+finishRadius = 0.03
+segmentTime = 0.7
+segmentVariance = "1 1 0"
+animateTime = 0.3

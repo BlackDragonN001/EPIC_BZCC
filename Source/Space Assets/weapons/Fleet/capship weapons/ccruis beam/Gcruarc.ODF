@@ -1,0 +1,52 @@
+[WeaponClass]
+classLabel = "arccannon"
+altName = ""
+ordName = NULL
+wpnName = "Arc Stream"
+fireSound = "arc02.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 0
+aiRange = 1200
+flashName = "gcruarc.flash"
+
+[ArcCannonClass]
+startDist = 1100.0
+
+finishDist = 1300.0
+
+travelVeloc = 500.0
+
+coneAngle = 0.90
+
+ammoCost = 150.0
+
+damageValue(N) = 350.0 // none
+damageValue(L) = 240.0 // light
+damageValue(H) = 100.0 // heavy
+
+damageValue(S) = 170.0 // standard
+damageValue(D) = 200.0 // deflection
+damageValue(A) = 50.0 // absorbtion
+
+activeSound = "arc01.wav"
+
+xplGround = ""
+xplVehicle = "xclustcars"
+xplBuilding = "xclustcars"
+
+[Flash]
+renderBase = "draw_bolt"
+textureName = "bolts.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 255 120"
+finishColor = "0 50 100 0"
+startRadius = 3.0
+finishRadius = 0.1
+segmentLength = 10.0
+segmentVariance = "18.5 18.5 18.5"
+animateTime = 2.0
+textureRate = 0.003
+textureSpeed = -1
+
+

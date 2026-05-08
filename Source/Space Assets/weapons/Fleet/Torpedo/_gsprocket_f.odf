@@ -1,0 +1,26 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+//altName = "gsprocketa"
+ordName = "sprocket_f"
+wpnName = "Med Torpedo"
+fireSound = "gshad01.wav"
+wpnReticle = "gshadow.0"
+wpnCategory = "ROCK"
+isAssault = 1
+aiRange = 3000 // 5000
+
+[LauncherClass]
+lockRange = 3000.0  // was 170 GEC
+shotDelay = 2
+lockDelay = 20.0
+coneAngle = 0.3 //.05
+lockingReticle = "gshadow.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "sserv02.wav" //"lock02.wav"
+targetCount = 1
+targetReticle = "gshadow.1"
+
+//[MultiLauncherClass]
+//targetCount = 4
+//loseAngle = 0.3

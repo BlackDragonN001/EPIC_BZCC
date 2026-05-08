@@ -1,0 +1,174 @@
+[GameObjectClass]
+baseName = "ivpantherg"
+geometryName = "ivpanther00.xsi"
+cockpitName= "ivtank_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 20
+scrapCost = 55
+customCost = 65
+buildTime = 15.0
+customTime = 15.0
+maxHealth = 5500
+maxAmmo = 5000
+addAmmo = 5
+unitName = "Panther"
+aiName = "AttachWingman"
+aiName2 = "AttachWingman"
+
+heatSignature = 3.0
+imageSignature = 40.0
+radarSignature = 10.0
+
+isAssault = 0
+armorClass = N
+cockpitName = "ivscout_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivpantherg.trail"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivpantherg.trail"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivpantherg.light"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivpantherg.light"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gmagun_c"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gmagun_c"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 = "gaamiss1"
+weaponAssault3 = 0
+weaponHard4 = "HP_ROCKET_2"
+weaponName4 = "gclust"
+weaponAssault4 = 1
+weaponHard5 = "HP_SPECIAL"
+weaponName5 = "thrustg"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 350.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 400
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 40;
+topSpeed = 60;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 80 // []
+velocReverse = 30.0 // []
+velocStrafe = 50.0 // []
+accelThrust = 30.0 //acceleration []
+accelDragStop = 2.0 //how fast it stops once hands are off controls []
+accelJump = -70.0 // []
+
+setAltitude = 18.0 // how high off the ground
+
+alphaTrack = 14.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+pitchPitch = 0.7 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.19 //rolls while strafing []
+omegaSpin = 6.5 //spinning in place speed []
+omegaTurn = 2.9 //turning while moving speed []
+alphaSteer = 8.0 //how fast it responds to steering []
+rollSteer = 0.15 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivpantherg.trailer"
+renderName2 = "ivpantherg.flame"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.7
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+
+
+
+

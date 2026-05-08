@@ -1,0 +1,176 @@
+[GameObjectClass]
+geometryName = "ibskyeye2_b.xsi"
+glowTexture = "ibskya0.pic"
+geometryScale = 25000
+classLabel = "recycler"
+//animCount = 1
+//animName1 = "loop"
+//animFile1 = "ibradar01.xsi"
+//powerCost = -1
+scrapCost = 30
+scrapValue = 0
+maxHealth = 30000
+maxAmmo = 0
+unitName = "Skyeye"
+heatSignature = 20.0
+imageSignature = 50.0
+radarSignature = 50.0
+collisionRadius = 500.0
+isAssault = 1
+ownsTerrain = 1
+//canCollide = 1
+
+armorClass = H
+buildRequire = F
+requireCount = 0
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "o_lblue_SE"
+//lightHard2 = "hp_light_2"
+//lightName2 = "o_lblue_SE"
+//lightHard3 = "hp_light_3"
+//lightName3 = "o_lblue2_SE"
+//lightHard4 = "hp_light_4"
+//lightName4 = "o_lblue_SE"
+//lightHard5 = "hp_light_5"
+//lightName5 = "o_lblue_SE"
+//lightHard6 = "hp_light_6"
+//lightName6 = "o_lblue_SE"
+//lightHard7 = "hp_light_7"
+//lightName7 = "o_lblue_SE"
+//lightHard8 = "hp_light_8"
+//lightName8 = "o_lblue_SE"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "IBSKYEYE_B.Rlight"
+
+effectHard2 = "hp_emit_2"
+effectName2 = "IBSKYEYE_B.Rlight"
+effectHard3 = "hp_emit_3"
+effectName3 = "IBSKYEYE_B.Rlight"
+effectHard4 = "hp_emit_4"
+effectName4 = "IBSKYEYE_B.Rlight"
+effectHard5 = "hp_emit_5"
+effectName5 = "IBSKYEYE_B.Rlight"
+effectHard6 = "hp_emit_6"
+effectName6 = "IBSKYEYE_B.Glight"
+effectHard7 = "hp_emit_7"
+effectName7 = "IBSKYEYE_B.Glight"
+effectHard8 = "hp_emit_8"
+effectName8 = "IBSKYEYE_B.Ylight"
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 2500
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+[BuildGroup1]
+BuildLabel = "Utility"
+buildItem1 = "ivspscav"
+buildItem2 = "ivspdrons"
+
+[BuildGroup3]
+BuildLabel = "Defense"
+buildItem1 = "ivdefdrons"
+buildItem2 = "ivdefstat"
+
+[BuildGroup5]
+BuildLabel = "Fighters"
+buildItem1 = "ivpanthers"
+buildItem2 = "ivfighters"
+buildItem3 = "ivspbombs"
+
+[BuildGroup7]
+BuildLabel = "Capital"
+buildItem1 = "ivcorvs"
+buildItem2 = "ivtfrigs"
+buildItem3 = "ivgfrigs"
+buildItem4 = "ivdests"
+
+
+
+
+
+[RecyclerClass]
+scrapHold = 40
+scrapDelay = 3.0 // # of seconds before +1 scrap
+
+//powerTap1 = "HP_tap_1"
+//powerName = "ibaaturr_u"
+
+//[Lod1]
+//geometryName = "ibpgenL1.xsi" ;geometry for lod1
+//distance = 64                    ;bsphere under 200 pixel => switch to lod1
+
+[RLIGHT]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "iBSKYEYE_B.RLIGHTemit"
+emitdelay = 4
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[RLIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .6
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 1250"
+finishColor = "255 0 0 1250"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = .6
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[GLIGHT]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "iBSKYEYE_B.GLIGHTemit"
+emitdelay = 5
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[GLIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .8
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 1850"
+finishColor = "0 255 0 1850"
+startRadius = 40.0 // 350
+finishRadius = 40.0 // 150
+animateTime = .8
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[yLIGHT]
+simulateBase = "sim_null"
+lifeTime = 10
+renderBase = "draw_light"
+textureName = "NULL"
+textureBlend = "one one modulate"
+startColor = "255 225 200 280"
+finishColor = "255 225 200 280"
+startRadius = 160.0 // 350
+finishRadius = 160.0 // 150
+animateTime = 1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+LensFlare = 0

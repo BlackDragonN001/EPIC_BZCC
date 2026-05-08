@@ -1,0 +1,108 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xshdwcar"
+xplBuilding = "xshdwcar"
+
+renderName = "cscats.render"
+
+ammoCost = 30
+lifeSpan = 1.2 // 105m  135 GEC
+shotSpeed = 800.0
+
+damageValue(N) = 95 // none // 320
+damageValue(L) = 50 // light // 320
+damageValue(H) = 10 // heavy // 240
+
+damageValue(S) = 60 // standard // 300
+damageValue(D) = 70 // deflection // 160
+damageValue(A) = 20 // absorbtion // 320
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cscats.light"
+renderName2 = "cscats.core"
+renderName3 = "cscats.flare"
+renderName4 = "cscats.trail"
+
+[Light]
+renderBase = "draw_light"
+startColor = "100 80 255 500"
+finishColor = "40 40 235 500"
+startRadius = 35.0
+finishRadius = 35.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sparticle.tga"
+//textureName = "sblast.tga"
+textureBlend = "one one modulate"
+startColor = "220 200 255 255"
+finishColor = "120 100 255 60"
+startRadius = 0.4
+finishRadius = 0.3
+animateTime = 0.1
+rotationRate = 0.0
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.05
+
+//[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "255 240 240 255"
+finishColor = "150 0 10 0"
+startRadius = 0.3
+finishRadius = 0.05
+segmentTime = 0.04
+
+[Core]
+renderBase = "draw_twirl_trail"
+textureName = "splasma.tga"
+textureBlend = "one one modulate"
+startColor = "200 150 255 255" 
+finishColor = "80 50 255 255" 
+startRadius = 0.2
+finishRadius = 0.1
+rotationRate = 10.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.005
+
+[Flare]
+renderBase = "draw_twirl_trail"
+textureName = "sraindrop.tga"
+textureBlend = "one one modulate"
+startColor = "140 40 255 185" 
+finishColor = "0 0 255 0" 
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 0.3
+emitDelay = 0.008
+emitLife = 0.3
+rotationrate = 20
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "200 50 250 220"
+finishColor = "0 0 255 0"
+startRadius = 0.25
+finishRadius = 0.01
+segmentTime = 0.08
+
+
+
+

@@ -1,0 +1,26 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gmiss1"
+ordName = "sguns"
+wpnName = "Chain Gun"
+fireSound = "laserord.wav" //"gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gsguns.flash"
+aiRange = 600
+
+[CannonClass]
+shotDelay = 0.12
+shotVariance = 0.01
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 80 255"
+finishColor = "255 127 0 0"
+startRadius = 1.5
+finishRadius = 0.5
+animateTime = 0.1
+geomName = "g_sflash.xsi"

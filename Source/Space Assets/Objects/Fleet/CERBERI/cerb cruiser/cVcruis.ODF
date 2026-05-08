@@ -1,0 +1,210 @@
+[GameObjectClass]
+baseName = "ivcruis"
+glowTexture = "cvcruisa0.pic"
+geometryName = "cvcruis00_b.xsi"
+geometryScale = 0.1
+
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 140
+customCost = 160
+buildTime = 45.0
+customTime = 45.0
+maxHealth = 120000
+addHealth = 50
+maxAmmo = 8000
+addAmmo = 600
+unitName = "Cerberi Cruiser"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+explosionName = "XCERBXPLb"
+collisionRadius = 3000.0
+
+boxCollide = 1
+NoShadow = 1
+CanAcceptPowerups = false
+
+heatSignature = 90.0
+imageSignature = 100.0
+radarSignature = 80.0
+isAssault = 1
+armorClass = h
+needPilot = 0
+cockpitName = "ivscav_cockpit.xsi"
+ejectratio = 0
+
+effectHard1 = "hp_trail_1"
+effectName1 = "cvdests.render"
+effectHard2 = "hp_trail_2"
+effectName2 = "cvdests.render"
+
+effectHard3 = "hp_light_10"
+effectName3 = "cvdests.glight"
+effectHard4 = "hp_light_11"
+effectName4 = "cvdests.glight"
+
+effectHard5 = "hp_light_1"
+effectName5 = "cvdests.glight"
+effectHard6 = "hp_light_2"
+effectName6 = "cvdests.glight"
+effectHard7 = "hp_light_3"
+effectName7 = "cvdests.glight"
+effectHard8 = "hp_light_4"
+effectName8 = "cvdests.glight"
+effectHard9 = "hp_light_5"
+effectName9 = "cvdests.glight"
+effectHard10 = "hp_light_6"
+effectName10 = "cvdests.glight"
+effectHard11 = "hp_light_7"
+effectName11 = "cvdests.glight"
+effectHard12 = "hp_light_6"
+effectName12 = "cvdests.glight"
+effectHard13 = "hp_light_8"
+effectName13 = "cvdests.glight"
+effectHard14 = "hp_light_9"
+effectName14 = "cvdests.glight"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gctalons"
+weaponAssault1 = 0
+weaponHard4 = "HP_rocket_1"
+weaponName4 = "gcdtorps" // "gsgun"
+weaponAssault4 = 1
+weaponHard5 = "HP_rocket_2"
+weaponName5 = "gcdtorps"
+weaponAssault5 = 1
+weaponHard2 = "HP_cannon_1"
+weaponName2 = "gblasts_a"
+weaponAssault2 = 1
+weaponHard3 = "HP_cannon_2"
+weaponName3 = "gblasts_a"
+weaponAssault3 = 1
+
+
+////////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[CraftClass]
+rangeScan = 7000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 4000
+
+Attackrange = 4000
+
+braccelFactor = 0.1
+velFactor = 0.2
+steerFactor = 5
+omegaFactor = 0.1
+strafeFactor = 0.5
+
+avoidSpeed = 70;
+topSpeed = 150;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 80 // []
+velocReverse = 20.0 // []
+velocStrafe = 5.0 // []
+accelThrust = 2.0 //acceleration []
+accelDragStop = 3.0 //how fast it stops once hands are off controls []
+accelJump = 00.0 // []
+
+setAltitude =7000.0 // how high off the ground
+
+alphaTrack = 0.5//5.0 //springs speed it rights itself []
+alphaDamp = 3.0 //shocks []
+
+pitchPitch = 0.1 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.02 //rolls while strafing []
+omegaSpin = 0.1 //spinning in place speed []
+omegaTurn = 0.1 //turning while moving speed []
+alphaSteer = 1.0 //how fast it responds to steering []
+rollSteer = 0.04 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivcorvs.trailer"
+//renderName2 = "ivspbombsa.flame"
+renderName2 = "sprocketa.trailer"
+//renderName2 = "sprocketa.flame"
+renderName3 = "sprocketa.Light1"
+//renderName3 = "sprocketa.Light2"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 255"
+finishColor = "0 0 255 0"
+startRadius = 3
+finishRadius = 2
+segmentTime = 3.0
+animateTime = 0.3
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 9000                 ;...distance over this many meters => switch to lod2

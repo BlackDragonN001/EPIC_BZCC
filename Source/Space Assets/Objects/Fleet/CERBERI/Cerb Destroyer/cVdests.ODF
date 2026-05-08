@@ -1,0 +1,280 @@
+[GameObjectClass]
+baseName = "cvdests"
+glowTexture = "cvmdesa0.pic"
+geometryName = "cvmdests00_b.xsi"
+geometryScale = 0.35
+
+
+classLabel = "assaulthover"
+scrapValue = 0
+scrapCost = 140
+customCost = 160
+buildTime = 45.0
+customTime = 45.0
+maxHealth = 60000
+addHealth = 25
+maxAmmo = 8000
+addAmmo = 600
+unitName = "Cerberi Destroyer"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+explosionName = "Xcvdests"
+collisionRadius = 1800.0
+
+boxCollide = 1
+NoShadow = 1
+CanAcceptPowerups = false
+
+heatSignature = 50.0
+imageSignature = 80.0
+radarSignature = 50.0
+isAssault = 1
+armorClass = H
+needPilot = 0
+cockpitName = "ivscav_cockpit.xsi"
+ejectratio = 0
+
+effectHard1 = "hp_trail_1"
+effectName1 = "cvdests.render"
+effectHard2 = "hp_trail_2"
+effectName2 = "cvdests.render"
+effectHard3 = "hp_light_10"
+effectName3 = "cvdests.glight"
+effectHard4 = "hp_light_11"
+effectName4 = "cvdests.glight"
+
+effectHard5 = "hp_light_1"
+effectName5 = "cvdests.glight"
+effectHard6 = "hp_light_2"
+effectName6 = "cvdests.glight"
+effectHard7 = "hp_light_3"
+effectName7 = "cvdests.glight"
+effectHard8 = "hp_light_4"
+effectName8 = "cvdests.glight"
+effectHard9 = "hp_light_5"
+effectName9 = "cvdests.glight"
+effectHard10 = "hp_light_6"
+effectName10 = "cvdests.glight"
+effectHard11 = "hp_light_7"
+effectName11 = "cvdests.glight"
+effectHard12 = "hp_light_6"
+effectName12 = "cvdests.glight"
+effectHard13 = "hp_light_8"
+effectName13 = "cvdests.glight"
+effectHard14 = "hp_light_9"
+effectName14 = "cvdests.glight"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gcdescan"
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gcdescan" // "gsgun"
+weaponAssault2 = 0
+weaponHard3 = "HP_gun_3"
+weaponName3 = "gcdescan"
+weaponAssault3 = 0
+weaponHard4 = "HP_rocket_1"
+weaponName4 = "gcdtorps"
+weaponAssault4 = 1
+weaponHard5 = "HP_shield_1"
+weaponName5 = "gdeflect"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+
+[CraftClass]
+rangeScan = 7000.0f
+periodScan = 2.0f
+velocJam = 5.0f
+engageRange = 3000
+
+Attackrange = 4000
+
+WeaponsConverge = false
+
+damageEffect1 = "Dmgcdest1"
+damageEffect2 = "Dmgcdest2"
+damageEffect3 = "Dmgcdest3"
+damageEffect4 = "Dmgcdest4"
+xplCrash = "xcvdests_crash"
+
+braccelFactor = 0.1
+velFactor = 0.2
+steerFactor = 5
+omegaFactor = 0.1
+strafeFactor = 0.5
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SitAttack"
+subAttackClass = "ANS"
+
+
+
+
+avoidSpeed = 70;
+topSpeed = 120;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 120 // []
+velocReverse = 40.0 // []
+velocStrafe = 20.0 // []
+accelThrust = 5.0 //acceleration []
+accelDragStop = 3.0 //how fast it stops once hands are off controls []
+accelJump = 00.0 // []
+
+setAltitude = 7300.0 // how high off the ground
+
+alphaTrack = 1.0 //springs speed it rights itself []
+alphaDamp = 5.0 //shocks []
+
+pitchPitch = 0.2 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.1 //rolls while strafing []
+omegaSpin = 0.3 //spinning in place speed []
+omegaTurn = 0.3 //turning while moving speed []
+alphaSteer = 3.0 //how fast it responds to steering []
+rollSteer = 0.15 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+[AssaultTankClass]
+yawRate = 20.0
+pitchMin = -3.5
+pitchMax = 3.5
+
+
+////////////////////////////
+
+[GLIGHT]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "cvdests.GLIGHTemit"
+emitdelay = 2
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "1 1 1"
+
+[GLIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "120 0 255 3850"
+finishColor = "10 0 100 00"
+startRadius = 25.0 // 350
+finishRadius = 10.0 // 150
+animateTime = 1.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "cvdests.trail"
+renderName2 = "cvdests.trailer"
+renderName3 = "cvdests.trailer2"
+renderName4 = "cvdests.Light1"
+
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 00 255 255"
+finishColor = "20 0 155 0"
+startRadius = 16
+finishRadius = 5
+segmentTime = 3.0
+animateTime = 0.3
+
+
+[trailer2]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 100 255 255"
+finishColor = "50 0 255 0"
+startRadius = 10
+finishRadius = 0.8
+segmentTime = 0.5
+animateTime = 0.3
+
+
+[Light1]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "155 55 255 1255"
+finishColor = "155 55 255 1255"
+startRadius = 25.0
+finishRadius = 25.0
+rotationRate = 0.0
+
+[Light]
+renderBase = "draw_light"
+startColor = "205 150 255 1500"
+finishColor = "205 150 255 1500"
+startRadius = 50.0
+finishRadius = 50.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+[trail]
+renderBase = "draw_trail"
+textureName = "ssontrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "180 140 255 220"
+finishColor = "0 0 160 0"
+startRadius = 8
+finishRadius = 26
+segmentTime = 5.0
+animateTime = 5
+texturespeed = -1
+
+//[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 9000                 ;...distance over this many meters => switch to lod2

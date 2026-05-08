@@ -1,0 +1,342 @@
+[GameObjectClass]
+baseName = "ivfighters"
+geometryName = "ivvipers00_b.xsi"
+geometryScale = 4.0
+cockpitName = "ivrckt_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 60
+customCost = 70
+buildTime = 15.0
+customTime = 20.0
+maxHealth = 3200
+addHealth = 5
+maxAmmo = 4500
+addAmmo = 500
+unitName = "Interceptor"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+//aiName = "AttachWingman"
+//aiName2 = "AttachWingman"
+explosionName = "ixshipxpl"
+
+heatSignature = 8.0
+imageSignature = 16.0
+radarSignature = 15.0
+
+collsionradius = 600
+boxcollide = 1
+NoShadow = 1
+
+isAssault = 0
+armorClass = n
+needPilot = 1
+ejectRatio = 0
+isFlying = 1
+CanAcceptPowerups = false
+
+DeployOnBuild = 1
+
+//cockpitName = "ivscout_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivfighters.sptrail"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivfighters.lightr"//"ivfighter_b.smoke"
+effectHard3 = "hp_emit_4"
+effectName3 = "ivfighters.lightr"//"ivfighter_b.smoke"
+effectHard4 = "hp_emit_3"
+effectName4 = "ivfighters.lightg"//"ivfighter_b.smoke"
+effectHard5 = "hp_emit_5"
+effectName5 = "ivfighters.lightg"//"ivfighter_b.smoke"
+effectHard6 = "hp_emit_6"
+effectName6 = "ivfighters.lighty"//"ivfighters.smoke"
+effectHard7 = "hp_emit_7"
+effectName7 = "ivfighters.lighty"
+effectHard8 = "hp_emit_8"
+effectName8 = "ivfighters.lightr"
+
+/////// weapons ///////////////////
+
+weaponMask = 01111
+
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gaamiss1" 
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gaamiss1"
+weaponAssault2 = 0
+weaponHard3 = "HP_CANNON_1"
+weaponName3 = "gscatsa"
+weaponAssault3 = 0
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = "thruster_bmb"
+visualhard4 = "HP_SPECIAL_1"
+weaponAssault4 = 0
+
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "ivfighters.lightg"
+lightHard2 = "hp_light_2"
+lightName2 = "ivfighters.lightg"
+lightHard3 = "hp_light_3"
+lightName3 = "ivfighters.light"
+lightHard4 = "hp_light_4"
+lightName4 = "ivfighters.light"
+
+[CraftClass]
+//GROUND_ELASTICITY = 2//0.03125
+DAMAGE_SCALE = 0.01 //0.05
+CanInteractWithTerminal = true 
+WeaponsConverge = true
+RetargetOnStrafe = true
+CollideTerrainSound = null
+
+FireWhenCanHitFriends = false
+
+MaxWeaponPitch = 2
+MinWeaponPitch = -2
+
+AvoidType = 1 //force
+xplCrash = "ixshipxpl"
+
+LeaveExplodeScorch = false
+
+DoWeaponCanHitCheck = true 
+OffensiveProcessIsTenacious = 1
+OffensiveProcessIsTenaciousAITeam  = 0
+
+
+rangeScan = 4000.0f
+periodScan = 1.0f
+velocJam = 5.0f
+engageRange = 2000
+canHunt = 1
+AllowLinkWeapons = true
+
+AircraftAttackMustDeploy = true
+attackTask = "MortarBikeAttack"
+subAttackTask = "AimFireAttack"//"RocketTankAttack"
+
+subAttackClass = "ANS"
+
+ClosestEnemyGoodEyes = yes 
+
+braccelFactor = 0.5 //0.03
+velFactor = 0.6//0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.1
+
+avoidSpeed = 50;
+topSpeed = 350;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+selectReadyMsg = "offensebuilt.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = "Fighterlost.wav"
+
+[AirCraftClass]
+AlwaysDeployed = true
+MaxTakeoffSpeed = 5000.0
+
+velocSet(L) = 60.0 // minimum velocity
+velocSet(M) = 125.0 // cruising velocity
+velocSet(H) = 350.0 // maximum velocity
+accelThrust = 60.0 // thrust acceleration
+accelBrake = 60.0 // brake acceleration
+accelDrag = 30//10.0 // drag acceleration
+omegaSteer(L) = 6//4.51 // steer turn rate at minimum
+omegaSteer(M) = 5//2.52 // steer turn rate at cruising
+omegaSteer(H) = 4//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0 // airbrake turn rate at minimum
+omegaStrafe(M) = 0 // airbrake turn rate at cruising
+omegaStrafe(H) = 0 // airbrake turn rate at maximum
+alphaSteer = 8.0 // steering angular acceleration
+alphaStrafe = 0//12.0 // airbrake angular acceleration
+minAltitude = 4000.0 // minimum altitude
+maxAltitude = 10000.0 // maximum altitude
+alphaLevel = 2.5 // 10 leveling angular acceleration
+alphaDamp = 8.0//4 // 5 damping angular acceleration
+pitchPitch = 3.5//1.5//0.7 //0.5 // maximum pitch angle
+rollSteer = 2.6 //1 //0.7 // maximum roll angle from steering
+rollStrafe = 4 //1 // maximum roll angle from airbraking
+timeDeploy = 30 // time to deploy
+timeUndeploy = 30 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 7300
+AILiftSpring = 15.0
+LiftSpring = 15.0 
+
+soundThrust = "jpack01.wav"
+soundBrake = "wmflame.wav"
+soundDeploy = "wmflame.wav"
+soundUndeploy = "wmflame.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[smoke]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivfighters.trail"
+renderName2 = "ivfighters.lightr"
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivfighters.trailer"
+renderName2 = "ivfighters.light"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 60"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 0.4
+segmentTime = .2
+animateTime = .2
+emit velocity = 0 0 -80
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+
+[wingTrail]
+renderBase = "draw_trail"
+textureName = "wingtrail.tga"
+textureBlend = "one one modulate"
+textureRate = 2//0.05
+startColor = "200 200 200 20"
+finishColor = "255 255 255 0"
+startRadius = 0.1
+finishRadius = 0.4
+segmentTime = 0.5
+animateTime = 0.5
+
+[sptrail]
+maxdist = 10000
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivfighters.sptrailer"
+renderName2 = "ivfighters.spflame"
+renderName3 = "ivfighters.spLight1"
+
+
+[sptrailer]
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 100"
+finishColor = "0 0 255 0"
+startRadius = 1.2
+finishRadius = 0.4
+segmentTime = 3.0
+animateTime = 0.3
+
+[spflame]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 180"
+finishColor = "0 100 255 0"
+startRadius = 2.4
+finishRadius = 0.3
+segmentTime = 0.5
+animateTime = 0.3
+
+[spLight1]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 455"
+finishColor = "150 200 255 455"
+startRadius = 4.0
+finishRadius = 4.0
+rotationRate = 10.0
+
+[LightG]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 250 5 250"
+finishColor = "20 250 5 250"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lighty]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "0 0 200 350"
+finishColor = "0 0 200 350"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lightr]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "200 0 0 400"
+finishColor = "200 0 0 400"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "ivspfight_L1.xsi" ;geometry for lod1
+//geometryScale = 1.4
+distance = 500   

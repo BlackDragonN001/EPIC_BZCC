@@ -1,0 +1,68 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xshdwcar"
+xplBuilding = "xshdwcar"
+
+renderName = "sgun.render"
+
+ammoCost = 35
+lifeSpan = 1.3 // 105m  135 GEC
+shotSpeed = 600.0
+
+damageValue(N) = 100 // none // 320
+damageValue(L) = 60 // light // 320
+damageValue(H) = 10 // heavy // 240
+
+damageValue(S) = 60 // standard // 300
+damageValue(D) = 100 // deflection // 160
+damageValue(A) = 40 // absorbtion // 320
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "sgun.trail"
+renderName2 = "sgun.flame"
+renderName3 = "sgun.light"
+
+
+[Light]
+renderBase = "draw_light"
+startColor = "80 255 80 300"
+finishColor = "80 255 80 300"
+startRadius = 25.0
+finishRadius = 25.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+//textureName = "particle.tga"
+textureName = "sblast.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 80 255"
+finishColor = "0 255 0 0"
+startRadius = 0.4
+finishRadius = 0.2
+animateTime = 0.1
+rotationRate = 10.0
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitLife = 0.1
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "strail.tga"
+startColor = "90 255 100 220"
+finishColor = "0 130 0 0"
+startRadius = 0.2
+finishRadius = 0.01
+segmentTime = 0.05
+
+

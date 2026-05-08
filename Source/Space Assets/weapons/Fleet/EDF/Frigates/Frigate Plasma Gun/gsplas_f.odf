@@ -1,0 +1,51 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsplas_f"
+ordName = "splas_f"
+wpnName = "Plasma Bolt"
+fireSound = "igtow03.wav"
+wpnReticle = "gplasma"
+wpnCategory = "GUN"
+isAssault = 1
+flashName = "gsplas_f.flash"
+aiRange = 2700
+
+[CannonClass]
+shotDelay = 6 // 1/2sec
+salvoCount = 10
+salvoDelay = 0.1
+shotAlternate = 0
+shotVariance = 0.03
+
+[flash]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gplasma_cb.cloud"
+renderName2 = "gplasma_cb.light"
+renderName3 = "gplasma_cb.flame"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "150 255 100 250"
+finishColor = "50 255 100 250"
+startRadius = 15.0
+finishRadius = 15.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+lensflare = 1
+
+[muz]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 80 127"
+finishColor = "0 255 0 0"
+startRadius = 3.0
+finishRadius = 1.0
+animateTime = 0.1
+latitudeBands = 8
+longitudeSegments = 16

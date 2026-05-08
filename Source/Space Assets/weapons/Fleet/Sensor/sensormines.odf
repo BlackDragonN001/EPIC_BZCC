@@ -1,0 +1,32 @@
+[GameObjectClass]
+geometryName = "sbtran00.xsi"
+geometryScale = 0.6
+classLabel = "sensor"
+collisionRadius = 1.0
+scrapCost = 0
+scrapValue = 3
+maxHealth = 300
+addHealth = -10
+maxAmmo = 1
+powerCost = 0
+unitName = "TAP"
+heatSignature = 3.0
+imageSignature = 3.0
+radarSignature = 3.0
+upgradeName = none 
+armorClass = n
+
+//requireCount = 1
+//requireName1 = "fbantm"
+
+[PoweredBuildingClass]
+//powerTap1 = "HP_TAP_1"
+//powerName = "fblung"
+
+detectRange = 5000
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103
+
+

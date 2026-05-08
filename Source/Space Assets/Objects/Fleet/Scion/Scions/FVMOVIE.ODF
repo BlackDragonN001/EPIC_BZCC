@@ -1,0 +1,176 @@
+[GameObjectClass]
+baseName = "fvskyp"
+geometryName = "fvskyp00.xsi"
+//cockpitName= "fvtank_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 60
+customCost = 65
+buildTime = 25.0
+customTime = 25.0
+maxHealth = 5500
+maxAmmo = 5000
+addAmmo = 5
+unitName = "Pirahna"
+aiName = "AttachWingman"
+aiName2 = "AttachWingman"
+
+heatSignature = 3.0
+imageSignature = 40.0
+radarSignature = 10.0
+
+isAssault = 0
+armorClass = N
+needPilot = 1
+
+
+effectHard1 = "hp_trail_3"
+effectName1 = "fvskys.trail"
+//effectHard2 = "hp_trail_2"
+//effectName2 = "fvskys.trail"
+//effectHard3 = "hp_trail_1"
+//effectName3 = "fvskys.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+//weaponHard1 = "HP_GUN_1"
+//weaponName1 = "gsgun"
+//weaponAssault1 = 0
+//weaponHard2 = "HP_GUN_2"
+//weaponName2 = "gsgun"
+weaponAssault2 = 0
+//weaponHard3 = "HP_ROCKET_1"
+//weaponName3 = "gaamiss1"
+weaponAssault3 = 0
+weaponHard4 = "HP_ROCKET_2"
+//weaponName4 = "gclust"
+weaponAssault4 = 1
+weaponHard5 = "HP_SHIELD_1"
+weaponName5 = "gdeflect"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 1000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 900
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 100;
+topSpeed = 100;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 340 // []
+velocReverse = 100.0 // []
+velocStrafe = 60.0 // []
+accelThrust = 40.0 //acceleration []
+accelDragStop = 10.0 //how fast it stops once hands are off controls []
+accelJump = -100.0 // []
+
+setAltitude = 53.0 // how high off the ground
+
+alphaTrack = 14.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+pitchPitch = 0.7 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.19 //rolls while strafing []
+omegaSpin = 8.5 //spinning in place speed []
+omegaTurn = 2 //turning while moving speed []
+alphaSteer = 3.0 //how fast it responds to steering []
+rollSteer = 0.4 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "fvskys.trailer"
+renderName2 = "fvskys.light"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "250 240 100 255"
+finishColor = "250 200 80 0"
+startRadius = 0.4
+finishRadius = 0.9
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "255 255 200 850"
+finishColor = "250 250 100 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 1200                 ;...distance over this many meters => switch to lod2
+
+
+
+
+

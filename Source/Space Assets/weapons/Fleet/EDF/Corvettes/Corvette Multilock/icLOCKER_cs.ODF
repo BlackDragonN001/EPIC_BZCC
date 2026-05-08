@@ -1,0 +1,106 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "sgmloc00.xsi"
+shotSound = "smort03.wav"
+
+xplGround = "null"
+xplVehicle = "iXsmiss_cb"
+xplBuilding = "iXsmiss_cb"
+xplexpire = "xfafmsl_b"
+
+renderName = "iclocker_cs.render"
+
+ammoCost = 25
+lifeSpan = 6.0 // 800m
+shotSpeed = 300.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 100 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 50 // deflection
+damageValue(A) = 200 // absorbtion
+
+[MissileClass]
+velocForward = 550
+accelThrust = 80.0
+
+omegaTurn = 3.0 //1.5
+omegaWaver = 0.4//0.2
+rateWaver = 1.0 //2.0
+delayTime = 0.6		// homing delay time (zero turn rate)
+rampTime = 0.5			// homing ramp time (from zero to full turn rate)
+//avoidRange = 100.0		// terrain obstacle-avoidance range
+//avoidStrength = 5.0
+TeamFilter = 3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "iclocker_cs.flare"
+renderName2 = "iclocker_cs.exhaust"
+//renderName3 = "iclocker_cs.flame"
+renderName4 = "iclocker_cs.trail"
+renderName5 = "fafmsl_cb.smoke"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "slightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.5
+finishRadius = 1.5
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 150 0 0"
+startRadius = 0.9
+finishRadius = 0.2
+segmentTime = 0.1
+animateTime = 0.1
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "0 50 155 0"
+startRadius = 0.1
+finishRadius = 0.1
+animateTime = 1
+emitDelay = 0.06
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 1
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "spmistrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "150 130 100 105"
+finishColor = "200 200 200 0"
+startRadius = 0.2
+finishRadius = 1.6
+segmentTime = 2
+animateTime = 2

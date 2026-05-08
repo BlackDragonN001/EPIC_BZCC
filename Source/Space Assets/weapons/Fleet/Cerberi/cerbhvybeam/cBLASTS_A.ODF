@@ -1,0 +1,67 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+xplGround = null
+xplVehicle = "xblastscar"
+xplBuilding = "xblastbld"
+
+renderName = "blasts_a.render"
+
+ammoCost = 300
+lifeSpan = 3000e-5 // 150m
+shotSpeed = 2e5
+
+damageValue(N) = 900 // none // 450
+damageValue(L) = 640 // light // 320
+damageValue(H) = 400 // heavy // 200
+
+damageValue(S) = 640 // standard // 320
+damageValue(D) = 900 // deflection // 450
+damageValue(A) = 400 // absorbtion // 200
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "blasts_a.beam"
+renderName2 = "blasts_a.fringe"
+renderName3 = "blasts_a.sparkle"
+
+[Beam]
+renderBase = "draw_bolt"
+textureName = "sptrail1.tga.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 200 150"
+finishColor = "0 255 0 0"
+startRadius = 4
+finishRadius = 1
+segmentLength = 25.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 1.5
+textureRate = 0.01
+
+[Fringe]
+renderBase = "draw_bolt"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 120"
+finishColor = "50 180 150 0"
+startRadius = 6
+finishRadius = 3
+segmentLength = 25.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 1.5
+textureRate = 0.01
+
+//[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureblend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "0 100 255 255"
+startRadius = 3
+finishRadius = 1.5
+animateTime = 1.5
+emitDelay = 0.002
+emitVariance = "2.0 2.0 2.0"
+emitLife = 1.3
+

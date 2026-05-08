@@ -1,0 +1,48 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gblasts_c"
+ordName = "blasts_a"
+wpnName = "Blast"
+fireSound = "hugebeam.wav"
+wpnReticle = "gblast"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 5000
+flashName = "gblasts_a.flash"
+
+[CannonClass]
+shotDelay = 4.0 // .5/sec
+shotAlternate = 0
+
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gblasts_a.light"
+renderName2 = "gblasts_a.light1"
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1
+renderBase = "draw_light"
+startColor = "0 255 0 8700"
+finishColor = "0 155 0 00"
+startRadius = 30.0
+finishRadius = 20.0
+animateTime = 1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Light1]
+renderBase = "draw_sprite"
+lifetime = 1
+textureName = "slightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "0 205 40 255"
+startRadius = 20.0
+finishRadius = 7.0
+rotationRate = 10.0
+animateTime = 1
+

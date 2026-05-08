@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Sensor Field"
+fireSound = "mmine01.wav"
+wpnReticle = "gflare"
+wpnPriority = 1
+wpnCategory = "SPEC"
+localAmmo = 3
+
+[DispenserClass]
+shotDelay = 2.0
+objectClass = "sensormines"

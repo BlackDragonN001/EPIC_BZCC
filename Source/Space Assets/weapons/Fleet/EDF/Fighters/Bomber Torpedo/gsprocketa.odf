@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsprocketa"
+ordName = "sprocketa"
+wpnName = "Torpedo"
+fireSound = "sprocket.wav"
+wpnReticle = "grktbomb"
+wpnCategory = "ROCK"
+isAssault = 1
+aiRange = 2800
+
+
+[CannonClass]
+shotDelay = 5.0
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 255 500"
+finishColor = "0 0 255 300"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

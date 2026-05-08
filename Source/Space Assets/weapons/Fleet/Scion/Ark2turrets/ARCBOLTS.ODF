@@ -1,0 +1,34 @@
+[OrdnanceClass]
+classLabel =  "bullet" //"beam"
+
+shotGeometry = NULL
+//xplGround = "xarcgnd_a"
+xplVehicle = "xarccar_a"
+xplBuilding = "xarccar_a"
+
+renderName = "gbeam_s.flash"
+
+ammoCost = 20
+lifeSpan = 3000e-7 // 175m
+shotSpeed = 1e7
+
+damageValue(N) = 500 // none // 500 // 250
+damageValue(L) = 300 // light // 500 // 250
+damageValue(H) = 175 // heavy // 375 // 187.5
+
+damageValue(S) = 375 // standard // 375 // 187.5
+damageValue(D) = 500 // deflection // 500 // 250
+damageValue(A) = 250 // absorbtion // 500 // 125
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.8
+finishRadius = 0.01
+segmentLength = 7.0 
+segmentVariance = "3.0 3.0 3.0"
+animateTime = 0.8 // 0.2
+textureRate = 0.01

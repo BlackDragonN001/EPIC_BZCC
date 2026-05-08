@@ -1,0 +1,72 @@
+[GameObjectClass]
+geometryName = "ibstorm00.xsi"
+classLabel = "recycler"
+scrapCost = 55
+scrapValue = 0
+maxHealth = 12000
+maxAmmo = 0
+geometryScale = 3.0
+unitName = "Stormpetrel"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 20.0
+imageSignature = 50.0
+radarSignature = 50.0
+isAssault = 1
+
+armorClass = H
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "ibrecy"
+
+collisionRadius = 4.0
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+[PoweredBuildingClass]
+detectRange = 3000
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 3
+tunnel01Z0 = 3
+tunnel01DX = 2
+tunnel01DZ = 4
+tunnel01Edge = "wwtw"
+
+soundAmbient = "ibfact00.wav"
+
+// play ambient sound
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+buildItem1 = "ivspdrons"
+buildItem2 = "ivdefdrons"
+buildItem3 = "ivpanthers"
+buildItem4 = "ivfighters"
+buildItem5 = "ivspbombs"
+buildItem6 = " "
+buildItem7 = "apserv"
+buildItem8 = "apsbcann"
+buildItem9 = "apscats"
+
+
+
+
+
+[RecyclerClass]
+scrapHold = 20
+scrapDelay = 3.0 // # of seconds before +1 scrap
+
+
+
+

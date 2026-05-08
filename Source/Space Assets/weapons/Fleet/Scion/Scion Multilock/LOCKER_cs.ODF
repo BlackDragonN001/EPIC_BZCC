@@ -1,0 +1,68 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "sgmloc00.xsi"
+shotSound = "smort03.wav"
+
+xplGround = "xmslcar"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+xplexpire = "xmslcar"
+
+renderName = "locker_cs.render"
+
+ammoCost = 25
+lifeSpan = 6.0 // 800m
+shotSpeed = 400.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 100 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 50 // deflection
+damageValue(A) = 200 // absorbtion
+
+[MissileClass]
+omegaTurn = 3.0 //1.5
+omegaWaver = 1.0//0.2
+rateWaver = 4.0 //2.0
+delayTime = 0.0		// homing delay time (zero turn rate)
+rampTime = 0.3			// homing ramp time (from zero to full turn rate)
+avoidRange = 100.0		// terrain obstacle-avoidance range
+avoidStrength = 5.0
+TeamFilter = 3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "locker_cs.flare"
+renderName2 = "locker_cs.halo"
+renderName3 = "locker_cs.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 3.0
+finishRadius = 3.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 63"
+finishColor = "0 127 255 63"
+startRadius = 3.0
+finishRadius = 3.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.0
+segmentTime = 1.0

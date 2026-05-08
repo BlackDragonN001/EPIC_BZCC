@@ -1,0 +1,33 @@
+[WeaponClass]
+classLabel = "cannon" // "machinegun"
+altName = "garc_s"
+ordName = "arcbolts"
+wpnName = "Arc Cannon"
+fireSound = "arc02.wav"
+wpnReticle = "garc_c" // "octagon"
+wpnCategory = "CANNON"
+isAssault = 1
+aiRange = 2500
+flashName = "garc_c.flash"
+
+[CannonClass]
+//shotDelay = 0.1
+shotDelay = 5.0
+salvoCount = 5
+salvoDelay = 0.07
+shotVariance = 0.01
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 5.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 10.0
+animateTime = 5.0
+latitudeBands = 8
+longitudeSegments = 16

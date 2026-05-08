@@ -1,0 +1,85 @@
+// =================
+// BLAST CANNON VEHICLE HIT
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+kickRadius = 10.0
+kickOmega = 4.0
+kickVeloc = 2.0
+
+particleTypes = 6
+
+particleClass1 = "xblastscar.puff"
+particleCount1 = 5
+particleVeloc1 = "4.0 4.0 4.0"
+
+particleClass2 = "xblastscar.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xblastscar.splat"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "spdebris.cloud1"
+particleCount4 = 6
+particleVeloc4 = "40.0 40.0 40.0"
+particleBias4 = "0.0 0.0 0.0"
+
+particleClass5 = "spdebris.cloud2"
+particleCount5 = 4
+particleVeloc5 = "50.0 50.0 50.0"
+particleBias5 = "0.0 0.0 0.0"
+
+particleClass6 = "spdebris.cloud3"
+particleCount6 = 9
+particleVeloc6 = "60.0 60.0 6.0"
+particleBias6 = "0.0 0.0 0.0"
+
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 255 50"
+finishColor = "0 255 0 0"
+startRadius = 1
+finishRadius = 12.0
+animateTime = 2.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.7
+renderBase = "draw_light"
+startColor = "100 255 100 655"
+finishColor = "0 150 120 0"
+startRadius = 200
+finishRadius = 200
+animateTime = 2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Splat]
+simulateBase = "sim_null"
+lifeTime = .5
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 100"
+finishColor = "0 255 0 0"
+startRadius = 4
+finishRadius = 35.0
+animateTime = .5

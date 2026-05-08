@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "sonicblasts"
+altName = "gsonics"
+wpnName = "Meson Cannon"
+fireSound = "sonic01.wav"
+wpnReticle = "gsonic_c"
+wpnCategory = "CANN"
+aiRange = 1500
+flashName = "gsonics.flash"
+
+[CannonClass]
+shotDelay = 1.6 // 1/sec
+shotVariance = 0.0
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 255 500"
+finishColor = "0 200 255 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

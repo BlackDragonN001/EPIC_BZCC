@@ -1,0 +1,69 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+//xplGround = "xcblastgnd"
+xplVehicle = "xcblastcar"
+xplBuilding = "xcblastcar"
+
+renderName = "sgunca.render"
+
+ammoCost = 10
+lifeSpan = 1.1 // 150m
+shotSpeed = 7e3
+
+damageValue(N) = 2000 // none // 300
+damageValue(L) = 2000 // light // 250
+damageValue(H) = 2000 // heavy // 150
+
+damageValue(S) = 2000 // standard // 250
+damageValue(D) = 2000 // deflection // 300
+damageValue(A) = 1500 // absorbtion // 150
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "sgunca.beam"
+renderName2 = "sgunca.fringe"
+renderName3 = "sgunca.sparkle"
+
+[Beam]
+renderBase = "draw_bolt"
+textureName = scerbbeam.tga"
+textureBlend = "one one modulate"
+startColor = "160 100 255 190"
+finishColor = "80 0 255 0"
+startRadius = 3
+finishRadius = 0.5
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 1.3
+textureRate = 0.05
+texturespeed = -10
+
+[Fringe]
+renderBase = "draw_bolt"
+texturename = "scerbbeam.tga"
+textureBlend = "one one modulate"
+startColor = "250 155 255 200"
+finishColor = "50 0 200 0"
+startRadius = 2
+finishRadius = 5
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.8
+textureRate = 0.1
+texturespeed = 0.5
+
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureblend = "one one modulate"
+startColor = "120 60 255 255"
+finishColor = "60 0 255 50"
+startRadius = 0.6
+finishRadius = 0.1
+animateTime = 1.4
+emitDelay = 0.002
+emitVariance = "2.0 2.0 2.0"
+emitLife = 1.3
+

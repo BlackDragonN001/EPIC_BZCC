@@ -1,0 +1,42 @@
+[GameObjectClass]
+geometryName = "ibbomb00.xsi"
+classLabel = "BomberBay"
+scrapCost = 100
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Bomber Bay"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+
+armorClass = H
+
+buildSupport = A
+buildRequire = A
+
+requireCount = 1
+requireName1 = "ibtrain"
+requireText1 = "Build Training"
+
+provideCount = 1
+provideName1 = "ibbomb"
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_blue_nf"
+
+[BuildingClass]
+soundAmbient = "iabomb01.wav"
+
+[BomberBayClass]
+bomberType = "ivbomb"
+downTime = 30
+
+[PoweredBuildingClass]
+detectRange = 100
+
+[Lod1]
+geometryName = "ibbombL1.xsi" ;geometry for lod1
+distance = 80

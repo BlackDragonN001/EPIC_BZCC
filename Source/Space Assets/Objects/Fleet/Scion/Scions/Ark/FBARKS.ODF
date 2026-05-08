@@ -1,0 +1,80 @@
+[GameObjectClass]
+geometryName = "fbarks.xsi"
+geometryScale = 8
+classLabel = "recycler"
+powerCost = 0
+scrapCost = 0
+scrapValue = 10
+maxHealth = 12000
+maxAmmo = 0
+unitName = "Ark II"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 10.0
+imageSignature = 15.0
+radarSignature = 15.0
+isAssault = 0
+ownsTerrain = 1
+
+collisionRadius = 100.0
+
+armorClass = H
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue1_b"
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue1_b"
+lightHard4 = "hp_light_4"
+lightName4 = "spotblue1_b"
+lightHard5 = "hp_light_5"
+lightName5 = "spotblue1_b"
+
+upgradeName = "ibrecy_tb"
+
+[PoweredBuildingClass]
+detectRange = 5000
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerTap3 = "HP_tap_3"
+powerName = "fbaaturrs"
+
+[BuildingClass]
+//tunnelCount = 1
+
+//tunnel01X0 = 3
+//tunnel01Z0 = 3
+//tunnel01DX = 2
+//tunnel01DZ = 4
+//tunnel01Edge = "wwtw"
+
+soundAmbient = "ibrecy01.wav"
+
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+buildItem1 = "fvscavs"
+buildItem2 = "fvskys"
+buildItem3 = "fvfighters"
+buildItem4 = "fvspbombs"
+buildItem5 = "ivcons_b"
+buildItem6 = "ivserv_b"
+buildItem7 = "apserv"
+buildItem8 = "ivpanther_b"
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+[RecyclerClass]
+scrapHold = 40
+scrapDelay = 3.0 // # of seconds before +1 scrap
+
+//[Lod1]
+//geometryName = "ibrecyL1_b.xsi" ;geometry for lod1
+//geometryScale = 2
+//distance = 400
+//dontShiftLOD = 1

@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsprocketa"
+ordName = "sprocketc"
+wpnName = "Saturn-S"
+fireSound = "sprocket.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 500
+
+[CannonClass]
+shotDelay = 0.6 // 1/sec
+shotAlternate = 1

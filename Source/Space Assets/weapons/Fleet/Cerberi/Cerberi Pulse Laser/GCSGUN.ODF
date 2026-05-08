@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "cgsguna"
+ordName = "csgun"
+wpnName = "Bolt Cannon"
+fireSound = "spulse.wav" //"gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "cgsgun.flash"
+aiRange = 1000
+
+[CannonClass]
+shotDelay = 0.25
+shotVariance = 0.01
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "180 120 250 300"
+finishColor = "0 0 255 300"
+startRadius = 4.0
+finishRadius = 8.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

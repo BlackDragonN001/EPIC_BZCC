@@ -1,0 +1,318 @@
+// ==================
+// Destroyed EDF CAP-SHIP DAMAGE STATE
+// ==================
+
+[Dmgcdest4]
+maxdist = 100000
+renderBase = "draw_multi"
+renderCount = 10
+renderName1 = "DmgcDest4.flash"
+//renderName2 = "DmgDest4.debris1"
+//renderName3 = "DmgDest4.debris2"
+//renderName4 = "DmgDest4.debris3"
+renderName5 = "DmgcDest4.smokeemitter"
+renderName10 = "DmgcDest4.smoke2emitter"
+renderName7 = "DmgcDest4.sparkemitter"
+renderName8 = "DmgcDest4.pulse"
+renderName9 = "DmgcDest4.puff"
+//renderName10 = "DmgDest4.light"
+
+[debris1]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "dmgcdest4.debrisemit1"
+emitDelay = 0.03
+emitDelayVar = 0
+emitVelocity = "0.0 30.0 0.0"
+emitVariance = "30.0 25.0 30.0"
+
+[debris2]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "dmgcdest4.debrisemit2"
+emitDelay = 0.02
+emitDelayVar = 0
+emitVelocity = "0.0 20.0 0.0"
+emitVariance = "20.0 15.0 20.0"
+
+[debris3]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "dmgcdest4.debrisemit3"
+emitDelay = 0.015
+emitDelayVar = 0
+emitVelocity = "0.0 40.0 0.0"
+emitVariance = "40.0 25.0 40.0"
+
+[debrisemit1]
+simulateBase = "sim_smoke"
+lifeTime = 22.0
+renderBase = "draw_twirl"
+textureName = "spdebris1.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 5
+finishRadius = 5
+animateTime = 22.0
+
+
+[debrisemit2]
+simulateBase = "sim_smoke"
+lifeTime = 25.0
+renderBase = "draw_twirl"
+textureName = "spdebris2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 6
+finishRadius = 6
+animateTime = 25.0
+
+
+[debrisemit3]
+simulateBase = "sim_smoke"
+lifeTime = 21.0
+renderBase = "draw_twirl"
+textureName = "spdebris3.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 4
+finishRadius = 4
+animateTime = 21.0
+
+[flash]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "dmgcdest4.flashemitter"
+emitDelay = 4
+emitDelayVar = 4
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "1 1 1"
+
+[flashemitter]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "dmgcdest4.flashemit"
+emitDelay = 0.004
+emitDelayVar = 0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "480.0 480.0 480.0"
+emitInherit = "0.8 0.8 0.8"
+
+[flashemit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 5.0
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "250 200 250 255"
+finishColor = "50 0 200 5"
+startRadius = 6
+finishRadius = .1
+animateTime = 5.0
+
+
+
+[pulse]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "dmgcdest4.pulseemitter"
+emitDelay = 1
+emitDelayVar = 0.9
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "15.0 15.0 15.0"
+emitinherit = "0.7 0.7 0.7"
+
+[pulseemitter]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "dmgcdest4.pulseemit"
+emitDelay = 0.1
+emitDelayVar = 0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "0.8 0.8 0.8"
+
+[pulseemit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "bfirecld2.tga"//blunuke.tga"
+textureBlend = "one one modulate"
+startColor = "250 250 200 525"
+finishColor = "200 120 250 5"
+startRadius = 20
+finishRadius = 90
+animateTime = 0.4
+SimulateSoundEffect = "shipxpl.wav" 
+
+
+[SmokeEmitter]
+maxdist = 100000
+renderBase = "draw_twirl_trail"
+emitDelay = 1
+emitDelayVar = 0.5
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "55.0 55.0 55.0"
+emitInherit = "0.7 0.7 0.7"
+emitLife = 20.0
+textureName = "sssmoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "20 20 20 152"
+finishColor = "120 120 120 0"
+startRadius = 50
+finishRadius = 150
+animateTime = 20.0
+rotationRate = 1.0
+
+[Smoke2Emitter]
+maxdist = 100000
+renderBase = "draw_twirl_trail"
+emitDelay = 0.25
+emitDelayVar = 0.25
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "15.0 15.0 15.0"
+emitInherit = "0.1 0.1 0.1"
+emitLife = 5.0
+textureName = "bfirecld2.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "250 250 250 152"
+finishColor = "0 0 0 0"
+startRadius = 30
+finishRadius = 8
+animateTime = 5.0
+rotationRate = 1.0
+
+[SparkEmitter]
+maxdist = 100000
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "240.0 220.0 240.0"
+emitInherit = "1.0 1.0 1.0"
+emitLife = 4.0
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 170 255 255"
+finishColor = "55 0 200 0"
+startRadius = 4.8
+finishRadius = 0.1
+animateTime = 4.0
+rotationRate = 0.0
+
+[FlameEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "0.0 18.0 0.0"
+emitVariance = "10.0 10.0 10.0"
+emitInherit = "0.8 0.8 0.8"
+emitLife = 1.5
+textureName = "bflm1.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 3.7
+finishRadius = 0.5
+animateTime = 1.5
+rotationRate = 10.0
+
+
+[puff]
+maxdist = 100000
+simulateBase = "sim_smoke"
+//lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "dmgcdest3.puffemit"
+emitDelay = 10
+emitDelayVar = 5
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitinherit = "1 1 1"
+
+[puffemit]
+maxdist = 100000
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "ssparks.tga"
+textureBlend = "one one modulate"
+startColor = "250 230 220 200"
+finishColor = "90 30 200 0"
+startRadius = 0
+finishRadius = 40
+animateTime = 1.0 //.5
+rotationRate = 0.0
+
+
+[LIGHT]
+simulateBase = "sim_null"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "dmgcdest4.LIGHTemit"
+emitdelay = 0.1
+delayVar = 0.05
+emitVelocity = "0.0 3 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "1 1 1"
+
+[LIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .7
+renderBase = "draw_light"
+textureName = "LIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "255 245 255 650"
+finishColor = "55 0 250 0"
+startRadius = 30.0 // 350
+finishRadius = 15.0 // 150
+animateTime = .7
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[bolt]
+simulateBase = "sim_smoke"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "dmgdest3.boltemit"
+emitDelay = 1
+emitDelayVar = 0.5
+emitVelocity = "0.0 0.0 15.0"
+emitVariance = "0.0 0.0 -30.0"
+emitinherit "1 1 1"
+
+[boltemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_bolt"
+textureName = "mini.tga"
+textureBlend = "one one modulate"
+startColor = "150 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.02
+finishRadius = 0.02
+segmentLength = 0.9
+segmentVariance = "1.0 1.0 1.0"
+animateTime = 0.15
+textureRate = 0.01

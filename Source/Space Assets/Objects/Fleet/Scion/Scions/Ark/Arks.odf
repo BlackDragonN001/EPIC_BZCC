@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName = "Arks.xsi"
+geometryScale = 9.0
+classLabel = "i76building"
+scrapCost = 0	
+scrapValue = 0
+maxHealth = 300000
+maxAmmo = 0
+unitName = "Ark II"
+heatSignature = 30.0
+imageSignature = 80.0
+radarSignature = 50.0
+collisionRadius = 5.0
+ownsTerrain=1
+explosionName = "kamixpl"
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103

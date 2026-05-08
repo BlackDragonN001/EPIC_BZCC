@@ -1,0 +1,178 @@
+[GameObjectClass]
+baseName = "ivdefs"
+geometryName = "ivdef4s.xsi"
+geometryScale = 2.5
+//cockpitName= "ivtank_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 20
+customCost = 50
+buildTime = 10.0
+customTime = 15.0
+maxHealth = 2000
+addHealth = 30
+maxAmmo = 1000
+addAmmo = 100
+unitName = "Defense Pod"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+
+explosionName = "ixshipxpl"
+
+heatSignature = 3.0
+imageSignature = 8.0
+radarSignature = 10.0
+isAssault = 0
+armorClass = N
+needPilot = 1
+ejectratio = 0
+
+cockpitName = "ivscout_cockpit.xsi"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivfighters.trail"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivfighters.trail"
+//effectHard3 = "hp_emit_3"
+effectName3 = "ivpanthersa.light"
+//effectHard4 = "hp_emit_4"
+effectName4 = "ivpanthersa.light"
+
+/////// weapons ///////////////////
+
+weaponMask = 00111
+
+weaponHard1 = "HP_cannon_1"
+weaponName1 = "gcapcan_a"
+weaponAssault1 = 1
+weaponHard2 = "HP_cannon_2"
+weaponName2 = "gcapcan_c" // "gsgun"
+weaponAssault2 = 0
+weaponHard3 = "HP_cannon_3"
+weaponName3 = "gcapcan_c"
+weaponAssault3 = 0
+//weaponHard4 = "HP_MORTAR_1"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 1
+//weaponHard5 = "HP_SPECIAL"
+//weaponName5 = "gsensors"
+//weaponAssault5 = 1
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 2500.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 600
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.5
+
+avoidSpeed = 20;
+topSpeed = 50;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 50 // []
+velocReverse = 10.0 // []
+velocStrafe = 5.0 // []
+accelThrust = 10.0 //acceleration []
+accelDragStop = 20.0 //how fast it stops once hands are off controls []
+accelJump = 0.0 // []
+
+setAltitude = 75.0 // how high off the ground
+
+alphaTrack = 14.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+pitchPitch = 1 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.3 //rolls while strafing []
+omegaSpin = 7.2 //spinning in place speed []
+omegaTurn = 3 //turning while moving speed []
+alphaSteer = 6.0 //how fast it responds to steering []
+rollSteer = 0.1 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ivpanthersa.trailer"
+//renderName2 = "ivpanthersa.flame"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "100 200 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3
+finishRadius = 0.7
+segmentTime = 3.0
+animateTime = 0.3
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 800                 ;...distance over this many meters => switch to lod2

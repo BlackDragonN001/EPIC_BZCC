@@ -1,0 +1,33 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsgunc"
+ordName = "sgunca"
+wpnName = "Cerberi Blast"
+fireSound = "cblast.wav"
+wpnReticle = "gblast"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 7000
+flashName = "gsgunc.flash"
+
+
+[CannonClass]
+shotDelay = 5 // .5/sec
+//salvoCount = 5
+//salvoDelay = 0.001
+//shotVariance = 0.0
+shotAlternate = 0
+
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 3.5
+renderBase = "draw_light"
+startColor = "127 100 255 2700"
+finishColor = "0 0 255 2700"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 3.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

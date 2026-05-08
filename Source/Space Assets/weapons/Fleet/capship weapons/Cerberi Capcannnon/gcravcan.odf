@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "cravcan"
+//altname = "gcapcan_c"
+wpnName = "Point Cannon"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "cann"
+aiRange = 1200
+isAssault = 0
+//wpnPriority = 1
+flashName = "gcscats.flash"
+
+
+[CannonClass]
+shotDelay = 0.1
+//salvoCount = 1
+//salvoDelay = 0.
+

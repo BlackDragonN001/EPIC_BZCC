@@ -1,0 +1,55 @@
+[GameObjectClass]
+mass = 100
+
+geometryName = "spc_facrock3a.xsi"
+GeometryScale = 9
+classLabel = "artifact"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Asteroid"
+aiName = "PowerUpProcess"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+explosionName = "xfuel_b"
+//canCollide = 1
+
+boxcollide = 1
+NoShadow = true 
+
+[PowerupClass]
+alphaDamp = 2.0
+alphaTrack = 5.0
+pitchThrust = 0.5
+rollStrafe = 0.5
+omegaSpin = 2.0
+omegaTurn = 1.5
+alphaSteer = 2.0
+velocForward = 15.0
+velocReverse = 10.0
+velocStrafe = 10.0
+accelThrust = 10.0 
+accelDrag = 5
+        
+StationaryAlphaDampX = 10.0
+StationaryAlphaDampY = 10.0
+StationaryAlphaDampZ = 10.0
+StationaryAlphaTrackX = 25.0
+StationaryAlphaTrackY = 20.0
+StationaryAlphaTrackZ = 25.0
+StationaryVelocDampX = 5.0
+StationaryVelocDampY = 5.0
+StationaryVelocDampZ = 5.0
+
+StationaryOmegaSpin = 2.0
+StationaryAlphaSteer= 2.0
+FLOAT_HEIGHT = 7000.0
+LIFT_SPRING = 25.0
+LIFT_DAMP = 7.5
+SlowFall = true
+FallSpeed = 10// 10.0f // only if SlowFall = false. Set to <= 0 to use normal velocFwd/Reverse values
+
+

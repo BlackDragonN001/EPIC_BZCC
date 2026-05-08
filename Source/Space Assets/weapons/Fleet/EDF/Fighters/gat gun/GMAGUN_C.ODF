@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gmagun_c"
+ordName = "magun_c"
+wpnName = "Gatling Gun"
+fireSound = "magun.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gmagun_c.flash"
+aiRange = 220
+
+[CannonClass]
+shotDelay = 0.06
+shotVariance = 0.033
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 255 0 300"
+finishColor = "255 0 0 300"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

@@ -1,0 +1,31 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xgungnd"
+xplVehicle = "xguncar"
+xplBuilding = "xguncar"
+
+renderName = "magun_c.render"
+
+ammoCost = 2.0
+lifeSpan = 0.5 // 105m  135 GEC
+shotSpeed = 460.0
+
+damageValue(N) = 40 // none // 120
+damageValue(L) = 20 // light // 120
+damageValue(H) = 15 // heavy // 40
+
+damageValue(S) = 20 // standard // 100
+damageValue(D) = 12 // deflection // 60
+damageValue(A) = 20 // absorbtion // 120
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "255 200 100 150"
+finishColor = "255 50 0 20"
+startRadius = 0.03
+finishRadius = 0.01
+segmentTime = 0.12

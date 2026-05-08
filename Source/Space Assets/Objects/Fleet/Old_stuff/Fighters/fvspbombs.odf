@@ -1,0 +1,174 @@
+[GameObjectClass]
+baseName = "ivspbomb"
+geometryName = "fvspbombs.xsi"
+geometryScale = 1.1
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 70
+customCost = 85
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 6000
+addHealth = 30
+maxAmmo = 8000
+addAmmo = 400
+unitName = "Orca"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+explosionName = "shipxpl2"
+
+heatSignature = 12.0
+imageSignature = 40.0
+radarSignature = 30.0
+isAssault = 0
+armorClass = n
+needPilot = 1
+cockpitName = "ivturr_cockpit.xsi"
+ejectRatio = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "fvspbombs.trail"
+//effectHard2 = "hp_emit_2"
+//effectName2 = "ivspbombsa.trail"
+//effectHard3 = "hp_emit_3"
+//effectName3 = "ivspbombsa.trail"
+//effectHard4 = "hp_emit_4"
+//effectName4 = "ivspbombsa.trail"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gfscats"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gfrbombs" // "gsgun"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_2"
+weaponName3 = "gfrbombs"
+weaponAssault3 = 0
+//weaponHard4 = "HP_ROCKET_2"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 1
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "thruster"
+weaponAssault5 = 0
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 2000.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 1600
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.5
+
+avoidSpeed = 70;
+topSpeed = 150;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 150 // []
+velocReverse = 80.0 // []
+velocStrafe = 60.0 // []
+accelThrust = 20.0 //acceleration []
+accelDragStop = 7.0 //how fast it stops once hands are off controls []
+accelJump = -100.0 // []
+
+setAltitude =59.0 // how high off the ground
+
+alphaTrack = 8.0 //springs speed it rights itself []
+alphaDamp = 15.0 //shocks []
+
+pitchPitch = 2 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.19 //rolls while strafing []
+omegaSpin = 2.0 //spinning in place speed []
+omegaTurn = 1.9 //turning while moving speed []
+alphaSteer = 3.0 //how fast it responds to steering []
+rollSteer = 0.35 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "fvspbombs.trailer"
+renderName2 = "fvspbombs.flame
+renderName3 = "fvspbombs.light"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "sptrail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "250 240 100 255"
+finishColor = "250 200 80 0"
+startRadius = 0.6
+finishRadius = 1
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.2
+finishRadius = 1.2
+segmentTime = 0.03
+animateTime = 0.05
+
+[light]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 8.0
+finishRadius = 8.0
+rotationRate = 10.0
+
+[Lod1]
+geometryName = "iocmet00.xsi" ;geometry for lod1
+distance = 800                 ;...distance over this many meters => switch to lod2

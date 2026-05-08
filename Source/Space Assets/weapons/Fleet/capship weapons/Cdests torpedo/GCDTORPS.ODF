@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gcdtorps"
+ordName = "cdtorps"
+wpnName = "Torpedo"
+fireSound = "satshot.wav"
+wpnReticle = "gfafmsl"
+wpnCategory = "ROCK"
+isAssault = 1
+aiRange = 4200
+flashName = "gcworms.flash"
+
+[CannonClass]
+shotDelay = 2
+shotAlternate = 1
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_light"
+startColor = "120 0 255 3000"
+finishColor = "100 0 255 3000"
+startRadius = 30.0
+finishRadius = 4.0
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

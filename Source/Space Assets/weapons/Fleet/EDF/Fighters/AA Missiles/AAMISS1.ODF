@@ -1,0 +1,99 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "Ordin_b.wav"
+
+xplGround = "null"
+xplVehicle = "iXsmiss_cb"
+xplBuilding = "iXsmiss_cb"
+xplExpire = "xtagcar_cb"
+renderName = "aamiss1.render"
+
+ammoCost = 600
+lifeSpan = 7.0 // 2000m
+shotSpeed = 300.0
+
+damageValue(N) = 600 // none
+damageValue(L) = 300 // light
+damageValue(H) = 100 // heavy
+
+damageValue(S) = 300 // standard
+damageValue(D) = 600 // deflection
+damageValue(A) = 100 // absorbtion
+
+[MissileClass]
+omegaTurn = 2.5
+omegaWaver = 0.4
+rateWaver = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "aamiss1.flare"
+renderName2 = "aamiss1.exhaust"
+renderName3 = "aamiss1.flame"
+renderName4 = "aamiss1.trail"
+renderName5 = "fafmsl_cb.smoke"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "slightflare.tga"//lightflare.tga
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 3.0
+
+[exhaust]
+renderBase = "draw_trail"
+textureName = "tflame3.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 150 0 0"
+startRadius = 1.8
+finishRadius = 0.4
+segmentTime = 0.25
+animateTime = 0.2
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "sflame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "0 50 155 0"
+startRadius = 0.1
+finishRadius = 0.1
+animateTime = 1
+emitDelay = 0.06
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 1
+
+//[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.05
+animateTime = 0.1
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.7
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "spmistrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.2
+startColor = "150 130 100 105"
+finishColor = "200 200 200 0"
+startRadius = 0.3
+finishRadius = 1.8
+segmentTime = 2
+animateTime = 2
+
+

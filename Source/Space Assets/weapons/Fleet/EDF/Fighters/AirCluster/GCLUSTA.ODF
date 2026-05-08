@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gclust"
+ordName = "clusta"
+wpnName = "Cluster Msl"
+fireSound = "tmiss03b.wav"
+wpnReticle = "gsalvo"
+wpnCategory = "ROCK"
+aiRange = 1000
+isAssault = 0
+
+[CannonClass]
+shotDelay = 8.0
+salvoCount = 8
+salvoDelay = 0.05
+shotVariance = 0.9

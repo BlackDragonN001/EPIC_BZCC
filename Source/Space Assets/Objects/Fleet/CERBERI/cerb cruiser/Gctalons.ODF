@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "dispenser"
+//ordName = "cvtalons_w"
+wpnName = "Talon"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPEC"
+aiRange = 4100
+isAssault = 0
+
+[DispenserClass]
+shotDelay = 3.0
+objectClass = "cvtalons_w"
+

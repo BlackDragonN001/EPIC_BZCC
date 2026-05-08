@@ -1,0 +1,268 @@
+[GameObjectClass]
+provideCount = 1
+provideName1 = "ivspbombs"
+
+limitClass1 = "ivspbombs" 
+limitClass1Count = 20
+limitClass1Text = "Squad Limit Reached"
+
+baseName = "ivspbombs"
+geometryName = "ivmanta00_b.xsi"
+geometryScale = 1.4
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 70
+customCost = 85
+buildTime = 25.0
+customTime = 30.0
+maxHealth = 6000
+addHealth = 30
+maxAmmo = 8000
+addAmmo = 400
+unitName = "Manta Bomber"
+aiName = "AirCraftFriend"
+aiName2 = "AirCraftEnemy"
+explosionName = "ixshipxplw"
+collisionradius = 90
+boxcollide = 1
+NoShadow = 1
+
+DeployOnBuild = 1
+
+heatSignature = 12.0
+imageSignature = 40.0
+radarSignature = 30.0
+isAssault = 0
+armorClass = n
+needPilot = 1
+cockpitName = "ivturr_cockpit.xsi"
+ejectRatio = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivspbombs.trail"
+effectMaxAltitude1 = 100000
+effectHard2 = "hp_emit_2"
+effectName2 = "ivfighters.lightr"//"ivfighter_b.smoke"
+effectHard3 = "hp_emit_4"
+effectName3 = "ivfighters.lightr"//"ivfighter_b.smoke"
+effectHard4 = "hp_emit_3"
+effectName4 = "ivfighters.lightg"//"ivfighter_b.smoke"
+effectHard5 = "hp_emit_5"
+effectName5 = "ivfighters.lightg"//"ivfighter_b.smoke"
+effectHard6 = "hp_emit_6"
+effectName6 = "ivfighters.lighty"//"ivfighters.smoke"
+effectHard7 = "hp_emit_7"
+effectName7 = "ivfighters.lighty"
+effectHard8 = "hp_emit_8"
+effectName8 = "ivfighters.lightr"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gsprocketa" // "gsgun"
+weaponAssault1 = 1
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gsprocketa"
+weaponAssault2 = 1
+weaponHard3 = "HP_cannon_1"
+weaponName3 = "gcapcan_c"
+weaponAssault3 = 0
+
+//weaponHard4 = "HP_ROCKET_2"
+//weaponName4 = "gaamiss1"
+//weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "thruster_bmb"
+weaponAssault5 = 1
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+[CraftClass]
+//GROUND_ELASTICITY = 2//0.03125
+DAMAGE_SCALE = 0.01 //0.05
+CanInteractWithTerminal = true 
+WeaponsConverge = true
+RetargetOnStrafe = true
+CollideTerrainSound = "silence.wav"
+
+FireWhenCanHitFriends = false
+attackrange = 2800
+blastDist = 2800
+AttackTaskBlastDist = 2800.0
+waitRange = 1500.0
+
+MaxWeaponPitch = 2
+MinWeaponPitch = -2
+
+AvoidType = 2 //plan
+xplCrash = "ixshipxpl"
+
+
+
+LeaveExplodeScorch = false
+
+
+rangeScan = 5000.0f
+periodScan = 2.0f
+velocJam = 5.0f
+engageRange = 2000
+canHunt = 1
+
+AllowLinkWeapons = true
+DoWeaponCanHitCheck = true 
+OffensiveProcessIsTenacious = 1
+OffensiveProcessIsTenaciousAITeam  = 0
+
+AircraftAttackMustDeploy = true
+attackTask = "ArcherAttack"
+subAttackTask = "ArcherSubAttack" //"AimFireAttack"//"RocketTankAttack"
+
+subAttackClass = "ANS"
+
+ClosestEnemyGoodEyes = yes 
+
+braccelFactor = 0.03
+velFactor = 0.7
+steerFactor = 1.0
+omegaFactor = 0.01
+strafeFactor = 0.1
+
+avoidSpeed = 70;
+topSpeed = 230;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+selectReadyMsg = "bombcomplete.wav"
+
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = "Bomberlost.wav"
+
+[AirCraftClass]
+AlwaysDeployed = true
+MaxTakeoffSpeed = 5000.0
+
+velocSet(L) = 50.0 // minimum velocity
+velocSet(M) = 85.0 // cruising velocity
+velocSet(H) = 230.0 // maximum velocity
+accelThrust = 40.0 // thrust acceleration
+accelBrake = 40.0 // brake acceleration
+accelDrag = 40//10.0 // drag acceleration
+omegaSteer(L) = 3//4.51 // steer turn rate at minimum
+omegaSteer(M) = 2//2.52 // steer turn rate at cruising
+omegaSteer(H) = 1//1.59 // steer turn rate at maximum
+omegaStrafe(L) = 0 // airbrake turn rate at minimum
+omegaStrafe(M) = 0 // airbrake turn rate at cruising
+omegaStrafe(H) = 0 // airbrake turn rate at maximum
+alphaSteer = 5.0 // steering angular acceleration
+alphaStrafe = 8.0 // airbrake angular acceleration
+minAltitude = 4000.0 // minimum altitude
+maxAltitude = 10000.0 // maximum altitude
+alphaLevel = 1.5 // 10 leveling angular acceleration
+alphaDamp = 10.0//4 // 5 damping angular acceleration
+pitchPitch = 3.5//1.5//0.7 //0.5 // maximum pitch angle
+rollSteer = 1.2 //1 //0.7 // maximum roll angle from steering
+rollStrafe = 3.6 //1 // maximum roll angle from airbraking
+timeDeploy = 30 // time to deploy
+timeUndeploy = 30 // time to undeploy
+
+OverWaterFlying = true
+OverWaterLanded = true
+aiAltitude = 7900
+AILiftSpring = 20.0
+LiftSpring = 20 
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+
+////////////////////////////
+
+[trail]
+maxdist = 100000
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivspbombs.trailer"
+renderName2 = "ivspbombs.flame"
+renderName3 = "ivspbombs.Light1"
+
+
+[trailer]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "sptrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 100"
+finishColor = "0 0 255 0"
+startRadius = 1
+finishRadius = 0.3
+segmentTime = 3.0
+animateTime = 0.3
+
+[flame]
+maxdist = 100000
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "200 200 255 180"
+finishColor = "0 100 255 0"
+startRadius = 3
+finishRadius = 0.8
+segmentTime = 0.5
+animateTime = 0.3
+
+[Light1]
+maxdist = 100000
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "150 200 255 255"
+startRadius = 4.0
+finishRadius = 4.0
+rotationRate = 10.0
+
+[light]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 255 20 550"
+finishColor = "20 255 20 550"
+startRadius = 5.0
+finishRadius = 5.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Lod1]
+geometryName = "ivspbomb_L1.xsi" ;geometry for lod1
+geometryScale = 1.4
+distance = 1400                 ;...distance over this many meters => switch to lod2

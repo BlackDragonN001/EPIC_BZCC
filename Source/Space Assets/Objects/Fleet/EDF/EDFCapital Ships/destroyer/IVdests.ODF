@@ -1,0 +1,409 @@
+[GameObjectClass]
+baseName = "ivdests"
+
+
+glowTexture = "ivdesa0.pic"
+geometryName = "ivdestroyer00_b.xsi"
+geometryScale = 0.4
+//cockpitName= "ivmisl_cockpit.xsi"
+classLabel = "assaulthover"
+
+mass=1450000
+scrapValue = 0
+scrapCost = 140
+customCost = 160
+buildTime = 45.0
+customTime = 45.0
+maxHealth = 60000
+addHealth = 25
+maxAmmo = 8000
+addAmmo = 600
+unitName = "EDF Destroyer"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+explosionName = "xivdests"
+
+collisionRadius = 2800.0
+boxcollide = 1
+NoShadow = 1
+CanAcceptPowerups = false
+
+heatSignature = 50.0
+imageSignature = 80.0
+radarSignature = 50.0
+isAssault = 1
+armorClass = h
+//needPilot = 0
+cockpitName = "ivscav_cockpit.xsi"
+ejectratio = 0
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivstorms.render"
+effectHard2 = "hp_trail_2"
+effectName2 = "ivstorms.render"
+
+// Hyperdrive Effects
+// Main Flash
+effectHard3 = "hp_hyper_1"
+effectName3 = "ivdests.hyperflash"
+effectMinVelocity3 = 600.0
+effectMaxVelocity3 = 990.0
+// Whisps
+effectHard4 = "hp_hyper_2"
+effectName4 = "ivdests.whisp"
+effectMinVelocity4 = 1000.0
+effectMaxVelocity4 = 1500000.0
+effectHard5 = "hp_hyper_3"
+effectName5 = "ivdests.whisp"
+effectMinVelocity5 = 1000.0
+effectMaxVelocity5 = 1500000.0
+effectHard6 = "hp_hyper_4"
+effectName6 = "ivdests.whisp"
+effectMinVelocity6 = 1000.0
+effectMaxVelocity6 = 1500000.0
+effectHard7 = "hp_hyper_5"
+effectName7 = "ivdests.whisp"
+effectMinVelocity7 = 1000.0
+effectMaxVelocity7 = 1500000.0
+
+effectHard8 = "hp_light_1"
+effectName8 = "ivdests.Glight"
+effectHard9 = "hp_light_2"
+effectName9 = "ivdests.blight"
+effectHard10 = "hp_light_3"
+effectName10 = "ivdests.rlight"
+effectHard11 = "hp_light_4"
+effectName11 = "ivdests.rlight"
+effectHard12 = "hp_light_5"
+effectName12 = "ivdests.glight"
+effectHard13 = "hp_light_6"
+effectName13 = "ivdests.glight"
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gdescan"
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gdescan" // "gsgun"
+weaponAssault2 = 0
+weaponHard3 = "HP_gun_3"
+weaponName3 = "gdescan"
+weaponAssault3 = 0
+weaponHard4 = "HP_cannon_1"
+weaponName4 = "gblasts_a"
+weaponAssault4 = 1
+weaponHard5 = "HP_rocket_1"
+weaponName5 = "gblasts_a"
+weaponAssault5 = 1
+
+
+////////////////////////////////////
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue2"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue2"
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+
+[CraftClass]
+rangeScan = 7000.0f
+periodScan = 1.0f
+velocJam = 5.0f
+engageRange = 3000
+WeaponsConverge = true
+
+//Attackrange = 4500
+
+damageEffect1 = "Dmgdest1"
+damageEffect2 = "Dmgdest2"
+damageEffect3 = "Dmgdest3"
+damageEffect4 = "Dmgdest4"
+xplCrash = "xivdests_crash"
+
+braccelFactor = 0.1
+velFactor = 0.2
+steerFactor = 5
+omegaFactor = 0.1
+strafeFactor = 0.5
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SitAttack"
+subAttackClass = "ANS"
+
+avoidSpeed = 70;
+topSpeed = 150;
+
+selectWaitMsg = "ivtank05.wav"
+selectAttackMsg = "ivtank02.wav"
+selectFollowMsg = "ivtank04.wav"
+selectGoMsg = "ivtank04.wav"
+selectOtherMsg = "ivtank05.wav"
+selectReadyMsg = "capcomplete.wav"
+
+holdMsg = "ivtank12.wav"
+
+goMsg = "ivtank04.wav"
+attackMsg = "ivtank06.wav"
+followMeMsg = "ivtank08.wav"
+followMsg = "ivtank03.wav"
+repairMsg = "ivtank09.wav"
+reloadMsg = "ivtank09.wav"
+rescueMsg = "ivtank10.wav"
+recycleMsg = "ivtank11.wav"
+otherMsg = "ivtank05.wav" 
+holdMsg = "ivtank12.wav"
+user1Msg = ""  
+killedMsg = "ivtank07.wav"
+diedMsg = "CapShiplost.wav"
+
+[HoverCraftClass]
+velocForward = 1200 //100 // []
+velocReverse = 40.0 // []
+velocStrafe = 20.0 // []
+accelThrust = 1000 //4.0 //acceleration []
+accelDragStop = 10.0 //how fast it stops once hands are off controls []
+accelJump = 00.0 // []
+
+setAltitude =7100.0 // how high off the ground
+
+alphaTrack = 1.0 //springs speed it rights itself []
+alphaDamp = 3.0 //shocks []
+
+pitchPitch = 0.05 //nose up []
+pitchThrust = 0.0 //nose down []
+
+rollStrafe = 0.1 //rolls while strafing []
+omegaSpin = 0.2 //spinning in place speed []
+omegaTurn = 0.2 //turning while moving speed []
+alphaSteer = 3.0 //how fast it responds to steering []
+rollSteer = 0.1 //rolls while steering []
+
+soundThrust = "itank01e.wav"
+soundTurbo = "avtanke3.wav"
+
+[AssaultTankClass]
+yawRate = 20.0
+pitchMin = -3.5
+pitchMax = 3.5
+
+////////////////////////////
+
+[RLIGHT]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivdests.RLIGHTemit"
+emitdelay = 4
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "1 1 1"
+
+[RLIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .4
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 1250"
+finishColor = "255 0 0 1250"
+startRadius = 10.0 // 350
+finishRadius = 10.0 // 150
+animateTime = .4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BLIGHT]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivdests.BLIGHTemit"
+emitdelay = 3
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "1 1 1"
+
+[BLIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .2
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 1550"
+finishColor = "0 255 0 1550"
+startRadius = 10.0 // 350
+finishRadius = 10.0 // 150
+animateTime = .2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[GLIGHT]
+simulateBase = "sim_SMOKE"
+lifeTime = 5e30
+renderBase = "draw_emit"
+emitName = "ivdests.GLIGHTemit"
+emitdelay = 5
+delayVar = 0
+emitVelocity = "0.0 0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "1 1 1"
+
+[GLIGHTEMIT]
+simulateBase = "sim_smoke"
+lifeTime = .5
+renderBase = "draw_light"
+textureName = "SLIGHTFLARE.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 1850"
+finishColor = "0 255 0 1850"
+startRadius = 20.0 // 350
+finishRadius = 20.0 // 150
+animateTime = .5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[yLIGHT]
+simulateBase = "sim_null"
+//lifeTime = 10
+renderBase = "draw_light"
+textureName = "NULL"
+textureBlend = "one one modulate"
+startColor = "255 225 200 1280"
+finishColor = "255 225 200 1280"
+startRadius = 15.0 // 350
+finishRadius = 15.0 // 150
+animateTime = 1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+LensFlare = 0
+
+[trail]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivcorvs.trailer"
+//renderName2 = "ivspbombsa.flame"
+renderName2 = "sprocketa.trailer"
+//renderName2 = "sprocketa.flame"
+renderName3 = "ivdests.Light1"
+//renderName3 = "sprocketa.Light2"
+
+[trailer]
+renderBase = "draw_trail"
+textureName = "strail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05
+startColor = "150 220 255 255"
+finishColor = "0 0 255 0"
+startRadius = 3
+finishRadius = 2
+segmentTime = 3.0
+animateTime = 0.3
+
+//[flame]
+renderBase = "draw_trail"
+textureName = "tflame.tga"
+textureBlend = "one one modulate"
+textureRate = 0.05 //.05
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+segmentTime = 0.03
+animateTime = 0.05
+
+[Light1]
+maxdist = 100000
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "150 200 255 7450"
+finishColor = "150 200 255 7450"
+startRadius = 38.0
+finishRadius = 38.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[light]
+simulateBase = "sim_null"
+lifeTime = 1e30
+renderBase = "draw_light"
+startColor = "20 20 255 850"
+finishColor = "20 20 255 850"
+startRadius = 45.0
+finishRadius = 45.0
+animateTime = 1e30
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+
+// Hyperdrive Effects
+
+// Main Flash
+[HyperFlash]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivdests.coreflash1"
+renderName2 = "ivdests.coreflash2"
+
+[CoreFlash1]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.0
+finishRadius = 500.0
+animateTime = 1.0
+
+[CoreFlash2]
+StartDelay = 0.4
+simulateBase = "sim_smoke"
+lifeTime = 1.6
+renderBase = "draw_emit"
+emitName = "ivdests.coreflash2a"
+emitDelay = 4.0
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[CoreFlash2a]
+startDelay = 1.0
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 500.0
+finishRadius = 0.0
+animateTime = 1.0
+
+
+// Whisps
+[Whisp]
+renderBase = "draw_trail"
+textureName = "ssontrail.tga"
+textureBlend = "one one modulate"
+textureRate = 0.01
+startColor = "150 220 255 255"
+finishColor = "0 0 255 0"
+startRadius = 1.0
+finishRadius = 100.0
+segmentTime = 0.5
+animateTime = 5.0
