@@ -118,6 +118,8 @@ scrapHold = 20
 deployClass = "cbhscav_b"
 deployOffset = 0
 
+DeployHeightMode = 0 // 0 = terrain height, 1 = pool height, 2 = current height
+
 [light]
 renderBase = "draw_multi"
 renderCount = 3
